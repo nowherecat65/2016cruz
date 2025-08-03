@@ -649,8 +649,17 @@ style.innerHTML = `
   a:-webkit-any-link {
     color: #000000;
   }
+    #menu_container {
+      background-color: #8640A3 !important;
+    }
+    #overall_result_container {
+      background-color: #8640A3 !important;
 `;
 
 document.head.appendChild(style);
+
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_inner_window_question_h3 = "#212830";
+
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_overlay_window_h3 = "#212830";
 
 //#endcode
