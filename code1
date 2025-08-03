@@ -1,0 +1,322 @@
+RecReading=true
+campaignTrail_temp.global_parameter_json = [
+    {
+        "model": "campaign_trail.global_parameter",
+        "pk": 1,
+        "fields": {
+            "vote_variable": 1.125,
+            "max_swing": 0.12,
+            "start_point": 0.94,
+            "candidate_issue_weight": 10,
+            "running_mate_issue_weight": 3,
+            "issue_stance_1_max": -0.71,
+            "issue_stance_2_max": -0.3,
+            "issue_stance_3_max": -0.125,
+            "issue_stance_4_max": 0.125,
+            "issue_stance_5_max": 0.3,
+            "issue_stance_6_max": 0.71,
+            "global_variance": 0.01,
+            "state_variance": 0.005,
+            "question_count": 25,
+            "default_map_color_hex": "#C9C9C9",
+            "no_state_map_color_hex": "#999999"
+        }
+    }
+]
+
+campaignTrail_temp.election_json = [
+    {
+        "model": "campaign_trail.election",
+        "pk": 20,
+        "fields": {
+            "year": 2016,
+            "summary": "<p>The last few years have been anything but boring for America. Following the election of Barack Obama in 2008 and the passage of the Affordable Care Act in 2010, the nation seems to be at a crossroads.<li>Hillary Clinton will need to win over dissatisfied progressives after a contentious primary against Bernie Sanders, while also painting Cruz as a radical.<li>Ted Cruz hopes to unite his party after a divisive primary with Donald Trump and win over moderate voters without alienating his base.<br><br>Clinton starts out with a slight lead, but this race is shaping up to be the closest since 2000.</p>",
+            "image_url": "https://i.postimg.cc/CwXxKx00/Reagan-vs-Dukakis-7.jpg",
+            "winning_electoral_vote_number": 270,
+            "advisor_url": "https://i.imgur.com/2FHkbnV.jpeg",
+            "recommended_reading": "<h4 style=\"margin-top: 0.5em;\">2016 Republican Primaries</h4><a href=\"https://en.wikipedia.org/wiki/Ted_Cruz_2016_presidential_campaign\" target=\"_blank\">Ted Cruz 2016 Presidential Campaign</a><br><a href=\"https://www.cbsnews.com/news/donald-trump-gop-convention-2016-how-he-got-here/\" target=\"_blank\">Why Trump Won the Primaries</a><h4>2016 Presidential Election</h4><a href=\"https://www.brookings.edu/articles/why-hillary-clinton-lost\">Why Hillary Clinton Lost</a><br><a href=\"https://www.politico.com/story/2016/11/election-results-2016-clinton-trump-231070/\" target=\"_blank\">Trump Pulls Off Major Upset</a><br><br><u><b>A Message From the Creator</b></u><br><br>This is the second mod I've made, The first one being 2000 Redux. 2000 Redux was quite rushed and unfinished, and generally was not a very good mod. The issue scores were all messed up and there was virtually no interesting features or reason to come back after you played a few times. I tried to make this mod more enjoyable and I took my time working on it, and I hope I did well in that endeavor.<br><br>Sometimes the errors it would give me  coding made me want to bang my head against the wall, but the feeling once everything finally works.. It makes everything worth it in the end. I hope you enjoyed this mod as much as I did creating it.<br><br>Thanks for playing. Until we meet again,<br><br>-TheMcCain",
+            "has_visits": 1,
+            "no_electoral_majority_image": "https://www.jetsimon.com/public/static/images/2012-no-majority.jpg",
+            "creator": "Dan Bryan",
+            "display_year": "2016"
+        }
+    }
+]
+
+campaignTrail_temp.candidate_json = [
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 200,
+        "fields": {
+            "first_name": "Ted",
+            "last_name": "Cruz",
+            "election": 20,
+            "party": "Republican",
+            "state": "Texas",
+            "priority": 1,
+            "description": "<p>Ted Cruz is not your average Cuban-American. Very intelligent and just as awkward, he graduated from Harvard before becoming the Texas Solicitor General, where he argued cases before the U.S. Supreme Court on behalf of the state. With the retirement of Senator Kay Bailey Hutchison, a Senate seat from Texas was up for grabs. Cruz forced a runoff in the Republican primary and defeated David Dewhurst in a major upset, demonstrating the power of grassroots conservatism.<br><br>Ted Cruz became controversial as soon as he was sworn into Congress. A devout opponent of gun control, abortion, and tax increases, he was loathed by many of his colleagues. Even so, he has built a devoted base. Now, an even higher office is up for grabs: the presidency. This isn't going to be easy, though. To have any hope of winning, he must first secure the primary, unite the party, and, of course, defeat Hillary Clinton.</p>",
+            "color_hex": "#970417",
+            "secondary_color_hex": "#CD777B",
+            "is_active": 1,
+            "image_url": "https://i.imgur.com/3lia2Pb.png",
+            "electoral_victory_message": "<h3>Congratulations! You have won the 2016 election.</h3><p>In spite of a hard-fought challenge from Hillary Clinton, you have shocked the world with your election victory.</p><p>On the political front, you have the bully pulpit in your favor, but support in Congress in uncertain. Will you govern as a more traditional conservative, or will you make a break from orthodoxy?</p>",
+            "electoral_loss_message": "<h3>Sorry! You have lost the 2016 election.</h3><p>Many of your supporters are despondent that you have faltered to the likes of Hillary Clinton. Republicans in general believe this was a very winnable election, and are enraged that you came in to blow it. Luckily, there are any number of ways for you to take advantage of your newfound exposure. One rumor even has you founding a television station to profit from the aggrieved sensibilities of your followers. The future is in your hands.</p>",
+            "no_electoral_majority_message": "<h3>Wow! You have pulled out 2016 election.</h3><p>No candidate secured a majority in the Electoral College. However, the Republicans won a majority in Congress and will elevate you to the Presidency. Time will tell how things go in that regard. Any mutual affection between you and Congress is predicted to be short-lived, but you've pulled off a number of surprises to get this far.</p>",
+            "description_as_running_mate": "'",
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 201,
+        "fields": {
+            "first_name": "Hillary",
+            "last_name": "Clinton",
+            "election": 20,
+            "party": "Democrat",
+            "state": "New York",
+            "priority": 2,
+            "description": "<p>As expected, Hillary Clinton has carried her party's nomination, and now faces an unexpected opponent in Donald Trump. She was traditionally known as a mainstream Democrat, but tacked significantly to the left during the primary campaign. Clinton enters the general election in a strong position, but she'll be under relentless attack on a number of fronts. Can she make the case that she truly in touch with the American people -- or that Trump would be an even worse option?</p>",
+            "color_hex": "#2633BE",
+            "secondary_color_hex": "#83A1D6",
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/static/images/hillary-clinton-2016.jpg",
+            "electoral_victory_message": "<h3>Congratulations! You have won the 2016 election.</h3><p>In spite of a hard-fought challenge from Donald Trump, you have become the first woman elected to serve as President.</p><p>On the political front, it is unclear how much of your agenda you will be able to push forward with the current Congress. Hopefully your victory has helped Democrats further down the ballot. Start packing and prepare to move back into the White House!</p>",
+            "electoral_loss_message": "<h3>Sorry! You have lost the 2016 election.</h3><p>Many of your supporters are despondent that you have faltered to the likes of Donald Trump. Many in the left wing of the party are furious that you pushed their candidate aside, only to lose. Time will tell how Trump operates as President. As for you, a long and sometimes ambiguous political career seems to be coming to its end.</p>",
+            "no_electoral_majority_message": "<h3>Sorry! You have lost the 2016 election.</h3><p>No candidate secured a majority in the Electoral College. However, the Republicans won a majority in Congress and will elevate Trump to the Presidency. Time will tell how things go in that regard. As for you, a long and sometimes ambiguous political career seems to be coming to its end.</p>",
+            "description_as_running_mate": "'",
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 202,
+        "fields": {
+            "first_name": "Gary",
+            "last_name": "Johnson",
+            "election": 20,
+            "party": "Libertarian",
+            "state": "New Mexico",
+            "priority": 3,
+            "description": "'",
+            "color_hex": "#FBD800",
+            "secondary_color_hex": "#FBE79F",
+            "is_active": 0,
+            "image_url": "'",
+            "electoral_victory_message": "'",
+            "electoral_loss_message": "'",
+            "no_electoral_majority_message": "'",
+            "description_as_running_mate": "'",
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 203,
+        "fields": {
+            "first_name": "Jill",
+            "last_name": "Stein",
+            "election": 20,
+            "party": "Green",
+            "state": "Massachusetts",
+            "priority": 4,
+            "description": "'",
+            "color_hex": "#00A62F",
+            "secondary_color_hex": "#72D294",
+            "is_active": 0,
+            "image_url": "'",
+            "electoral_victory_message": "'",
+            "electoral_loss_message": "'",
+            "no_electoral_majority_message": "'",
+            "description_as_running_mate": "'",
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 50000,
+        "fields": {
+            "first_name": "Carly",
+            "last_name": "Fiorina",
+            "election": 20,
+            "party": "Republican",
+            "state": "California",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#970417",
+            "secondary_color_hex": "#CD777B",
+            "is_active": 0,
+            "image_url": "https://i.imgur.com/8aXb3FF.jpeg",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": "<p>Carly Fiorina would be an... interesting choice. As one of your former primary opponents and the ex-CEO of corporate giant Hewlett-Packard, she has little political experience, her only foray into politics was a failed 2010 Senate run in California.<br><br>Still, despite being unconventional, Fiorina could offer unique advantages. She might help reclaim portions of the female vote from Hillary Clinton and could serve as a bridge between moderates and conservatives heading into the general election. She also performed well in the primary debates.<br><br>On the other hand, Fiorina’s record at HP is mired in controversy. Thousands of employees were laid off during her tenure, and in 2005 she was forced out by shareholders amid the company’s poor performance. Her corporate past would inevitably become a liability for the ticket.",
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 50002,
+        "fields": {
+            "first_name": "Marco",
+            "last_name": "Rubio",
+            "election": 20,
+            "party": "Republican",
+            "state": "Florida",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#970417",
+            "secondary_color_hex": "#CD777B",
+            "is_active": 0,
+            "image_url": "https://i.imgur.com/DFsdP7c.jpeg",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": "<p>Marco Rubio was one of your main opponents in the primary, ultimately finishing third. Currently serving as a U.S. Senator from Florida, Rubio could be a major asset in that state. He should also help solidify your support among Cuban-Americans, with both of you sharing Cuban heritage. Florida’s 29 electoral votes are likely to prove decisive in this election, and Rubio’s popularity there could be crucial to securing victory on Election Day. He also has bona fides among independent voters and would bring a more moderate voice to the ticket.<br><br>Conversely, the two of you don’t exactly share warm relations, having waged hard-hitting campaigns against each other during the primary. Many of your supporters may be disappointed if you choose him as your running mate. He has also been criticized for coming across as over-polished, just like you. Still, if you’re looking for a safer pick, he’s an option.</p>",
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 50001,
+        "fields": {
+            "first_name": "Scott",
+            "last_name": "Walker",
+            "election": 20,
+            "party": "Republican",
+            "state": "Wisconsin",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#970417",
+            "secondary_color_hex": "#CD777B",
+            "is_active": 0,
+            "image_url": "https://i.imgur.com/IsHiahp.jpeg",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": "<p>Scott Walker is the current Governor of Wisconsin. Elected in 2010, he pushed a number of conservative policies during his time in office, most notably the Wisconsin Budget Repair Bill, which stripped most public sector workers of collective bargaining rights. The bill sparked massive backlash and quickly led to a recall effort. Walker survived the recall by a wide margin and became highly popular in conservative circles.<br><br>Walker ran for the nomination this cycle but dropped out early after a series of poor performances. He would certainly help you in the Upper Midwest, particularly in his home state of Wisconsin, which is looking close this year. However, if you're trying to expand your coalition, Walker would likely make that task more difficult.",
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    }
+]
+
+campaignTrail_temp.running_mate_json = [
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 118222,
+        "fields": {
+            "candidate": 200,
+            "running_mate": 50000
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 94412,
+        "fields": {
+            "candidate": 200,
+            "running_mate": 50001
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 156797,
+        "fields": {
+            "candidate": 200,
+            "running_mate": 50002
+        }
+    }
+]
+
+campaignTrail_temp.credits = "Themccain"
+
+campaignTrail_temp.opponents_default_json = [
+    {
+        "election": 20,
+        "candidates": [
+            200,
+            201,
+            202,
+            203
+        ]
+    }
+]
+
+campaignTrail_temp.opponents_weighted_json = [
+    {
+        "election": 20,
+        "candidates": [
+            200,
+            201,
+            202,
+            203
+        ]
+    }
+]
+
+campaignTrail_temp.temp_election_list = [
+    {
+        "id": 20,
+        "year": 2016,
+        "is_premium": 0,
+        "display_year": "2016cruz"
+    }
+]
+
+jet_data = {
+    "headerColor": "#f66601",
+    "windowColor": "#8640a3",
+    "containerColor": "#b15596",
+    "innerWindowColor": "#8640a3",
+    "bannerImageUrl": "https://i.imgur.com/3iXJcrL.png",
+    "backgroundImageUrl": "https://wallpaper-house.com/data/out/7/wallpaper2you_175134.jpg",
+    "endingTextColor": "#000000",
+    "customQuote": "“I’m not running because I desperately need 99 new friends in the U.S Senate.”\t",
+    "gameTitle": "New Campaign Trail"
+}
+
+//#startcode
+
+quotes = ["'I’m not running because I desperately need 99 new friends in the U.S Senate.' - Ted Cruz", "'The world is on fire! Yes! Your world is on fire!' - Ted Cruz", "'Let's dispel with this fiction that Barack Obama doesn't know what he's doing. He knows exactly what he's doing' - Marco Rubio", "'I don't know if sand can glow in the dark, but we're going to find out!' - Ted Cruz", "'I would be happy to invite Trump to church anytime he would like' - Ted Cruz", "'I am, you know, adamantly against illegal immigration.' - Hillary Clinton", "'The unions say last hired - first fired.' - Scott Walker", "'If Ted Cruz doesn’t clean up his act, stop cheating, & doing negative ads, I have standing to sue him for not being a natural born citizen.' - Donald Trump", "'I've always won, and I'm going to continue to win. And that's the way it is.' - Donald Trump"]
+customquote = quotes[Math.floor((Math.random() * quotes.length))]
+corrr = `\n<h2>New Campaign Trail</h2><font id='wittyquote' size='4' color='FFFFFF'><em>` + customquote + `</em></font>`;
+
+
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#f66601";
+
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#8640a3";
+
+document.getElementsByClassName("game_header")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
+
+$("#game_window")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_window;
+
+$(".container")[0].style.backgroundColor = "#b15596";
+
+document.getElementById("header").src = "https://i.imgur.com/3iXJcrL.png";
+
+document.body.background = "https://wallpaper-house.com/data/out/7/wallpaper2you_175134.jpg";
+
+document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#8640a3!important;}</style>";
+
+let style = document.createElement('style');
+style.type = 'text/css';
+style.id = 'dynamic-style';
+
+style.innerHTML = `
+  .campaign_trail_start_emphasis {
+    background-color: #8640A3;
+  }
+  a:-webkit-any-link {
+    color: #000000;
+  }
+`;
+
+document.head.appendChild(style);
+
+//#endcode
