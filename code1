@@ -658,8 +658,4 @@ style.innerHTML = `
 
 document.head.appendChild(style);
 
-nct_stuff.themes[nct_stuff.selectedTheme].coloring_inner_window_question_h3 = "#212830";
-
-nct_stuff.themes[nct_stuff.selectedTheme].coloring_overlay_window_h3 = "#212830";
-
 //#endcode
