@@ -652,6 +652,9 @@ style.innerHTML = `
     #menu_container {
       background-color: #8640A3 !important;
     }
+    .inner_window_question h3 {
+      background-color: #F8E0CF !important;
+    }
     #overall_result_container {
       background-color: #8640A3 !important;
 `;
