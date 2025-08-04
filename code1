@@ -321,6 +321,7 @@ e.creditsPage = () => {
     <h3>Music Credit</h3>
     <p> The Battle Cry of Freedom - Barrie Hingley
     <p>Where The Stars And Stripes And The Eagle Fly - Aaron Tippin
+    <p>God Bless the USA - Lee Greenwood</[>
     <p>Work in progress...<br><br></p>
     <h1><font color='#ff9100'>But most importantly...</font></h1>
     <div style='width: 70%;text-overflow: ellipsis;text-align:center;display: block;margin-left: auto;margin-right: auto;'>
@@ -367,7 +368,7 @@ e.credits = "<button onclick='e.creditsPage()'>Multiple People</button>"
 
 //#startcode
 
-quotes = ["'I’m not running because I desperately need 99 new friends in the U.S Senate.' - Ted Cruz", "'The world is on fire! Yes! Your world is on fire!' - Ted Cruz", "'Let's dispel with this fiction that Barack Obama doesn't know what he's doing. He knows exactly what he's doing'", "'I don't know if sand can glow in the dark, but we're going to find out!' - Ted Cruz", "'I would be happy to invite Trump to church anytime he would like.' - Ted Cruz", "'I am, you know, adamantly against illegal immigration.' - Hillary Clinton", "'The unions say last hired - first fired.' - Scott Walker", "'If Ted Cruz doesn’t clean up his act & stop doing negative ads, I have standing to sue him.' - Donald Trump", "'I've always won, and I'm going to continue to win. And that's the way it is.' - Donald Trump", "'Choose Cruz!'", "'I don't like losers.' - Donald Trump", "'If we nominate Trump, we will get destroyed ... and we will deserve it.'", "'Nobody on this stage is being investigated by the FBI for destroying evidence.' - Mike Huckabee"]
+quotes = ["'I’m not running because I desperately need 99 new friends in the U.S Senate.' - Ted Cruz", "'The world is on fire! Yes! Your world is on fire!' - Ted Cruz", "'Let's dispel with this fiction that Barack Obama doesn't know what he's doing. He knows exactly what he's doing'", "'I don't know if sand can glow in the dark, but we're going to find out!' - Ted Cruz", "'I would be happy to invite Trump to church anytime he'd like.' - Ted Cruz", "'I am, you know, adamantly against illegal immigration.' - Hillary Clinton", "'The unions say last hired - first fired.' - Scott Walker", "'If Ted Cruz doesn’t clean up his act & stop doing negative ads, I have standing to sue him.' - Donald Trump", "'I've always won, and I'm going to continue to win. And that's the way it is.' - Donald Trump", "'Choose Cruz!'", "'I don't like losers.' - Donald Trump", "'If we nominate Trump, we will get destroyed ... and we will deserve it.'", "'Nobody on this stage is being investigated by the FBI for destroying evidence.' - Mike Huckabee", "I'm just saying, not many conservatives come out of Manhattan.' - Ted Cruz", "'There it is. There it is everybody. The memorized 30 second speech!' - Chris Christie", "There's nothing more important then knowing the Constitution limits the government, not the people.' - Rand Paul", "'If we stand together, we can bring America back.' - Ted Cruz"]
 customquote = quotes[Math.floor((Math.random() * quotes.length))]
 corrr = `\n<h2>New Campaign Trail</h2><font id='wittyquote' size='4' color='FFFFFF'><em>` + customquote + `</em></font>`;
 
@@ -668,7 +669,7 @@ clamp = function(a, max, min, overflow=true) {
 
 var soundtracks = {
   0: {
-    name: "Defeat the Washington Cartel",
+    name: "We Can Bring America Back",
     tracklist: [
       {
         "name": "The Battle Cry of Freedom",
@@ -679,8 +680,8 @@ var soundtracks = {
         "url": "https://audio.jukehost.co.uk/50AuFK2OTd6hRyAMT0VZP1O0yqEXpg9j"
       },
       {
-        "name": "The Caretaker - B6; My Heart Will Stop in Joy",
-        "url": "https://cdn.discordapp.com/attachments/810034515334004766/1074544348198338610/The_Caretaker_-_My_heart_will_stop_in_joy-OSbj99SCBds.mp3"
+        "name": "God Bless the USA",
+        "url": "https://audio.jukehost.co.uk/A7K1Ha1w2kmRXPz8qC3DcNrQWxQTPTRs"
       },
       {
         "name": "The Caretaker - C1; A Losing Battle Is Raging",
