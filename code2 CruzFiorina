@@ -25,7 +25,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1000,
         "fields": {
             "priority": 1,
-            "description": "Here we go, Ted. This is not Solicitor General, nor the U.S Senate. It's the presidency. Your not going to just be appointed the position, and you aren't going to win easily like it's nothing either. This is going to be tough. What is your strategy going in? Real estate mogul and entrepreneur Donald Trump appears to be the frontrunner.",
+            "description": "Here we go, Ted. This isn’t Solicitor General, and it’s not the U.S. Senate. It’s the presidency. You’re not going to just be appointed to the position, and you aren’t going to win easily like it’s nothing, either. This is going to be tough. What’s your strategy going in? Real estate mogul and entrepreneur Donald Trump appears to be the frontrunner.",
             "likelihood": 1
         }
     },
@@ -34,7 +34,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1007,
         "fields": {
             "priority": 2,
-            "description": "Going into the Iowa primaries, a lot is at stake. A win here could establish you as the frontrunner, but a loss could spell disaster for your campaign. How will you win Iowa?",
+            "description": "Going into the Iowa caucus, a lot is at stake. Polls show you trailing Trump by a narrow margin, and a win here could establish you as the frontrunner, but a loss could severely damage your campaign’s momentum. How will you win Iowa?",
             "likelihood": 1
         }
     },
@@ -278,7 +278,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5016,
         "fields": {
             "question": 1007,
-            "description": "Rubio and Trump can't compete with us in our ground game. We have to focus on picking out every single evangelical voter we can get, whether they work in a farm or in a factory, and making sure they get out and vote. The stakes are too high for them to stay at home."
+            "description": "Rubio and Trump can’t compete with us on the ground. We need to focus on identifying every single evangelical voter we can, whether they work on a farm or in a factory, and making sure they turn out to vote. The stakes are too high for them to stay home."
         }
     },
     {
@@ -286,7 +286,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5017,
         "fields": {
             "question": 1007,
-            "description": "Iowans need to know that Trump will become a liberal as soon as he's elected. He has connections with Pelosi, Schumer, Clinton, and many others. He's donated $100,000 to the Clinton Foundation. Can you imagine what justices he'll appoint?"
+            "description": "Iowans need to understand that Trump will govern like a liberal the moment he’s elected. He has long-standing ties to Pelosi, Schumer, Clinton, and others, and he’s donated $100,000 to the Clinton Foundation. Can you imagine the kind of justices he would appoint?"
         }
     },
     {
@@ -294,7 +294,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5018,
         "fields": {
             "question": 1007,
-            "description": "It's important we remain above the fray. We'll let the other candidates attack each other while I continue campaigning on my record and how I will bring change to Washington. "
+            "description": "It’s important that we remain above the fray. Let the other candidates go after each other while I continue campaigning on my record and on how I intend to bring real change to Washington. "
         }
     },
     {
@@ -846,7 +846,7 @@ campaignTrail_temp.answers_json = [
         "pk": 20664,
         "fields": {
             "question": 1000,
-            "description": "Trump is really just a Democrat masquerading as a conservative. He'll switch-up as soon as he's elected into office. Don't take my word for it, Hillary Clinton was kissing guests at his wedding. I am the true candidate of the people in this race. "
+            "description": "Trump is really just a Democrat masquerading as a conservative. He’ll switch up the moment he’s elected to office. Don’t just take my word for it, Hillary Clinton was kissing guests at his wedding. I’m the true candidate of the people in this race. "
         }
     },
     {
@@ -854,7 +854,7 @@ campaignTrail_temp.answers_json = [
         "pk": 20665,
         "fields": {
             "question": 1000,
-            "description": "As much as I want to go guns blazing right now, we need to be realistic. Rubio and Trump seem to be the frontrunners, so by sticking with a positive campaign, I'll be able to emerge as a compromise candidate come the convention. "
+            "description": "As much as I want to go in guns blazing right now, we need to be realistic. Rubio and Trump appear to be the frontrunners, so by staying focused on a positive campaign, I’ll be positioned to emerge as the consensus candidate at the convention. "
         }
     },
     {
@@ -862,7 +862,7 @@ campaignTrail_temp.answers_json = [
         "pk": 20666,
         "fields": {
             "question": 1000,
-            "description": "During my time in politics, I've always been a conservative purist. I'm the only person in this race who time after time, has fought against the rapacious practice of abortion, fought against tax increases, and the disaster that was Obamacare. We should be focusing on securing Evangelical states in the primaries."
+            "description": "During my time in politics, I’ve always been a consistent conservative. I’m the only person in this race who, time after time, has stood against the rapacious practice of abortion, opposed tax increases, and fought the disaster that was Obamacare. We should be focused on securing Evangelical states in the primaries."
         }
     },
     {
@@ -870,7 +870,7 @@ campaignTrail_temp.answers_json = [
         "pk": 20667,
         "fields": {
             "question": 1000,
-            "description": "Trump is going to win the nomination if we don't do anything. I will meet with the RNC and other candidates to see if they could drop out, so that the anti-Trump vote won't be divided. I stand the best chance at defeating Clinton."
+            "description": "Trump is going to win the nomination if we don’t do anything. I intend to meet with the RNC and the other candidates to see if they’re willing to step aside, so the anti-Trump vote isn’t split. I believe I stand the best chance of defeating Clinton."
         }
     },
     {
@@ -878,7 +878,7 @@ campaignTrail_temp.answers_json = [
         "pk": 20676,
         "fields": {
             "question": 1007,
-            "description": "Didn't Ben Carson say he was dropping out? We have to tell as much of his voters about this as soon as possible. All of our campaign organizers need to head over to Carson supporters and tell them the news. They'll all go to me, hopefully."
+            "description": "Didn’t Ben Carson say he was dropping out? We need to get that message to as many of his voters as quickly as possible. All of our campaign organizers should reach out to Carson supporters and let them know, hopefully, they’ll come our way."
         }
     },
     {
@@ -8819,7 +8819,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 20665,
             "candidate": 200,
-            "answer_feedback": "Unfortunately, Rubio seems to be underperforming compared to what early polls had suggested, and it seems you'll be faced to take up the mantle as the main Trump opposition anyway."
+            "answer_feedback": "Unfortunately, Rubio appears to be underperforming compared to what early polls had suggested, and it seems you’ll be forced to take up the mantle as the main opposition to Trump anyway. Oh well."
         }
     },
     {
@@ -8828,7 +8828,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 20667,
             "candidate": 200,
-            "answer_feedback": "None of the candidates agreed to drop out this early in the race, but you were able to make surprising ground with the RNC. This puts you well on your way to becoming the establishment favorite."
+            "answer_feedback": "None of the candidates agreed to drop out this early in the race, despite a meeting with the Kasich campaign, but you were able to make surprising headway with the RNC, putting you well on your way to becoming the establishment favorite."
         }
     },
     {
@@ -8837,7 +8837,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 20666,
             "candidate": 200,
-            "answer_feedback": "Evangelical voters are one of the largest voting blocs in any Republican primary. Winning over them will be the key to victory."
+            "answer_feedback": "Evangelical voters are one of the largest voting blocs in any Republican primary, and winning them over will be key to victory."
         }
     },
     {
@@ -8846,7 +8846,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5016,
             "candidate": 200,
-            "answer_feedback": "This strategy works well — and you narrowly carry Iowa with 27% of the vote. This may be close after all."
+            "answer_feedback": "This strategy works well — and you narrowly carry Iowa with 27% of the vote. Soon after, you receive phone calls from the Huckabee, Santorum, and Fiorina campaigns, announcing their intentions to drop out and endorse your campaign. This may be close after all."
         }
     },
     {
@@ -8855,7 +8855,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5017,
             "candidate": 200,
-            "answer_feedback": "Your PACs and Trump's PACs end up getting into a vicious battle, and he gives you the nickname \"Lyin' Ted.\" The nickname starts going viral online. and the fight drains both of your resources, and Marco Rubio narrowly carries Iowa in an upset."
+            "answer_feedback": "Your PACs and Trump’s PACs end up in a vicious back-and-forth, and he gives you the nickname \"Lyin' Ted.\" The label starts to go viral online, and the fight drains both of your resources, allowing Marco Rubio to narrowly carry Iowa in an upset."
         }
     },
     {
@@ -8864,7 +8864,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5018,
             "candidate": 200,
-            "answer_feedback": "This strategy seems to work, as you narrowly carry Iowa over Trump in an upset. Unfortunately, Trump isn't going to give up so easily."
+            "answer_feedback": "This strategy seems to work, as you narrowly carry Iowa over Trump in an upset, apparently, many Iowans saw you as the one candidate not caught up in the Trump circus, and actually speaking to their concerns. Unfortunately, the Donald isn’t going to give up so easily."
         }
     },
     {
@@ -8873,7 +8873,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 20676,
             "candidate": 200,
-            "answer_feedback": "It's a controversial move. Ben Carson in fact didn't drop out, but it is still devastatingly effective, and you carry Iowa, much to Carson's dismay."
+            "answer_feedback": "It’s a controversial move, Ben Carson, in fact, hadn’t dropped out, but it proves devastatingly effective, and you carry Iowa, much to Dr. Carson’s, and not least of all Donald Trump’s, dismay, riding a wave of evangelical support."
         }
     },
     {
@@ -8891,7 +8891,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 20664,
             "candidate": 200,
-            "answer_feedback": "Donald Trump has a history of being affiliated with Democrats, and he is definitely vulnerable to these attacks. Unfortunately, your record is not perfect either, and Trump is likely going to strike at you as soon as he can."
+            "answer_feedback": "Donald Trump has a history of affiliations with Democrats, including a brief period of membership, and he’s certainly vulnerable to those attacks. Unfortunately, your record isn’t spotless either, and Trump is likely to go on the offensive the moment he sees an opening."
         }
     },
     {
