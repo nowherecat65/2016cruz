@@ -317,11 +317,10 @@ e.creditsPage = () => {
     <p>DecstarG for Music Player, VP Switcher, and Credits Screen</p>
     <p>General_Rise8708 for playtesting
     <p>Many more people who I talked to and gave me advice over the development of the mod!</p>
-    <p>A particular thank you to theanswerisme. His help greatly added to this project.
     <h3>Music Credit</h3>
-    <p> The Battle Cry of Freedom - Barrie Hingley
-    <p>Where The Stars And Stripes And The Eagle Fly - Aaron Tippin
-    <p>God Bless the USA - Lee Greenwood</[>
+    <p>God Bless the USA - Lee Greenwood</p>
+    <p>Where The Stars And Stripes And The Eagle Fly - Aaron Tippin</p>
+    <p>The Battle Cry of Freedom - Barrie Hingley</p>
     <p>Work in progress...<br><br></p>
     <h1><font color='#ff9100'>But most importantly...</font></h1>
     <div style='width: 70%;text-overflow: ellipsis;text-align:center;display: block;margin-left: auto;margin-right: auto;'>
@@ -672,16 +671,16 @@ var soundtracks = {
     name: "We Can Bring America Back",
     tracklist: [
       {
-        "name": "The Battle Cry of Freedom",
-        "url": "https://audio.jukehost.co.uk/C961f2ODHf2c26ZefTqoLYADeZWtJwfW"
+        "name": "God Bless the USA",
+        "url": "https://audio.jukehost.co.uk/A7K1Ha1w2kmRXPz8qC3DcNrQWxQTPTRs"
       },
       {
         "name": "Where The Stars And Stripes And The Eagle Fly",
         "url": "https://audio.jukehost.co.uk/50AuFK2OTd6hRyAMT0VZP1O0yqEXpg9j"
       },
       {
-        "name": "God Bless the USA",
-        "url": "https://audio.jukehost.co.uk/A7K1Ha1w2kmRXPz8qC3DcNrQWxQTPTRs"
+        "name": "The Battle Cry of Freedom",
+        "url": "https://audio.jukehost.co.uk/C961f2ODHf2c26ZefTqoLYADeZWtJwfW"
       },
       {
         "name": "The Caretaker - C1; A Losing Battle Is Raging",
