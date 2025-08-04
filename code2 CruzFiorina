@@ -8950,8 +8950,8 @@ campaignTrail_temp.answer_feedback_json = [
     }
 ]
 
-campaignTrail_temp.candidate_image_url = "https://i.postimg.cc/j5DTX7Vt/Ted.png";
-campaignTrail_temp.running_mate_image_url = "https://i.postimg.cc/3rD70mCZ/Heidi.png";
+campaignTrail_temp.candidate_image_url = "https://files.catbox.moe/llhlxu.png";
+campaignTrail_temp.running_mate_image_url = "https://files.catbox.moe/w8hx0l.png";
 campaignTrail_temp.candidate_last_name = "Cruz";
 campaignTrail_temp.running_mate_last_name = "For President";
 
