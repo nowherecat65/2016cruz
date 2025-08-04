@@ -1022,7 +1022,7 @@ campaignTrail_temp.answers_json = [
         "pk": 20678,
         "fields": {
             "question": 1006,
-            "description": "We need to take the attack to Trump, He is a liberal elitist who stands for New York values which is — pro abortion, pro gay marriage, and anti second amendment. I am the real conservative in this race."
+            "description": "We need to take the fight to Trump. He’s a liberal elitist who embodies New York values — pro-abortion, pro-gay marriage, and hostile to the Second Amendment. I’m the true conservative in this race."
         }
     },
     {
@@ -1030,7 +1030,7 @@ campaignTrail_temp.answers_json = [
         "pk": 20683,
         "fields": {
             "question": 1006,
-            "description": "I don't see why we need to change up our strategy. Trump's campaign will run out of steam eventually, and we'll pick up the remnants. We'll stay the course, and avoid making any controversial or aggressive statements."
+            "description": "I don't see why we need to change up our strategy. Trump’s campaign will run out of steam eventually, and we’ll be there to pick up the pieces. We’ll stay the course and steer clear of any controversial or overly aggressive statements."
         }
     },
     {
@@ -1038,7 +1038,7 @@ campaignTrail_temp.answers_json = [
         "pk": 20686,
         "fields": {
             "question": 1006,
-            "description": "I'd rather cut my losses in New Hampshire. The state has such few delegates and Trump is leading there by so much that it's not even worth trying to win it. We need to pour our efforts into other races early on, so we can win them on Super Tuesday."
+            "description": "I'd rather cut our losses in New Hampshire. The state has so few delegates, and Trump is leading there by so much, it's not even worth trying to win it. We need to pour our efforts into other early contests so we can actually win on Super Tuesday."
         }
     },
     {
@@ -1062,7 +1062,7 @@ campaignTrail_temp.answers_json = [
         "pk": 20715,
         "fields": {
             "question": 1006,
-            "description": "I'm skipping the debate. I can win without it. Besides, we don't want to give our opponents the opportunity to attack me live on stage."
+            "description": "I'm skipping the debate. I can win without it, besides, there's no reason to hand our opponents a live opportunity to take shots at me on stage."
         }
     },
     {
