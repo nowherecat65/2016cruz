@@ -417,6 +417,9 @@ style.innerHTML = `
     #menu_container {
       background-color: #8640A3 !important;
     }
+.overlay_window {
+            height: auto;
+		}
     #state_result_container {
       background-color: #8640A3 !important;
     }
