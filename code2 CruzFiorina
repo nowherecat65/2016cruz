@@ -398,7 +398,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5003,
         "fields": {
             "question": 1001,
-            "description": "Arkansas. The state is looking really close, and presents a golden opportunity with it's large Evangelical population. We're going to hit Little Rock, Pine Bluff, Fort Smith and Jonesboro by the time Super Tuesday comes around."
+            "description": "Arkansas. The state is looking real close, and it presents a golden opportunity with its large Evangelical population. We’re going to hit Little Rock, Pine Bluff, Fort Smith, and Jonesboro by the time Super Tuesday rolls around."
         }
     },
     {
@@ -406,7 +406,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5004,
         "fields": {
             "question": 1001,
-            "description": "Tennessee. It's leaning heavily towards Trump, but I'm confident we can close the gap by Super Tuesday. This state will be critical to our chances. We'll be sure to hit Nashville and Knoxville, with a quick stop over in Memphis, before voting begins."
+            "description": "Tennessee. It’s leaning hard toward Trump, but I’m confident we can close the gap by Super Tuesday. This state is critical to our path forward. We’ll hit Nashville and Knoxville, and make a quick stop in Memphis, before the voting begins."
         }
     },
     {
@@ -1046,7 +1046,7 @@ campaignTrail_temp.answers_json = [
         "pk": 20688,
         "fields": {
             "question": 1001,
-            "description": "Georgia. We'll need to win the Peach State if we want any hope of winning this thing. We're going to campaign in all the areas we can find. We'll stop by on the Florida border, too, if we have the time, but for now, we'll focus on Georgia."
+            "description": "Georgia. We’ll need to win the Peach State if we want any shot at taking this thing. We’re going to campaign in every corner we can find. We might swing down to the Florida line if there’s time, but for now, Georgia’s where we plant our flag."
         }
     },
     {
@@ -1054,7 +1054,7 @@ campaignTrail_temp.answers_json = [
         "pk": 20689,
         "fields": {
             "question": 1001,
-            "description": "Minnesota. The Twin Cities might be Democratic, but the state is conservative at heart. It's within reach if we work hard enough. I'm going to go on a marathon tour of the state and hit as many places as I can between Fergus Falls and Rochester."
+            "description": "Minnesota. The Twin Cities may lean Democratic, but the state has a conservative heart. It’s within reach if we press hard enough. I’m going to hit the trail on a marathon tour, from Fergus Falls to Rochester, and make our case every step of the way."
         }
     },
     {
