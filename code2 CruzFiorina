@@ -8958,7 +8958,7 @@ campaignTrail_temp.running_mate_last_name = "For President";
 const customStyling = document.createElement("style");
 customStyling.innerHTML = `
 #campaign_sign {
-    background-image: url("https://i.postimg.cc/0285wrtX/mdoiu8-5.png");
+    background-image: url("https://i.postimg.cc/bNCPSgSd/mdoiu8-6.png");
     background-size: cover;
     border-color: #c9c9c9;    
     border-width: .01em;
