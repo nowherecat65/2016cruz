@@ -197,7 +197,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1019,
         "fields": {
             "priority": 4,
-            "description": "March 4th – You’ve finally pulled through. On Super Tuesday, you soundly defeated Trump, sweeping up several key states in the process. Though the Donald refuses to drop out, you’re now on track to win the Republican nomination. What now?",
+            "description": "March 2nd – You’ve finally pulled through. On Super Tuesday, you soundly defeated Trump, sweeping up several key states in the process. Though the Donald refuses to drop out, you’re now on track to win the Republican nomination. What now?",
             "likelihood": 0.5
         }
     },
