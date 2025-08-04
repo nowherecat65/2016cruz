@@ -667,6 +667,11 @@ style.innerHTML = `
     #state_result_container {
       background-color: #8640A3 !important;
     }
+#map_container {
+  background-color: #F4F1F7 !important;
+  background-size: 150% 150%;
+  border-radius: 0.75px;
+}
     #overall_result_container {
       background-color: #8640A3 !important;
 `;
