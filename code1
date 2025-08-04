@@ -658,6 +658,9 @@ style.innerHTML = `
     #state_result h3 {
       background-color: #F8E0CF !important;
     }
+    .overlay_window h3 {
+      background-color: #F8E0CF !important;
+    }
     #overall_result h3 {
       background-color: #F8E0CF !important;
     }
