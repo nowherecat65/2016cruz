@@ -402,6 +402,9 @@ style.innerHTML = `
     .inner_window_question h3 {
       background-color: #F8E0CF !important;
     }
+    .overlay_window h3  {
+      background-color: #F8E0CF !important;
+    }
     #state_info h3 {
       background-color: #F8E0CF !important;
     }
