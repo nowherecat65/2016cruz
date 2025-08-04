@@ -9070,7 +9070,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 20678,
             "candidate": 200,
-            "answer_feedback": "This attack works somewhat well in parts of rural New Hampshire, and you place a solid third, narrowly behind John Kasich but in front of Jeb Bush. In any case, the main focus of last night was Rubio's embarrassing debate performance."
+            "answer_feedback": "This attack works somewhat well in parts of rural New Hampshire, and you place a solid third, narrowly behind John Kasich but ahead of Jeb Bush. Still, the main focus last night was Rubio’s embarrassing debate performance. Let’s hope Super Tuesday treats us better."
         }
     },
     {
@@ -9088,7 +9088,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 20683,
             "candidate": 200,
-            "answer_feedback": "Unfortunately, your boring debate performance means your deprived of any kind of interesting media coverage, and Trump soundly defeats you on Super Tuesday. You keep resisting for a little while, but after Trump wins Indiana decisively, your forced to suspend your campaign."
+            "answer_feedback": "Unfortunately, your boring debate performance means your deprived of any kind of interesting media coverage, and Trump soundly defeats you on Super Tuesday. You hold out for a little while longer, but after he wins Indiana decisively, you're forced to suspend your campaign."
         }
     },
     {
@@ -9097,7 +9097,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 20686,
             "candidate": 200,
-            "answer_feedback": "Your campaign intensifies efforts in North Carolina, Arkansas, Texas, and Indiana, while everybody's campaigning in New Hampshire. Time will tell if this strategy works or not."
+            "answer_feedback": "Your campaign intensifies efforts in North Carolina, Arkansas, Texas, and Indiana, while everyone else is focused on New Hampshire. Time will tell if this strategy works or not."
         }
     },
     {
@@ -9124,7 +9124,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 20715,
             "candidate": 200,
-            "answer_feedback": "Why!? Your a skilled debater and you desperately need the coverage! Trump defeats you in NH, SC, and on most Super Tuesday states, and you suspend your campaign the day after."
+            "answer_feedback": "Why?! You're a skilled debater, and you desperately need the coverage. Trump defeats you in New Hampshire, South Carolina, and most Super Tuesday states, and you suspend your campaign the next day, leaving John Kasich as the last man standing."
         }
     },
     {
