@@ -1,3 +1,13 @@
+// vp switcher
+// the code 1 part hides it in the event you just want candidates selected, the code 2 part causes the screen to show up during your code 2
+// credit Decstar
+
+
+// your code 1 should look like this
+
+if (!e.done) {
+e.done = true;
+
 RecReading=true
 campaignTrail_temp.global_parameter_json = [
     {
@@ -23,270 +33,6 @@ campaignTrail_temp.global_parameter_json = [
         }
     }
 ]
-
-// Initialise custom music
-
-$("#music_player")[0].children[0].style.display="none"
-$("#music_player")[0].children[1].style.display="none"
-
-document.getElementById("modLoadReveal").style.display="none"
-document.getElementById("modloaddiv").style.display="none"
-
-musicBox = document.getElementById("music_player")
-musicBox.style.display=""
-
-var trackSel;
-e = campaignTrail_temp
-e.selectedSoundtrack = 0
-
-toTime = (seconds) => {
-  var date = new Date(null);
-  date.setSeconds(seconds);
-  return date.toISOString().substr(11, 8);
-}
-
-generateTime = () => {
-    // Get the audio element
-    var audio = document.getElementById("campaigntrailmusic");
-
-    timeTracker = document.createElement("div");
-    timeTracker.style = `
-      text-align:left;
-      border-style:solid;
-      border-width:3px;
-      height:150px;
-      width:200px;
-      background-color:#999999;
-      float:right;
-      padding: 10px;
-    `
-    $("#trackSelParent")[0].prepend(timeTracker);
-    $("#trackSelParent")[0].prepend(document.createElement("br"));
-
-    // Create a new element to display the current position of the audio
-    var positionDisplay = document.createElement("gg");
-    positionDisplay.id = "position-display";
-
-    // Create a new slider element to change the time
-    var timeSlider = document.createElement("input");
-    timeSlider.type = "range";
-    timeSlider.min = 0;
-    timeSlider.max = 1;
-    timeSlider.step = 0.001;
-    timeSlider.value = 0;
-    timeSlider.style.width = "200px";
-    timeSlider.id = "time-slider";
-
-    var pausePlay = document.createElement("button");
-    pausePlay.id = "position-display";
-    pausePlay.innerHTML = "<b>Pause</b>"
-    pausePlay.style.width = "100%";
-
-
-    pausePlay.addEventListener("click", event => {
-      event.preventDefault();
-      updatePositionDisplay();
-      let audio = document.getElementById("campaigntrailmusic");
-      if (audio.paused) {
-        audio.play();
-        event.target.innerHTML = "<b>Pause</b>";
-        return;
-      }
-      audio.pause();
-      event.target.innerHTML = "<b>Play</b>";
-      return;
-    })
-
-    var volumeLabel = document.createElement("gg");
-    volumeLabel.id = "volume-label";
-    volumeLabel.innerHTML = "<br><b>Volume: </b>"
-
-    var volumeSlider = document.createElement("input");
-    volumeSlider.type = "range";
-    volumeSlider.min = 0;
-    volumeSlider.max = 1;
-    volumeSlider.step = 0.001;
-    volumeSlider.value = 0;
-    volumeSlider.style.width = "200px";
-    volumeSlider.id = "volume-slider";
-
-    volumeSlider.value = audio.volume;
-
-    timeTracker.appendChild(pausePlay);
-    timeTracker.appendChild(document.createElement("br"));
-    timeTracker.appendChild(document.createElement("br"));
-    timeTracker.appendChild(positionDisplay);
-    timeTracker.appendChild(timeSlider);
-    timeTracker.appendChild(volumeLabel);
-    timeTracker.appendChild(volumeSlider);
-
-    updatePositionDisplay();
-
-    //for (let i = 0; i < 10; i++)
-    //timeTracker.append(document.createElement("br"));
-
-
-    // Function to update the position display
-    function updatePositionDisplay() {
-      positionDisplay.innerHTML = "<b>Time:</b> " + toTime(audio.currentTime) + "<br>";
-      timeSlider.value = audio.duration ? audio.currentTime / audio.duration : 0;
-    }
-
-    // Function to change the time of the audio
-    function changeTime() {
-      positionDisplay.innerHTML = "<b>Time:</b> " + toTime(audio.currentTime) + "<br>";
-      audio.currentTime = timeSlider.value * audio.duration;
-    }
-
-    updateVolume = event => {
-      audio.volume = event.target.value;
-    }
-    
-    // Update the position display and slider every second
-    setInterval(updatePositionDisplay, 1000);
-
-    // Listen for changes to the time slider and change the time of the audio
-    timeSlider.addEventListener("input", changeTime);
-    volumeSlider.addEventListener("input", updateVolume)
-}
-
-function newMusicPlayer() {
-  trackSel = document.createElement("div");
-  trackSel.id = "trackSelParent"
-  let z = `<br><br><br><br><br><br><br><br><br><br><div id='trackSel' style="text-align:left;border-style:solid;border-width:3px;overflow-y: scroll;overflow-x: hidden;height:200px; width:400px;background-color:#999999;float:right;">`
-  z += `<b><select id='selectSoundtrack'><option value='`+soundtracks[e.selectedSoundtrack].name+`'>`+soundtracks[e.selectedSoundtrack].name+"</option>"
-  for (i in soundtracks) {
-    if (soundtracks[e.selectedSoundtrack] != soundtracks[i]) {
-      z += `<option value='`+soundtracks[i].name+`'>`+soundtracks[i].name+`</option>`
-    }
-  }
-  z += `</select></b><br><br>`
-  // <label><input type="radio" name="option" value="option1">Option 1</label><br>
-  for (i in soundtracks[e.selectedSoundtrack].tracklist) {
-    let a = soundtracks[e.selectedSoundtrack].tracklist[i]
-    let b = `<label><input class="trackSelector" type="radio" name="trackSelector" value="`+i+`">`+a.name+`</label><br>`
-    z += b
-  }
-  z += "</div><br><br>"
-  trackSel.innerHTML = z
-
-  // select correct song
-
-  musicBox.appendChild(trackSel);
-  Array.from(document.getElementById("trackSel").children).filter(f=>{
-    return f.tagName == "LABEL"
-  }).map(f=>f.children[0])[0].checked = true
-
-  // set soundtrack changer
-
-  soundtrackSelector = document.getElementById("selectSoundtrack")
-  soundtrackSelector.onchange = function() {
-    for (i in soundtracks) {
-      if (soundtracks[i].name == soundtrackSelector.value) {
-        e.selectedSoundtrack = i
-        break
-      }
-    }
-    document.getElementById("trackSelParent").remove()
-    newMusicPlayer()
-  }
-
-  var matches = document.querySelectorAll('.trackSelector');
-
-  for (match in matches) {
-    matches[match].onchange = function() {
-      audio = $("#campaigntrailmusic")[0];
-      audio.src = soundtracks[e.selectedSoundtrack].tracklist[this.value].url
-      audio.currentTime = 0
-    }
-  }
-
-  musicBox.children[2].loop = false
-  musicBox.children[2].src = soundtracks[e.selectedSoundtrack].tracklist[0].url
-
-  musicBox.children[2].onended = function() {
-    console.log("next track")
-    let selected = Number(document.querySelector('input[name="trackSelector"]:checked').value);
-    let newSel = clamp(selected+1, soundtracks[e.selectedSoundtrack].tracklist.length-1, 0)
-    let buttons = Array.from(document.getElementById("trackSel").children).filter(f=>{
-      return f.tagName == "LABEL"
-    }).map(f=>f.children[0])
-    //let selectedIndex = buttons.map(f=>f.children[0]).map(f=>f.checked)
-    buttons[newSel].click()
-  }
-
-  for (w = 0; w < 7; w++) {
-    document.getElementById("trackSelParent").appendChild(document.createElement("br"))
-  }
-  
-  generateTime();
-}
-
-clamp = function(a, max, min, overflow=true) {
-  if (overflow) {
-    return a > max ? min : a < min ? max : a;
-  }
-  return a > max ? max : a < min ? min : a;
-}
-
-
-// Track list
-
-var soundtracks = {
-  0: {
-    name: "Everywhere at the End of Time",
-    tracklist: [
-      {
-        "name": "The Caretaker - A1; It's Just a Burning Memory",
-        "url": "https://cdn.discordapp.com/attachments/810034515334004766/1074235127300898837/a1.mp3"
-      },
-      {
-        "name": "The Caretaker - B1; All That Follows Is True",
-        "url": "https://cdn.discordapp.com/attachments/810034515334004766/1074235125669298196/b1.mp3"
-      },
-      {
-        "name": "The Caretaker - B6; My Heart Will Stop in Joy",
-        "url": "https://cdn.discordapp.com/attachments/810034515334004766/1074544348198338610/The_Caretaker_-_My_heart_will_stop_in_joy-OSbj99SCBds.mp3"
-      },
-      {
-        "name": "The Caretaker - C1; A Losing Battle Is Raging",
-        "url": "https://cdn.discordapp.com/attachments/810034515334004766/1074235126000660490/c1.mp3"
-      },
-      {
-        "name": "The Caretaker - D1; I Still Feel As Though I Am Me",
-        "url": "https://cdn.discordapp.com/attachments/810034515334004766/1074235126394929212/d1.mp3"
-      },
-      {
-        "name": "The Caretaker - E1; Back There Benjamin",
-        "url": "https://cdn.discordapp.com/attachments/810034515334004766/1074235126654959696/e1.mp3"
-      },
-      {
-        "name": "The Caretaker - E2; And Heart Breaks",
-        "url": "https://cdn.discordapp.com/attachments/810034515334004766/1078102500164522044/e2.mp3"
-      },
-      {
-        "name": "The Caretaker - F1; Gradations of Arms Length",
-        "url": "https://cdn.discordapp.com/attachments/810034515334004766/1074235126977933413/f1.mp3"
-      },
-      {
-        "name": "The Caretaker - G1; Post Awareness Confusions",
-        "url": "https://cdn.discordapp.com/attachments/932087077472993350/1074234695774113792/g1.mp3"
-      },
-      {
-        "name": "The Caretaker - N1; Sudden Time Regression into Isolation",
-        "url": "https://cdn.discordapp.com/attachments/932087077472993350/1074234813663420476/n1.mp3"
-      },
-      {
-        "name": "The Caretaker - R1; Place in the World Fades Away",
-        "url": "https://cdn.discordapp.com/attachments/932087077472993350/1074233871526268928/r1.mp3"
-      }
-    ]
-  }
-}
-
-// Set up new music player
-
-newMusicPlayer()
 
 campaignTrail_temp.election_json = [
     {
@@ -563,18 +309,22 @@ e.creditsPage = () => {
     <p><font color='#ff9100'>TheMcCain</font></p>
     <h3>Writing</h3>
     <p><font color='#ff9100'>TheMcCain</font></p>
-    <p><font color='#4370f7'>theanswerisme</font><p>
-    <h3>Misc.</h3>
+    <p><font color='#4370f7'>theanswerisme</font></p>
+    <h3>Theming</h3>
+    <p><font color='#4370f7'>theanswerisme</font></p>
+    <h3>Miscellaneous</h3>
     <p>mp4clout for making the banner
-    <p>DecstarG for Music Player and this Credits Page</p>
-    <p>ListMan38 for his CYOA candidate switcher that he let me borrow
+    <p>DecstarG for Music Player, VP Switcher, and Credits Screen</p>
+    <p>General_Rise8708 for playtesting
     <p>Many more people who I talked to and gave me advice over the development of the mod!</p>
-    <p>A particular thank you to theanswerisme. His advice greatly helped this project.
+    <p>A particular thank you to theanswerisme. His help greatly added to this project.
     <h3>Music Credit</h3>
-    <p>Work in progress...</p><br><br>
+    <p> The Battle Cry of Freedom - Barrie Hingley
+    <p>Where The Stars And Stripes And The Eagle Fly - Aaron Tippin
+    <p>Work in progress...<br><br></p>
     <h1><font color='#ff9100'>But most importantly...</font></h1>
     <div style='width: 70%;text-overflow: ellipsis;text-align:center;display: block;margin-left: auto;margin-right: auto;'>
-    <p>You. Thank you for playing.</p>
+    <p>You. Thank you for playing.<p>
     </div>
   `
   changeGameDisp(true);
@@ -613,7 +363,7 @@ e.creditsPage = () => {
 
 }
 
-e.credits = "<button onclick='e.creditsPage()'>Credits</button>"
+e.credits = "<button onclick='e.creditsPage()'>Multiple People</button>"
 
 //#startcode
 
@@ -658,9 +408,6 @@ style.innerHTML = `
     #state_result h3 {
       background-color: #F8E0CF !important;
     }
-    .overlay_window h3 {
-      background-color: #F8E0CF !important;
-    }
     #overall_result h3 {
       background-color: #F8E0CF !important;
     }
@@ -682,3 +429,289 @@ style.innerHTML = `
 document.head.appendChild(style);
 
 //#endcode
+
+styling = document.createElement("style");
+document.head.appendChild(styling);
+
+styling.innerHTML = `
+#opponent_selection_id_back {
+    display: none;
+}
+`
+
+let z = new MutationObserver((mutationsList, observer) => {
+    let runningMateSummary = document.querySelector("#running_mate_summary");
+    if (runningMateSummary) {
+        $("#running_mate_id_button").click();
+        observer.disconnect()
+    }
+});
+
+
+z.observe(document, { subtree: true, childList: true });
+
+}
+
+// Initialise custom music
+
+$("#music_player")[0].children[0].style.display="none"
+$("#music_player")[0].children[1].style.display="none"
+
+document.getElementById("modLoadReveal").style.display="none"
+document.getElementById("modloaddiv").style.display="none"
+
+musicBox = document.getElementById("music_player")
+musicBox.style.display=""
+
+var trackSel;
+e = campaignTrail_temp
+e.selectedSoundtrack = 0
+
+toTime = (seconds) => {
+  var date = new Date(null);
+  date.setSeconds(seconds);
+  return date.toISOString().substr(11, 8);
+}
+
+generateTime = () => {
+    // Get the audio element
+    var audio = document.getElementById("campaigntrailmusic");
+
+    timeTracker = document.createElement("div");
+    timeTracker.style = `
+      text-align:left;
+      border-style:solid;
+      border-width:3px;
+      height:150px;
+      width:200px;
+      background-color:#999999;
+      float:right;
+      padding: 10px;
+    `
+    $("#trackSelParent")[0].prepend(timeTracker);
+    $("#trackSelParent")[0].prepend(document.createElement("br"));
+
+    // Create a new element to display the current position of the audio
+    var positionDisplay = document.createElement("gg");
+    positionDisplay.id = "position-display";
+
+    // Create a new slider element to change the time
+    var timeSlider = document.createElement("input");
+    timeSlider.type = "range";
+    timeSlider.min = 0;
+    timeSlider.max = 1;
+    timeSlider.step = 0.001;
+    timeSlider.value = 0;
+    timeSlider.style.width = "200px";
+    timeSlider.id = "time-slider";
+
+    var pausePlay = document.createElement("button");
+    pausePlay.id = "position-display";
+    pausePlay.innerHTML = "<b>Pause</b>"
+    pausePlay.style.width = "100%";
+
+
+    pausePlay.addEventListener("click", event => {
+      event.preventDefault();
+      updatePositionDisplay();
+      let audio = document.getElementById("campaigntrailmusic");
+      if (audio.paused) {
+        audio.play();
+        event.target.innerHTML = "<b>Pause</b>";
+        return;
+      }
+      audio.pause();
+      event.target.innerHTML = "<b>Play</b>";
+      return;
+    })
+
+    var volumeLabel = document.createElement("gg");
+    volumeLabel.id = "volume-label";
+    volumeLabel.innerHTML = "<br><b>Volume: </b>"
+
+    var volumeSlider = document.createElement("input");
+    volumeSlider.type = "range";
+    volumeSlider.min = 0;
+    volumeSlider.max = 1;
+    volumeSlider.step = 0.001;
+    volumeSlider.value = 0;
+    volumeSlider.style.width = "200px";
+    volumeSlider.id = "volume-slider";
+
+    volumeSlider.value = audio.volume;
+
+    timeTracker.appendChild(pausePlay);
+    timeTracker.appendChild(document.createElement("br"));
+    timeTracker.appendChild(document.createElement("br"));
+    timeTracker.appendChild(positionDisplay);
+    timeTracker.appendChild(timeSlider);
+    timeTracker.appendChild(volumeLabel);
+    timeTracker.appendChild(volumeSlider);
+
+    updatePositionDisplay();
+
+    //for (let i = 0; i < 10; i++)
+    //timeTracker.append(document.createElement("br"));
+
+
+    // Function to update the position display
+    function updatePositionDisplay() {
+      positionDisplay.innerHTML = "<b>Time:</b> " + toTime(audio.currentTime) + "<br>";
+      timeSlider.value = audio.duration ? audio.currentTime / audio.duration : 0;
+    }
+
+    // Function to change the time of the audio
+    function changeTime() {
+      positionDisplay.innerHTML = "<b>Time:</b> " + toTime(audio.currentTime) + "<br>";
+      audio.currentTime = timeSlider.value * audio.duration;
+    }
+
+    updateVolume = event => {
+      audio.volume = event.target.value;
+    }
+    
+    // Update the position display and slider every second
+    setInterval(updatePositionDisplay, 1000);
+
+    // Listen for changes to the time slider and change the time of the audio
+    timeSlider.addEventListener("input", changeTime);
+    volumeSlider.addEventListener("input", updateVolume)
+}
+
+function newMusicPlayer() {
+  trackSel = document.createElement("div");
+  trackSel.id = "trackSelParent"
+  let z = `<br><br><br><br><br><br><br><br><br><br><div id='trackSel' style="text-align:left;border-style:solid;border-width:3px;overflow-y: scroll;overflow-x: hidden;height:200px; width:400px;background-color:#999999;float:right;">`
+  z += `<b><select id='selectSoundtrack'><option value='`+soundtracks[e.selectedSoundtrack].name+`'>`+soundtracks[e.selectedSoundtrack].name+"</option>"
+  for (i in soundtracks) {
+    if (soundtracks[e.selectedSoundtrack] != soundtracks[i]) {
+      z += `<option value='`+soundtracks[i].name+`'>`+soundtracks[i].name+`</option>`
+    }
+  }
+  z += `</select></b><br><br>`
+  // <label><input type="radio" name="option" value="option1">Option 1</label><br>
+  for (i in soundtracks[e.selectedSoundtrack].tracklist) {
+    let a = soundtracks[e.selectedSoundtrack].tracklist[i]
+    let b = `<label><input class="trackSelector" type="radio" name="trackSelector" value="`+i+`">`+a.name+`</label><br>`
+    z += b
+  }
+  z += "</div><br><br>"
+  trackSel.innerHTML = z
+
+  // select correct song
+
+  musicBox.appendChild(trackSel);
+  Array.from(document.getElementById("trackSel").children).filter(f=>{
+    return f.tagName == "LABEL"
+  }).map(f=>f.children[0])[0].checked = true
+
+  // set soundtrack changer
+
+  soundtrackSelector = document.getElementById("selectSoundtrack")
+  soundtrackSelector.onchange = function() {
+    for (i in soundtracks) {
+      if (soundtracks[i].name == soundtrackSelector.value) {
+        e.selectedSoundtrack = i
+        break
+      }
+    }
+    document.getElementById("trackSelParent").remove()
+    newMusicPlayer()
+  }
+
+  var matches = document.querySelectorAll('.trackSelector');
+
+  for (match in matches) {
+    matches[match].onchange = function() {
+      audio = $("#campaigntrailmusic")[0];
+      audio.src = soundtracks[e.selectedSoundtrack].tracklist[this.value].url
+      audio.currentTime = 0
+    }
+  }
+
+  musicBox.children[2].loop = false
+  musicBox.children[2].src = soundtracks[e.selectedSoundtrack].tracklist[0].url
+
+  musicBox.children[2].onended = function() {
+    console.log("next track")
+    let selected = Number(document.querySelector('input[name="trackSelector"]:checked').value);
+    let newSel = clamp(selected+1, soundtracks[e.selectedSoundtrack].tracklist.length-1, 0)
+    let buttons = Array.from(document.getElementById("trackSel").children).filter(f=>{
+      return f.tagName == "LABEL"
+    }).map(f=>f.children[0])
+    //let selectedIndex = buttons.map(f=>f.children[0]).map(f=>f.checked)
+    buttons[newSel].click()
+  }
+
+  for (w = 0; w < 7; w++) {
+    document.getElementById("trackSelParent").appendChild(document.createElement("br"))
+  }
+  
+  generateTime();
+}
+
+clamp = function(a, max, min, overflow=true) {
+  if (overflow) {
+    return a > max ? min : a < min ? max : a;
+  }
+  return a > max ? max : a < min ? min : a;
+}
+
+
+// Track list
+
+var soundtracks = {
+  0: {
+    name: "Defeat the Washington Cartel",
+    tracklist: [
+      {
+        "name": "The Battle Cry of Freedom",
+        "url": "https://audio.jukehost.co.uk/C961f2ODHf2c26ZefTqoLYADeZWtJwfW"
+      },
+      {
+        "name": "Where The Stars And Stripes And The Eagle Fly",
+        "url": "https://audio.jukehost.co.uk/50AuFK2OTd6hRyAMT0VZP1O0yqEXpg9j"
+      },
+      {
+        "name": "The Caretaker - B6; My Heart Will Stop in Joy",
+        "url": "https://cdn.discordapp.com/attachments/810034515334004766/1074544348198338610/The_Caretaker_-_My_heart_will_stop_in_joy-OSbj99SCBds.mp3"
+      },
+      {
+        "name": "The Caretaker - C1; A Losing Battle Is Raging",
+        "url": "https://cdn.discordapp.com/attachments/810034515334004766/1074235126000660490/c1.mp3"
+      },
+      {
+        "name": "The Caretaker - D1; I Still Feel As Though I Am Me",
+        "url": "https://cdn.discordapp.com/attachments/810034515334004766/1074235126394929212/d1.mp3"
+      },
+      {
+        "name": "The Caretaker - E1; Back There Benjamin",
+        "url": "https://cdn.discordapp.com/attachments/810034515334004766/1074235126654959696/e1.mp3"
+      },
+      {
+        "name": "The Caretaker - E2; And Heart Breaks",
+        "url": "https://cdn.discordapp.com/attachments/810034515334004766/1078102500164522044/e2.mp3"
+      },
+      {
+        "name": "The Caretaker - F1; Gradations of Arms Length",
+        "url": "https://cdn.discordapp.com/attachments/810034515334004766/1074235126977933413/f1.mp3"
+      },
+      {
+        "name": "The Caretaker - G1; Post Awareness Confusions",
+        "url": "https://cdn.discordapp.com/attachments/932087077472993350/1074234695774113792/g1.mp3"
+      },
+      {
+        "name": "The Caretaker - N1; Sudden Time Regression into Isolation",
+        "url": "https://cdn.discordapp.com/attachments/932087077472993350/1074234813663420476/n1.mp3"
+      },
+      {
+        "name": "The Caretaker - R1; Place in the World Fades Away",
+        "url": "https://cdn.discordapp.com/attachments/932087077472993350/1074233871526268928/r1.mp3"
+      }
+    ]
+  }
+}
+
+// Set up new music player
+
+newMusicPlayer()
