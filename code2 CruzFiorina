@@ -179,7 +179,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1006,
         "fields": {
             "priority": 2,
-            "description": "The next primary is in New Hampshire, which is just days away, and there is a debate coming up. A strong performance here could help significantly in winning the Granite State. What's your course of action?",
+            "description": "The next primary is in New Hampshire, which is just days away, and there is a debate coming up. A strong showing could help you gain ground in the Granite State, where Trump holds a clear lead in the polls. What’s your course of action?",
             "likelihood": 1
         }
     },
@@ -188,7 +188,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1001,
         "fields": {
             "priority": 3,
-            "description": "Super Tuesday is just days away. Your campaign is feverishly working to mobilize every single Evangelical it can find. What state do you want to pour your last remainings resources into the most before the big day arrives? ",
+            "description": "Super Tuesday is just days away. Your campaign is feverishly working to mobilize every single Evangelical it can find, and cutting a dozen new ads. Which state do you want to pour your remaining resources into most before the big day arrives? ",
             "likelihood": 1
         }
     },
@@ -197,7 +197,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1019,
         "fields": {
             "priority": 4,
-            "description": "March 2nd - You've finally pulled through. On Super Tuesday, you soundly defeated Trump, sweeping up some big states in the process. Your now on track to win the Republican nomination. What now?",
+            "description": "March 4th – You’ve finally pulled through. On Super Tuesday, you soundly defeated Trump, sweeping up several key states in the process. Though the Donald refuses to drop out, you’re now on track to win the Republican nomination. What now?",
             "likelihood": 0.5
         }
     },
@@ -206,7 +206,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1008,
         "fields": {
             "priority": 4,
-            "description": "Trump is furious that he lost the primary, and he is now demanding major concessions in policy, cabinet appointments, and a primetime speaking slot at the RNC. What will you do?",
+            "description": "Thanks to your strong showing in the primaries — and a bit of backroom chicanery from the RNC — Donald Trump is now mathematically blocked from securing the nomination, leaving you the presumptive nominee. He’s demanding major concessions on policy, cabinet picks, and a primetime speaking slot at the convention. What do you do?",
             "likelihood": 1
         }
     },
