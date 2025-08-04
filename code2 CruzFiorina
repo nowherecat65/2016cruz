@@ -1843,7 +1843,7 @@ campaignTrail_temp.issues_json = [
             "stance_1": "Very Conservative",
             "stance_desc_1": "Believes illegal immigrants bring economic ruin, drugs, and crimes into the country. Supports a border wall.",
             "stance_2": "Conservative",
-            "stance_desc_2": "Supports strengthening the border fence.",
+            "stance_desc_2": "Supports strengthening the border wall.",
             "stance_3": "Leans Conservative",
             "stance_desc_3": "Supports increasing number of border agents.",
             "stance_4": "Moderate",
@@ -8376,28 +8376,6 @@ campaignTrail_temp.answer_score_state_json = [
             "candidate": 200,
             "affected_candidate": 200,
             "state_multiplier": 0.4
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
-        "pk": 20719,
-        "fields": {
-            "answer": 20715,
-            "state": 1049,
-            "candidate": 200,
-            "affected_candidate": 200,
-            "state_multiplier": 0.4
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
-        "pk": 20721,
-        "fields": {
-            "answer": 20683,
-            "state": 1021,
-            "candidate": 200,
-            "affected_candidate": 200,
-            "state_multiplier": 0.04
         }
     },
     {
