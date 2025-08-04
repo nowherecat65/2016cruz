@@ -8449,7 +8449,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5020,
             "candidate": 200,
-            "answer_feedback": "It's important to stand by your principles, but you're not going to win this November if you're just tearing apart the last threads of party unity. A furious Trump takes to Twitter, posting: <em>''Ted Cruz didn’t win, he stole it. The people know what really happened. Maybe we just sit this one out. #Rigged''</em>."
+            "answer_feedback": "It's important to stand by your principles, but you're not going to win this November if you're just tearing apart the last threads of party unity. A furious Trump takes to Twitter, posting: ''Ted Cruz didn’t win, he stole it. The people know what really happened. Maybe we just sit this one out. #Rigged''."
         }
     },
     {
@@ -8458,7 +8458,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5021,
             "candidate": 200,
-            "answer_feedback": "A united alliance will be critical in this election. A house divided against itself cannot stand—that’s what they always say. Trump’s stepped up his media presence, defends you as <em>''Lyin’ Ted no more,''</em> and is already ramping up the attacks on Hillary."
+            "answer_feedback": "A united alliance will be critical in this election. A house divided against itself cannot stand—that’s what they always say. Trump’s stepped up his media presence, defends you as ''Lyin’ Ted no more,'' and is already ramping up the attacks on Hillary."
         }
     },
     {
