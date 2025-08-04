@@ -438,7 +438,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5020,
         "fields": {
             "question": 1008,
-            "description": "I don't care about that pathological liar Trump. I can win with or without his support, and the general should be our primary focus by this point. He can continue crying on that Twitter account of his, I couldn't care less."
+            "description": "I don’t care what that pathological liar Trump has to say. After what he did to Heidi? I can win with or without his support. At this point, our focus ought to be the general election. He can keep crying on that Twitter account of his, I couldn't care less."
         }
     },
     {
@@ -446,7 +446,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5021,
         "fields": {
             "question": 1008,
-            "description": "Damned be. Without the populist wing we are done for this fall. If he wants it, I guess we have no choice but to let him have his way."
+            "description": "Damned be. Without the populist wing, we’re done for this fall. If he wants it, I suppose we don’t have much choice but to let him have his way."
         }
     },
     {
@@ -454,7 +454,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5022,
         "fields": {
             "question": 1008,
-            "description": "Seriously? That crook Hillary is probably laughing it up from New York right now. The damage to this country is going to be irreversible if Clinton gets her hands on the presidency. I hope Trump recognizes this and will endorse me, but I can't make any promises about what I'll give to him."
+            "description": "Seriously? That crook Hillary’s probably laughing it up in New York right now. The damage to this country will be irreversible if she gets her hands on the presidency. I hope Trump sees that and chooses to endorse me, but I’m not making any promises about what, if anything, I’d offer him in return."
         }
     },
     {
@@ -598,7 +598,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5060,
         "fields": {
             "question": 1019,
-            "description": "Just a moment, I'm not the nominee just yet. We can't give Trump any chance to break. We'll keep going until the convention."
+            "description": "Hold on. I'm not the nominee just yet. We can’t give Trump any room to maneuver. We press on, all the way to the convention."
         }
     },
     {
@@ -1070,7 +1070,7 @@ campaignTrail_temp.answers_json = [
         "pk": 20724,
         "fields": {
             "question": 1019,
-            "description": "We need to start campaigning now. If we don't, then Clinton will win. We have to be using every opportunity we can get to campaign. It'll give us that leg up elitists like her don't have."
+            "description": "We need to start campaigning now. If we don’t, Hillary Clinton will walk away with this thing. We’ve got to seize every opportunity to take our message to the people, that’s the advantage elitists like her just don’t have."
         }
     }
 ]
@@ -8449,7 +8449,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5020,
             "candidate": 200,
-            "answer_feedback": "It's important to stick up for your principles, but your not going to win this November if your just trying to break apart the last remaining bits of party unity. A furious Trump creates a Twitter post where he angrily tells his supporters to stay home."
+            "answer_feedback": "It's important to stand by your principles, but you're not going to win this November if you're just tearing apart the last threads of party unity. A furious Trump takes to Twitter, posting: <em>''Ted Cruz didn’t win, he stole it. The people know what really happened. Maybe we just sit this one out. #Rigged''</em>."
         }
     },
     {
@@ -8458,7 +8458,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5021,
             "candidate": 200,
-            "answer_feedback": "A united alliance will be critical in this election. A house divided against itself cannot stand, that's what they always say. Trump continues to increase his media presence and ramps up the attacks on Hillary."
+            "answer_feedback": "A united alliance will be critical in this election. A house divided against itself cannot stand—that’s what they always say. Trump’s stepped up his media presence, defends you as <em>''Lyin’ Ted no more,''</em> and is already ramping up the attacks on Hillary."
         }
     },
     {
@@ -8467,7 +8467,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5022,
             "candidate": 200,
-            "answer_feedback": "Trump is mad, but he eventually agrees to help after some coercion and a prime speaking slot at the RNC this year."
+            "answer_feedback": "Trump is mad, but he eventually agrees to help after some coercion and a prime speaking slot at the RNC this year. Apparently, he thinks he has a shot at a cabinet post. What a sad joke."
         }
     },
     {
@@ -8602,7 +8602,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5060,
             "candidate": 200,
-            "answer_feedback": "You win decisively in the Wisconsin and Indiana primaries, all but burying any hopes Trump had of winning. Still, many wonder if this was the right choice given the wide polling deficit you have with Hillary Clinton."
+            "answer_feedback": "You win decisively in Wisconsin and Indiana, effectively extinguishing Trump's path to the nomination. Still, some question whether this was the right strategic play, given your persistent polling deficit against Hillary Clinton."
         }
     },
     {
