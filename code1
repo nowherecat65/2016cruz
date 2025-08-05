@@ -429,7 +429,7 @@ style.innerHTML = `
   border-radius: 0.75px;
 }
 .game_header h2 {
-  color: #000;
+  color: #FFF;
 }
     #overall_result_container {
       background-color: #8640A3 !important;
