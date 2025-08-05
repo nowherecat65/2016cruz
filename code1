@@ -1,10 +1,3 @@
-// vp switcher
-// the code 1 part hides it in the event you just want candidates selected, the code 2 part causes the screen to show up during your code 2
-// credit Decstar
-
-
-// your code 1 should look like this
-
 if (!e.done) {
 e.done = true;
 
@@ -70,7 +63,7 @@ campaignTrail_temp.candidate_json = [
             "party": "Republican",
             "state": "Texas",
             "priority": 1,
-            "description": "<div style='overflow-y:scroll;height:200px;'><p>Ted Cruz is not your average Cuban-American. Very intelligent and just as awkward, he graduated from Harvard before becoming the Texas Solicitor General, where he argued cases before the U.S. Supreme Court on behalf of the state. With the retirement of Senator Kay Bailey Hutchison, a Senate seat from Texas was up for grabs. Cruz forced a runoff in the Republican primary and defeated David Dewhurst in a major upset, partly through major endorsements by Sarah Palin and many Tea Party groups.<br><br>As soon as Ted stepped into the United States Senate, he became controversial. A devout opponent of gun control, abortion, and tax increases, he was loathed by many of his colleagues. Even so, he has built a devoted base across the country. Now, an even higher office is up for grabs: the presidency. This isn't going to be easy, though. To be able to win the White House, he must first secure the primary, unite the party, and of course, defeat Hillary Clinton.</p></div>",
+            "description": "<div style='overflow-y:scroll;height:200px;'><p>Ted Cruz is not your average Cuban-American. Very intelligent and just as awkward, he graduated from Harvard before becoming the Texas Solicitor General, where he argued cases before the U.S. Supreme Court on behalf of the state. With the retirement of Senator Kay Bailey Hutchison, a Senate seat from Texas was up for grabs. Cruz forced a runoff in the Republican primary and defeated David Dewhurst in a major upset, partly through major endorsements by Sarah Palin and many Tea Party groups, amidst a Republican wave in 2012.<br><br>As soon as Ted stepped into the United States Senate, he became controversial. A devout opponent of gun control, abortion, and tax increases, he was loathed by many of his colleagues for his refusal to compromise, which made him just as popular amongst conservatives. He has built a devoted base not just in Texas, but across the country. Now, an even higher office is up for grabs: the presidency. This isn't going to be easy, though. To be able to win the White House, he must first secure the primary, unite the party, and of course, defeat Hillary Clinton.</p></div>",
             "color_hex": "#970417",
             "secondary_color_hex": "#CD777B",
             "is_active": 1,
@@ -170,7 +163,7 @@ campaignTrail_temp.candidate_json = [
             "electoral_victory_message": "This guy wins!",
             "electoral_loss_message": "This guy loses!",
             "no_electoral_majority_message": "We all win?",
-            "description_as_running_mate": "<p>Carly Fiorina would be an... interesting choice. As one of your former primary opponents and the ex-CEO of corporate giant Hewlett-Packard, she has little political experience, her only foray into politics was a failed 2010 Senate run in California.<br><br>Still, despite being unconventional, Fiorina could offer unique advantages. She might help reclaim portions of the female vote from Hillary Clinton and could serve as a bridge between moderates and conservatives heading into the general election. She also performed well in the primary debates.<br><br>On the other hand, Fiorina’s record at HP is mired in controversy. Thousands of employees were laid off during her tenure, and in 2005 she was forced out by shareholders amid the company’s poor performance. Her corporate past would inevitably become a liability for the ticket.",
+            "description_as_running_mate": "<p><div style='overflow-y:scroll;height:200px;'><p>Carly Fiorina would be an... interesting choice. As one of your former primary opponents and the ex-CEO of corporate giant Hewlett-Packard, she has little political experience, her only foray into politics was a failed 2010 Senate run in California.<br><br>Still, despite being unconventional, Fiorina could offer unique advantages. She might help reclaim portions of the female vote from Hillary Clinton and could serve as a bridge between moderates and conservatives heading into the general election. She also performed well in the primary debates.<br><br>On the other hand, Fiorina’s record at HP is mired in controversy. Thousands of employees were laid off during her tenure, and in 2005 she was forced out by shareholders amid the company’s poor performance. Her corporate past would inevitably become a liability for the ticket.</p></div>",
             "candidate_score": 1,
             "running_mate": true
         }
@@ -193,7 +186,7 @@ campaignTrail_temp.candidate_json = [
             "electoral_victory_message": "This guy wins!",
             "electoral_loss_message": "This guy loses!",
             "no_electoral_majority_message": "We all win?",
-            "description_as_running_mate": "<p>Marco Rubio was one of your main opponents in the primary, ultimately finishing third. Currently serving as a U.S. Senator from Florida, Rubio could be a major asset in that state. He should also help solidify your support among Cuban-Americans, with both of you sharing Cuban heritage. Florida’s 29 electoral votes are likely to prove decisive in this election, and Rubio’s popularity there could be crucial to securing victory on Election Day. He also has bona fides among independent voters and would bring a more moderate voice to the ticket.<br><br>Conversely, the two of you don’t exactly share warm relations, having waged hard-hitting campaigns against each other during the primary. Many of your supporters may be disappointed if you choose him as your running mate. He has also been criticized for coming across as over-polished, just like you. Still, if you’re looking for a safer pick, he’s an option.</p>",
+            "description_as_running_mate": "<div style='overflow-y:scroll;height:200px;'><p>Marco Rubio was one of your main opponents in the primary, ultimately finishing third. Currently serving as a U.S. Senator from Florida, Rubio could be a major asset in that state. He should also help solidify your support among Cuban-Americans, with both of you sharing Cuban heritage. Florida’s 29 electoral votes will prove decisive in this election, and Rubio’s popularity there could be crucial to securing victory on Election Day. He also has bona fides among independent voters and would bring a more moderate voice to the ticket.<br><br>Conversely, the two of you don’t exactly share warm relations, having waged hard-hitting campaigns against each other during the primary. Many of your supporters may be disappointed if you choose him as your running mate. He has also been criticized for coming across as over-polished, and ingenuine, just like you. Still, if you’re looking for a safer pick, he’s an option.</p></div>",
             "candidate_score": 1,
             "running_mate": true
         }
