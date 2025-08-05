@@ -46,7 +46,7 @@ campaignTrail_temp.election_json = [
         "pk": 20,
         "fields": {
             "year": 2016,
-            "summary": "<p>The last few years have been anything but boring for America. Following the election of Barack Obama in 2008 and the passage of the Affordable Care Act in 2010, the nation seems to be at a crossroads.<li>Hillary Clinton will need to win over dissatisfied progressives after a contentious primary against Bernie Sanders, while also painting Cruz as a radical.<li>Ted Cruz hopes to unite his party after a divisive primary with Donald Trump and win over moderate voters without alienating his base.<br><br>Clinton starts out with a slight lead, but this race is shaping up to be the closest since 2000.</p>",
+            "summary": "<p>The last few years have been anything but boring for America. Following the election of Barack Obama in 2008 and the passage of the Affordable Care Act in 2010, the nation seems to be at a crossroads.<ul><li>Hillary Clinton will need to win over dissatisfied progressives after a contentious primary against Bernie Sanders, while also painting Cruz as a radical.</li><li>Ted Cruz hopes to unite his party after a divisive primary with Donald Trump and win over moderate voters without alienating his base.</li></ul>Clinton starts out with a slight lead, but this race is shaping up to be the closest since 2000.</p>",
             "image_url": "https://i.postimg.cc/CwXxKx00/Reagan-vs-Dukakis-7.jpg",
             "winning_electoral_vote_number": 270,
             "advisor_url": "https://i.imgur.com/AOxVCEJ.jpeg",
@@ -434,6 +434,9 @@ style.innerHTML = `
   background-color: #F4F1F7 !important;
   background-size: 150% 150%;
   border-radius: 0.75px;
+}
+.game_header h2 {
+  color: #000;
 }
     #overall_result_container {
       background-color: #8640A3 !important;
