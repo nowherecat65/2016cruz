@@ -11,6 +11,15 @@ cyoAdventure = function (a) {
     if (ans == 20715) {
         campaignTrail_temp.question_number = getQuestionNumberFromPk(20720);
     }
+    if (ans == 5020) {
+        campaignTrail_temp.candidate_image_url = 'https://files.catbox.moe/f9zdph.png';
+    }
+    if (ans == 5021) {
+        campaignTrail_temp.candidate_image_url = 'https://files.catbox.moe/f9zdph.png';
+    }
+    if (ans == 5022) {
+        campaignTrail_temp.candidate_image_url = 'https://files.catbox.moe/f9zdph.png';
+    }
     else if (ans == 20683) {
         campaignTrail_temp.question_number = getQuestionNumberFromPk(20720);
     }
