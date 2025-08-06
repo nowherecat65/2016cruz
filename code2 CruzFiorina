@@ -6843,6 +6843,16 @@ campaignTrail_temp.answer_score_global_json = [
     },
     {
         "model": "campaign_trail.answer_score_global",
+        "pk": 3124,
+        "fields": {
+            "answer": 5016,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "global_multiplier": 0.001
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
         "pk": 3125,
         "fields": {
             "answer": 5116,
@@ -8895,7 +8905,7 @@ campaignTrail_temp.answer_feedback_json = [
 ]
 
 campaignTrail_temp.candidate_image_url = "https://files.catbox.moe/llhlxu.png";
-campaignTrail_temp.running_mate_image_url = "https://files.catbox.moe/buv4ro.jpg";
+campaignTrail_temp.running_mate_image_url = "https://files.catbox.moe/ks0sbe.png";
 campaignTrail_temp.candidate_last_name = "Cruz";
 campaignTrail_temp.running_mate_last_name = "For President";
 
@@ -8907,7 +8917,7 @@ campaignTrail_temp.jet_data = [{
         "canName": "Cruz",
         "runName": "For President",
         "canImage": "https://files.catbox.moe/llhlxu.png",
-        "runImage": "https://files.catbox.moe/buv4ro.jpg"
+        "runImage": "https://files.catbox.moe/ks0sbe.png"
     },
     "nicknames": {
         "200": "Cruz",
