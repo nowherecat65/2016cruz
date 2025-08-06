@@ -245,7 +245,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1038,
         "fields": {
             "priority": 8,
-            "description": "Pundits have started questioning the so-called Pence Rule, based on your running-mate's refusal to dine alone with a woman. What are your thoughts?",
+            "description": "Senator Cruz, you’ve made opposition to same-sex marriage a cornerstone of your career. But the Supreme Court has ruled. The country, in large part, has moved on. Do you still stand by your opposition, and would you seek to overturn Obergefell v. Hodges as President?",
             "likelihood": 1
         }
     },
@@ -970,7 +970,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5127,
         "fields": {
             "question": 1038,
-            "description": "Can you really blame Mike in this day and age? One false accusation or misinterpreted statement, and suddenly your entire career can be at risk."
+            "description": "Is this a joke? Marriage is between a man and a woman. That doesn’t change just because five unelected lawyers say so."
         }
     },
     {
@@ -978,7 +978,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5128,
         "fields": {
             "question": 1038,
-            "description": "Maybe if Bill Clinton and some other people I can think of would have followed this common-sense recommendation, their lives would have been much simpler."
+            "description": "I oppose Obergefell, and of course, marriage is between a man and a woman, but the fight ahead is to protect churches and conscience. We can’t afford to get trapped on one front of this battle."
         }
     },
     {
@@ -986,7 +986,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5129,
         "fields": {
             "question": 1038,
-            "description": "I understand some of the issues with this. Nobody respects women more than I do, but at the same time, I have an absolutely tremendous amount of respect for Mike Pence."
+            "description": "Well, the Court has spoken, and I’ve always believed in the rule of law. But let’s not lose sight of what’s really under attack, our First Amendment rights."
         }
     },
     {
@@ -6902,7 +6902,27 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 5129,
             "candidate": 200,
             "affected_candidate": 200,
-            "global_multiplier": -0.0016
+            "global_multiplier": -0.0085
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 3079,
+        "fields": {
+            "answer": 5129,
+            "candidate": 200,
+            "affected_candidate": 201,
+            "global_multiplier": 0.0038
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 3079,
+        "fields": {
+            "answer": 5129,
+            "candidate": 200,
+            "affected_candidate": 202,
+            "global_multiplier": 0.0115
         }
     },
     {
@@ -7395,6 +7415,36 @@ campaignTrail_temp.answer_score_issue_json = [
             "answer": 5043,
             "issue": 102,
             "issue_score": -0.3,
+            "issue_importance": 1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 2531,
+        "fields": {
+            "answer": 5127,
+            "issue": 100,
+            "issue_score": -0.3,
+            "issue_importance": 1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 2531,
+        "fields": {
+            "answer": 5128,
+            "issue": 100,
+            "issue_score": -0.25,
+            "issue_importance": 1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 2531,
+        "fields": {
+            "answer": 5129,
+            "issue": 100,
+            "issue_score": -0.125,
             "issue_importance": 1
         }
     },
@@ -9000,7 +9050,16 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5127,
             "candidate": 200,
-            "answer_feedback": "The level of Mike Pence's social conservatism is certainly more than most Americans are familiar with."
+            "answer_feedback": "This is entirely expected, of course, but with polls showing a bare majority supporting gay marriage, and with Hillary Clinton bringing it up a lot, this might drag down your message a bit. "
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 2611,
+        "fields": {
+            "answer": 5128,
+            "candidate": 200,
+            "answer_feedback": "This is a smart pivot, and with your cool touch, you manage to make it not seem like a pivot at all. That said, the Democrats will still be hammering you on this issue and painting you as something of a bigot. "
         }
     },
     {
@@ -9018,7 +9077,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5129,
             "candidate": 200,
-            "answer_feedback": "The level of Mike Pence's social conservatism is certainly more than most Americans are familiar with."
+            "answer_feedback": "Uh... This sort of tone is unexpected from you and only served to alienate evangelicals and movement conservatives who won you the nomination, while liberals already loathe you and won't be won over by some weaselly statement."
         }
     },
     {
