@@ -7097,6 +7097,16 @@ campaignTrail_temp.answer_score_global_json = [
     },
     {
         "model": "campaign_trail.answer_score_global",
+        "pk": 3282,
+        "fields": {
+            "answer": 20739,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "global_multiplier": 0.015
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
         "pk": 3283,
         "fields": {
             "answer": 5122,
@@ -7756,6 +7766,46 @@ campaignTrail_temp.answer_score_issue_json = [
             "issue": 100,
             "issue_score": -0.15,
             "issue_importance": 1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 2626,
+        "fields": {
+            "answer": 20664,
+            "issue": 101,
+            "issue_score": -0.1,
+            "issue_importance": 0.25
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 2626,
+        "fields": {
+            "answer": 20664,
+            "issue": 100,
+            "issue_score": -0.1,
+            "issue_importance": 0.25
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 2626,
+        "fields": {
+            "answer": 20666,
+            "issue": 100,
+            "issue_score": -0.25,
+            "issue_importance": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 2626,
+        "fields": {
+            "answer": 20678,
+            "issue": 100,
+            "issue_score": -0.25,
+            "issue_importance": 0.5
         }
     },
     {
