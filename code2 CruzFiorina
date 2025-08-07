@@ -158,7 +158,7 @@ campaignTrail_temp.questions_json = [
         "pk": 10121,
         "fields": {
             "priority": 10,
-            "description": "For all his faults, Donald Trump made innovative use of social media, particularly with his commentary on Twitter. Since launching your campaign, you’ve maintained a presence online, but some argue that engaging more directly, replying to the Clinton campaign, and retweeting pro-GOP posts could amplify your message. What do you want to do?",
+            "description": "For all his faults, Donald Trump made innovative use of social media, particularly with his commentary on Twitter. Since launching your campaign, you’ve maintained a presence online, but some in the campaign argue that engaging more directly, replying to the Clinton campaign, and retweeting pro-GOP posts could amplify your message. What do you want to do?",
             "likelihood": 1
         }
     },
