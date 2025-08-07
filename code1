@@ -1,6 +1,3 @@
-if (!e.done) {
-e.done = true;
-
 HistHexcolour=["#970417","#2633be","#fbd800","#00a62f"];
         HistName=[" Donald Trump"," Hillary Clinton"," Gary Johnson"," Jill Stein"];
         HistEV=[304,227,0,0];
@@ -438,28 +435,6 @@ style.innerHTML = `
 document.head.appendChild(style);
 
 //#endcode
-
-styling = document.createElement("style");
-document.head.appendChild(styling);
-
-styling.innerHTML = `
-#opponent_selection_id_back {
-    display: none;
-}
-`
-
-let z = new MutationObserver((mutationsList, observer) => {
-    let runningMateSummary = document.querySelector("#running_mate_summary");
-    if (runningMateSummary) {
-        $("#running_mate_id_button").click();
-        observer.disconnect()
-    }
-});
-
-
-z.observe(document, { subtree: true, childList: true });
-
-}
 
 // Initialise custom music
 
