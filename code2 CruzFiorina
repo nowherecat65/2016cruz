@@ -113,7 +113,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1011,
         "fields": {
             "priority": 5,
-            "description": "Today is the big day. The Republican National Convention has begun, and as you accept your nomination for President of the United States, what do you want to speak about in your convention speech?",
+            "description": "Today is the big day. The Republican National Convention has begun, and as you accept the nomination for President of the United States, what message do you want to deliver in your convention speech?",
             "likelihood": 1
         }
     },
@@ -360,7 +360,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5030,
         "fields": {
             "question": 1011,
-            "description": "Hillary Clinton is on the verge of becoming President, and if she does, the damage to this country will be permanent. There were many candidates on this stage during the primaries. None of us were self-proclaimed socialists. None of us tried to destroy evidence and perform a coverup because of our own incompetence. And if we stand together, we can bring America back."
+            "description": "Hillary Clinton is on the verge of becoming President — and if she does, the damage to this country may be permanent. There were many candidates on this stage during the primaries. Not one of us was a self-proclaimed socialist. Not one of us tried to destroy evidence to cover up our own incompetence. But if we stand together now, we can bring America back."
         }
     },
     {
@@ -368,7 +368,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5031,
         "fields": {
             "question": 1011,
-            "description": "My friends, this country has been on a steady decline for the past 7 years. But it doesn't have to be this way. Under a Cruz administration, we will slash taxes, overturn Roe v. Wade, protect the Second Amendment, balance budgets, and fight special interests."
+            "description": "My friends, fellow Republicans, and folks at home, this country has been in steady decline for the past seven years. But it doesn’t have to be that way. Under a Cruz administration, we’ll slash taxes, overturn Roe v. Wade, protect the Second Amendment, balance the budget, and stand up to the special interests."
         }
     },
     {
@@ -376,7 +376,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5032,
         "fields": {
             "question": 1011,
-            "description": "If you thought that the Democrats couldn't get any worse, they've officially nominated <em>Hillary Clinton</em> for President! She's probably the worst Democratic nominee since 2008. She has endorsements from socialists like Barack Obama, Bernie Sanders, and others. We cannot let her get her hands on the White House."
+            "description": "If you thought the Democrats couldn't get any worse, they've now officially nominated <em>Hillary Clinton</em> for President! She's probably the worst Democratic nominee since 2008. She has endorsements from socialists like Barack Obama, Bernie Sanders, and others. We cannot let her get her hands on the White House."
         }
     },
     {
@@ -960,7 +960,7 @@ campaignTrail_temp.answers_json = [
         "pk": 20739,
         "fields": {
             "question": 1011,
-            "description": "Barack Obama is the most dangerously incompetent man to ever step foot in the White House. During these past 3 and a half years, we've seen drones performing executions on American citizens abroad, while Obama lets Russia run loose in Ukraine and finances radical Islamic terrorism. We cannot let the Democrats manage foreign policy ever again, or adversaries abroad will be emboldened to strike."
+            "description": "Barack Obama is the most dangerously incompetent man ever to set foot in the White House. Over the past three and a half years, we’ve seen drones execute American citizens abroad, while Obama lets Russia run loose in Ukraine and funnels money to radical Islamic terrorists. We cannot let the Democrats manage foreign policy again, our adversaries are watching, and they’ll be emboldened to strike."
         }
     },
     {
@@ -976,7 +976,7 @@ campaignTrail_temp.answers_json = [
         "pk": 20744,
         "fields": {
             "question": 1038,
-            "description": "What's wrong with letting Utah decide one way, and California another? This is just another example of pointy headed overreach by the Supreme Court."
+            "description": "What’s wrong with letting Utah decide one way and California another? Once again, we’ve seen pointy-headed judicial overreach from the Supreme Court."
         }
     },
     {
@@ -7772,6 +7772,16 @@ campaignTrail_temp.answer_score_issue_json = [
         "model": "campaign_trail.answer_score_issue",
         "pk": 2626,
         "fields": {
+            "answer": 20744,
+            "issue": 100,
+            "issue_score": -0.1,
+            "issue_importance": 1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 2626,
+        "fields": {
             "answer": 20664,
             "issue": 101,
             "issue_score": -0.1,
@@ -8965,7 +8975,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 20744,
             "candidate": 200,
-            "answer_feedback": "Smart. When you put it down this way, your message resonates with the average voter a lot more."
+            "answer_feedback": "It sounds like you’ve softened your tone on the issue, even if your position remains the same. Smart move. When you put it this way, your message resonates a lot more with the average voter."
         }
     },
     {
