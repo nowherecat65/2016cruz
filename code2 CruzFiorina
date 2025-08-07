@@ -9137,7 +9137,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 20727,
             "candidate": 200,
-            "answer_feedback": "You offer Trump the role Secretary of Commerce. He claims he'll “run America like a business,” and will advocate for renegotiating NAFTA (even though he'll probably just use the role to court media attention.) Your supporters are let down, but Trump will be enthusiastically campaigning for you this fall."
+            "answer_feedback": "You offer Trump the role of Secretary of Commerce. He claims he’ll ''run America like a business'' and promises to push for renegotiating NAFTA, though it's likely he'll just use the role to court media attention. Your supporters are let down, but Trump will be out on the trail, enthusiastically campaigning for you this fall."
         }
     },
     {
