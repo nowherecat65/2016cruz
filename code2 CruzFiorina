@@ -155,6 +155,15 @@ campaignTrail_temp.questions_json = [
     },
     {
         "model": "campaign_trail.question",
+        "pk": 10121,
+        "fields": {
+            "priority": 10,
+            "description": "For all his faults, Donald Trump made innovative use of social media, particularly with his commentary on Twitter. Since launching your campaign, you’ve maintained a presence online, but some argue that engaging more directly, replying to the Clinton campaign, and retweeting pro-GOP posts could amplify your message. What do you want to do?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
         "pk": 1012,
         "fields": {
             "priority": 10,
@@ -385,6 +394,30 @@ campaignTrail_temp.answers_json = [
         "fields": {
             "question": 1012,
             "description": "She went on television after this attack and she lied. All to cover up her own failures in security. And now she wants to be President?"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 50331,
+        "fields": {
+            "question": 10121,
+            "description": "I don’t see why not. It could help drive the message and earn a few headlines for the campaign. Let the staff run with it."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 503313,
+        "fields": {
+            "question": 10121,
+            "description": "That’s ridiculous. Let’s stay the course. I’m not Donald Trump, and I’m not going to start acting like Donald Trump. Next thing you know, you’ll be asking me to put on that orange toupee."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 503312,
+        "fields": {
+            "question": 10121,
+            "description": "Hmm... I don’t want to go overboard with it, but I don’t see why I can’t take out my iPhone and write some things up, or get somebody to dictate it. Let’s do it."
         }
     },
     {
@@ -6467,6 +6500,36 @@ campaignTrail_temp.answer_score_global_json = [
     },
     {
         "model": "campaign_trail.answer_score_global",
+        "pk": 3019,
+        "fields": {
+            "answer": 50331,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "global_multiplier": 0.001
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 3019,
+        "fields": {
+            "answer": 503312,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "global_multiplier": 0.002
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 3019,
+        "fields": {
+            "answer": 503313,
+            "candidate": 200,
+            "affected_candidate": 201,
+            "global_multiplier": -0.0005
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
         "pk": 3020,
         "fields": {
             "answer": 5035,
@@ -7782,6 +7845,36 @@ campaignTrail_temp.answer_score_issue_json = [
         "model": "campaign_trail.answer_score_issue",
         "pk": 2626,
         "fields": {
+            "answer": 5129,
+            "issue": 100,
+            "issue_score": 0.05,
+            "issue_importance": 1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 2626,
+        "fields": {
+            "answer": 503312,
+            "issue": 100,
+            "issue_score": -0.15,
+            "issue_importance": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 2626,
+        "fields": {
+            "answer": 50331,
+            "issue": 100,
+            "issue_score": -0.1,
+            "issue_importance": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 2626,
+        "fields": {
             "answer": 20744,
             "issue": 100,
             "issue_score": -0.1,
@@ -8356,6 +8449,33 @@ campaignTrail_temp.answer_feedback_json = [
             "answer": 5033,
             "candidate": 200,
             "answer_feedback": "The average person is over the Benghazi episode at this point, but it's important to movement conservatives."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 2533,
+        "fields": {
+            "answer": 50331,
+            "candidate": 200,
+            "answer_feedback": "The key word is ''staff,'' and while they’re eager to amp up your social media presence, it doesn’t exactly come across as authentic. But who cares? It’s not like Clinton runs her own Twitter page."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 2533,
+        "fields": {
+            "answer": 503312,
+            "candidate": 200,
+            "answer_feedback": "While you’d be more inclined to write polemics against the Clinton campaign, the 140-character limit ends up suiting you just fine, and @tedcruz becomes a big hit on the conservative web."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 2533,
+        "fields": {
+            "answer": 503313,
+            "candidate": 200,
+            "answer_feedback": "No harm, no foul. While some of your younger staffers insist that getting more involved with the online side of the campaign could be the move, at the end of the day, you’ve got your own way of doing things."
         }
     },
     {
