@@ -9372,4 +9372,38 @@ customStyling.innerHTML = `
 
 document.head.appendChild(customStyling);
     }
+    if(e.running_mate_last_name==="Walker"){ // Use this to change questions based on your VP
+        const customStyling = document.createElement("style");
+
+customStyling.innerHTML = `
+#campaign_sign {
+    background-image: url("https://files.catbox.moe/sd93lm.png");
+    background-size: cover;
+    border-color: #c9c9c9;    
+    border-width: .01em;
+    margin: 0 auto;
+    background-position: center;
+    width: 100%; 
+    height: 104px; 
+    margin-left: -0.07em;
+}
+`;
+
+document.head.appendChild(customStyling);
+    }
+    if(e.running_mate_last_name==="Fiorina"){ // Use this to change questions based on your VP
+        const customStyling = document.createElement("style");
+
+customStyling.innerHTML = `
+#campaign_sign {
+    background-image: url("https://files.catbox.moe/epfob9.png");
+    background-size: cover;
+    border-color: #c9c9c9;    
+    border-width: .01em;
+    margin: 0 auto;
+    background-position: center;
+    width: 100%; 
+    height: 104px; 
+    margin-left: -0.07em;
+}
   }
