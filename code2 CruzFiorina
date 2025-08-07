@@ -9353,4 +9353,23 @@ var changeGameDisp = (hide) => {
           if (e.question_number == 5) {
         window.setTimeout(e.vpSwitcher, 20)
       }
+    if(e.running_mate_last_name==="Rubio"){ // Use this to change questions based on your VP
+        const customStyling = document.createElement("style");
+
+customStyling.innerHTML = `
+#campaign_sign {
+    background-image: url("https://files.catbox.moe/zyzs16.png");
+    background-size: cover;
+    border-color: #c9c9c9;    
+    border-width: .01em;
+    margin: 0 auto;
+    background-position: center;
+    width: 100%; 
+    height: 104px; 
+    margin-left: -0.07em;
+}
+`;
+
+document.head.appendChild(customStyling);
+    }
   }
