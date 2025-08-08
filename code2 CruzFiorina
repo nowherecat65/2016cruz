@@ -368,7 +368,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5031,
         "fields": {
             "question": 1011,
-            "description": "My friends, this country has been on a steady decline for the past 7 years. But it doesn't have to be this way. Under a Cruz administration, we will slash taxes, overturn Roe v. Wade, protect the Second Amendment, balance budgets, and fight special interests."
+            "description": "My friends, fellow Republicans, and folks at home, this country has been in steady decline for the past seven years. But it doesn’t have to be that way. Under a Cruz administration, we’ll slash taxes, overturn Roe v. Wade, protect the Second Amendment, balance the budget, and stand up to the special interests."
         }
     },
     {
@@ -960,7 +960,7 @@ campaignTrail_temp.answers_json = [
         "pk": 20739,
         "fields": {
             "question": 1011,
-            "description": "Barack Obama is the most dangerously incompetent man to ever step foot in the White House. During these past 3 and a half years, we've seen drones performing executions on American citizens abroad, while Obama lets Russia run loose in Ukraine and finances radical Islamic terrorism. We cannot let the Democrats manage foreign policy ever again, or adversaries abroad will be emboldened to strike."
+            "description": "Barack Obama is the most dangerously incompetent man ever to set foot in the White House. Over the past three and a half years, we’ve seen drones execute American citizens abroad, while Obama lets Russia run loose in Ukraine and funnels money to radical Islamic terrorists. We cannot let the Democrats manage foreign policy again, our adversaries are watching, and they’ll be emboldened to strike."
         }
     },
     {
@@ -7130,7 +7130,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 5003,
             "candidate": 200,
             "affected_candidate": 202,
-            "global_multiplier": -0.05
+            "global_multiplier": -0.425
         }
     },
     {
@@ -7140,7 +7140,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 5004,
             "candidate": 200,
             "affected_candidate": 202,
-            "global_multiplier": -0.05
+            "global_multiplier": -0.425
         }
     },
     {
@@ -7150,7 +7150,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 20688,
             "candidate": 200,
             "affected_candidate": 202,
-            "global_multiplier": -0.05
+            "global_multiplier": -0.425
         }
     },
     {
@@ -7160,7 +7160,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 20689,
             "candidate": 200,
             "affected_candidate": 202,
-            "global_multiplier": -0.05
+            "global_multiplier": -0.425
         }
     },
     {
@@ -7191,6 +7191,16 @@ campaignTrail_temp.answer_score_global_json = [
             "candidate": 200,
             "affected_candidate": 200,
             "global_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 20731,
+        "fields": {
+            "answer": 20727,
+            "candidate": 200,
+            "affected_candidate": 201,
+            "global_multiplier": 0.0025
         }
     },
     {
@@ -8936,8 +8946,8 @@ campaignTrail_temp.answer_feedback_json = [
     }
 ]
 
-campaignTrail_temp.candidate_image_url = "https://files.catbox.moe/u52bl8.jpg";
-campaignTrail_temp.running_mate_image_url = "https://files.catbox.moe/buv4ro.jpg";
+campaignTrail_temp.candidate_image_url = "https://files.catbox.moe/llhlxu.png";
+campaignTrail_temp.running_mate_image_url = "https://files.catbox.moe/ks0sbe.png";
 campaignTrail_temp.candidate_last_name = "";
 campaignTrail_temp.running_mate_last_name = "";
 
@@ -8948,8 +8958,8 @@ campaignTrail_temp.jet_data = [{
     "banner_data": {
         "canName": "",
         "runName": "",
-        "canImage": "https://files.catbox.moe/u52bl8.jpg",
-        "runImage": "https://files.catbox.moe/buv4ro.jpg"
+        "canImage": "https://files.catbox.moe/llhlxu.png",
+        "runImage": "https://files.catbox.moe/ks0sbe.png"
     },
     "nicknames": {
         "200": "Cruz",
