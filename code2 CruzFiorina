@@ -167,7 +167,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1030,
         "fields": {
             "priority": 10,
-            "description": "Do you stand by your statements that there will be absolutely no cuts to Social Security or Medicare under a Trump Administration?",
+            "description": "Senator Cruz, in 2013 you helped shut down the government in an attempt to defund Obamacare, costing the country billions and leaving many Republicans frustrated. Would you take the same approach again as President if Congress doesn’t cooperate?",
             "likelihood": 1
         }
     },
@@ -688,7 +688,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5101,
         "fields": {
             "question": 1030,
-            "description": "We're going to take care of people when I'm President. Absolutely no cuts to Social Security and Medicare. We have millions and millions of people relying on these programs."
+            "description": "If standing up for the American people makes Washington uncomfortable, so be it. I’ll do it again in a heartbeat."
         }
     },
     {
@@ -696,7 +696,15 @@ campaignTrail_temp.answers_json = [
         "pk": 5102,
         "fields": {
             "question": 1030,
-            "description": "You know, sometimes if the program grows by 4%, and then you do something and you don't even know you did something, especially when it's a Republican, and the program grows by 3.8%. The liberal media loves to call that a \"cut\"."
+            "description": "The real shutdown was the damage Obamacare was, and still is, doing to jobs and healthcare. I fought it then, and I’ll repeal it as your President."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 51021,
+        "fields": {
+            "question": 1030,
+            "description": "Come January 20th, I’ll use every constitutional tool at my disposal, but shutdowns should always be a last resort. I think the American people understand that."
         }
     },
     {
@@ -6697,10 +6705,30 @@ campaignTrail_temp.answer_score_global_json = [
         "model": "campaign_trail.answer_score_global",
         "pk": 3062,
         "fields": {
+            "answer": 5101,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "global_multiplier": -0.004
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 3062,
+        "fields": {
             "answer": 5102,
             "candidate": 200,
             "affected_candidate": 200,
             "global_multiplier": -0.002
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 3062,
+        "fields": {
+            "answer": 51021,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "global_multiplier": -0.0015
         }
     },
     {
@@ -7702,7 +7730,17 @@ campaignTrail_temp.answer_score_issue_json = [
         "fields": {
             "answer": 5102,
             "issue": 100,
-            "issue_score": -0.575,
+            "issue_score": -0.1,
+            "issue_importance": 1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 2611,
+        "fields": {
+            "answer": 51021,
+            "issue": 100,
+            "issue_score": -0.15,
             "issue_importance": 1
         }
     },
@@ -8581,7 +8619,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5101,
             "candidate": 200,
-            "answer_feedback": "You've broken a bit with orthodoxy on this issue, but your stance is popular."
+            "answer_feedback": "Conservative media and your base alike applaud your backbone on this issue — there’s a reason they nominated you, and it’s because you’re a fighter. That said, shutting down the government when you don’t get your way doesn’t exactly come across as presidential to many in the institutional press and the Democrat Party."
         }
     },
     {
@@ -8590,7 +8628,16 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5102,
             "candidate": 200,
-            "answer_feedback": "You may have a point, but there's no reason to back away from supporting a popular program in the midst of a campaign."
+            "answer_feedback": "Despite your combative attitude toward Obama, this is still a pivot, and the press will interpret it that way. Given how unpopular government shutdowns are with independents and average folks, this might be the smart play."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 2586,
+        "fields": {
+            "answer": 51021,
+            "candidate": 200,
+            "answer_feedback": "You sound a little more measured on this issue than you did while crusading against Obamacare, but you’ve managed to largely preserve your base’s trust, while signaling a bit of maturity."
         }
     },
     {
