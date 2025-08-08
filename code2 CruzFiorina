@@ -167,7 +167,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1030,
         "fields": {
             "priority": 10,
-            "description": "In 2013, you staged a 21-hour filibuster, famously reading <i>Green Eggs and Ham</i>, and helped lead a government shutdown in an attempt to defund Obamacare. The move cost the country billions and left many Republicans frustrated. Would you take the same approach again as President if Congress doesn’t cooperate?",
+            "description": "In 2013, you staged a 21-hour Senate filibuster, famously reading <i>Green Eggs and Ham</i>, and helped lead a government shutdown in an attempt to defund Obamacare. The move cost the country billions and left many Republicans frustrated. Would you take the same approach again as President if Congress doesn’t cooperate?",
             "likelihood": 1
         }
     },
