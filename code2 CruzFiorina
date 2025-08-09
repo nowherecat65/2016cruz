@@ -7389,6 +7389,16 @@ campaignTrail_temp.answer_score_global_json = [
     },
     {
         "model": "campaign_trail.answer_score_global",
+        "pk": 20730,
+        "fields": {
+            "answer": 5021,
+            "candidate": 200,
+            "affected_candidate": 201,
+            "global_multiplier": 0.011
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
         "pk": 20731,
         "fields": {
             "answer": 20727,
@@ -7404,7 +7414,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 20727,
             "candidate": 200,
             "affected_candidate": 201,
-            "global_multiplier": 0.0025
+            "global_multiplier": 0.0035
         }
     },
     {
@@ -7992,6 +8002,26 @@ campaignTrail_temp.answer_score_issue_json = [
     },
     {
         "model": "campaign_trail.answer_score_issue",
+        "pk": 2792,
+        "fields": {
+            "answer": 5020,
+            "issue": 100,
+            "issue_score": -0.283,
+            "issue_importance": 0.75
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 2793,
+        "fields": {
+            "answer": 5020,
+            "issue": 101,
+            "issue_score": 0.05,
+            "issue_importance": 0.25
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
         "pk": 2626,
         "fields": {
             "answer": 5128,
@@ -8036,7 +8066,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "fields": {
             "answer": 5021,
             "issue": 101,
-            "issue_score": 0.5,
+            "issue_score": 0.45,
             "issue_importance": 1
         }
     },
@@ -8107,7 +8137,7 @@ campaignTrail_temp.answer_score_issue_json = [
             "answer": 20727,
             "issue": 100,
             "issue_score": -0.35,
-            "issue_importance": 2
+            "issue_importance": 2.5
         }
     },
     {
@@ -8116,8 +8146,8 @@ campaignTrail_temp.answer_score_issue_json = [
         "fields": {
             "answer": 20727,
             "issue": 101,
-            "issue_score": -0.55,
-            "issue_importance": 3
+            "issue_score": 0.1,
+            "issue_importance": 2
         }
     },
     {
@@ -8127,7 +8157,7 @@ campaignTrail_temp.answer_score_issue_json = [
             "answer": 20727,
             "issue": 104,
             "issue_score": -0.35,
-            "issue_importance": 2
+            "issue_importance": 2.5
         }
     },
     {
