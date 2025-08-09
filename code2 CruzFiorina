@@ -48,6 +48,158 @@ cyoAdventure = function (a) {
     else if (ans == 20683) {
         campaignTrail_temp.question_number = getQuestionNumberFromPk(20720);
     }
+    else if (ans == 20739) {
+        campaignTrail_temp.running_mate_image_url = 'https://files.catbox.moe/ul4rox.png';
+        campaignTrail_temp.running_mate_last_name = 'Fiorina';
+        campaignTrail_temp.running_mate_first_name = 'Carly';
+const customStyling = document.createElement("style");
+
+customStyling.innerHTML = `
+#campaign_sign {
+    background-image: url("https://files.catbox.moe/epfob9.png");
+    background-size: cover;
+    border-color: #c9c9c9;    
+    border-width: .01em;
+    margin: 0 auto;
+    background-position: center;
+    width: 100%; 
+    height: 104px; 
+    margin-left: -0.07em;
+}
+.inner_window_sign_display {
+    margin: 0;
+    margin-right: 0px;
+    margin-left: 0px;
+    height: 28%;
+    position: relative;
+    width: 35%;
+    background-color: #F8F8F8;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: double;
+    border-color: #C9C9C9;
+}
+#campaign_sign p {
+    color: rgb(0 0 0 / 0%);
+}
+`;
+
+document.head.appendChild(customStyling);
+    }
+    else if (ans == 5032) {
+        campaignTrail_temp.running_mate_image_url = 'https://files.catbox.moe/ul4rox.png';
+        campaignTrail_temp.running_mate_last_name = 'Fiorina';
+        campaignTrail_temp.running_mate_first_name = 'Carly';
+const customStyling = document.createElement("style");
+
+customStyling.innerHTML = `
+#campaign_sign {
+    background-image: url("https://files.catbox.moe/epfob9.png");
+    background-size: cover;
+    border-color: #c9c9c9;    
+    border-width: .01em;
+    margin: 0 auto;
+    background-position: center;
+    width: 100%; 
+    height: 104px; 
+    margin-left: -0.07em;
+}
+.inner_window_sign_display {
+    margin: 0;
+    margin-right: 0px;
+    margin-left: 0px;
+    height: 28%;
+    position: relative;
+    width: 35%;
+    background-color: #F8F8F8;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: double;
+    border-color: #C9C9C9;
+}
+#campaign_sign p {
+    color: rgb(0 0 0 / 0%);
+}
+`;
+
+document.head.appendChild(customStyling);
+    }
+    else if (ans == 5031) {
+        campaignTrail_temp.running_mate_image_url = 'https://files.catbox.moe/ul4rox.png';
+        campaignTrail_temp.running_mate_last_name = 'Fiorina';
+        campaignTrail_temp.running_mate_first_name = 'Carly';
+const customStyling = document.createElement("style");
+
+customStyling.innerHTML = `
+#campaign_sign {
+    background-image: url("https://files.catbox.moe/epfob9.png");
+    background-size: cover;
+    border-color: #c9c9c9;    
+    border-width: .01em;
+    margin: 0 auto;
+    background-position: center;
+    width: 100%; 
+    height: 104px; 
+    margin-left: -0.07em;
+}
+.inner_window_sign_display {
+    margin: 0;
+    margin-right: 0px;
+    margin-left: 0px;
+    height: 28%;
+    position: relative;
+    width: 35%;
+    background-color: #F8F8F8;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: double;
+    border-color: #C9C9C9;
+}
+#campaign_sign p {
+    color: rgb(0 0 0 / 0%);
+}
+`;
+
+document.head.appendChild(customStyling);
+    }
+    else if (ans == 5030) {
+        campaignTrail_temp.running_mate_image_url = 'https://files.catbox.moe/ul4rox.png';
+        campaignTrail_temp.running_mate_last_name = 'Fiorina';
+        campaignTrail_temp.running_mate_first_name = 'Carly';
+const customStyling = document.createElement("style");
+
+customStyling.innerHTML = `
+#campaign_sign {
+    background-image: url("https://files.catbox.moe/epfob9.png");
+    background-size: cover;
+    border-color: #c9c9c9;    
+    border-width: .01em;
+    margin: 0 auto;
+    background-position: center;
+    width: 100%; 
+    height: 104px; 
+    margin-left: -0.07em;
+}
+.inner_window_sign_display {
+    margin: 0;
+    margin-right: 0px;
+    margin-left: 0px;
+    height: 28%;
+    position: relative;
+    width: 35%;
+    background-color: #F8F8F8;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: double;
+    border-color: #C9C9C9;
+}
+#campaign_sign p {
+    color: rgb(0 0 0 / 0%);
+}
+`;
+
+document.head.appendChild(customStyling);
+    }
     else {
         return false;
     }
@@ -5173,7 +5325,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 201,
             "state": 1014,
-            "state_multiplier": 0.94751
+            "state_multiplier": 0.96661
         }
     },
     {
