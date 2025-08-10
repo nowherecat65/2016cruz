@@ -215,7 +215,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1000,
         "fields": {
             "priority": 1,
-            "description": "Here we go, Ted. This isn’t Solicitor General, and it’s not the U.S. Senate. It’s the presidency. You’re not going to just be appointed to the position, and you aren’t going to win easily like it’s nothing, either. This is going to be tough. What’s your strategy going in? Real estate mogul and entrepreneur Donald Trump appears to be the frontrunner.",
+            "description": "Here we go, Ted. This isn't Texas. This isn't a local or statewide race. It’s the presidency. You're going to have to bring your message to all 321 million Americans. This is going to be tough. What’s your strategy going in? Real estate mogul and entrepreneur Donald Trump appears to be the frontrunner.",
             "likelihood": 1
         }
     },
