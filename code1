@@ -282,7 +282,7 @@ campaignTrail_temp.temp_election_list = [
         "id": 20,
         "year": 2016,
         "is_premium": 0,
-        "display_year": "2016cruz"
+        "display_year": "2016 - Ted Cruz"
     }
 ]
 
@@ -326,6 +326,7 @@ e.creditsPage = () => {
     <p>General_Rise8708 for playtesting
     <p>Many more people who I talked to and gave me advice over the development of the mod!</p>
     <h3>Music Credit</h3>
+    <p>Little Dark Age - MGMT
     <p>God Bless the USA - Lee Greenwood</p>
     <p>Where The Stars And Stripes And The Eagle Fly - Aaron Tippin</p>
     <p>The Battle Cry of Freedom - Barrie Hingley</p>
@@ -659,8 +660,12 @@ var soundtracks = {
   0: {
     name: "We Can Bring America Back",
     tracklist: [
+       {
+        "name": "Opening - Little Dark Age",
+        "url": "https://audio.jukehost.co.uk/thWV9IS3EjtZCr60oulMIshL6sg8WwE8"
+      },
       {
-        "name": "God Bless the USA",
+        "name": "God Bless the U.S.A",
         "url": "https://audio.jukehost.co.uk/A7K1Ha1w2kmRXPz8qC3DcNrQWxQTPTRs"
       },
       {
