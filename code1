@@ -1,3 +1,14 @@
+campaignTrail_temp.modBoxTheme = {
+     "header_color": "#c26161",
+     "header_image_url": "https://i.imgur.com/LV9K7MY.jpeg",
+     "header_text_color": "#000000",
+     "description_text_color": "#000000",
+     "description_background_color": "#ffffff",
+     "main_color": "#990000",
+     "secondary_color": "#e65b5b",
+     "ui_text_color": "#FFFFFF"
+}
+
 HistHexcolour=["#970417","#2633be","#fbd800","#00a62f"];
         HistName=[" Donald Trump"," Hillary Clinton"," Gary Johnson"," Jill Stein"];
         HistEV=[304,227,0,0];
