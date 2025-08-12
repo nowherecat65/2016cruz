@@ -47,7 +47,7 @@ campaignTrail_temp.election_json = [
         "pk": 20,
         "fields": {
             "year": 2016,
-            "summary": "<div style='overflow-y:scroll;height:200px;'><p>The last few years have been anything but boring for America. After the 2008 election, where pundits believed the Republican Party would be kept in the national minority for decades, conservatism seemed to be granted a lifeline, as Obama's domestic agenda struggled and his approval ratings took a nosedive. In 2010, the Republicans won a massive victory in the House in a shocker, picking up over 63 House seats, which nobody expected just 1 or 2 years prior. Everything was suggesting a Republican landslide victory in 2012.<br><br>Yet, 2012 came, and the Democrats walloped the Republicans once again, winning both the Senate and the presidency.<br><br>Obama's administration has been full of failures, from socializing healthcare to funding radical Islamic terrorism. The people of this country demand a true alternative to the incompetence of the Democratic deep state.<br><br>And Ted is going to be the one to bring it.</p></div>",
+            "summary": "<div style='overflow-y:scroll;height:200px;'><p>The last few years have been anything but boring for America. After the 2008 election, where pundits believed the Republican Party would be kept in the national minority for decades, conservatism seemed to be granted a lifeline, as Obama's domestic agenda struggled and his approval ratings took a nosedive. In 2010, the Republicans won a massive victory in the House of Representatives in a shocker, picking up over 63 House seats, which nobody expected even a year prior. The path forward was clear. All signs were predicting a Republican rebound in 2012.<br><br>Yet, 2012 came, and the Democrats walloped the Republicans once again, winning both the Senate and the presidency.<br><br>Obama's administration has been full of failures, from socializing healthcare to funding radical Islamic terrorism. The people of this country demand a true alternative to the incompetence of the Democratic deep state.<br><br>And Ted is going to be the one to bring it.</p></div>",
             "image_url": "https://i.imgur.com/tKO26sx.jpeg",
             "winning_electoral_vote_number": 270,
             "advisor_url": "https://i.postimg.cc/KYR61Mth/Ted-advisor-primary.png",
@@ -673,7 +673,7 @@ var soundtracks = {
         "url": "https://audio.jukehost.co.uk/50AuFK2OTd6hRyAMT0VZP1O0yqEXpg9j"
       },
       {
-        "name": "The Battle Cry of Freedom",
+        "name": "The Battle Cry of Freedom (Instrumental)",
         "url": "https://audio.jukehost.co.uk/C961f2ODHf2c26ZefTqoLYADeZWtJwfW"
       },
       {
