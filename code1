@@ -321,10 +321,11 @@ e.creditsPage = () => {
     <p><font color='#4370f7'>theanswerisme</font></p>
     <h3>Miscellaneous</h3>
     <p>mp4clout for making the banner
-    <p>DecstarG for the Music Player, VP Switcher, and Credits Screen</p>
+    <p>DecstarG for the Music Player and Credits Screen</p>
     <p>LiquidAstro for his Further Reading tool 
     <p>General_Rise8708 for playtesting
     <p>Many more people who I talked to and gave me advice over the development of the mod!</p>
+    <p>Your name might not be listed here, but your contributions are not forgotten!
     <h3>Music Credit</h3>
     <p>Little Dark Age - MGMT
     <p>God Bless the USA - Lee Greenwood</p>
