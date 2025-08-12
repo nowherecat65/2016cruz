@@ -1,7 +1,7 @@
 campaignTrail_temp.modBoxTheme = {
      "header_color": "#c26161",
      "header_image_url": "https://i.imgur.com/9I3gPEu.png",
-     "header_text_color": "#adadad",
+     "header_text_color": "#ffffff",
      "description_text_color": "#000000",
      "description_background_color": "#ffffff",
      "main_color": "#990000",
