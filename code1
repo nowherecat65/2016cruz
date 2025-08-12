@@ -327,11 +327,10 @@ e.creditsPage = () => {
     <p>Many more people who I talked to and gave me advice over the development of the mod!</p>
     <p>Your name might not be listed here, but your contributions are not forgotten!
     <h3>Music Credit</h3>
-    <p>Little Dark Age - MGMT
+    <p>Real Gone - Sheryl Crow</p>
     <p>God Bless the USA - Lee Greenwood</p>
     <p>Where The Stars And Stripes And The Eagle Fly - Aaron Tippin</p>
     <p>The Battle Cry of Freedom - Barrie Hingley</p>
-    <p>Work in progress...<br><br></p>
     <h1><font color='#ff9100'>But most importantly...</font></h1>
     <div style='width: 70%;text-overflow: ellipsis;text-align:center;display: block;margin-left: auto;margin-right: auto;'>
     <p>You. Thank you for playing.<p>
@@ -662,8 +661,8 @@ var soundtracks = {
     name: "We Can Bring America Back",
     tracklist: [
        {
-        "name": "Opening - Little Dark Age",
-        "url": "https://audio.jukehost.co.uk/thWV9IS3EjtZCr60oulMIshL6sg8WwE8"
+        "name": "Real Gone",
+        "url": "https://audio.jukehost.co.uk/uSkx8iXE3oQ6BZQ9ZbFqYfPh49SfaMrU"
       },
       {
         "name": "God Bless the U.S.A",
