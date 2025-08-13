@@ -290,7 +290,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1020,
         "fields": {
             "priority": 10,
-            "description": "Your running mate, Carly Fiorina, has been a great benefit to your campaign, and in the polls, the female vote deficit between you and Clinton is rapidly closing. However, some are concerned by her tenure at HP, where many employees were laid off, and opponents are using this to paint the notion that Fiorina is unfit to serve in office. How will you get rid of these concerns?",
+            "description": "Your running mate, Carly Fiorina, has been a strong asset to your campaign, and polls show the gender gap with Secretary Clinton narrowing. However, some voters are concerned about her tenure at HP, where many employees were laid off, and opponents are using this to argue she is unfit for office. How will you address these concerns?",
             "likelihood": 1
         }
     },
@@ -299,7 +299,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1012,
         "fields": {
             "priority": 10,
-            "description": "On September 11th, 2012, as every American was paying tribute to those who lost their lives in the WTC attack, an Islamic militant group attacked U.S government facilities in Benghazi, killing 4 Americans. Hillary Clinton was widely blamed for her lapses in security and intelligence by conservatives. How will you exploit this advantage?",
+            "description": "On September 11, 2012, while Americans marked the anniversary of the 9/11 attacks, an Islamist militant group attacked U.S. diplomatic facilities in Benghazi, killing four Americans. Conservatives have blamed Hillary Clinton for lapses in security and intelligence. How will you press this advantage?",
             "likelihood": 1
         }
     },
@@ -308,7 +308,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1030,
         "fields": {
             "priority": 10,
-            "description": "In 2013, you staged a 21-hour Senate filibuster, and helped lead a government shutdown in an attempt to defund Obamacare. The move cost the country billions and left many politicians on both sides of the aisle frustrated. Would you take the same approach again as President if Congress doesn’t cooperate?",
+            "description": "In 2013, you staged a 21-hour Senate filibuster, and helped lead a government shutdown in an attempt to defund Obamacare. The move cost the country billions and left many politicians on both sides of the aisle frustrated. Would you take the same approach again as President if Congress didn’t cooperate?",
             "likelihood": 1
         }
     },
@@ -570,7 +570,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5033,
         "fields": {
             "question": 1012,
-            "description": "Crooked Hillary loves to talk about how experienced she is at foreign policy. Well our amazing diplomatic Secretary let 4 Americans die, then went on television and lied. All to cover up he own failures in security. This woman's career has been a disaster, no matter how you look at it."
+            "description": "Crooked Hillary loves to talk about how experienced she is on foreign policy. Well, our amazing Secretary of State let four Americans die, then went on television and lied, all to cover up her own security failures. This woman’s career has been a disaster, no matter how you look at it."
         }
     },
     {
@@ -578,7 +578,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5034,
         "fields": {
             "question": 1012,
-            "description": "This happened 4 years ago, and most people have moved on by this point. We should find other areas of attack. Besides, I would prefer to focus on domestic issues."
+            "description": "This happened four years ago, and most people have moved on by now. Remember what happened to Mitt when he went after Benghazi? We should find other lines of attack. Besides, I’d prefer to focus on domestic issues."
         }
     },
     {
@@ -1106,7 +1106,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51025,
         "fields": {
             "question": 1020,
-            "description": "These allegations are blatantly false. Fiorina's tenure at Hewlett-Packard has been nothing but successes, and I'm proud to have her on my ticket."
+            "description": "These allegations are blatantly false. Fiorina’s tenure at Hewlett-Packard has been nothing but successful. I’m proud to have her on my ticket, and I’m proud to call her a close friend to both Heidi and me."
         }
     },
     {
@@ -1114,7 +1114,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51026,
         "fields": {
             "question": 1020,
-            "description": "In the end, these are just unfounded claims by the liberal media. We can ignore it because I know Fiorina will do a great job as this nation's second-in-command, and those who say otherwise are completely mistaken."
+            "description": "In the end, these are silly, unfounded claims from the liberal media. We can ignore them—I know Fiorina can fend for herself and will do a great job as the nation’s second-in-command. Those who say otherwise are mistaken."
         }
     },
     {
@@ -1122,7 +1122,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51030,
         "fields": {
             "question": 1020,
-            "description": "Fiorina inherited a company that was rife with mismanagement and a tumultuous merger with Compaq, and today, HP is one of the largest American companies. If the Washington cartel consider that \"unfit to serve\", than that's their problem, not mine."
+            "description": "Mrs. Fiorina inherited a company rife with mismanagement and a tumultuous Compaq merger, and today HP remains one of America’s largest companies. If the Washington cartel considers that ''unfit to serve,'' that’s their problem, not mine."
         }
     },
     {
@@ -1130,7 +1130,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51037,
         "fields": {
             "question": 1030,
-            "description": "To be honest, I regret my actions. I wanted to repeal Obamacare, but shutting down the federal government and wasting billions over petty partisanship was not the way to do it."
+            "description": "I don’t want to say it publicly, but, to be honest, I-uh-regret how that turned out. I wanted to repeal Obamacare, but shutting down the federal government and wasting billions on petty partisanship wasn’t the way to do it."
         }
     },
     {
@@ -1154,7 +1154,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51050,
         "fields": {
             "question": 1020,
-            "description": "If you want to see somebody who is unfit to serve in office, I could think of nobody better then Hillary Clinton, who has leaked federal secrets, destroyed documents, and is under investigation by the FBI. She cannot be allowed to become Commander-in-Chief."
+            "description": "If you want to see someone unfit to serve in office, I can think of no one better than Hillary Clinton, who has leaked federal secrets, destroyed documents, and is under investigation by the FBI. She cannot be allowed to become commander in chief."
         }
     },
     {
@@ -1162,7 +1162,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51052,
         "fields": {
             "question": 1012,
-            "description": "This just goes to show what happens when we become the world police. We should stop wasting billions overseas, and instead return this money to the American people and take care of our vets."
+            "description": "This shows what happens when we try to police the world. We should stop wasting billions overseas, without slashing the military budget, redirect those resources to the American people, and take care of our veterans."
         }
     },
     {
@@ -5335,7 +5335,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 201,
             "state": 1014,
-            "state_multiplier": 0.87
+            "state_multiplier": 0.9
         }
     },
     {
@@ -6891,6 +6891,16 @@ campaignTrail_temp.answer_score_global_json = [
             "candidate": 200,
             "affected_candidate": 201,
             "global_multiplier": 0.0025
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 3079,
+        "fields": {
+            "answer": 5129,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "global_multiplier": -0.0075
         }
     },
     {
