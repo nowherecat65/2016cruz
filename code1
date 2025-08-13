@@ -719,5 +719,7 @@ newMusicPlayer()
 // Stol- I mean borrowed, from 2016 A Lifetime Of This
 
 e.ElectionPopup = "Alright Ted. Election night is here. You ready?"
-e.WinPopup = "You.. you've done it."
-e.LosePopup = "Damned be."
+e.WinPopup = "You.. you've done it. You actually did it!"
+e.LosePopup = "Damned be. It's over, Ted."
+
+
