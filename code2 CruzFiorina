@@ -43,7 +43,7 @@ cyoAdventure = function (a) {
     ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length-1];
 
     if (ans == 20739) {
-        campaignTrail_temp.candidate_image_url = 'https://i.postimg.cc/25x87QtT/Ted-generalelection-photo.jpg'
+        campaignTrail_temp.candidate_image_url = 'https://i.postimg.cc/FFgsSdzD/Ted-generalelection-photo-1.jpg'
         campaignTrail_temp.running_mate_image_url = 'https://files.catbox.moe/ul4rox.png';
         campaignTrail_temp.running_mate_last_name = 'Fiorina';
         campaignTrail_temp.running_mate_first_name = 'Carly';
@@ -82,7 +82,7 @@ customStyling.innerHTML = `
 document.head.appendChild(customStyling);
     }
     else if (ans == 5032) {
-        campaignTrail_temp.candidate_image_url = 'https://i.postimg.cc/25x87QtT/Ted-generalelection-photo.jpg'
+        campaignTrail_temp.candidate_image_url = 'https://i.postimg.cc/FFgsSdzD/Ted-generalelection-photo-1.jpg'
         campaignTrail_temp.running_mate_image_url = 'https://files.catbox.moe/ul4rox.png';
         campaignTrail_temp.running_mate_last_name = 'Fiorina';
         campaignTrail_temp.running_mate_first_name = 'Carly';
@@ -121,7 +121,7 @@ customStyling.innerHTML = `
 document.head.appendChild(customStyling);
     }
     else if (ans == 5031) {
-        campaignTrail_temp.candidate_image_url = 'https://i.postimg.cc/25x87QtT/Ted-generalelection-photo.jpg'
+        campaignTrail_temp.candidate_image_url = 'https://i.postimg.cc/FFgsSdzD/Ted-generalelection-photo-1.jpg'
         campaignTrail_temp.running_mate_image_url = 'https://files.catbox.moe/ul4rox.png';
         campaignTrail_temp.running_mate_last_name = 'Fiorina';
         campaignTrail_temp.running_mate_first_name = 'Carly';
@@ -160,7 +160,7 @@ customStyling.innerHTML = `
 document.head.appendChild(customStyling);
     }
     else if (ans == 5030) {
-        campaignTrail_temp.candidate_image_url = 'https://i.postimg.cc/25x87QtT/Ted-generalelection-photo.jpg'
+        campaignTrail_temp.candidate_image_url = 'https://i.postimg.cc/FFgsSdzD/Ted-generalelection-photo-1.jpg'
         campaignTrail_temp.running_mate_image_url = 'https://files.catbox.moe/ul4rox.png';
         campaignTrail_temp.running_mate_last_name = 'Fiorina';
         campaignTrail_temp.running_mate_first_name = 'Carly';
