@@ -263,7 +263,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1009,
         "fields": {
             "priority": 5,
-            "description": "Last week, there was a radical Islamic terrorist attack on Nice, resulting in 86 dead and 450 injured. The month before, there was a mass shooting at a LGBT nightclub in Orlando, killing 49, also perpetrated by a Muslim. How will you combat the radical Islamic terrorism that is running rampant across the world?",
+            "description": "Last week, a radical Islamist terrorist attack in Nice left 86 dead and 450 injured. The month before, a mass shooting at an LGBT nightclub in Orlando killed 49, also carried out by an Islamist extremist. How will you combat radical Islamist terrorism around the world?",
             "likelihood": 1
         }
     },
@@ -281,7 +281,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1022,
         "fields": {
             "priority": 10,
-            "description": "The current director of the FBI, James Comey, has heavily criticized Clinton's email practices as Secretary of State, but he declined to recommend any indictments. What do you have to say about this?",
+            "description": "The current FBI director, James Comey, recently issued strong criticism of Hillary Clinton’s email practices as Secretary of State but declined to recommend any indictments. What do you have to say about this?",
             "likelihood": 1
         }
     },
@@ -1066,7 +1066,7 @@ campaignTrail_temp.answers_json = [
         "pk": 20743,
         "fields": {
             "question": 1009,
-            "description": "I have a real plan to defeat ISIS, unlike Obama. We need a coordinated effort of no-fly zones and air strikes to defeat the Islamic State and truly bring peace to the Middle East, not the disaster Barack Obama has imposed upon us."
+            "description": "I have a real plan to defeat ISIS, unlike Obama. We need a coordinated effort of no-fly zones and air strikes to defeat the Islamic State and truly bring peace to the Middle East, not the disaster Barack Obama has imposed on us."
         }
     },
     {
@@ -1082,7 +1082,7 @@ campaignTrail_temp.answers_json = [
         "pk": 20752,
         "fields": {
             "question": 1009,
-            "description": "Last month, we have 59 people in Florida shot dead. Last week, 69 killed by a terrorist in a truck. The attacks are getting worse, and the only way we will be able to destroy radical Islamic terrorism is by increasing our military presence in Syria and Iraq."
+            "description": "Last month, 59 people in Florida were shot dead. Last week, 69 were killed by a terrorist using a truck. The attacks are getting worse, and the only way we can destroy radical Islamic terrorism is to increase our military presence in Syria and Iraq."
         }
     },
     {
@@ -1090,7 +1090,7 @@ campaignTrail_temp.answers_json = [
         "pk": 20757,
         "fields": {
             "question": 1009,
-            "description": "The Obama administration is solely to blame for the increase in radical Islamic terror. His weakness to Iran, to Russia, and to other radical groups have caused them to strike. On day one, I will rip to shreds this catastrophic Iranian nuclear deal and carpet bomb ISIS to the ground. I don't know if sand can glow in the dark, but we're going to find out!"
+            "description": "The Obama administration is solely to blame for the increase in radical Islamic terror. His weakness toward Iran, Russia, and other radical groups has emboldened them to strike. On day one, I will rip this catastrophic Iran nuclear deal to shreds and carpet-bomb ISIS into the ground. I don’t know if sand can glow in the dark, but we’re going to find out!"
         }
     },
     {
@@ -1138,7 +1138,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51043,
         "fields": {
             "question": 1022,
-            "description": "This investigation was a disaster from the very start. Crooked Hillary destroyed almost all of the evidence during the investigation, and yet she wasn't charged. On my first day in office, we will lock up Hillary, plain and simple."
+            "description": "You know, this investigation was a disaster from the very start. Crooked Hillary destroyed nearly all the evidence during the investigation, yet she wasn’t charged. On my first day in office, we will lock up Hillary and get justice. Plain and simple."
         }
     },
     {
@@ -1146,7 +1146,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51045,
         "fields": {
             "question": 1022,
-            "description": "I have the utmost respect for James Comey and our terrific agents in the FBI. They have the final say in the end. It seems Hillary may have gotten lucky on this one."
+            "description": "I have the utmost respect for James Comey and our terrific agents at the FBI. They have the final say in the end. It seems Hillary may have gotten lucky on this one."
         }
     },
     {
@@ -1170,7 +1170,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51063,
         "fields": {
             "question": 1022,
-            "description": "This just goes to show how corrupt Hillary is. We don't know if she destroyed the evidence or not, but you better believe a Cruz administration will be looking into this further!"
+            "description": "This just shows how corrupt Hillary is and how deep the swamp runs. We don’t know whether she destroyed the evidence, but you can bet a Cruz administration will be looking into this further!"
         }
     }
 ]
@@ -5056,7 +5056,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 200,
             "state": 1034,
-            "state_multiplier": 0.922
+            "state_multiplier": 0.932
         }
     },
     {
@@ -5515,7 +5515,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 201,
             "state": 1034,
-            "state_multiplier": 0.922
+            "state_multiplier": 0.917
         }
     },
     {
@@ -8169,6 +8169,28 @@ campaignTrail_temp.answer_score_state_json = [
     },
     {
         "model": "campaign_trail.answer_score_state",
+        "pk": 51047,
+        "fields": {
+            "answer": 51045,
+            "state": 1008,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "state_multiplier": 0.0075
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 51047,
+        "fields": {
+            "answer": 51045,
+            "state": 1014,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "state_multiplier": 0.001
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
         "pk": 51034,
         "fields": {
             "answer": 5033,
@@ -8230,7 +8252,7 @@ campaignTrail_temp.answer_score_state_json = [
             "state": 1000,
             "candidate": 200,
             "affected_candidate": 200,
-            "state_multiplier": 0
+            "state_multiplier": 0.006
         }
     }
 ]
@@ -8863,7 +8885,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 20743,
             "candidate": 200,
-            "answer_feedback": "The attack works well -- until people realize that's the exact same thing Obama is doing, and it just ends up giving your opponents more cannon fodder to use against you."
+            "answer_feedback": "The attack works well -- until people realize it’s the exact same thing Obama is doing and not far from what Hillary wants. It ends up giving your opponents more cannon fodder against you."
         }
     },
     {
@@ -8872,7 +8894,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 20752,
             "candidate": 200,
-            "answer_feedback": "Nothing wrong with offering your own policy proposals, just make sure to balance it with some attacks on the Democrats."
+            "answer_feedback": "There’s nothing wrong with offering your own policy prescriptions, just make sure to balance them with some attacks on the Democrats."
         }
     },
     {
@@ -8881,7 +8903,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 20757,
             "candidate": 200,
-            "answer_feedback": "Political analysts are surprised by how you've answered the question so aggressively. \n\nAnd the base loves it."
+            "answer_feedback": "Political analysts are surprised by how aggressively you answered the question, and the base loves it."
         }
     },
     {
@@ -8935,7 +8957,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51043,
             "candidate": 200,
-            "answer_feedback": "Trump, is, obviously, very happy with this rhetoric, but it's also scared a lot of moderates over to Clinton. But will it matter on election day?"
+            "answer_feedback": "Mr. Trump and your base are obviously very happy with this rhetoric, but it’s also apparently scaring a lot of moderates toward the Clinton campaign. Will it matter on Election Day?"
         }
     },
     {
@@ -8962,7 +8984,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51045,
             "candidate": 200,
-            "answer_feedback": "You seem to be unusually restrained this time around, if that's easy to believe."
+            "answer_feedback": "You seem unusually restrained this time around -- if that’s easy to believe."
         }
     },
     {
@@ -8971,7 +8993,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51063,
             "candidate": 200,
-            "answer_feedback": "This is probably your best option. Take the attack to Clinton."
+            "answer_feedback": "This is probably your best option here. There’s absolutely nothing wrong with taking the fight to Hillary Clinton."
         }
     }
 ]
