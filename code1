@@ -2,19 +2,21 @@ campaignTrail_temp.achievements = {
     "Trumped" : {
         "image" : "https://i.imgur.com/ucDsHMO.jpeg",
         "description" : "Lose the nomination battle to Donald Trump."
+        "cannotBeCheated" : true
     },
     "Kasich Country" : {
         "image" : "https://i.imgur.com/gCge1LB.jpeg",
         "description" : "Lose the nomination battle to John Kasich."
+        "cannotBeCheated" : true
  },
     "Robo-Rubio" : {
         "image" : "https://i.imgur.com/bKISuoz.jpeg",
-        "description" : "Lose the nomination battle to Marco Rubio",
+        "description" : "Lose the nomination battle to Marco Rubio.",
         "cannotBeCheated" : true
     },
     "Hillary, the Zodiac's Next Victim" : {
         "image" : "https://i.imgur.com/aGcFXIx.jpeg",
-        "description" : "Defeat Hillary Clinton in a blowout on election day.",
+        "description" : "Defeat Hillary Clinton in a landslide.",
         "cannotBeCheated" : true
      },
     "Cruzing to Failure" : {
