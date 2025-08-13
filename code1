@@ -387,6 +387,7 @@ s1 {
     <p>God Bless the USA - Lee Greenwood</p>
     <p>Where The Stars And Stripes And The Eagle Fly - Aaron Tippin</p>
     <p>The Battle Cry of Freedom - Barrie Hingley</p>
+    <p>Let Love Rule - Lenny Kravitz</p>
     <h1><font color='#fc7914'>But most importantly...</font></h1>
     <div style='width: 70%;text-overflow: ellipsis;text-align:center;display: block;margin-left: auto;margin-right: auto;'>
     <p>You. Thank you for playing.<p>
@@ -733,8 +734,8 @@ var soundtracks = {
         "url": "https://audio.jukehost.co.uk/C961f2ODHf2c26ZefTqoLYADeZWtJwfW"
       },
       {
-        "name": "The Caretaker - C1; A Losing Battle Is Raging",
-        "url": "https://cdn.discordapp.com/attachments/810034515334004766/1074235126000660490/c1.mp3"
+        "name": "Lenny Kravitz - Let Love Rule",
+        "url": "https://audio.jukehost.co.uk/CNWpc9E5AiiUodAsdDYgfmdq4Ay8efJW"
       },
       {
         "name": "The Caretaker - D1; I Still Feel As Though I Am Me",
