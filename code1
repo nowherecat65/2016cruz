@@ -7,13 +7,13 @@ campaignTrail_temp.achievements = {
         "image" : "https://i.imgur.com/gCge1LB.jpeg",
         "description" : "Lose the nomination battle to John Kasich."
  },
-    "Robo-Rubio" : {
+    "Little Marco, No More" : {
         "image" : "https://i.imgur.com/RZWn5KE.jpeg",
         "description" : "Lose the nomination battle to Marco Rubio.",
         "cannotBeCheated" : true
     },
     "Hillary, the Zodiac's Next Victim" : {
-        "image" : "https://i.imgur.com/aGcFXIx.jpeg",
+        "image" : "https://i.imgur.com/9fUPW2W.png",
         "description" : "Defeat Hillary Clinton in a landslide win.",
         "cannotBeCheated" : true
      },
@@ -49,7 +49,7 @@ campaignTrail_temp.achievements = {
  },
       "#ImWithHer" : {
         "image" : "https://i.imgur.com/9QJ7Gg7.png",
-        "description" : "As Ted Cruz, win the primaries but lose the general election.",
+        "description" : "As Ted Cruz, win the primaries but lose the general election to Hillary Clinton.",
         "cannotBeCheated" : true
  },
        "The Triumph Of Conservatism" : {
