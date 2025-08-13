@@ -1,3 +1,43 @@
+campaignTrail_temp.achievements = {
+    "Trumped" : {
+        "image" : "https://i.imgur.com/ucDsHMO.jpeg",
+        "description" : "Lose the nomination battle to Donald Trump."
+    },
+    "Kasich Country" : {
+        "image" : "https://i.imgur.com/gCge1LB.jpeg",
+        "description" : "Lose the nomination battle to John Kasich."
+ },
+    "Robo-Rubio" : {
+        "image" : "https://i.imgur.com/bKISuoz.jpeg",
+        "description" : "Lose the nomination battle to Marco Rubio",
+        "cannotBeCheated" : true
+    },
+    "Hillary, the Zodiac's Next Victim" : {
+        "image" : "https://i.imgur.com/aGcFXIx.jpeg",
+        "description" : "Defeat Hillary Clinton in a blowout on election day.",
+        "cannotBeCheated" : true
+     },
+    "Cruzing to Failure" : {
+        "image" : "https://i.imgur.com/PEbS7qH.jpeg",
+        "description" : "As Ted Cruz, be defeated in a landslide loss.",
+        "cannotBeCheated" : true
+ },
+    "A Man of Princple" : {
+        "image" : "https://i.imgur.com/JzUuzKN.jpeg",
+        "description" : "As Ted Cruz, refuse to concede to Trump and win.",
+        "cannotBeCheated" : true
+ },
+    "An Uneasy Alliance" : {
+        "image" : "https://i.imgur.com/hyfAjo9.jpeg",
+        "description" : "Offer Trump a cabinet position, and go on to win the election.",
+        "cannotBeCheated" : true
+ },
+    "The Debate Master" : {
+        "image" : "https://i.imgur.com/JzwTjJW.jpeg",
+        "description" : "Win every single debate, and go on to win the election.",
+        "cannotBeCheated" : true
+    }
+}
 campaignTrail_temp.modBoxTheme = {
      "header_color": "#c26161",
      "header_image_url": "https://i.imgur.com/9I3gPEu.png",
