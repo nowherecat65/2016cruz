@@ -4876,7 +4876,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 200,
             "state": 1014,
-            "state_multiplier": 0.91
+            "state_multiplier": 0.895
         }
     },
     {
@@ -7728,6 +7728,16 @@ campaignTrail_temp.answer_score_issue_json = [
     },
     {
         "model": "campaign_trail.answer_score_issue",
+        "pk": 2792,
+        "fields": {
+            "answer": 20678,
+            "issue": 100,
+            "issue_score": -0.2,
+            "issue_importance": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
         "pk": 2793,
         "fields": {
             "answer": 5021,
@@ -8937,7 +8947,7 @@ campaignTrail_temp.answer_feedback_json = [
 ]
 
 campaignTrail_temp.candidate_image_url = "https://files.catbox.moe/u52bl8.jpg";
-campaignTrail_temp.running_mate_image_url = "https://i.imgur.com/5j1h1U6.jpeg";
+campaignTrail_temp.running_mate_image_url = "https://i.postimg.cc/gJfyqbQv/u52bl8-1-1.jpg";
 campaignTrail_temp.candidate_last_name = "Cruz";
 campaignTrail_temp.running_mate_last_name = "Campaign";
 
@@ -8949,7 +8959,7 @@ campaignTrail_temp.jet_data = [{
         "canName": "Cruz",
         "runName": "Campaign",
         "canImage": "https://files.catbox.moe/u52bl8.jpg",
-        "runImage": "https://i.imgur.com/5j1h1U6.jpeg"
+        "runImage": "https://i.postimg.cc/gJfyqbQv/u52bl8-1-1.jpg"
     },
     "nicknames": {
         "200": "Cruz",
