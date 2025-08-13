@@ -715,3 +715,9 @@ var soundtracks = {
 // Set up new music player
 
 newMusicPlayer()
+
+// Stol- I mean borrowed, from 2016 A Lifetime Of This
+
+e.ElectionPopup = "Alright Ted. Election night is here. You ready?"
+e.WinPopup = "You.. you've done it."
+e.LosePopup = "Damned be."
