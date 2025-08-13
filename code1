@@ -18,7 +18,7 @@ campaignTrail_temp.achievements = {
         "cannotBeCheated" : true
      },
     "Cruzing to Failure" : {
-        "image" : "https://i.imgur.com/PEbS7qH.jpeg",
+        "image" : "https://i.imgur.com/snJSTQR.png",
         "description" : "As Ted Cruz, be defeated in a landslide.",
         "cannotBeCheated" : true
  },
@@ -58,8 +58,8 @@ campaignTrail_temp.achievements = {
         "cannotBeCheated" : true
   },
        "Make it Great Again" : {
-        "image" : "https://i.imgur.com/hkoIQw3.png",
-        "description" : "As Ted Cruz, win the election while allying with Trump and being populist on every question.",
+        "image" : "https://i.imgur.com/PEbS7qH.jpeg",
+        "description" : "As Ted Cruz, win the election while conceding to Trump and being populist on every question.",
         "cannotBeCheated" : true
  },
     "The Debate Master" : {
