@@ -42,13 +42,8 @@ function getQuestionNumberFromPk(pk) {
 cyoAdventure = function (a) {
     ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length-1];
 
-    if (ans == 20715) {
-        campaignTrail_temp.question_number = getQuestionNumberFromPk(20720);
-    }
-    else if (ans == 20683) {
-        campaignTrail_temp.question_number = getQuestionNumberFromPk(20720);
-    }
-    else if (ans == 20739) {
+    if (ans == 20739) {
+        campaignTrail_temp.candidate_image_url = 'https://i.imgur.com/ygXGrEP.jpeg'
         campaignTrail_temp.running_mate_image_url = 'https://files.catbox.moe/ul4rox.png';
         campaignTrail_temp.running_mate_last_name = 'Fiorina';
         campaignTrail_temp.running_mate_first_name = 'Carly';
@@ -88,6 +83,7 @@ customStyling.innerHTML = `
 document.head.appendChild(customStyling);
     }
     else if (ans == 5032) {
+        campaignTrail_temp.candidate_image_url = 'https://i.imgur.com/ygXGrEP.jpeg'
         campaignTrail_temp.running_mate_image_url = 'https://files.catbox.moe/ul4rox.png';
         campaignTrail_temp.running_mate_last_name = 'Fiorina';
         campaignTrail_temp.running_mate_first_name = 'Carly';
@@ -127,6 +123,7 @@ customStyling.innerHTML = `
 document.head.appendChild(customStyling);
     }
     else if (ans == 5031) {
+        campaignTrail_temp.candidate_image_url = 'https://i.imgur.com/ygXGrEP.jpeg'
         campaignTrail_temp.running_mate_image_url = 'https://files.catbox.moe/ul4rox.png';
         campaignTrail_temp.running_mate_last_name = 'Fiorina';
         campaignTrail_temp.running_mate_first_name = 'Carly';
@@ -166,6 +163,7 @@ customStyling.innerHTML = `
 document.head.appendChild(customStyling);
     }
     else if (ans == 5030) {
+        campaignTrail_temp.candidate_image_url = 'https://i.imgur.com/ygXGrEP.jpeg'
         campaignTrail_temp.running_mate_image_url = 'https://files.catbox.moe/ul4rox.png';
         campaignTrail_temp.running_mate_last_name = 'Fiorina';
         campaignTrail_temp.running_mate_first_name = 'Carly';
@@ -1008,7 +1006,7 @@ campaignTrail_temp.answers_json = [
         "pk": 20678,
         "fields": {
             "question": 1006,
-            "description": "We need to take the fight to Trump. He’s a liberal elitist who embodies New York values — pro-abortion, pro-gay marriage, and hostile to the Second Amendment. I’m the true conservative in this race."
+            "description": "We need to take the fight to Trump. He’s a liberal elitist who embodies New York values — he's pro-abortion, pro-gay marriage, and hostile to the Second Amendment. I’m the true conservative in this race."
         }
     },
     {
