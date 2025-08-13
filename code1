@@ -384,7 +384,7 @@ s1 {
     <p>Your name might not be listed here, but your contributions are not forgotten!
     <h3>Music Credit</h3>
     <p>Real Gone - Sheryl Crow</p>
-    <p>God Bless the USA - Lee Greenwood</p>
+    <p>God Bless the U.S.A. - Lee Greenwood</p>
     <p>Where The Stars And Stripes And The Eagle Fly - Aaron Tippin</p>
     <p>The Battle Cry of Freedom - Barrie Hingley</p>
     <p>Let Love Rule - Lenny Kravitz</p>
@@ -718,19 +718,19 @@ var soundtracks = {
     name: "We Can Bring America Back",
     tracklist: [
        {
-        "name": "Real Gone",
+        "name": "Sheryl Crow - Real Gone",
         "url": "https://audio.jukehost.co.uk/uSkx8iXE3oQ6BZQ9ZbFqYfPh49SfaMrU"
       },
       {
-        "name": "God Bless the U.S.A",
+        "name": "Lee Greenwood - God Bless the U.S.A.",
         "url": "https://audio.jukehost.co.uk/A7K1Ha1w2kmRXPz8qC3DcNrQWxQTPTRs"
       },
       {
-        "name": "Where The Stars And Stripes And The Eagle Fly",
+        "name": "Aaron Tippin - Where The Stars And Stripes And The Eagle Fly",
         "url": "https://audio.jukehost.co.uk/50AuFK2OTd6hRyAMT0VZP1O0yqEXpg9j"
       },
       {
-        "name": "The Battle Cry of Freedom (Instrumental)",
+        "name": "Barrie Hingley - The Battle Cry of Freedom (Instrumental)",
         "url": "https://audio.jukehost.co.uk/C961f2ODHf2c26ZefTqoLYADeZWtJwfW"
       },
       {
