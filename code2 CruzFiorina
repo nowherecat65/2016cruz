@@ -263,7 +263,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1009,
         "fields": {
             "priority": 5,
-            "description": "Last week, a radical Islamist terrorist attack in Nice left 86 dead and 450 injured. The month before, a mass shooting at an LGBT nightclub in Orlando killed 49, also carried out by an Islamist extremist. How will you combat radical Islamist terrorism around the world?",
+            "description": "Last week, a radical Islamist terrorist attack in Nice, France left 86 dead and 450 injured. The month before, a mass shooting at an LGBT nightclub in Orlando killed 49, also carried out by an Islamist extremist. How will you combat radical Islamist terrorism around the world?",
             "likelihood": 1
         }
     },
