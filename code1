@@ -310,20 +310,36 @@ var changeGameDisp = (hide) => {
 
 e.creditsPage = () => {
   credits_html = `
-    <h3>Lead Developer</h3>
-    <p><font color='#ff9100'>TheMcCain</font></p>
-    <h3>Coding</h3>
-    <p><font color='#ff9100'>TheMcCain</font></p>
-    <h3>Writing</h3>
-    <p><font color='#ff9100'>TheMcCain</font></p>
-    <p><font color='#4370f7'>theanswerisme</font></p>
-    <h3>Theming</h3>
-    <p><font color='#4370f7'>theanswerisme</font></p>
+              <style>\
+                  @keyframes flash {\
+                      0% { color: red; }\
+                      14% { color: orange; }\
+                      28% { color: yellow; }\
+                      42% { color: green; }\
+                      57% { color: blue; }\
+                      71% { color: darkviolet; }\
+                      85% { color: orange; }\
+                      100% { color: red; }\
+                  }\
+                  .flashing-text {\
+                      font-weight: bold;\
+                      animation: flash 2s infinite;\
+                  }\
+              </style>\
+<style>
+s1 {
+  text-shadow: 2px 2px 4px;
+}
+</style>
+    <h3><p>The Creators</p></h3>
+    <p><s1><span class='flashing-text'>TheMcCain - Lead Dev/Coding/Writing</span></s1></p>
+    <p><font color='#f7483e'>theanswerisme - Writing, Theming</font></p>
     <h3>Miscellaneous</h3>
-    <p>mp4clout for making the banner
+    <p>mp4clout - Made the banner!<p>
     <p>DecstarG for the Music Player and Credits Screen</p>
     <p>LiquidAstro for his Further Reading tool 
-    <p>General_Rise8708 for playtesting
+    <p>General_Rise8708 for playtesting<p>
+    <p>Many mods that I've inspected to see how to fix my code!
     <p>Many more people who I talked to and gave me advice over the development of the mod!</p>
     <p>Your name might not be listed here, but your contributions are not forgotten!
     <h3>Music Credit</h3>
@@ -331,7 +347,7 @@ e.creditsPage = () => {
     <p>God Bless the USA - Lee Greenwood</p>
     <p>Where The Stars And Stripes And The Eagle Fly - Aaron Tippin</p>
     <p>The Battle Cry of Freedom - Barrie Hingley</p>
-    <h1><font color='#ff9100'>But most importantly...</font></h1>
+    <h1><font color='#fc7914'>But most importantly...</font></h1>
     <div style='width: 70%;text-overflow: ellipsis;text-align:center;display: block;margin-left: auto;margin-right: auto;'>
     <p>You. Thank you for playing.<p>
     </div>
@@ -345,7 +361,7 @@ e.creditsPage = () => {
     changeGameDisp(true);
     var menuHeader = document.createElement("div");
     menuHeader.classList.add("inner_window_front");
-    menuHeader.innerHTML = `<h1 style='font-family: "Trebuchet MS";'><font color='#fc7f03'>Credits</font></h1>`;
+    menuHeader.innerHTML = `<h1 style='font-family: "Trebuchet MS";'><font color='#ffffff'>Credits</f</h1>`;
     menuHeader.id = "SOTUheader";
     menuHeader.style = "height: 50px;background-color:#2d2d2d";
     var newMenu = document.createElement("div");
