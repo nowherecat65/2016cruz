@@ -33,7 +33,7 @@ campaignTrail_temp.achievements = {
         "cannotBeCheated" : true
 },
     "Evangelicals and Entrepreneurs" : {
-        "image" : "https://i.imgur.com/ByX7WEF.png",
+        "image" : "https://i.imgur.com/TIYyspQ.png",
         "description" : "Choose Carly Fiorina as your running mate, and go on to win.",
         "cannotBeCheated" : true
  },
@@ -52,7 +52,7 @@ campaignTrail_temp.achievements = {
         "description" : "As Ted Cruz, win the primaries but lose the general election to Hillary Clinton.",
         "cannotBeCheated" : true
  },
-       "I Burn Many Bridges" : {
+       "Arch-Conservative" : {
         "image" : "https://i.imgur.com/I82wkaG.png",
         "description" : "As Ted Cruz, win the election while attacking Clinton and Trump at every opportunity, being conservative on every question, and with Walker as your running mate.",
         "cannotBeCheated" : true
@@ -808,4 +808,4 @@ newMusicPlayer()
 
 e.ElectionPopup = "Alright Ted. Election night is here. You ready?"
 e.WinPopup = "No.. you've done it. You actually did it!"
-e.LosePopup = "No.. Surely something must be wrong. There has to be...?"
+e.LosePopup = "No.. Surely something must be wrong. There has to be..."
