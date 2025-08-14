@@ -12,8 +12,8 @@ campaignTrail_temp.achievements = {
         "description" : "Lose the nomination battle to Marco Rubio.",
         "cannotBeCheated" : true
     },
-    "Hillary, the Zodiac's Next Victim" : {
-        "image" : "https://i.imgur.com/9fUPW2W.png",
+    "Triumph of Conservatism" : {
+        "image" : "https://i.imgur.com/SzQ1riV.png",
         "description" : "Defeat Hillary Clinton in a landslide win.",
         "cannotBeCheated" : true
      },
@@ -52,8 +52,8 @@ campaignTrail_temp.achievements = {
         "description" : "As Ted Cruz, win the primaries but lose the general election to Hillary Clinton.",
         "cannotBeCheated" : true
  },
-       "The Triumph Of Conservatism" : {
-        "image" : "https://i.imgur.com/4nIbeWu.png",
+       "I Burn Many Bridges" : {
+        "image" : "https://i.imgur.com/I82wkaG.png",
         "description" : "As Ted Cruz, win the election while attacking Clinton and Trump at every opportunity, being conservative on every question, and with Walker as your running mate.",
         "cannotBeCheated" : true
   },
