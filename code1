@@ -32,7 +32,7 @@ campaignTrail_temp.achievements = {
         "description" : "Choose Marco Rubio as your running mate, and go on to win.",
         "cannotBeCheated" : true
 },
-    "An Evangelical and an Entrepreneur" : {
+    "Evangelicals and Entrepreneurs" : {
         "image" : "https://i.imgur.com/p8pTRF0.png",
         "description" : "Choose Carly Fiorina as your running mate, and go on to win.",
         "cannotBeCheated" : true
