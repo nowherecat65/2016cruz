@@ -27,12 +27,12 @@ campaignTrail_temp.achievements = {
         "description" : "As Ted Cruz, refuse to concede to Trump and win.",
         "cannotBeCheated" : true
  },
-    "Cuban Ticket" : {
+    "Cuban Exiles" : {
         "image" : "https://i.imgur.com/KyxxUlT.png",
         "description" : "Choose Marco Rubio as your running mate, and go on to win.",
         "cannotBeCheated" : true
 },
-    "Female Vice" : {
+    "An Evangelical and an Entrepreneur" : {
         "image" : "https://i.imgur.com/p8pTRF0.png",
         "description" : "Choose Carly Fiorina as your running mate, and go on to win.",
         "cannotBeCheated" : true
@@ -47,7 +47,7 @@ campaignTrail_temp.achievements = {
         "description" : "Choose Scott Walker as your running mate, and go on to win.",
         "cannotBeCheated" : true
  },
-      "#ImWithHer" : {
+      "We're With Her" : {
         "image" : "https://i.imgur.com/9QJ7Gg7.png",
         "description" : "As Ted Cruz, win the primaries but lose the general election to Hillary Clinton.",
         "cannotBeCheated" : true
