@@ -51,6 +51,7 @@ cyoAdventure = function (a) {
         campaignTrail_temp.running_mate_image_url = 'https://files.catbox.moe/ul4rox.png';
         campaignTrail_temp.running_mate_last_name = 'Fiorina';
         campaignTrail_temp.running_mate_first_name = 'Carly';
+campaignTrail_temp.election_json[0]["fields"].advisor_url = 'https://files.catbox.moe/zdabp1.jpg';
 const customStyling = document.createElement("style");
 
 customStyling.innerHTML = `
@@ -90,6 +91,7 @@ document.head.appendChild(customStyling);
         campaignTrail_temp.running_mate_image_url = 'https://files.catbox.moe/ul4rox.png';
         campaignTrail_temp.running_mate_last_name = 'Fiorina';
         campaignTrail_temp.running_mate_first_name = 'Carly';
+campaignTrail_temp.election_json[0]["fields"].advisor_url = 'https://files.catbox.moe/zdabp1.jpg';
 const customStyling = document.createElement("style");
 
 customStyling.innerHTML = `
@@ -129,6 +131,7 @@ document.head.appendChild(customStyling);
         campaignTrail_temp.running_mate_image_url = 'https://files.catbox.moe/ul4rox.png';
         campaignTrail_temp.running_mate_last_name = 'Fiorina';
         campaignTrail_temp.running_mate_first_name = 'Carly';
+campaignTrail_temp.election_json[0]["fields"].advisor_url = 'https://files.catbox.moe/zdabp1.jpg';
 const customStyling = document.createElement("style");
 
 customStyling.innerHTML = `
@@ -168,6 +171,7 @@ document.head.appendChild(customStyling);
         campaignTrail_temp.running_mate_image_url = 'https://files.catbox.moe/ul4rox.png';
         campaignTrail_temp.running_mate_last_name = 'Fiorina';
         campaignTrail_temp.running_mate_first_name = 'Carly';
+campaignTrail_temp.election_json[0]["fields"].advisor_url = 'https://files.catbox.moe/zdabp1.jpg';
 const customStyling = document.createElement("style");
 
 customStyling.innerHTML = `
