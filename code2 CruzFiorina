@@ -254,7 +254,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1008,
         "fields": {
             "priority": 4,
-            "description": "On Super Tuesday, you sharply defeated Trump, and swept up many delegate-rich states. While Trump still refuses to drop out, your now on track to win the nomination. Thanks to your strong showing in the primaries — and a bit of backroom chicanery from the RNC — Donald Trump is now mathematically blocked from securing the nomination, leaving you the presumptive nominee. He’s demanding major concessions on policy, cabinet picks, and a primetime speaking slot at the convention. What do you do?",
+            "description": "On Super Tuesday, you sharply defeated Trump and swept up many delegate-rich states. While Trump still refuses to drop out, you’re now on track to win the nomination. Thanks to your strong showing in the primaries — and a bit of backroom chicanery from the RNC — Donald Trump is now mathematically blocked from securing the nomination, leaving you the presumptive nominee. He’s demanding major concessions on policy, cabinet picks, and a primetime speaking slot at the convention. What do you do?",
             "likelihood": 1
         }
     },
@@ -7216,6 +7216,16 @@ campaignTrail_temp.answer_score_global_json = [
     },
     {
         "model": "campaign_trail.answer_score_global",
+        "pk": 20731,
+        "fields": {
+            "answer": 20727,
+            "candidate": 200,
+            "affected_candidate": 201,
+            "global_multiplier": 0.005
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
         "pk": 20745,
         "fields": {
             "answer": 5127,
@@ -7695,6 +7705,16 @@ campaignTrail_temp.answer_score_issue_json = [
             "issue": 100,
             "issue_score": -0.1,
             "issue_importance": 1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 20732,
+        "fields": {
+            "answer": 20739,
+            "issue": 103,
+            "issue_score": -0.51,
+            "issue_importance": 2.5
         }
     },
     {
