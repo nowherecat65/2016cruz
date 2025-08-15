@@ -326,7 +326,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1027,
         "fields": {
             "priority": 7,
-            "description": "The Clinton campaign has aired dozens of new advertisements, attacking your stance on abortion and reproductive rights. What is your response?",
+            "description": "The Clinton campaign has aired dozens of new advertisements attacking your stance on abortion and reproductive rights as backward and /“from the 1950s.”/ What is your response?",
             "likelihood": 1
         }
     },
@@ -715,7 +715,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5090,
         "fields": {
             "question": 1027,
-            "description": "Abortion, or as what it really is, infanticide, is one of the worst, most sinful ideas to ever come into our country. Hillary Clinton has been at the center of this movement for her entire life, destroying our values piece by piece. We must stop her."
+            "description": "Abortion — or, as it truly is, infanticide — is one of the worst and most sinful ideas ever to take root in our country. Hillary Clinton has been at the center of this movement for her entire life, destroying our values piece by piece. We must stop her."
         }
     },
     {
@@ -723,7 +723,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5091,
         "fields": {
             "question": 1027,
-            "description": "I'm prepared to go further, actually. On my first day in office, I will sign an executive order that will prohibit any money from going to NGOs that promote wanton abortion, and if a national abortion ban landed on my desk, I would sign it without hesitation."
+            "description": "I’m prepared to go further, actually. On my first day in office, I will sign an executive order prohibiting any money from going to NGOs that promote wanton abortion, and if a common-sense, national abortion ban landed on my desk, I would sign it without hesitation."
         }
     },
     {
@@ -731,7 +731,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5092,
         "fields": {
             "question": 1027,
-            "description": "I oppose the abhorrent practice of abortion as much as all my other conservative folks, but this position is hurting us badly amongst suburban women and independents. We have to turn the tables and strike back at Clinton, highlighting her equivocations on Benghazi and her emails. She has utterly failed at all her tasks."
+            "description": "I oppose the abhorrent practice of abortion as much as any of my fellow conservatives, but this position is hurting us badly among suburban women and independents. We have to turn the tables and strike back at Clinton, highlighting her equivocations on Benghazi and her emails. She has utterly failed at all her tasks."
         }
     },
     {
@@ -1163,7 +1163,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51072,
         "fields": {
             "question": 1027,
-            "description": "Don't most Americans support abortion? We need to pivot to the center here. We should keep a little vague on the details, but I would not sign a national abortion ban if it passed Congress."
+            "description": "Don’t most Americans support abortion? We need to pivot to the center here. We should keep things a little vague on the details, but I would not sign a national abortion ban if it passed Congress."
         }
     },
     {
@@ -6856,6 +6856,16 @@ campaignTrail_temp.answer_score_global_json = [
     },
     {
         "model": "campaign_trail.answer_score_global",
+        "pk": 3079,
+        "fields": {
+            "answer": 5033,
+            "candidate": 200,
+            "affected_candidate": 201,
+            "global_multiplier": 0.0025
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
         "pk": 3118,
         "fields": {
             "answer": 5083,
@@ -7296,6 +7306,16 @@ campaignTrail_temp.answer_score_global_json = [
     },
     {
         "model": "campaign_trail.answer_score_global",
+        "pk": 51042,
+        "fields": {
+            "answer": 51037,
+            "candidate": 200,
+            "affected_candidate": 201,
+            "global_multiplier": 0.0075
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
         "pk": 51046,
         "fields": {
             "answer": 51043,
@@ -7332,6 +7352,16 @@ campaignTrail_temp.answer_score_global_json = [
             "candidate": 200,
             "affected_candidate": 200,
             "global_multiplier": 0.0075
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 51074,
+        "fields": {
+            "answer": 5092,
+            "candidate": 200,
+            "affected_candidate": 201,
+            "global_multiplier": 0.003
         }
     },
     {
@@ -7814,7 +7844,17 @@ campaignTrail_temp.answer_score_issue_json = [
             "answer": 20757,
             "issue": 102,
             "issue_score": -0.65,
-            "issue_importance": 4
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 51024,
+        "fields": {
+            "answer": 20757,
+            "issue": 103,
+            "issue_score": -0.45,
+            "issue_importance": 1
         }
     },
     {
