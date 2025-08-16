@@ -38,11 +38,11 @@ campaignTrail_temp.achievements = {
     },
     "Kasich Country" : {
         "image" : "https://i.imgur.com/gCge1LB.jpeg",
-        "description" : "Lose the nomination battle to John Kasich."
+        "description" : "Back John Kasich at the convention to prevent Trump from winning."
  },
     "Little Marco, No More" : {
         "image" : "https://i.imgur.com/RZWn5KE.jpeg",
-        "description" : "Lose the nomination battle to Marco Rubio.",
+        "description" : "Back Marco Rubio at the convention to prevent Trump from winning.",
         "cannotBeCheated" : true
     },
     "Triumph of Conservatism" : {
