@@ -1,3 +1,36 @@
+let previousCandidate = null;
+
+const startScreenUpdater = setInterval(function() {
+    // Grab DOM elements
+    const goBackButton = document.getElementById("candidate_id_back");
+    const candidateButton = document.getElementById("candidate_id_button");
+    const runningMateButton = document.getElementById("running_mate_id_button");
+    const finalScreenBB = document.getElementById("opponent_selection_id_back");
+    const finalScreenID = document.getElementById("opponent_selection_id_button");
+
+    // Current candidate value
+    const c = document.getElementById("candidate_id")?.value ?? -1;
+
+    // Only act if the candidate has changed
+    if (c !== previousCandidate) {
+        previousCandidate = c; // update previous
+
+        if (c == 200 || c == 50000 || c == 50001 || c == 50002) {
+            // Candidate 200 flow: click go back if candidateButton is missing
+            if (!candidateButton) {
+                goBackButton?.click();
+                const initContinue = document.getElementById("election_id_button");
+                initContinue?.click();
+            }
+        } else if (c == 201 || c == 202) {
+            // Candidate 201/202: remove candidateButton if present
+            candidateButton?.remove();
+        }
+    }
+
+}, 50); 
+
+
 campaignTrail_temp.achievements = {
     "Trumped" : {
         "image" : "https://i.imgur.com/ucDsHMO.jpeg",
@@ -165,11 +198,11 @@ campaignTrail_temp.candidate_json = [
             "party": "Democrat",
             "state": "New York",
             "priority": 2,
-            "description": "<p>As expected, Hillary Clinton has carried her party's nomination, and now faces an unexpected opponent in Donald Trump. She was traditionally known as a mainstream Democrat, but tacked significantly to the left during the primary campaign. Clinton enters the general election in a strong position, but she'll be under relentless attack on a number of fronts. Can she make the case that she truly in touch with the American people -- or that Trump would be an even worse option?</p>",
+            "description": "<p><b><i>Here for context. Maybe (hopefully) will be playable in the future.</b></i><p>Hillary Clinton's record exceeds nearly anyone else's in America. Serving as First Lady of Arkansas, First Lady of the United States, U.S Senator, and Secretary of State. Coming off of a popular incumbent and an increasingly diverse country, she has every reason to expect an easy win.<br><br>However, not all is as it seems. She will have to defend her controversial time in both the Senate and as Secretary of State, unite the party after a close primary against Bernie Sanders, all while defeating whoever her Republican opponent is. Still, she has the advantage as the fall begins.</p>",
             "color_hex": "#3435BA",
             "secondary_color_hex": "#8393CF",
-            "is_active": 0,
-            "image_url": "https://files.catbox.moe/2ee71d.png",
+            "is_active": 1,
+            "image_url": "https://i.imgur.com/dYFhnUl.png",
             "electoral_victory_message": "<h3>Congratulations! You have won the 2016 election.</h3><p>In spite of a hard-fought challenge from Donald Trump, you have become the first woman elected to serve as President.</p><p>On the political front, it is unclear how much of your agenda you will be able to push forward with the current Congress. Hopefully your victory has helped Democrats further down the ballot. Start packing and prepare to move back into the White House!</p>",
             "electoral_loss_message": "<h3>Sorry! You have lost the 2016 election.</h3><p>Many of your supporters are despondent that you have faltered to the likes of Donald Trump. Many in the left wing of the party are furious that you pushed their candidate aside, only to lose. Time will tell how Trump operates as President. As for you, a long and sometimes ambiguous political career seems to be coming to its end.</p>",
             "no_electoral_majority_message": "<h3>Sorry! You have lost the 2016 election.</h3><p>No candidate secured a majority in the Electoral College. However, the Republicans won a majority in Congress and will elevate Trump to the Presidency. Time will tell how things go in that regard. As for you, a long and sometimes ambiguous political career seems to be coming to its end.</p>",
