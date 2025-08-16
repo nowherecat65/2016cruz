@@ -1173,6 +1173,14 @@ campaignTrail_temp.answers_json = [
             "question": 51056,
             "description": "put description here"
         }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 51116,
+        "fields": {
+            "question": 51055,
+            "description": "put description here"
+        }
     }
 ]
 
