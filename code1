@@ -28,7 +28,7 @@ const startScreenUpdater = setInterval(function() {
         }
     }
 
-}, 50); 
+}, 20); 
 
 
 campaignTrail_temp.achievements = {
@@ -198,7 +198,7 @@ campaignTrail_temp.candidate_json = [
             "party": "Democrat",
             "state": "New York",
             "priority": 2,
-            "description": "<p><b><i>Here for context. Maybe (hopefully) will be playable in the future.</b></i><p>Hillary Clinton's record exceeds nearly anyone else's in America. Serving as First Lady of Arkansas, First Lady of the United States, U.S Senator, and Secretary of State. Coming off of a popular incumbent and an increasingly diverse country, she has every reason to expect an easy win.<br><br>However, not all is as it seems. She will have to defend her controversial time in both the Senate and as Secretary of State, unite the party after a close primary against Bernie Sanders, all while defeating whoever her Republican opponent is. Still, she has the advantage as the fall begins.</p>",
+            "description": "<div style='overflow-y:scroll;height:200px;'><p><b><i>Here for context. Hopefully she'll be playable in the future, like in the original Cruz mod.<br><br></b></i>Hillary Clinton has been in politics for a while now. She has served many roles, from First Lady to U.S Senator, to U.S Secretary of State. Clinton was on the more moderate side of her party, but shifted significantly to the left in order to prevent primary voters from defecting to Bernie Sanders, in a close race.<br><br>With Obama's approval ratings high, strong support amongst female and Hispanic voters, and an opponent that seems extreme to most Americans, Clinton has every reason to expect a blowout.<br><br>There's no way she could lose. Right?</p>",
             "color_hex": "#3435BA",
             "secondary_color_hex": "#8393CF",
             "is_active": 1,
