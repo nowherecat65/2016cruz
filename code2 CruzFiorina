@@ -254,7 +254,16 @@ campaignTrail_temp.questions_json = [
         "pk": 1008,
         "fields": {
             "priority": 4,
-            "description": "...no clear candidate has won a majority. Rubio won more moderate states like Virginia and Minnesota, you swept the Plains, Kasich won parts of the Midwest, and Trump won states all over the country. What you do next could decide whether you become President or whether you become irrelevant — choose wisely.",
+            "description": "...no clear candidate has won a majority. Rubio won more moderate states like Virginia and Minnesota, you swept the Plains, Kasich won parts of the Midwest, and Trump won states all over the country. It's quite obvious that no candidate is going to win a majority, so going into July the convention will be deadlocked. Will you attempt to negotiate with any of the candidates?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 3198,
+        "fields": {
+            "priority": 4,
+            "description": "After narrowly defeating Trump at the contested convention, he is furious. He’s demanding major concessions on policy, cabinet picks, and a primetime speaking slot at the convention. Do you give him what he wants or do you refuse?",
             "likelihood": 1
         }
     },
@@ -1027,7 +1036,7 @@ campaignTrail_temp.answers_json = [
         "pk": 20752,
         "fields": {
             "question": 1009,
-            "description": "Last month, 49 people in Orlando were shot dead. Last week, 69 were killed by a terrorist using a truck. The attacks are getting worse, and the only way we can destroy radical Islamic terrorism is to increase our military presence in Syria and Iraq. We would also consider a temporary ban on immigrants coming from these terrorist nests."
+            "description": "Last month, 49 people in Orlando were shot by a radical. Last week, 69 were killed by a terrorist using a truck. The attacks are getting worse, and the only way we can destroy radical Islamic terrorism is to increase our military presence in Syria and Iraq. We would also consider a temporary ban on immigrants coming from these terrorist nests."
         }
     },
     {
@@ -1115,7 +1124,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51063,
         "fields": {
             "question": 1022,
-            "description": "This just shows how corrupt Hillary is and how deep the swamp runs. We don’t know whether she destroyed the evidence, but you can bet a Cruz administration will be looking into this further!"
+            "description": "This just shows how corrupt Hillary is and how deep the swamp runs. We don’t know whether she destroyed the evidence, but you better believe a Cruz administration will be looking into this further!"
         }
     },
     {
@@ -1139,7 +1148,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51082,
         "fields": {
             "question": 1016,
-            "description": "As the son of immigrant parents,"
+            "description": "put description here"
         }
     },
     {
@@ -1155,7 +1164,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51084,
         "fields": {
             "question": 1008,
-            "description": "I'll talk personally to Rubio. We can't let Trump become the nominee, and I'll even promise him I'll name him my running mate if I win the nomination."
+            "description": "We can't let Trump win. I'll talk personally to Rubio, and ask him to drop out and endorse me, and I'll even promise him I'll name him my running mate if I win the nomination."
         }
     },
     {
@@ -1180,6 +1189,62 @@ campaignTrail_temp.answers_json = [
         "fields": {
             "question": 51055,
             "description": "put description here"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 51117,
+        "fields": {
+            "question": 1008,
+            "description": "We can't let Trump win. I'll talk personally to Kasich. I'll ask him to drop out and endorse me, and I'll even promise him I'll give him a cabinet position, perhaps Secretary of State? "
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 51119,
+        "fields": {
+            "question": 1008,
+            "description": "It's time we put the future of the country over petty squabbles. We can't let Trump, Clinton, and the establishment win. Rubio has the grit and experience to be President, and I'm going to back him at the convention."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 51121,
+        "fields": {
+            "question": 3198,
+            "description": "Absolutely. We cannot let the left-wing media like MSNBC and CNN divide us in the face of Hillary Clinton. I would be honored to let Trump speak at the RNC, and I'll even offer him a cabinet position."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 51122,
+        "fields": {
+            "question": 3198,
+            "description": "There is not a chance in hell I'm conceding to him. Especially not after what he did to Heidi. He can keep raging on that Twitter account of his, but it is no concern of mine anymore. I won the nomination whether he likes it or not, and he better fall in line."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 51123,
+        "fields": {
+            "question": 3198,
+            "description": " Damned be. Without his wing of the party, we’re done for this fall. If he wants it, I suppose we don’t have much choice but to let him have his way."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 51124,
+        "fields": {
+            "question": 3198,
+            "description": " Seriously? Hillary’s probably laughing it up in New York right now. The damage to this country will be irreversible if she gets her hands on the presidency. I hope Trump sees that and chooses to endorse me, but I’m not making any promises about what, if anything, I’d offer him in return."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 51136,
+        "fields": {
+            "question": 1008,
+            "description": "I will not sacrifice the independence of my candidacy just for a few votes. Whatever the voters say, that's the final word."
         }
     }
 ]
@@ -5596,7 +5661,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 201,
             "state": 1042,
-            "state_multiplier": 0.83
+            "state_multiplier": 1.01
         }
     },
     {
@@ -7309,7 +7374,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 51084,
             "candidate": 200,
             "affected_candidate": 200,
-            "global_multiplier": 0.05
+            "global_multiplier": 0.075
         }
     },
     {
@@ -7340,6 +7405,56 @@ campaignTrail_temp.answer_score_global_json = [
             "candidate": 200,
             "affected_candidate": 202,
             "global_multiplier": 0.04
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 51120,
+        "fields": {
+            "answer": 51117,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "global_multiplier": -0.005
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 51131,
+        "fields": {
+            "answer": 51084,
+            "candidate": 200,
+            "affected_candidate": 202,
+            "global_multiplier": 0.06
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 51133,
+        "fields": {
+            "answer": 51119,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "global_multiplier": 0.15
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 51134,
+        "fields": {
+            "answer": 51122,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "global_multiplier": -0.06
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 51138,
+        "fields": {
+            "answer": 51136,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "global_multiplier": -0.005
         }
     }
 ]
@@ -7824,6 +7939,16 @@ campaignTrail_temp.answer_score_issue_json = [
             "issue_score": 0.45,
             "issue_importance": 4
         }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 51135,
+        "fields": {
+            "answer": 20739,
+            "issue": 102,
+            "issue_score": 0.15,
+            "issue_importance": 3
+        }
     }
 ]
 
@@ -8089,7 +8214,7 @@ campaignTrail_temp.answer_score_state_json = [
             "state": 1037,
             "candidate": 200,
             "affected_candidate": 200,
-            "state_multiplier": 0.07
+            "state_multiplier": 0.12
         }
     },
     {
@@ -8100,7 +8225,7 @@ campaignTrail_temp.answer_score_state_json = [
             "state": 1021,
             "candidate": 200,
             "affected_candidate": 200,
-            "state_multiplier": 0.7
+            "state_multiplier": 0.12
         }
     },
     {
@@ -8111,7 +8236,7 @@ campaignTrail_temp.answer_score_state_json = [
             "state": 1049,
             "candidate": 200,
             "affected_candidate": 200,
-            "state_multiplier": 0.03
+            "state_multiplier": 0.06
         }
     },
     {
@@ -8121,8 +8246,8 @@ campaignTrail_temp.answer_score_state_json = [
             "answer": 51084,
             "state": 1027,
             "candidate": 200,
-            "affected_candidate": 200,
-            "state_multiplier": 0.03
+            "affected_candidate": 201,
+            "state_multiplier": 0.05
         }
     },
     {
@@ -8256,6 +8381,149 @@ campaignTrail_temp.answer_score_state_json = [
             "affected_candidate": 200,
             "state_multiplier": 0
         }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 51129,
+        "fields": {
+            "answer": 51084,
+            "state": 1005,
+            "candidate": 200,
+            "affected_candidate": 201,
+            "state_multiplier": 0.05
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 51130,
+        "fields": {
+            "answer": 51084,
+            "state": 1021,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "state_multiplier": 0.24
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 51139,
+        "fields": {
+            "answer": 51084,
+            "state": 1008,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "state_multiplier": 0.07
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 51140,
+        "fields": {
+            "answer": 51084,
+            "state": 1027,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "state_multiplier": -0.05
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 51141,
+        "fields": {
+            "answer": 51084,
+            "state": 1002,
+            "candidate": 200,
+            "affected_candidate": 201,
+            "state_multiplier": 0.06
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 51142,
+        "fields": {
+            "answer": 51084,
+            "state": 1009,
+            "candidate": 200,
+            "affected_candidate": 201,
+            "state_multiplier": 0.06
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 51143,
+        "fields": {
+            "answer": 51084,
+            "state": 1034,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "state_multiplier": 0.08
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 51144,
+        "fields": {
+            "answer": 51084,
+            "state": 1028,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "state_multiplier": 0.05
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 51145,
+        "fields": {
+            "answer": 51084,
+            "state": 1022,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "state_multiplier": 0.05
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 51148,
+        "fields": {
+            "answer": 51119,
+            "state": 1018,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "state_multiplier": 0.05
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 51149,
+        "fields": {
+            "answer": 51119,
+            "state": 1028,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "state_multiplier": 0.05
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 51150,
+        "fields": {
+            "answer": 51119,
+            "state": 1022,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "state_multiplier": 0.12
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 51151,
+        "fields": {
+            "answer": 51119,
+            "state": 1005,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "state_multiplier": 0.05
+        }
     }
 ]
 
@@ -8293,7 +8561,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5031,
             "candidate": 200,
-            "answer_feedback": "People are surprised you didn't take start ripping into Hillary Clinton like you usually do, but nonetheless the speech is met with applause."
+            "answer_feedback": "This is a surprisingly positive approach considering your history. Hopefully it'll appeal to the voters."
         }
     },
     {
@@ -8824,7 +9092,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 20743,
             "candidate": 200,
-            "answer_feedback": "The attack works well -- until people realize it’s the exact same thing Obama is doing and not far from what Hillary wants. It ends up giving your opponents more cannon fodder against you."
+            "answer_feedback": "The attack works well. Until people realize it’s the exact same thing Obama is doing and not far from what Hillary wants. It ends up giving your opponents more ammo against you."
         }
     },
     {
@@ -8970,13 +9238,76 @@ campaignTrail_temp.answer_feedback_json = [
             "candidate": 200,
             "answer_feedback": "<s>Since when has Ted Cruz defended Hillary Clinton and Barack Obama?</s>You've taken the high road, but your advisors believe this was definitely a missed opportunity."
         }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 51118,
+        "fields": {
+            "answer": 51117,
+            "candidate": 200,
+            "answer_feedback": "Kasich is hesitant, but he eventually agrees to endorse you at the convention. With his help, you eventually cross the delegate threshold by the skin of your teeth. You've done it. You're the nominee."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 51125,
+        "fields": {
+            "answer": 51124,
+            "candidate": 200,
+            "answer_feedback": "Trump is mad, but he eventually gives you a muted endorsement after some coercion and a prime speaking slot at the RNC this year. Apparently, he thinks he has a shot at a cabinet post. What a sad joke."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 51126,
+        "fields": {
+            "answer": 51122,
+            "candidate": 200,
+            "answer_feedback": "You have a history of burning bridges, and it seems like this time was no different. A furious Trump takes to Twitter, posting: ''Ted Cruz didn’t win, he stole it. The people know what really happened. Maybe we just sit this one out. #Rigged.''\n'#Rigged' becomes #4th trending on Twitter for the next couple of days.\nKnowing Trump, you're surprised he didn't try to run third-party and throw the race to Clinton."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 51127,
+        "fields": {
+            "answer": 51121,
+            "candidate": 200,
+            "answer_feedback": "You offer Trump the role Secretary of Commerce. He claims he'll “run America like a business,” and will advocate for renegotiating NAFTA (even though he'll probably just use the role to court media attention.) Your supporters are let down, but Trump will be enthusiastically campaigning for you this fall.\n"
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 51128,
+        "fields": {
+            "answer": 51123,
+            "candidate": 200,
+            "answer_feedback": "You give Trump the concessions, and promise to appoint Trump loyalists like Jeff Sessions and Ben Carson to certain cabinet positions. Trump endorses you on Twitter, but unfortunately, he probably won't be campaigning much for you this fall."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 51132,
+        "fields": {
+            "answer": 51119,
+            "candidate": 200,
+            "answer_feedback": "Rubio is thankful to have your support here. With your help, he is able to narrowly defeat Trump at the convention. He offers you the role of Attorney General, but you decline, preferring to stay in the U.S Senate."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 51137,
+        "fields": {
+            "answer": 51136,
+            "candidate": 200,
+            "answer_feedback": "Both Rubio and Kasich plead with you to help stop Trump, but you refuse. Eventually, as both you and Trump start building a lead over Rubio and Kasich, Rubio suddenly drops out and endorses you at the convention. Many ballots later, you are nominated, drained, exhausted, and tired."
+        }
     }
 ]
 
 campaignTrail_temp.candidate_image_url = "https://files.catbox.moe/u52bl8.jpg";
 campaignTrail_temp.running_mate_image_url = "https://i.postimg.cc/gJfyqbQv/u52bl8-1-1.jpg";
 campaignTrail_temp.candidate_last_name = "Cruz";
-campaignTrail_temp.running_mate_last_name = "Campaign";
+campaignTrail_temp.running_mate_last_name = "2016";
 
 
 
@@ -8984,7 +9315,7 @@ campaignTrail_temp.jet_data = [{
     "banner_enabled": true,
     "banner_data": {
         "canName": "Cruz",
-        "runName": "Campaign",
+        "runName": "2016",
         "canImage": "https://files.catbox.moe/u52bl8.jpg",
         "runImage": "https://i.postimg.cc/gJfyqbQv/u52bl8-1-1.jpg"
     },
