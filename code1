@@ -184,7 +184,7 @@ campaignTrail_temp.candidate_json = [
             "color_hex": "#A51214",
             "secondary_color_hex": "#D3756A",
             "is_active": 1,
-            "image_url": "https://i.postimg.cc/QMpzwSkG/u52bl8-2.jpg",
+            "image_url": "https://i.imgur.com/wFCBQkc.jpeg",
             "electoral_victory_message": "<h3>Congratulations! You have won the 2016 election.</h3><p>In spite of a hard-fought challenge from Hillary Clinton, you have shocked the world with your election victory.</p><p>On the political front, you have the bully pulpit in your favor, but support in Congress in uncertain. Will you govern as a more traditional conservative, or will you make a break from orthodoxy?</p>",
             "electoral_loss_message": "<h3>Sorry! You have lost the 2016 election.</h3><p>Many of your supporters are despondent that you have faltered to the likes of Hillary Clinton. Republicans in general believe this was a very winnable election, and are enraged that you came in to blow it. Luckily, there are any number of ways for you to take advantage of your newfound exposure. One rumor even has you founding a television station to profit from the aggrieved sensibilities of your followers. The future is in your hands.</p>",
             "no_electoral_majority_message": "<h3>Wow! You have pulled out 2016 election.</h3><p>No candidate secured a majority in the Electoral College. However, the Republicans won a majority in Congress and will elevate you to the Presidency. Time will tell how things go in that regard. Any mutual affection between you and Congress is predicted to be short-lived, but you've pulled off a number of surprises to get this far.</p>",
@@ -895,7 +895,7 @@ function addDynamicCSS() {
           margin-left: -90px;
           opacity: 0;
           transition: opacity 0.3s;
-          border: 2px orange;
+          border: 2px black;
           pointer-events: none;
           font-size: 13px !important;
           line-height: 1.5em !important;
@@ -921,26 +921,26 @@ function addDynamicCSS() {
   
   document.head.appendChild(styleElem);
 }
-// Copied from Ohio 2022 Senate, which explains all these random searchstrings.
+// Copied from Ohio 2022 Senate. Some have been edited, but others haven't. That explains why there's some quite odd and random searchstrings.
 
 addDynamicCSS();
 
 tooltipList = [
-  {searchString: "Donald Trump", explanationText: "<img src=https://i.imgur.com/j6IQxdD.png> That rich guy from New York"},
-  {searchString: "Peter Thiel", explanationText: "<img src=https://i.imgur.com/EQaGXil.png> Your old owner"},
-  {searchString: "Ohio GOP", explanationText: "<img src=https://i.imgur.com/9f1vSns.png> Modern-day pirates"},
-  {searchString: "Mike DeWine", explanationText: "<img src=https://i.imgur.com/X74PYoY.png> Reichsführer"},
-  {searchString: "Jennifer Gross", explanationText: "<img src=https://i.imgur.com/f1fsUv9.png> Spoon Woman"},
-  {searchString: "George Lang", explanationText: "<img src=https://i.imgur.com/4EVdylp.png> Civil War man"},
-  {searchString: "Jim Jordan", explanationText: "<img src=https://i.imgur.com/ciQpsaJ.png> Fellow Bootlicker"},
-  {searchString: "Larry Householder", explanationText: "<img src=https://i.imgur.com/Fqq2la4.png> Got caught"},
-  {searchString: "Tracy Richardson", explanationText: "<img src=https://i.imgur.com/qpBMBDW.png> What's the matter smoothskin, never seen a ghoul before?"},
-  {searchString: "Tucker Carlson", explanationText: "<img src=https://i.imgur.com/Ru08Hyu.png> Propaganda Master"},
-  {searchString: "Mitch McConnell", explanationText: "<img src=https://i.imgur.com/LayeqEF.png> That is not dead which can eternal lie, And with strange aeons even death may die."},
-  {searchString: "Middletown", explanationText: "<img src=https://i.imgur.com/nb1bGn9.png>  I’M FROM HERE, I’M FROM HERE, I’M FROM HERE, I’M FROM HERE, I’M FROM HERE"},
-  {searchString: "SAVE AMERICA", explanationText: "<img src=https://i.imgur.com/KTvofa7.png> My New Piggybank :)"},
+  {searchString: "Donald Trump", explanationText: "<img src=https://i.imgur.com/BhBArNQ.jpeg> That rich guy from New York"},
+  {searchString: "Hillary Clinton", explanationText: "<img src=https://i.imgur.com/m4u5J6q.png> Leader of Planned Parenthood, gay marriage, and the Democratic deep state.<br>You must stop her."},
+  {searchString: "Rubio", explanationText: "<img src=https://i.imgur.com/P0f1r4C.png> It's Rubio."},
+  {searchString: "Barack Obama", explanationText: "<img src=https://i.imgur.com/SGb8x0z.png> His term is coming to an end.<br>He spends his days destroying the constitution and violating personal freedoms."},
+  {searchString: "Bernie Sanders", explanationText: "<img src=https://i.imgur.com/jaM9ZbG.jpeg> He's absolutely insane. Clinton probably gets her marching orders from him behind the scenes."},
+  {searchString: "Roe v. Wade", explanationText: "<img src=https://i.imgur.com/eens7WG.jpeg> The greatest tragedy in the history of our nation."},
+  {searchString: "Obamacare", explanationText: "<img src=https://i.imgur.com/iN4TPyo.png> Socialization of healthcare."},
+  {searchString: "the establishment", explanationText: "<img src=https://i.imgur.com/BHYdwFO.png>⠀"},
+  {searchString: "MSNBC", explanationText: "<img src=https://i.imgur.com/3ROtL4O.png> One of the biggest spreaders of liberal propaganda."},
+  {searchString: "Carson", explanationText: "<img src=https://i.imgur.com/mk57VPA.png> Ben Carson. You don't have much to say about him."},
+  {searchString: "Fiorina", explanationText: "<img src=https://i.imgur.com/LayeqEF.png>She goes to show not all females are bad, although Hillary Clinton certainly makes you think otherwise at times."},
+  {searchString: "Walker", explanationText: "<img src=https://i.imgur.com/xmf05Zy.jpeg>That guy that survived the recall."},
+  {searchString: "Still Working On Searchstrings", explanationText: "<img src=https://i.imgur.com/KTvofa7.png> My New Piggybank :)"},
   {searchString: "Rob Portman", explanationText: "<img src=https://i.imgur.com/daAfd6p.png> I want his seat!"},
-  {searchString: "John Kasich", explanationText: "<img src=https://i.imgur.com/stn11Jw.png> Destroyer of Ohio healthcare and education. Wholesome moderate."},
+  {searchString: "John Kasich", explanationText: "<img src=https://i.imgur.com/YcCbaxa.jpeg> John Kasich, an avowed moderate candidate."},
   {searchString: "Ben Garrison", explanationText: "<img src=https://i.imgur.com/waMtEGa.png> Labels himself a cartoonist"},
   {searchString: "MTG", explanationText: "<img src=https://i.imgur.com/4irWlde.png> QAnon Queen"},
   {searchString: "Bernie Moreno", explanationText: "<img src=https://i.imgur.com/iyXoI3B.png> Pasty. Stealer of workers' money."},
