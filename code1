@@ -1,3 +1,8 @@
+document.getElementById("inner_window_1").children[0].innerHTML="<h3>Do you have what it takes to win, Ted?</h3>"
+
+document.getElementById("inner_window_1").children[1].innerHTML = "<li>In our real timeline, Ted Cruz's campaign failed to win the nomination despite early success in Iowa.</li><li>There were many reasons for his loss, including:</li><li>His strong support of free trade and NAFTA, which hurt him imemensely in the Rust Belt.</li><li>He positioned himself as a staunch conservative originalist, which helped amongst evangelicals but also narrowed his base.</li><li>His campaign focused early-on on specializing in caucus states, which worked in Iowa, but hurt him in larger states like Florida & California.</li><li>And many other reasons, but enough said, this mod explores what could have been.</li><li>This mod includes many achievements, some CYOA, custom endings, and more, so don't be afraid to try new routes!</li><li>Do you have what it takes to win the 2016 Presidential Election?</li>";
+
+
 let previousCandidate = null;
 
 const startScreenUpdater = setInterval(function() {
@@ -832,6 +837,16 @@ var soundtracks = {
     ]
   }
 }
+
+ const gameStart = document.getElementById('game_start');
+    const gameWindow = document.getElementById('game_window');
+
+    if (gameStart) {
+        gameStart.innerHTML = '<strong>Alright, let’s find out.</strong>';
+        const clearHeight = () => { if (gameWindow) gameWindow.style.removeProperty('height'); };
+        if (window.jQuery) $('#game_start').on('click', clearHeight);
+        else gameStart.addEventListener('click', clearHeight);
+    }
 
 // Set up new music player
 
