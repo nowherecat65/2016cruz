@@ -1,7 +1,7 @@
 (() => {
   const css = `
 /* ================================
-   Buttons - Sleek Aero Orange
+   These are the buttons
    ================================ */
 button, input[type="button"], input[type="submit"] {
   font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
@@ -37,7 +37,7 @@ button:disabled, input[type="button"]:disabled, input[type="submit"]:disabled {
 }
 
 /* ================================
-   Dropdowns
+   The dropdowns
    ================================ */
 select {
   font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
@@ -80,7 +80,7 @@ select:disabled { opacity: 0.6; cursor: not-allowed; }
 ::-webkit-scrollbar-thumb:hover { filter: brightness(1.08); }
 
 /* ================================
-   Custom Radio Buttons
+   The radio buttons
    ================================ */
 input[type="radio"] {
   -webkit-appearance: none;
@@ -119,7 +119,7 @@ input[type="radio"]:checked::before {
 input[type="radio"]:hover { filter: brightness(1.06); }
 
 /* ================================
-   Custom Sliders
+   And of course, the sliders.
    ================================ */
 input[type="range"] {
   -webkit-appearance: none;
