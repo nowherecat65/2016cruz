@@ -1,3 +1,5 @@
+
+
 (() => {
   const css = `
 /* ================================
@@ -170,6 +172,7 @@ input[type="range"]::-moz-range-thumb {
 document.getElementById("inner_window_1").children[0].innerHTML="<h3>Welcome to <i>Cruz '16</i></h3>"
 
 document.getElementById("inner_window_1").children[1].innerHTML = "<li>This is an alternate history mod where Ted Cruz managed to win the 2016 Republican primaries.</li><li>In our real timeline, Ted Cruz's campaign failed to win the nomination despite early success in Iowa.</li><li>There were many reasons for his loss, including:</li><li>His strong support of free trade and NAFTA, which hurt him significantly in the Rust Belt.</li><li>He positioned himself as a staunch conservative originalist, which helped amongst evangelicals but this also narrowed his path to victory, and it hurt tremendously in moderate states like New Hampshire.</li><li>And many other reasons, but enough said, this mod explores what could have been.</li><li>You start off in the primaries, but you go on to the general election and face Hillary Clinton.</li><li>This mod includes many achievements, some CYOA, custom endings, and more, so don't be afraid to try new routes!</li><li>This mod, especially the tooltips, are shown from Cruz's perspective and are supposed to be biased. Just keep that in mind while playing.";
+
 
 
 let previousCandidate = null;
@@ -673,6 +676,18 @@ s1 {
 }
 
 e.credits = "<button onclick='e.creditsPage()'>Multiple People</button>"
+
+const gameStart = document.getElementById('game_start');
+    const gameWindow = document.getElementById('game_window');
+
+    if (gameStart) {
+        gameStart.innerHTML = '<strong>Let’s bring America back.</strong>';
+        const clearHeight = () => { if (gameWindow) gameWindow.style.removeProperty('height'); };
+        if (window.jQuery) $('#game_start').on('click', clearHeight);
+        else gameStart.addEventListener('click', clearHeight);
+    }
+
+//#endcode
 
 //#startcode
 
@@ -1403,3 +1418,4 @@ tooltipList = [
   {searchString: "Sheriff Jones", explanationText: "<img src=https://i.imgur.com/hsRTF1Q.png> Doug Dimmadome"}
       
 ];
+
