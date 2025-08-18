@@ -444,14 +444,19 @@ s1 {
     <p><s1><span class='flashing-text'>TheMcCain - Lead Dev/Coding/Writing</span></s1></p>
     <p><s1><span class='flashing-text'>theanswerisme - Theming/Writing</span></s1></p>
     <h3>Miscellaneous</h3>
-    <p>mp4clout - Made the banner!<p>
+    <p>mp4clout - Made the banner<p>
     <p>DecstarG for the Music Player and Credits Screen</p>
     <p>LiquidAstro for his Further Reading tool 
-    <p>General_Rise8708 for playtesting<p>
+    <h3>I'd also like to thank all my great playtesters</h3>
+    <p>General_Rise8708</p>
+    <p>7ballcraze</p>
+    <p>DalTheFox</p>
+    <h3>Other</h3>
     <p>Many mods that I've inspected to see how to fix my code!
     <p>Many more people who I talked to and gave me advice over the development of the mod!</p>
     <p>Your name might not be listed here, but your contributions are not forgotten!
     <h3>Music Credit</h3>
+    <p>Greater - MercyMe
     <p>Real Gone - Sheryl Crow</p>
     <p>God Bless the U.S.A. - Lee Greenwood</p>
     <p>Where The Stars And Stripes And The Eagle Fly - Aaron Tippin</p>
@@ -786,6 +791,10 @@ var soundtracks = {
   0: {
     name: "We Can Bring America Back",
     tracklist: [
+       {
+        "name": "MercyMe - Greater",
+        "url": "https://audio.jukehost.co.uk/ylbg0O3YL69LEwQhY2NgCU1e1dBVYtRc"
+       },
        {
         "name": "Sheryl Crow - Real Gone",
         "url": "https://audio.jukehost.co.uk/uSkx8iXE3oQ6BZQ9ZbFqYfPh49SfaMrU"
