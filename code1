@@ -865,3 +865,87 @@ newMusicPlayer()
 e.ElectionPopup = "The day has come. All these years as Soliciter General, as a Senator, as, whatever, have come down to <i>this.</i> Are you ready, Ted?"
 e.WinPopup = "'We on Fox News can now project that Ted Cruz has been elected the 45th President of the United States.'"
 e.LosePopup = "'NBC News can now project that Hillary Clinton has won the 2016 presidnential election, and will become the 45th President of the United States."
+
+e.displayTooltips = true;
+
+function addDynamicCSS() {
+  var css = `
+      .inner_window_question h3 .mytooltip {
+          background-color: #f2813f;
+      }
+
+      .mytooltip {
+          position: relative;
+          display: inline-block;
+          cursor: pointer;
+          background-color: #f2813f;
+      }
+
+      .mytooltip .mytooltiptext {
+          width: 240px;
+          background-color: #f2813f;
+          color: black;
+          text-align: center;
+          border-radius: 6px;
+          padding: 10px;
+          position: absolute;
+          z-index: 99;
+          bottom: 20%;
+          left: 20%;
+          margin-left: -90px;
+          opacity: 0;
+          transition: opacity 0.3s;
+          border: 2px orange;
+          pointer-events: none;
+          font-size: 13px !important;
+          line-height: 1.5em !important;
+          font-weight: normal !important;
+          font-style: normal !important;
+      }
+
+      .mytooltip .mytooltiptext img {
+          max-width: 240px;
+          height: auto;
+      }
+
+      .mytooltip:hover .mytooltiptext {
+          opacity: 1;
+          transition-delay: 0.5s;
+      }
+  `;
+
+  var styleElem = document.createElement('style');
+  styleElem.type = 'text/css';
+  
+  styleElem.appendChild(document.createTextNode(css));
+  
+  document.head.appendChild(styleElem);
+}
+
+
+addDynamicCSS();
+
+tooltipList = [
+  {searchString: "Donald Trump", explanationText: "<img src=https://i.imgur.com/j6IQxdD.png> That rich guy from New York"},
+  {searchString: "Peter Thiel", explanationText: "<img src=https://i.imgur.com/EQaGXil.png> Your old owner"},
+  {searchString: "Ohio GOP", explanationText: "<img src=https://i.imgur.com/9f1vSns.png> Modern-day pirates"},
+  {searchString: "Mike DeWine", explanationText: "<img src=https://i.imgur.com/X74PYoY.png> Reichsführer"},
+  {searchString: "Jennifer Gross", explanationText: "<img src=https://i.imgur.com/f1fsUv9.png> Spoon Woman"},
+  {searchString: "George Lang", explanationText: "<img src=https://i.imgur.com/4EVdylp.png> Civil War man"},
+  {searchString: "Jim Jordan", explanationText: "<img src=https://i.imgur.com/ciQpsaJ.png> Fellow Bootlicker"},
+  {searchString: "Larry Householder", explanationText: "<img src=https://i.imgur.com/Fqq2la4.png> Got caught"},
+  {searchString: "Tracy Richardson", explanationText: "<img src=https://i.imgur.com/qpBMBDW.png> What's the matter smoothskin, never seen a ghoul before?"},
+  {searchString: "Tucker Carlson", explanationText: "<img src=https://i.imgur.com/Ru08Hyu.png> Propaganda Master"},
+  {searchString: "Mitch McConnell", explanationText: "<img src=https://i.imgur.com/LayeqEF.png> That is not dead which can eternal lie, And with strange aeons even death may die."},
+  {searchString: "Middletown", explanationText: "<img src=https://i.imgur.com/nb1bGn9.png>  I’M FROM HERE, I’M FROM HERE, I’M FROM HERE, I’M FROM HERE, I’M FROM HERE"},
+  {searchString: "SAVE AMERICA", explanationText: "<img src=https://i.imgur.com/KTvofa7.png> My New Piggybank :)"},
+  {searchString: "Rob Portman", explanationText: "<img src=https://i.imgur.com/daAfd6p.png> I want his seat!"},
+  {searchString: "John Kasich", explanationText: "<img src=https://i.imgur.com/stn11Jw.png> Destroyer of Ohio healthcare and education. Wholesome moderate."},
+  {searchString: "Ben Garrison", explanationText: "<img src=https://i.imgur.com/waMtEGa.png> Labels himself a cartoonist"},
+  {searchString: "MTG", explanationText: "<img src=https://i.imgur.com/4irWlde.png> QAnon Queen"},
+  {searchString: "Bernie Moreno", explanationText: "<img src=https://i.imgur.com/iyXoI3B.png> Pasty. Stealer of workers' money."},
+  {searchString: "Mike Gibbons", explanationText: "<img src=https://i.imgur.com/mpp8KvT.png> Hater of Unions"},
+  {searchString: "Josh Mandel", explanationText: "<img src=https://i.imgur.com/dMeU9zH.png> Divorced"},
+  {searchString: "Sheriff Jones", explanationText: "<img src=https://i.imgur.com/hsRTF1Q.png> Doug Dimmadome"}
+      
+];
