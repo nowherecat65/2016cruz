@@ -1,3 +1,90 @@
+endingPicker = (out, totv, aa, quickstats) => {
+
+if (campaignTrail_temp.player_answers[4] == 51119 && quickstats[0] >= 270) {
+        unlockAchievement("An Uneasy Alliance");
+    }
+
+if (campaignTrail_temp.player_answers[4] == 51121) {
+        unlockAchievement("Little Marco, No More");
+    }
+
+ if(quickstats[0] >= 325) {
+        unlockAchievement("Triumph of Conservatism");
+    }
+
+used=false
+
+// Credits to Apollo Astronomical, for custom ending template
+
+//out = "win", "loss", or "tie" for your candidate
+//totv = total votes in entire election
+//aa = all final overall results data
+//quickstats = relevant data on candidate performance (format: your candidate's electoral vote count, your candidate's popular vote share, your candidate's raw vote total)
+
+//quickstats[0] is the default, and it tracks your electoral vote count.
+
+// player_answers starts counting at 0, so it's checking for the answer on Question 25 here. 
+
+// If answer for question 25 is 8090, and you get at least 270 Electoral votes, and your running mate's last name is specified here, it'll give you this special ending. I used this for the 'A truce, not a compromise' ending in 1876.
+
+if (campaignTrail_temp.player_answers[24] == 8090 && quickstats[0] >= 270 && campaignTrail_temp.running_mate_last_name == "PlaceLastNameHere") {
+    if (used != true) {
+        setInterval(function () {
+            used = true;
+            imgg = document.getElementsByClassName("person_image")[0];
+            if (imgg != null) {
+                imgg.src = "Image URL goes here.";
+            }
+        }, 100);
+    }
+
+   return "<h3>Special Ending!</h3><p>Did you do something? Sell out the nation? Make a deal with the devil? and Win? This ending's for you.</p>";
+} else if (campaignTrail_temp.player_answers[24] == 8090 && quickstats[0]<269 && campaignTrail_temp.running_mate_last_name == "PlaceLastNameHere") {
+  //If you want to enable replacing the image based upon your performance, copy from here....
+    if (used != true) {
+        setInterval(function () {
+            used = true;
+            imgg = document.getElementsByClassName("person_image")[0];
+            if (imgg != null) {
+                imgg.src = "Image URL goes here.";
+            }
+        }, 100);
+    }
+    // to here!
+return "<h3>Special Ending!</h3><p>Did you do something? Sell out the nation? Make a deal with the devil? and Win? This ending's for you.</p>"
+} else if (quickstats[0] < 3) {
+return "<h3>You didn't even win a state?</h3><p>Very sad!</p><p>It seems like your opponent has won in a landslide, and has the political leverage to enact their agenda. Sorry!</p>"
+} else if (quickstats[0] >= 3 && quickstats[0]<110) {
+return "<h3>It seems you have lost in a landslide.</h3><p>Very sad!</p><p>It seems like your opponent has won in a landslide, and has the political leverage to enact their agenda. Sorry!</p>"
+} else if (quickstats[0] >= 110 && quickstats[0]<269) {
+return "<h3>Sorry, you have lost the election.</h3><p>Very sad!</p><p>It seems like your opponent has won in a landslide, and has the political leverage to enact their agenda. Sorry!</p>"
+} else if (quickstats[0] == 269) {
+return "<h3>A tie?</h3><p>Weird. The House may or may not choose you.</p>"
+} else if (quickstats[0] >= 270 && quickstats[0]<350) {
+return "<h3>Congratulations! You have won the election!</h3><p>This is possibly expected (or maybe it isn't).</p><p>You will be able to enact your agenda.</p>"
+} else if (quickstats[0] >= 350 && quickstats[0]<531) {
+return "<h3>Congratulations! You have won the election!</h3><p>This is possibly expected (or maybe it isn't).</p><p>You will be able to enact your agenda.</p>"
+} else if (quickstats[0] >= 531) {
+  //If you want to enable replacing the image based upon your performance, copy from here....
+    if (used != true) {
+        setInterval(function () {
+            used = true;
+            imgg = document.getElementsByClassName("person_image")[0];
+            if (imgg != null) {
+                imgg.src = "Image URL goes here.";
+            }
+        }, 100);
+    }
+    // to here!
+return "<h3>Congratulations! You have won the election!</h3><p>This is possibly expected (or maybe it isn't).</p><p>You will be able to enact your agenda.</p>"
+} else {
+return "<h3>That's odd. The mod seems broken.</h3><p>Contact the creator of the mod. Congrats if you won, better luck next time if you lost.</p>"
+}
+
+}
+
+campaignTrail_temp.multiple_endings=true
+
 const customStyling = document.createElement("style");
 
 customStyling.innerHTML = `
