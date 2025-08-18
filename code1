@@ -1,6 +1,176 @@
+// Frutiger-Aero inspired vibrant orange buttons, dropdowns, scrollbars, custom radio buttons and sliders
+(() => {
+  const css = `
+/* ================================
+   Buttons
+   ================================ */
+button, input[type="button"], input[type="submit"] {
+  font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+  font-size: 0.9em;
+  font-weight: 500;
+  padding: 5px 12px;
+  border-radius: 4px;
+  border: 1px solid rgba(0,0,0,0.2);
+  
+  background: linear-gradient(135deg, #f5a623, #e67e22); /* vibrant orange gradient */
+  color: #ffffff;
+  
+  cursor: pointer;
+  transition: all 0.2s ease;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+button:hover, input[type="button"]:hover, input[type="submit"]:hover {
+  filter: brightness(1.05);
+}
+
+button:active, input[type="button"]:active, input[type="submit"]:active {
+  filter: brightness(0.95);
+}
+
+button:disabled, input[type="button"]:disabled, input[type="submit"]:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+/* ================================
+   Dropdowns
+   ================================ */
+select {
+  font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+  font-size: 0.9em;
+  font-weight: 500;
+  padding: 5px 12px;
+  border-radius: 4px;
+  border: 1px solid rgba(0,0,0,0.2);
+  
+  background: linear-gradient(135deg, #f5a623, #e67e22);
+  color: #ffffff;
+  
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  transition: all 0.2s ease;
+}
+
+select option {
+  color: #222;
+  background: #fff;
+}
+
+/* remove default arrow entirely */
+select::-ms-expand { display: none; }
+select::-webkit-inner-spin-button,
+select::-webkit-outer-spin-button,
+select::-webkit-clear-button { display: none; }
+
+select:hover { filter: brightness(1.05); }
+select:active { filter: brightness(0.95); }
+select:disabled { opacity: 0.6; cursor: default; }
+
+/* ================================
+   Custom Scrollbars
+   ================================ */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: #f0f0f0; border-radius: 5px; }
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #f5a623, #e67e22);
+  border-radius: 5px;
+  border: 2px solid #f0f0f0;
+}
+::-webkit-scrollbar-thumb:hover { filter: brightness(1.1); }
+
+/* ================================
+   Custom Radio Buttons with Animation
+   ================================ */
+input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #e67e22;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+input[type="radio"]::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #f5a623, #e67e22);
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.2s ease;
+}
+
+input[type="radio"]:checked::before {
+  width: 8px;
+  height: 8px;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+input[type="radio"]:hover { filter: brightness(1.05); }
+
+/* ================================
+   Custom Sliders
+   ================================ */
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 150px;
+  height: 6px;
+  border-radius: 3px;
+  background: #ddd;
+  outline: none;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #f5a623, #e67e22);
+  border: 2px solid #e67e22;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+input[type="range"]:hover::-webkit-slider-thumb { filter: brightness(1.1); }
+
+input[type="range"]::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #f5a623, #e67e22);
+  border: 2px solid #e67e22;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+`;
+
+  const id = 'aero-vibrant-orange-theme';
+  if (!document.getElementById(id)) {
+    const style = document.createElement('style');
+    style.id = id;
+    style.textContent = css;
+    document.head.appendChild(style);
+  }
+})();
+
 document.getElementById("inner_window_1").children[0].innerHTML="<h3>Welcome to <i>Cruz '16</i></h3>"
 
-document.getElementById("inner_window_1").children[1].innerHTML = "<li>This is an alternate history mod where Ted Cruz somehow managed to win the 2016 Republican primaries.</li><li>In our real timeline, Ted Cruz's campaign failed to win the nomination despite early success in Iowa.</li><li>There were many reasons for his loss, including:</li><li>His strong support of free trade and NAFTA, which hurt him significantly in the Rust Belt.</li><li>He positioned himself as a staunch conservative originalist, which helped amongst evangelicals but this also narrowed his path to victory, and it hurt tremendously in moderate states like New Hampshire.</li><li>And many other reasons, but enough said, this mod explores what could have been.</li><li>You start off in the primaries, but you go on to the general election and face Hillary Clinton.</li><li>This mod includes many achievements, some CYOA, custom endings, and more, so don't be afraid to try new routes!</li><li>This mod, especially the tooltips, are shown from Cruz's perspective and are supposed to be biased. Just keep that in mind while playing.</li><li>Do you have what it takes to win the 2016 Presidential Election?</li>";
+document.getElementById("inner_window_1").children[1].innerHTML = "<li>This is an alternate history mod where Ted Cruz managed to win the 2016 Republican primaries.</li><li>In our real timeline, Ted Cruz's campaign failed to win the nomination despite early success in Iowa.</li><li>There were many reasons for his loss, including:</li><li>His strong support of free trade and NAFTA, which hurt him significantly in the Rust Belt.</li><li>He positioned himself as a staunch conservative originalist, which helped amongst evangelicals but this also narrowed his path to victory, and it hurt tremendously in moderate states like New Hampshire.</li><li>And many other reasons, but enough said, this mod explores what could have been.</li><li>You start off in the primaries, but you go on to the general election and face Hillary Clinton.</li><li>This mod includes many achievements, some CYOA, custom endings, and more, so don't be afraid to try new routes!</li><li>This mod, especially the tooltips, are shown from Cruz's perspective and are supposed to be biased. Just keep that in mind while playing.</li><li>Are you ready?</li>";
 
 
 let previousCandidate = null;
@@ -396,7 +566,7 @@ campaignTrail_temp.temp_election_list = [
 ]
 
 jet_data = {
-    "headerColor": "#f66601",
+    "headerColor": "#fa7d07",
     "windowColor": "#8640a3",
     "containerColor": "#b15596",
     "innerWindowColor": "#8640a3",
@@ -509,7 +679,7 @@ e.credits = "<button onclick='e.creditsPage()'>Multiple People</button>"
 
 quotes = ["'I’m not running because I desperately need 99 new friends in the U.S Senate.' - Ted Cruz", "'The world is on fire! Yes! Your world is on fire!' - Ted Cruz", "'Let's dispel with this fiction that Barack Obama doesn't know what he's doing. He knows exactly what he's doing'", "'I don't know if sand can glow in the dark, but we're going to find out!' - Ted Cruz", "'I would be happy to invite Trump to church anytime he'd like.' - Ted Cruz", "'I am, you know, adamantly against illegal immigration.' - Hillary Clinton", "'The unions say last hired - first fired.' - Scott Walker", "'If Ted Cruz doesn’t clean up his act & stop doing negative ads, I have standing to sue him.' - Donald Trump", "'I've always won, and I'm going to continue to win. And that's the way it is.' - Donald Trump", "'Choose Cruz!'", "'I don't like losers.' - Donald Trump", "'If we nominate Trump, we will get destroyed ... and we will deserve it.'", "'Sometimes people ask me how I feel about losing my job.' - Carly Fiorina", "I'm just saying, not many conservatives come out of Manhattan.' - Ted Cruz", "'There it is. There it is everybody. The memorized 30 second speech!' - Chris Christie", "'There's nothing more important then knowing the Constitution limits the government, not the people.' - Rand Paul", "'If we stand together, we can bring America back.' - Ted Cruz", "'We don't need an apprentice in the White House, we already have one!' - Scott Walker", "'I'm the son of an Irish-Italian mom, and a Cuban immigrant dad who fled oppression.' - Ted Cruz"]
 customquote = quotes[Math.floor((Math.random() * quotes.length))]
-corrr = `\n<h2>New Campaign Trail</h2><font id='wittyquote' size='4' color='FFFFFF'><em>` + customquote + `</em></font>`;
+corrr = `\n<h2>Campaign Trail Showcase</h2><font id='wittyquote' size='4' color='FFFFFF'><em>` + customquote + `</em></font>`;
 
 
 nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#f66601";
@@ -851,7 +1021,7 @@ var soundtracks = {
     const gameWindow = document.getElementById('game_window');
 
     if (gameStart) {
-        gameStart.innerHTML = '<strong>Alright, let’s find out.</strong>';
+        gameStart.innerHTML = '<strong>I'm ready.</strong>';
         const clearHeight = () => { if (gameWindow) gameWindow.style.removeProperty('height'); };
         if (window.jQuery) $('#game_start').on('click', clearHeight);
         else gameStart.addEventListener('click', clearHeight);
@@ -866,61 +1036,87 @@ e.ElectionPopup = "The day has come. All these years as Soliciter General, as a 
 e.WinPopup = "'We on Fox News can now project that Ted Cruz has been elected the 45th President of the United States.'"
 e.LosePopup = "'NBC News can now project that Hillary Clinton has won the 2016 presidnential election, and will become the 45th President of the United States."
 
-e.displayTooltips = true;
+.displayTooltips = true;
 
 function addDynamicCSS() {
   var css = `
-      .inner_window_question h3 .mytooltip {
-          background-color: #f2813f;
-      }
-
+      /* Gradient text trigger */
       .mytooltip {
           position: relative;
           display: inline-block;
+          font-weight: bold;
+          font-size: 1em;
+          line-height: inherit;
           cursor: pointer;
-          background-color: #f2813f;
+          background: linear-gradient(135deg, #ffcc33, #ff6600, #cc3300);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          color: transparent;
       }
 
+      /* Tooltip box */
       .mytooltip .mytooltiptext {
-          width: 240px;
-          background-color: #f2813f;
-          color: black;
-          text-align: center;
-          border-radius: 6px;
-          padding: 10px;
-          position: absolute;
-          z-index: 99;
-          bottom: 20%;
-          left: 20%;
-          margin-left: -90px;
           opacity: 0;
-          transition: opacity 0.3s;
-          border: 2px black;
-          pointer-events: none;
-          font-size: 13px !important;
-          line-height: 1.5em !important;
-          font-weight: normal !important;
-          font-style: normal !important;
+          visibility: hidden;
+          transition: opacity 0.3s ease, visibility 0s linear 0.3s;
+
+          background: linear-gradient(135deg, #ffcc33, #ff6600, #cc3300);
+          border: 2px solid #fff;
+          text-align: center;
+          padding: 8px 12px;
+          border-radius: 8px;
+
+          position: absolute;
+          z-index: 1000;
+          bottom: 125%;
+          left: 50%;
+          transform: translateX(-50%) translateZ(0);
+          white-space: normal;
+          max-width: 260px;
+          width: max-content;
+
+          /* Force tooltip text to be white and visible */
+          font-family: 'Segoe UI', Tahoma, sans-serif;
+          font-weight: 600;
+          letter-spacing: 0.4px;
+          color: #ffffff !important;
+          -webkit-text-fill-color: #ffffff !important;
+          background-clip: border-box !important;
+          -webkit-background-clip: border-box !important;
+          text-shadow: none;
+          will-change: opacity;
       }
 
-      .mytooltip .mytooltiptext img {
-          max-width: 240px;
-          height: auto;
-      }
-
+      /* Show tooltip on hover */
       .mytooltip:hover .mytooltiptext {
           opacity: 1;
-          transition-delay: 0.5s;
+          visibility: visible;
+          transition: opacity 0.3s ease;
+      }
+
+      /* Style images in tooltip triggers */
+      .mytooltip img {
+          display: inline;
+          max-width: 100%;
+          height: auto;
+          border: 2px solid #fff;
+          border-radius: 6px;
+          box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+          background: none !important;
+          -webkit-background-clip: initial !important;
+          -webkit-text-fill-color: initial !important;
+          color: initial !important;
       }
   `;
 
   var styleElem = document.createElement('style');
   styleElem.type = 'text/css';
-  
   styleElem.appendChild(document.createTextNode(css));
-  
   document.head.appendChild(styleElem);
 }
+
+
 // Copied from Ohio 2022 Senate. Some have been edited, but others haven't. That explains why there's some quite odd and random searchstrings.
 
 addDynamicCSS();
@@ -935,7 +1131,7 @@ tooltipList = [
   {searchString: "Obamacare", explanationText: "<img src=https://i.imgur.com/iN4TPyo.png> Socialization of healthcare."},
   {searchString: "the establishment", explanationText: "<img src=https://i.imgur.com/BHYdwFO.png>⠀"},
   {searchString: "MSNBC", explanationText: "<img src=https://i.imgur.com/3ROtL4O.png> One of the biggest spreaders of liberal propaganda."},
-  {searchString: "Carson", explanationText: "<img src=https://i.imgur.com/mk57VPA.png> Ben Carson. You don't have much to say about him."},
+  {searchString: "Ben Carson", explanationText: "<img src=https://i.imgur.com/mk57VPA.png> Ben Carson. A neurosurgeon, well known in the Evangelical community."},
   {searchString: "Fiorina", explanationText: "<img src=https://i.imgur.com/JCWFk3t.png>She goes to show not all females are sinful liberals, though Hillary Clinton certainly makes you think otherwise at times."},
   {searchString: "Walker", explanationText: "<img src=https://i.imgur.com/xmf05Zy.jpeg>That guy that survived the recall."},
   {searchString: "Still Working On Searchstrings", explanationText: "<img src=https://i.imgur.com/KTvofa7.png> My New Piggybank :)"},
