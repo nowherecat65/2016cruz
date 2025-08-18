@@ -836,3 +836,8 @@ var soundtracks = {
 // Set up new music player
 
 newMusicPlayer()
+
+// Election night descriptions, shamelessly stol- I mean borrowed from 2016: A Lifetime of This
+e.ElectionPopup = "The day has come. All these years as Soliciter General, as a Senator, as, whatever, have come down to <i>this.</i> Are you ready, Ted?"
+e.WinPopup = "'We on Fox News can now project that Ted Cruz has been elected the 45th President of the United States.'"
+e.LosePopup = "'NBC News can now project that Hillary Clinton has won the 2016 presidnential election, and will become the 45th President of the United States."
