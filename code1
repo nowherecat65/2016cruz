@@ -169,7 +169,7 @@ input[type="range"]::-moz-range-thumb {
 
 document.getElementById("inner_window_1").children[0].innerHTML="<h3>Welcome to <i>Cruz '16</i></h3>"
 
-document.getElementById("inner_window_1").children[1].innerHTML = "<li>This is an alternate history mod where Ted Cruz managed to win the 2016 Republican primaries.</li><li>In our real timeline, Ted Cruz's campaign failed to win the nomination despite early success in Iowa.</li><li>There were many reasons for his loss, including:</li><li>His strong support of free trade and NAFTA, which hurt him significantly in the Rust Belt.</li><li>He positioned himself as a staunch conservative originalist, which helped amongst evangelicals but this also narrowed his path to victory, and it hurt tremendously in moderate states like New Hampshire.</li><li>And many other reasons, but enough said, this mod explores what could have been.</li><li>You start off in the primaries, but you go on to the general election and face Hillary Clinton.</li><li>This mod includes many achievements, some CYOA, custom endings, and more, so don't be afraid to try new routes!</li><li>This mod, especially the tooltips, are shown from Cruz's perspective and are supposed to be biased. Just keep that in mind while playing.</li><li>Are you ready?</li>";
+document.getElementById("inner_window_1").children[1].innerHTML = "<li>This is an alternate history mod where Ted Cruz managed to win the 2016 Republican primaries.</li><li>In our real timeline, Ted Cruz's campaign failed to win the nomination despite early success in Iowa.</li><li>There were many reasons for his loss, including:</li><li>His strong support of free trade and NAFTA, which hurt him significantly in the Rust Belt.</li><li>He positioned himself as a staunch conservative originalist, which helped amongst evangelicals but this also narrowed his path to victory, and it hurt tremendously in moderate states like New Hampshire.</li><li>And many other reasons, but enough said, this mod explores what could have been.</li><li>You start off in the primaries, but you go on to the general election and face Hillary Clinton.</li><li>This mod includes many achievements, some CYOA, custom endings, and more, so don't be afraid to try new routes!</li><li>This mod, especially the tooltips, are shown from Cruz's perspective and are supposed to be biased. Just keep that in mind while playing.";
 
 
 let previousCandidate = null;
@@ -572,7 +572,7 @@ jet_data = {
     "bannerImageUrl": "https://i.imgur.com/3iXJcrL.png",
     "backgroundImageUrl": "https://wallpaper-house.com/data/out/7/wallpaper2you_175134.jpg",
     "endingTextColor": "#000000",
-    "customQuote": "“I’m not running because I desperately need 99 new friends in the U.S Senate.”\t",
+    "customQuote": "“Ted Cruz”\t",
     "gameTitle": "New Campaign Trail"
 }
 
@@ -614,7 +614,7 @@ s1 {
     <p><s1><span class='flashing-text'>theanswerisme - Theming/Writing</span></s1></p>
     <h3>Miscellaneous</h3>
     <p>mp4clout - Made the banner<p>
-    <p>DecstarG for the Music Player and Credits Screen</p>
+    <p>DecstarG for Credits Screen</p>
     <p>LiquidAstro for his Further Reading tool 
     <h3>I'd also like to thank all my great playtesters</h3>
     <p>General_Rise8708</p>
@@ -748,287 +748,545 @@ document.head.appendChild(style);
 
 //#endcode
 
-// Initialise custom music
+// Music Player
+// Select the node that will be observed for mutations
+const windowsAdvisorTargetNode = document.getElementById("game_window");
 
-$("#music_player")[0].children[0].style.display="none"
-$("#music_player")[0].children[1].style.display="none"
+// Options for the observer (which mutations to observe)
+const windowsAdvisorConfig = { attributes: true, childList: true, subtree: true };
 
-document.getElementById("modLoadReveal").style.display="none"
-document.getElementById("modloaddiv").style.display="none"
+// Callback function to execute when mutations are observed
+const callback = (mutationList, observer) => {
+    visitWindow = document.getElementsByClassName("overlay_window")[0];
 
-musicBox = document.getElementById("music_player")
-musicBox.style.display=""
-
-var trackSel;
-e = campaignTrail_temp
-e.selectedSoundtrack = 0
-
-toTime = (seconds) => {
-  var date = new Date(null);
-  date.setSeconds(seconds);
-  return date.toISOString().substr(11, 8);
-}
-
-generateTime = () => {
-    // Get the audio element
-    var audio = document.getElementById("campaigntrailmusic");
-
-    timeTracker = document.createElement("div");
-    timeTracker.style = `
-      text-align:left;
-      border-style:solid;
-      border-width:3px;
-      height:150px;
-      width:200px;
-      background-color:#999999;
-      float:right;
-      padding: 10px;
-    `
-    $("#trackSelParent")[0].prepend(timeTracker);
-    $("#trackSelParent")[0].prepend(document.createElement("br"));
-
-    // Create a new element to display the current position of the audio
-    var positionDisplay = document.createElement("gg");
-    positionDisplay.id = "position-display";
-
-    // Create a new slider element to change the time
-    var timeSlider = document.createElement("input");
-    timeSlider.type = "range";
-    timeSlider.min = 0;
-    timeSlider.max = 1;
-    timeSlider.step = 0.001;
-    timeSlider.value = 0;
-    timeSlider.style.width = "200px";
-    timeSlider.id = "time-slider";
-
-    var pausePlay = document.createElement("button");
-    pausePlay.id = "position-display";
-    pausePlay.innerHTML = "<b>Pause</b>"
-    pausePlay.style.width = "100%";
-
-
-    pausePlay.addEventListener("click", event => {
-      event.preventDefault();
-      updatePositionDisplay();
-      let audio = document.getElementById("campaigntrailmusic");
-      if (audio.paused) {
-        audio.play();
-        event.target.innerHTML = "<b>Pause</b>";
+    if(visitWindow == null || visitWindow.classList.contains("done")) {
         return;
-      }
-      audio.pause();
-      event.target.innerHTML = "<b>Play</b>";
-      return;
-    })
-
-    var volumeLabel = document.createElement("gg");
-    volumeLabel.id = "volume-label";
-    volumeLabel.innerHTML = "<br><b>Volume: </b>"
-
-    var volumeSlider = document.createElement("input");
-    volumeSlider.type = "range";
-    volumeSlider.min = 0;
-    volumeSlider.max = 1;
-    volumeSlider.step = 0.001;
-    volumeSlider.value = 0;
-    volumeSlider.style.width = "200px";
-    volumeSlider.id = "volume-slider";
-
-    volumeSlider.value = audio.volume;
-
-    timeTracker.appendChild(pausePlay);
-    timeTracker.appendChild(document.createElement("br"));
-    timeTracker.appendChild(document.createElement("br"));
-    timeTracker.appendChild(positionDisplay);
-    timeTracker.appendChild(timeSlider);
-    timeTracker.appendChild(volumeLabel);
-    timeTracker.appendChild(volumeSlider);
-
-    updatePositionDisplay();
-
-    //for (let i = 0; i < 10; i++)
-    //timeTracker.append(document.createElement("br"));
-
-
-    // Function to update the position display
-    function updatePositionDisplay() {
-      positionDisplay.innerHTML = "<b>Time:</b> " + toTime(audio.currentTime) + "<br>";
-      timeSlider.value = audio.duration ? audio.currentTime / audio.duration : 0;
     }
+    visitWindow.classList.add("done");
+    visitWindow.classList.add("window");
+    let titleBar = visitWindow.querySelector("h3");
+    titleBar.classList.add("title-bar");
+    titleBar.classList.add("title-bar-text")
+    titleBar.style.paddingLeft = "3px";
+};
 
-    // Function to change the time of the audio
-    function changeTime() {
-      positionDisplay.innerHTML = "<b>Time:</b> " + toTime(audio.currentTime) + "<br>";
-      audio.currentTime = timeSlider.value * audio.duration;
-    }
+class Song {
+  constructor(title, artist, coverLink, audioLink) {
+    this.title = title;
+    this.artist = artist;
+    this.coverLink = coverLink;
+    this.audioLink = audioLink;
+  }
+  getTitle() {
+    return this.title;
+  }
 
-    updateVolume = event => {
-      audio.volume = event.target.value;
-    }
-    
-    // Update the position display and slider every second
-    setInterval(updatePositionDisplay, 1000);
+  getArtist() {
+    return this.artist;
+  }
 
-    // Listen for changes to the time slider and change the time of the audio
-    timeSlider.addEventListener("input", changeTime);
-    volumeSlider.addEventListener("input", updateVolume)
+  getCoverLink() {
+    return this.coverLink;
+  }
+
+  getAudioLink() {
+    return this.audioLink;
+  }
 }
 
-function newMusicPlayer() {
-  trackSel = document.createElement("div");
-  trackSel.id = "trackSelParent"
-  let z = `<br><br><br><br><br><br><br><br><br><br><div id='trackSel' style="text-align:left;border-style:solid;border-width:3px;overflow-y: scroll;overflow-x: hidden;height:200px; width:400px;background-color:#999999;float:right;">`
-  z += `<b><select id='selectSoundtrack'><option value='`+soundtracks[e.selectedSoundtrack].name+`'>`+soundtracks[e.selectedSoundtrack].name+"</option>"
-  for (i in soundtracks) {
-    if (soundtracks[e.selectedSoundtrack] != soundtracks[i]) {
-      z += `<option value='`+soundtracks[i].name+`'>`+soundtracks[i].name+`</option>`
-    }
-  }
-  z += `</select></b><br><br>`
-  // <label><input type="radio" name="option" value="option1">Option 1</label><br>
-  for (i in soundtracks[e.selectedSoundtrack].tracklist) {
-    let a = soundtracks[e.selectedSoundtrack].tracklist[i]
-    let b = `<label><input class="trackSelector" type="radio" name="trackSelector" value="`+i+`">`+a.name+`</label><br>`
-    z += b
-  }
-  z += "</div><br><br>"
-  trackSel.innerHTML = z
-
-  // select correct song
-
-  musicBox.appendChild(trackSel);
-  Array.from(document.getElementById("trackSel").children).filter(f=>{
-    return f.tagName == "LABEL"
-  }).map(f=>f.children[0])[0].checked = true
-
-  // set soundtrack changer
-
-  soundtrackSelector = document.getElementById("selectSoundtrack")
-  soundtrackSelector.onchange = function() {
-    for (i in soundtracks) {
-      if (soundtracks[i].name == soundtrackSelector.value) {
-        e.selectedSoundtrack = i
-        break
-      }
-    }
-    document.getElementById("trackSelParent").remove()
-    newMusicPlayer()
+class Playlist {
+  constructor() {
+    this.songs = [];
+    this.currentSongIndex = 0;
   }
 
-  var matches = document.querySelectorAll('.trackSelector');
-
-  for (match in matches) {
-    matches[match].onchange = function() {
-      audio = $("#campaigntrailmusic")[0];
-      audio.src = soundtracks[e.selectedSoundtrack].tracklist[this.value].url
-      audio.currentTime = 0
-    }
+  addSong(song) {
+    this.songs.push(song);
   }
 
-  musicBox.children[2].loop = false
-  musicBox.children[2].src = soundtracks[e.selectedSoundtrack].tracklist[0].url
-
-  musicBox.children[2].onended = function() {
-    console.log("next track")
-    let selected = Number(document.querySelector('input[name="trackSelector"]:checked').value);
-    let newSel = clamp(selected+1, soundtracks[e.selectedSoundtrack].tracklist.length-1, 0)
-    let buttons = Array.from(document.getElementById("trackSel").children).filter(f=>{
-      return f.tagName == "LABEL"
-    }).map(f=>f.children[0])
-    //let selectedIndex = buttons.map(f=>f.children[0]).map(f=>f.checked)
-    buttons[newSel].click()
+  getCurrentSong() {
+    return this.songs[this.currentSongIndex];
   }
 
-  for (w = 0; w < 7; w++) {
-    document.getElementById("trackSelParent").appendChild(document.createElement("br"))
+  playNext() {
+    this.currentSongIndex = (this.currentSongIndex + 1) % this.songs.length;
   }
+
+  playPrevious() {
+    this.currentSongIndex = (this.currentSongIndex - 1 + this.songs.length) % this.songs.length;
+  }
+}
+window.Playlist=Playlist
+window.Song=Song
+
+function changePlaylist(newPlaylist) {
+  playlist = newPlaylist;
+  playlist.currentSongIndex = 0;
+  updateUI(playlist);
+  const audio = document.getElementById("audio");
+  audio.src = playlist.getCurrentSong().audioLink;
+  audio.play();
+}
+window.changePlaylist=changePlaylist
+
+function updateUI(playlist) {
+    const currentSong = playlist.getCurrentSong();
+    var player = document.getElementById("player");
+    player.querySelector("#cover").src = currentSong.getCoverLink();
+    player.querySelector("#title").textContent = currentSong.getTitle();
+    player.querySelector("#artist").textContent = currentSong.getArtist();
+}
+
+window.updateUI=updateUI
+
+
+function setupMusicPlayer() {
+  playlist = new Playlist();
+
+  const song1 = new Song(
+    "Greater",
+    "MercyMe",
+    "https://i.imgur.com/5xk9l08.png",
+    "https://audio.jukehost.co.uk/ylbg0O3YL69LEwQhY2NgCU1e1dBVYtRc"
+  );
   
-  generateTime();
-}
+  const song2 = new Song(
+    "God Bless the U.S.A",
+    "Lee Greenwood",
+    "https://i.imgur.com/EEOhyVm.png",
+    "https://audio.jukehost.co.uk/A7K1Ha1w2kmRXPz8qC3DcNrQWxQTPTRs"
+  );
 
-clamp = function(a, max, min, overflow=true) {
-  if (overflow) {
-    return a > max ? min : a < min ? max : a;
+  const song3 = new Song(
+    "Where the Stars and Stripes and Eagle Fly",
+    "Aaron Tippin",
+    "https://i.imgur.com/Wxb6s9p.jpeg",
+    "https://audio.jukehost.co.uk/50AuFK2OTd6hRyAMT0VZP1O0yqEXpg9j"
+  );
+
+  const song4 = new Song(
+    "Real Gone",
+    "Sheryl Crow",
+    "https://i.imgur.com/B1kmhYa.png",
+    "https://audio.jukehost.co.uk/uSkx8iXE3oQ6BZQ9ZbFqYfPh49SfaMrU"
+  );
+
+  const song5 = new Song(
+    "All these other songs are leftovers from the mod I took this music player from",
+    "Buckwheat Zydeco",
+    "https://i.imgur.com/u2kybud.png",
+    "https://file.garden/Z-8vn6l_RynAMnyS/Make%20A%0Change.mp3"
+  );
+
+  const song6 = new Song(
+    "Centuries",
+    "Fall Out Boy",
+    "https://i.imgur.com/G1lVFIm.png",
+    "https://file.garden/Z-8vn6l_RynAMnyS/Fall%20Out20Boy%20-%20Centuries%20(Official%20Video).mp3"
+  );
+
+  const song7 = new Song(
+    "For the Love of Money",
+    "The O’Jays",
+    "https://i.imgur.com/3OT7Q1V.png",
+    "https://file.garden/Z-8vn6l_RynAMnyS/The%20O'Jays20-%20For%20The%20Love%20of%20Money%20(Official%20Audio).mp3"
+  );
+
+  const song8 = new Song(
+    "Mitt Romney",
+    "CollegeHumor",
+    "https://i.imgur.com/NtShrC6.png",
+    "https://file.garden/Z-8vn6l_RynAMnyS/Mitt%20Romne%20%20Parody)%20%5BCollegeHumor%5D.mp3"
+  );
+
+  const song9 = new Song(
+    "Ice Ice Baby",
+    "Vanilla Ice",
+    "https://i.imgur.com/lM1EVnS.png",
+    "https://file.garden/Z-8vn6l_RynAMnyS/Vanilla%20Ic%20-%20Ice%20Ice%20Baby%20(Official%20Music%20Video).mp3"
+  );
+
+  const song10 = new Song(
+    "It’s America",
+    "Rodney Atkins",
+    "https://i.imgur.com/vxHawrW.png",
+    "https://file.garden/Z-8vn6l_RynAMnyS/Rodney%20Atkns%20-%20It's%20America%20(Official%20Music%20Video).mp3"
+  );
+
+  const song11 = new Song(
+    "All These Things That I’ve Done",
+    "The Killers",
+    "https://i.imgur.com/0AxxTHm.png",
+    "https://file.garden/Z-8vn6l_RynAMnyS/The%20Kilers%20-%20All%20These%20Things%20That%20I've%20Done%20(Official%20Music%20Video).mp3"
+  );
+
+  const song12 = new Song(
+    "Everybody Wants to Rule the World",
+    "Tears for Fears",
+    "https://i.imgur.com/y9RvzFX.png",
+    "https://file.garden/Z-8vn6l_RynAMnyS/Tears%20or%20Fears%20-%20Everybody%20Wants%20To%20Rule%20The%20World%20-%20ORIGINAL%20VIDEO.mp3"
+  );
+
+  playlist.addSong(song1);
+  playlist.addSong(song2);
+  playlist.addSong(song3);
+  playlist.addSong(song4);
+  playlist.addSong(song5);
+  playlist.addSong(song6);
+  playlist.addSong(song7);
+  playlist.addSong(song8);
+  playlist.addSong(song9);
+  playlist.addSong(song10);
+  playlist.addSong(song11);
+  playlist.addSong(song12);
+
+  const playerContainer = document.createElement("div");
+  playerContainer.id = "player";
+
+  const displayBox = document.createElement("div");
+  displayBox.id = "display-box";
+
+  const coverElement = document.createElement("img");
+  coverElement.id = "cover";
+  displayBox.appendChild(coverElement);
+
+  const infoContainer = document.createElement("div");
+  infoContainer.id = "info-container";
+  infoContainer.style.backgroundImage = "url('https://i.imgur.com/FlbueNE.png')";
+  infoContainer.style.backgroundSize = "cover";
+  infoContainer.style.color = "white";
+
+  const songInfo = document.createElement("div");
+  songInfo.id = "song-info";
+
+  const titleElement = document.createElement("h3");
+  titleElement.id = "title";
+  titleElement.style.fontWeight = 'large';
+  songInfo.appendChild(titleElement);
+
+  const artistElement = document.createElement("p");
+  artistElement.id = "artist";
+  songInfo.appendChild(artistElement);
+
+  infoContainer.appendChild(songInfo);
+  displayBox.appendChild(infoContainer);
+
+  playerContainer.appendChild(displayBox);
+
+  const controlsContainer = document.createElement("div");
+  controlsContainer.id = "controls-container";
+
+  const controls = document.createElement("div");
+  controls.id = "controls";
+
+  const prevButton = document.createElement("img");
+  prevButton.id = "prevButton";
+  prevButton.src = "https://i.imgur.com/imIqTEA.png";
+  prevButton.alt = "Previous";
+  controls.appendChild(prevButton);
+
+  const playPauseButton = document.createElement("img");
+  playPauseButton.id = "playPauseButton";
+  playPauseButton.src = "https://i.imgur.com/oQbfTxw.png";
+  playPauseButton.alt = "Play/Pause";
+  controls.appendChild(playPauseButton);
+
+  const nextButton = document.createElement("img");
+  nextButton.id = "nextButton";
+  nextButton.src = "https://i.imgur.com/7TtaN04.png";
+  nextButton.alt = "Next";
+  controls.appendChild(nextButton);
+
+  controlsContainer.appendChild(controls);
+
+  playPauseButton.addEventListener("click", function () {
+    const audio = document.getElementById("audio");
+    if (audio.paused) {
+      audio.play();
+      playPauseButton.src = "https://i.imgur.com/ttdoyfG.png"; // pause icon
+    } else {
+      audio.pause();
+      playPauseButton.src = "https://i.imgur.com/oQbfTxw.png"; // play icon
+    }
+  });
+
+  nextButton.addEventListener("click", function () {
+    playlist.playNext();
+    updateUI(playlist);
+    const audio = document.getElementById("audio");
+    audio.src = playlist.getCurrentSong().audioLink;
+    audio.play();
+  });
+
+  prevButton.addEventListener("click", function () {
+    playlist.playPrevious();
+    updateUI(playlist);
+    const audio = document.getElementById("audio");
+    audio.src = playlist.getCurrentSong().audioLink;
+    audio.play();
+  });
+
+  const progressBarContainer = document.createElement("div");
+  progressBarContainer.id = "progress-bar-container";
+
+  // FIXED: input type range instead of progress
+  const progressBar = document.createElement("input");
+  progressBar.type = "range";
+  progressBar.id = "progress-bar";
+  progressBar.value = "0";
+  progressBar.max = "100";
+
+  progressBarContainer.appendChild(progressBar);
+  controlsContainer.appendChild(progressBarContainer);
+  playerContainer.appendChild(controlsContainer);
+
+  const volumeContainer = document.createElement("div");
+  volumeContainer.id = "volume-container";
+
+  const volumeLabel = document.createElement("img");
+  volumeLabel.src = "https://i.imgur.com/0BJYsXt.png";
+  volumeLabel.alt = "Volume";
+  volumeContainer.appendChild(volumeLabel);
+
+  const volumeSliderContainer = document.createElement("div");
+  volumeSliderContainer.classList.add("is-vertical");
+  volumeSliderContainer.style.marginLeft = "23%";
+  volumeSliderContainer.style.height = "126px";
+
+  const volumeSlider = document.createElement("input");
+  volumeSlider.type = "range";
+  volumeSlider.id = "volumeSlider";
+  volumeSlider.min = 0;
+  volumeSlider.max = 9;
+  volumeSlider.step = 1;
+  volumeSlider.value = 1;
+
+  volumeSliderContainer.appendChild(volumeSlider);
+
+  const volumeDisplay = document.createElement("span");
+  volumeDisplay.id = "volume-display";
+  volumeDisplay.style.fontWeight = 'bold'; 
+  volumeDisplay.style.display = 'none';
+  volumeDisplay.textContent = "1";
+
+  volumeContainer.appendChild(volumeSliderContainer);
+  volumeContainer.appendChild(volumeDisplay);
+
+  playerContainer.appendChild(volumeContainer);
+
+  gameWindow_player.insertAdjacentElement("afterend", playerContainer);
+
+  function updateProgressBar() {
+    const audio = document.getElementById("audio");
+    const progress = (audio.currentTime / audio.duration) * 100;
+    try{progressBar.value = progress}
+    catch{}
   }
-  return a > max ? max : a < min ? min : a;
-}
 
+  progressBar.addEventListener("input", function () {
+    const audio = document.getElementById("audio");
+    const seekTime = (progressBar.value / 100) * audio.duration;
+    audio.currentTime = seekTime;
+  });
 
-// Track list
+  const audio = document.createElement("audio");
+  audio.id = "audio";
+  audio.src = playlist.getCurrentSong().audioLink;
+  audio.volume = 1/9;
 
-var soundtracks = {
-  0: {
-    name: "We Can Bring America Back",
-    tracklist: [
-       {
-        "name": "MercyMe - Greater",
-        "url": "https://audio.jukehost.co.uk/ylbg0O3YL69LEwQhY2NgCU1e1dBVYtRc"
-       },
-       {
-        "name": "Sheryl Crow - Real Gone",
-        "url": "https://audio.jukehost.co.uk/uSkx8iXE3oQ6BZQ9ZbFqYfPh49SfaMrU"
-      },
-      {
-        "name": "Lee Greenwood - God Bless the U.S.A.",
-        "url": "https://audio.jukehost.co.uk/A7K1Ha1w2kmRXPz8qC3DcNrQWxQTPTRs"
-      },
-      {
-        "name": "Aaron Tippin - Where The Stars And Stripes And The Eagle Fly",
-        "url": "https://audio.jukehost.co.uk/50AuFK2OTd6hRyAMT0VZP1O0yqEXpg9j"
-      },
-      {
-        "name": "Barrie Hingley - The Battle Cry of Freedom (Instrumental)",
-        "url": "https://audio.jukehost.co.uk/C961f2ODHf2c26ZefTqoLYADeZWtJwfW"
-      },
-      {
-        "name": "Lenny Kravitz - Let Love Rule",
-        "url": "https://audio.jukehost.co.uk/CNWpc9E5AiiUodAsdDYgfmdq4Ay8efJW"
-      },
-      {
-        "name": "The Caretaker - D1; I Still Feel As Though I Am Me",
-        "url": "https://cdn.discordapp.com/attachments/810034515334004766/1074235126394929212/d1.mp3"
-      },
-      {
-        "name": "The Caretaker - E1; Back There Benjamin",
-        "url": "https://cdn.discordapp.com/attachments/810034515334004766/1074235126654959696/e1.mp3"
-      },
-      {
-        "name": "The Caretaker - E2; And Heart Breaks",
-        "url": "https://cdn.discordapp.com/attachments/810034515334004766/1078102500164522044/e2.mp3"
-      },
-      {
-        "name": "The Caretaker - F1; Gradations of Arms Length",
-        "url": "https://cdn.discordapp.com/attachments/810034515334004766/1074235126977933413/f1.mp3"
-      },
-      {
-        "name": "The Caretaker - G1; Post Awareness Confusions",
-        "url": "https://cdn.discordapp.com/attachments/932087077472993350/1074234695774113792/g1.mp3"
-      },
-      {
-        "name": "The Caretaker - N1; Sudden Time Regression into Isolation",
-        "url": "https://cdn.discordapp.com/attachments/932087077472993350/1074234813663420476/n1.mp3"
-      },
-      {
-        "name": "The Caretaker - R1; Place in the World Fades Away",
-        "url": "https://cdn.discordapp.com/attachments/932087077472993350/1074233871526268928/r1.mp3"
-      }
-    ]
+  audio.addEventListener("timeupdate", updateProgressBar);
+  audio.addEventListener("ended", function () {
+    playlist.playNext();
+    updateUI(playlist);
+    audio.src = playlist.getCurrentSong().audioLink;
+    audio.play();
+  });
+
+  let currentVolume = 1;
+
+  volumeSlider.addEventListener("input", function () {
+    currentVolume = parseInt(volumeSlider.value, 10);
+    updateVolumeDisplay();
+    updateAudioVolume();
+  });
+
+  function updateVolumeDisplay() {
+    volumeDisplay.textContent = currentVolume;
   }
+
+   function updateAudioVolume() {
+    const audio = document.getElementById("audio");
+    audio.volume = currentVolume / 9;
+  }
+
+  document.body.appendChild(audio);
+  audio.play();
+
+  updateUI(playlist);
 }
 
- const gameStart = document.getElementById('game_start');
-    const gameWindow = document.getElementById('game_window');
-
-    if (gameStart) {
-        gameStart.innerHTML = '<strong>I’m ready.</strong>';
-        const clearHeight = () => { if (gameWindow) gameWindow.style.removeProperty('height'); };
-        if (window.jQuery) $('#game_start').on('click', clearHeight);
-        else gameStart.addEventListener('click', clearHeight);
+// ✅ FIXED: Only inject CSS once
+if (!document.getElementById("musicPlayerStyles")) {
+  const style = document.createElement("style");
+  style.id = "musicPlayerStyles";
+  style.textContent = `
+  #player {
+      border: 3px solid #C9C9C9;
+      display: flex;
+      flex-direction: row;
+      height:191px;
+      background-Image: url("https://itsastronomical.com/assets/music/blackbar.png");
     }
 
-// Set up new music player
+    #display-box {
+      display: flex;
+      align-items: center;
+      width: 50%;
+    }
 
-newMusicPlayer()
+    #cover {
+      width: 176px;
+      height:176px;
+    }
+
+    #info-container {
+      display: flex;
+      flex-direction: row;
+      height:178px;
+      width:127px;
+      margin-top: 3px;
+    }
+
+    #song-info {
+      width: 100%;
+      padding:5px;
+    }
+
+    #controls-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 10px;
+      width:100%;
+      padding-top:15px;
+    }
+
+    .is-vertical #volumeSlider {
+      width: 16px;
+      height: 100%;
+      writing-mode: vertical-rl;
+      direction: rtl;
+    }
+
+    #controls {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 80%;
+    }
+
+    #progress-bar-container {
+      width: 100%;
+    }
+
+    #progress-bar {
+      width: 80%;
+      margin: auto;
+      display: flex;
+      margin-top: 20px;
+    }
+  `;
+  document.head.appendChild(style);
+}
+
+const gameWindow_player = document.getElementById("game_window");
+setupMusicPlayer();
+
+// Election night texts
+e.ElectionPopup = "The day has come. All these years as Soliciter General, as a Senator, as, whatever, have come down to <i>this.</i> Are you ready, Ted?"
+e.WinPopup = "'We on Fox News can now project that Ted Cruz has been elected the 45th President of the United States.'"
+e.LosePopup = "'NBC News can now project that Hillary Clinton has won the 2016 presidnential election, and will become the 45th President of the United States."
+
+.displayTooltips = true;
+
+// ✅ FIXED: Only add tooltip CSS once
+function addDynamicCSS() {
+  if (document.getElementById("tooltipStyles")) return;
+  var css = `
+      .mytooltip {
+          position: relative;
+          display: inline-block;
+          font-weight: bold;
+          font-size: 1em;
+          line-height: inherit;
+          cursor: pointer;
+          background: linear-gradient(135deg, #ffcc33, #ff6600, #cc3300);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          color: transparent;
+      }
+
+      .mytooltip .mytooltiptext {
+          opacity: 0;
+          visibility: hidden;
+          transition: opacity 0.3s ease, visibility 0s linear 0.3s;
+
+          background: linear-gradient(135deg, #ffcc33, #ff6600, #cc3300);
+          border: 2px solid #fff;
+          text-align: center;
+          padding: 8px 12px;
+          border-radius: 8px;
+
+          position: absolute;
+          z-index: 1000;
+          bottom: 125%;
+          left: 50%;
+          transform: translateX(-50%) translateZ(0);
+          white-space: normal;
+          max-width: 260px;
+          width: max-content;
+
+          font-family: 'Segoe UI', Tahoma, sans-serif;
+          font-weight: 600;
+          letter-spacing: 0.4px;
+          color: #ffffff !important;
+          -webkit-text-fill-color: #ffffff !important;
+          background-clip: border-box !important;
+          -webkit-background-clip: border-box !important;
+          text-shadow: none;
+          will-change: opacity;
+      }
+
+      .mytooltip:hover .mytooltiptext {
+          opacity: 1;
+          visibility: visible;
+          transition: opacity 0.3s ease;
+      }
+
+      .mytooltip img {
+          display: inline;
+          max-width: 100%;
+          height: auto;
+          border: 2px solid #fff;
+          border-radius: 6px;
+          box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+          background: none !important;
+          -webkit-background-clip: initial !important;
+          -webkit-text-fill-color: initial !important;
+          color: initial !important;
+      }
+  `;
+
+  var styleElem = document.createElement('style');
+  styleElem.id = "tooltipStyles";
+  styleElem.type = 'text/css';
+  styleElem.appendChild(document.createTextNode(css));
+  document.head.appendChild(styleElem);
+}
+
+addDynamicCSS();
+
 
 // Election night descriptions, shamelessly stol- I mean borrowed from 2016: A Lifetime of This
 e.ElectionPopup = "The day has come. All these years as Soliciter General, as a Senator, as, whatever, have come down to <i>this.</i> Are you ready, Ted?"
