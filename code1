@@ -921,7 +921,7 @@ function addDynamicCSS() {
   
   document.head.appendChild(styleElem);
 }
-
+// Copied from Ohio 2022 Senate, which explains all these random searchstrings.
 
 addDynamicCSS();
 
