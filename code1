@@ -610,9 +610,9 @@ s1 {
 }
 </style>
     <h3><p>The Creators</p></h3>
-    <p><s1><span class='flashing-text'>TheMcCain - Lead Dev/Coding/Writing</span></s1></p>
+    <p><s1><span class='flashing-text'>TheMcCain - Lead Dev/Coding/Main Writing</span></s1></p>
     <p><s1><span class='flashing-text'>theanswerisme - Theming/Writing</span></s1></p>
-    <h3>Miscellaneous</h3>
+    <h3>Credits To</h3>
     <p>E - Made the banner<p>
     <p>DecstarG for Credits Screen</p>
     <p>LiquidAstro for his Further Reading tool 
@@ -632,10 +632,13 @@ s1 {
     <p>ERB - Donald Trump vs. Hillary Clinton
     <h3>Special Thanks</h3>
     <p>mp4clout - Made an unused banner</p>
-    <p>Thatchmaster - Making the original inspiration for this mod, American Carnage</p>
+    <p>Thatchmaster - Making American Carnage, which this mod takes many ideas from.</p>
     <p>Dan Bryan - Original 2016 scenario, and making this game</p>
     <p>Jet and DecstarG, for hosting this mod.</p>
-    <h1><font color='#FFFFFF'>But most importantly...</font></h1>
+    <h1 style="font-family: 'Trebuchet MS', sans-serif; color: #FFFFFF;">
+  But most importantly...
+</h1>
+
     <div style='width: 70%;text-overflow: ellipsis;text-align:center;display: block;margin-left: auto;margin-right: auto;'>
     <p>You. Thank you for playing.<p>
     </div>
