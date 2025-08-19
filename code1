@@ -1139,7 +1139,6 @@ function setupMusicPlayer() {
   updateUI(playlist);
 }
 
-// ✅ FIXED: Only inject CSS once
 if (!document.getElementById("musicPlayerStyles")) {
   const style = document.createElement("style");
   style.id = "musicPlayerStyles";
@@ -1223,7 +1222,6 @@ e.LosePopup = "'NBC News can now project that Hillary Clinton has won the 2016 p
 
 .displayTooltips = true;
 
-// ✅ FIXED: Only add tooltip CSS once
 function addDynamicCSS() {
   if (document.getElementById("tooltipStyles")) return;
   var css = `
