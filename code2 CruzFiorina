@@ -298,7 +298,6 @@ document.head.appendChild(customStyling);
     }
 }
 
-
 campaignTrail_temp.questions_json = [
     {
         "model": "campaign_trail.question",
@@ -323,7 +322,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1006,
         "fields": {
             "priority": 2,
-            "description": "The next primary is in New Hampshire, which is just days away, and there is a debate coming up. A strong showing could help you gain ground in the Granite State, where Trump holds a clear lead in the polls. What’s your course of action?",
+            "description": "After your win in Iowa, you've gained much momentum, and you have a serious shot at winning now. Unfortunately, the next primary is in New Hampshire, where Trump seems to hold an even greater lead. You probably can't defeat him here, but you probably can shrink his margin enough where it isn't really a win for him. You're on the debate stage right now, and it's your turn to speak. What do you do?",
             "likelihood": 1
         }
     },
@@ -530,7 +529,7 @@ campaignTrail_temp.questions_json = [
         "pk": 51055,
         "fields": {
             "priority": 0,
-            "description": "put description here",
+            "description": " (just testing some cyoa)",
             "likelihood": 1
         }
     },
@@ -575,7 +574,7 @@ campaignTrail_temp.questions_json = [
         "pk": 51060,
         "fields": {
             "priority": 0,
-            "description": "put description here",
+            "description": "Testing CYOA",
             "likelihood": 1
         }
     }
@@ -603,7 +602,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5016,
         "fields": {
             "question": 1007,
-            "description": "Rubio and Trump can’t compete with us on the ground. We need to focus on identifying every single evangelical voter we can, whether they work on a farm or in a factory, and making sure they turn out to vote. The stakes are too high for them to stay home."
+            "description": "We've been spending a long time building up our organization in Iowa, and now it's time to use it. We're going to be using our ground game to expand voter outreach. Evangelicals will turn out for us on caucus day."
         }
     },
     {
@@ -611,7 +610,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5017,
         "fields": {
             "question": 1007,
-            "description": "Iowans need to understand that Trump will govern like a liberal the moment he’s elected. He has long-standing ties to Pelosi, Schumer, Clinton, and others, and he’s donated $100,000 to the Clinton Foundation. Can you imagine the kind of justices he would appoint?"
+            "description": "Do you know how much stuff Trump has done for liberals? He has spent his whole life advancing abortion and limting the right to bear arms. There's plenty we can use against him. It's time to take the artillery out here."
         }
     },
     {
@@ -619,7 +618,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5018,
         "fields": {
             "question": 1007,
-            "description": "It’s important that we remain above the fray. Let the other candidates go after each other while I continue campaigning on my record and on how I intend to bring real change to Washington. "
+            "description": "Let all the other candidates latch onto the Trump circus, I don't care. I'm going to bring real change to this country, and that's what the people of Iowa want."
         }
     },
     {
@@ -1011,7 +1010,7 @@ campaignTrail_temp.answers_json = [
         "pk": 20664,
         "fields": {
             "question": 1000,
-            "description": "Trump is really just a Democrat masquerading as a conservative. He’ll switch up the moment he’s elected to office. Don’t just take my word for it, Hillary Clinton was at his wedding! I’m the true candidate of the people in this race. "
+            "description": "Trump is a liberal. He might say otherwise, but the facts don't lie. Hillary Clinton was at his wedding, he's donated thousands to her election campaign in New York and her foundation. "
         }
     },
     {
@@ -1019,7 +1018,7 @@ campaignTrail_temp.answers_json = [
         "pk": 20665,
         "fields": {
             "question": 1000,
-            "description": "As much as I want to go in guns blazing right now, we need to be realistic. Rubio and Trump appear to be the frontrunners, so by staying focused on a positive campaign, I’ll be positioned to emerge as the consensus candidate at the convention. "
+            "description": "Believe me, I want to go on the attack, but we need to be smart. Me, Rubio, and Trump seem to have a lead over the rest of the candidates, so if I avoid going on the offensive, we'll be the compromise candidate when the, inevitably deadlocked, convention arrives."
         }
     },
     {
@@ -1027,7 +1026,7 @@ campaignTrail_temp.answers_json = [
         "pk": 20666,
         "fields": {
             "question": 1000,
-            "description": "During my time in politics, I’ve always been a consistent conservative. I’m the only person in this race who, time after time, has stood against the rapacious practice of abortion, opposed tax increases, and fought the disaster that was Obamacare. We need to let people, and Evangelicals in particular, know about my record."
+            "description": "I'm the only one in this race who has fought again wanton abortion, tax increases, and Obamacare, over and over during the course of my whole career, and I'll take these principles with me if I'm elected President."
         }
     },
     {
@@ -1035,7 +1034,7 @@ campaignTrail_temp.answers_json = [
         "pk": 20667,
         "fields": {
             "question": 1000,
-            "description": "Trump is going to win the nomination if we don’t do anything. I intend to meet with the RNC and the other candidates to see if they’re willing to step aside, so the anti-Trump vote isn’t split. People need to know I stand the best chance at defeating Clinton."
+            "description": "We can get muddied down in electioneering as much as we want, but if we don't work with others, we're done for. I'm going to meet with Rubio, Kasich, whoever, and the RNC, to see if we can make some common ground."
         }
     },
     {
@@ -1051,7 +1050,7 @@ campaignTrail_temp.answers_json = [
         "pk": 20678,
         "fields": {
             "question": 1006,
-            "description": "We need to take the fight to Trump. He’s a liberal elitist who embodies New York values — he's pro-abortion, pro-gay marriage, and hostile to the Second Amendment. I’m the true conservative in this race."
+            "description": "Now, don't get me wrong, there are many wonderful people in the state of New York, but Trump stands for New York values. He's pro abortion, pro gay-marriage, and anti-second Amendment. Not many conservatives come out of Manhattan, I'm just saying."
         }
     },
     {
@@ -1059,7 +1058,7 @@ campaignTrail_temp.answers_json = [
         "pk": 20683,
         "fields": {
             "question": 1006,
-            "description": "I don't see why we need to change up our strategy. Trump’s campaign will run out of steam eventually, and we’ll be there to pick up the pieces. We’ll stay the course and steer clear of any controversial or overly aggressive statements."
+            "description": "I've said it many times, and I'll say it again today. Donald Trump is a liberal elitist. He claims to fight against the establishment, yet he's donated more money then you and I make in a year to Hillary Clinton's foundation. If that doesn't show his true colors, I don't know what is."
         }
     },
     {
@@ -1067,7 +1066,7 @@ campaignTrail_temp.answers_json = [
         "pk": 20686,
         "fields": {
             "question": 1006,
-            "description": "I'd rather cut our losses in New Hampshire. The state has so few delegates, and Trump is leading there by so much, it's not even worth trying to win it. We need to pour our efforts into other early contests so we can actually win on Super Tuesday."
+            "description": "There's no reason to go on the attack. I'm just going to take this time to explain my story, how I'm a Cuban immigrant, how I am deeply pro-life, Evangelical, and a defender of the Constitution."
         }
     },
     {
@@ -1091,7 +1090,7 @@ campaignTrail_temp.answers_json = [
         "pk": 20715,
         "fields": {
             "question": 1006,
-            "description": "I'm skipping the debate. I can win without it, besides, there's no reason to hand our opponents a live opportunity to take shots at me on stage."
+            "description": "Trump is a fraud. He's always raving about how smart he is and how much business acumen he has, when he inherited all his money from his rich dad. His casinos in Atlantic City have all gone bankrupt, and has defrauded ordinary Americans through Trump University. He's a pathological liar."
         }
     },
     {
@@ -1331,7 +1330,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51136,
         "fields": {
             "question": 1008,
-            "description": "I will not sacrifice the independence of my candidacy just for a few votes. Whatever the voters say, that's the final word."
+            "description": "I will not sacrifice the independence of my candidacy just for a few votes. Whatever the voters say, that's the final word, and I'm not going to sell myself out to the establishment."
         }
     }
 ]
@@ -7476,26 +7475,6 @@ campaignTrail_temp.answer_score_global_json = [
     },
     {
         "model": "campaign_trail.answer_score_global",
-        "pk": 51102,
-        "fields": {
-            "answer": 20715,
-            "candidate": 200,
-            "affected_candidate": 200,
-            "global_multiplier": 0.05
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
-        "pk": 51114,
-        "fields": {
-            "answer": 20715,
-            "candidate": 200,
-            "affected_candidate": 202,
-            "global_multiplier": 0.04
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
         "pk": 51120,
         "fields": {
             "answer": 51117,
@@ -7542,6 +7521,16 @@ campaignTrail_temp.answer_score_global_json = [
             "candidate": 200,
             "affected_candidate": 200,
             "global_multiplier": -0.005
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 51153,
+        "fields": {
+            "answer": 20683,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "global_multiplier": 0.005
         }
     }
 ]
@@ -8042,17 +8031,6 @@ campaignTrail_temp.answer_score_issue_json = [
 campaignTrail_temp.answer_score_state_json = [
     {
         "model": "campaign_trail.answer_score_state",
-        "pk": 20495,
-        "fields": {
-            "answer": 5017,
-            "state": 1014,
-            "candidate": 200,
-            "affected_candidate": 200,
-            "state_multiplier": -0.006
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
         "pk": 20508,
         "fields": {
             "answer": 5123,
@@ -8159,28 +8137,6 @@ campaignTrail_temp.answer_score_state_json = [
             "candidate": 200,
             "affected_candidate": 200,
             "state_multiplier": -0.003
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
-        "pk": 20717,
-        "fields": {
-            "answer": 20715,
-            "state": 1021,
-            "candidate": 200,
-            "affected_candidate": 200,
-            "state_multiplier": 0.33
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
-        "pk": 20718,
-        "fields": {
-            "answer": 20715,
-            "state": 1037,
-            "candidate": 200,
-            "affected_candidate": 200,
-            "state_multiplier": 0.2
         }
     },
     {
@@ -8335,138 +8291,6 @@ campaignTrail_temp.answer_score_state_json = [
             "candidate": 200,
             "affected_candidate": 201,
             "state_multiplier": 0.05
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
-        "pk": 51101,
-        "fields": {
-            "answer": 20715,
-            "state": 1049,
-            "candidate": 200,
-            "affected_candidate": 200,
-            "state_multiplier": 0.09
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
-        "pk": 51103,
-        "fields": {
-            "answer": 20715,
-            "state": 1008,
-            "candidate": 200,
-            "affected_candidate": 200,
-            "state_multiplier": 0.09
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
-        "pk": 51104,
-        "fields": {
-            "answer": 20715,
-            "state": 1027,
-            "candidate": 200,
-            "affected_candidate": 201,
-            "state_multiplier": 0.09
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
-        "pk": 51105,
-        "fields": {
-            "answer": 20715,
-            "state": 1034,
-            "candidate": 200,
-            "affected_candidate": 200,
-            "state_multiplier": 0.09
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
-        "pk": 51106,
-        "fields": {
-            "answer": 20715,
-            "state": 1005,
-            "candidate": 200,
-            "affected_candidate": 201,
-            "state_multiplier": 0.09
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
-        "pk": 51107,
-        "fields": {
-            "answer": 20683,
-            "state": 1037,
-            "candidate": 200,
-            "affected_candidate": 200,
-            "state_multiplier": 0.2
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
-        "pk": 51108,
-        "fields": {
-            "answer": 20683,
-            "state": 1000,
-            "candidate": 200,
-            "affected_candidate": 200,
-            "state_multiplier": 0
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
-        "pk": 51109,
-        "fields": {
-            "answer": 20683,
-            "state": 1000,
-            "candidate": 200,
-            "affected_candidate": 200,
-            "state_multiplier": 0
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
-        "pk": 51110,
-        "fields": {
-            "answer": 20683,
-            "state": 1000,
-            "candidate": 200,
-            "affected_candidate": 200,
-            "state_multiplier": 0
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
-        "pk": 51111,
-        "fields": {
-            "answer": 20683,
-            "state": 1000,
-            "candidate": 200,
-            "affected_candidate": 200,
-            "state_multiplier": 0
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
-        "pk": 51112,
-        "fields": {
-            "answer": 20683,
-            "state": 1000,
-            "candidate": 200,
-            "affected_candidate": 200,
-            "state_multiplier": 0
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
-        "pk": 51113,
-        "fields": {
-            "answer": 20683,
-            "state": 1000,
-            "candidate": 200,
-            "affected_candidate": 200,
-            "state_multiplier": 0
         }
     },
     {
@@ -9035,7 +8859,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 20665,
             "candidate": 200,
-            "answer_feedback": "Unfortunately, Rubio appears to be underperforming compared to what early polls had suggested, and it seems you’ll be forced to take up the mantle as the main opposition to Trump anyway. Oh well."
+            "answer_feedback": "Unfortunately, Rubio appears to be underperforming compared to what early polls had suggested, and it seems you’ll be forced to take up the mantle as the main opposition to Trump anyway. Oh well, better get started now."
         }
     },
     {
@@ -9044,7 +8868,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 20667,
             "candidate": 200,
-            "answer_feedback": "None of the candidates agreed to drop out this early in the race, despite a meeting with the Kasich campaign, but you were able to make surprising headway with the RNC, putting you well on your way to becoming the establishment favorite."
+            "answer_feedback": "The Republican National Committee has always hated you, but they hate Donald Trump more than they hate you. You were able to make some good ground with them, which will definitely help improve your fundraising situation, and this might just help if it comes down to a battle between you and Trump.\n"
         }
     },
     {
@@ -9053,7 +8877,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 20666,
             "candidate": 200,
-            "answer_feedback": "Evangelical voters are one of the largest voting blocs in any Republican primary, and winning them over will be key to victory."
+            "answer_feedback": "This is a good way to contrast yourself with Trump, without mentioning him by name and risking angering him and his supporters."
         }
     },
     {
@@ -9071,7 +8895,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5017,
             "candidate": 200,
-            "answer_feedback": "Your PACs and Trump’s PACs end up in a vicious back-and-forth, and he gives you the nickname \"Lyin' Ted.\" The label starts to go viral online, and the fight drains both of your resources, allowing Marco Rubio to narrowly carry Iowa in an upset."
+            "answer_feedback": "You and Trump get into a massive battle in Iowa, which drains both of your resources. Nearly all your ads become attacks on Trump, and the race gets ever closer. In the end, you win, but just barely, and you spent a lot of your campaign funds doing so."
         }
     },
     {
@@ -9080,7 +8904,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5018,
             "candidate": 200,
-            "answer_feedback": "This strategy seems to work, as you narrowly carry Iowa over Trump in an upset, apparently, many Iowans saw you as the one candidate not caught up in the Trump circus, and actually speaking to their concerns. Unfortunately, the Donald isn’t going to give up so easily."
+            "answer_feedback": "On one hand, this strategy means you get less media attention compared to the other candidates. On the other hand, you don't get stuck in the mudslinging of the campaign, and can use your resources more efficiently. On caucus day, it pays off, and you win Iowa in a shocker."
         }
     },
     {
@@ -9098,7 +8922,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 20678,
             "candidate": 200,
-            "answer_feedback": "This attack works somewhat well in parts of rural New Hampshire, and you place a solid third, narrowly behind John Kasich but ahead of Jeb Bush. Still, the main focus last night was Rubio’s embarrassing debate performance. Let’s hope Super Tuesday treats us better."
+            "answer_feedback": "You feel like this is a good attack, and the audience seems to agree. Until Trump brings up 9/11 and talking about how resilient New Yorkers are, blah blah blah. He tugs at their heartstrings, and you look bad in comparison. Damn him."
         }
     },
     {
@@ -9116,7 +8940,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 20683,
             "candidate": 200,
-            "answer_feedback": "Unfortunately, your boring debate performance means your deprived of any kind of interesting media coverage, and Trump soundly defeats you on Super Tuesday. You hold out for a little while longer, but after he wins Indiana decisively, you're forced to suspend your campaign."
+            "answer_feedback": "The crowd goes wild. You expect Trump to maneuver his way through this, calling himself an outsider, whatever, but Trump seems completely unable to respond. He points out that he only donated $100,000 to the Clinton Foundation, which is less than your Senate wage of $174,000. But nobody seems to care. "
         }
     },
     {
@@ -9125,7 +8949,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 20686,
             "candidate": 200,
-            "answer_feedback": "Your campaign intensifies efforts in North Carolina, Arkansas, Texas, and Indiana, while everyone else is focused on New Hampshire. Time will tell if this strategy works or not."
+            "answer_feedback": "Your debate performance is very inoffensive, and generally considered solid, although some advisors think you could've made headlines with a more aggressive performance."
         }
     },
     {
@@ -9152,7 +8976,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 20715,
             "candidate": 200,
-            "answer_feedback": "Why?! You're a skilled debater, and you desperately need the coverage. Trump defeats you in New Hampshire, South Carolina, and most Super Tuesday states, and you suspend your campaign the next day, leaving John Kasich as the last man standing."
+            "answer_feedback": "These criticisms are true. Trump's businesses has been going bankrupt since the 1990s. Unfortunately, voters don't seem to care much about his failures in business, and the debate quickly moves back to the issues."
         }
     },
     {
@@ -9386,7 +9210,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51136,
             "candidate": 200,
-            "answer_feedback": "Both Rubio and Kasich plead with you to help stop Trump, but you refuse. Eventually, as both you and Trump start building a lead over Rubio and Kasich, Rubio suddenly drops out and endorses you at the convention. Many ballots later, you are nominated, drained, exhausted, and tired."
+            "answer_feedback": "Both Rubio and Kasich plead with you to help stop Trump, but you refuse. Eventually, as Trump starts building an insurmountable lead over you, Rubio, and Kasich. You backtrack and try to work with the RNC to stop Trump, but it's too late, and Trump is nominated. Damned be."
         }
     }
 ]
@@ -9394,7 +9218,7 @@ campaignTrail_temp.answer_feedback_json = [
 campaignTrail_temp.candidate_image_url = "https://files.catbox.moe/u52bl8.jpg";
 campaignTrail_temp.running_mate_image_url = "https://i.postimg.cc/gJfyqbQv/u52bl8-1-1.jpg";
 campaignTrail_temp.candidate_last_name = "Cruz";
-campaignTrail_temp.running_mate_last_name = "2016";
+campaignTrail_temp.running_mate_last_name = "Campaign";
 
 
 
@@ -9402,7 +9226,7 @@ campaignTrail_temp.jet_data = [{
     "banner_enabled": true,
     "banner_data": {
         "canName": "Cruz",
-        "runName": "2016",
+        "runName": "Campaign",
         "canImage": "https://files.catbox.moe/u52bl8.jpg",
         "runImage": "https://i.postimg.cc/gJfyqbQv/u52bl8-1-1.jpg"
     },
