@@ -1,3 +1,91 @@
+let republican = "Ted Cruz";
+let vpname = "Carly Fiorina";
+let democrat = "Hillary Clinton";
+let democratvp = "Tim Kaine";
+let libertarian = "Gary Johnson";
+let libertarianpartyvp = "William Weld";
+let green = "Jill Stein";
+let greenvp = "Ajamu Baraka";
+
+let vpTable = {
+    [republican]: vpname,
+    [democrat]: democratvp,
+    [libertarian]: libertarianpartyvp,
+    [green]: greenvp
+};
+
+console.log(vpTable[republican]);  
+console.log(vpTable[democrat]);      
+console.log(vpTable[libertarian]);   
+console.log(vpTable[green]);         
+
+vpTableHistorical = {
+    "Donald Trump" : "Mike Pence",
+    "Hillary Clinton" : "Tim Kaine",
+    "Gary Johnson" : "William Weld",
+    "Jill Stein" : "Ajamu Baraka",
+  } 
+
+HistHexcolour=["#970417","#2633be","#fbd800","#00a62f"];
+        HistName=[" Donald Trump"," Hillary Clinton"," Gary Johnson"," Jill Stein"];
+        HistEV=[304,227,0,0];
+        HistPV=["62,984,828","65,853,514","4,489,341","405,035"];
+        HistPVP=["46.1%","48.2%","3.3%","1.1%"];
+
+function onGameWindowChangeCandidates() {
+        const resultsTableHolder = document.getElementById("overall_details_container");
+
+        if(!resultsTableHolder || resultsTableHolder.classList.contains("done")) {
+            return;
+        }
+
+        resultsTableHolder.classList.add("done");
+
+        const resultsTable = resultsTableHolder.childNodes[3].childNodes[3].children[0];
+        
+        for(let i = 0; i < resultsTable.children.length; i++) {
+            const row = resultsTable.children[i];
+            let name = row.firstChild.innerText;
+            row.insertCell(1);
+            if(name) {
+                name = name.replaceAll("-", "").trim();
+                console.log("name is:" + name)
+            }
+
+            if(i == 0) {
+                row.children[1].innerHTML = `<span style="font-weight:bold">Running Mate<span>`;
+            }
+            else {
+                row.children[1].innerHTML = vpTable[name];
+            }
+        }
+
+        
+        const resultsTableHistorical = resultsTableHolder.childNodes[5].childNodes[3].children[0];
+        
+        for(let i = 0; i < resultsTableHistorical.children.length; i++) {
+            const row = resultsTableHistorical.children[i];
+            let name = row.childNodes[1].innerText;
+            row.insertCell(1);
+            if(name) {
+                name = name.replaceAll("-", "").trim();
+            }
+
+            if(i == 0) {
+                row.children[1].innerHTML = `<span style="font-weight:bold">Running Mate<span>`;
+            }
+            else {
+                row.children[1].innerHTML = vpTableHistorical[name];
+            }
+        }
+}
+
+const gameWindowNode = document.getElementById("game_window");
+const candidateWatcherConfig = { attributes: true, childList: true, subtree: true };
+
+const candidateObserver = new MutationObserver(onGameWindowChangeCandidates);
+candidateObserver.observe(gameWindowNode, candidateWatcherConfig);
+
 endingPicker = (out, totv, aa, quickstats) => {
 
 if (campaignTrail_temp.player_answers[4] == 51119 && quickstats[0] >= 270) {
