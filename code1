@@ -881,7 +881,7 @@ function setupMusicPlayer() {
   const song4 = new Song(
     "Real Gone",
     "Sheryl Crow",
-    "https://i.imgur.com/B1kmhYa.png",
+    "https://files.catbox.moe/6jhu0r.png",
     "https://audio.jukehost.co.uk/uSkx8iXE3oQ6BZQ9ZbFqYfPh49SfaMrU"
   );
 
