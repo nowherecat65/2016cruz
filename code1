@@ -1226,7 +1226,6 @@ e.LosePopup = "'NBC News can now project that Hillary Clinton has won the 2016 p
 
 function addDynamicCSS() {
   var css = `
-      /* Gradient text trigger */
       .mytooltip {
           position: relative;
           display: inline-block;
@@ -1234,25 +1233,23 @@ function addDynamicCSS() {
           font-size: 1em;
           line-height: inherit;
           cursor: pointer;
-          background: linear-gradient(135deg, #ffcc33, #ff6600, #cc3300);
+          background: linear-gradient(135deg, #444444, #888888);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           background-clip: text;
           color: transparent;
+          text-shadow: 0 1px 2px rgba(255, 255, 255, 0.2);
       }
 
-      /* Tooltip box */
       .mytooltip .mytooltiptext {
           opacity: 0;
           visibility: hidden;
           transition: opacity 0.3s ease, visibility 0s linear 0.3s;
-
-          background: linear-gradient(135deg, #ffcc33, #ff6600, #cc3300);
+          background: linear-gradient(135deg, #333333, #666666);
           border: 2px solid #fff;
           text-align: center;
           padding: 8px 12px;
           border-radius: 8px;
-
           position: absolute;
           z-index: 1000;
           bottom: 125%;
@@ -1261,8 +1258,6 @@ function addDynamicCSS() {
           white-space: normal;
           max-width: 260px;
           width: max-content;
-
-          /* Force tooltip text to be white and visible */
           font-family: 'Segoe UI', Tahoma, sans-serif;
           font-weight: 600;
           letter-spacing: 0.4px;
@@ -1274,14 +1269,12 @@ function addDynamicCSS() {
           will-change: opacity;
       }
 
-      /* Show tooltip on hover */
       .mytooltip:hover .mytooltiptext {
           opacity: 1;
           visibility: visible;
           transition: opacity 0.3s ease;
       }
 
-      /* Style images in tooltip triggers */
       .mytooltip img {
           display: inline;
           max-width: 100%;
@@ -1301,6 +1294,8 @@ function addDynamicCSS() {
   styleElem.appendChild(document.createTextNode(css));
   document.head.appendChild(styleElem);
 }
+
+
 
 
 // Copied from Ohio 2022 Senate. Some have been edited, but others haven't. That explains why there's some quite odd and random searchstrings.
@@ -1326,7 +1321,10 @@ tooltipList = [
   {searchString: "Secretary of State", explanationText: "<img src=https://i.imgur.com/o17qabj.jpeg>She will go down as perhaps the worst Secretary of State. Kasich, Rubio, whoever, would be far better. And now she wants to be POTUS?"},
   {searchString: "21-hour Senate filibuster", explanationText: "<img src=https://i.imgur.com/nD2r4i8.jpeg> From October 1 to October 17, 2013, the United States federal government entered a shutdown, when the Republican-held House tried to defund Obamacare in the next annual appropriation bill, while the Democratic-controlled Senate refused. You played a large part in sparking the flames."},
   {searchString: "Obergefell v. Hodges", explanationText: "<img src=https://i.imgur.com/gLBzhnI.png> In 2015, the Supreme Court ruled that state bans on gay marriage were illegal. God damn that deep state traitor Kennedy."},
-  {searchString: "Mike Gibbons", explanationText: "<img src=https://i.imgur.com/mpp8KvT.png> Hater of Unions"},
+  {searchString: "Heidi", explanationText: "<img src=https://i.imgur.com/EEYIvuQ.jpeg>Wife."},
+  {searchString: "radical Islamist terrorist attack in Nice, France left 86 dead and 450 injured.", explanationText: "<img src=https://i.imgur.com/bh8d5AS.jpeg> A radical terrorist from Tunisia used a rented truck to run over a crowd while people were celebrating Bastille Day, in Nice, France."},
+  {searchString: "Josh Mandel", explanationText: "<img src=https://i.imgur.com/dMeU9zH.png> Divorced"},
+  {searchString: "Josh Mandel", explanationText: "<img src=https://i.imgur.com/dMeU9zH.png> Divorced"},
   {searchString: "Josh Mandel", explanationText: "<img src=https://i.imgur.com/dMeU9zH.png> Divorced"},
   {searchString: "Sheriff Jones", explanationText: "<img src=https://i.imgur.com/hsRTF1Q.png> Doug Dimmadome"}
       
