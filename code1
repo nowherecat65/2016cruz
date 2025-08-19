@@ -886,10 +886,10 @@ function setupMusicPlayer() {
   );
 
   const song5 = new Song(
-    "All these other songs are leftovers from the mod I took this music player from",
-    "Buckwheat Zydeco",
-    "https://i.imgur.com/u2kybud.png",
-    "https://file.garden/Z-8vn6l_RynAMnyS/Make%20A%0Change.mp3"
+    "Donald Trump vs. Hillary Clinton",
+    "Epic Rap Battles of History",
+    "https://i.imgur.com/BG0RmI2.jpeg",
+    "https://files.catbox.moe/ofvp5k.mp3"
   );
 
   const song6 = new Song(
