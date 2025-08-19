@@ -1,7 +1,7 @@
 (() => {
   const css = `
 /* ================================
-   These are the buttons
+   INDUSTRIAL / UTILITARIAN BUTTONS
    ================================ */
 button, input[type="button"], input[type="submit"] {
   font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
@@ -9,11 +9,11 @@ button, input[type="button"], input[type="submit"] {
   font-weight: 500;
   padding: 6px 14px;
   border-radius: 4px;
-  border: 1px solid rgba(0,0,0,0.15);
+  border: 1px solid rgba(200,200,200,0.2);
 
-  background: linear-gradient(145deg, #ffb347, #ff8008);
-  color: #fff;
-  box-shadow: 0 2px 3px rgba(0,0,0,0.15);
+  background: #2b2b2b;
+  color: #e0e0e0;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.3);
 
   cursor: pointer;
   transition: all 0.2s ease;
@@ -22,22 +22,22 @@ button, input[type="button"], input[type="submit"] {
 }
 
 button:hover, input[type="button"]:hover, input[type="submit"]:hover {
-  filter: brightness(1.06);
-  box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+  background: #3a3a3a;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.4);
 }
 
 button:active, input[type="button"]:active, input[type="submit"]:active {
-  filter: brightness(0.94);
-  box-shadow: inset 0 1px 2px rgba(0,0,0,0.2);
+  background: #262626;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.5);
 }
 
 button:disabled, input[type="button"]:disabled, input[type="submit"]:disabled {
-  opacity: 0.6;
+  opacity: 0.5;
   cursor: not-allowed;
 }
 
 /* ================================
-   The dropdowns
+   DROPDOWNS
    ================================ */
 select {
   font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
@@ -45,42 +45,40 @@ select {
   font-weight: 500;
   padding: 5px 12px;
   border-radius: 4px;
-  border: 1px solid rgba(0,0,0,0.15);
+  border: 1px solid rgba(200,200,200,0.2);
 
-  background: linear-gradient(145deg, #ffb347, #ff8008);
-  color: #fff;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  background: #2b2b2b;
+  color: #e0e0e0;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.3);
 
   cursor: pointer;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
   transition: all 0.2s ease;
 }
 
 select option {
-  color: #222;
-  background: #fff;
+  color: #e0e0e0;
+  background: #3a3a3a;
 }
 
-select:hover { filter: brightness(1.06); }
-select:active { filter: brightness(0.94); }
-select:disabled { opacity: 0.6; cursor: not-allowed; }
+select:hover { background: #3a3a3a; }
+select:active { background: #262626; }
+select:disabled { opacity: 0.5; cursor: not-allowed; }
 
 /* ================================
-   Custom Scrollbars
+   CUSTOM SCROLLBARS
    ================================ */
 ::-webkit-scrollbar { width: 9px; height: 9px; }
-::-webkit-scrollbar-track { background: #f0f0f0; border-radius: 4px; }
+::-webkit-scrollbar-track { background: #2b2b2b; border-radius: 4px; }
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(145deg, #ffb347, #ff8008);
+  background: #555;
   border-radius: 4px;
-  border: 2px solid #f0f0f0;
+  border: 2px solid #2b2b2b;
 }
-::-webkit-scrollbar-thumb:hover { filter: brightness(1.08); }
+::-webkit-scrollbar-thumb:hover { background: #666; }
 
 /* ================================
-   The radio buttons
+   RADIO BUTTONS
    ================================ */
 input[type="radio"] {
   -webkit-appearance: none;
@@ -88,13 +86,13 @@ input[type="radio"] {
   appearance: none;
   width: 16px;
   height: 16px;
-  border: 2px solid #ff8008;
+  border: 2px solid #666;
   border-radius: 50%;
   outline: none;
   cursor: pointer;
   position: relative;
   transition: all 0.2s ease;
-  background: rgba(255,179,71,0.2);
+  background: rgba(255,255,255,0.05);
 }
 
 input[type="radio"]::before {
@@ -105,7 +103,7 @@ input[type="radio"]::before {
   width: 0;
   height: 0;
   border-radius: 50%;
-  background: linear-gradient(145deg, #ffb347, #ff8008);
+  background: #aaa;
   transform: translate(-50%, -50%) scale(0);
   transition: all 0.2s ease;
 }
@@ -116,17 +114,17 @@ input[type="radio"]:checked::before {
   transform: translate(-50%, -50%) scale(1);
 }
 
-input[type="radio"]:hover { filter: brightness(1.06); }
+input[type="radio"]:hover { filter: brightness(1.1); }
 
 /* ================================
-   And of course, the sliders.
+   SLIDERS
    ================================ */
 input[type="range"] {
   -webkit-appearance: none;
   width: 150px;
   height: 6px;
   border-radius: 3px;
-  background: #ddd;
+  background: #444;
   outline: none;
   cursor: pointer;
   transition: all 0.2s ease;
@@ -134,30 +132,29 @@ input[type="range"] {
 
 input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
-  appearance: none;
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background: linear-gradient(145deg, #ffb347, #ff8008);
-  border: 2px solid #ff8008;
+  background: #666;
+  border: 2px solid #555;
   cursor: pointer;
   transition: all 0.2s ease;
 }
 
-input[type="range"]:hover::-webkit-slider-thumb { filter: brightness(1.08); }
+input[type="range"]:hover::-webkit-slider-thumb { background: #555; }
 
 input[type="range"]::-moz-range-thumb {
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background: linear-gradient(145deg, #ffb347, #ff8008);
-  border: 2px solid #ff8008;
+  background: #666;
+  border: 2px solid #555;
   cursor: pointer;
   transition: all 0.2s ease;
 }
 `;
 
-  const id = 'aero-sleek-orange';
+  const id = 'industrial-buttons';
   if (!document.getElementById(id)) {
     const style = document.createElement('style');
     style.id = id;
@@ -165,6 +162,7 @@ input[type="range"]::-moz-range-thumb {
     document.head.appendChild(style);
   }
 })();
+
 
 // Menu screen.
 
@@ -615,7 +613,7 @@ s1 {
     <p><s1><span class='flashing-text'>TheMcCain - Lead Dev/Coding/Writing</span></s1></p>
     <p><s1><span class='flashing-text'>theanswerisme - Theming/Writing</span></s1></p>
     <h3>Miscellaneous</h3>
-    <p>mp4clout - Made the banner<p>
+    <p>E - Made the banner<p>
     <p>DecstarG for Credits Screen</p>
     <p>LiquidAstro for his Further Reading tool 
     <h3>I'd also like to thank all my great playtesters</h3>
@@ -631,9 +629,13 @@ s1 {
     <p>Real Gone - Sheryl Crow</p>
     <p>God Bless the U.S.A. - Lee Greenwood</p>
     <p>Where The Stars And Stripes And The Eagle Fly - Aaron Tippin</p>
-    <p>The Battle Cry of Freedom - Barrie Hingley</p>
-    <p>Let Love Rule - Lenny Kravitz</p>
-    <h1><font color='#fc7914'>But most importantly...</font></h1>
+    <p>ERB - Donald Trump vs. Hillary Clinton
+    <h3>Special Thanks</h3>
+    <p>mp4clout - Made an unused banner</p>
+    <p>Thatchmaster - Making the original inspiration for this mod, American Carnage</p>
+    <p>Dan Bryan - Original 2016 scenario, and making this game</p>
+    <p>Jet and DecstarG, for hosting this mod.</p>
+    <h1><font color='#FFFFFF'>But most importantly...</font></h1>
     <div style='width: 70%;text-overflow: ellipsis;text-align:center;display: block;margin-left: auto;margin-right: auto;'>
     <p>You. Thank you for playing.<p>
     </div>
@@ -695,21 +697,21 @@ customquote = quotes[Math.floor((Math.random() * quotes.length))]
 corrr = `\n<h2>Campaign Trail Showcase</h2><font id='wittyquote' size='4' color='FFFFFF'><em>` + customquote + `</em></font>`;
 
 
-nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#f66601";
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#292826";
 
-nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#8640a3";
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#212120";
 
 document.getElementsByClassName("game_header")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
 
 $("#game_window")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_window;
 
-$(".container")[0].style.backgroundColor = "#b15596";
+$(".container")[0].style.backgroundColor = "#1a1918";
 
-document.getElementById("header").src = "https://i.imgur.com/3iXJcrL.png";
+document.getElementById("header").src = "https://i.imgur.com/Sufjxih.gif";
 
-document.body.background = "https://wallpaper-house.com/data/out/7/wallpaper2you_175134.jpg";
+document.body.background = "https://images.wallpaperscraft.com/image/single/night_city_city_lights_metropolis_126569_2560x1440.jpg";
 
-document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#8640a3!important;}</style>";
+document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#17191a!important;}</style>";
 
 let style = document.createElement('style');
 style.type = 'text/css';
@@ -717,34 +719,34 @@ style.id = 'dynamic-style';
 
 style.innerHTML = `
   .campaign_trail_start_emphasis {
-    background-color: #8640A3;
+    background-color: #17191a;
   }
   a:-webkit-any-link {
     color: #000000;
   }
     .inner_window_question h3 {
-      background-color: #F8E0CF !important;
+      background-color: #e6e6e6 !important;
     }
     .overlay_window h3  {
-      background-color: #F8E0CF !important;
+      background-color: #e6e6e6 !important;
     }
     #state_info h3 {
-      background-color: #F8E0CF !important;
+      background-color: #e6e6e6 !important;
     }
     #state_result h3 {
-      background-color: #F8E0CF !important;
+      background-color: #e6e6e6 !important;
     }
     #overall_result h3 {
-      background-color: #F8E0CF !important;
+      background-color: #e6e6e6 !important;
     }
     #menu_container {
-      background-color: #8640A3 !important;
+      background-color: #e6e6e6 !important;
     }
 .overlay_window {
             height: auto;
 		}
     #state_result_container {
-      background-color: #8640A3 !important;
+      background-color: #e6e6e6 !important;
     }
 #map_container {
   background-color: #F4F1F7 !important;
@@ -755,7 +757,7 @@ style.innerHTML = `
   color: #FFF;
 }
     #overall_result_container {
-      background-color: #8640A3 !important;
+      background-color: #e6e6e6 !important;
 `;
 
 document.head.appendChild(style);
@@ -1300,6 +1302,7 @@ function addDynamicCSS() {
 addDynamicCSS();
 
 
+
 // Election night descriptions, shamelessly stol- I mean borrowed from 2016: A Lifetime of This
 e.ElectionPopup = "The day has come. All these years as Soliciter General, as a Senator, as, whatever, have come down to <i>this.</i> Are you ready, Ted?"
 e.WinPopup = "'We on Fox News can now project that Ted Cruz has been elected the 45th President of the United States.'"
@@ -1408,7 +1411,6 @@ tooltipList = [
   {searchString: "Kasich", explanationText: "<img src=https://i.imgur.com/YcCbaxa.jpeg> John Kasich, Governor of Ohio and avowed moderate candidate."},
   {searchString: "Secretary of State", explanationText: "<img src=https://i.imgur.com/o17qabj.jpeg>She will go down as perhaps the worst Secretary of State. Kasich, Rubio, whoever, would be far better. And now she wants to be POTUS?"},
   {searchString: "21-hour Senate filibuster", explanationText: "<img src=https://i.imgur.com/nD2r4i8.jpeg> From October 1 to October 17, 2013, the United States federal government entered a shutdown, when the Republican-held House tried to defund Obamacare in the next annual appropriation bill, while the Democratic-controlled Senate refused. You played a large part in sparking the flames."},
-  {searchString: "Abortion", explanationText: "<img src=https://i.imgur.com/XYYW8nm.png>You seriously wonder how any god-fearing person could defend such a sinful and abhorrent act. Seems like Democrats have gone insane these past few years."},
   {searchString: "Obergefell v. Hodges", explanationText: "<img src=https://i.imgur.com/gLBzhnI.png> In 2015, the Supreme Court ruled that state bans on gay marriage were illegal. God damn that deep state traitor Kennedy."},
   {searchString: "Mike Gibbons", explanationText: "<img src=https://i.imgur.com/mpp8KvT.png> Hater of Unions"},
   {searchString: "Josh Mandel", explanationText: "<img src=https://i.imgur.com/dMeU9zH.png> Divorced"},
