@@ -235,30 +235,20 @@ cyoAdventure = function (a) {
     if (ans == 20686){
     CRUZwin += 1;
 }
-// === Replace Q1008 only if you have 2+ Cruz wins ===
-if (!window.__didSwapQ1008 && CRUZwin >= 2) {
-  // How many questions have been answered so far:
-  const answeredCount = campaignTrail_temp.player_answers.length;
-
-  // Index where PK 1008 will appear (aligns with your helper):
-  const targetIdx = getQuestionNumberFromPk(1008);
-
-  // When you're about to hit Q1008, swap it
-  if (answeredCount === targetIdx) {
-    window.__didSwapQ1008 = true;
-    question_insert(
-      "question_1008", // anchor: replace the question with pk 1008
-      {
-        "model": "campaign_trail.question",
-        "pk": "insert_cruz_convention_showdown",
-        "fields": {
-          "priority": 4,  // match original Q1008 priority
-          "description": "Thanks to your strong showing in the primaries — and a bit of backroom chicanery from the RNC — Donald Trump is now mathematically blocked from securing the nomination, leaving you the presumptive nominee. He’s demanding major concessions on policy, cabinet picks, and a primetime speaking slot at the convention. What do you do?",
-          "likelihood": 1
-        }
-      }
-    );
-  }
+if (a.question_number+1 == 5) {
+    if (CRUZwin >= 2) {
+        question_insert("question_1008", 
+            {
+                "model": "campaign_trail.question",
+                "pk": "insert_cruz_convention_showdown",
+                "fields": {
+                    "priority": 4,  
+                    "description": "CONVENTION NO CONTESTED TRUMP DEMAND",
+                    "likelihood": 1
+                }
+            }
+        );
+    }
 }
 
     if (ans == 20739) {
