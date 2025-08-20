@@ -410,7 +410,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1006,
         "fields": {
             "priority": 2,
-            "description": "After your win in Iowa, you've gained much momentum, and you have a serious shot at winning now. Unfortunately, the next primary is in New Hampshire, where Trump seems to hold an even greater lead. You probably can't defeat him here, but you probably can shrink his margin enough where it isn't really a win for him. You're on the debate stage right now, and it's your turn to speak. What do you do?",
+            "description": "After your win in Iowa, you've gained a lot of momentum and now have a serious shot at winning. Unfortunately, the next primary is in New Hampshire, where Trump seems to hold an even greater lead. You probably can’t defeat him here, but you can likely shrink his margin enough that it isn’t really a win for him. You’re on the debate stage right now, and it’s your turn to speak. What do you do?",
             "likelihood": 1
         }
     },
@@ -428,7 +428,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1008,
         "fields": {
             "priority": 4,
-            "description": "...no clear candidate has won a majority. Rubio won more moderate states like Virginia and Minnesota, you swept the Plains, Kasich won parts of the Midwest, and Trump won states all over the country. It's quite obvious that no candidate is going to win a majority, so going into July the convention will be deadlocked. Will you attempt to negotiate with any of the candidates?",
+            "description": "... no candidate has won a majority. Rubio won more moderate states like Virginia and Minnesota; you swept the Plains; Kasich won parts of the Midwest; and Trump won states across the country. It’s clear no candidate is going to win a majority, so the convention will be deadlocked going into July. Will you attempt to negotiate with any of the other candidates?",
             "likelihood": 1
         }
     },
@@ -437,7 +437,7 @@ campaignTrail_temp.questions_json = [
         "pk": 3198,
         "fields": {
             "priority": 4,
-            "description": "After narrowly defeating Trump at the contested convention, he is furious. He’s demanding major concessions on policy, cabinet picks, and a primetime speaking slot at the convention. Do you give him what he wants or do you refuse?",
+            "description": "After you narrowly defeat Trump at the contested convention, he’s furious. He’s demanding major concessions on policy and cabinet picks, along with a prime-time speaking slot. Do you give him what he wants, or do you refuse?",
             "likelihood": 1
         }
     },
