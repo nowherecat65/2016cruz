@@ -229,8 +229,16 @@ cyoAdventure = function (a) {
     if (ans == 20683){
     CRUZwin += 1;
 }
+    if (ans == 20667){
+    CRUZwin += 1;
+}
     if (ans == 20686){
     CRUZwin += 1;
+}
+if (CRUZwin == 2) {
+    return getQuestionNumberFromPk(1008886);
+} else {
+    return getQuestionNumberFromPk(1008);
 }
 
     if (ans == 20739) {
@@ -441,6 +449,15 @@ campaignTrail_temp.questions_json = [
         "fields": {
             "priority": 4,
             "description": "... no candidate has won a majority. Rubio won more moderate states like Virginia and Minnesota; you swept the Plains; Kasich won parts of the Midwest; and Trump won states across the country. It’s clear no candidate is going to win a majority, so the convention will be deadlocked going into July. Will you attempt to negotiate with any of the other candidates?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 1008886,
+        "fields": {
+            "priority": 4,
+            "description": "...adfsdgdgastes?",
             "likelihood": 1
         }
     },
