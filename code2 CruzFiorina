@@ -235,6 +235,31 @@ cyoAdventure = function (a) {
     if (ans == 20686){
     CRUZwin += 1;
 }
+// === Replace Q1008 only if you have 2+ Cruz wins ===
+if (!window.__didSwapQ1008 && CRUZwin >= 2) {
+  // How many questions have been answered so far:
+  const answeredCount = campaignTrail_temp.player_answers.length;
+
+  // Index where PK 1008 will appear (aligns with your helper):
+  const targetIdx = getQuestionNumberFromPk(1008);
+
+  // When you're about to hit Q1008, swap it
+  if (answeredCount === targetIdx) {
+    window.__didSwapQ1008 = true;
+    question_insert(
+      "question_1008", // anchor: replace the question with pk 1008
+      {
+        "model": "campaign_trail.question",
+        "pk": "insert_cruz_convention_showdown",
+        "fields": {
+          "priority": 4,  // match original Q1008 priority
+          "description": "After your second big win, momentum shifts sharply in your favor. Delegates at the convention are buzzing: can Cruz actually take this all the way? Fiorina advises you to make your move now, before Rubio or Trump can consolidate. Do you strike a deal with rivals, double down on principle, or gamble on an open floor fight?",
+          "likelihood": 1
+        }
+      }
+    );
+  }
+}
 
     if (ans == 20739) {
         campaignTrail_temp.candidate_image_url = 'https://i.postimg.cc/FFgsSdzD/Ted-generalelection-photo-1.jpg'
