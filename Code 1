@@ -272,7 +272,7 @@ campaignTrail_temp.achievements = {
     }
 }
 campaignTrail_temp.modBoxTheme = {
-     "header_color": "#c26161",
+     "header_color": "#2b2929",
      "header_image_url": "https://i.imgur.com/FWN8Ld1.png",
      "header_text_color": "#ffffff",
      "description_text_color": "#e8eaed",
