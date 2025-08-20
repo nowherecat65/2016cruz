@@ -722,46 +722,60 @@ style.id = 'dynamic-style';
 
 style.innerHTML = `
   .campaign_trail_start_emphasis {
-    background-color: #17191a;
+    background: linear-gradient(135deg, #17191a, #2a2d2f);
   }
+
   a:-webkit-any-link {
     color: #000000;
   }
-    .inner_window_question h3 {
-      background-color: #e6e6e6 !important;
-    }
-    .overlay_window h3  {
-      background-color: #e6e6e6 !important;
-    }
-    #state_info h3 {
-      background-color: #e6e6e6 !important;
-    }
-    #state_result h3 {
-      background-color: #e6e6e6 !important;
-    }
-    #overall_result h3 {
-      background-color: #e6e6e6 !important;
-    }
-    #menu_container {
-      background-color: #e6e6e6 !important;
-    }
-.overlay_window {
-            height: auto;
-		}
-    #state_result_container {
-      background-color: #e6e6e6 !important;
-    }
-#map_container {
-  background-color: #F4F1F7 !important;
-  background-size: 150% 150%;
-  border-radius: 0.75px;
-}
-.game_header h2 {
-  color: #FFF;
-}
-    #overall_result_container {
-      background-color: #e6e6e6 !important;
+
+  .inner_window_question h3 {
+    background: linear-gradient(135deg, #e6e6e6, #d4d4d4) !important;
+  }
+
+  .overlay_window h3 {
+    background: linear-gradient(135deg, #e6e6e6, #d4d4d4) !important;
+  }
+
+  #state_info h3 {
+    background: linear-gradient(135deg, #e6e6e6, #d4d4d4) !important;
+  }
+
+  #state_result h3 {
+    background: linear-gradient(135deg, #e6e6e6, #d4d4d4) !important;
+  }
+
+  #overall_result h3 {
+    background: linear-gradient(135deg, #e6e6e6, #d4d4d4) !important;
+  }
+
+  #menu_container {
+    background: linear-gradient(135deg, #e6e6e6, #d4d4d4) !important;
+  }
+
+  .overlay_window {
+    height: auto;
+  }
+
+  #state_result_container {
+    background: linear-gradient(135deg, #e6e6e6, #d4d4d4) !important;
+  }
+
+  #map_container {
+    background: linear-gradient(135deg, #F4F1F7, #dcd7e6) !important;
+    background-size: 150% 150%;
+    border-radius: 0.75px;
+  }
+
+  .game_header h2 {
+    color: #FFF;
+  }
+
+  #overall_result_container {
+    background: linear-gradient(135deg, #e6e6e6, #d4d4d4) !important;
+  }
 `;
+
 
 document.head.appendChild(style);
 
