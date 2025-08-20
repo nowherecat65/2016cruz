@@ -454,15 +454,6 @@ campaignTrail_temp.questions_json = [
     },
     {
         "model": "campaign_trail.question",
-        "pk": 1008886,
-        "fields": {
-            "priority": 4,
-            "description": "...adfsdgdgastes?",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
         "pk": 3198,
         "fields": {
             "priority": 4,
