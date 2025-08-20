@@ -210,6 +210,8 @@ document.head.appendChild(customStyling);
 
 campaignTrail_temp.cyoa = true;
 
+var CRUZwin = 0;
+
 function getQuestionNumberFromPk(pk) {
     return campaignTrail_temp.questions_json.map(q=>q.pk).indexOf(pk)-1;
 }
@@ -219,6 +221,16 @@ cyoAdventure = function (a) {
 
     if (ans == 20727) {
     unlockAchievement("An Uneasy Alliance");   
+}
+
+    if (ans == 5016){
+    CRUZwin += 1;
+}
+    if (ans == 20683){
+    CRUZwin += 1;
+}
+    if (ans == 20686){
+    CRUZwin += 1;
 }
 
     if (ans == 20739) {
