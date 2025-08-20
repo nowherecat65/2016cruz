@@ -710,7 +710,7 @@ $("#game_window")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selected
 
 $(".container")[0].style.backgroundColor = "#1a1918";
 
-document.getElementById("header").src = "https://i.imgur.com/Sufjxih.gif";
+document.getElementById("header").src = "https://i.imgur.com/5cN59fs.gif";
 
 document.body.background = "https://images.wallpaperscraft.com/image/single/night_city_city_lights_metropolis_126569_2560x1440.jpg";
 
