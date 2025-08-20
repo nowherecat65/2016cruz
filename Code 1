@@ -686,19 +686,16 @@ const gameStart = document.getElementById('game_start');
         else gameStart.addEventListener('click', clearHeight);
     }
 
-//#endcode
-
-//#startcode
-
 corrr = `
   <h2 style="
+    font-family: Tahoma;
     font-size: 36px;
     color: white;
     padding: 10px 20px;
     background: linear-gradient(90deg, #2d2d2d, #1a1a1a);
     border-radius: 6px;
   ">
-   CAMPAIGN TRAIL SHOWCASE
+   The Cruz Trail
   </h2>
 `;
 
