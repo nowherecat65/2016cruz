@@ -1,3 +1,5 @@
+
+
 let republican = "Ted Cruz";
 let vpname = "Carly Fiorina";
 let democrat = "Hillary Clinton";
@@ -210,8 +212,6 @@ document.head.appendChild(customStyling);
 
 campaignTrail_temp.cyoa = true;
 
-var CRUZwin = 0;
-
 function getQuestionNumberFromPk(pk) {
     return campaignTrail_temp.questions_json.map(q=>q.pk).indexOf(pk)-1;
 }
@@ -221,34 +221,6 @@ cyoAdventure = function (a) {
 
     if (ans == 20727) {
     unlockAchievement("An Uneasy Alliance");   
-}
-
-    if (ans == 5016){
-    CRUZwin += 1;
-}
-    if (ans == 20683){
-    CRUZwin += 1;
-}
-    if (ans == 20667){
-    CRUZwin += 1;
-}
-    if (ans == 20686){
-    CRUZwin += 1;
-}
-if (a.question_number+1 == 5) {
-    if (CRUZwin >= 2) {
-        question_insert("question_1008", 
-            {
-                "model": "campaign_trail.question",
-                "pk": "insert_cruz_convention_showdown",
-                "fields": {
-                    "priority": 4,  
-                    "description": "CONVENTION NO CONTESTED TRUMP DEMAND",
-                    "likelihood": 1
-                }
-            }
-        );
-    }
 }
 
     if (ans == 20739) {
