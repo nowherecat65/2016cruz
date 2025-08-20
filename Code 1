@@ -320,7 +320,7 @@ campaignTrail_temp.election_json = [
         "pk": 20,
         "fields": {
             "year": 2016,
-            "summary": "<div style='overflow-y:scroll;height:200px;'><p>The last few years have been anything but boring for America. After the 2008 election, when pundits believed the Republican Party would be kept in a national minority for decades, conservatism seemed to catch a lifeline as Obama’s domestic agenda struggled and his approval ratings nosedived. In 2010, Republicans won a massive, shocking victory in the House of Representatives, picking up 63 seats, something few expected a year earlier. The path forward seemed clear: a Republican rebound in 2012.<br><br>Yet in 2012, Democrats walloped Republicans again, winning both the Senate and the presidency.<br><br>Obama’s administration has been full of failures, from socializing health care to funding radical Islamic terrorism. The people of this country demand a true alternative to the incompetence of the Democratic deep state.<br><br>And Ted is going to be the one to deliver it.</p></div>",
+            "summary": "<div style='overflow-y:scroll;height:200px;'><p>The last decade has been nothing short of a catastrophe for America. After the 2008 election, the so-called “experts” and media elites smugly declared conservatism finished, claiming the Republican Party had been buried for good. Barack Obama, a community organizer elevated by celebrity worship and empty slogans, entered the White House promising hope and change. But what change did he bring? He spent the first 2 years of his term through Congress and bowing down to foreign leaders. His administration became a hodgepodge of incompetence, socialism, and authoritarianism, the start of the Democratic deep state.<br><br>By 2010, the people had enough. Not Wall Street financiers, not Hollywood elitists, but real, ordinary, Americans. In 2010, the GOP managed to flip 63 seats, the biggest midterm change in 6 decades. The message was clear, that America wasn’t finished with conservatism. The Republican Party was alive and well, and the Obama agenda was crumbling. The future was looking bright.<br><br>Yet, November 6th, 2012 came, and Obama, despite his disastrous presidency, secured a second term. Worse, the Democrats flipped 8 House seats and held the Senate. The consultants, the lobbyists, and the donor class congratulated themselves on another cycle of comfortable defeat. Too many Republicans in Washington seemed resigned to managing America’s decline, happy to be the polite opposition while the Dems pushed the country further and further towards ruin.<br><br>The American people were ready for a true alternative. a candidate who didn’t just talk like a conservative, but lived it. A man willing to stand up to the establishment in both parties. A man who understood that the Constitution limits the government, not the people. A man who understood the right to life came from God, not the government.<br><br> And if we stand together, we can bring America back.</p></div>",
             "image_url": "https://i.imgur.com/tnDdxps.png",
             "winning_electoral_vote_number": 270,
             "advisor_url": "https://i.postimg.cc/KYR61Mth/Ted-advisor-primary.png",
@@ -567,7 +567,7 @@ jet_data = {
     "bannerImageUrl": "https://i.imgur.com/3iXJcrL.png",
     "backgroundImageUrl": "https://wallpaper-house.com/data/out/7/wallpaper2you_175134.jpg",
     "endingTextColor": "#000000",
-    "customQuote": "“Ted Cruz”\t",
+    "customQuote": "Ted Cruz",
     "gameTitle": "New Campaign Trail"
 }
 
@@ -690,9 +690,18 @@ const gameStart = document.getElementById('game_start');
 
 //#startcode
 
-quotes = ["'I’m not running because I desperately need 99 new friends in the U.S Senate.' - Ted Cruz", "'The world is on fire! Yes! Your world is on fire!' - Ted Cruz", "'Let's dispel with this fiction that Barack Obama doesn't know what he's doing. He knows exactly what he's doing'", "'I don't know if sand can glow in the dark, but we're going to find out!' - Ted Cruz", "'I would be happy to invite Trump to church anytime he'd like.' - Ted Cruz", "'I am, you know, adamantly against illegal immigration.' - Hillary Clinton", "'The unions say last hired - first fired.' - Scott Walker", "'If Ted Cruz doesn’t clean up his act & stop doing negative ads, I have standing to sue him.' - Donald Trump", "'I've always won, and I'm going to continue to win. And that's the way it is.' - Donald Trump", "'Choose Cruz!'", "'I don't like losers.' - Donald Trump", "'If we nominate Trump, we will get destroyed ... and we will deserve it.'", "'Sometimes people ask me how I feel about losing my job.' - Carly Fiorina", "I'm just saying, not many conservatives come out of Manhattan.' - Ted Cruz", "'There it is. There it is everybody. The memorized 30 second speech!' - Chris Christie", "'There's nothing more important then knowing the Constitution limits the government, not the people.' - Rand Paul", "'If we stand together, we can bring America back.' - Ted Cruz", "'We don't need an apprentice in the White House, we already have one!' - Scott Walker", "'I'm the son of an Irish-Italian mom, and a Cuban immigrant dad who fled oppression.' - Ted Cruz"]
-customquote = quotes[Math.floor((Math.random() * quotes.length))]
-corrr = `\n<h2>Campaign Trail Showcase</h2><font id='wittyquote' size='4' color='FFFFFF'><em>` + customquote + `</em></font>`;
+corrr = `
+  <h2 style="
+    font-size: 36px;
+    color: white;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #2d2d2d, #1a1a1a);
+    border-radius: 6px;
+  ">
+   CAMPAIGN TRAIL SHOWCASE
+  </h2>
+`;
+
 
 
 nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#292826";
@@ -1227,6 +1236,10 @@ if (!document.getElementById("musicPlayerStyles")) {
 
 const gameWindow_player = document.getElementById("game_window");
 setupMusicPlayer();
+
+$("#game_window")[0].style.background = "linear-gradient(#303841, #1b1f23)";
+
+
 
 // Election night texts
 e.ElectionPopup = "The day has come. All these years as Soliciter General, as a Senator, as, whatever, have come down to <i>this.</i> Are you ready, Ted?"
