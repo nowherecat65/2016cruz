@@ -1,7 +1,7 @@
 (() => {
   const css = `
 /* ================================
-   INDUSTRIAL / UTILITARIAN BUTTONS
+   buttons
    ================================ */
 button, input[type="button"], input[type="submit"] {
   font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
@@ -37,7 +37,7 @@ button:disabled, input[type="button"]:disabled, input[type="submit"]:disabled {
 }
 
 /* ================================
-   DROPDOWNS
+   the dropdowns
    ================================ */
 select {
   font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
@@ -66,7 +66,7 @@ select:active { background: #262626; }
 select:disabled { opacity: 0.5; cursor: not-allowed; }
 
 /* ================================
-   CUSTOM SCROLLBARS
+   scrollbars
    ================================ */
 ::-webkit-scrollbar { width: 9px; height: 9px; }
 ::-webkit-scrollbar-track { background: #2b2b2b; border-radius: 4px; }
@@ -78,7 +78,7 @@ select:disabled { opacity: 0.5; cursor: not-allowed; }
 ::-webkit-scrollbar-thumb:hover { background: #666; }
 
 /* ================================
-   RADIO BUTTONS
+   radio buttons (or whatever you call these things)
    ================================ */
 input[type="radio"] {
   -webkit-appearance: none;
@@ -117,7 +117,7 @@ input[type="radio"]:checked::before {
 input[type="radio"]:hover { filter: brightness(1.1); }
 
 /* ================================
-   SLIDERS
+   the sliders
    ================================ */
 input[type="range"] {
   -webkit-appearance: none;
@@ -175,29 +175,24 @@ document.getElementById("inner_window_1").children[1].innerHTML = "<li>This is a
 let previousCandidate = null;
 
 const startScreenUpdater = setInterval(function() {
-    // Grab DOM elements
     const goBackButton = document.getElementById("candidate_id_back");
     const candidateButton = document.getElementById("candidate_id_button");
     const runningMateButton = document.getElementById("running_mate_id_button");
     const finalScreenBB = document.getElementById("opponent_selection_id_back");
     const finalScreenID = document.getElementById("opponent_selection_id_button");
 
-    // Current candidate value
     const c = document.getElementById("candidate_id")?.value ?? -1;
 
-    // Only act if the candidate has changed
     if (c !== previousCandidate) {
-        previousCandidate = c; // update previous
+        previousCandidate = c; 
 
         if (c == 200 || c == 50000 || c == 50001 || c == 50002) {
-            // Candidate 200 flow: click go back if candidateButton is missing
             if (!candidateButton) {
                 goBackButton?.click();
                 const initContinue = document.getElementById("election_id_button");
                 initContinue?.click();
             }
         } else if (c == 201 || c == 202) {
-            // Candidate 201/202: remove candidateButton if present
             candidateButton?.remove();
         }
     }
@@ -1062,7 +1057,6 @@ function setupMusicPlayer() {
   const progressBarContainer = document.createElement("div");
   progressBarContainer.id = "progress-bar-container";
 
-  // FIXED: input type range instead of progress
   const progressBar = document.createElement("input");
   progressBar.type = "range";
   progressBar.id = "progress-bar";
