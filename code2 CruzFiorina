@@ -253,7 +253,7 @@ if (!window.__didSwapQ1008 && CRUZwin >= 2) {
         "pk": "insert_cruz_convention_showdown",
         "fields": {
           "priority": 4,  // match original Q1008 priority
-          "description": "After your second big win, momentum shifts sharply in your favor. Delegates at the convention are buzzing: can Cruz actually take this all the way? Fiorina advises you to make your move now, before Rubio or Trump can consolidate. Do you strike a deal with rivals, double down on principle, or gamble on an open floor fight?",
+          "description": "Thanks to your strong showing in the primaries — and a bit of backroom chicanery from the RNC — Donald Trump is now mathematically blocked from securing the nomination, leaving you the presumptive nominee. He’s demanding major concessions on policy, cabinet picks, and a primetime speaking slot at the convention. What do you do?",
           "likelihood": 1
         }
       }
