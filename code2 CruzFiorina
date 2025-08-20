@@ -235,11 +235,6 @@ cyoAdventure = function (a) {
     if (ans == 20686){
     CRUZwin += 1;
 }
-if (CRUZwin == 2) {
-    return getQuestionNumberFromPk(1008886);
-} else {
-    return getQuestionNumberFromPk(1008);
-}
 
     if (ans == 20739) {
         campaignTrail_temp.candidate_image_url = 'https://i.postimg.cc/FFgsSdzD/Ted-generalelection-photo-1.jpg'
