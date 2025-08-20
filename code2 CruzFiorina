@@ -88,6 +88,20 @@ candidateObserver.observe(gameWindowNode, candidateWatcherConfig);
 
 endingPicker = (out, totv, aa, quickstats) => {
 
+else if (CRUZwin == 2) {
+    question_insert("cruz_convention_question", 
+        {
+            "model": "campaign_trail.question",
+            "pk": "insert_cruz_convention_showdown",
+            "fields": {
+                "priority": 1,
+                "description": "After your second big win, momentum shifts sharply in your favor. Delegates at the convention are buzzing: can Cruz actually take this all the way? Fiorina advises you to make your move now, before Rubio or Trump can consolidate. Do you strike a deal with rivals, double down on principle, or gamble on an open floor fight?",
+                "likelihood": 1
+            }
+        }
+    );
+}
+
 if (campaignTrail_temp.player_answers[4] == 51119 && quickstats[0] >= 270) {
         unlockAchievement("An Uneasy Alliance");
     }
