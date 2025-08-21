@@ -1,5 +1,4 @@
 
-
 let republican = "Ted Cruz";
 let vpname = "Carly Fiorina";
 let democrat = "Hillary Clinton";
@@ -219,8 +218,36 @@ function getQuestionNumberFromPk(pk) {
 cyoAdventure = function (a) {
     ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length-1];
 
+if (campaignTrail_temp.player_answers[2] == 20683) {
+  campaignTrail_temp.questions_json[4] = {
+    "model": "campaign_trail.question",
+    "pk": 51060,
+    "fields": {
+      "priority": 1,
+      "description": "Well... today was interesting. You've defied the odds. Despite Trump's best efforts, you decisively defeated him on Super Tuesday, winning most states. While Trump will still try in vain to win, you're now on track to win the nomination. This is an upset that nobody expected, what now?",
+      "likelihood": 1
+    }
+  }
+} else {
+    // do the CYOA
+  campaignTrail_temp.questions_json[4] = {
+    "model": "campaign_trail.question",
+    "pk": 1008,
+    "fields": {
+      "priority": 1,
+      "description": "...no clear candidate has won a majority. Rubio won more moderate states like Virginia and Minnesota, you swept the Plains, Kasich won parts of the Midwest, and Trump won states all over the country. It's quite obvious that no candidate is going to win a majority, so going into July the convention will be deadlocked. Will you attempt to negotiate with any of the candidates?",
+      "likelihood": 1
+    }
+  }
+ }
+
+
     if (ans == 20727) {
     unlockAchievement("An Uneasy Alliance");   
+}
+
+  if (ans == 20683) {
+    unlockAchievement("Decisive Victory");   
 }
 
     if (ans == 20739) {
@@ -412,7 +439,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1006,
         "fields": {
             "priority": 2,
-            "description": "After your win in Iowa, you've gained a lot of momentum and now have a serious shot at winning. Unfortunately, the next primary is in New Hampshire, where Trump seems to hold an even greater lead. You probably can’t defeat him here, but you can likely shrink his margin enough that it isn’t really a win for him. You’re on the debate stage right now, and it’s your turn to speak. What do you do?",
+            "description": "After your win in Iowa, you've gained much momentum, and you have a serious shot at winning now. Unfortunately, the next primary is in New Hampshire, where Trump seems to hold an even greater lead. You probably can't defeat him here, but you probably can shrink his margin enough where it isn't really a win for him. You're on the debate stage right now, and it's your turn to speak. What do you do?",
             "likelihood": 1
         }
     },
@@ -430,7 +457,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1008,
         "fields": {
             "priority": 4,
-            "description": "... no candidate has won a majority. Rubio won more moderate states like Virginia and Minnesota; you swept the Plains; Kasich won parts of the Midwest; and Trump won states across the country. It’s clear no candidate is going to win a majority, so the convention will be deadlocked going into July. Will you attempt to negotiate with any of the other candidates?",
+            "description": "...no clear candidate has won a majority. Rubio won more moderate states like Virginia and Minnesota, you swept the Plains, Kasich won parts of the Midwest, and Trump won states all over the country. It's quite obvious that no candidate is going to win a majority, so going into July the convention will be deadlocked. Will you attempt to negotiate with any of the candidates?",
             "likelihood": 1
         }
     },
@@ -439,7 +466,7 @@ campaignTrail_temp.questions_json = [
         "pk": 3198,
         "fields": {
             "priority": 4,
-            "description": "After you narrowly defeat Trump at the contested convention, he’s furious. He’s demanding major concessions on policy and cabinet picks, along with a prime-time speaking slot. Do you give him what he wants, or do you refuse?",
+            "description": "After defeating Trump, he is furious. He’s demanding major concessions on policy, cabinet picks, and a primetime speaking slot at the convention. Do you give him what he wants or do you refuse?",
             "likelihood": 1
         }
     },
@@ -619,7 +646,7 @@ campaignTrail_temp.questions_json = [
         "pk": 51055,
         "fields": {
             "priority": 0,
-            "description": " (just testing some cyoa)",
+            "description": "test",
             "likelihood": 1
         }
     },
@@ -664,7 +691,7 @@ campaignTrail_temp.questions_json = [
         "pk": 51060,
         "fields": {
             "priority": 0,
-            "description": "Testing CYOA",
+            "description": "Well... today was interesting. You've defied the odds. Despite Trump's best efforts, you decisively defeated him on Super Tuesday, winning most states. While Trump will still try in vain to win, you're now on track to win the nomination.",
             "likelihood": 1
         }
     }
@@ -676,7 +703,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5003,
         "fields": {
             "question": 1001,
-            "description": "Arkansas is looking really close, and it presents a golden opportunity with its large Evangelical population. We’re going to hit Little Rock, Pine Bluff, Fort Smith, and Jonesboro by the time Super Tuesday rolls around."
+            "description": "Arkansas is looking really close, and it presents a golden opportunity with its large Evangelical population. We'll need to campaign in this state."
         }
     },
     {
@@ -684,7 +711,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5004,
         "fields": {
             "question": 1001,
-            "description": "Tennessee is leaning hard toward Trump, but I’m confident we can close the gap by Super Tuesday. This state is critical to our path forward. We’ll hit Nashville and Knoxville, and make a quick stop in Memphis, before the voting begins."
+            "description": "Tennessee is leaning hard toward Trump, but I’m confident we can close the gap by Super Tuesday. This state is critical to our path forward. We’ll hit Nashville and Knoxville before the voting begins."
         }
     },
     {
@@ -700,7 +727,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5017,
         "fields": {
             "question": 1007,
-            "description": "Do you know how much stuff Trump has done for liberals? He has spent his whole life advancing abortion and limting the right to bear arms. There's plenty we can use against him. It's time to take the artillery out here."
+            "description": "Do you know how much damned stuff Trump has done for liberals? We just have to search for like, 5 seconds, and we'll find something that we can use against him. It's time to take the artillery out here."
         }
     },
     {
@@ -1164,7 +1191,7 @@ campaignTrail_temp.answers_json = [
         "pk": 20688,
         "fields": {
             "question": 1001,
-            "description": "We’ll need to win the Georgia if we want any shot at taking this thing. We’re going to campaign everywhere in the state We might swing down across the the Florida line if there’s time, but for now, Georgia’s where we plant our flag."
+            "description": "I want to campaign in Georgia, and particularly the swing suburbs in Atlanta, which we can win if we put enough effort into it. This state is too delegate-rich to give up."
         }
     },
     {
@@ -1172,7 +1199,7 @@ campaignTrail_temp.answers_json = [
         "pk": 20689,
         "fields": {
             "question": 1001,
-            "description": "Minnesota. The Twin Cities may lean Democratic, but the state has a conservative heart. It’s within reach if we press hard enough. I’m going to hit the trail on a marathon tour, from Fergus Falls to Rochester, and make our case every step of the way."
+            "description": "Minnesota will be key. We're going to campaign there for the last few days that we have, and we might swing through Wisconsin if we have enough time."
         }
     },
     {
@@ -1332,7 +1359,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51083,
         "fields": {
             "question": 51060,
-            "description": "put description here"
+            "description": "Good, and we need to unite the party if we want to defeat Clinton. I'll call Kasich, maybe Rubio, set up some meetings with them, and make sure that we have a united front this fall."
         }
     },
     {
@@ -1421,6 +1448,22 @@ campaignTrail_temp.answers_json = [
         "fields": {
             "question": 1008,
             "description": "I will not sacrifice the independence of my candidacy just for a few votes. Whatever the voters say, that's the final word, and I'm not going to sell myself out to the establishment."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 51154,
+        "fields": {
+            "question": 51060,
+            "description": "We have a massive fundraising deficiency compared to Clinton. As much as I hate them, I have to work with the RNC if we want to win in November. This election is a battle for the soul of America, and we can't let Hillary Clinton become President at all costs."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 51155,
+        "fields": {
+            "question": 51060,
+            "description": "Is this even a question? We need to start this election now. We already have a wide polling gap against Clinton, and we can't waste any time trying to maneuver through party machinery"
         }
     }
 ]
@@ -7622,6 +7665,36 @@ campaignTrail_temp.answer_score_global_json = [
             "affected_candidate": 200,
             "global_multiplier": 0.005
         }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 51159,
+        "fields": {
+            "answer": 51154,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "global_multiplier": 0.0075
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 51161,
+        "fields": {
+            "answer": 51155,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "global_multiplier": 0.045
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 51162,
+        "fields": {
+            "answer": 51083,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "global_multiplier": 0.065
+        }
     }
 ]
 
@@ -8535,7 +8608,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5003,
             "candidate": 200,
-            "answer_feedback": "Alright, Ted. Let's see if you pulled it off. You fly back home to Texas, and on Super Tuesday..."
+            "answer_feedback": "Arkansas is nearly neck-and-neck, and this state could prove valuable. Alright, Ted. Let's see if you pulled it off. You fly back home to Texas, and on Super Tuesday..."
         }
     },
     {
@@ -8544,7 +8617,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5004,
             "candidate": 200,
-            "answer_feedback": "Alright, Ted. Let's see if you pulled it off. You fly back home to Texas, and on Super Tuesday..."
+            "answer_feedback": "It's not an understatement to say winning this state might be impossible. Trump has a 14 point lead here, but if you can shrink his lead and get some more delegates, it's a win for you."
         }
     },
     {
@@ -9048,7 +9121,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 20688,
             "candidate": 200,
-            "answer_feedback": "Alright, Ted. Let's see if you pulled it off. You fly back home to Texas, and on Super Tuesday..."
+            "answer_feedback": "The Atlanta suburbs were once conservative, but that time is long gone. Maybe you can change things this time around? The state does have a hefty 76 delegates up for grabs, though. You fly back home to Houston, and on Super Tuesday..."
         }
     },
     {
@@ -9057,7 +9130,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 20689,
             "candidate": 200,
-            "answer_feedback": "Alright, Ted. Let's see if you pulled it off.You fly back home to Texas, and on Super Tuesday..."
+            "answer_feedback": "Note Rubio is currently leading here, and it might not be the best choice to try and win delegates from him, as Trump still has a commanding lead. Nonetheless, Minnesota will be important this fall. You fly back home to Houston, and on Super Tuesday..."
         }
     },
     {
@@ -9301,6 +9374,33 @@ campaignTrail_temp.answer_feedback_json = [
             "answer": 51136,
             "candidate": 200,
             "answer_feedback": "Both Rubio and Kasich plead with you to help stop Trump, but you refuse. Eventually, as Trump starts building an insurmountable lead over you, Rubio, and Kasich. You backtrack and try to work with the RNC to stop Trump, but it's too late, and Trump is nominated. Damned be."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 51157,
+        "fields": {
+            "answer": 51083,
+            "candidate": 200,
+            "answer_feedback": "You're able to quickly secure endorsements from both Rubio and Carson, though Trump still remains a thorn in your side..."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 51158,
+        "fields": {
+            "answer": 51154,
+            "candidate": 200,
+            "answer_feedback": "There's no denying you and the RNC don't like each other, and collaborating with them will be key to improving your fundraising machine and defeating Clinton this fall."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 51160,
+        "fields": {
+            "answer": 51155,
+            "candidate": 200,
+            "answer_feedback": "You begin the general election and start campaigning in swing states like Florida, though the party remains bitterly divided."
         }
     }
 ]
