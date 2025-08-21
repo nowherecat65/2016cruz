@@ -265,13 +265,13 @@ campaignTrail_temp.achievements = {
         "cannotBeCheated" : true
 },
        "Decisive Victory" : {
-        "image" : "https://i.imgur.com/3jneKHi.png",
+        "image" : "https://i.imgur.com/gUgyVQN.png",
         "description" : "As Ted Cruz, win the nomination without having to contest the convention.",
         "cannotBeCheated" : true
  },
-    "The Debate Master" : {
+    "Ivy League Debater" : {
         "image" : "https://i.imgur.com/yAeDFM5.png",
-        "description" : "Win every single debate, and go on to win the election.",
+        "description" : "Win every single debate.",
         "cannotBeCheated" : true
 
     }
