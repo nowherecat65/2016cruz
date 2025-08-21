@@ -116,7 +116,8 @@ used=false
 
 // If answer for question 25 is 8090, and you get at least 270 Electoral votes, and your running mate's last name is specified here, it'll give you this special ending. I used this for the 'A truce, not a compromise' ending in 1876.
 
-if (campaignTrail_temp.player_answers[24] == 8090 && quickstats[0] >= 270 && campaignTrail_temp.running_mate_last_name == "PlaceLastNameHere") {
+if (campaignTrail_temp.player_answers[4] == 51119 && quickstats[0] >= 270) {
+
     if (used != true) {
         setInterval(function () {
             used = true;
@@ -241,7 +242,11 @@ if (campaignTrail_temp.player_answers[2] == 20683) {
   }
  }
 
-
+  if (ans == 51119) {
+        campaignTrail_temp.candidate_json[0]["fields"].first_name = "Marco";
+        campaignTrail_temp.candidate_json[0]["fields"].last_name = "Rubio";
+        campaignTrail_temp.question_number = 24;
+}
     if (ans == 20727) {
     unlockAchievement("An Uneasy Alliance");   
 }
