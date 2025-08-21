@@ -263,6 +263,11 @@ campaignTrail_temp.achievements = {
         "image" : "https://i.imgur.com/PEbS7qH.jpeg",
         "description" : "As Ted Cruz, win the election while conceding to Trump and being populist on every question.",
         "cannotBeCheated" : true
+},
+       "Decisive Victory" : {
+        "image" : "https://i.imgur.com/PEbS7qH.jpeg",
+        "description" : "As Ted Cruz, win the nomination without having to contest the convention.",
+        "cannotBeCheated" : true
  },
     "The Debate Master" : {
         "image" : "https://i.imgur.com/yAeDFM5.png",
@@ -1344,7 +1349,7 @@ tooltipList = [
   {searchString: "Obergefell v. Hodges", explanationText: "<img src=https://i.imgur.com/gLBzhnI.png> In 2015, the Supreme Court ruled that state bans on gay marriage were illegal. God damn that deep state traitor Kennedy."},
   {searchString: "Heidi", explanationText: "<img src=https://i.imgur.com/EEYIvuQ.jpeg>Wife."},
   {searchString: "radical Islamist terrorist attack in Nice, France left 86 dead and 450 injured.", explanationText: "<img src=https://i.imgur.com/bh8d5AS.jpeg> A radical terrorist from Tunisia used a rented truck to run over a crowd while people were celebrating Bastille Day, in Nice, France."},
-  {searchString: "Josh Mandel", explanationText: "<img src=https://i.imgur.com/dMeU9zH.png> Divorced"},
+  {searchString: "RNC", explanationText: "<img src=https://i.imgur.com/LgWzE1T.png> What a failure."},
   {searchString: "Josh Mandel", explanationText: "<img src=https://i.imgur.com/dMeU9zH.png> Divorced"},
   {searchString: "Josh Mandel", explanationText: "<img src=https://i.imgur.com/dMeU9zH.png> Divorced"},
   {searchString: "Sheriff Jones", explanationText: "<img src=https://i.imgur.com/hsRTF1Q.png> Doug Dimmadome"}
