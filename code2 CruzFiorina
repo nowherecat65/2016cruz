@@ -426,7 +426,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1000,
         "fields": {
             "priority": 1,
-            "description": "Here we go, Ted. This isn't Texas. This isn't a local or statewide race. It’s the presidency. You're going to have to bring your message to all 321 million Americans. This is going to be tough. What’s your strategy going in? Real estate mogul and entrepreneur Donald Trump appears to be the frontrunner.",
+            "description": "Here we go, Ted. This isn't Texas. This isn't just astatewide race. It’s the presidency. You're going to have to bring your message to all 321 million Americans. This is going to be tough. What’s your strategy going in? Real estate mogul and entrepreneur Donald Trump appears to be the frontrunner.",
             "likelihood": 1
         }
     },
@@ -444,7 +444,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1006,
         "fields": {
             "priority": 2,
-            "description": "After your win in Iowa, you've gained much momentum, and you have a serious shot at winning now. Unfortunately, the next primary is in New Hampshire, where Trump seems to hold an even greater lead. You probably can't defeat him here, but you probably can shrink his margin enough where it isn't really a win for him. You're on the debate stage right now, and it's your turn to speak. What do you do?",
+            "description": "You're on the debate stage now. After your win in Iowa, you've gained much momentum, and you have a serious shot at winning now. Unfortunately, the next primary is in New Hampshire, where Trump seems to hold an even greater lead. You probably can't defeat him here, but you probably can shrink his margin enough where it isn't really a win for him. It's now your turn to speak. What do you do?",
             "likelihood": 1
         }
     },
@@ -543,7 +543,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1027,
         "fields": {
             "priority": 7,
-            "description": "The Clinton campaign has aired dozens of new advertisements attacking your stance on abortion and reproductive rights as backward and “from the 1950s.” What is your response?",
+            "description": "The Clinton campaign has aired new advertisements attacking your stance on abortion and reproductive rights as backward and “from the 1950s.” What is your response?",
             "likelihood": 1
         }
     },
@@ -552,7 +552,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1016,
         "fields": {
             "priority": 10,
-            "description": "Your stance on il",
+            "description": "Illegal immigration has never been a more important issue than right now, and Trump was almost able to win the nomination with a hardline stance on this issue. What is your position on this?",
             "likelihood": 1
         }
     },
@@ -561,7 +561,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1029,
         "fields": {
             "priority": 10,
-            "description": "Do you plan to promise further tax cuts as you hit the campaign trail?",
+            "description": "The Clinton campaign continues to massively outfund you, pouring millions into big-buy television ads, Worse, just when the campaign is about to heat up, your coffers are running low. How will you alleviate this problem?",
             "likelihood": 1
         }
     },
@@ -732,7 +732,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5017,
         "fields": {
             "question": 1007,
-            "description": "Do you know how much damned stuff Trump has done for liberals? We just have to search for like, 5 seconds, and we'll find something that we can use against him. It's time to take the artillery out here."
+            "description": "It's time we take out the artillery here. Trump has donated thousands to Clinton's re-election campaign, her foundation, and donated to many other Democrats in New York, not even what, 6 years ago? 7 tops?"
         }
     },
     {
@@ -740,7 +740,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5018,
         "fields": {
             "question": 1007,
-            "description": "Let all the other candidates latch onto the Trump circus, I don't care. I'm going to bring real change to this country, and that's what the people of Iowa want."
+            "description": "Let all the other candidates latch onto the Trump circus, I don't care. I'm going to bring real change to this country, and that's what the people of Iowa want, not the 8 years of failure that has happened under Obama."
         }
     },
     {
@@ -764,7 +764,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5032,
         "fields": {
             "question": 1011,
-            "description": "If you thought that the Democrats couldn't get any worse, they've officially nominated Hillary Clinton for President! She's probably the worst Democratic nominee since 2008. She has endorsements from socialists like Barack Obama, Bernie Sanders, and others. We cannot let her get her hands on the White House."
+            "description": "Hillary Clinton is on the verge of becoming Commander-in-Chief, and who knows what will happen once she does. 1 month after she's inaugurated, we'll find out she's being blackmailed by Russia or something. Do we really want someone like her to lead us?"
         }
     },
     {
@@ -925,38 +925,6 @@ campaignTrail_temp.answers_json = [
         "fields": {
             "question": 1027,
             "description": "I oppose the abhorrent practice of abortion as much as any of my fellow conservatives, but this position is hurting us badly among suburban women and independents. We have to turn the tables and strike back at Clinton, highlighting her equivocations on Benghazi and her emails. She has utterly failed at all her tasks."
-        }
-    },
-    {
-        "model": "campaign_trail.answer",
-        "pk": 5097,
-        "fields": {
-            "question": 1029,
-            "description": "We're going to pass the greatest tax cut in history when I'm President, you can count on it. And we're going to fix the mess that Obama has left with this terrible economy."
-        }
-    },
-    {
-        "model": "campaign_trail.answer",
-        "pk": 5098,
-        "fields": {
-            "question": 1029,
-            "description": "I want to see us pass a gigantic tax cut for the middle and the working class. That's really where the focus should be -- we've got to get everyday Americans spending again to make this country great."
-        }
-    },
-    {
-        "model": "campaign_trail.answer",
-        "pk": 5099,
-        "fields": {
-            "question": 1029,
-            "description": "I really want us to look into increasing the child tax credit, in closing some loopholes for the banks on Wall Street, and so on. We have some good things there that will send the right message to the American people."
-        }
-    },
-    {
-        "model": "campaign_trail.answer",
-        "pk": 5100,
-        "fields": {
-            "question": 1029,
-            "description": "I promised no cuts to Social Security and Medicare. And we're going to repeal and replace the Obamacare disaster. You should see how people cheer when I talk about that!"
         }
     },
     {
@@ -1212,7 +1180,7 @@ campaignTrail_temp.answers_json = [
         "pk": 20715,
         "fields": {
             "question": 1006,
-            "description": "Trump is a fraud. He's always raving about how smart he is and how much business acumen he has, when he inherited all his money from his rich dad. His casinos in Atlantic City have all gone bankrupt, and has defrauded ordinary Americans through Trump University. He's a pathological liar."
+            "description": "Trump is a fraud. He's always raving about how smart he is and how much business acumen he has, when he inherited all his money from his rich dad. His casinos in Atlantic City have all gone bankrupt, and has scammed ordinary Americans through Trump University. He's a pathological liar."
         }
     },
     {
@@ -1220,7 +1188,7 @@ campaignTrail_temp.answers_json = [
         "pk": 20739,
         "fields": {
             "question": 1011,
-            "description": "Barack Obama is the most dangerously incompetent man ever to set foot in the White House. Over the past three and a half years, we’ve seen drones execute American citizens abroad, while Obama lets Russia run loose in Ukraine and funnels money to radical Islamic terrorists. We cannot let the Democrats manage foreign policy again, our adversaries are watching, and they’ll be emboldened to strike."
+            "description": "Barack Obama is the most laughably incompetent man ever to set foot in the White House. Obama has been letting Russia run loose in Ukraine and funnels money to radical Islamic terrorists. It would be funny if it wasn't so sad."
         }
     },
     {
@@ -1244,7 +1212,7 @@ campaignTrail_temp.answers_json = [
         "pk": 20752,
         "fields": {
             "question": 1009,
-            "description": "Last month, 49 people in Orlando were shot by a radical. Last week, 69 were killed by a terrorist using a truck. The attacks are getting worse, and the only way we can destroy radical Islamic terrorism is to increase our military presence in Syria and Iraq. We would also consider a temporary ban on immigrants coming from these terrorist nests."
+            "description": "You can see, all these terrorists are coming from just a couple places, Syria, Iraq, and whatnot. I'll place an immigration ban on people from these countries, and end our terrorist problem overnight."
         }
     },
     {
@@ -1276,7 +1244,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51026,
         "fields": {
             "question": 1020,
-            "description": "In the end, these are silly, unfounded claims from the liberal media. We can ignore them—I know Fiorina can fend for herself and will do a great job as the nation’s second-in-command. Those who say otherwise are mistaken."
+            "description": "In the end, these are silly, unfounded claims from the liberal media. We can ignore them because I know Fiorina will do a great job as the nation’s second-in-command, and those who say otherwise are mistaken."
         }
     },
     {
@@ -1356,7 +1324,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51082,
         "fields": {
             "question": 1016,
-            "description": "put description here"
+            "description": "Trump gave us a lot of trouble with this issue, so if we adopt some of his rhetoric on this, then we can help bring some of his supporters back into the fold. We need to dramatically increase our border security, and I wouldn't be opposed to building a border wall."
         }
     },
     {
@@ -1420,7 +1388,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51121,
         "fields": {
             "question": 3198,
-            "description": "Absolutely. We cannot let the left-wing media like MSNBC and CNN divide us in the face of Hillary Clinton. I would be honored to let Trump speak at the RNC, and I'll even offer him a cabinet position."
+            "description": "Absolutely. We cannot let the left-wing media like MSNBC and CNN divide us in the face of Hillary Clinton. I would be honored to let Trump speak at the convention, and I'll even offer him a cabinet position."
         }
     },
     {
@@ -1436,7 +1404,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51123,
         "fields": {
             "question": 3198,
-            "description": " Damned be. Without his wing of the party, we’re done for this fall. If he wants it, I suppose we don’t have much choice but to let him have his way."
+            "description": "Damned be. Without his wing of the party, we’re done for this fall. If he wants it, I suppose we don’t have much choice but to let him have his way."
         }
     },
     {
@@ -1444,7 +1412,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51124,
         "fields": {
             "question": 3198,
-            "description": " Seriously? Hillary’s probably laughing it up in New York right now. The damage to this country will be irreversible if she gets her hands on the presidency. I hope Trump sees that and chooses to endorse me, but I’m not making any promises about what, if anything, I’d offer him in return."
+            "description": "Seriously? Hillary’s probably laughing it up in New York right now. The damage to this country will be irreversible if she gets her hands on the presidency. I hope Trump sees that and chooses to endorse me, but I’m not making any promises about what, if anything, I’d offer him in return."
         }
     },
     {
@@ -1457,18 +1425,66 @@ campaignTrail_temp.answers_json = [
     },
     {
         "model": "campaign_trail.answer",
-        "pk": 51154,
+        "pk": 51155,
         "fields": {
             "question": 51060,
-            "description": "We have a massive fundraising deficiency compared to Clinton. As much as I hate them, I have to work with the RNC if we want to win in November. This election is a battle for the soul of America, and we can't let Hillary Clinton become President at all costs."
+            "description": "Is this even a question? We need to start this election now. We already have a wide polling gap against the Democrats, and the last thing that we need to do is waste time trying to maneuver through party machinery while Clinton spreads lies about me on the campaign trail."
         }
     },
     {
         "model": "campaign_trail.answer",
-        "pk": 51155,
+        "pk": 51164,
+        "fields": {
+            "question": 1016,
+            "description": "DACA was an unbelievable violation of the Constitution and a slap in the face to every hard-working American. People shouldn't be allowed to cross into the country illegally and gain citizenship just because of their age."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 51165,
+        "fields": {
+            "question": 1016,
+            "description": "As the son of a Cuban immigrant, I think our immigration system is broken right now. It should be a lot easier to enter this country legally than illegally. That doesn't mean we should stop patrolling our borders, but immigration reform will be a top priority for a Cruz administration."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 51166,
+        "fields": {
+            "question": 1016,
+            "description": "Immigration is a great way to get people angry. I have nothing to gain and everything to lose by bringing it up. We should focus on issues where we have more of an upper-hand."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 51176,
+        "fields": {
+            "question": 1029,
+            "description": "Damned be. Fine, uh, I'll meet with McConnell. All those donors, whatever, to try and get their support. I hope they understand how catastrophic a Clinton presidency would be. "
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 51180,
         "fields": {
             "question": 51060,
-            "description": "Is this even a question? We need to start this election now. We already have a wide polling gap against Clinton, and we can't waste any time trying to maneuver through party machinery"
+            "description": "Now, obviously, we will attack Clinton, but it won't do anything if we don't have our own policies. Let's take this time we have from now until we're nominated to release our own policy planks, so that we can focus on one thing when the fall begins. Attacking Clinton."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 51184,
+        "fields": {
+            "question": 1029,
+            "description": "Back in 2012, Dewhurst had a massive fundraising advantage too. And I still won. If we have to reduce some of our ad spending, so be it, I'm not going to sell out to the donor class."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 51188,
+        "fields": {
+            "question": 1029,
+            "description": "Hillary Clinton's fundraising machine continues to spread lies about me and my policies, and we can't hope to compete. I'm asking for the American people's help, so that we can win the fight against liberal elitism."
         }
     }
 ]
@@ -6290,7 +6306,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 202,
             "state": 1036,
-            "state_multiplier": 0.1538
+            "state_multiplier": 0.0738
         }
     },
     {
@@ -6344,7 +6360,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 202,
             "state": 1042,
-            "state_multiplier": 0.04
+            "state_multiplier": 0.06
         }
     },
     {
@@ -6353,7 +6369,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 202,
             "state": 1043,
-            "state_multiplier": 0.001
+            "state_multiplier": 0.0568
         }
     },
     {
@@ -6380,7 +6396,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 202,
             "state": 1046,
-            "state_multiplier": 0.2195
+            "state_multiplier": 0.1032
         }
     },
     {
@@ -6917,8 +6933,8 @@ campaignTrail_temp.answer_score_global_json = [
         "fields": {
             "answer": 5032,
             "candidate": 200,
-            "affected_candidate": 200,
-            "global_multiplier": 0.015
+            "affected_candidate": 202,
+            "global_multiplier": -0.03
         }
     },
     {
@@ -7019,46 +7035,6 @@ campaignTrail_temp.answer_score_global_json = [
             "candidate": 200,
             "affected_candidate": 201,
             "global_multiplier": 0.00075
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
-        "pk": 3058,
-        "fields": {
-            "answer": 5097,
-            "candidate": 200,
-            "affected_candidate": 200,
-            "global_multiplier": 0.003
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
-        "pk": 3059,
-        "fields": {
-            "answer": 5098,
-            "candidate": 200,
-            "affected_candidate": 200,
-            "global_multiplier": 0.004
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
-        "pk": 3060,
-        "fields": {
-            "answer": 5099,
-            "candidate": 200,
-            "affected_candidate": 200,
-            "global_multiplier": -0.006
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
-        "pk": 3061,
-        "fields": {
-            "answer": 5100,
-            "candidate": 200,
-            "affected_candidate": 200,
-            "global_multiplier": -0.003
         }
     },
     {
@@ -7673,16 +7649,6 @@ campaignTrail_temp.answer_score_global_json = [
     },
     {
         "model": "campaign_trail.answer_score_global",
-        "pk": 51159,
-        "fields": {
-            "answer": 51154,
-            "candidate": 200,
-            "affected_candidate": 200,
-            "global_multiplier": 0.0075
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
         "pk": 51161,
         "fields": {
             "answer": 51155,
@@ -7699,6 +7665,96 @@ campaignTrail_temp.answer_score_global_json = [
             "candidate": 200,
             "affected_candidate": 200,
             "global_multiplier": 0.065
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 51171,
+        "fields": {
+            "answer": 51165,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "global_multiplier": -0.0045
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 51173,
+        "fields": {
+            "answer": 51164,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "global_multiplier": -0.0025
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 51174,
+        "fields": {
+            "answer": 51082,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "global_multiplier": 0.001
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 51177,
+        "fields": {
+            "answer": 5030,
+            "candidate": 200,
+            "affected_candidate": 202,
+            "global_multiplier": -0.03
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 51178,
+        "fields": {
+            "answer": 5031,
+            "candidate": 200,
+            "affected_candidate": 202,
+            "global_multiplier": -0.03
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 51179,
+        "fields": {
+            "answer": 20739,
+            "candidate": 200,
+            "affected_candidate": 202,
+            "global_multiplier": -0.03
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 51182,
+        "fields": {
+            "answer": 51176,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "global_multiplier": -0.006
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 51186,
+        "fields": {
+            "answer": 51184,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "global_multiplier": -0.007
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 51190,
+        "fields": {
+            "answer": 51188,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "global_multiplier": 0.004
         }
     }
 ]
@@ -7842,46 +7898,6 @@ campaignTrail_temp.answer_score_issue_json = [
             "issue": 104,
             "issue_score": -0.55,
             "issue_importance": 3
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 2606,
-        "fields": {
-            "answer": 5097,
-            "issue": 100,
-            "issue_score": -0.65,
-            "issue_importance": 1
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 2607,
-        "fields": {
-            "answer": 5098,
-            "issue": 100,
-            "issue_score": -0.4,
-            "issue_importance": 1
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 2608,
-        "fields": {
-            "answer": 5099,
-            "issue": 100,
-            "issue_score": 0.1,
-            "issue_importance": 1
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 2609,
-        "fields": {
-            "answer": 5100,
-            "issue": 100,
-            "issue_score": 0,
-            "issue_importance": 1
         }
     },
     {
@@ -8192,6 +8208,26 @@ campaignTrail_temp.answer_score_issue_json = [
             "issue": 102,
             "issue_score": 0.15,
             "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 51169,
+        "fields": {
+            "answer": 51165,
+            "issue": 104,
+            "issue_score": 0.55,
+            "issue_importance": 4
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 51175,
+        "fields": {
+            "answer": 51082,
+            "issue": 104,
+            "issue_score": -0.45,
+            "issue_importance": 2
         }
     }
 ]
@@ -8603,6 +8639,17 @@ campaignTrail_temp.answer_score_state_json = [
             "affected_candidate": 200,
             "state_multiplier": 0.05
         }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 51170,
+        "fields": {
+            "answer": 51165,
+            "state": 1008,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "state_multiplier": 0.005
+        }
     }
 ]
 
@@ -8649,7 +8696,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5032,
             "candidate": 200,
-            "answer_feedback": "If there's one person everybody in the party hates, it's Hillary Clinton."
+            "answer_feedback": "As expected, you attacked Clinton during the entirety of the speech, and for good reason too. She's a vulnerable candidate."
         }
     },
     {
@@ -8784,7 +8831,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5091,
             "candidate": 200,
-            "answer_feedback": "You sounded like a typical Republican until you mentioned you would sign a national abortion ban. This has appeal to the most devout evangelicals, and they are cheering on that you are defending their values. For everyone else, though, this is poison. You're a brave man, Mr. Cruz. Buckle up."
+            "answer_feedback": "You sounded like a typical Republican until you mentioned you would sign a national abortion ban. This has appeal to the most devout evangelicals, and they are cheering on that you are defending their values. For everyone else, though, this is poison. You're bravery is admirable, but this won't bode well for your campaign."
         }
     },
     {
@@ -8794,42 +8841,6 @@ campaignTrail_temp.answer_feedback_json = [
             "answer": 5092,
             "candidate": 200,
             "answer_feedback": "Hillary seems to fall for the bait once again, where she defends her actions in Benghazi and her email server scandal in her rallies for the next few days, and her advertisements seem to go back to the defensive. Seems like she still doesn't realize that if you're explaining, you're losing, and the heat is off you. "
-        }
-    },
-    {
-        "model": "campaign_trail.answer_feedback",
-        "pk": 2581,
-        "fields": {
-            "answer": 5097,
-            "candidate": 200,
-            "answer_feedback": "Big tax cuts for the rich are not always popular politically, but they are a definite carrot for establishment Republicans to support your campaign."
-        }
-    },
-    {
-        "model": "campaign_trail.answer_feedback",
-        "pk": 2582,
-        "fields": {
-            "answer": 5098,
-            "candidate": 200,
-            "answer_feedback": "Tax cuts for the middle class are always popular."
-        }
-    },
-    {
-        "model": "campaign_trail.answer_feedback",
-        "pk": 2583,
-        "fields": {
-            "answer": 5099,
-            "candidate": 200,
-            "answer_feedback": "For better or worse, people are definitely calling you a new kind of Republican."
-        }
-    },
-    {
-        "model": "campaign_trail.answer_feedback",
-        "pk": 2584,
-        "fields": {
-            "answer": 5100,
-            "candidate": 200,
-            "answer_feedback": "Pundits note that tax cuts have not been a big part of your stump speeches, whatever the implications may be."
         }
     },
     {
@@ -9108,7 +9119,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 20683,
             "candidate": 200,
-            "answer_feedback": "The crowd goes wild. You expect Trump to maneuver his way through this, calling himself an outsider, whatever, but Trump seems completely unable to respond. He points out that he only donated $100,000 to the Clinton Foundation, which is less than your Senate wage of $174,000. But nobody seems to care. "
+            "answer_feedback": "The crowd goes wild. You expect Trump to maneuver his way through this, calling himself an outsider, whatever, but Trump seems completely still trying to figure out what to say. You annihilated him."
         }
     },
     {
@@ -9180,7 +9191,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 20752,
             "candidate": 200,
-            "answer_feedback": "There’s nothing wrong with offering your own policy prescriptions, just make sure to balance them with some attacks on the Democrats."
+            "answer_feedback": "Seems like you're adopting some of Mr. Trump's approaches on immigration. We'll see how that turns out."
         }
     },
     {
@@ -9225,7 +9236,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5102,
             "candidate": 200,
-            "answer_feedback": "A repeal of Obamacare is exactly what your supporters want to hear this fall. Keep focusing on the bread-and-butter issues."
+            "answer_feedback": "The media notices a clear pivot from the question, but your supporters know exactly what you're talking about."
         }
     },
     {
@@ -9297,7 +9308,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51072,
             "candidate": 200,
-            "answer_feedback": "Your right — most Americans do support abortion rights. But that's including Californians and New Yorkers and Illinoians. In the states that matter this fall, the issue is far more divisive, and not only that, but liberals laugh at your clear flip-flopping, moderates don't trust your word anymore, and conservatives are frothing at this point. That being said, you might have gained a little bit amongst some suburban females or some independents, but all in all this was a major blunder."
+            "answer_feedback": "Rest in peace Ted. It was nice knowing you."
         }
     },
     {
@@ -9387,16 +9398,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51083,
             "candidate": 200,
-            "answer_feedback": "You're able to quickly secure endorsements from both Rubio and Carson, though Trump still remains a thorn in your side..."
-        }
-    },
-    {
-        "model": "campaign_trail.answer_feedback",
-        "pk": 51158,
-        "fields": {
-            "answer": 51154,
-            "candidate": 200,
-            "answer_feedback": "There's no denying you and the RNC don't like each other, and collaborating with them will be key to improving your fundraising machine and defeating Clinton this fall."
+            "answer_feedback": "You're able to quickly secure endorsements from both Rubio and Rubio, though Trump still remains a thorn in your side, for now."
         }
     },
     {
@@ -9406,6 +9408,69 @@ campaignTrail_temp.answer_feedback_json = [
             "answer": 51155,
             "candidate": 200,
             "answer_feedback": "You begin the general election and start campaigning in swing states like Florida, though the party remains bitterly divided."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 51163,
+        "fields": {
+            "answer": 51082,
+            "candidate": 200,
+            "answer_feedback": "You've always been known as a conservative purist, and it seems that's extending to immigration too, despite your heritage."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 51167,
+        "fields": {
+            "answer": 51166,
+            "candidate": 200,
+            "answer_feedback": "Immigration faded back down after you defeated Trump. Still, it's a big issue this election, and it wouldn't have hurt to comment on it."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 51168,
+        "fields": {
+            "answer": 51165,
+            "candidate": 200,
+            "answer_feedback": "Already, mainstream media experts are talking about how you're pivoting to try and win over the Hispanic vote. Maybe you know something they don't?"
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 51172,
+        "fields": {
+            "answer": 51164,
+            "candidate": 200,
+            "answer_feedback": "This will energize the base, but try not to make this a referendum on Obama. He remains personally popular with most moderates"
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 51181,
+        "fields": {
+            "answer": 51176,
+            "candidate": 200,
+            "answer_feedback": "Nice try, but these people absolutely hate you, and they wanted Jeb to be the nominee. They tell you that they won't be helping you at all, and you have to cancel some of your ad buys in swing states to conserve what little funds you have left. Screw them."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 51185,
+        "fields": {
+            "answer": 51184,
+            "candidate": 200,
+            "answer_feedback": "Your intentions are admirable, but a Senate primary is not a Presidential election. It doesn't matter how good your campaign is, you <em>have</em> to have a fundraising machine."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 51189,
+        "fields": {
+            "answer": 51188,
+            "candidate": 200,
+            "answer_feedback": "Millions of conservatives donate to help your cause, and over time your fundraising situation begins to stabilize."
         }
     }
 ]
