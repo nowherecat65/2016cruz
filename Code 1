@@ -349,11 +349,11 @@ campaignTrail_temp.candidate_json = [
             "party": "Republican",
             "state": "Texas",
             "priority": 1,
-            "description": "<div style='overflow-y:scroll;height:200px;'><p>Ted Cruz. A Harvard lawyer, a father of two, and by far, the most hated and despised member of the U.S. Senate. Am I going too fast? Alright. Let's take a step back. In 2011, Kay Bailey Hutchison announced she would be retiring, and a Senate seat was now up for grabs. In deep red Texas, the Republican primary would be the real election.<br><br>From the onset, incumbent Lieutenant Governor David Dewhurst was the frontrunner. He had the support of the establishment, a massive fundraising advantage, and was a career politician. All his opponents couldn't hope to stand up to him for long. But some tried anyway.<br>One was Ted Cruz, the former State Solicitor General. His resume wasn't very thick compared to Dewhurst, and he struggled to raise funds.But what he did have, was grassroots support, and a devout support base. Energized with promises to stand up to the establishment, and even with the anti-Dewhurst vote split, Dewhurst only won a plurality of the vote, 44%, and so by Texas law, a runoff election would happen between the top 2 candidates. Cruz got 2nd place, with 34% of the vote, so it would be a battle between Cruz and Dewhurst.<br><br>The campaign got even more negative. Dewhurst spent millions on television ads, trying to paint Cruz as “inexperienced”	or “extreme”. Cruz fired back, saying Dewhurst cozied up to Washington insiders and couldn't get things done. Every poll was saying Dewhurst would win easily. Election day came, and Ted nervously watched as the ballots came in.<br><br>Yet, when everything was said and done, Cruz had won the runoff, and in a landslide at that! He became the Junior U.S Senator from Texas. At last, the country would have a politician who could get things done and stand up to the establishment. Or so, that's what people thought. Almost as soon as he stepped into Capitol Hill, he started floor speeches attacking Obama, and started regularly appearing on Fox News, but at least for the time-being, he was doing his job.<br><br>Until October 2013, when it was time for the next annual appropriation bill. Cruz was on the Hill pressuring House members to refuse funding unless Obamacare would be removed. It worked, and the appropriation bill by the GOP-held House did not fund Obamacare. The Democratic-controlled Senate refused, demanding Obamacare be funded. The result was a complete government shutdown that lasted 17 days. Politicians on both sides were furious, but it didn't matter, because the Tea Party loved it. Cruz was the fighter that they've wanted for years.<br><br>Fast forward to today, and Cruz hasn't gotten any less controversial. Many conservative policies have been vetoed by Obama, and the country needs change. After reeling from major losses in 2008 and 2012, this election finally seems winnable.<br><br>Will you be the one to lift the country out of the Obama disaster, Ted?</p></div>",
+            "description": "<p>A Harvard graduate, a father of two daughters, and one of the most hated members of the Senate. Previously a lawyer for the State of Texas, he was able to win a Senate seat in Texas with the retirement of Kay Bailey Hutchinson.<br><br>Cruz has been one of the most disliked members of the Senate, for years now. A strict conservative originalist, in 2013, he was able to pressure enough members of the Republican-controlled House to refuse to pass the next annual appropriation bill, unless Obamacare was defunded. He succeeded, and the Democrat-led Senate refused to concede. The result was a 17-day government shutdown.<br>While he isn't so much of a lightning rod for controversy anymore, he remains disliked by many. Even so, he has built a devout base not just in Texas, but across the country. The time is now for real conservative leadership.</p>",
             "color_hex": "#A51214",
             "secondary_color_hex": "#D3756A",
             "is_active": 1,
-            "image_url": "https://i.imgur.com/wFCBQkc.jpeg",
+            "image_url": "https://i.imgur.com/bu1RSsU.png",
             "electoral_victory_message": "<h3>Congratulations! You have won the 2016 election.</h3><p>In spite of a hard-fought challenge from Hillary Clinton, you have shocked the world with your election victory.</p><p>On the political front, you have the bully pulpit in your favor, but support in Congress in uncertain. Will you govern as a more traditional conservative, or will you make a break from orthodoxy?</p>",
             "electoral_loss_message": "<h3>Sorry! You have lost the 2016 election.</h3><p>Many of your supporters are despondent that you have faltered to the likes of Hillary Clinton. Republicans in general believe this was a very winnable election, and are enraged that you came in to blow it. Luckily, there are any number of ways for you to take advantage of your newfound exposure. One rumor even has you founding a television station to profit from the aggrieved sensibilities of your followers. The future is in your hands.</p>",
             "no_electoral_majority_message": "<h3>Wow! You have pulled out 2016 election.</h3><p>No candidate secured a majority in the Electoral College. However, the Republicans won a majority in Congress and will elevate you to the Presidency. Time will tell how things go in that regard. Any mutual affection between you and Congress is predicted to be short-lived, but you've pulled off a number of surprises to get this far.</p>",
@@ -620,10 +620,6 @@ s1 {
     <p>General_Rise8708</p>
     <p>7ballcraze</p>
     <p>DalTheFox</p>
-    <h3>Other</h3>
-    <p>Many mods that I've inspected to see how to fix my code!
-    <p>Many more people who I talked to and gave me advice over the development of the mod!</p>
-    <p>Your name might not be listed here, but your contributions are not forgotten!
     <h3>Music Credit</h3>
     <p>Greater - MercyMe
     <p>Real Gone - Sheryl Crow</p>
@@ -632,7 +628,7 @@ s1 {
     <p>ERB - Donald Trump vs. Hillary Clinton
     <h3>Special Thanks</h3>
     <p>mp4clout - Made an unused banner</p>
-    <p>Thatchmaster - Making American Carnage, which this mod takes many ideas from.</p>
+    <p>Thatchmaster - Music player</p>
     <p>Dan Bryan - Original 2016 scenario, and making this game</p>
     <p>Jet and DecstarG, for hosting this mod.</p>
     <h1 style="font-family: 'Trebuchet MS', sans-serif; color: #FFFFFF;">
@@ -732,7 +728,7 @@ style.innerHTML = `
   }
 
   a:-webkit-any-link {
-    color: #000000;
+    color: #0000FF;
   }
 
   .inner_window_question h3 {
