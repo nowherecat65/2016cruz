@@ -1,7 +1,7 @@
 (() => {
   const css = `
 /* ================================
-   buttons
+   Buttons
    ================================ */
 button, input[type="button"], input[type="submit"] {
   font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
@@ -37,7 +37,7 @@ button:disabled, input[type="button"]:disabled, input[type="submit"]:disabled {
 }
 
 /* ================================
-   the dropdowns
+   The dropdowns
    ================================ */
 select {
   font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
@@ -66,7 +66,7 @@ select:active { background: #262626; }
 select:disabled { opacity: 0.5; cursor: not-allowed; }
 
 /* ================================
-   scrollbars
+   Scrollbars
    ================================ */
 ::-webkit-scrollbar { width: 9px; height: 9px; }
 ::-webkit-scrollbar-track { background: #2b2b2b; border-radius: 4px; }
@@ -78,7 +78,7 @@ select:disabled { opacity: 0.5; cursor: not-allowed; }
 ::-webkit-scrollbar-thumb:hover { background: #666; }
 
 /* ================================
-   radio buttons (or whatever you call these things)
+   Radio buttons (or whatever you call these things)
    ================================ */
 input[type="radio"] {
   -webkit-appearance: none;
@@ -117,7 +117,7 @@ input[type="radio"]:checked::before {
 input[type="radio"]:hover { filter: brightness(1.1); }
 
 /* ================================
-   the sliders
+   The sliders
    ================================ */
 input[type="range"] {
   -webkit-appearance: none;
@@ -168,7 +168,7 @@ input[type="range"]::-moz-range-thumb {
 
 document.getElementById("inner_window_1").children[0].innerHTML="<h3>Do you have what it takes to win a Presidential Election?</i></h3>"
 
-document.getElementById("inner_window_1").children[1].innerHTML = "<li>This is an alternate history mod where Ted Cruz managed to win the 2016 Republican primaries.</li><li>In our real timeline, Ted Cruz's campaign failed to win the nomination despite early success in Iowa.</li><li>There were many reasons for his loss, including:</li><li>His strong support of free trade and NAFTA, which hurt him significantly in the Rust Belt.</li><li>He positioned himself as a staunch conservative originalist, which helped amongst evangelicals but this also narrowed his path to victory, and it hurt tremendously in moderate states like New Hampshire.</li><li>And many other reasons, but enough said, this mod explores what could have been.</li><li>You start off in the primaries, but you go on to the general election and face Hillary Clinton.</li><li>This mod includes many achievements, some CYOA, custom endings, and more, so don't be afraid to try new routes!</li><li>This mod, especially the tooltips, are shown from Cruz's perspective and are supposed to be biased. Just keep that in mind while playing.";
+document.getElementById("inner_window_1").children[1].innerHTML = "<li>This is an alternate history mod where Ted Cruz managed to win the 2016 Republican primaries.</li><li>In our real timeline, Ted Cruz's campaign failed to win the nomination despite early success in Iowa.<li>In this mod, you play as Ted Cruz and attempt to win the election.</li><li>You start off in the primaries, but you go on to the general election and face Hillary Clinton.</li><li>This mod includes many achievements, some CYOA, custom endings, and more, so don't be afraid to try new routes!</li><li>This mod, especially the tooltips, are shown from Cruz's perspective and are supposed to be biased. Just keep that in mind while playing.";
 
 // Makes Hillary Clinton unplayable.
 
@@ -204,10 +204,6 @@ campaignTrail_temp.achievements = {
     "Trumped" : {
         "image" : "https://i.imgur.com/ucDsHMO.jpeg",
         "description" : "Lose the nomination battle to Donald Trump."
-    },
-    "Kasich Country" : {
-        "image" : "https://i.imgur.com/gCge1LB.jpeg",
-        "description" : "Back John Kasich at the convention to prevent Trump from winning."
  },
     "Little Marco, No More" : {
         "image" : "https://i.imgur.com/RZWn5KE.jpeg",
@@ -349,7 +345,7 @@ campaignTrail_temp.candidate_json = [
             "party": "Republican",
             "state": "Texas",
             "priority": 1,
-            "description": "<p><div style='overflow-y:scroll;height:200px;'><p>A Harvard graduate, father of two daughters, and one of the most polarizing figures in the U.S. Senate, Ted Cruz first entered national politics after serving as Solicitor General of Texas. He won his Senate seat in 2012 following the retirement of Kay Bailey Hutchison.<br><br>Cruz quickly became one of the most disliked members of the chamber, even among colleagues in his own party. A staunch conservative and strict constitutional originalist, he played a leading role in the 2013 government shutdown by rallying enough House Republicans to refuse passage of the annual appropriations bill unless the Affordable Care Act was defunded. The Democratic-controlled Senate refused to concede, resulting in a 17-day shutdown. <br><br> While he is no longer as constant a lightning rod for controversy, Cruz remains a divisive figure. His critics are numerous, but his base — both in Texas and nationwide — is deeply loyal. For his supporters, the moment has come for unapologetic, uncompromising conservative leadership.</p>",
+            "description": "<p><div style='overflow-y:scroll;height:200px;'><p>There is perhaps no more controversial figure in the politics of the United States than Ted Cruz. Does he even need an introduction?<br><br>A Harvard graduate, father of two daughters, and one of the most polarizing figures in the U.S. Senate, Ted Cruz first entered national politics after serving as Solicitor General of Texas. He won his Senate seat in 2012 following the retirement of Kay Bailey Hutchison.<br><br>Cruz quickly became one of the most disliked members of the chamber, even among colleagues in his own party. A staunch conservative and strict constitutional originalist, he played a leading role in the 2013 government shutdown by rallying enough House Republicans to refuse passage of the annual appropriations bill unless the Affordable Care Act was defunded. The Democratic-controlled Senate refused to concede, resulting in a 17-day shutdown. <br><br> While he is no longer as constant of a lightning rod for controversy, Cruz remains a divisive figure. His critics are numerous, but his base — both in Texas and nationwide — is fiercly loyal. For his supporters, the time for real cosnervative leadership is now.</p>",
             "color_hex": "#A51214",
             "secondary_color_hex": "#D3756A",
             "is_active": 1,
@@ -620,17 +616,12 @@ s1 {
     <p>General_Rise8708</p>
     <p>7ballcraze</p>
     <p>DalTheFox</p>
-    <h3>Music Credit</h3>
-    <p>Greater - MercyMe
-    <p>Real Gone - Sheryl Crow</p>
-    <p>God Bless the U.S.A. - Lee Greenwood</p>
-    <p>Where The Stars And Stripes And The Eagle Fly - Aaron Tippin</p>
-    <p>ERB - Donald Trump vs. Hillary Clinton
+    <p>army2.0</p>
     <h3>Special Thanks</h3>
     <p>mp4clout - Made an unused banner</p>
-    <p>Thatchmaster - Music player</p>
+    <p>Jet's TCT Mod Tools, for making development easier</p>
     <p>Dan Bryan - Original 2016 scenario, and making this game</p>
-    <p>Jet and DecstarG, for hosting this mod.</p>
+    <p>Jet and Decstar, for hosting this mod.</p>
     <h1 style="font-family: 'Trebuchet MS', sans-serif; color: #FFFFFF;">
   But most importantly...
 </h1>
@@ -900,10 +891,10 @@ function setupMusicPlayer() {
   );
 
   const song4 = new Song(
-    "Real Gone",
-    "Sheryl Crow",
-    "https://files.catbox.moe/6jhu0r.png",
-    "https://audio.jukehost.co.uk/uSkx8iXE3oQ6BZQ9ZbFqYfPh49SfaMrU"
+    "As Good As I Once Was",
+    "Toby Keith",
+    "https://i.imgur.com/F7gd9Mv.jpeg",
+    "https://audio.jukehost.co.uk/tCO8u2zmunpUWoSfiLStFLdrFi9VTvf9"
   );
 
   const song5 = new Song(
