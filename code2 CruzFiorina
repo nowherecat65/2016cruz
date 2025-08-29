@@ -96,6 +96,9 @@ if (campaignTrail_temp.player_answers[4] == 51119 && quickstats[0] >= 270) {
 if (campaignTrail_temp.player_answers[4] == 51121) {
         unlockAchievement("Little Marco, No More");
     }
+if (campaignTrail_temp.player_answers[4] == 51136) {
+        unlockAchievement("Trumped");
+    }
 
  if(quickstats[0] >= 325) {
         unlockAchievement("Triumph of Conservatism");
@@ -129,8 +132,6 @@ if (campaignTrail_temp.player_answers[4] == 51119 && quickstats[0] >= 270) {
     }
 
    return "<h3>Special Ending!</h3><p>Did you do something? Sell out the nation? Make a deal with the devil? and Win? This ending's for you.</p>";
-} else if (campaignTrail_temp.player_answers[24] == 8090 && quickstats[0]<269 && campaignTrail_temp.running_mate_last_name == "PlaceLastNameHere") {
-  //If you want to enable replacing the image based upon your performance, copy from here....
     if (used != true) {
         setInterval(function () {
             used = true;
@@ -140,7 +141,17 @@ if (campaignTrail_temp.player_answers[4] == 51119 && quickstats[0] >= 270) {
             }
         }, 100);
     }
-    // to here!
+} else if (campaignTrail_temp.player_answers[4] == 51136 && quickstats[0]>=270) {
+    return "<h3>Special Ending!</h3><p>Did you do something? Sell out the nation? Make a deal with the devil? and Win? This ending's for you.</p>";
+    if (used != true) {
+        setInterval(function () {
+            used = true;
+            imgg = document.getElementsByClassName("person_image")[0];
+            if (imgg != null) {
+                imgg.src = "Image URL goes here.";
+            }
+        }, 100);
+    }
 return "<h3>Special Ending!</h3><p>Did you do something? Sell out the nation? Make a deal with the devil? and Win? This ending's for you.</p>"
 } else if (quickstats[0] < 3) {
 return "<h3>You didn't even win a state?</h3><p>Very sad!</p><p>It seems like your opponent has won in a landslide, and has the political leverage to enact their agenda. Sorry!</p>"
@@ -219,6 +230,13 @@ function getQuestionNumberFromPk(pk) {
 cyoAdventure = function (a) {
     ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length-1];
 
+  if (ans == 51136) {
+        campaignTrail_temp.candidate_json[0]["fields"].first_name = "Donald";
+        campaignTrail_temp.candidate_json[0]["fields"].last_name = "Trump";
+        campaignTrail_temp.question_number = 24;
+        		vpTable["Donald Trump"] = "Chris Christie";
+}
+
 if (campaignTrail_temp.player_answers[2] == 20683) {
   campaignTrail_temp.questions_json[4] = {
     "model": "campaign_trail.question",
@@ -246,6 +264,7 @@ if (campaignTrail_temp.player_answers[2] == 20683) {
         campaignTrail_temp.candidate_json[0]["fields"].first_name = "Marco";
         campaignTrail_temp.candidate_json[0]["fields"].last_name = "Rubio";
         campaignTrail_temp.question_number = 24;
+        		vpTable["Marco Rubio"] = "John Kasich";
 }
     if (ans == 20727) {
     unlockAchievement("An Uneasy Alliance");   
