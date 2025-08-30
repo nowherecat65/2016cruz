@@ -200,7 +200,7 @@ function appendStyle() {
         style.id = 'radio-option-style';
         style.textContent = `
           body {
-               background-image: url(https://wallpaper-house.com/data/out/7/wallpaper2you_175134.jpg);
+               background-image: url(https://wallup.net/wp-content/uploads/2019/10/349189-usa-skyscrapers-rivers-new-york-city-night-cities.jpg);
                background-position: center;
                background-size: cover;
           }
