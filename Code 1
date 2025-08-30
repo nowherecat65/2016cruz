@@ -172,35 +172,32 @@ document.getElementById("inner_window_1").children[0].innerHTML="<h3>Do you have
 
 document.getElementById("inner_window_1").children[1].innerHTML = "<li>This is an alternate history mod where Ted Cruz managed to win the 2016 Republican primaries.</li><li>In our real timeline, Ted Cruz's campaign failed to win the nomination despite early success in Iowa.<li>In this mod, you play as Ted Cruz and attempt to win the election.</li><li>You start off in the primaries, but you go on to the general election and face Hillary Clinton.</li><li>This mod includes many achievements, some CYOA, custom endings, and more, so don't be afraid to try new routes!</li><li>This mod, especially the tooltips, are shown from Cruz's perspective and are supposed to be biased. Just keep that in mind while playing.";
 
-// Makes Hillary Clinton unplayable.
-
-let previousCandidate = null;
-
-const startScreenUpdater = setInterval(function() {
-    const goBackButton = document.getElementById("candidate_id_back");
-    const candidateButton = document.getElementById("candidate_id_button");
-    const runningMateButton = document.getElementById("running_mate_id_button");
-    const finalScreenBB = document.getElementById("opponent_selection_id_back");
-    const finalScreenID = document.getElementById("opponent_selection_id_button");
-
-    const c = document.getElementById("candidate_id")?.value ?? -1;
-
-    if (c !== previousCandidate) {
-        previousCandidate = c; 
-
-        if (c == 200 || c == 50000 || c == 50001 || c == 50002) {
-            if (!candidateButton) {
-                goBackButton?.click();
-                const initContinue = document.getElementById("election_id_button");
-                initContinue?.click();
-            }
-        } else if (c == 201 || c == 202) {
-            candidateButton?.remove();
-        }
+// Forces the background to be centered
+// Found this in the mod help discord server from Strawberry master
+function appendStyle() {
+    if (!document.querySelector('meta[name="viewport"]')) {
+        const metaTag = document.createElement('meta');
+        metaTag.name = "viewport";
+        metaTag.content = "width=device-width, initial-scale=1";
+        document.head.appendChild(metaTag);
     }
 
-}, 20); 
+    // Custom styles here
+    if (!document.querySelector('#radio-option-style')) {
+        const style = document.createElement('style');
+        style.id = 'radio-option-style';
+        style.textContent = `
+          body {
+               background-image: url(https://wallpaper-house.com/data/out/7/wallpaper2you_175134.jpg);
+               background-position: center;
+               background-size: cover;
+          }
+        `;
+        document.head.appendChild(style);
+    }
+}
 
+appendStyle();
 
 campaignTrail_temp.achievements = {
     "Trumped" : {
@@ -373,7 +370,7 @@ campaignTrail_temp.candidate_json = [
             "description": "<div style='overflow-y:scroll;height:200px;'><p><b><i>Here for context. Hopefully she'll be playable in the future. Not sure.<br><br></b></i>Hillary Clinton has been in politics for a while now. She has served many roles, from First Lady to U.S Senator, to U.S Secretary of State. Clinton was on the more moderate side of her party, but shifted significantly to the left in order to prevent primary voters from defecting to Bernie Sanders, in a close race.<br><br>With Obama's approval ratings high, strong support amongst female and Hispanic voters, and an opponent that seems extreme to most Americans, Clinton has every reason to expect a blowout.<br><br>There's no way she could lose. Right?</p>",
             "color_hex": "#3435BA",
             "secondary_color_hex": "#8393CF",
-            "is_active": 1,
+            "is_active": 0,
             "image_url": "https://i.imgur.com/0SzUxiT.png",
             "electoral_victory_message": "<h3>Congratulations! You have won the 2016 election.</h3><p>In spite of a hard-fought challenge from Donald Trump, you have become the first woman elected to serve as President.</p><p>On the political front, it is unclear how much of your agenda you will be able to push forward with the current Congress. Hopefully your victory has helped Democrats further down the ballot. Start packing and prepare to move back into the White House!</p>",
             "electoral_loss_message": "<h3>Sorry! You have lost the 2016 election.</h3><p>Many of your supporters are despondent that you have faltered to the likes of Donald Trump. Many in the left wing of the party are furious that you pushed their candidate aside, only to lose. Time will tell how Trump operates as President. As for you, a long and sometimes ambiguous political career seems to be coming to its end.</p>",
