@@ -1,4 +1,16 @@
+e.SelectText = '<font color="white">Please select the election you will run in:</font>';
+e.CandidText = '<font color="white">Please select your Presidential nominee:</font>';
+e.VpText = '<font color="white">Please select your Vice Presidential nominee:</font>';
 
+
+document.querySelectorAll("link[rel*='icon']").forEach(el => el.remove());
+
+const favican = document.createElement("link");
+favican.rel = "icon";
+favican.type = "png";
+favican.href = "https://i.imgur.com/zUGKrED.png";
+
+document.head.appendChild(favican);
 
 (() => {
   const css = `
