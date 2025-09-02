@@ -1,3 +1,20 @@
+ //* Mod Title: Cruz '16
+ //* Mod Author: TheMcCain
+ //* Mod Version: 1.0
+ //* Mod Description: Ted Cruz wins the 2016 Republican primaries
+ //* 
+ //* Coding License: Apache License 2.0
+ //* Writing License: Creative Commons Attribution 4.0 International (CC BY 4.0)
+ //* 
+ //* For the coding in this mod, I hereby release the code under the terms and conditions of the Apache License 2.0. The full text of the license can be found at:
+// * https://choosealicense.com/licenses/apache-2.0/
+ //* 
+// * For the writing in this mod, including documentation, text files, and other non-software written works, I hereby release the content under the terms and conditions of the Creative Commons Attribution 4.0 International (CC BY 4.0) license. The full text of the license can be found at:
+// * https://creativecommons.org/licenses/by/4.0/legalcode
+// * 
+// * By using, distributing, or modifying this mod, you agree to abide by the terms and conditions of both the Apache License 2.0 and the Creative Commons Attribution 4.0 International (CC BY 4.0) license.
+
+// Global text variables
 e.SelectText = '<font color="white">Please select the election you will run in:</font>';
 e.CandidText = '<font color="white">Please select your Presidential nominee:</font>';
 e.VpText = '<font color="white">Please select your Vice Presidential nominee:</font>';
@@ -92,7 +109,7 @@ select:disabled { opacity: 0.5; cursor: not-allowed; }
 ::-webkit-scrollbar-thumb:hover { background: #666; }
 
 /* ================================
-   Radio buttons (or whatever you call these things)
+   Radio buttons
    ================================ */
 input[type="radio"] {
   -webkit-appearance: none;
@@ -231,21 +248,6 @@ campaignTrail_temp.achievements = {
         "description" : "As Ted Cruz, be defeated in a landslide.",
         "cannotBeCheated" : true
  },
-    "A Man of Principle" : {
-        "image" : "https://i.imgur.com/vXFWQfC.png",
-        "description" : "As Ted Cruz, refuse to concede to Trump and win.",
-        "cannotBeCheated" : true
- },
-    "Cuban Exiles" : {
-        "image" : "https://i.imgur.com/KyxxUlT.png",
-        "description" : "Choose Marco Rubio as your running mate, and go on to win.",
-        "cannotBeCheated" : true
-},
-    "Evangelicals and Entrepreneurs" : {
-        "image" : "https://i.imgur.com/TIYyspQ.png",
-        "description" : "Choose Carly Fiorina as your running mate, and go on to win.",
-        "cannotBeCheated" : true
- },
     "An Uneasy Alliance" : {
         "image" : "https://i.imgur.com/hyfAjo9.jpeg",
         "description" : "Offer Trump a cabinet position, and go on to win the election.",
@@ -258,17 +260,7 @@ campaignTrail_temp.achievements = {
  },
       "We're With Her" : {
         "image" : "https://i.imgur.com/9QJ7Gg7.png",
-        "description" : "As Ted Cruz, win the primaries but lose the general election to Hillary Clinton.",
-        "cannotBeCheated" : true
- },
-       "Arch-Conservative" : {
-        "image" : "https://i.imgur.com/I82wkaG.png",
-        "description" : "As Ted Cruz, win the election while attacking Clinton and Trump at every opportunity, being conservative on every question, and with Walker as your running mate.",
-        "cannotBeCheated" : true
-  },
-       "Make it Great Again" : {
-        "image" : "https://i.imgur.com/PEbS7qH.jpeg",
-        "description" : "As Ted Cruz, win the election while conceding to Trump and being populist on every question.",
+        "description" : "As Ted Cruz, lose the election.",
         "cannotBeCheated" : true
 },
        "Decisive Victory" : {
