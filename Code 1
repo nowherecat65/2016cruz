@@ -202,7 +202,7 @@ document.getElementById("inner_window_1").children[0].innerHTML="<h3>Do you have
 document.getElementById("inner_window_1").children[1].innerHTML = "<li>This is an alternate history mod where Ted Cruz managed to win the 2016 Republican primaries.</li><li>In our real timeline, Ted Cruz's campaign failed to win the nomination despite early success in Iowa.<li>In this mod, you play as Ted Cruz and attempt to win the election.</li><li>You start off in the primaries, but you go on to the general election and face Hillary Clinton.</li><li>This mod includes many achievements, some CYOA, custom endings, and more, so don't be afraid to try new routes!</li><li>This mod, especially the tooltips, are shown from Cruz's perspective and are supposed to be biased. Just keep that in mind while playing.";
 
 // Forces the background to be centered
-// Found this in the mod help discord server from Strawberry master
+// Found this in the mod help discord server from StrawberryMaster
 function appendStyle() {
     if (!document.querySelector('meta[name="viewport"]')) {
         const metaTag = document.createElement('meta');
