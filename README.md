@@ -1,7 +1,11 @@
  Mod Title: Cruz '16
+
  Mod Author: TheMcCain
+
  Mod Version: 1.0
+
  Mod Description: Ted Cruz wins the 2016 Republican primaries
+
 
  Coding License: Apache License 2.0
  Writing License: Creative Commons Attribution 4.0 International (CC BY 4.0)
