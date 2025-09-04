@@ -1353,7 +1353,8 @@ tooltipList = [
   {searchString: "Lester Holt", explanationText: "<img src=https://i.imgur.com/U4vKTzh.png> The guy who is moderating your debate. Doesn't help that he's a puppet for the puppet masters."},
   {searchString: "Romney", explanationText: "<img src=https://i.imgur.com/HmeD7Ds.png> Doesn't talk much nowadays."},
   {searchString: "Pawlenty", explanationText: "<img src=https://i.imgur.com/ul0Oe3z.png> Timothy J. Pawlenty – Former Governor of Minnesota."},
-  {searchString: "Jeff Roe", explanationText: "<img src=https://i.imgur.com/U77VtHC.jpeg> Jeff Roe – Chief Campaign Manager."},
+  {searchString: "Jeff Roe", explanationText: "<img src=https://i.postimg.cc/90khJt8G/Jeffnted.png> Jeff Roe – Chief Campaign Manager."},
+  {searchString: "Jeff", explanationText: "<img src=https://i.postimg.cc/90khJt8G/Jeffnted.png> Jeff Roe – Chief Campaign Manager."},
   {searchString: "Josh Mandel", explanationText: "<img src=https://i.imgur.com/dMeU9zH.png> Divorced."},
   {searchString: "Sheriff Jones", explanationText: "<img src=https://i.imgur.com/hsRTF1Q.png> Doug Dimmadome."}
 
