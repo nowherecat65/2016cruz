@@ -254,7 +254,7 @@ if (campaignTrail_temp.player_answers[2] == 20683) {
     "pk": 1008,
     "fields": {
       "priority": 1,
-      "description": "...no clear candidate has won a majority. Rubio won more moderate states like Virginia and Minnesota, you swept the Plains, Kasich won parts of the Midwest, and Trump won states all over the country. It's quite obvious that no candidate is going to win a majority, so going into July the convention will be deadlocked. Will you attempt to negotiate with any of the candidates?",
+      "description": "…no candidate has won a clear majority. Rubio won more moderate states like Virginia and Minnesota, you swept the Plains, Kasich won parts of the Midwest, and Trump won states all over the country. It's quite obvious that no candidate is going to win a majority, so, going into July, the convention will be deadlocked. Will you attempt to negotiate with any of the candidates?",
       "likelihood": 1
     }
   }
@@ -481,7 +481,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1008,
         "fields": {
             "priority": 4,
-            "description": "...no clear candidate has won a majority. Rubio won more moderate states like Virginia and Minnesota, you swept the Plains, Kasich won parts of the Midwest, and Trump won states all over the country. It's quite obvious that no candidate is going to win a majority, so going into July the convention will be deadlocked. Will you attempt to negotiate with any of the candidates?",
+            "description": "…no candidate has won a clear majority. Rubio won more moderate states like Virginia and Minnesota, you swept the Plains, Kasich won parts of the Midwest, and Trump won states all over the country. It's quite obvious that no candidate is going to win a majority, so, going into July, the convention will be deadlocked. Will you attempt to negotiate with any of the candidates?",
             "likelihood": 1
         }
     },
@@ -6887,8 +6887,8 @@ campaignTrail_temp.answer_score_global_json = [
         "fields": {
             "answer": 5032,
             "candidate": 200,
-            "affected_candidate": 202,
-            "global_multiplier": -0.09
+            "affected_candidate": 200,
+            "global_multiplier": -0.089
         }
     },
     {
@@ -7487,7 +7487,7 @@ campaignTrail_temp.answer_score_global_json = [
         "fields": {
             "answer": 5031,
             "candidate": 200,
-            "affected_candidate": 209,
+            "affected_candidate": 200,
             "global_multiplier": -0.09
         }
     },
