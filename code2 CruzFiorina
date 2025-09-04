@@ -1408,7 +1408,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51216,
         "fields": {
             "question": 1014,
-            "description": "I won't. Our surrogates will do the attacking for us, and trying to attack Clinton's health could backfire on us. Let's just sit back and watch her poll numbers drop."
+            "description": "I won’t. Our surrogates will do the attacking for us, and trying to attack Clinton’s health could backfire on us. Let’s just sit back and watch her poll numbers drop."
         }
     },
     {
@@ -1416,7 +1416,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51219,
         "fields": {
             "question": 1014,
-            "description": "The DNC, the establishment, they're hiding it from you. Notice how Clinton has barely been on the campaign trail at all these past few weeks? They're lying about it to you. They were just talking about how fit she is to serve."
+            "description": "The DNC, the establishment, they’re hiding it from you. Notice how Clinton has barely been on the campaign trail at all these past few weeks? They’re lying about it to you. They were just talking about how fit she is to serve."
         }
     },
     {
@@ -1424,7 +1424,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51228,
         "fields": {
             "question": 1025,
-            "description": "Really? She wants to play that game? What about the fact she stumbled into an ambulance last week? Or that she killed 4 Americans in Benghazi? Or that she's advocated for teenagers to murder their fetuses? Or that she cheated on her husband? She can go to hell for all I care. Fuck her."
+            "description": "Really? She wants to play that game? What about the fact she stumbled into an ambulance last week? Or that she killed four Americans in Benghazi? Or that she’s advocated for teenagers to murder their fetuses? Or that she cheated on her husband, she can go to hell for all I care. Fuck her."
         }
     },
     {
@@ -1432,7 +1432,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51229,
         "fields": {
             "question": 1025,
-            "description": "Did she seriously just say that in front of me? I think it's really funny how she's talking about being divisive, while a few weeks ago she was just ranting about how terrible half of America is. Who does she think she is? "
+            "description": "Did she seriously just say that in front of me? I think it’s really funny how she’s talking about being divisive, while a few weeks ago she was just ranting about how terrible half of America is. Who does she think she is? "
         }
     },
     {
@@ -1440,7 +1440,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51230,
         "fields": {
             "question": 1025,
-            "description": "That’s a lot more extreme then what I was expecting from Clinton, and we can use this. I’ll keep pushing her buttons, baiting her, then she'll lash out and look like she's a fool."
+            "description": "That’s a lot more extreme than what I was expecting from Clinton, and we can use this. I’ll keep pushing her buttons, baiting her, then she’ll lash out and look like she’s a fool."
         }
     },
     {
@@ -7578,7 +7578,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 51216,
             "candidate": 200,
             "affected_candidate": 201,
-            "global_multiplier": -0.01
+            "global_multiplier": -0.025
         }
     },
     {
@@ -7588,7 +7588,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 51219,
             "candidate": 200,
             "affected_candidate": 200,
-            "global_multiplier": 0.09
+            "global_multiplier": 0.075
         }
     },
     {
@@ -9250,7 +9250,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51228,
             "candidate": 200,
-            "answer_feedback": "The nation is shocked. Holt tells you you're out of line. Clinton is speechless, but you notice a slight smile creak from her face. Whatever shreds of decency this race had is now gone. The base welcomes its new culture warrior as a hero, and Fox applauds you for having the guts to stand up to the establishment. For everyone else, though, you look unbelievably bitter. When the debate wraps up, you wonder if you played into her hand."
+            "answer_feedback": "The nation is shocked. Holt tells you you’re out of line. Clinton is speechless, but you notice a slight smile creep across her face. Whatever shreds of decency this race had are now gone, the base welcomes its new culture warrior as a hero, and Fox applauds you for having the guts to stand up to the establishment. For everyone else, though, you look unbelievably bitter. When the debate wraps up, you wonder if you played into her hand."
         }
     },
     {
@@ -9259,7 +9259,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51229,
             "candidate": 200,
-            "answer_feedback": "A drawback to the “Deplorable” blunder I see. It’s a dodge, but there's nothing wrong with pivoting to Clinton's weak points."
+            "answer_feedback": "A callback to the ''bigot'' blunder, I see, it’s a dodge, but there’s nothing wrong with pivoting to Clinton’s weak points."
         }
     },
     {
@@ -9268,7 +9268,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51230,
             "candidate": 200,
-            "answer_feedback": "You ignore Clinton's remark and keep baiting her, constantly talking while it's her turn, talking about how corrupt she is, talking about how she hates America. You can see the anger building up in her skull. On the last question, while you're attacking her on Benghazi, and it seemed like she had enough. and she lashes out, yelling and screaming at you."
+            "answer_feedback": "You ignore Clinton’s remark and keep baiting her, constantly talking while it’s her turn, talking about how corrupt she is, talking about how she hates America. You can see the anger building up in her skull. On the last question, while you’re attacking her on Benghazi, it seems she’s had enough, and she lashes out, yelling and screaming at you."
         }
     }
 ]
