@@ -490,7 +490,7 @@ campaignTrail_temp.questions_json = [
         "pk": 3198,
         "fields": {
             "priority": 4,
-            "description": "After defeating Trump, he is furious. He’s demanding major concessions on policy, cabinet picks, and a primetime speaking slot at the convention. Do you give him what he wants or do you refuse?",
+            "description": "After defeating Trump, he’s now furious. He demands major concessions on policy, cabinet picks, and a primetime speaking slot at the convention. Do you give him what he wants, or do you refuse?",
             "likelihood": 1
         }
     },
@@ -562,7 +562,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1027,
         "fields": {
             "priority": 7,
-            "description": "The Clinton campaign has aired new advertisements attacking your stance on abortion and reproductive rights as backward and “from the 1950s.” What is your response?",
+            "description": "The Clinton campaign has aired new advertisements attacking your stance on abortion and reproductive rights, calling them backward and “from the 1950s.” What is your response?",
             "likelihood": 1
         }
     },
@@ -571,7 +571,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1016,
         "fields": {
             "priority": 10,
-            "description": "Illegal immigration has never been a more important issue than right now, and Trump was almost able to win the nomination with a hardline stance on this issue. What is your position on this?",
+            "description": "Illegal immigration has never been a more important issue than it is right now, and Trump nearly won the nomination with his hardline stance on it. What is your position?",
             "likelihood": 1
         }
     },
@@ -580,7 +580,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1029,
         "fields": {
             "priority": 10,
-            "description": "The Clinton campaign continues to massively outfund you, pouring millions into big-buy television ads, Worse, just when the campaign is about to heat up, your coffers are running low. How will you alleviate this problem?",
+            "description": "The Clinton campaign continues to massively outfund you, pouring millions into big television ad buys. Worse, just as the campaign is about to heat up, your coffers are running low. How will you address this problem?",
             "likelihood": 1
         }
     },
@@ -589,7 +589,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1021,
         "fields": {
             "priority": 10,
-            "description": "At a semi-private fundraiser in New York, Hillary Clinton said to some wealthy donors, “You know, to just be grossly generalistic, you could put half of Cruz's supporters into what I call the basket of deplorables.” The crowd laughs. “They're racist, sexist, homophobic, xenophobic, Islamophobic, you name it.” She keeps going. “Some of those people.. they're irredeemable. But thankfully, they are not America.” Wow. You chuckle at how dumb she is. This is the time to strike, what do you do here?",
+            "description": "At a semi-private fundraiser in New York, Hillary Clinton said to some wealthy donors, ‘You know, to just be grossly generalistic, you could put half of Cruz’s supporters into what I call the basket of bible-thumping bigots.’ The crowd laughs. ‘They’re anti-women’s rights, anti-science, obsessed with policing people’s lives. You name it.’ She keeps going. ‘Some of those people… they’re irredeemable. But thankfully, they are not America.’ Wow. You chuckle at how dumb she is. This is the time to strike - what do you do here?",
             "likelihood": 1
         }
     },
@@ -598,7 +598,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1014,
         "fields": {
             "priority": 10,
-            "description": "Just 2 days after her \"deplorable\" gaffe, Hillary Clinton was caught limping and being carried into a van during a 9/11 memorial ceremony. Hillary Clinton's ability to serve is being called into serious question. How will you take advantage of this incident?",
+            "description": "Just 2 days after her \"bigot\" gaffe, Hillary Clinton was caught limping and being helped into a van during a 9/11 memorial ceremony. Her ability to serve is now being called into serious question. How will you take advantage of this incident?",
             "likelihood": 1
         }
     },
@@ -607,7 +607,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1025,
         "fields": {
             "priority": -6,
-            "description": "It is September 26th, 2016, and you're standing behind a podium. So is Clinton. The entire nation is watching. The establishment is no doubt rubbing their hands with glee, with the biased news networks on their sides. Clinton is finishing up her grandstanding, and just before she finishes, she says, “It’s almost as if he lives in his own world.. have you noticed the way he rants and raves while campaigning? Or how he lies every day? He’s a divisive nominee trying to tear us apart.” God damn her. Lester Holt turns to you. The world turns to you. Make her pay.",
+            "description": "It is September 26th, 2016, and you’re standing behind a podium. So is Clinton. The entire nation is watching. The establishment is no doubt rubbing their hands with glee, with the biased news networks on their side. Clinton is finishing up her grandstanding, and just before she finishes, she says, ''It’s almost as if he lives in his own world… have you noticed the way he rants and raves while campaigning? Or how he lies every day? He’s a divisive nominee trying to tear us apart.'' God damn her. Lester Holt turns to you. The world turns to you. Make her pay.",
             "likelihood": 1
         }
     },
@@ -616,7 +616,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1026,
         "fields": {
             "priority": -5,
-            "description": "As the Presidential debate ends and October begins, the race has continued to be dragged into the gutter, and some are calling this the most negative election in American history. Jeff tells you that you need to ramp up the attacks in order to defeat Clinton. How should you attack her?",
+            "description": "As the presidential debate ends and October begins, the race has continued to be dragged into the gutter, and some are calling this the most negative election in American history. Jeff tells you that you need to ramp up the attacks in order to defeat Clinton. How should you attack her?",
             "likelihood": 1
         }
     },
@@ -1160,7 +1160,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51030,
         "fields": {
             "question": 1020,
-            "description": "Mrs. Fiorina inherited a company rife with mismanagement and a tumultuous Compaq merger, and today HP remains one of America’s largest companies. If the Washington cartel considers that ''unfit to serve,'' that’s their problem, not mine."
+            "description": "Mrs. Fiorina inherited a company rife with mismanagement and burdened by a tumultuous Compaq merger, yet today HP remains one of America’s largest companies. If the Washington cartel considers that ''unfit to serve,'' that’s their problem, not mine."
         }
     },
     {
@@ -1384,7 +1384,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51205,
         "fields": {
             "question": 1021,
-            "description": "Hillary Clinton's slogan is \"Stronger Together\", and then she proceeds to call us deplorables. And then she proceeds to whine about how divisive I am. What a hypocrite. We need to be pointing this out all the time on the campaign trail."
+            "description": "Hillary Clinton's slogan is \"Stronger Together\", and then she calls us all bigots. Then she complains about how divisive I am. What a hypocrite. We need to point this out every chance we get on the campaign trail."
         }
     },
     {
@@ -1392,7 +1392,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51207,
         "fields": {
             "question": 1021,
-            "description": "It's too blatant for us to gloat about it, but in reality this is fantastic news for us. It wouldn't hurt to have our allies attack her on this while I tackle other issues instead. Let her dig her own grave."
+            "description": "It’s too blatant for us to gloat about it, but in reality, this is fantastic news for us. It wouldn’t hurt to have our allies attack her on this while I tackle other issues instead. Let her dig her own grave."
         }
     },
     {
@@ -1400,7 +1400,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51212,
         "fields": {
             "question": 1021,
-            "description": "If being a conservative makes me a deplorable, then I'm proud to be one. Vote for Hillary Clinton if you want your President to be a liberal elitist that hates you, that will allow partial birth abortions, and that will sell you out to Goldman Sachs, Saudi Arabia, and who knows what else."
+            "description": "If the left wants to call being a conservative ''bigotry,'' then they’re the real bigots. Vote for Hillary Clinton if you want your president to be a liberal elitist who hates you, who will allow partial-birth abortions, and who will sell you out to Goldman Sachs, Saudi Arabia, and who knows what else."
         }
     },
     {
@@ -7409,6 +7409,16 @@ campaignTrail_temp.answer_score_global_json = [
             "candidate": 200,
             "affected_candidate": 200,
             "global_multiplier": -0.06
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 51134,
+        "fields": {
+            "answer": 51121,
+            "candidate": 200,
+            "affected_candidate": 201,
+            "global_multiplier": 0.01
         }
     },
     {
