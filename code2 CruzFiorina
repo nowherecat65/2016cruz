@@ -517,7 +517,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1038,
         "fields": {
             "priority": 8,
-            "description": "Senator Cruz, you’ve made opposition to same-sex marriage a cornerstone of your career. But the Supreme Court has ruled. The country, mostly, has moved on. Do you still stand by your opposition, and would you still seek to do away with Obergefell v. Hodges for good?",
+            "description": "Senator Cruz, you’ve made opposition to same-sex marriage a cornerstone of your career. But the Supreme Court has ruled, and the country, mostly, has moved on. Do you still stand by your opposition, and would you still seek to do away with Obergefell v. Hodges for good?",
             "likelihood": 1
         }
     },
@@ -8031,6 +8031,16 @@ campaignTrail_temp.answer_score_issue_json = [
             "answer": 5127,
             "issue": "100",
             "issue_score": -0.35,
+            "issue_importance": 2
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 51249,
+        "fields": {
+            "answer": 20744,
+            "issue": "100",
+            "issue_score": -0.325,
             "issue_importance": 2
         }
     },
