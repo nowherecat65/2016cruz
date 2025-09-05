@@ -18,6 +18,9 @@
 e.SelectText = '<font color="white">Please select the election you will run in:</font>';
 e.CandidText = '<font color="white">Please select your Presidential nominee:</font>';
 e.VpText = '<font color="white">Please select your Vice Presidential nominee:</font>';
+e.HomeStateText = "Position:";
+e.PartyText = "Affiliation:";
+
 
 
 document.querySelectorAll("link[rel*='icon']").forEach(el => el.remove());
@@ -354,10 +357,10 @@ campaignTrail_temp.candidate_json = [
             "first_name": "Ted",
             "last_name": "Cruz",
             "election": 20,
-            "party": "Republican",
-            "state": "Texas",
+            "party": "Evangelical",
+            "state": "Senator from Texas",
             "priority": 1,
-            "description": "<p><div style='overflow-y:scroll;height:200px;'><p>There is perhaps no more controversial figure in the politics of the United States than Ted Cruz. Does he even need an introduction?<br><br>A Harvard graduate, father of two daughters, and one of the most polarizing figures in the U.S. Senate, Ted Cruz first entered national politics after serving as Solicitor General of Texas. He won his Senate seat in 2012 following the retirement of Kay Bailey Hutchison.<br><br>Cruz quickly became one of the most disliked members of the chamber, even among colleagues in his own party. A staunch conservative and strict constitutional originalist, he played a leading role in the 2013 government shutdown by rallying enough House Republicans to refuse passage of the annual appropriations bill unless the Affordable Care Act was defunded. The Democratic-controlled Senate refused to concede, resulting in a 17-day government shutdown. <br><br> While he is no longer as constant of a lightning rod for controversy, Cruz remains a divisive figure. His critics are numerous, but his base, both in Texas and nationwide, is fiercly loyal. The time for real conservative leadership is now.</p>",
+            "description": "<div style='overflow-y:scroll;height:14em;font-size:1em;'><p style='margin-top:0em;'>There is perhaps no more controversial figure in the politics of the United States than Ted Cruz. Does he even need an introduction?<br><br>A Harvard graduate, father of two daughters, and one of the most polarizing figures in the U.S. Senate, Ted Cruz first entered national politics after serving as Solicitor General of Texas. He won his Senate seat in 2012 following the retirement of Kay Bailey Hutchison.<br><br>Cruz quickly became one of the most disliked members of the chamber, even among colleagues in his own party. A staunch conservative and strict constitutional originalist, he played a leading role in the 2013 government shutdown by rallying enough House Republicans to refuse passage of the annual appropriations bill unless the Affordable Care Act was defunded. The Democratic-controlled Senate refused to concede, resulting in a 17-day government shutdown. <br><br> While he is no longer as constant of a lightning rod for controversy, Cruz remains a divisive figure. His critics are numerous, but his base, both in Texas and nationwide, is fiercly loyal. The time for real conservative leadership is now.</p>",
             "color_hex": "#A51214",
             "secondary_color_hex": "#D3756A",
             "is_active": 1,
@@ -446,8 +449,8 @@ campaignTrail_temp.candidate_json = [
             "first_name": "Carly",
             "last_name": "Fiorina",
             "election": 20,
-            "party": "Republican",
-            "state": "Virginia",
+            "party": "Republican Party",
+            "state": "HP CEO",
             "priority": 1,
             "description": "<p>Put description here</p>",
             "color_hex": "#A51214",
@@ -457,7 +460,7 @@ campaignTrail_temp.candidate_json = [
             "electoral_victory_message": "Win",
             "electoral_loss_message": "Loss",
             "no_electoral_majority_message": "No majority",
-            "description_as_running_mate": "<p><div style='overflow-y:scroll;height:200px;'><p>Carly Fiorina would be an... interesting choice. As one of your former primary opponents and the ex-CEO of corporate giant Hewlett-Packard, she has little political experience, her only foray into politics was a failed 2010 Senate run in California.<br><br>Still, despite being unconventional, Fiorina could offer unique advantages. She might help reclaim portions of the female vote from Hillary Clinton and could serve as a bridge between moderates and conservatives heading into the general election. She also performed well in the primary debates.<br><br>On the other hand, Fiorina’s record at HP is mired in controversy. Thousands of employees were laid off during her tenure, and in 2005 she was forced out by shareholders amid the company’s poor performance. Her corporate past would inevitably become a liability for the ticket.</p></div>",
+            "description_as_running_mate": "<div style='overflow-y:scroll;height:14em;font-size:1em;'><p style='margin-top:0em;'>Carly Fiorina would certainly be an unorthodox choice. As one of your former primary opponents and the ex-CEO of corporate giant Hewlett-Packard, she has little political experience, her only foray into politics was a failed 2010 Senate run in California.<br><br>Still, despite being unconventional, Fiorina could offer unique advantages. She might help reclaim portions of the female vote from Hillary Clinton and could serve as a bridge between moderates and conservatives heading into the general election. She also performed well in the primary debates.<br><br>On the other hand, Fiorina’s record at HP is mired in controversy. Thousands of employees were laid off during her tenure, and in 2005 she was forced out by shareholders amid the company’s poor performance. Her corporate past would inevitably become a liability for the ticket.</p></div>",
             "candidate_score": 1,
             "running_mate": true
         }
@@ -469,8 +472,8 @@ campaignTrail_temp.candidate_json = [
             "first_name": "Marco",
             "last_name": "Rubio",
             "election": 20,
-            "party": "Republican",
-            "state": "Florida",
+            "party": "Republican Party",
+            "state": "Senator from Florida",
             "priority": 1,
             "description": "<p>Put description here</p>",
             "color_hex": "#A51214",
@@ -480,7 +483,7 @@ campaignTrail_temp.candidate_json = [
             "electoral_victory_message": "This guy wins!",
             "electoral_loss_message": "This guy loses!",
             "no_electoral_majority_message": "We all win?",
-            "description_as_running_mate": "<div style='overflow-y:scroll;height:200px;'><p>Marco Rubio was one of your main opponents in the primary, ultimately finishing third. Currently serving as a U.S. Senator from Florida, Rubio could be a major asset in that state. He should also help solidify your support among Cuban-Americans, with both of you sharing Cuban heritage. Florida’s 29 electoral votes will prove decisive in this election, and Rubio’s popularity there could be crucial to securing victory on Election Day. He also has bona fides among independent voters and would bring a more moderate voice to the ticket.<br><br>Conversely, the two of you don’t exactly share warm relations, having waged hard-hitting campaigns against each other during the primary. Many of your supporters may be disappointed if you choose him as your running mate. He has also been criticized for coming across as over-polished, and ingenuine, just like you. Still, if you’re looking for a safer pick, he’s an option.</p></div>",
+            "description_as_running_mate": "<div style='overflow-y:scroll;height:14em;font-size:1em;'><p style='margin-top:0em;'>Marco Rubio was one of your main opponents in the primary, ultimately finishing third. Currently serving as a U.S. Senator from Florida, Rubio could be a major asset in that state. He should also help solidify your support among Cuban-Americans, with both of you sharing Cuban heritage. Florida’s 29 electoral votes will prove decisive in this election, and Rubio’s popularity there could be crucial to securing victory on Election Day. He also has bona fides among independent voters and would bring a more moderate voice to the ticket.<br><br>Conversely, the two of you don’t exactly share warm relations, having waged hard-hitting campaigns against each other during the primary. Many of your supporters may be disappointed if you choose him as your running mate. He has also been criticized for coming across as over-polished, and ingenuine, just like you. Still, if you’re looking for a safer pick, he’s an option.</p></div>",
             "candidate_score": 1,
             "running_mate": true
         }
@@ -492,8 +495,8 @@ campaignTrail_temp.candidate_json = [
             "first_name": "Scott",
             "last_name": "Walker",
             "election": 20,
-            "party": "Republican",
-            "state": "Wisconsin",
+            "party": "Republican Party",
+            "state": "Governor of Wisconsin",
             "priority": 1,
             "description": "<p>Put description here</p>",
             "color_hex": "#A51214",
@@ -622,8 +625,8 @@ s1 {
     <p><s1><span class='flashing-text'>theanswerisme - Theming/Writing</span></s1></p>
     <h3>Credits To</h3>
     <p>E - Made the banner<p>
-    <p>DecstarG for Credits Screen</p>
-    <p>LiquidAstro for his Further Reading tool 
+    <p>DecstarG - Credits Screen</p>
+    <p>LiquidAstro - Further Reading tool 
     <h3>I'd also like to thank all my great playtesters</h3>
     <p>General_Rise8708</p>
     <p>7ballcraze</p>
@@ -631,7 +634,6 @@ s1 {
     <p>army2.0</p>
     <p>Albert Gore Jr.</p>
     <h3>Special Thanks</h3>
-    <p>mp4clout - Made an unused banner</p>
     <p>Jet's TCT Mod Tool, for making development easier</p>
     <p>Dan Bryan - Original 2016 scenario, and making this game</p>
     <p>Jet and Decstar, for hosting this mod.</p>
@@ -1346,15 +1348,16 @@ tooltipList = [
   {searchString: "Kasich", explanationText: "<img src=https://i.imgur.com/YcCbaxa.jpeg> John Kasich – Governor of Ohio and avowed moderate candidate."},
   {searchString: "Secretary of State", explanationText: "<img src=https://i.imgur.com/o17qabj.jpeg> She will go down as perhaps the worst Secretary of State. And now she wants to be POTUS?"},
   {searchString: "21-hour Senate filibuster", explanationText: "<img src=https://i.imgur.com/nD2r4i8.jpeg> From October 1 to October 17, 2013, the United States federal government entered a shutdown when the Republican-held House tried to defund Obamacare in the next annual appropriation bill, while the Democratic-controlled Senate refused. You played a large part in sparking the flames."},
-  {searchString: "Obergefell v. Hodges", explanationText: "<img src=https://i.imgur.com/gLBzhnI.png> In 2015, the Supreme Court ruled that state bans on gay marriage were illegal. God damn that deep state traitor Kennedy."},
+  {searchString: "Obergefell v. Hodges", explanationText: "<img src=https://i.imgur.com/gLBzhnI.png> In 2015, the Supreme Court ruled that state bans on gay marriage were illegal. May God punish that deep state traitor Antonin."},
   {searchString: "Heidi", explanationText: "<img src=https://i.imgur.com/EEYIvuQ.jpeg> Wife. The better half, and the one with fewer enemies."},
   {searchString: "radical Islamist terrorist attack in Nice, France left 86 dead and 450 injured.", explanationText: "<img src=https://i.imgur.com/bh8d5AS.jpeg> A radical terrorist from Tunisia used a rented truck to run over a crowd while people were celebrating Bastille Day in Nice, France."},
   {searchString: "RNC", explanationText: "<img src=https://i.imgur.com/LgWzE1T.png> What a failure."},
   {searchString: "Lester Holt", explanationText: "<img src=https://i.imgur.com/U4vKTzh.png> The guy who is moderating your debate. Doesn't help that he's a puppet for the puppet masters."},
-  {searchString: "Romney", explanationText: "<img src=https://i.imgur.com/HmeD7Ds.png> Doesn't talk much nowadays."},
+  {searchString: "Mitt Romney", explanationText: "<img src=https://i.imgur.com/HmeD7Ds.png> Doesn't talk much nowadays."},
   {searchString: "Pawlenty", explanationText: "<img src=https://i.imgur.com/ul0Oe3z.png> Timothy J. Pawlenty – Former Governor of Minnesota."},
   {searchString: "Jeff Roe", explanationText: "<img src=https://i.postimg.cc/90khJt8G/Jeffnted.png> Jeff Roe – Chief Campaign Manager."},
   {searchString: "Jeff", explanationText: "<img src=https://i.postimg.cc/90khJt8G/Jeffnted.png> Jeff Roe – Chief Campaign Manager."},
+  {searchString: "Carly Fiorina", explanationText: "<img src=https://i.imgur.com/JCWFk3t.png> Former CEO of HP."},
   {searchString: "Josh Mandel", explanationText: "<img src=https://i.imgur.com/dMeU9zH.png> Divorced."},
   {searchString: "Sheriff Jones", explanationText: "<img src=https://i.imgur.com/hsRTF1Q.png> Doug Dimmadome."}
 
