@@ -450,7 +450,7 @@ campaignTrail_temp.candidate_json = [
             "last_name": "Fiorina",
             "election": 20,
             "party": "Republican Party",
-            "state": "HP CEO",
+            "state": "Former HP CEO",
             "priority": 1,
             "description": "<p>Put description here</p>",
             "color_hex": "#A51214",
@@ -1331,7 +1331,7 @@ function addDynamicCSS() {
 addDynamicCSS();
 
 tooltipList = [
-  {searchString: "Donald Trump", explanationText: "<img src=https://i.imgur.com/LzbPeXB.png> That rich guy from New York. Known to be very bombastic."},
+  {searchString: "Donald Trump", explanationText: "<img src=https://i.imgur.com/LzbPeXB.png> That rich guy from New York, and one of your primary rivals."},
   {searchString: "Hillary Clinton", explanationText: "<img src=https://i.imgur.com/m4u5J6q.png> Leader of Planned Parenthood, gay marriage, and the Democratic deep state.<br>You must stop her."},
   {searchString: "Rubio", explanationText: "<img src=https://i.imgur.com/GXOGkB4.png> Marco Rubio – Senator from Florida."},
   {searchString: "Barack Obama", explanationText: "<img src=https://i.imgur.com/SGb8x0z.png> His term is coming to an end.<br>He spends his days destroying the Constitution and violating personal freedoms."},
