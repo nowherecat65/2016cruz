@@ -1,4 +1,4 @@
- Mod Title: Cruz '16
+ Mod Title: 2016: Tough as Texas
 
  Mod Author: TheMcCain
 
