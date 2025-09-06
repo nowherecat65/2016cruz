@@ -896,7 +896,7 @@ function setupMusicPlayer() {
   const song2 = new Song(
     "God Bless the U.S.A",
     "Lee Greenwood",
-    "https://i.imgur.com/EEOhyVm.png",
+    "https://i.imgur.com/elUafEV.png",
     "https://audio.jukehost.co.uk/A7K1Ha1w2kmRXPz8qC3DcNrQWxQTPTRs"
   );
 
