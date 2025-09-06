@@ -1331,7 +1331,7 @@ addDynamicCSS();
 tooltipList = [
   {searchString: "Donald Trump", explanationText: "<img src=https://i.imgur.com/LzbPeXB.png> That rich guy from New York, and one of your primary rivals."},
   {searchString: "Hillary Clinton", explanationText: "<img src=https://i.imgur.com/m4u5J6q.png> Leader of Planned Parenthood, gay marriage, and the Democratic deep state.<br>You must stop her."},
-  {searchString: "Rubio", explanationText: "<img src=https://i.imgur.com/GXOGkB4.png> Marco Rubio – Senator from Florida."},
+  {searchString: "Rubio", explanationText: "<img src=https://i.imgur.com/GXOGkB4.png> Marco Rubio – Senator from Florida. He was once known as a Tea Party conservative, but those days are long gone."},
   {searchString: "Barack Obama", explanationText: "<img src=https://i.imgur.com/SGb8x0z.png> His term is coming to an end.<br>He spends his days destroying the Constitution and violating personal freedoms."},
   {searchString: "Bernie Sanders", explanationText: "<img src=https://i.imgur.com/jaM9ZbG.jpeg> He's absolutely insane. Clinton probably gets her marching orders from him behind the scenes."},
   {searchString: "Roe v. Wade", explanationText: "<img src=https://i.imgur.com/eens7WG.jpeg> The greatest tragedy in the history of our nation."},
