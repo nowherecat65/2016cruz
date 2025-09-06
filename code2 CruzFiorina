@@ -590,7 +590,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1021,
         "fields": {
             "priority": 10,
-            "description": "At a semi-private fundraiser in New York, Hillary Clinton said to some wealthy donors, “You know, to just be grossly generalistic, you could put half of Cruz's supporters into what I call the basket of deplorables.” The crowd laughs. “They're racist, sexist, homophobic, xenophobic, Islamophobic, you name it.” She keeps going. “Some of those people.. they're irredeemable. But thankfully, they are not America.” Wow. You chuckle at how dumb she is. This is the time to strike, what do you do here?",
+            "description": "At a semi-private fundraiser in New York, Hillary Clinton said to some wealthy donors, “You know, to just be grossly generalistic, you could put half of Cruz's supporters into what I call the brigade of bigets” The crowd laughs. “They're racist, sexist, homophobic, xenophobic, Islamophobic, you name it.” She keeps going. “Some of those people.. they're irredeemable. But thankfully, they are not America.” Wow. You chuckle at how dumb she is. This is the time to strike, what do you do here?",
             "likelihood": 1
         }
     },
@@ -599,7 +599,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1014,
         "fields": {
             "priority": 10,
-            "description": "Just 2 days after her \"deplorable\" gaffe, Hillary Clinton was caught limping and being carried into a van during a 9/11 memorial ceremony. Hillary Clinton's ability to serve is being called into serious question. How will you take advantage of this incident?",
+            "description": "Just 2 days after her \"bigot\" gaffe, Hillary Clinton was caught limping and being carried into a van during a 9/11 memorial ceremony. Hillary Clinton's ability to serve is being called into serious question. How will you take advantage of this incident?",
             "likelihood": 1
         }
     },
@@ -1385,7 +1385,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51205,
         "fields": {
             "question": 1021,
-            "description": "Hillary Clinton's slogan is \"Stronger Together\", and then she proceeds to call us deplorables. And then she proceeds to whine about how divisive I am. What a hypocrite. We need to be pointing this out all the time on the campaign trail."
+            "description": "Hillary Clinton's slogan is \"Stronger Together\", and then she proceeds to call us bigots. And then she proceeds to whine about how divisive I am. What a hypocrite. We need to be pointing this out all the time on the campaign trail."
         }
     },
     {
@@ -1401,7 +1401,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51212,
         "fields": {
             "question": 1021,
-            "description": "If being a conservative makes me a deplorable, then I'm proud to be one. Vote for Hillary Clinton if you want your President to be a liberal elitist that hates you, that will allow partial birth abortions, and that will sell you out to Goldman Sachs, Saudi Arabia, and who knows what else."
+            "description": "If being a conservative makes me a bigot, then I'm proud to be one. Vote for Hillary Clinton if you want your President to be a liberal elitist that hates you, that will allow partial birth abortions, and that will sell you out to Goldman Sachs, Saudi Arabia, and who knows what else."
         }
     },
     {
@@ -6920,8 +6920,8 @@ campaignTrail_temp.answer_score_global_json = [
         "fields": {
             "answer": 5032,
             "candidate": 200,
-            "affected_candidate": 202,
-            "global_multiplier": -0.17
+            "affected_candidate": 200,
+            "global_multiplier": -0.169
         }
     },
     {
@@ -7540,7 +7540,7 @@ campaignTrail_temp.answer_score_global_json = [
         "fields": {
             "answer": 5031,
             "candidate": 200,
-            "affected_candidate": 209,
+            "affected_candidate": 200,
             "global_multiplier": -0.13
         }
     },
@@ -9478,7 +9478,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51229,
             "candidate": 200,
-            "answer_feedback": "A drawback to the “Deplorable” blunder I see. It’s a dodge, but there's nothing wrong with pivoting to Clinton's weak points. The heat dies down once Holt changes the topic, and overall you had a respectable performance."
+            "answer_feedback": "A drawback to the “bigot” blunder I see. It’s a dodge, but there's nothing wrong with pivoting to Clinton's weak points. The heat dies down once Holt changes the topic, and overall you had a respectable performance."
         }
     },
     {
