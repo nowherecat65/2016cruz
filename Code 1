@@ -451,7 +451,7 @@ campaignTrail_temp.candidate_json = [
             "last_name": "Fiorina",
             "election": 20,
             "party": "Republican Party",
-            "state": "Former HP CEO",
+            "state": "Ex-HP CEO",
             "priority": 1,
             "description": "<p>Put description here</p>",
             "color_hex": "#981619",
