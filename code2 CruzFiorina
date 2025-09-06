@@ -7466,12 +7466,32 @@ campaignTrail_temp.answer_score_global_json = [
     },
     {
         "model": "campaign_trail.answer_score_global",
+        "pk": 51161,
+        "fields": {
+            "answer": 51155,
+            "candidate": 200,
+            "affected_candidate": 201,
+            "global_multiplier": -0.0075
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
         "pk": 51162,
         "fields": {
             "answer": 51083,
             "candidate": 200,
             "affected_candidate": 200,
             "global_multiplier": 0.065
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 51162,
+        "fields": {
+            "answer": 51083,
+            "candidate": 200,
+            "affected_candidate": 201,
+            "global_multiplier": -0.005
         }
     },
     {
@@ -7562,6 +7582,16 @@ campaignTrail_temp.answer_score_global_json = [
             "candidate": 200,
             "affected_candidate": 200,
             "global_multiplier": 0.05
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 51192,
+        "fields": {
+            "answer": 51180,
+            "candidate": 200,
+            "affected_candidate": 201,
+            "global_multiplier": -0.0063
         }
     },
     {
@@ -9240,7 +9270,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51124,
             "candidate": 200,
-            "answer_feedback": "Trump is mad, but he eventually gives you a muted endorsement after some coercion and a prime speaking slot at the RNC this year. Apparently, he thinks he has a shot at a cabinet post. What a sad joke."
+            "answer_feedback": "Trump is furious, but he eventually gives you a muted endorsement after some coercion and a prime speaking slot at the RNC this year. Apparently, he thinks he has a shot at a cabinet post. What a sad joke."
         }
     },
     {
