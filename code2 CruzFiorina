@@ -563,7 +563,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1027,
         "fields": {
             "priority": 7,
-            "description": "The Clinton campaign has aired new advertisements attacking your stance on abortion and reproductive rights as backward and “from the 1950s.” What is your response?",
+            "description": "The Clinton campaign has aired new advertisements attacking your stance on abortion and reproductive rights, calling them backward and ''from the 1950s.'' What is your response?",
             "likelihood": 1
         }
     },
@@ -599,7 +599,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1014,
         "fields": {
             "priority": 10,
-            "description": "Just 2 days after her \"bigot\" gaffe, Hillary Clinton was caught limping and being carried into a van during a 9/11 memorial ceremony. Hillary Clinton's ability to serve is being called into serious question. How will you take advantage of this incident?",
+            "description": "Just two days after her ''bigot'' gaffe, Hillary Clinton was caught limping and being helped into a van during a 9/11 memorial ceremony. Her ability to serve is now being called into serious question. How will you take advantage of this incident?",
             "likelihood": 1
         }
     },
@@ -608,7 +608,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1025,
         "fields": {
             "priority": -6,
-            "description": "It is September 26th, 2016, and you're standing behind a podium. To your right, is Hillary, who is also standing behind a podium. The entire nation is watching. The establishment is no doubt rubbing their hands with glee, with the biased news networks on their sides. Clinton is finishing up her grandstanding, and just before she finishes, she says, “It’s almost as if he lives in his own world.. have you noticed the way he rants and raves while campaigning? Or how he lies every day? He’s a divisive nominee trying to tear us apart.” God damn her. Holt turns to you. The world turns to you. Make her pay.",
+            "description": "It is September 26th, 2016, and you’re standing behind a podium. So is Clinton. The entire nation is watching. The establishment is no doubt rubbing their hands with glee, with the biased news networks on their side. Clinton is finishing up her grandstanding, and just before she finishes, she says, ''It’s almost as if he lives in his own world… have you noticed the way he rants and raves while campaigning? Or how he lies every day? He’s a divisive nominee trying to tear us apart.'' God damn her. Lester Holt turns to you. The world turns to you. Make her pay.",
             "likelihood": 1
         }
     },
@@ -1161,7 +1161,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51030,
         "fields": {
             "question": 1020,
-            "description": "Mrs. Fiorina inherited a company rife with mismanagement and a tumultuous Compaq merger, and today HP remains one of America’s largest companies. If the Washington cartel considers that ''unfit to serve,'' that’s their problem, not mine."
+            "description": "Mrs. Fiorina inherited a company rife with mismanagement and burdened by a tumultuous Compaq merger, yet today HP remains one of America’s largest companies. If the Washington cartel considers that ''unfit to serve,'' that’s their problem, not mine."
         }
     },
     {
@@ -1393,7 +1393,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51207,
         "fields": {
             "question": 1021,
-            "description": "It's too blatant for us to gloat about it, but in reality this is fantastic news for us. It wouldn't hurt to have our allies attack her on this while I tackle other issues instead. Let her dig her own grave."
+            "description": "It’s too blatant for us to gloat about it, but in reality, this is fantastic news for us. It wouldn’t hurt to have our allies attack her on this while I tackle other issues instead. Let her dig her own grave."
         }
     },
     {
@@ -1401,7 +1401,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51212,
         "fields": {
             "question": 1021,
-            "description": "If being a conservative makes me a bigot, then I'm proud to be one. Vote for Hillary Clinton if you want your President to be a liberal elitist that hates you, that will allow partial birth abortions, and that will sell you out to Goldman Sachs, Saudi Arabia, and who knows what else."
+            "description": "If the left wants to call being a conservative ''bigotry,'' then they’re the ones with the problem, not us. Vote for Hillary Clinton if you want your president to be a liberal elitist who hates you, who will allow partial-birth abortions, and who will sell you out to Goldman Sachs, Saudi Arabia, and who knows what else."
         }
     },
     {
@@ -1425,7 +1425,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51228,
         "fields": {
             "question": 1025,
-            "description": "Really? She wants to play that game? What about the fact she stumbled into an ambulance last week? Or that she killed 4 Americans in Benghazi? Or that she's advocated for teenagers to murder their fetuses? Or that she cheated on her husband? She can go to hell for all I care. Fuck her."
+            "description": "Really? She wants to play that game? What about the fact she stumbled into an ambulance last week? Or that she killed four Americans in Benghazi? Or that she’s advocated for teenagers to murder their fetuses? Or that she cheated on her husband, she can go to hell for all I care. Fuck her."
         }
     },
     {
@@ -1433,7 +1433,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51229,
         "fields": {
             "question": 1025,
-            "description": "Did she seriously just say that in front of me? I think it's really funny how she's talking about being divisive, while a few weeks ago she was just ranting about how terrible half of America is. Who does she think she is? "
+            "description": "Did she seriously just say that in front of me? I think it’s really funny how she’s talking about being divisive, while a few weeks ago she was just ranting about how terrible half of America is. Who does she think she is? "
         }
     },
     {
@@ -1441,7 +1441,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51230,
         "fields": {
             "question": 1025,
-            "description": "That’s a lot more extreme then what I was expecting from Clinton, and we can use this. I’ll keep pushing her buttons, baiting her, then she'll lash out and look like she's a fool."
+            "description": "That’s a lot more extreme than what I was expecting from Clinton, and we can use this. I’ll keep pushing her buttons, baiting her, then she’ll lash out and look like she’s a fool."
         }
     },
     {
@@ -1465,7 +1465,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51264,
         "fields": {
             "question": 1025,
-            "description": "No, no no no. I'm not gonna let her bait me. She can keep raving all she wants, but I'm not gonna participate in a charade like that."
+            "description": "No, no, no, no. I’m not gonna let her bait me. She can keep raving all she wants, but I’m not gonna participate in a charade like that."
         }
     },
     {
@@ -1481,7 +1481,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51271,
         "fields": {
             "question": 1008,
-            "description": "Really? Does Mitch really think that I'm endorsing Rubio, who's worked with Chuck Schumer to allow illegals in? Or Kasich, who's admitted he's willing to compromise with Democrats? I don't think so. Whatever the voters say, that's the final word, and I'm not going to sacrfice my candidacy in some under-the-table deal."
+            "description": "Really? Does Mitch really think that I’m endorsing Rubio, who’s worked with Chuck Schumer to allow illegals in? Or Kasich, who’s admitted he’s willing to compromise with Democrats? I don’t think so. Whatever the voters say, that’s the final word, and I’m not going to sacrifice my candidacy in some under-the-table deal."
         }
     }
 ]
@@ -9469,7 +9469,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51228,
             "candidate": 200,
-            "answer_feedback": "The nation is shocked. Clinton is speechless, but you notice a slight smile creak from her face. The base welcomes its new culture warrior as a hero, and Fox applauds you for having the guts to stand up to the establishment. When the debate wraps up, you wonder if you played into her hand, and the New York Times insults your “lack of decency.”"
+            "answer_feedback": "The nation is shocked. Clinton is speechless, but you notice a slight smile creep across her face. The base eats the red meat like starved hyenas, and Fox applauds you for having the guts to stand up to the establishment, when the debate wraps up, you wonder if you played into her hand, and the New York Times insults your ''lack of decency.''"
         }
     },
     {
@@ -9478,7 +9478,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51229,
             "candidate": 200,
-            "answer_feedback": "A drawback to the “bigot” blunder I see. It’s a dodge, but there's nothing wrong with pivoting to Clinton's weak points. The heat dies down once Holt changes the topic, and overall you had a respectable performance."
+            "answer_feedback": "A callback to the “bigot” blunder, I see... it’s a dodge, but there’s nothing wrong with pivoting to Clinton’s weak points."
         }
     },
     {
@@ -9487,7 +9487,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51230,
             "candidate": 200,
-            "answer_feedback": "You ignore Clinton's remark and keep baiting her, constantly talking while it's her turn, talking about how corrupt she is, talking about how she hates America. You can see the anger building up in her skull. On the last question, while you're attacking her on Benghazi, and it seemed like she had enough. and she lashes out, yelling and screaming at you."
+            "answer_feedback": "You ignore Clinton’s remark and keep baiting her, constantly talking while it’s her turn, talking about how corrupt she is, talking about how she hates America. You can see the anger building up in her skull. On the last question, while you’re attacking her on Benghazi, it seems she’s had enough, and she lashes out, yelling and screaming at you."
         }
     },
     {
@@ -9496,7 +9496,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51264,
             "candidate": 200,
-            "answer_feedback": "You ignore her and keep arguing with Holt about the right to life and against gay marriage. It's only when you rewatch the debate on your phone that you realize how weak you looked."
+            "answer_feedback": "You blink, trying to get her out of your head. You try to ignore her and keep arguing with Holt about the right to life and against gay marriage, it’s only when you rewatch the debate on your phone that you realize how weak you looked."
         }
     },
     {
