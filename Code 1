@@ -1361,8 +1361,8 @@ tooltipList = [
   {searchString: "Hillary's just as sick as her husband.", explanationText: "<img src=https://i.imgur.com/aHTxNs8.png>"},
   {searchString: "Vince Foster", explanationText: "<img src=https://i.imgur.com/iQoKmB9.jpeg>Look at her trying to smile, saying she misses him, when she knows full well she ordered for him to be killed. Arrest her and bring him justice."},
   {searchString: "As the Presidential debate ends", explanationText: "<img src=https://i.imgur.com/byExr6Z.png>I easily won that debate, but of course, the biased news networks will say otherwise."},
-  {searchString: "Obergefell v. Hodges", explanationText: "<img src=https://i.imgur.com/gLBzhnI.png> In 2015, the Supreme Court ruled that state bans on  marriage were illegal. May God punish that deep state traitor Antonin."},
   {searchString: "Benghazi", explanationText: "<img src=https://i.imgur.com/XtSnrAP.jpeg> This is the work of our so-called experienced Secretary of State."},
+  {searchString: "Placeholder", explanationText: "<img src=https://i.imgur.com/XtSnrAP.jpeg> This is the work of our s"},
   {searchString: "Sheriff Jones", explanationText: "<img src=https://i.imgur.com/hsRTF1Q.png> Doug Dimmadome."}
 
       
