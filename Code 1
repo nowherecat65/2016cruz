@@ -21,9 +21,6 @@ e.VpText = '<font color="white">Please select your Vice Presidential nominee:</f
 e.HomeStateText = "Position:";
 e.PartyText = "Affiliation:";
 
-
-
-
 document.querySelectorAll("link[rel*='icon']").forEach(el => el.remove());
 
 const favican = document.createElement("link");
@@ -32,6 +29,10 @@ favican.type = "png";
 favican.href = "https://i.imgur.com/zUGKrED.png";
 
 document.head.appendChild(favican);
+
+
+// Right here are the custom styles. Buttons, dropdowns, sliders, etc.
+
 
 (() => {
   const css = `
@@ -237,9 +238,7 @@ tr:last-child td {
   }
 })();
 
-
-
-// Menu screen.
+// Opening screen.
 
 document.getElementById("inner_window_1").children[0].innerHTML="<h3>Welcome to Tough As Texas</i></h3>"
 
@@ -255,7 +254,6 @@ document.getElementById("inner_window_1").children[1].innerHTML =
 
 
 // Forces the background to be centered
-// Found this in the mod help discord server from StrawberryMaster
 function appendStyle() {
     if (!document.querySelector('meta[name="viewport"]')) {
         const metaTag = document.createElement('meta');
@@ -264,7 +262,6 @@ function appendStyle() {
         document.head.appendChild(metaTag);
     }
 
-    // Custom styles here
     if (!document.querySelector('#radio-option-style')) {
         const style = document.createElement('style');
         style.id = 'radio-option-style';
@@ -282,52 +279,119 @@ function appendStyle() {
 appendStyle();
 
 campaignTrail_temp.achievements = {
-    "Trumped" : {
+    "Y.M.C.A" : {
         "image" : "https://i.imgur.com/ucDsHMO.jpeg",
-        "description" : "Lose the nomination battle to Donald Trump."
+        "description" : "As Ted Cruz, lose the nomination battle to Donald Trump."
  },
-    "Little Marco, No More" : {
+    "If I Can't Win, Neither Can You" : {
         "image" : "https://i.imgur.com/RZWn5KE.jpeg",
-        "description" : "Back Marco Rubio at the convention to prevent Trump from winning.",
+        "description" : "As Ted Cruz, back Marco Rubio at the convention to prevent Trump from winning.",
         "cannotBeCheated" : true
     },
-    "Triumph of Conservatism" : {
+    "Unburdened By What's Been" : {
         "image" : "https://i.imgur.com/oNCDvpd.png",
-        "description" : "Defeat Hillary Clinton in a landslide win.",
+        "description" : "As Ted Cruz, defeat Hillary Clinton in a landslide.",
         "cannotBeCheated" : true
      },
-    "Cruzing to Failure" : {
+   "Cruz Will Lose" : {
         "image" : "https://i.imgur.com/snJSTQR.png",
         "description" : "As Ted Cruz, be defeated in a landslide.",
         "cannotBeCheated" : true
  },
-    "An Uneasy Alliance" : {
-        "image" : "https://i.imgur.com/hyfAjo9.jpeg",
+    "Make It Great Again" : {
+        "image" : "https://i.imgur.com/hyfAj9.jpeg",
         "description" : "Offer Trump a cabinet position, and go on to win the election.",
         "cannotBeCheated" : true
  },
-    "Walking the Walk" : {
-        "image" : "https://i.imgur.com/av9wXaB.png",
-        "description" : "Choose Scott Walker as your running mate, and go on to win.",
-        "cannotBeCheated" : true
- },
-      "We're With Her" : {
-        "image" : "https://i.imgur.com/9QJ7Gg7.png",
-        "description" : "As Ted Cruz, lose the election.",
-        "cannotBeCheated" : true
-},
        "Decisive Victory" : {
-        "image" : "https://i.imgur.com/hQEY9nV.png",
+        "image" : "https://i.imgur.com/hQEYnV.png",
         "description" : "As Ted Cruz, win the nomination without having to contest the convention.",
         "cannotBeCheated" : true
  },
-    "Ivy League Debater" : {
-        "image" : "https://i.imgur.com/yAeDFM5.png",
-        "description" : "Win every single debate.",
+       "Senate Majority Loser" : {
+        "image" : "https://i.imgur.com/hQE9nV.png",
+        "description" : "As Ted Cruz, piss off the establishment and win.",
+        "cannotBeCheated" : true
+ },
+        "A Decent Man" : {
+        "image" : "https://i.imgur.com/hEY9nV.png",
+        "description" : "As Ted Cruz, take the high road and be as compassionate as possible, and win.",
+        "cannotBeCheated" : true
+  },
+        "Soul Sold" : {
+        "image" : "https://i.imgur.com/hQY9nV.png",
+        "description" : "As Ted Cruz, sell your soul to the lobbies.",
+        "cannotBeCheated" : true
+ },
+   "And I Took It Personally" : {
+        "image" : "https://i.imgur.com/hQE9nV.png",
+        "description" : "As Ted Cruz, lash out at Hillary at the debate and still win",
+        "cannotBeCheated" : true
+  },
+"Karmic Retribution" : {
+        "image" : "https://i.imgur.com/hQE9nV.png",
+        "description" : "Teach Hillary some justice.",
+        "cannotBeCheated" : true
+  },
+"Sellouts Suffer" : {
+        "image" : "https://i.imgur.com/hQY9nV.png",
+        "description" : "As Ted Cruz, lose everything after selling out to the lobbies.",
+        "cannotBeCheated" : true
+  },
+"She's the Zodiac" : {
+        "image" : "https://i.imgur.com/hQY9nV.png",
+        "description" : "As Ted Cruz, win while suggesting that Hillary killed someone.",
+        "cannotBeCheated" : true
+  },
+"He's Not Barack" : {
+        "image" : "https://i.imgur.com/hQE9nV.png",
+        "description" : "As Ted Cruz, win while attacking Obama at every opportunity.",
+        "cannotBeCheated" : true
+  },
+"We Have The Technology" : {
+        "image" : "https://i.imgur.com/hQY9nV.png",
+        "description" : "As Ted Cruz, use some fancy new outreach technology to your advantage.",
+        "cannotBeCheated" : true
+  },
+"For Shame" : {
+        "image" : "https://i.imgur.com/hQE9nV.png",
+        "description" : "Watch Hillary cry as he loses the election to a House vote.",
+        "cannotBeCheated" : true
+  },
+"Not My President" : {
+        "image" : "https://i.imgur.com/hQY9nV.png",
+        "description" : "As Ted Cruz, win while losing the popular vote.",
+        "cannotBeCheated" : true
+  },
+"“i WOn THe NaTIOnAl eLECTiON!!”" : {
+        "image" : "https://i.imgur.com/hQY9nV.png",
+        "description" : "As Ted Cruz, win while <i>winning</i> the popular vote.",
+        "cannotBeCheated" : true
+  },
+"Man of the People" : {
+        "image" : "https://i.imgur.com/hQY9nV.png",
+        "description" : "As Ted Cruz, win while pushing for a national abortion ban.",
+        "cannotBeCheated" : true
+  },
+"History Arrives All The Same" : {
+        "image" : "https://i.imgur.com/hQE9nV.png",
+        "description" : "As Ted Cruz, win while carrying Michigan, Pennsylvania, and Wisconsin.",
+        "cannotBeCheated" : true
+  },
+"All Thanks to Wisconsin" : {
+        "image" : "https://i.imgur.com/hQE9nV.png",
+        "description" : "As Ted Cruz, win by 1 single electoral vote.",
+        "cannotBeCheated" : true
+  },
+    "Forever Lost" : {
+        "image" : "https://i.imgur.com/yADFM5.png",
+        "description" : "Come so close, so close, yet so far.",
         "cannotBeCheated" : true
 
     }
 }
+
+
 campaignTrail_temp.modBoxTheme = {
      "header_color": "#2b2929",
      "header_image_url": "https://i.imgur.com/FWN8Ld1.png",
