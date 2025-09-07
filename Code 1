@@ -15,7 +15,7 @@
 // * By using, distributing, or modifying this mod, you agree to abide by the terms and conditions of both the Apache License 2.0 and the Creative Commons Attribution 4.0 International (CC BY 4.0) license.
 
 // Global text variables
-e.SelectText = '<font color="white">2016: Tough as Texas</font>';
+e.SelectText = '<font color="white">Please confirm you will play:</font>';
 e.CandidText = '<font color="white">Please select your Presidential nominee:</font>';
 e.VpText = '<font color="white">Please select your Vice Presidential nominee:</font>';
 e.HomeStateText = "Position:";
