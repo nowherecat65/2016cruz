@@ -1358,12 +1358,15 @@ tooltipList = [
   {searchString: "Jeff", explanationText: "<img src=https://i.postimg.cc/90khJt8G/Jeffnted.png> Jeff Roe – Chief Campaign Manager, and a good friend of yours."},
   {searchString: "Carly Fiorina", explanationText: "<img src=https://i.imgur.com/JCWFk3t.png> Former CEO of HP."},
   {searchString: "Chelsea", explanationText: "<img src=https://i.imgur.com/gXrY6co.png> Hillary's annoying daughter that won't shut up."},
-  {searchString: "Hillary's just as sick as her husband.", explanationText: "<img src=https://i.imgur.com/aHTxNs8.png>"},
+  {searchString: "Hillary's just as sick as her husband.", explanationText: "<img src=https://i.imgur.com/Fnc6aZi.jpeg>Monica-Lewinsky. I was just an Attorney back then. Simpler times. Hillary was probably sleeping with someone she met 2 weeks ago a few hours before this speech. Probably where Chelsea came from."},
   {searchString: "Vince Foster", explanationText: "<img src=https://i.imgur.com/iQoKmB9.jpeg>Look at her trying to smile, saying she misses him, when she knows full well she ordered for him to be killed. And now she wants to be President."},
   {searchString: "As the Presidential debate ends", explanationText: "<img src=https://i.imgur.com/byExr6Z.png>I easily won that debate, but of course, the biased news networks will say otherwise."},
   {searchString: "Benghazi", explanationText: "<img src=https://i.imgur.com/XtSnrAP.jpeg> This is the work of our so-called experienced Secretary of State."},
   {searchString: "phone", explanationText: "<img src=https://i.imgur.com/brGdIvB.png>Hillary doesn't even know how to hold one! Heh. “Hey, Heidi, how do I go on YouTube again?”"},
   {searchString: "phones", explanationText: "<img src=https://i.imgur.com/brGdIvB.png>Hillary doesn't even know how to hold one! Heh. “Hey, Heidi, how do I go on YouTube again?”"},
+  {searchString: "foundation", explanationText: "<img src=https://i.imgur.com/WyO0bkU.jpeg>The Clinton Foundation is how Hillary got wealthy off a country she hates. As Secretary, she became a slave for Goldman Sachs and Saudi Arabia in exchange for money."},
+  {searchString: "AIPAC", explanationText: "<img src=https://i.imgur.com/TuNiflZ.png>I don't really care about Israel, I'm sure 90% of people on Capitol Hill don't, but I pretend to love 'em so I get that AIPAC money. Genius, right?"},
+  {searchString: "2000 Redux", explanationText: "<img src=https://i.imgur.com/T2sCCVP.jpeg> The nostalgia is kicking in..."},
   {searchString: "Placeholder", explanationText: "<img src=https://i.imgur.com/XtSnrAP.jpeg> This is the work of our s"},
   {searchString: "Sheriff Jones", explanationText: "<img src=https://i.imgur.com/hsRTF1Q.png> Doug Dimmadome."}
 
