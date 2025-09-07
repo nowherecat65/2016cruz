@@ -278,6 +278,8 @@ function appendStyle() {
 
 appendStyle();
 
+// Achievements
+
 campaignTrail_temp.achievements = {
     "Y.M.C.A" : {
         "image" : "https://i.imgur.com/ucDsHMO.jpeg",
@@ -298,38 +300,38 @@ campaignTrail_temp.achievements = {
         "description" : "As Ted Cruz, be defeated in a landslide.",
         "cannotBeCheated" : true
  },
-    "Make It Great Again" : {
-        "image" : "https://i.imgur.com/hyfAj9.jpeg",
-        "description" : "Offer Trump a cabinet position, and go on to win the election.",
+    "Darker Vision" : {
+        "image" : "https://i.imgur.com/X1XuTAz.png",
+        "description" : "Ally with Trump and win the election.",
         "cannotBeCheated" : true
  },
        "Decisive Victory" : {
-        "image" : "https://i.imgur.com/hQEYnV.png",
+        "image" : "https://i.imgur.com/hQEY9nV.png",
         "description" : "As Ted Cruz, win the nomination without having to contest the convention.",
         "cannotBeCheated" : true
  },
        "Senate Majority Loser" : {
-        "image" : "https://i.imgur.com/hQE9nV.png",
+        "image" : "https://i.imgur.com/bqwD99F.png",
         "description" : "As Ted Cruz, piss off the establishment and win.",
         "cannotBeCheated" : true
  },
         "A Decent Man" : {
-        "image" : "https://i.imgur.com/hEY9nV.png",
+        "image" : "https://i.imgur.com/vXFWQfC.png",
         "description" : "As Ted Cruz, take the high road and be as compassionate as possible, and win.",
         "cannotBeCheated" : true
   },
         "Soul Sold" : {
-        "image" : "https://i.imgur.com/hQY9nV.png",
+        "image" : "https://i.imgur.com/9WBQDz6.png",
         "description" : "As Ted Cruz, sell your soul to the lobbies.",
         "cannotBeCheated" : true
  },
    "And I Took It Personally" : {
-        "image" : "https://i.imgur.com/hQE9nV.png",
+        "image" : "https://i.imgur.com/tLXBkyr.png",
         "description" : "As Ted Cruz, lash out at Hillary at the debate and still win",
         "cannotBeCheated" : true
   },
 "Karmic Retribution" : {
-        "image" : "https://i.imgur.com/hQE9nV.png",
+        "image" : "https://i.imgur.com/iahmfGX.jpeg",
         "description" : "Teach Hillary some justice.",
         "cannotBeCheated" : true
   },
@@ -349,7 +351,7 @@ campaignTrail_temp.achievements = {
         "cannotBeCheated" : true
   },
 "We Have The Technology" : {
-        "image" : "https://i.imgur.com/hQY9nV.png",
+        "image" : "https://i.imgur.com/FfPYBkD.png",
         "description" : "As Ted Cruz, use some fancy new outreach technology to your advantage.",
         "cannotBeCheated" : true
   },
@@ -359,7 +361,7 @@ campaignTrail_temp.achievements = {
         "cannotBeCheated" : true
   },
 "Not My President" : {
-        "image" : "https://i.imgur.com/hQY9nV.png",
+        "image" : "https://i.imgur.com/n8p2cVq.png",
         "description" : "As Ted Cruz, win while losing the popular vote.",
         "cannotBeCheated" : true
   },
