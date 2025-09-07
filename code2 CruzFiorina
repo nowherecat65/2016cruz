@@ -591,7 +591,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1021,
         "fields": {
             "priority": 10,
-            "description": "At a semi-private fundraiser in New York, Hillary Clinton said to some wealthy donors, “You know, to just be grossly generalistic, you could call about half of Cruz’s supporters what I call the brigade of bigots.” The crowd laughs. “They're racist, sexist, homophobic, xenophobic, Islamophobic, you name it.” She keeps going. “Some of those people.. they're irredeemable. But thankfully, they are not America.” Wow. You chuckle at how dumb she is. This is the time to strike, what do you do here?",
+            "description": "At a semi-private fundraiser in New York, Hillary Clinton said to some wealthy donors, “You know, to just be grossly generalistic, you could call about half of Cruz’s supporters what I call the brigade of bigots.” The crowd laughs. “They're racist, sexist, homophobic, xenophobic, Islamophobic, you name it.” She keeps going. “Some of those people.. they're irredeemable. But thankfully, they are not America.” This makes your blood boil, but this is also a massive chance. The news men are already relentlessly slamming her, and now is the time to strike, what do you do here?",
             "likelihood": 1
         }
     },
@@ -600,7 +600,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1014,
         "fields": {
             "priority": 10,
-            "description": "Just two days after her ''deplorable'' blunder, Hillary Clinton was caught limping and being helped into a van during a 9/11 memorial ceremony. Her ability to serve is now being called into serious question. How will you take advantage of this incident?",
+            "description": "Just two days after her ''bigot'' blunder, Hillary Clinton was caught limping and being helped into a van during a 9/11 memorial ceremony. Her ability to serve is now being called into serious question. How will you take advantage of this incident?",
             "likelihood": 1
         }
     },
@@ -1450,7 +1450,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51262,
         "fields": {
             "question": 1026,
-            "description": "Y'know. There's some theories that say she killed somebody. What was his name? Vince Foster. Now, obviously, we can't just say that she killed somebody, but with the right messaging... Given how corrupt she is, it's probably true. He had something on her."
+            "description": "Y'know. There's some theories that say she killed somebody. What was his name? Vince Foster. Now, obviously, we can't just say that she killed somebody...but...you know what. Yes we can. Hillary Clinton is without a doubt the worst, most incompetent official that this country has ever had, and she arranged for a man to be murdered. The FBI might say otherwise, and that's because Hillary has them in her pocket too."
         }
     },
     {
@@ -1506,7 +1506,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51294,
         "fields": {
             "question": 1026,
-            "description": "She's a total flip-flopper. She was just talking at an AIPAC event about how much she loves Israel, then she calls me Islamophobic. She talks about how she's a unifier, then calls half of America deplorable."
+            "description": "She's a total flip-flopper. She was just talking at an AIPAC event about how much she loves Israel, then she calls me Islamophobic. She talks about how she's a unifier, then calls half of America bigoted."
         }
     }
 ]
@@ -9463,7 +9463,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51229,
             "candidate": 200,
-            "answer_feedback": "A callback to the “deplorable” blunder, I see... it’s a dodge, but there’s nothing wrong with pivoting to Clinton’s weak points. In any case, Hillary won't shut up with her same bland response to it. “Half of was generalistic...”"
+            "answer_feedback": "A callback to the “bigot” blunder, I see... it’s a dodge, but there’s nothing wrong with pivoting to Clinton’s weak points. In any case, Hillary won't shut up with her same bland response to it. “Half of was generalistic...”"
         }
     },
     {
