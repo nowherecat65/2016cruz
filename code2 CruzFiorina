@@ -1,4 +1,3 @@
-
 let republican = "Ted Cruz";
 let vpname = "Carly Fiorina";
 let democrat = "Hillary Clinton";
@@ -229,6 +228,11 @@ function getQuestionNumberFromPk(pk) {
 
 cyoAdventure = function (a) {
     ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length-1];
+
+  if (ans == 51216 || ans == 51219 || ans == 51263 || ans == 51297) {
+  campaignTrail_temp.candidate_image_url = 'https://files.catbox.moe/sprxev.gif'
+  campaignTrail_temp.running_mate_image_url = 'https://files.catbox.moe/r3lt82.gif';
+}
 
   if (ans == 51271 || ans == 51084) {
         campaignTrail_temp.candidate_json[0]["fields"].first_name = "Donald";
