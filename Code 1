@@ -1371,40 +1371,6 @@ tooltipList = [
 ];
 
 
-function addDynamicCSS() {
-    var css = `
-		.inner_window_question {
-            height: auto;
-		}
-		.inner_window_question .inner_inner_window {
-            height: auto;
-		}
-		.inner_window_question .inner_inner_window .question_form {
-            height: auto;
-		}
-
-.overlay_window {
-            height: auto;
-		}
-
-.recommended_reading_box {
-            height: auto;
-            }
-
-	
-    `;
-
-    var styleElem = document.createElement('style');
-    styleElem.type = 'text/css';
-    
-    styleElem.appendChild(document.createTextNode(css));
-    
-    document.head.appendChild(styleElem);
-}
-
-addDynamicCSS();
-
-
 // "More" buttons and "Back" buttons here
 
 next0 = function() {
