@@ -356,12 +356,12 @@ campaignTrail_temp.achievements = {
         "cannotBeCheated" : true
   },
 "Not My President" : {
-        "image" : "https://i.imgur.com/Byk1Fdx.png",
+        "image" : "https://i.imgur.com/CRm7RpG.png",
         "description" : "As Ted Cruz, win while losing the popular vote.",
         "cannotBeCheated" : true
   },
 "“i WOn THe NaTIOnAl eLECTiON!!”" : {
-        "image" : "https://i.imgur.com/k9nogMi.png",
+        "image" : "https://i.imgur.com/EJ7H2Bt.png",
         "description" : "As Ted Cruz, win while <i>winning</i> the popular vote.",
         "cannotBeCheated" : true
   },
@@ -371,7 +371,7 @@ campaignTrail_temp.achievements = {
         "cannotBeCheated" : true
   },
 "History Arrives All The Same" : {
-        "image" : "https://i.imgur.com/hQE9nV.png",
+        "image" : "https://i.imgur.com/vdBFKe1.png",
         "description" : "As Ted Cruz, win while carrying Michigan, Pennsylvania, and Wisconsin.",
         "cannotBeCheated" : true
   },
