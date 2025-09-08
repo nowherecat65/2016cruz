@@ -321,12 +321,12 @@ campaignTrail_temp.achievements = {
         "cannotBeCheated" : true
  },
    "And I Took It Personally" : {
-        "image" : "https://i.imgur.com/tLXBkyr.png",
+        "image" : "https://i.imgur.com/kfcQeGJ.png",
         "description" : "As Ted Cruz, lash out at Hillary at the debate and still win",
         "cannotBeCheated" : true
   },
 "Karmic Retribution" : {
-        "image" : "https://i.imgur.com/iahmfGX.jpeg",
+        "image" : "https://i.imgur.com/Ec72hu1.png",
         "description" : "Teach Hillary some justice.",
         "cannotBeCheated" : true
   },
@@ -376,7 +376,7 @@ campaignTrail_temp.achievements = {
         "cannotBeCheated" : true
   },
 "All Thanks to Wisconsin" : {
-        "image" : "https://i.imgur.com/hQE9nV.png",
+        "image" : "https://i.imgur.com/YtthSWJ.png",
         "description" : "As Ted Cruz, win by 1 single electoral vote.",
         "cannotBeCheated" : true
   },
