@@ -306,7 +306,7 @@ campaignTrail_temp.achievements = {
         "cannotBeCheated" : true
  },
        "Senate Majority Loser" : {
-        "image" : "https://i.imgur.com/bqwD99F.png",
+        "image" : "https://i.imgur.com/PvF5m1E.png",
         "description" : "As Ted Cruz, piss off the establishment and win.",
         "cannotBeCheated" : true
  },
@@ -330,9 +330,9 @@ campaignTrail_temp.achievements = {
         "description" : "Teach Hillary some justice.",
         "cannotBeCheated" : true
   },
-"Sellouts Suffer" : {
+"...It's Over?" : {
         "image" : "https://i.imgur.com/hQY9nV.png",
-        "description" : "As Ted Cruz, lose everything after selling out to the lobbies.",
+        "description" : "See the error of your ways.",
         "cannotBeCheated" : true
   },
 "She's the Zodiac" : {
@@ -350,9 +350,9 @@ campaignTrail_temp.achievements = {
         "description" : "As Ted Cruz, use some fancy new outreach technology to your advantage.",
         "cannotBeCheated" : true
   },
-"For Shame" : {
+"Votes, Not Voters" : {
         "image" : "https://i.imgur.com/hQE9nV.png",
-        "description" : "Watch Hillary cry as he loses the election to a House vote.",
+        "description" : "Win the election in a house vote.",
         "cannotBeCheated" : true
   },
 "Not My President" : {
@@ -365,9 +365,9 @@ campaignTrail_temp.achievements = {
         "description" : "As Ted Cruz, win while <i>winning</i> the popular vote.",
         "cannotBeCheated" : true
   },
-"Man of the People" : {
+"A Real Warrior" : {
         "image" : "https://i.imgur.com/hQY9nV.png",
-        "description" : "As Ted Cruz, win while pushing for a national abortion ban.",
+        "description" : "As Ted Cruz, win while pushing for a national abortion ban and the restriction of same-sex marriage.",
         "cannotBeCheated" : true
   },
 "History Arrives All The Same" : {
@@ -380,8 +380,8 @@ campaignTrail_temp.achievements = {
         "description" : "As Ted Cruz, win by 1 single electoral vote.",
         "cannotBeCheated" : true
   },
-    "Forever Lost" : {
-        "image" : "https://i.imgur.com/yADFM5.png",
+    "Forever Defeated" : {
+        "image" : "https://i.imgur.com/f9ZwWEi.png",
         "description" : "Come so close, so close, yet so far.",
         "cannotBeCheated" : true
 
