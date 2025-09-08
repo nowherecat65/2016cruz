@@ -282,26 +282,26 @@ appendStyle();
 
 campaignTrail_temp.achievements = {
     "Tariff Man" : {
-        "image" : "https://i.imgur.com/7FuivM6.png",
+        "image" : "https://i.imgur.com/xzR9Xgq.png",
         "description" : "As Ted Cruz, lose the nomination battle to Donald Trump." // 
  },
     "Worthy Sacrifice" : {
-        "image" : "https://i.imgur.com/RZWn5KE.jpeg",
+        "image" : "https://i.imgur.com/GU9Z3Cg.png",
         "description" : "As Ted Cruz, back Marco Rubio at the convention to prevent Trump from winning.",
         "cannotBeCheated" : true
     },
     "Unburdened By What's Been" : {
-        "image" : "https://i.imgur.com/oNCDvpd.png",
+        "image" : "https://i.imgur.com/tPr5UZK.png",
         "description" : "As Ted Cruz, defeat Hillary Clinton in a landslide.",
         "cannotBeCheated" : true
      },
     "Darker Vision" : {
-        "image" : "https://i.imgur.com/X1XuTAz.png",
+        "image" : "https://i.imgur.com/1MWng8O.png",
         "description" : "Ally with Trump and win the election.",
         "cannotBeCheated" : true
  },
        "Decisive Victory" : {
-        "image" : "https://i.imgur.com/hQEY9nV.png",
+        "image" : "https://i.imgur.com/ouKrLom.png",
         "description" : "As Ted Cruz, win the nomination without having to contest the convention.",
         "cannotBeCheated" : true
  },
@@ -310,16 +310,12 @@ campaignTrail_temp.achievements = {
         "description" : "As Ted Cruz, piss off the establishment and win.",
         "cannotBeCheated" : true
  },
-        "A Decent Man" : {
-        "image" : "https://i.imgur.com/vXFWQfC.png",
+        "Cruz, If He Was Actually A Good Guy" : {
+        "image" : "https://i.imgur.com/M3GaSZP.png",
         "description" : "As Ted Cruz, take the high road and be as compassionate as possible, and win.",
         "cannotBeCheated" : true
   },
-        "Soul Sold" : {
-        "image" : "https://i.imgur.com/9WBQDz6.png",
-        "description" : "As Ted Cruz, sell your soul to the lobbies.",
-        "cannotBeCheated" : true
- },
+
    "And I Took It Personally" : {
         "image" : "https://i.imgur.com/kfcQeGJ.png",
         "description" : "As Ted Cruz, lash out at Hillary at the debate and still win",
@@ -330,13 +326,13 @@ campaignTrail_temp.achievements = {
         "description" : "Teach Hillary some justice.", // Accuse Hillary of killing Vince Foster and pledge to lock her up. This is an ending I have in mind.
         "cannotBeCheated" : true
   },
-"...It's Over?" : {
+"...Decency Prevails?" : {
         "image" : "https://i.imgur.com/hQY9nV.png",
-        "description" : "See the error of your ways.", // An idea for cyoa where if you sell out then a secret path is unlocked
+        "description" : "See the error of your ways.",
         "cannotBeCheated" : true
   },
 "She's the Zodiac" : {
-        "image" : "https://i.imgur.com/hQY9nV.png",
+        "image" : "https://i.imgur.com/SNDhRMU.png",
         "description" : "As Ted Cruz, win while suggesting that Hillary killed someone.",
         "cannotBeCheated" : true
   },
@@ -352,7 +348,7 @@ campaignTrail_temp.achievements = {
   },
 "Votes, Not Voters" : {
         "image" : "https://i.imgur.com/hQE9nV.png",
-        "description" : "Win the election in a house vote.",
+        "description" : "Win the election through a tie and a house vote.",
         "cannotBeCheated" : true
   },
 "Not My President" : {
@@ -360,7 +356,7 @@ campaignTrail_temp.achievements = {
         "description" : "As Ted Cruz, win while losing the popular vote.",
         "cannotBeCheated" : true
   },
-"A Real Warrior" : {
+"Culture Warrior" : {
         "image" : "https://i.imgur.com/hQY9nV.png",
         "description" : "As Ted Cruz, win while pushing for a national abortion ban and the restriction of same-sex marriage.",
         "cannotBeCheated" : true
@@ -377,7 +373,7 @@ campaignTrail_temp.achievements = {
   },
     "Forever Defeated" : {
         "image" : "https://i.imgur.com/f9ZwWEi.png",
-        "description" : "Come so close, so close, yet so far.", // Lose the presidency by less then 10 electoral votes
+        "description" : "Come so close, yet so far.", // Lose the presidency by less then 10 electoral votes
         "cannotBeCheated" : true
 
     }
