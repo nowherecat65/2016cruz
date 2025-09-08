@@ -281,8 +281,8 @@ appendStyle();
 // Achievements
 
 campaignTrail_temp.achievements = {
-    "Y.M.C.A" : {
-        "image" : "https://i.imgur.com/ucDsHMO.jpeg",
+    "Tariff Man" : {
+        "image" : "https://i.imgur.com/7FuivM6.png",
         "description" : "As Ted Cruz, lose the nomination battle to Donald Trump." // 
  },
     "Worthy Sacrifice" : {
