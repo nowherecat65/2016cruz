@@ -285,7 +285,7 @@ campaignTrail_temp.achievements = {
         "image" : "https://i.imgur.com/ucDsHMO.jpeg",
         "description" : "As Ted Cruz, lose the nomination battle to Donald Trump."
  },
-    "If I Can't Win, Neither Can You" : {
+    "Worthy Sacrifice" : {
         "image" : "https://i.imgur.com/RZWn5KE.jpeg",
         "description" : "As Ted Cruz, back Marco Rubio at the convention to prevent Trump from winning.",
         "cannotBeCheated" : true
@@ -390,12 +390,12 @@ campaignTrail_temp.achievements = {
 
 
 campaignTrail_temp.modBoxTheme = {
-     "header_color": "#2b2929",
+     "header_color": "#0c0c0d",
      "header_image_url": "https://i.imgur.com/FWN8Ld1.png",
      "header_text_color": "#ffffff",
      "description_text_color": "#e8eaed",
      "description_background_color": "#252626",
-     "main_color": "#2e2d2d",
+     "main_color": "#12141a",
      "secondary_color": "#424040",
      "ui_text_color": "#FFFFFF"
 }
