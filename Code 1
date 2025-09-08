@@ -295,11 +295,6 @@ campaignTrail_temp.achievements = {
         "description" : "As Ted Cruz, defeat Hillary Clinton in a landslide.",
         "cannotBeCheated" : true
      },
-   "Cruz Will Lose" : {
-        "image" : "https://i.imgur.com/snJSTQR.png",
-        "description" : "As Ted Cruz, be defeated in a landslide.",
-        "cannotBeCheated" : true
- },
     "Darker Vision" : {
         "image" : "https://i.imgur.com/X1XuTAz.png",
         "description" : "Ally with Trump and win the election.",
@@ -351,7 +346,7 @@ campaignTrail_temp.achievements = {
         "cannotBeCheated" : true
   },
 "We Have The Technology" : {
-        "image" : "https://i.imgur.com/FfPYBkD.png",
+        "image" : "https://i.imgur.com/dAAkY6v.png",
         "description" : "As Ted Cruz, use some fancy new outreach technology to your advantage.",
         "cannotBeCheated" : true
   },
@@ -361,12 +356,12 @@ campaignTrail_temp.achievements = {
         "cannotBeCheated" : true
   },
 "Not My President" : {
-        "image" : "https://i.imgur.com/n8p2cVq.png",
+        "image" : "https://i.imgur.com/Byk1Fdx.png",
         "description" : "As Ted Cruz, win while losing the popular vote.",
         "cannotBeCheated" : true
   },
 "“i WOn THe NaTIOnAl eLECTiON!!”" : {
-        "image" : "https://i.imgur.com/hQY9nV.png",
+        "image" : "https://i.imgur.com/k9nogMi.png",
         "description" : "As Ted Cruz, win while <i>winning</i> the popular vote.",
         "cannotBeCheated" : true
   },
