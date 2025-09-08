@@ -396,7 +396,7 @@ campaignTrail_temp.modBoxTheme = {
      "description_text_color": "#e8eaed",
      "description_background_color": "#252626",
      "main_color": "#12141a",
-     "secondary_color": "#424040",
+     "secondary_color": "#242424",
      "ui_text_color": "#FFFFFF"
 }
 
