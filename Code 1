@@ -283,7 +283,7 @@ appendStyle();
 campaignTrail_temp.achievements = {
     "Tariff Man" : {
         "image" : "https://i.imgur.com/xzR9Xgq.png",
-        "description" : "As Ted Cruz, lose the nomination battle to Donald Trump." // 
+        "description" : "As Ted Cruz, lose the nomination to Donald Trump." // 
  },
     "Worthy Sacrifice" : {
         "image" : "https://i.imgur.com/GU9Z3Cg.png",
@@ -297,7 +297,7 @@ campaignTrail_temp.achievements = {
      },
     "Darker Vision" : {
         "image" : "https://i.imgur.com/1MWng8O.png",
-        "description" : "Ally with Trump and win the election.",
+        "description" : "As Ted Cruz, ally with Trump and win the election.",
         "cannotBeCheated" : true
  },
        "Decisive Victory" : {
@@ -315,22 +315,18 @@ campaignTrail_temp.achievements = {
         "description" : "As Ted Cruz, take the high road and be as compassionate as possible, and win.",
         "cannotBeCheated" : true
   },
+"All Thanks to Wisconsin" : {
+        "image" : "https://i.imgur.com/YtthSWJ.png",
+        "description" : "As Ted Cruz, win by 1 single electoral vote.",
+        "cannotBeCheated" : true
+  },
 
    "And I Took It Personally" : {
         "image" : "https://i.imgur.com/kfcQeGJ.png",
         "description" : "As Ted Cruz, lash out at Hillary at the debate and still win",
         "cannotBeCheated" : true
   },
-"Karmic Retribution" : {
-        "image" : "https://i.imgur.com/Ec72hu1.png",
-        "description" : "Teach Hillary some justice.", // Accuse Hillary of killing Vince Foster and pledge to lock her up. This is an ending I have in mind.
-        "cannotBeCheated" : true
-  },
-"...Decency Prevails?" : {
-        "image" : "https://i.imgur.com/hQY9nV.png",
-        "description" : "See the error of your ways.",
-        "cannotBeCheated" : true
-  },
+
 "She's the Zodiac" : {
         "image" : "https://i.imgur.com/SNDhRMU.png",
         "description" : "As Ted Cruz, win while suggesting that Hillary killed someone.",
@@ -366,14 +362,20 @@ campaignTrail_temp.achievements = {
         "description" : "As Ted Cruz, win while carrying Michigan, Pennsylvania, and Wisconsin.",
         "cannotBeCheated" : true
   },
-"All Thanks to Wisconsin" : {
-        "image" : "https://i.imgur.com/YtthSWJ.png",
-        "description" : "As Ted Cruz, win by 1 single electoral vote.",
+
+"Karmic Retribution" : {
+        "image" : "https://i.imgur.com/Ec72hu1.png",
+        "description" : "Teach Hillary some justice.", // Accuse Hillary of killing Vince Foster and pledge to lock her up. This is an ending I have in mind.
+        "cannotBeCheated" : true
+  },
+"The Void" : {
+        "image" : "https://i.imgur.com/Ec7u1.png",
+        "description" : "See something you weren't supposed to see.",
         "cannotBeCheated" : true
   },
     "Forever Defeated" : {
         "image" : "https://i.imgur.com/f9ZwWEi.png",
-        "description" : "Come so close, yet so far.", // Lose the presidency by less then 10 electoral votes
+        "description" : "Come so close, yet so far.", // Unsure of what this should be lol
         "cannotBeCheated" : true
 
     }
@@ -1455,10 +1457,9 @@ tooltipList = [
   {searchString: "Vince Foster", explanationText: "<img src=https://i.imgur.com/iQoKmB9.jpeg>Look at her trying to smile, saying she misses him, when she knows full well she ordered for him to be killed. And now she wants to be President."},
   {searchString: "As the Presidential debate ends", explanationText: "<img src=https://i.imgur.com/byExr6Z.png>I easily won that debate, but of course, the biased news networks will say otherwise."},
   {searchString: "Benghazi", explanationText: "<img src=https://i.imgur.com/XtSnrAP.jpeg> This is the work of our so-called experienced Secretary of State."},
-  {searchString: "phone", explanationText: "<img src=https://i.imgur.com/brGdIvB.png>Hillary doesn't even know how to hold one! Heh. “Hey, Heidi, how do I go on YouTube again?”"},
+  {searchString: "phone", explanationText: "<img src=https://i.imgur.com/brGdIvB.png>Hillary doesn't even know how to hold one! Heh. “Hey, Heidi, how do I go on Google again?”"},
   {searchString: "phones", explanationText: "<img src=https://i.imgur.com/brGdIvB.png>Hillary doesn't even know how to hold one! Heh. “Hey, Heidi, how do I go on YouTube again?”"},
   {searchString: "foundation", explanationText: "<img src=https://i.imgur.com/WyO0bkU.jpeg>She became a slave for Goldman Sachs and Saudi Arabia in exchange for money."},
-  {searchString: "AIPAC", explanationText: "<img src=https://i.imgur.com/TuNiflZ.png>I don't really care about Israel, I'm sure 90% of people on Capitol Hill don't, but I pretend to love 'em so I get that AIPAC money. Genius, right?"},
   {searchString: "2000 Redux", explanationText: "<img src=https://i.imgur.com/T2sCCVP.jpeg> The nostalgia is kicking in..."},
   {searchString: "Placeholder", explanationText: "<img src=https://i.imgur.com/XtSnrAP.jpeg> This is the work of our s"},
   {searchString: "Placeholder", explanationText: "<img src=https://i.imgur.com/XtSnrAP.jpeg> This is the work of our s"},
