@@ -21,11 +21,6 @@ let vpTable = {
     [green]: greenvp
 };
 
-console.log(vpTable[republican]);  
-console.log(vpTable[democrat]);      
-console.log(vpTable[libertarian]);   
-console.log(vpTable[green]);         
-
 vpTableHistorical = {
     "Donald Trump" : "Mike Pence",
     "Hillary Clinton" : "Tim Kaine",
