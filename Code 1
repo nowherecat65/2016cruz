@@ -368,9 +368,9 @@ campaignTrail_temp.achievements = {
         "description" : "Teach Hillary some justice.", // Accuse Hillary of killing Vince Foster and pledge to lock her up. This is an ending I have in mind.
         "cannotBeCheated" : true
   },
-"The Void" : {
+"Subspace Bubble" : {
         "image" : "https://i.imgur.com/Ec7u1.png",
-        "description" : "See something you weren't supposed to see.",
+        "description" : "Go somewhere you shouldn't be.",
         "cannotBeCheated" : true
   },
     "Forever Defeated" : {
