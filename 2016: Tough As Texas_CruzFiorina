@@ -446,6 +446,7 @@ document.head.appendChild(customStyling);
     }
 }
 
+
 campaignTrail_temp.questions_json = [
     {
         "model": "campaign_trail.question",
@@ -632,7 +633,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1033,
         "fields": {
             "priority": -4,
-            "description": "",
+            "description": "As if this race couldn't get any crazier, WikiLeaks has just leaked that in a private speech, Hillary Clinton said that she was “center-left, center-right” and that she stood for “open trade and open borders” Some in the U.S intelligence community believe Russian hackers were behind the leaks. What do you have to say about this?",
             "likelihood": 1
         }
     },
@@ -1503,7 +1504,31 @@ campaignTrail_temp.answers_json = [
         "pk": 51308,
         "fields": {
             "question": 1033,
-            "description": "New answer option"
+            "description": "If it's really true that Russia is intentionally leaking this, then I don't see why we should portray this information as accurate. Shouldn't the public be informed of this?"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 51319,
+        "fields": {
+            "question": 1033,
+            "description": "Anyone who has heard Crooked Hillary talk for more than 3 seconds shouldn't be surprised. Remember when she also said that she was “adamantly against illegal immigration”? What happened to that? She can't take a real stance on a single issue."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 51320,
+        "fields": {
+            "question": 1033,
+            "description": "This is the problem with liberals like Clinton. Hillary wants to be our leader, but as soon as she's elected, she's going to open up our borders and let criminals and drug dealers flood in. We can't let that happen."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 51321,
+        "fields": {
+            "question": 1033,
+            "description": "See what I mean? This is a textbook example of cronyism in government. On her first day in office, she's going to start listening to Clinton Foundation donors and sell herself and the country to the highest bidder. She's a puppet."
         }
     }
 ]
@@ -7743,7 +7768,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 51294,
             "candidate": 200,
             "affected_candidate": 200,
-            "global_multiplier": 0.007
+            "global_multiplier": 0.004
         }
     },
     {
@@ -7764,6 +7789,46 @@ campaignTrail_temp.answer_score_global_json = [
             "candidate": 200,
             "affected_candidate": 200,
             "global_multiplier": 0.003
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 51323,
+        "fields": {
+            "answer": 51308,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "global_multiplier": 0.09
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 51324,
+        "fields": {
+            "answer": 51319,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "global_multiplier": 0.125
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 51325,
+        "fields": {
+            "answer": 51320,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "global_multiplier": 0.1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 51326,
+        "fields": {
+            "answer": 51321,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "global_multiplier": 0.13
         }
     }
 ]
@@ -8861,7 +8926,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51021,
             "candidate": 200,
-            "answer_feedback": "You sound a little more measured on this issue than you did while crusading against Obamacare, but you’ve managed to largely preserve your base’s trust, while signaling a bit of maturity."
+            "answer_feedback": "You sound a little more measured on this issue than you did while crusading against Obamacare, but you’ve managed to largely preserve your base’s trust, while signaling a bit of maturity. That doesn't mean the Democratss aren't going to take the chance to attack you on it."
         }
     },
     {
@@ -9473,7 +9538,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51216,
             "candidate": 200,
-            "answer_feedback": "Nothing wrong with playing it safe. In any case, Fox News will continue to dunk on her, regardless of your lack of encouragement. Meanwhile, Hillary is horrified with “the right's obsession with her body.“ As if she's not a 2 at best."
+            "answer_feedback": "Nothing wrong with playing it safe. In any case, Fox News will continue to dunk on her, regardless of your lack of encouragement. Meanwhile, Hillary is terrified with “the right's obsession with her body.“ As if she's not a 2 at best."
         }
     },
     {
@@ -9482,7 +9547,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51219,
             "candidate": 200,
-            "answer_feedback": "God. Whatever decency this race had is gone. The mainstream media and liberals universally condemns your words, but the base still love them."
+            "answer_feedback": "God. Whatever decency this race had is gone. The mainstream media and liberals universally condemns your words, but the base still love them. "
         }
     },
     {
@@ -9545,7 +9610,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51294,
             "candidate": 200,
-            "answer_feedback": "This is probably your best route of attack. It's really easy to portray Clinton as a flip-flopper, and she doesn't have much to combat your attacks."
+            "answer_feedback": "This is probably your best route of attack. It's really easy to portray Clinton as a flip-flopper, and she doesn't have much to combat your attacks other then deflecting them. "
         }
     },
     {
@@ -9563,7 +9628,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51262,
             "candidate": 200,
-            "answer_feedback": "Christ. This race was already in the gutter before, but now? With you suggesting she murdered someone? This race has degenerated to the point of no avail. Hillary will continue to deny your accusations, the news elites are talking about how much of a liar you are, moderates are horrified, all while your supporters furiously defend your claims online at a million words a minute, and call for Hillary's arrest."
+            "answer_feedback": "Christ. This race was already in the gutter before, but now? With you suggesting she murdered someone? This race has degenerated to the point of no avail. Hillary will continue to deny your “baseless” accusations, the news elites are talking about how much of a liar you are, moderates are horrified, all while your supporters furiously defend your claims online at a million words a minute, and call for Hillary's arrest. Whatever happened to decency in politics?"
         }
     },
     {
@@ -9572,7 +9637,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51292,
             "candidate": 200,
-            "answer_feedback": "The Clintons have never exactly had a clean marriage, but Hillary has generally been seen as the more faithful one. Women are deeply offended, Hillary demands an apology from you (we both know she's not getting one) and even Fiorina seems to be upset with you for a few days. Even so, the attacks are still effective in dragging down Hillary's name."
+            "answer_feedback": "Women are deeply offended, (you were never going to win over them anyway) and Hillary is horrified and demands an apology from you. (we both know she's not getting one). Regardless of the amount of backlash you're receiving, the attacks are still effective in dragging down Hillary's name."
         }
     },
     {
@@ -9581,7 +9646,25 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51293,
             "candidate": 200,
-            "answer_feedback": "You're attacking her on the issues, which is incredibly admirable given the stakes, but she simply has the upper-hand there. This election, to you, is more important than you're dignity. You must attack. Mudsling. Crush her, grind her into the dust."
+            "answer_feedback": "You're attacking her on the issues, which is incredibly admirable given the stakes, but she simply has the upper-hand there. This election, is more important than your dignity. You must attack. Mudsling. Crush her, grind her into dust. No mercy."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 51322,
+        "fields": {
+            "answer": 51308,
+            "candidate": 200,
+            "answer_feedback": "The intelligence community is applauding you for your unwillingness to use this issue, and this also gives you some flexibility in how you want to attack. Even so, this is great news for your campaign."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 51327,
+        "fields": {
+            "answer": 51319,
+            "candidate": 200,
+            "answer_feedback": "Enter feedback text here"
         }
     }
 ]
@@ -9620,6 +9703,7 @@ campaignTrail_temp.jet_data = [{
 ]
 
 
+// Tooltips
 
 function getTooltips(str) {
     let matches = [];
