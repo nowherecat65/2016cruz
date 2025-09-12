@@ -446,7 +446,6 @@ document.head.appendChild(customStyling);
     }
 }
 
-
 campaignTrail_temp.questions_json = [
     {
         "model": "campaign_trail.question",
@@ -642,7 +641,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1035,
         "fields": {
             "priority": -3,
-            "description": "A leaked transcript from Wikileaks shows the Clinton campaign working with members of the DNC to collaborate against the campaign of Bernie Sanders in subtle but definite ways, such as the sharing of some debate questions before a primary debate. How do you respond?",
+            "description": "Just days after WikiLeaks revealed how corrupt Hillary Clinton was, another bombshell has hit the papers. According to WikiLeaks, you not only worked with McConnell and the RNC to deny Trump the nomination, but also committed multiple acts of fraud to win. All these allegations are false, but they look incredibly real. Hillary's already calling you a hypocrite, you have dozens of missed calls from everyone on your phone, and Trump is basically frothing at his mouth. This is bad, but first you need to prevent Trump from losing his temper and sinking your chances. What do you do?",
             "likelihood": 1
         }
     },
@@ -889,30 +888,6 @@ campaignTrail_temp.answers_json = [
         "fields": {
             "question": 1034,
             "description": "They keep saying \"Russia Russia Russia\". I've heard other people say this was an inside job from a DNC whistleblower. You know, the guy that assassinated or something like that. Strange!"
-        }
-    },
-    {
-        "model": "campaign_trail.answer",
-        "pk": 5118,
-        "fields": {
-            "question": 1035,
-            "description": "If you're a Bernie supporter, you should be outraged by this manipulation of the democratic process. It looks like the fix was in for Crooked Hillary from the day she started running!"
-        }
-    },
-    {
-        "model": "campaign_trail.answer",
-        "pk": 5119,
-        "fields": {
-            "question": 1035,
-            "description": "This just shows how terrified the DNC and the political establishment are of substantive change to the system. I am the outsider candidate who will fix Washington and drain the swamp."
-        }
-    },
-    {
-        "model": "campaign_trail.answer",
-        "pk": 5120,
-        "fields": {
-            "question": 1035,
-            "description": "I am preparing a severe criticism of Russia as we speak, a very very strong criticism I think you'll agree. For seeking to divide us as a nation by releasing this information about Hillary Clinton and her political tricks."
         }
     },
     {
@@ -1432,7 +1407,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51262,
         "fields": {
             "question": 1026,
-            "description": "Y'know. There's some theories that say she killed somebody. What was his name? Vince Foster. Now, obviously, we can't just say that she killed somebody... but... you know what... Yes we can. Hillary Clinton is without a doubt the worst, most incompetent official that this country has ever had, and she arranged for him to be murdered. The FBI might say otherwise, and that's because Hillary has them in her pocket too."
+            "description": "Y'know. There's some theories that say she killed somebody. What was his name? Vince Foster. Now, obviously, we can't just say that she killed somebody... but... you know what... yes we can. Hillary Clinton is without a doubt the worst, most incompetent official that this country has ever had, and she arranged for him to be murdered. The FBI might say otherwise, and that's because Hillary has them in her pocket too."
         }
     },
     {
@@ -1528,7 +1503,31 @@ campaignTrail_temp.answers_json = [
         "pk": 51321,
         "fields": {
             "question": 1033,
-            "description": "See what I mean? This is a textbook example of cronyism in government. On her first day in office, she's going to start listening to Clinton Foundation donors and sell herself and the country to the highest bidder. She's a puppet."
+            "description": "See what I mean? This is a textbook example of cronyism in government. On her first day in office, she's going to start listening to Clinton Foundation donors and sell herself to the highest bidder. She's a puppet."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 51331,
+        "fields": {
+            "question": 1035,
+            "description": "Christ, what does he want now? If he wants a position, I'll give it to him. He wants his friends in cabinet positions, I'll give him that too. We can't let that crook Hillary get her little hands on the White House."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 51332,
+        "fields": {
+            "question": 1035,
+            "description": "Screw him. All he's been doing this entire campaign is holding me hostage and making me bow down to him. He can cry and whine for as long as he wants, but he's not going to do anything because he's a loser. "
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 51333,
+        "fields": {
+            "question": 1035,
+            "description": "I want to talk personally with him"
         }
     }
 ]
@@ -2205,7 +2204,7 @@ campaignTrail_temp.issues_json = [
         "pk": 100,
         "fields": {
             "name": "Culture War",
-            "description": "In 1973, with the ruling Roe v. Wade, social issues were blasted into the limelight. In recent years, the debate has become even more polarized, especially with the ruling Obergefell v. Hodges, where the Supreme Court ruled state bans on same-sex marriage were illegal.",
+            "description": "",
             "stance_1": "Very Conservative",
             "stance_desc_1": 0,
             "stance_2": "Conservative",
@@ -2228,7 +2227,7 @@ campaignTrail_temp.issues_json = [
         "pk": 101,
         "fields": {
             "name": "Trade",
-            "description": "The issue of trade is a critical one. For decades, the United States has generally supported free trade, but the effects are starting to hit the Midwest and Appalachia., with jobs being sent overseas. ",
+            "description": "",
             "stance_1": "Free Trade",
             "stance_desc_1": 0,
             "stance_2": "Free Trade",
@@ -2251,7 +2250,7 @@ campaignTrail_temp.issues_json = [
         "pk": 102,
         "fields": {
             "name": "America Abroad",
-            "description": "Ever since the rise of the Islamic State, terrorist attacks across the globe are ramping up. One group, in particular, claims responsibility for most of these attacks -- the Islamic State. Obama's administration also negotiated the Iran nuclear deal in the hopes of reducing the chances of Iran building a nuclear weapon.",
+            "description": "",
             "stance_1": "Aggressive",
             "stance_desc_1": 0,
             "stance_2": "Aggressive",
@@ -2274,7 +2273,7 @@ campaignTrail_temp.issues_json = [
         "pk": 103,
         "fields": {
             "name": "Obama Administration",
-            "description": "Barack Obama has been the current President since 2009. While his incompetence is obvious, for whatever reason, some people love him. They'll see the light soon enough.",
+            "description": "",
             "stance_1": "Despised",
             "stance_desc_1": 0,
             "stance_2": "Hated",
@@ -2297,7 +2296,7 @@ campaignTrail_temp.issues_json = [
         "pk": 104,
         "fields": {
             "name": "Border Security",
-            "description": "In 2012, Obama's administration introduced Deferred Action for Childhood Arrivals (DACA), which allows illegal immigrants to stay in the country if they came as children. This has brought illegal immigration into the spotlight, and raises questions about how we should improve our border security.",
+            "description": "",
             "stance_1": "Very Conservative",
             "stance_desc_1": 0,
             "stance_2": "Conservative",
@@ -5234,7 +5233,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 200,
             "state": 1014,
-            "state_multiplier": 0.9
+            "state_multiplier": 0.84
         }
     },
     {
@@ -5414,7 +5413,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 200,
             "state": 1034,
-            "state_multiplier": 0.932
+            "state_multiplier": 0.88
         }
     },
     {
@@ -6983,16 +6982,6 @@ campaignTrail_temp.answer_score_global_json = [
     },
     {
         "model": "campaign_trail.answer_score_global",
-        "pk": 3074,
-        "fields": {
-            "answer": 5118,
-            "candidate": 200,
-            "affected_candidate": 200,
-            "global_multiplier": 0.01
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
         "pk": 3075,
         "fields": {
             "answer": 5121,
@@ -7063,26 +7052,6 @@ campaignTrail_temp.answer_score_global_json = [
     },
     {
         "model": "campaign_trail.answer_score_global",
-        "pk": 3127,
-        "fields": {
-            "answer": 5119,
-            "candidate": 200,
-            "affected_candidate": 201,
-            "global_multiplier": -0.01
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
-        "pk": 3128,
-        "fields": {
-            "answer": 5120,
-            "candidate": 200,
-            "affected_candidate": 201,
-            "global_multiplier": -0.005
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
         "pk": 3177,
         "fields": {
             "answer": 5016,
@@ -7106,16 +7075,6 @@ campaignTrail_temp.answer_score_global_json = [
         "pk": 3198,
         "fields": {
             "answer": 5115,
-            "candidate": 200,
-            "affected_candidate": 203,
-            "global_multiplier": 0.02
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
-        "pk": 3199,
-        "fields": {
-            "answer": 5118,
             "candidate": 200,
             "affected_candidate": 203,
             "global_multiplier": 0.02
@@ -7798,7 +7757,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 51308,
             "candidate": 200,
             "affected_candidate": 200,
-            "global_multiplier": 0.09
+            "global_multiplier": 0.08
         }
     },
     {
@@ -7808,7 +7767,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 51319,
             "candidate": 200,
             "affected_candidate": 200,
-            "global_multiplier": 0.125
+            "global_multiplier": 0.1
         }
     },
     {
@@ -7818,7 +7777,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 51320,
             "candidate": 200,
             "affected_candidate": 200,
-            "global_multiplier": 0.1
+            "global_multiplier": 0.085
         }
     },
     {
@@ -7828,7 +7787,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 51321,
             "candidate": 200,
             "affected_candidate": 200,
-            "global_multiplier": 0.13
+            "global_multiplier": 0.07
         }
     }
 ]
@@ -7871,46 +7830,6 @@ campaignTrail_temp.answer_score_issue_json = [
             "answer": 5116,
             "issue": 102,
             "issue_score": -0.5,
-            "issue_importance": 1
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 2622,
-        "fields": {
-            "answer": 5119,
-            "issue": 100,
-            "issue_score": -0.25,
-            "issue_importance": 1
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 2623,
-        "fields": {
-            "answer": 5119,
-            "issue": 101,
-            "issue_score": 0.1,
-            "issue_importance": 1
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 2624,
-        "fields": {
-            "answer": 5119,
-            "issue": 103,
-            "issue_score": -0.4,
-            "issue_importance": 1
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 2625,
-        "fields": {
-            "answer": 5120,
-            "issue": 102,
-            "issue_score": -0.6,
             "issue_importance": 1
         }
     },
@@ -8251,6 +8170,16 @@ campaignTrail_temp.answer_score_issue_json = [
             "answer": 20739,
             "issue": 103,
             "issue_score": -0.25,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 51329,
+        "fields": {
+            "answer": 51320,
+            "issue": 104,
+            "issue_score": -0.3,
             "issue_importance": 3
         }
     }
@@ -8967,33 +8896,6 @@ campaignTrail_temp.answer_feedback_json = [
     },
     {
         "model": "campaign_trail.answer_feedback",
-        "pk": 2602,
-        "fields": {
-            "answer": 5118,
-            "candidate": 200,
-            "answer_feedback": "Left-wing media is certainly not happy about yet another revelation of Hillary's ideological flexibility."
-        }
-    },
-    {
-        "model": "campaign_trail.answer_feedback",
-        "pk": 2603,
-        "fields": {
-            "answer": 5119,
-            "candidate": 200,
-            "answer_feedback": "Keep pressing your outsider credentials and promising reform."
-        }
-    },
-    {
-        "model": "campaign_trail.answer_feedback",
-        "pk": 2604,
-        "fields": {
-            "answer": 5120,
-            "candidate": 200,
-            "answer_feedback": "Advisors definitely feel that, while your motives are admirable, you are leaving an opportunity on the table."
-        }
-    },
-    {
-        "model": "campaign_trail.answer_feedback",
         "pk": 2605,
         "fields": {
             "answer": 5121,
@@ -9610,7 +9512,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51294,
             "candidate": 200,
-            "answer_feedback": "This is probably your best route of attack. It's really easy to portray Clinton as a flip-flopper, and she doesn't have much to combat your attacks other then deflecting them. "
+            "answer_feedback": "This is probably your best route of attack. It's really easy to portray Clinton as a flip-flopper, and she doesn't have much to combat your attacks other then deflecting them. Your attempts to reach out to the Arab-American community are also duly noted."
         }
     },
     {
@@ -9628,7 +9530,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51262,
             "candidate": 200,
-            "answer_feedback": "Christ. This race was already in the gutter before, but now? With you suggesting she murdered someone? This race has degenerated to the point of no avail. Hillary will continue to deny your “baseless” accusations, the news elites are talking about how much of a liar you are, moderates are horrified, all while your supporters furiously defend your claims online at a million words a minute, and call for Hillary's arrest. Whatever happened to decency in politics?"
+            "answer_feedback": "Christ. This race was already in the gutter before, but now? Hillary will continue to deny your “baseless” accusations, the news elites are talking about how much of a liar you are, moderates are horrified, all while your supporters furiously defend your claims online at a million words a minute, and call for Hillary's arrest. Whatever happened to decency in politics?"
         }
     },
     {
@@ -9655,7 +9557,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51308,
             "candidate": 200,
-            "answer_feedback": "The intelligence community is applauding you for your unwillingness to use this issue, and this also gives you some flexibility in how you want to attack. Even so, this is great news for your campaign."
+            "answer_feedback": "You missed an opportunity to take the initiative here, butt the intelligence community is applauding you for your refusal to press this issue, and this also gives you some flexibility in how you want to attack. Even without your encouragement, this is great news for your campaign."
         }
     },
     {
@@ -9664,7 +9566,25 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51319,
             "candidate": 200,
-            "answer_feedback": "Enter feedback text here"
+            "answer_feedback": "Hillary has been in politics for decades, so it's expected she'll go wherever the wind blows. It's always good to point that out. In other news, Hillary tries to defend herself by saying, when she said open trade, she was talking about energy policy. "
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 51328,
+        "fields": {
+            "answer": 51320,
+            "candidate": 200,
+            "answer_feedback": "You're leaning into the “open borders” aspect of it, which is good. Most Americans don't want illegal immigrants coming into the country. Not ones in the swing states, that is. Meanwhile, Hillary tries to defend herself by saying her sentence was being taken out of context."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 51330,
+        "fields": {
+            "answer": 51321,
+            "candidate": 200,
+            "answer_feedback": "This is a bit cynical, but this is still a good attack. Hillary's numbers continue to take a nosedive."
         }
     }
 ]
@@ -9701,6 +9621,7 @@ campaignTrail_temp.jet_data = [{
     "cyoa_answer_swaps": {}
 }
 ]
+
 
 
 // Tooltips
