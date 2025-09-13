@@ -1,5 +1,6 @@
-let primary = '<span style="color: yellow;">is worried (0)</span>';
-let bliss = "relatively tame (0)";
+let establishment = '<u><b><span style="color: white;">is worried (0)</span></u></b>';
+let campaign = '<u><b><span style="color: white;">relatively tame (0)</span></u></b>';
+let trump = '<u><b><span style="color: white;">has not issued an endorsement (0)</span></u></b>';
 
 function addHeadquarterButton() {
     // Check if the button already exists
@@ -73,7 +74,7 @@ function openHeadquarter() {
     headerDiv.appendChild(backButton);
 
     let headerText = document.createElement('h3');
-    headerText.textContent = '';
+    headerText.textContent = '2016 Cruz Campaign Data - Data Compiled by Jeff Roe';
     headerText.style.textAlign = 'center';  // Center the text
     headerText.style.flexGrow = '1';  // Make h3 take up the maximum space available
     headerDiv.appendChild(headerText);
@@ -106,30 +107,37 @@ function openHeadquarter() {
     // Create Bulk of the Text
     // Duplicate this section to add more lines of text. Make sure to change the variable name "a" to something else. In this case, I changed it to "b".
     let a = document.createElement('p');
-    a.innerHTML = 'The establishment ' + primary + '.'; // This is the text that will be displayed. You can change this to whatever you want. ' + function + ' will display the number from the function.
+    a.innerHTML = 'The establishment ' + establishment + '.'; // This is the text that will be displayed. You can change this to whatever you want. ' + function + ' will display the number from the function.
     // a.style.flexGrow = '0.1';  // Make h3 take up the maximum space available
     a.style.color = 'white'; // Can be used to change the color of the text
     a.style.margin = '3px'; // Can be used to change the space in between the text. Useful if you have a lot of functions.
     hqDiv.appendChild(a);
-   a.style.fontSize = '2em'; // roughly twice the normal text size
+   a.style.fontSize = '1.5em'; // roughly twice the normal text size
 
 
     let b = document.createElement('p');
-    b.innerHTML = 'The campaign has been ' + bliss + '.';
+    b.innerHTML = 'The campaign has been ' + campaign + '.';
     // b.style.flexGrow = '0.1';  // Make h3 take up the maximum space available
     b.style.color = 'white';
     b.style.margin = '3px';
     hqDiv.appendChild(b);
-   b.style.fontSize = '2em'; // roughly twice the normal text size
+   b.style.fontSize = '1.5em';
 
+    let c = document.createElement('p');
+    c.innerHTML = 'Trump ' + trump + '.';
+    // c.style.flexGrow = '0.1';  // Make h3 take up the maximum space available
+    c.style.color = 'white';
+    c.style.margin = '3px';
+    hqDiv.appendChild(c);
+   c.style.fontSize = '1.5em';
 
     // Image
     let img = document.createElement('img');
-    img.src = 'https://itsastronomical.com/assets/1912/wilsonbanner.png';
+    img.src = 'https://itsastronocal.com/assets/1912/wilsonbanner.png';
     img.style.height = '30%';
     img.style.marginLeft = '1em';
     img.style.flexGrow = '0.1';
-    img.style.border = '3px solid black';  // Add thin white border to the image
+    img.style.border = '3px solid white';  // Add thin white border to the image
     hqDiv.appendChild(img);
     
 }
