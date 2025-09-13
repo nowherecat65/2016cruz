@@ -1,6 +1,10 @@
+// Variables
+
 let establishment = '<u><b><span style="color: white;">is worried (0)</span></u></b>';
 let campaign = '<u><b><span style="color: white;">relatively tame (0)</span></u></b>';
 let trump = '<u><b><span style="color: white;">has not issued an endorsement (0)</span></u></b>';
+
+// Variable Headquarters
 
 function addHeadquarterButton() {
     // Check if the button already exists
@@ -74,9 +78,10 @@ function openHeadquarter() {
     headerDiv.appendChild(backButton);
 
     let headerText = document.createElement('h3');
-    headerText.textContent = '2016 Cruz Campaign Data - Data Compiled by Jeff Roe';
+    headerText.textContent = 'Cruz’s 2016 Campaign Headquarters - Campaign Data Compiled by Jeff Roe';
     headerText.style.textAlign = 'center';  // Center the text
     headerText.style.flexGrow = '1';  // Make h3 take up the maximum space available
+    headerText.style.fontSize = '1.8em'; 
     headerDiv.appendChild(headerText);
 
     // Append headerDiv to the main hqDiv
@@ -130,16 +135,16 @@ function openHeadquarter() {
     c.style.margin = '3px';
     hqDiv.appendChild(c);
    c.style.fontSize = '1.5em';
-
+/*
     // Image
     let img = document.createElement('img');
-    img.src = 'https://itsastronocal.com/assets/1912/wilsonbanner.png';
+    img.src = 'https://i.imgur.com/nfBJan6.png';
     img.style.height = '30%';
     img.style.marginLeft = '1em';
     img.style.flexGrow = '0.1';
     img.style.border = '3px solid white';  // Add thin white border to the image
     hqDiv.appendChild(img);
-    
+    */
 }
 
 function handleMutations(mutationsList, observer) {
