@@ -151,7 +151,7 @@ function addHeadquarterButton() {
 
     newButton.style.marginLeft = '1.5em';
 
-    newButton.innerHTML = 'Campaign Warroom';
+    newButton.innerHTML = 'Campaign File';
 
     // Attach the click event listener
     newButton.addEventListener('click', openHeadquarter);
@@ -176,17 +176,17 @@ function openHeadquarter() {
         popOutMenu.style.boxShadow = '0 0 10px rgba(0, 0, 0, 0.1)';
         popOutMenu.style.border = '1px solid #ccc';
         popOutMenu.style.zIndex = '1000';
-        popOutMenu.style.backgroundImage = 'url("https://i.imgur.com/aZUBQMz.png")';
+        popOutMenu.style.backgroundImage = 'url("https://i.imgur.com/xQfEs3B.png")';
         popOutMenu.style.backgroundSize = 'cover';
         popOutMenu.style.backgroundPosition = 'bottom';
         popOutMenu.style.alignItems = 'center';     
 
         // Create the menu title
         const menuTitle = document.createElement('h1');
-        menuTitle.innerText = 'Campaign Warroom';
+        menuTitle.innerText = 'Campaign File';
         menuTitle.style.textAlign = 'center';
             menuTitle.style.fontFamily = '"BankGothic Md BT Medium", "BankGothic", sans-serif';
-            menuTitle.style.color = '#CD1025';
+            menuTitle.style.color = '#6443e3';
             menuTitle.style.textShadow = '1px 1px 1px #000000';
         menuTitle.style.top = '-02px';   
         menuTitle.style.position = 'relative';
@@ -208,7 +208,7 @@ function openHeadquarter() {
         ov.style.marginTop = '-4px'; 
         ov.style.lineHeight = '0.7';
             ov.style.fontFamily = '"Bahnschrift SemiBold", "Bahnschrift", sans-serif';
-            ov.style.color = '#B62C1A';
+            ov.style.color = '#6443e3';
             ov.style.textShadow = '2px 2px 3px #000000';
         // ov.style.backgroundColor = 'rgba(219, 208, 208, 0.5)'; 
         ov.style.padding = '2px';            
