@@ -1,20 +1,5 @@
 let primary = '<span style="color: yellow;">is worried (0)</span>';
-let bliss = "relatively tame (0)";    // or however you calculate this
-
-/*
-Welcome to Astro's Variable Headquarters
-This is a fairly simple function you can add to your mods. It will create a little menu in which the player can view the numbers laid out within the functions.
-This is a great way to give the player a little more information about your mod.
-
-Across this code, you will find a lot of aspects you can edit. I have left plenty of comments to help you understand what each part does.
-Don't be afraid to ask in #mod-help on the Discord for clarification or help with editing this code.
-
-To use this, place this code below your Code 2, and edit it as needed. You can duplicate the 'let a = document.createElement('p');' section to add more lines of text.
-
-Functions are referenced in text like so: ' + function + '. This will display the number from the function in the text.
-Credit to Nina, who made the original code that summoned the new screen (originally for the 1960Red/1952Blue advisor screen)
-Go ahead and use this code in your mods - just give me credit. I hope it helps you out!
-*/
+let bliss = "relatively tame (0)";
 
 function addHeadquarterButton() {
     // Check if the button already exists
