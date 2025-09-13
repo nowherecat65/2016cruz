@@ -1025,10 +1025,10 @@ function setupMusicPlayer() {
   );
 
   const song7 = new Song(
-    "For the Love of Money",
-    "The O’Jays",
-    "https://i.imgur.com/3OT7Q1V.png",
-    "https://file.garden/Z-8vn6l_RynAMnyS/The%20O'Jays20-%20For%20The%20Love%20of%20Money%20(Official%20Audio).mp3"
+    "Ballad of the Mighty I",
+    "Noel Gallagher's High Flying Birds",
+    "https://i.postimg.cc/gcssRhNH/noelly.png",
+    "https://audio.jukehost.co.uk/5NNc7lVHPMYitcfiodfipgwMEmefNJbT"
   );
 
   const song8 = new Song(
