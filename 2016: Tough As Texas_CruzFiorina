@@ -1,8 +1,10 @@
 // Variables
 
-let establishment = '<u><b><span style="color: white;">is worried (0)</span></u></b>';
+let establishment = '<u><b><span style="color: white;">is worried (-1)</span></u></b>';
 let campaign = '<u><b><span style="color: white;">relatively tame (0)</span></u></b>';
 let trump = '<u><b><span style="color: white;">has not issued an endorsement (0)</span></u></b>';
+let seen = '<u><b><span style="color: white;">as very conservative (3)</span></u></b>';
+
 
 // Variable Headquarters
 
@@ -51,7 +53,7 @@ function openHeadquarter() {
     hqDiv.style.display = 'flex'; // Set layout to flex to allow columns
     hqDiv.style.color = 'white';
     hqDiv.style.backgroundColor = '#383838';
-    hqDiv.style.backgroundImage = 'url(https://i.imgur.com/b6J4zLh.png)'; // Set background image. I would recommend using the same file size as the original image, ~959 x 327. Otherwise it will stretch the image. Comment or remove this line of text if you don't want a background image and instead want hqDiv.style.backgroundColor to set your background color
+    hqDiv.style.backgroundImage = 'url(https://i.imgur.com/g3BPUZP.png)'; // Set background image. I would recommend using the same file size as the original image, ~959 x 327. Otherwise it will stretch the image. Comment or remove this line of text if you don't want a background image and instead want hqDiv.style.backgroundColor to set your background color
     hqDiv.style.border = '5px solid white';
     hqDiv.style.borderRadius = '10px';
     hqDiv.style.height = '56%';
@@ -112,7 +114,7 @@ function openHeadquarter() {
     // Create Bulk of the Text
     // Duplicate this section to add more lines of text. Make sure to change the variable name "a" to something else. In this case, I changed it to "b".
     let a = document.createElement('p');
-    a.innerHTML = 'The establishment ' + establishment + '.'; // This is the text that will be displayed. You can change this to whatever you want. ' + function + ' will display the number from the function.
+    a.innerHTML = '• The establishment ' + establishment + '.'; // This is the text that will be displayed. You can change this to whatever you want. ' + function + ' will display the number from the function.
     // a.style.flexGrow = '0.1';  // Make h3 take up the maximum space available
     a.style.color = 'white'; // Can be used to change the color of the text
     a.style.margin = '3px'; // Can be used to change the space in between the text. Useful if you have a lot of functions.
@@ -121,7 +123,7 @@ function openHeadquarter() {
 
 
     let b = document.createElement('p');
-    b.innerHTML = 'The campaign has been ' + campaign + '.';
+    b.innerHTML = '• The campaign has been ' + campaign + '.';
     // b.style.flexGrow = '0.1';  // Make h3 take up the maximum space available
     b.style.color = 'white';
     b.style.margin = '3px';
@@ -129,12 +131,20 @@ function openHeadquarter() {
    b.style.fontSize = '1.5em';
 
     let c = document.createElement('p');
-    c.innerHTML = 'Trump ' + trump + '.';
+    c.innerHTML = '• Trump ' + trump + '.';
     // c.style.flexGrow = '0.1';  // Make h3 take up the maximum space available
     c.style.color = 'white';
     c.style.margin = '3px';
     hqDiv.appendChild(c);
    c.style.fontSize = '1.5em';
+
+    let d = document.createElement('p');
+    d.innerHTML = '• You are ' + seen + ', generally.';
+    // d.style.flexGrow = '0.1';  // Make h3 take up the maximum space available
+    d.style.color = 'white';
+    d.style.margin = '3px';
+    hqDiv.appendChild(d);
+   d.style.fontSize = '1.5em';
 /*
     // Image
     let img = document.createElement('img');
@@ -443,13 +453,6 @@ if (campaignTrail_temp.player_answers[2] == 20683) {
         campaignTrail_temp.candidate_json[0]["fields"].last_name = "Rubio";
         campaignTrail_temp.question_number = 24;
         		vpTable["Marco Rubio"] = "John Kasich";
-}
-    if (ans == 20727) {
-    unlockAchievement("An Uneasy Alliance");   
-}
-
-  if (ans == 20683) {
-    unlockAchievement("Decisive Victory");   
 }
 
     if (ans == 20739) {
