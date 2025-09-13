@@ -1,6 +1,6 @@
 // Variables
 
-let establishment = '<u><b><span style="color: white;">is worried (-1)</span></u></b>';
+let establishment = '<u><b><span style="color: white;">is mad (-1)</span></u></b>';
 let campaign = '<u><b><span style="color: white;">relatively tame (0)</span></u></b>';
 let trump = '<u><b><span style="color: white;">has not issued an endorsement (0)</span></u></b>';
 let seen = '<u><b><span style="color: white;">as very conservative (3)</span></u></b>';
@@ -139,7 +139,7 @@ function openHeadquarter() {
    c.style.fontSize = '1.5em';
 
     let d = document.createElement('p');
-    d.innerHTML = '• You are ' + seen + ', generally.';
+    d.innerHTML = '• You are seen ' + seen + ', generally.';
     // d.style.flexGrow = '0.1';  // Make h3 take up the maximum space available
     d.style.color = 'white';
     d.style.margin = '3px';
