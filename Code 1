@@ -986,7 +986,7 @@ function setupMusicPlayer() {
     "You've Got To Stand For Something",
     "Aaron Tippin",
     "https://i.imgur.com/O7c1hor.png",
-    "https://audio.jukehost.co.uk/RFSqQRBcetIOu5GxwCUJvKzdOd0CWU9b"
+    "https://audio.jukehost.co.uk/ZQnMufZGNbmyEQUhR6dLQx8ozFYmmNDD"
   );
   
   const song2 = new Song(
@@ -1448,7 +1448,7 @@ tooltipList = [
   {searchString: "RNC", explanationText: "<img src=https://i.imgur.com/LgWzE1T.png> What a failure."},
   {searchString: "Holt", explanationText: "<img src=https://i.imgur.com/U4vKTzh.png> The guy who is moderating your debate. Doesn't help that he's a puppet for the puppet masters."},
   {searchString: "Lester Holt", explanationText: "<img src=https://i.imgur.com/U4vKTzh.png> The guy who is moderating your debate. Doesn't help that he's a puppet for the puppet masters."},
-  {searchString: "Mitt Romney", explanationText: "<img src=https://i.imgur.com/HmeD7Ds.png> Doesn't talk much nowadays."},
+  {searchString: "Mitt Romney", explanationText: "<img src=https://i.postimg.cc/MHgDf0j2/Romney.jpg> Doesn't talk much nowadays. He's a good guy, but he was unable to stop the Democratic deep state. You will though."},
   {searchString: "Pawlenty", explanationText: "<img src=https://i.imgur.com/ul0Oe3z.png> Timothy J. Pawlenty – Former Governor of Minnesota."},
   {searchString: "Jeff Roe", explanationText: "<img src=https://i.postimg.cc/90khJt8G/Jeffnted.png> Jeff Roe – Chief Campaign Manager, and a good friend of yours."},
   {searchString: "Jeff", explanationText: "<img src=https://i.postimg.cc/90khJt8G/Jeffnted.png> Jeff Roe – Chief Campaign Manager, and a good friend of yours."},
