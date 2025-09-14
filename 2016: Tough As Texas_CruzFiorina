@@ -2598,9 +2598,9 @@ campaignTrail_temp.issues_json = [
         "model": "campaign_trail.issue",
         "pk": 101,
         "fields": {
-            "name": "Trade",
+            "name": "Globalization",
             "description": "",
-            "stance_1": "Free Trade",
+            "stance_1": "Globalist",
             "stance_desc_1": 0,
             "stance_2": "Free Trade",
             "stance_desc_2": 0,
@@ -2612,7 +2612,7 @@ campaignTrail_temp.issues_json = [
             "stance_desc_5": 0,
             "stance_6": "Protectionist",
             "stance_desc_6": 0,
-            "stance_7": "Protectionist",
+            "stance_7": "Tariff 'Em!",
             "stance_desc_7": 0,
             "election": 20
         }
@@ -2621,7 +2621,7 @@ campaignTrail_temp.issues_json = [
         "model": "campaign_trail.issue",
         "pk": 102,
         "fields": {
-            "name": "America Abroad",
+            "name": "Foreign Policy",
             "description": "",
             "stance_1": "Aggressive",
             "stance_desc_1": 0,
