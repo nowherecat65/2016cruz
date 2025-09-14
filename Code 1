@@ -30,6 +30,8 @@ favican.href = "https://i.imgur.com/zUGKrED.png";
 
 document.head.appendChild(favican);
 
+// Advisor feedback animation
+
 document.head.innerHTML += `
 <style>
   @keyframes fadeInScale {
