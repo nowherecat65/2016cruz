@@ -1899,7 +1899,15 @@ campaignTrail_temp.answers_json = [
         "pk": 51333,
         "fields": {
             "question": 1035,
-            "description": "I want to talk personally with him"
+            "description": "I want to talk personally with him, I want to set the record straight. I didn't rig that nomination, and he needs to know Russia is leaking it to sink my chances and try to sow chaos. He shouldn't fall for it."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 51334,
+        "fields": {
+            "question": 1035,
+            "description": "Frankly, Trump is the least of our concerns right now. Russia is trying to undermine this election at every turn, and continues to spread blatant lies about me and my campaign. We need to combat this false notion before we even begin to reach out to Trump."
         }
     }
 ]
@@ -2600,7 +2608,7 @@ campaignTrail_temp.issues_json = [
         "fields": {
             "name": "Globalization",
             "description": "",
-            "stance_1": "Globalist",
+            "stance_1": "Free Trade",
             "stance_desc_1": 0,
             "stance_2": "Free Trade",
             "stance_desc_2": 0,
@@ -2612,7 +2620,7 @@ campaignTrail_temp.issues_json = [
             "stance_desc_5": 0,
             "stance_6": "Protectionist",
             "stance_desc_6": 0,
-            "stance_7": "Tariff 'Em!",
+            "stance_7": "Protectionist",
             "stance_desc_7": 0,
             "election": 20
         }
@@ -4365,8 +4373,8 @@ campaignTrail_temp.state_issue_score_json = [
         "fields": {
             "state": 1033,
             "issue": 102,
-            "state_issue_score": -0.2,
-            "weight": 1
+            "state_issue_score": -0.4,
+            "weight": 2
         }
     },
     {
@@ -5506,7 +5514,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 200,
             "state": 1003,
-            "state_multiplier": 0.943
+            "state_multiplier": 0.95
         }
     },
     {
@@ -5515,7 +5523,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 200,
             "state": 1004,
-            "state_multiplier": 0.94
+            "state_multiplier": 0.95
         }
     },
     {
@@ -5524,7 +5532,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 200,
             "state": 1005,
-            "state_multiplier": 0.952
+            "state_multiplier": 0.955
         }
     },
     {
@@ -5560,7 +5568,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 200,
             "state": 1009,
-            "state_multiplier": 0.95
+            "state_multiplier": 0.96
         }
     },
     {
@@ -5587,7 +5595,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 200,
             "state": 1012,
-            "state_multiplier": 0.94127891123
+            "state_multiplier": 0.9467891123
         }
     },
     {
@@ -5659,7 +5667,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 200,
             "state": 1020,
-            "state_multiplier": 0.941242
+            "state_multiplier": 0.95
         }
     },
     {
@@ -5677,7 +5685,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 200,
             "state": 1022,
-            "state_multiplier": 0.88
+            "state_multiplier": 0.945
         }
     },
     {
@@ -5758,7 +5766,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 200,
             "state": 1031,
-            "state_multiplier": 0.93982
+            "state_multiplier": 0.95
         }
     },
     {
@@ -5767,7 +5775,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 200,
             "state": 1032,
-            "state_multiplier": 0.949898981
+            "state_multiplier": 0.959898981
         }
     },
     {
@@ -5776,7 +5784,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 200,
             "state": 1033,
-            "state_multiplier": 0.88
+            "state_multiplier": 0.89
         }
     },
     {
@@ -5857,7 +5865,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 200,
             "state": 1042,
-            "state_multiplier": 0.99
+            "state_multiplier": 1
         }
     },
     {
@@ -5893,7 +5901,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 200,
             "state": 1046,
-            "state_multiplier": 0.944124
+            "state_multiplier": 0.95
         }
     },
     {
@@ -9957,6 +9965,15 @@ campaignTrail_temp.answer_feedback_json = [
             "answer": 51321,
             "candidate": 200,
             "answer_feedback": "This is a bit cynical, but this is still a good attack. Hillary's numbers continue to take a nosedive."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 51335,
+        "fields": {
+            "answer": 51331,
+            "candidate": 200,
+            "answer_feedback": "Enter feedback text here"
         }
     }
 ]
