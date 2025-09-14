@@ -269,7 +269,7 @@ if(!Judge == 0){
         ovsubtxt.style.textAlign = 'left';      
         ovsubtxt.style.paddingLeft = '10px';
         ovsubtxt.style.listStyleType = 'disc'; 
-        ovsubtxt.style.background = 'linear-gradient(rgba(64, 68, 66, 0.7), rgba(41, 44, 42, 0.4)), url("https://i.imgur.com/DqdfecZ.png")';
+        ovsubtxt.style.background = 'linear-gradient(rgba(64, 68, 66, 0.7), rgba(41, 44, 42, 0.4)), url("https://i.imgur.com/l83RjH9.png")';
         popOutMenu.appendChild(ovsubtxt);
 
         const closeButton = document.createElement('button');
