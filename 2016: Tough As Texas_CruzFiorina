@@ -1,6 +1,6 @@
-var Corporate = 0;
-var Ideology = 0;
-var Russia = 0;
+var Establishment = 0;
+var Ideology = 3;
+var Trump = 0;
 var Resigned = 0;
 var BernieOppoResearch = 0;
 var BernieInvestigation = 0;
@@ -13,7 +13,7 @@ var SpecialEnding = 0;
 var songChange = 0;
 
 // Variable Headquarters c/o W. Team (TTNW code)
-const CorporateMap = {
+const EstablishmentMap = {
     "-7": `The corporate class is <span style="color: #880808;"><strong>finished</strong></span>. (<span style="color: #880808;"><strong>-7</strong></span>)`,
     "-6": `The corporate class is <span style="color: #CD1025;"><strong>pissed</strong></span>. (<span style="color: #CD1025;"><strong>-6</strong></span>)`,
     "-5": `The corporate class is <span style="color: #FB6723;"><strong>concerned</strong></span>. (<span style="color: #FB6723;"><strong>-5</strong></span>)`,
@@ -21,7 +21,7 @@ const CorporateMap = {
     "-3": `The corporate class is <span style="color: #FB6723;"><strong>concerned</strong></span>. (<span style="color: #FB6723;"><strong>-3</strong></span>)`,
     "-2": `The corporate class is <span style="color: #FB6723;"><strong>concerned</strong></span>. (<span style="color: #FB6723;"><strong>-2</strong></span>)`,
     "-1": `The corporate class is <span style="color: #FB6723;"><strong>concerned</strong></span>. (<span style="color: #FB6723;"><strong>-1</strong></span>)`,
-    "0": `The corporate class is <span style="color: #DEB83E;"> <strong>content</strong></span>. (<span style="color: #DEB83E;"><strong>0</strong></span>)`,
+    "0": `The establishment is <span style="color: #DEB83E;"><strong>content</strong></span>. (<span style="color: #DEB83E;"><strong>0</strong></span>)`,
     "1": `The corporate class is <span style="color: #DEB83E;"> <strong>content</strong></span>. (<span style="color: #DEB83E;"><strong>1</strong></span>)`,
     "2": `The corporate class is <span style="color: #DEB83E;"> <strong>content</strong></span>. (<span style="color: #DEB83E;"><strong>2</strong></span>)`,
     "3": `The corporate class is <span style="color: #DEB83E;"> <strong>content</strong></span>. (<span style="color: #DEB83E;"><strong>3</strong></span>)`,
@@ -44,7 +44,7 @@ const IdeologyMap = {
     "0": `You are seen as <span style="color: #57AB59;"> <strong>generally conservative</strong></span>. (<span style="color: #57AB59;"><strong>0</strong></span>)`,
     "1": `You are seen as <span style="color: #57AB59;"> <strong>generally conservative</strong></span>. (<span style="color: #57AB59;"><strong>1</strong></span>)`,
     "2": `You are seen as <span style="color: #6DCF1F;"> <strong>increasingly conservative</strong></span>. (<span style="color: #6DCF1F;"><strong>2</strong></span>)`,
-    "3": `You are seen as <span style="color: #6DCF1F;"> <strong>increasingly conservative</strong></span>. (<span style="color: #6DCF1F;"><strong>3</strong></span>)`,
+    "3": `You are seen as <span style="color: #6DCF1F;"> <strong>very conservative</strong></span>. (<span style="color: #6DCF1F;"><strong>3</strong></span>)`,
     "4": `You are seen as <span style="color: #6DCF1F;"> <strong>increasingly conservative</strong></span>. (<span style="color: #6DCF1F;"><strong>4</strong></span>)`,
     "5": `You are seen as <span style="color: #6DCF1F;"> <strong>increasingly conservative</strong></span>. (<span style="color: #6DCF1F;"><strong>5</strong></span>)`,
     "6": `You are seen as <span style="color: #DEB83E;"> <strong>conservative</strong></span>. (<span style="color: #DEB83E;"><strong>6</strong></span>)`,
@@ -60,11 +60,11 @@ const IdeologyMap = {
     "16": `You are seen as <span style="color: #CD1025;"> <strong>far-right</strong></span>. (<span style="color: #CD1025;"><strong>16</strong></span>)`,
     "17": `You are seen as <span style="color: #CD1025;"> <strong>far-right</strong></span>. (<span style="color: #CD1025;"><strong>17</strong></span>)`,
 };
-const RussiaMap = {
+const TrumpMap = {
     "-3": `Putin <span style="color: #CD1025;"><strong>laughs</strong></span> at you.`,
     "-2": `Putin thinks you’re <span style="color:  #FB6723;"><strong>gutless</strong></span>.`,
     "-1": `Putin thinks you’re <span style="color:  #FB6723;"><strong>gutless</strong></span>.`,
-    "0": `Putin is <span style="color: #DEB83E;"><strong>irritated</strong></span> with you.`,
+    "0": `You and Trump are <span style="color: #DEB83E;"><strong>primary rivals</strong></span> currently.`,
     "1": `Putin is <span style="color: #DEB83E;"><strong>irritated</strong></span> with you.`,
     "2": `Putin is <span style="color: #DEB83E;"><strong>irritated</strong></span> with you.`,
     "3": `Putin is <span style="color: #DEB83E;"><strong>irritated</strong></span> with you.`,
@@ -221,14 +221,14 @@ function openHeadquarter() {
         //<b><span style="color: #D9321E;">
         var overviewtxt  = ""
 
-        CorporateText = `${CorporateMap[String(Corporate)]}`;
-        overviewtxt += "• "+ `${CorporateText}` + "<br>";
+        EstablishmentText = `${EstablishmentMap[String(Establishment)]}`;
+        overviewtxt += "• "+ `${EstablishmentText}` + "<br>";
         
         IdeologyText = `${IdeologyMap[String(Ideology)]}`;
         overviewtxt += "• "+ `${IdeologyText}` + "<br>";
 
-        RussiaText = `${RussiaMap[String(Russia)]}`;
-        overviewtxt += "• "+ `${RussiaText}` + "<br>";
+        TrumpText = `${TrumpMap[String(Trump)]}`;
+        overviewtxt += "• "+ `${TrumpText}` + "<br>";
 
 if(!Judge == 0){
         JudgeText = `${JudgeMap[String(Judge)]}`;
