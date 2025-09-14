@@ -12,7 +12,7 @@ var ThirdPartyBoost = 0;
 var SpecialEnding = 0;
 var songChange = 0;
 
-// Variable Headquarters c/o W. Team (TTNW code)
+// Variable Headquarters c/o W. Team (TTNW code). Taken from Class War.
 const EstablishmentMap = {
     "-7": `The corporate class is <span style="color: #880808;"><strong>finished</strong></span>. (<span style="color: #880808;"><strong>-7</strong></span>)`,
     "-6": `The corporate class is <span style="color: #CD1025;"><strong>pissed</strong></span>. (<span style="color: #CD1025;"><strong>-6</strong></span>)`,
@@ -486,7 +486,7 @@ if (campaignTrail_temp.player_answers[4] == 51271 || 51084) {
 
 used=false
 
-// Credits to Astronomical, for custom ending template
+// Credits to Astronomical, for ending template
 
 //out = "win", "loss", or "tie" for your candidate
 //totv = total votes in entire election
@@ -653,7 +653,7 @@ if (campaignTrail_temp.player_answers[2] == 20683) {
 }
 
     if (ans == 20739) {
-        campaignTrail_temp.candidate_image_url = 'https://i.postimg.cc/FFgsSdzD/Ted-generalelection-photo-1.jpg'
+        campaignTrail_temp.candidate_image_url = 'https://i.imgur.com/yqL9NWD.jpeg'
         campaignTrail_temp.running_mate_image_url = 'https://files.catbox.moe/ul4rox.png';
         campaignTrail_temp.running_mate_last_name = 'Fiorina';
         campaignTrail_temp.running_mate_first_name = 'Carly';
@@ -693,7 +693,7 @@ customStyling.innerHTML = `
 document.head.appendChild(customStyling);
     }
     else if (ans == 5032) {
-        campaignTrail_temp.candidate_image_url = 'https://i.postimg.cc/FFgsSdzD/Ted-generalelection-photo-1.jpg'
+        campaignTrail_temp.candidate_image_url = 'https://i.imgur.com/yqL9NWD.jpeg'
         campaignTrail_temp.running_mate_image_url = 'https://files.catbox.moe/ul4rox.png';
         campaignTrail_temp.running_mate_last_name = 'Fiorina';
         campaignTrail_temp.running_mate_first_name = 'Carly';
@@ -733,7 +733,7 @@ customStyling.innerHTML = `
 document.head.appendChild(customStyling);
     }
     else if (ans == 5031) {
-        campaignTrail_temp.candidate_image_url = 'https://i.postimg.cc/FFgsSdzD/Ted-generalelection-photo-1.jpg'
+        campaignTrail_temp.candidate_image_url = 'https://i.imgur.com/yqL9NWD.jpeg'
         campaignTrail_temp.running_mate_image_url = 'https://files.catbox.moe/ul4rox.png';
         campaignTrail_temp.running_mate_last_name = 'Fiorina';
         campaignTrail_temp.running_mate_first_name = 'Carly';
@@ -773,7 +773,7 @@ customStyling.innerHTML = `
 document.head.appendChild(customStyling);
     }
     else if (ans == 5030) {
-        campaignTrail_temp.candidate_image_url = 'https://i.postimg.cc/FFgsSdzD/Ted-generalelection-photo-1.jpg'
+        campaignTrail_temp.candidate_image_url = 'https://i.imgur.com/yqL9NWD.jpeg'
         campaignTrail_temp.running_mate_image_url = 'https://files.catbox.moe/ul4rox.png';
         campaignTrail_temp.running_mate_last_name = 'Fiorina';
         campaignTrail_temp.running_mate_first_name = 'Carly';
