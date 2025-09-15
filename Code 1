@@ -20,7 +20,8 @@ e.CandidText = '<font color="white">Please select your Presidential nominee:</fo
 e.VpText = '<font color="white">Please select your Vice Presidential nominee:</font>';
 e.HomeStateText = "Position:";
 e.PartyText = "Affiliation:";
-e.SelAnsContText = "Ted, are you in there? We have an election to win."
+e.SelAnsContText = "Ted, are you in there? You didn't choose anything. We have an election to win."
+
 
 document.querySelectorAll("link[rel*='icon']").forEach(el => el.remove());
 
@@ -1374,6 +1375,9 @@ const gameWindow_player = document.getElementById("game_window");
 setupMusicPlayer();
 
 $("#game_window")[0].style.background = "linear-gradient(#303841, #1b1f23)";
+
+
+e.LosePopup = "No.. something is wrong."
 
 .displayTooltips = true;
 
