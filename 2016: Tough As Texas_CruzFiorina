@@ -9989,10 +9989,22 @@ endingPicker = (out, totv, aa, quickstats) => {
     e.executable = [];
     
     if (quickstats[0] >= 110 && quickstats[0]<269) {
-        e.pages.push(`<h3>Placeholder, flagrantly stolen from 2016 four way lmao</h3><p>You guess you should've guessed this would've happened. Trump was always showing up higher in polling than Bernie, and Hillary's campaign weathered her various scandals well. You thought the Comey letter might change things, but on the topline the result was just as polling predicted: Hillary Clinton will be the first woman to be elected the President of the United States. Despite the Republican establishment unifying behind you over Trump, it seems like he's laughing it up in the end, ready to present himself as the main opposition to President Hillary, hoping you fade away into political obscurity.</p>`);
-        e.pages.push(`<h3>Placeholder, flagrantly stolen from 2016 four way lmao. Oh cool, I can change the header too!</h3><p>You look to the TV right now, that cuts to Trump's concession after you walk of the stage from your own. He's ranting about how you supposedly 'worked with crooked Hillary' to deny him the Presidency. Christ. One can only hope that your loss doesn't lead to him trying to make a comeback in 2020, or to actually continue with this third party idea. Better 'TrumpTV' than that. You can only root for Hillary's middling popularity to doom her Presidency, and that Republicans win big in 2018, a victory that you could still be a part of.</p>`);
-        e.executable.push([0, () => { e.image = 'https://i.imgur.com/emwi03U.png'; }]);
-        e.executable.push([1, () => { e.image = 'https://i.imgur.com/5NquPN6.png'; }]);
+        e.pages.push(`<h3>I'm sorry, Ted.</h3><p>You gave it your all, but you've failed. Maybe it was the divide in the party. Maybe it was the power of the establishment. Maybe it was just you. Whatever it was, Hillary Clinton will become the 45th and first female President of the United States, as predicted by nearly every media expert. You tried to defy the odds, but you failed.<br><br>In a day that will surely go down in American history, Hillary Clinton holds the most extravagant victory celebration possible, meticulously planned, no doubt paid for by her blood money. Her victory speech in Manhattan has an enormous glass ceiling. With a single strike, she shatters it, and her supporters go into a frenzy.<br><br>The Democrats have won sweeping majorities in both chambers of Congress. Hillary will be able to easily pass her radical agenda. Teenage and partial birth abortions on demand, radical activist justices, and favoring her donors.</p>`);
+        e.pages.push(`<h3>I'm sorry, Ted.</h3><p>You're still in the Senate, but your term is running out quickly. Hopefully you can win re-election and limit the damage Hillary can cause for her next four years in office.<br><br>Your dreams of becoming President are likely over. Trump will surely sieze the nomination in 2020, vowing to defeat the Democrats. The party has now been defeated for 12 whole years in a row, with no signs of things getting better in 2020.<br><br>We're truly sorry for your loss, sir. Truly sorry.<p>`);
+        e.executable.push([0, () => { e.image = 'https://m.media-amazon.com/images/M/MV5BNmQ1OTJhMzItNWIzOC00ZjdlLWEwNDgtODRiYjczNTkyZjc5XkEyXkFqcGdeQXVyMTExNDQ2MTI@._V1_.jpg'; }]);
+        e.executable.push([1, () => { e.image = 'https://i.imgur.com/Db6ODai.png'; }]);
+    if (songChange != 1) {
+    songChange = 1
+    const defeat = new Playlist();
+      const defeatSong = new Song(
+        "Sad Goodbyes",
+        "Mark Kueffner",
+        "https://i.imgur.com/3jGZyrV.jpeg",
+        "https://audio.jukehost.co.uk/3xZa2o2tx196NJg84M2GlBTFyO2dUy0j"
+      );
+      defeat.addSong(defeatSong);
+    changePlaylist(defeat);
+    }
     }
     
     return construct(0);
