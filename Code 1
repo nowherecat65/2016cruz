@@ -283,7 +283,7 @@ document.getElementById("inner_window_1").children[1].innerHTML =
         '<li>In our real timeline, Ted Cruz\'s campaign failed to win the nomination despite early success in Iowa.</li>' +
         '<li>In this mod, you play as Ted Cruz and attempt to win the election.</li>' +
         '<li>You start off in the primaries, but then go on to the general election to face Hillary Clinton.</li>' +
-        '<li>Tough as Texas includes many achievements, some CYOA elements, custom endings, and more, so don\'t be afraid to try new routes!</li>' +
+        '<li>Additionally, this mod includes many achievements, CYOA, and more.</li>' +
         '<li>This mod is shown from Cruz\'s perspective and is meant to be very biased. Just keep that in mind when playing.</li>' +
     '</ul>';
 
@@ -394,7 +394,7 @@ campaignTrail_temp.achievements = {
   },
 "History Arrives All The Same" : {
         "image" : "https://i.imgur.com/vdBFKe1.png",
-        "description" : "As Ted Cruz, win while carrying Michigan, Pennsylvania, and Wisconsin.",
+        "description" : "Achieve the historical results.",
         "cannotBeCheated" : true
   },
 
