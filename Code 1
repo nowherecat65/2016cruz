@@ -1070,7 +1070,7 @@ function setupMusicPlayer() {
     "Mitt Romney",
     "CollegeHumor",
     "https://i.imgur.com/NtShrC6.png",
-    "https://file.garden/Z-8vn6l_RynAMnyS/Mitt%20Romne%20%20Parody)%20%5BCollegeHumor%5D.mp3"
+    "https://file.garden/Z-8vn6l_RynAMnyS/Mitt%20Romney%20Style%20(Gangnam%20Style%20Parody)%20%5BCollegeHumor%5D.mp3"
   );
 
   const song9 = new Song(
@@ -1452,7 +1452,7 @@ function addDynamicCSS() {
   document.head.appendChild(styleElem);
 }
 
-// Copied from Ohio 2022 Senate. Some have been edited, but others haven't. That explains why there's some quite odd and random searchstrings.
+// Not sure who exactly made tooltips, think it was from 2021 Germany. Credits to the people who worked on that
 
 addDynamicCSS();
 
@@ -1474,7 +1474,6 @@ tooltipList = [
   {searchString: "Kasich", explanationText: "<img src=https://i.imgur.com/YcCbaxa.jpeg> John Kasich – Governor of Ohio and avowed moderate candidate."},
   {searchString: "Secretary of State", explanationText: "<img src=https://i.imgur.com/VCoZIYr.png> Time to show her what happens when you insult conservatism thrice over."},
   {searchString: "21-hour Senate filibuster", explanationText: "<img src=https://i.imgur.com/nD2r4i8.jpeg> From October 1 to October 17, 2013, the United States federal government entered a shutdown when the Republican-held House tried to defund Obamacare in the next annual appropriation bill, while the Democratic-controlled Senate refused. You played a large part in sparking the flames."},
-  {searchString: "Obergefell v. Hodges", explanationText: "<img src=https://i.imgur.com/gLBzhnI.png> In 2015, the Supreme Court ruled that state bans on gay marriage were illegal. May God punish that deep state traitor Antonin."},
   {searchString: "Heidi", explanationText: "<img src=https://i.imgur.com/EEYIvuQ.jpeg> Wife. The better half, and the one with fewer enemies."},
   {searchString: "radical Islamist terrorist attack in Nice, France left 86 dead and 450 injured.", explanationText: "<img src=https://i.imgur.com/bh8d5AS.jpeg> A radical terrorist from Tunisia used a rented truck to run over a crowd while people were celebrating Bastille Day in Nice, France."},
   {searchString: "RNC", explanationText: "<img src=https://i.imgur.com/LgWzE1T.png> What a failure."},
