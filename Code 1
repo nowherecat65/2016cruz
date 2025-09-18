@@ -1500,39 +1500,6 @@ tooltipList = [
       
 ];
 
-function addDynamicCSS() {
-	var css = `
-		#final_results_description h3 {
-			color: white;
-		}
-		#overall_details_container h3 {
-			color: white;
-		}
-		#overall_election_details h4 {
-			color: white;
-		}
-		#main_content_area_reading p {
-			color: white;
-		}
-		#main_content_area_reading h3.results_tab_header {
-			color: white;
-		}
-	p#credits {
-		color: white;
-	}
-		.inner_window_w_desc h3 {
-			color: white;
-		}
-	`;
-	var styleElem = document.createElement('style');
-	styleElem.type = 'text/css';
-
-	styleElem.appendChild(document.createTextNode(css));
-
-	document.head.appendChild(styleElem);
-}
-
-addDynamicCSS();
 
 // "More" buttons and "Back" buttons here
 
