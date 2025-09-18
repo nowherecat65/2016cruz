@@ -10166,8 +10166,8 @@ campaignTrail_temp.answer_feedback_json = [
     }
 ]
 
-campaignTrail_temp.candidate_image_url = "https://i.imgur.com/yqL9NWD.jpe";
-campaignTrail_temp.running_mate_image_url = "https://i.postimg.cc/gJfyqbQv/u52bl8-1-1.jp";
+campaignTrail_temp.candidate_image_url = "https://i.imgur.com/yqL9NWD.jpeg";
+campaignTrail_temp.running_mate_image_url = "https://i.postimg.cc/gJfyqbQv/u52bl8-1-1.jpg";
 campaignTrail_temp.candidate_last_name = "Cruz";
 campaignTrail_temp.running_mate_last_name = "Campaign";
 
@@ -10303,8 +10303,8 @@ endingPicker = (out, totv, aa, quickstats) => {
     if (quickstats[0] >= 110 && quickstats[0]<269) {
         e.pages.push(`<h3>I'm sorry, Ted.</h3><p>You gave it your all, but you've failed. Maybe it was the divide in the party. Maybe it was the power of the establishment. Maybe it was just you. Whatever it was, Hillary Clinton will become the 45th and first female President of the United States, as predicted by nearly every media expert. You tried to defy the odds, but you failed.<br><br>In a day that will surely go down in American history, Hillary Clinton holds the most extravagant victory celebration possible, meticulously planned, no doubt paid for by her blood money. Her victory speech in Manhattan has an enormous glass ceiling. With a single strike, she shatters it, and her supporters go into a frenzy. The Democrats have won majorities in both chambers of Congress, and Hillary will be able to easily pass her radical agenda with almost no one to oppose her.</p>`);
         e.pages.push(`<h3>I'm sorry, Ted.</h3><p>It's already obvious what that agenda will be. Teenage and partial birth abortions on demand, radical activist justices, and Clinton Foundation donors receiving special favors. You can barely look at the television. Hillary continues to do victory laps about how much the glass ceiling has been shattered, well into the night, and that a new era has begun. It's a new era alright. But not the kind of era we want in a country we still call God's country.<br><br>You're still in the Senate, but your term is running out quickly. Hopefully you can win re-election and limit the damage Hillary can cause for her next four years in office. Your dreams of becoming President are over. The party has now been defeated for 12 whole years in a row, with no signs of things getting better in 2020. May God help the United States.<p>`);
-        e.executable.push([0, () => { e.image = 'https://m.media-amazon.com/images/M/MV5BNmQ1OTJhMzItNWIzOC00ZjdlLWEwNDgtODRiYjczNTkyZjc5XkEyXkFqcGdeQXVyMTExNDQ2MTI@._V1_.jpg'; }]);
-        e.executable.push([1, () => { e.image = 'https://m.media-amazon.com/images/M/MV5BNmQ1OTJhMzItNWIzOC00ZjdlLWEwNDgtODRiYjczNTkyZjc5XkEyXkFqcGdeQXVyMTExNDQ2MTI@._V1_.jpg'; }]);
+        e.executable.push([0, () => { e.image = 'https://i.imgur.com/kg7ymVb.jpeg'; }]);
+        e.executable.push([1, () => { e.image = 'https://i.imgur.com/kg7ymVb.jpeg'; }]);
     if (songChange != 1) {
     songChange = 1
     const defeat = new Playlist();
