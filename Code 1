@@ -466,7 +466,7 @@ campaignTrail_temp.election_json = [
         "pk": 20,
         "fields": {
             "year": 2016,
-            "summary": "<div style='overflow-y:scroll;height:200px;'><p>Let's take a step back. 8 years ago, after a crushing defeat in the 2008 election, the so-called ''experts'' declared conservatism finished, claiming the Republican Party had been buried for good. Barack Obama, a community organizer elevated by celebrity worship and empty slogans, entered the White House promising hope and change. But what change did he bring? He spent the first two years of his term trying to ram a socialist healthcare agenda through Congress and bowing down to foreign leaders. His administration became a hodgepodge of incompetence, socialism, and authoritarianism, the start of the Democratic deep state.<br><br>By 2010, the people had had enough. Not Wall Street financiers, not Hollywood elitists, but real, common, honest Americans. In 2010, the GOP managed to flip 63 seats, the biggest midterm change in six decades. The message was clear that America wasn’t finished with conservatism. The Republican Party was alive and well, and the Obama agenda was crumbling. The future was looking bright.<br><br><button onclick='next0()'>More</button></p></div>",
+            "summary": "<div style='overflow-y:scroll;height:200px;'><p>Let's take a step back. 8 years ago, after a crushing defeat in the 2008 election, the so-called ''experts'' declared conservatism finished, claiming the Republican Party had been buried for good. Barack Obama, a community organizer elevated by celebrity worship and empty slogans, entered the White House promising hope and change. But what change did he bring? He spent the first two years of his term trying to ram a socialist healthcare agenda through Congress and bowing down to foreign leaders. His administration became a hodgepodge of incompetence, socialism, and authoritarianism, the start of the Democratic deep state.<br><br>By 2010, the people had had enough. Not Wall Street financiers, not Hollywood elitists, but real, common, honest Americans. In 2010, the GOP managed to flip 63 seats, the biggest midterm change in six decades. The message was clear that America wasn’t finished with conservatism. The Republican Party was alive and well, and the Obama agenda was crumbling. The future was looking bright.<br><br><button onclick='next0()'>Next</button></p></div>",
             "image_url": "https://i.postimg.cc/13yJkDGJ/TedIntro.png",
             "winning_electoral_vote_number": 270,
             "advisor_url": "https://i.postimg.cc/KYR61Mth/Ted-advisor-primary.png",
@@ -1459,7 +1459,7 @@ addDynamicCSS();
 tooltipList = [
   {searchString: "Donald Trump", explanationText: "<img src=https://i.imgur.com/LzbPeXB.png> That rich guy from New York, and one of your primary rivals."},
   {searchString: "Hillary Clinton", explanationText: "<img src=https://i.imgur.com/m4u5J6q.png> Leader of Planned Parenthood, gay marriage, and the Democratic deep state.<br>You must stop her."},
-  {searchString: "Rubio", explanationText: "<img src=https://i.imgur.com/GXOGkB4.png> Marco Rubio – Senator from Florida. He was once known as a Tea Party conservative, but those days are long gone."},
+  {searchString: "Rubio", explanationText: "<img src=https://i.imgur.com/GXOGkB4.png> Marco Rubio, Senator from Florida. He was once known as a Tea Party conservative, but those days are long gone."},
   {searchString: "Barack Obama", explanationText: "<img src=https://i.imgur.com/SGb8x0z.png> His term is coming to an end.<br>He spends his days destroying the Constitution and violating personal freedoms."},
   {searchString: "Bernie Sanders", explanationText: "<img src=https://i.imgur.com/jaM9ZbG.jpeg> He's absolutely insane. Clinton probably gets her marching orders from him behind the scenes."},
   {searchString: "Roe v. Wade", explanationText: "<img src=https://i.imgur.com/eens7WG.jpeg> The greatest tragedy in the history of our nation."},
@@ -1467,26 +1467,26 @@ tooltipList = [
   {searchString: "the establishment", explanationText: "<img src=https://i.imgur.com/BHYdwFO.png>"},
   {searchString: "MSNBC", explanationText: "<img src=https://i.imgur.com/3ROtL4O.png> One of the biggest spreaders of liberal propaganda."},
   {searchString: "Ben Carson", explanationText: "<img src=https://i.imgur.com/mk57VPA.png> Ben Carson – A neurosurgeon, well known in the Evangelical community."},
-  {searchString: "Fiorina", explanationText: "<img src=https://i.imgur.com/JCWFk3t.png> Former CEO of HP."},
+  {searchString: "Fiorina", explanationText: "<img src=https://i.imgur.com/JCWFk3t.png> Former CEO of Hewlett-Packard from 1999 to 2005."},
   {searchString: "Walker", explanationText: "<img src=https://i.imgur.com/xmf05Zy.jpeg> That guy who survived the recall."},
-  {searchString: "The Republican National Convention in Cleveland", explanationText: "<img src=https://i.imgur.com/TEYBSJR.png> Everything from before was light work. Now the real challenge begins."},
+  {searchString: "The Republican National Convention in Cleveland", explanationText: "<img src=https://i.imgur.com/TEYBSJR.png> Everything before was light work. Now the real challenge begins."},
   {searchString: "LGBT nightclub in Orlando killed 49", explanationText: "<img src=https://i.imgur.com/Fx5c1jK.jpeg> Pulse Nightclub in Orlando, Florida, while it still existed."},
   {searchString: "Kasich", explanationText: "<img src=https://i.imgur.com/YcCbaxa.jpeg> John Kasich – Governor of Ohio and avowed moderate candidate."},
   {searchString: "Secretary of State", explanationText: "<img src=https://i.imgur.com/VCoZIYr.png> Time to show her what happens when you insult conservatism thrice over."},
   {searchString: "21-hour Senate filibuster", explanationText: "<img src=https://i.imgur.com/nD2r4i8.jpeg> From October 1 to October 17, 2013, the United States federal government entered a shutdown when the Republican-held House tried to defund Obamacare in the next annual appropriation bill, while the Democratic-controlled Senate refused. You played a large part in sparking the flames."},
   {searchString: "Heidi", explanationText: "<img src=https://i.imgur.com/EEYIvuQ.jpeg> Wife. The better half, and the one with fewer enemies."},
   {searchString: "radical Islamist terrorist attack in Nice, France left 86 dead and 450 injured.", explanationText: "<img src=https://i.imgur.com/bh8d5AS.jpeg> A radical terrorist from Tunisia used a rented truck to run over a crowd while people were celebrating Bastille Day in Nice, France."},
-  {searchString: "RNC", explanationText: "<img src=https://i.imgur.com/LgWzE1T.png> What a failure."},
+  {searchString: "RNC", explanationText: "<img src=https://i.imgur.com/LgWzE1T.png> Unbelievably corrupt."},
   {searchString: "Holt", explanationText: "<img src=https://i.imgur.com/U4vKTzh.png> The guy who is moderating your debate. Doesn't help that he's a puppet for the puppet masters."},
   {searchString: "Lester Holt", explanationText: "<img src=https://i.imgur.com/U4vKTzh.png> The guy who is moderating your debate. Doesn't help that he's a puppet for the puppet masters."},
   {searchString: "Mitt Romney", explanationText: "<img src=https://i.postimg.cc/MHgDf0j2/Romney.jpg> Doesn't talk much nowadays. He's a good guy, but he was unable to stop the Democratic deep state. You will though."},
-  {searchString: "Pawlenty", explanationText: "<img src=https://i.imgur.com/ul0Oe3z.png> Timothy J. Pawlenty – Former Governor of Minnesota."},
-  {searchString: "Jeff Roe", explanationText: "<img src=https://i.postimg.cc/90khJt8G/Jeffnted.png> Jeff Roe – Chief Campaign Manager, and a good friend of yours."},
-  {searchString: "Jeff", explanationText: "<img src=https://i.postimg.cc/90khJt8G/Jeffnted.png> Jeff Roe – Chief Campaign Manager, and a good friend of yours."},
-  {searchString: "Carly Fiorina", explanationText: "<img src=https://i.imgur.com/JCWFk3t.png> Former CEO of HP."},
+  {searchString: "Pawlenty", explanationText: "<img src=https://i.imgur.com/ul0Oe3z.png> Timothy J. Pawlenty, Former Governor of Minnesota."},
+  {searchString: "Jeff Roe", explanationText: "<img src=https://i.postimg.cc/90khJt8G/Jeffnted.png> Jeff Roe, Chief Campaign Manager, and a good friend of yours."},
+  {searchString: "Jeff", explanationText: "<img src=https://i.postimg.cc/90khJt8G/Jeffnted.png> Jeff Roe, Chief Campaign Manager, and a good friend of yours."},
+  {searchString: "Carly Fiorina", explanationText: "<img src=https://i.imgur.com/JCWFk3t.png> Former CEO of Hewlett-Packard from 1999 to 2005."},
   {searchString: "Chelsea", explanationText: "<img src=https://i.imgur.com/gXrY6co.png> Hillary's annoying daughter that won't shut up."},
   {searchString: "Hillary's just as sick as her husband.", explanationText: "<img src=https://i.imgur.com/Fnc6aZi.jpeg>Monica-Lewinsky. I was just an Attorney back then. Simpler times."},
-  {searchString: "Vince Foster", explanationText: "<img src=https://i.imgur.com/iQoKmB9.jpeg>Look at her trying to smile, saying she misses him, when she knows full well she ordered for him to be killed. And now she wants to be President."},
+  {searchString: "Vince Foster", explanationText: "<img src=https://i.imgur.com/iQoKmB9.jpeg>Look at her trying to smile, saying she misses him, when she knows full well she ordered for him to be killed."},
   {searchString: "As the Presidential debate ends", explanationText: "<img src=https://i.imgur.com/byExr6Z.png>I easily won that debate, but of course, the biased news networks will say otherwise."},
   {searchString: "Benghazi", explanationText: "<img src=https://i.imgur.com/XtSnrAP.jpeg> This is the work of our so-called experienced Secretary of State."},
   {searchString: "phone", explanationText: "<img src=https://i.imgur.com/brGdIvB.png>Hillary doesn't even know how to hold one! Ha. “Hey, Heidi, how do I go on YouTube again?”"},
@@ -1501,13 +1501,13 @@ tooltipList = [
 ];
 
 
-// "More" buttons and "Back" buttons here
+// "Next" buttons and "Back" buttons here
 
 next0 = function() {
     text = "<div style='overflow-y:scroll;height:200px;'><p>Yet, Election Day came, and Obama, despite his disastrous presidency, secured a second term. Worse, the Democrats flipped eight House seats and held the Senate, even as Texas sent a new conservative to its ranks. The consultants, the lobbyists, and the donor class congratulated themselves on another cycle of comfortable defeat. Too many Republicans in Washington seemed resigned to managing America’s decline, happy to be the polite opposition while the Democrats pushed the country further and further toward ruin.<br><br>The American people were ready for a true alternative. A man who didn’t just talk like a conservative but lived it. A man willing to stand up to the establishment in both parties. A man who understood that the Constitution limits the government, not the people. A man who understood the right to life came from God, not the Supreme Court.<br><br> And if we stand together, we can bring America back.<br><br><button onclick='back0()'>Back</button></p></div></p></div>"
     document.getElementById("election_summary").innerHTML = text
 }
 back0 = function() {
-    text = "<div style='overflow-y:scroll;height:200px;'><p>The last decade has been nothing short of abnormal for America. After the 2008 election, the so-called ''experts'' and media elites smugly declared conservatism finished, claiming the Republican Party had been buried for good. Barack Obama, a community organizer elevated by celebrity worship and empty slogans, entered the White House promising hope and change. But what change did he bring? He spent the first two years of his term trying to ram a socialist healthcare agenda through Congress and bowing down to foreign leaders. His administration became a hodgepodge of incompetence, socialism, and authoritarianism, the start of the Democratic deep state.<br><br>By 2010, the people had had enough. Not Wall Street financiers, not Hollywood elitists, but real, common, honest Americans. In 2010, the GOP managed to flip 63 seats, the biggest midterm change in six decades. The message was clear that America wasn’t finished with conservatism. The Republican Party was alive and well, and the Obama agenda was crumbling. The future was looking bright.<br><br><button onclick='next0()'>More</button></p></div>"
+    text = "<div style='overflow-y:scroll;height:200px;'><p>The last decade has been nothing short of abnormal for America. After the 2008 election, the so-called ''experts'' and media elites smugly declared conservatism finished, claiming the Republican Party had been buried for good. Barack Obama, a community organizer elevated by celebrity worship and empty slogans, entered the White House promising hope and change. But what change did he bring? He spent the first two years of his term trying to ram a socialist healthcare agenda through Congress and bowing down to foreign leaders. His administration became a hodgepodge of incompetence, socialism, and authoritarianism, the start of the Democratic deep state.<br><br>By 2010, the people had had enough. Not Wall Street financiers, not Hollywood elitists, but real, common, honest Americans. In 2010, the GOP managed to flip 63 seats, the biggest midterm change in six decades. The message was clear that America wasn’t finished with conservatism. The Republican Party was alive and well, and the Obama agenda was crumbling. The future was looking bright.<br><br><button onclick='next0()'>Next</button></p></div>"
     document.getElementById("election_summary").innerHTML = text
 }
