@@ -819,7 +819,7 @@ const gameStart = document.getElementById('game_start');
     const gameWindow = document.getElementById('game_window');
 
     if (gameStart) {
-        gameStart.innerHTML = '<strong>Let’s bring America back.</strong>';
+        gameStart.innerHTML = '<strong>I’m ready.</strong>';
         const clearHeight = () => { if (gameWindow) gameWindow.style.removeProperty('height'); };
         if (window.jQuery) $('#game_start').on('click', clearHeight);
         else gameStart.addEventListener('click', clearHeight);
