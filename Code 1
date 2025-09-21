@@ -1046,55 +1046,48 @@ function setupMusicPlayer() {
   );
 
   const song5 = new Song(
-    "Donald Trump vs. Hillary Clinton",
-    "Epic Rap Battles of History",
-    "https://i.imgur.com/BG0RmI2.jpeg",
-    "https://files.catbox.moe/ofvp5k.mp3"
-  );
-
-  const song6 = new Song(
     "Centuries",
     "Fall Out Boy",
     "https://i.imgur.com/G1lVFIm.png",
     "https://file.garden/Z-8vn6l_RynAMnyS/Fall%20Out20Boy%20-%20Centuries%20(Official%20Video).mp3"
   );
 
-  const song7 = new Song(
+  const song6 = new Song(
     "Ballad of the Mighty I",
     "Noel Gallagher's High Flying Birds",
     "https://i.postimg.cc/gcssRhNH/noelly.png",
     "https://audio.jukehost.co.uk/5NNc7lVHPMYitcfiodfipgwMEmefNJbT"
   );
 
-  const song8 = new Song(
-    "Mitt Romney",
-    "CollegeHumor",
-    "https://i.imgur.com/NtShrC6.png",
-    "https://file.garden/Z-8vn6l_RynAMnyS/Mitt%20Romney%20Style%20(Gangnam%20Style%20Parody)%20%5BCollegeHumor%5D.mp3"
+  const song7 = new Song(
+    "False Prophets",
+    "J. Cole",
+    "https://i.postimg.cc/c4f05ZYB/fp.png",
+    "https://audio.jukehost.co.uk/k79M0jSUEKlh0GibEAgGTC2NuVunSiNo"
   );
 
-  const song9 = new Song(
+  const song8 = new Song(
     "Ice Ice Baby",
     "Vanilla Ice",
     "https://i.imgur.com/lM1EVnS.png",
     "https://file.garden/Z-8vn6l_RynAMnyS/Vanilla%20Ic%20-%20Ice%20Ice%20Baby%20(Official%20Music%20Video).mp3"
   );
 
-  const song10 = new Song(
+  const song9 = new Song(
     "It’s America",
     "Rodney Atkins",
     "https://i.imgur.com/vxHawrW.png",
     "https://file.garden/Z-8vn6l_RynAMnyS/Rodney%20Atkns%20-%20It's%20America%20(Official%20Music%20Video).mp3"
   );
 
-  const song11 = new Song(
+  const song10 = new Song(
     "All These Things That I’ve Done",
     "The Killers",
     "https://i.imgur.com/0AxxTHm.png",
     "https://file.garden/Z-8vn6l_RynAMnyS/The%20Kilers%20-%20All%20These%20Things%20That%20I've%20Done%20(Official%20Music%20Video).mp3"
   );
 
-  const song12 = new Song(
+  const song11 = new Song(
     "Everybody Wants to Rule the World",
     "Tears for Fears",
     "https://i.imgur.com/y9RvzFX.png",
