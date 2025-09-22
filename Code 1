@@ -428,11 +428,11 @@ campaignTrail_temp.modBoxTheme = {
      "ui_text_color": "#FFFFFF"
 }
 
-HistHexcolour=["#970417","#2633be","#fbd800","#00a62f"];
-        HistName=[" Donald Trump"," Hillary Clinton"," Gary Johnson"," Jill Stein"];
-        HistEV=[304,227,0,0];
-        HistPV=["62,984,828","65,853,514","4,489,341","405,035"];
-        HistPVP=["46.1%","48.2%","3.3%","1.1%"];
+HistHexcolour=["#ba0441","#2633be","#970417","#fbd800",];
+        HistName=[" Jeb Bush"," Killary Klinton"," Zodiac Killer"," Others"];
+        HistEV=[538,0,0,0];
+        HistPV=["93,366,121","43,332,921","41,982,341","3,201,203"];
+        HistPVP=["68.3%","31.7%","29.5%","2.2%"];
 
 RecReading=true
 campaignTrail_temp.global_parameter_json = [
