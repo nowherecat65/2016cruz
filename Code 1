@@ -671,8 +671,210 @@ campaignTrail_temp.running_mate_json = [
     }
 ]
 
-campaignTrail_temp.credits = "Themccain"
+campaignTrail_temp.credits = "<button onclick='credits()'>Cancun Cruz, as nothing but lies and propaganda.</button>"
 
+let savedX = null;
+let savedY = null;
+
+credits = function() {
+    let popOutMenu = document.getElementById('popOutMenu');
+    if (!popOutMenu) {
+        popOutMenu = document.createElement('div');
+        popOutMenu.id = 'popOutMenu';
+        popOutMenu.style.position = 'absolute';
+        popOutMenu.style.width = '440px';
+        popOutMenu.style.maxHeight = '600px'; // constrain height
+        popOutMenu.style.height = 'auto';
+        popOutMenu.style.padding = '18px';
+        popOutMenu.style.backgroundColor = 'rgba(30,30,30,0.95)';
+        popOutMenu.style.boxShadow = '0 0 15px rgba(0,0,0,0.6)';
+        popOutMenu.style.border = '1px solid #555';
+        popOutMenu.style.zIndex = '1000';
+        popOutMenu.style.backgroundImage = 'url("https://i.imgur.com/3Hb5hJj.png")';
+        popOutMenu.style.backgroundSize = 'cover';
+        popOutMenu.style.backgroundPosition = 'center';
+        popOutMenu.style.borderRadius = '6px';
+        popOutMenu.style.color = '#d3d3d3';
+        popOutMenu.style.overflowY = 'auto'; // enable scrollbar
+        popOutMenu.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+        popOutMenu.style.opacity = '0';
+        popOutMenu.style.transform = 'scale(0.9)';
+
+        // Fade-in animation
+        setTimeout(() => {
+            popOutMenu.style.opacity = '1';
+            popOutMenu.style.transform = 'scale(1)';
+        }, 10);
+
+        // --- Title ---
+        const menuTitle = document.createElement('h1');
+        menuTitle.innerText = 'Credits';
+        menuTitle.style.textAlign = 'center';
+        menuTitle.style.fontFamily = '"Segoe UI", Tahoma, Geneva, sans-serif';
+        menuTitle.style.color = '#d3d3d3';
+        menuTitle.style.textShadow = '2px 2px 4px rgba(0,0,0,0.7)';
+        menuTitle.style.margin = '0 0 10px 0';
+        menuTitle.style.fontSize = '26px';
+        popOutMenu.appendChild(menuTitle);
+
+        // Helper function to create sections
+        function createSection(titleText, subText, listData, align='left') {
+            const title = document.createElement('h2');
+            title.innerText = titleText;
+            title.style.fontFamily = '"Segoe UI", Tahoma, Geneva, sans-serif';
+            title.style.color = '#e0e0e0';
+            title.style.textShadow = '1px 1px 3px rgba(0,0,0,0.8)';
+            title.style.fontSize = '22px';
+            title.style.textAlign = align;
+            title.style.margin = '12px 0 4px 0';
+            popOutMenu.appendChild(title);
+
+            const sub = document.createElement('h3');
+            sub.innerText = subText;
+            sub.style.fontFamily = '"Segoe UI", Tahoma, Geneva, sans-serif';
+            sub.style.color = '#bdbdbd';
+            sub.style.fontSize = '14px';
+            sub.style.textAlign = align;
+            sub.style.margin = '0 0 8px 0';
+            popOutMenu.appendChild(sub);
+
+            const list = document.createElement('ul');
+            list.style.listStyle = 'none';
+            list.style.padding = '0';
+
+            listData.forEach(item => {
+                const menuItem = document.createElement('div');
+                menuItem.style.background = 'linear-gradient(rgba(60,60,60,0.9), rgba(40,40,40,0.7))';
+                menuItem.style.display = 'flex';
+                menuItem.style.alignItems = 'flex-start';
+                menuItem.style.marginBottom = '10px';
+                menuItem.style.padding = '6px';
+                menuItem.style.borderRadius = '5px';
+                menuItem.style.border = '1px solid #444';
+
+                const photo = document.createElement('img');
+                photo.src = item.photo;
+                photo.style.border = "1px solid #888";
+                photo.style.padding = "2px";
+                photo.style.width = '90px';
+                photo.style.height = '90px';
+                photo.style.marginRight = '10px';
+                photo.style.borderRadius = '4px';
+
+                const text = document.createElement('p');
+                text.innerHTML = item.text;
+                text.style.fontSize = "13px";
+                text.style.margin = '0';
+                text.style.color = '#d3d3d3';
+
+                const textAndButton = document.createElement('div');
+                textAndButton.appendChild(text);
+
+                menuItem.appendChild(photo);
+                menuItem.appendChild(textAndButton);
+
+                list.appendChild(menuItem);
+            });
+
+            popOutMenu.appendChild(list);
+        }
+
+        // --- Sections ---
+        createSection('Coders','Coding for Tough as Texas.', creditListA, 'right');
+        createSection('Writers','Writing for Tough as Texas.', creditListB, 'left');
+        createSection('Special Thanks','Our gratitude goes to...', creditListC, 'center');
+
+        // --- Close button ---
+        const closeButton = document.createElement('button');
+        closeButton.innerText = 'Close';
+        closeButton.onclick = closeCredits;
+        closeButton.style.marginTop = '10px';
+        closeButton.style.padding = '6px 12px';
+        closeButton.style.background = '#444';
+        closeButton.style.color = '#d3d3d3';
+        closeButton.style.border = '1px solid #666';
+        closeButton.style.borderRadius = '4px';
+        closeButton.style.cursor = 'pointer';
+        closeButton.onmouseover = () => closeButton.style.background = '#555';
+        closeButton.onmouseout = () => closeButton.style.background = '#444';
+        popOutMenu.appendChild(closeButton);
+
+        document.body.appendChild(popOutMenu);
+        makeDraggable(popOutMenu);
+    }
+
+    if(savedX!==null && savedY!==null){
+        popOutMenu.style.left = savedX+'px';
+        popOutMenu.style.top = savedY+'px';
+    } else {
+        const buttonRect = event.target.getBoundingClientRect();
+        popOutMenu.style.left = buttonRect.right + 382 + 'px';
+        popOutMenu.style.top = buttonRect.top - 406 + 'px';
+        savedX = parseInt(popOutMenu.style.left,10);
+        savedY = parseInt(popOutMenu.style.top,10);
+    }
+
+    popOutMenu.style.display = 'block';
+}
+
+function closeCredits(){
+    const popOutMenu = document.getElementById('popOutMenu');
+    if(popOutMenu){
+        popOutMenu.style.opacity = '0';
+        popOutMenu.style.transform = 'scale(0.9)';
+        setTimeout(() => {
+            savedX = parseInt(popOutMenu.style.left,10);
+            savedY = parseInt(popOutMenu.style.top,10);
+            popOutMenu.remove();
+        }, 300);
+    }
+}
+
+function makeDraggable(element){
+    let isDragging=false;
+    let offsetX=0;
+    let offsetY=0;
+
+    element.addEventListener('mousedown',function(event){
+        isDragging=true;
+        event.preventDefault();
+        offsetX = event.clientX - parseInt(element.style.left || 0,10);
+        offsetY = event.clientY - parseInt(element.style.top || 0,10);
+
+        function onMouseMove(e){
+            if(!isDragging) return;
+            const newX = e.clientX - offsetX;
+            const newY = e.clientY - offsetY;
+            element.style.left = newX+'px';
+            element.style.top = newY+'px';
+            savedX=newX;
+            savedY=newY;
+        }
+
+        function onMouseUp(){
+            isDragging=false;
+            document.removeEventListener('mousemove',onMouseMove);
+            document.removeEventListener('mouseup',onMouseUp);
+        }
+
+        document.addEventListener('mousemove',onMouseMove);
+        document.addEventListener('mouseup',onMouseUp);
+    });
+}
+
+
+const creditListA = [ 
+    { photo: 'https://i.imgur.com/OMugb8F.png', text: '<b>TheMcCain</b><br><b>Main Coder<br>', button: 'Defer', id: 'MCCAIN_A'},
+]
+const creditListB = [ 
+    { photo: 'https://i.imgur.com/OMugb8F.png', text: '<b>TheMcCain</b><br><b>Main Writer</b><br>', button: 'Defer', id: 'MCCAIN_B'},
+    { photo: 'https://i.imgur.com/kIcHBZz.png', text: '<b>theanswerisme</b><br><b>Writer</b><br>', button: 'Defer', id: 'ROUTEVENUS_A'},
+]
+const creditListC = [ 
+    { photo: 'https://i.imgur.com/8zmtuzb.png', text: '<b>W. Team</b><br><b>Credits Screen<br></b>', button: 'Defer', id: 'W_team'},
+    { photo: 'https://i.imgur.com/0Ygtvev.png', text: '<b>Everyone who playtested</b><br><b>Absolute legends<br></b>', button: 'Defer', id: 'W_team'},
+    { photo: 'https://i.imgur.com/f2nlBxl.gif', text: '<b>YOU</b><br><b>FOR PLAYING! <span style="color: #ffffff;"</b></span><br>', button: 'Defer', id: 'YOU_MAN'},
+]
 campaignTrail_temp.opponents_default_json = [
     {
         "election": 20,
@@ -717,110 +919,6 @@ jet_data = {
     "customQuote": "Ted Cruz",
     "gameTitle": "New Campaign Trail"
 }
-
-e=campaignTrail_temp
-
-var changeGameDisp = (hide) => {
-  disp = "";
-  if (hide) {
-    disp = "none";
-  }
-  document.getElementsByClassName("inner_window_w_desc")[0].style.display = disp
-};
-
-e.creditsPage = () => {
-  credits_html = `
-              <style>\
-                  @keyframes flash {\
-                      0% { color: red; }\
-                      14% { color: orange; }\
-                      28% { color: yellow; }\
-                      42% { color: green; }\
-                      57% { color: blue; }\
-                      71% { color: darkviolet; }\
-                      85% { color: orange; }\
-                      100% { color: red; }\
-                  }\
-                  .flashing-text {\
-                      font-weight: bold;\
-                      animation: flash 4s infinite;\
-                  }\
-              </style>\
-<style>
-s1 {
-  text-shadow: 2px 2px 4px;
-}
-</style>
-    <h3><p>The Creators</p></h3>
-    <p><s1><span class='flashing-text'>TheMcCain - Lead Dev/Coding/Main Writing</span></s1></p>
-    <p><s1><span class='flashing-text'>theanswerisme - Theming/Writing</span></s1></p>
-    <h3>Credits To</h3>
-    <p>littleamericanman_85501 - Made the banner and candidate gifs<p>
-    <p>DecstarG - Credits Screen</p>
-    <p>LiquidAstro - Further Reading tool</p> 
-    <p>W. Team - Variable Headquarters (Styling from Class War)</p> 
-    <h3>I'd also like to thank all my great playtesters</h3>
-    <p>General_Rise8708</p>
-    <p>army2.0</p>
-    <p>The Director</p>
-    <p>7ballcraze</p>
-    <p>DalTheFox</p>
-    <p>u/MistaBombasticFanta</p>
-<p>u/zhukob</p>
-<p>u/Fit_Air3024</p>
-<p>u/Skalda11</p>
-<p>u/Royal_undertaker</p>
-<p>u/Environmental_Cap104</p>
-<p>u/NeonMoth229</p>
-    <h3>Special Thanks</h3>
-    <p>Jet's TCT Mod Tool, for making development easier</p>
-    <p>Dan Bryan - Original 2016 scenario, and making this game</p>
-    <p>Jet and Decstar, for hosting this mod.</p>
-    <h1 style="font-family: 'Trebuchet MS', sans-serif; color: #FFFFFF;">
-  But most importantly...
-</h1>
-
-    <div style='width: 70%;text-overflow: ellipsis;text-align:center;display: block;margin-left: auto;margin-right: auto;'>
-    <p>You. Thank you for playing.<p>
-    </div>
-  `
-  changeGameDisp(true);
-  var spacer = document.createElement("amongusspacerthisisntarealelement");
-  spacer.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-  document
-    .getElementsByClassName("inner_window_w_desc")[0]
-    .children[1].appendChild(spacer);
-    changeGameDisp(true);
-    var menuHeader = document.createElement("div");
-    menuHeader.classList.add("inner_window_front");
-    menuHeader.innerHTML = `<h1 style='font-family: "Trebuchet MS";'><font color='#ffffff'>Credits</f</h1>`;
-    menuHeader.id = "SOTUheader";
-    menuHeader.style = "height: 50px;background-color:#2d2d2d";
-    var newMenu = document.createElement("div");
-    newMenu.classList.add("inner_window_front");
-    newMenu.id = "SOTUmenu";
-    newMenu.style = `height:260px;background-color:#2d2d2d;color:white;overflow-y: scroll;`;
-
-    newMenu.innerHTML = credits_html;
-    let z = document.getElementById("game_window");
-    var backButton = document.createElement("button");
-    backButton.style =
-      "position: relative; bottom: -13px; left: -380px; width: 150px; height: 80px;font-size:40px;padding-top:5px;padding-left:8px";
-    backButton.id = "backSOTUBtn";
-    backButton.innerHTML = `<b>BACK</b>`;
-    backButton.onclick = function () {
-      document.getElementById("SOTUheader").remove();
-      document.getElementById("SOTUmenu").remove();
-      document.getElementById("backSOTUBtn").remove();
-      changeGameDisp(false);
-    };
-    z.appendChild(menuHeader);
-    z.appendChild(newMenu);
-    z.appendChild(backButton);
-
-}
-
-e.credits = "<button onclick='e.creditsPage()'>TheMcCain and theanswerisme</button>"
 
 const gameStart = document.getElementById('game_start');
     const gameWindow = document.getElementById('game_window');
