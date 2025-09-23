@@ -982,9 +982,13 @@ document.body.background = "https://images.wallpaperscraft.com/image/single/nigh
 
 document.head.innerHTML += "<style>#results_container {color:#fff;} .inner_window_w_desc {background-color:#17191a!important;}</style>";
 
+
+
 let style = document.createElement('style');
 style.type = 'text/css';
 style.id = 'dynamic-style';
+
+
 
 style.innerHTML = `
   .campaign_trail_start_emphasis {
@@ -1015,6 +1019,15 @@ style.innerHTML = `
   #overall_result h3 {
     background: linear-gradient(135deg, #e6e6e6, #d4d4d4) !important;
   }
+
+img#candidate_pic,
+img#running_mate_pic {
+  border-top: 4px solid #3C3D3D;
+  border-left: 4px solid #3C3D3D;
+  border-right: 4px solid #1F2020;
+  border-bottom: 4px solid #1F2020;
+  border-radius: 10px; 
+}
 
   #menu_container {
     background: linear-gradient(135deg, #e6e6e6, #d4d4d4) !important;
