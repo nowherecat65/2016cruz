@@ -1,6 +1,7 @@
 var Establishment = 0;
 var Ideology = 3;
 var Trump = 0;
+var Primary = 0
 var Resigned = 0;
 var BernieOppoResearch = 0;
 var BernieInvestigation = 0;
@@ -14,66 +15,71 @@ var songChange = 0;
 
 // Variable Headquarters c/o W. Team (TTNW code). Taken from Class War.
 const EstablishmentMap = {
-    "-7": `The corporate class is <span style="color: #880808;"><strong>finished</strong></span>. (<span style="color: #880808;"><strong>-7</strong></span>)`,
-    "-6": `The corporate class is <span style="color: #CD1025;"><strong>pissed</strong></span>. (<span style="color: #CD1025;"><strong>-6</strong></span>)`,
-    "-5": `The corporate class is <span style="color: #FB6723;"><strong>concerned</strong></span>. (<span style="color: #FB6723;"><strong>-5</strong></span>)`,
-    "-4": `The corporate class is <span style="color: #FB6723;"><strong>concerned</strong></span>. (<span style="color: #FB6723;"><strong>-4</strong></span>)`,
-    "-3": `The corporate class is <span style="color: #FB6723;"><strong>concerned</strong></span>. (<span style="color: #FB6723;"><strong>-3</strong></span>)`,
-    "-2": `The corporate class is <span style="color: #FB6723;"><strong>concerned</strong></span>. (<span style="color: #FB6723;"><strong>-2</strong></span>)`,
-    "-1": `The corporate class is <span style="color: #FB6723;"><strong>concerned</strong></span>. (<span style="color: #FB6723;"><strong>-1</strong></span>)`,
+    "-7": `The establishment is <span style="color: #880808;"><strong>finished</strong></span>. (<span style="color: #880808;"><strong>-7</strong></span>)`,
+    "-6": `The establishment is <span style="color: #CD1025;"><strong>pissed</strong></span>. (<span style="color: #CD1025;"><strong>-6</strong></span>)`,
+    "-5": `The establishment is <span style="color: #FB6723;"><strong>concerned</strong></span>. (<span style="color: #FB6723;"><strong>-5</strong></span>)`,
+    "-4": `The establishment is <span style="color: #FB6723;"><strong>concerned</strong></span>. (<span style="color: #FB6723;"><strong>-4</strong></span>)`,
+    "-3": `The establishment is <span style="color: #FB6723;"><strong>concerned</strong></span>. (<span style="color: #FB6723;"><strong>-3</strong></span>)`,
+    "-2": `The establishment is <span style="color: #FB6723;"><strong>concerned</strong></span>. (<span style="color: #FB6723;"><strong>-2</strong></span>)`,
+    "-1": `The establishment is <span style="color: #FB6723;"><strong>concerned</strong></span>. (<span style="color: #FB6723;"><strong>-1</strong></span>)`,
     "0": `The establishment is <span style="color: #DEB83E;"><strong>content</strong></span>. (<span style="color: #DEB83E;"><strong>0</strong></span>)`,
-    "1": `The corporate class is <span style="color: #DEB83E;"> <strong>content</strong></span>. (<span style="color: #DEB83E;"><strong>1</strong></span>)`,
-    "2": `The corporate class is <span style="color: #DEB83E;"> <strong>content</strong></span>. (<span style="color: #DEB83E;"><strong>2</strong></span>)`,
-    "3": `The corporate class is <span style="color: #DEB83E;"> <strong>content</strong></span>. (<span style="color: #DEB83E;"><strong>3</strong></span>)`,
-    "4": `The corporate class is <span style="color: #6DCF1F;"><strong>pleased</strong></span>. (<span style="color: #6DCF1F;"><strong>4</strong></span>)`,
-    "5": `The corporate class is <span style="color: #6DCF1F;"><strong>pleased</strong></span>. (<span style="color: #6DCF1F;"><strong>5</strong></span>)`,
-    "6": `The corporate class is <span style="color: #6DCF1F;"><strong>pleased</strong></span>. (<span style="color: #6DCF1F;"><strong>6</strong></span>)`,
-    "7": `The corporate class is <span style="color: #6DCF1F;"><strong>pleased</strong></span>. (<span style="color: #6DCF1F;"><strong>7</strong></span>)`,
-    "8": `The corporate class is <span style="color: #57AB59;"><strong>satisfied</strong></span>. (<span style="color: #57AB59;"><strong>8</strong></span>)`,
-    "9": `The corporate class is <span style="color: #57AB59;"><strong>satisfied</strong></span>. (<span style="color: #57AB59;"><strong>9</strong></span>)`,
-    "10": `The corporate class is <span style="color: #57AB59;"><strong>satisfied</strong></span>. (<span style="color: #57AB59;"><strong>10</strong></span>)`,
+    "1": `The establishment is <span style="color: #DEB83E;"> <strong>content</strong></span>. (<span style="color: #DEB83E;"><strong>1</strong></span>)`,
+    "2": `The establishment is <span style="color: #DEB83E;"> <strong>content</strong></span>. (<span style="color: #DEB83E;"><strong>2</strong></span>)`,
+    "3": `The establishment is <span style="color: #DEB83E;"> <strong>content</strong></span>. (<span style="color: #DEB83E;"><strong>3</strong></span>)`,
+    "4": `The establishment is <span style="color: #6DCF1F;"><strong>pleased</strong></span>. (<span style="color: #6DCF1F;"><strong>4</strong></span>)`,
+    "5": `The establishment is <span style="color: #6DCF1F;"><strong>pleased</strong></span>. (<span style="color: #6DCF1F;"><strong>5</strong></span>)`,
+    "6": `The establishment is <span style="color: #6DCF1F;"><strong>pleased</strong></span>. (<span style="color: #6DCF1F;"><strong>6</strong></span>)`,
+    "7": `The establishment is <span style="color: #6DCF1F;"><strong>pleased</strong></span>. (<span style="color: #6DCF1F;"><strong>7</strong></span>)`,
+    "8": `The establishment is <span style="color: #57AB59;"><strong>satisfied</strong></span>. (<span style="color: #57AB59;"><strong>8</strong></span>)`,
+    "9": `The establishment is <span style="color: #57AB59;"><strong>satisfied</strong></span>. (<span style="color: #57AB59;"><strong>9</strong></span>)`,
+    "10": `The establishment is <span style="color: #57AB59;"><strong>satisfied</strong></span>. (<span style="color: #57AB59;"><strong>10</strong></span>)`,
 };
 const IdeologyMap = {
-    "-7": `You are seen as a <span style="color: #CD1025;"><strong>RINO</strong></span>. (<span style="color: #CD1025;"><strong>-7</strong></span>)`,
-    "-6": `You are seen as <span style="color: #FB6723;"><strong>too moderate</strong></span>. (<span style="color: #FB6723;"><strong>-6</strong></span>)`,
-    "-5": `You are seen as <span style="color: #FB6723;"><strong>too moderate</strong></span>. (<span style="color: #FB6723;"><strong>-5</strong></span>)`,
-    "-4": `You are seen as a <span style="color: #DEB83E;"><strong>moderate</strong></span>. (<span style="color: #DEB83E;"><strong>-4</strong></span>)`,
-    "-3": `You are seen as a <span style="color: #DEB83E;"><strong>moderate</strong></span>. (<span style="color: #DEB83E;"><strong>-3</strong></span>)`,
-    "-2": `You are seen as <span style="color: #6DCF1F;"> <strong>shying away</strong></span> from conservative values. (<span style="color: #6DCF1F;"><strong>-2</strong></span>)`,
-    "-1": `You are seen as <span style="color: #6DCF1F;"> <strong>shying away</strong></span> from conservative values. (<span style="color: #6DCF1F;"><strong>-1</strong></span>)`,
-    "0": `You are seen as <span style="color: #57AB59;"> <strong>generally conservative</strong></span>. (<span style="color: #57AB59;"><strong>0</strong></span>)`,
-    "1": `You are seen as <span style="color: #57AB59;"> <strong>generally conservative</strong></span>. (<span style="color: #57AB59;"><strong>1</strong></span>)`,
-    "2": `You are seen as <span style="color: #6DCF1F;"> <strong>increasingly conservative</strong></span>. (<span style="color: #6DCF1F;"><strong>2</strong></span>)`,
-    "3": `You are seen as <span style="color: #6DCF1F;"> <strong>very conservative</strong></span>. (<span style="color: #6DCF1F;"><strong>3</strong></span>)`,
-    "4": `You are seen as <span style="color: #6DCF1F;"> <strong>increasingly conservative</strong></span>. (<span style="color: #6DCF1F;"><strong>4</strong></span>)`,
-    "5": `You are seen as <span style="color: #6DCF1F;"> <strong>increasingly conservative</strong></span>. (<span style="color: #6DCF1F;"><strong>5</strong></span>)`,
-    "6": `You are seen as <span style="color: #DEB83E;"> <strong>conservative</strong></span>. (<span style="color: #DEB83E;"><strong>6</strong></span>)`,
-    "7": `You are seen as <span style="color: #DEB83E;"> <strong>conservative</strong></span>. (<span style="color: #DEB83E;"><strong>7</strong></span>)`,
-    "8": `You are seen as <span style="color: #DEB83E;"> <strong>conservative</strong></span>. (<span style="color: #DEB83E;"><strong>8</strong></span>)`,
-    "9": `You are seen as <span style="color: #DEB83E;"> <strong>conservative</strong></span>. (<span style="color: #DEB83E;"><strong>9</strong></span>)`,
-    "10": `You are seen as <span style="color: #FB6723;"> <strong>too conservative</strong></span>. (<span style="color: #FB6723;"><strong>10</strong></span>)`,
-    "11": `You are seen as <span style="color: #FB6723;"> <strong>too conservative</strong></span>. (<span style="color: #FB6723;"><strong>11</strong></span>)`,
-    "12": `You are seen as <span style="color: #FB6723;"> <strong>too conservative</strong></span>. (<span style="color: #FB6723;"><strong>12</strong></span>)`,
-    "13": `You are seen as <span style="color: #FB6723;"> <strong>too conservative</strong></span>. (<span style="color: #FB6723;"><strong>13</strong></span>)`,
-    "14": `You are seen as <span style="color: #CD1025;"> <strong>far-right</strong></span>. (<span style="color: #CD1025;"><strong>14</strong></span>)`,
-    "15": `You are seen as <span style="color: #CD1025;"> <strong>far-right</strong></span>. (<span style="color: #CD1025;"><strong>15</strong></span>)`,
-    "16": `You are seen as <span style="color: #CD1025;"> <strong>far-right</strong></span>. (<span style="color: #CD1025;"><strong>16</strong></span>)`,
-    "17": `You are seen as <span style="color: #CD1025;"> <strong>far-right</strong></span>. (<span style="color: #CD1025;"><strong>17</strong></span>)`,
+    "-7": `You’re seen as a <span style="color: #CD1025;"><strong>RINO</strong></span>. (<span style="color: #CD1025;"><strong>-7</strong></span>)`,
+    "-6": `You’re seen as <span style="color: #FB6723;"><strong>too moderate</strong></span>. (<span style="color: #FB6723;"><strong>-6</strong></span>)`,
+    "-5": `You’re seen as <span style="color: #FB6723;"><strong>too moderate</strong></span>. (<span style="color: #FB6723;"><strong>-5</strong></span>)`,
+    "-4": `You’re seen as a <span style="color: #DEB83E;"><strong>moderate</strong></span>. (<span style="color: #DEB83E;"><strong>-4</strong></span>)`,
+    "-3": `You’re seen as a <span style="color: #DEB83E;"><strong>moderate</strong></span>. (<span style="color: #DEB83E;"><strong>-3</strong></span>)`,
+    "-2": `You’re seen as <span style="color: #6DCF1F;"> <strong>shying away</strong></span> from conservative values. (<span style="color: #6DCF1F;"><strong>-2</strong></span>)`,
+    "-1": `You’re seen as <span style="color: #6DCF1F;"> <strong>shying away</strong></span> from conservative values. (<span style="color: #6DCF1F;"><strong>-1</strong></span>)`,
+    "0": `You’re seen as <span style="color: #57AB59;"> <strong>generally conservative</strong></span>. (<span style="color: #57AB59;"><strong>0</strong></span>)`,
+    "1": `You’re seen as <span style="color: #57AB59;"> <strong>generally conservative</strong></span>. (<span style="color: #57AB59;"><strong>1</strong></span>)`,
+    "2": `You’re seen as <span style="color: #6DCF1F;"> <strong>increasingly conservative</strong></span>. (<span style="color: #6DCF1F;"><strong>2</strong></span>)`,
+    "3": `You’re seen as <span style="color: #6DCF1F;"> <strong>very conservative</strong></span>. (<span style="color: #6DCF1F;"><strong>3</strong></span>)`,
+    "4": `You’re seen as <span style="color: #6DCF1F;"> <strong>increasingly conservative</strong></span>. (<span style="color: #6DCF1F;"><strong>4</strong></span>)`,
+    "5": `You’re seen as <span style="color: #6DCF1F;"> <strong>increasingly conservative</strong></span>. (<span style="color: #6DCF1F;"><strong>5</strong></span>)`,
+    "6": `You’re seen as <span style="color: #DEB83E;"> <strong>conservative</strong></span>. (<span style="color: #DEB83E;"><strong>6</strong></span>)`,
+    "7": `You’re seen as <span style="color: #DEB83E;"> <strong>conservative</strong></span>. (<span style="color: #DEB83E;"><strong>7</strong></span>)`,
+    "8": `You’re seen as <span style="color: #DEB83E;"> <strong>conservative</strong></span>. (<span style="color: #DEB83E;"><strong>8</strong></span>)`,
+    "9": `You’re seen as <span style="color: #DEB83E;"> <strong>conservative</strong></span>. (<span style="color: #DEB83E;"><strong>9</strong></span>)`,
+    "10": `You’re seen as <span style="color: #FB6723;"> <strong>too conservative</strong></span>. (<span style="color: #FB6723;"><strong>10</strong></span>)`,
+    "11": `You’re seen as <span style="color: #FB6723;"> <strong>too conservative</strong></span>. (<span style="color: #FB6723;"><strong>11</strong></span>)`,
+    "12": `You’re seen as <span style="color: #FB6723;"> <strong>too conservative</strong></span>. (<span style="color: #FB6723;"><strong>12</strong></span>)`,
+    "13": `You’re seen as <span style="color: #FB6723;"> <strong>too conservative</strong></span>. (<span style="color: #FB6723;"><strong>13</strong></span>)`,
+    "14": `You’re seen as <span style="color: #CD1025;"> <strong>far-right</strong></span>. (<span style="color: #CD1025;"><strong>14</strong></span>)`,
+    "15": `You’re seen as <span style="color: #CD1025;"> <strong>far-right</strong></span>. (<span style="color: #CD1025;"><strong>15</strong></span>)`,
+    "16": `You’re seen as <span style="color: #CD1025;"> <strong>far-right</strong></span>. (<span style="color: #CD1025;"><strong>16</strong></span>)`,
+    "17": `You’re seen as <span style="color: #CD1025;"> <strong>far-right</strong></span>. (<span style="color: #CD1025;"><strong>17</strong></span>)`,
 };
 const TrumpMap = {
-    "-3": `Putin <span style="color: #CD1025;"><strong>laughs</strong></span> at you.`,
-    "-2": `Putin thinks you’re <span style="color:  #FB6723;"><strong>gutless</strong></span>.`,
-    "-1": `Putin thinks you’re <span style="color:  #FB6723;"><strong>gutless</strong></span>.`,
+    "-3": `You and Trump have become <span style="color: #CD1025;"><strong>lifelong enemies</strong></span>.`,
+    "-2": `You and Trump are <span style="color:  #FB6723;"><strong>enemies</strong></span>.`,
+    "-1": `You and Trump are <span style="color:  #FB6723;"><strong>quickly becoming rivals</strong></span>.`,
     "0": `You and Trump are <span style="color: #DEB83E;"><strong>primary rivals</strong></span> currently.`,
-    "1": `Putin is <span style="color: #DEB83E;"><strong>irritated</strong></span> with you.`,
-    "2": `Putin is <span style="color: #DEB83E;"><strong>irritated</strong></span> with you.`,
-    "3": `Putin is <span style="color: #DEB83E;"><strong>irritated</strong></span> with you.`,
-    "4": `Putin <span style="color: #FB6723;"><strong>despises</strong></span> you.`,
-    "5": `Putin <span style="color: #FB6723;"><strong>despises</strong></span> you.`,
-    "6": `Putin <span style="color: #FB6723;"><strong>despises</strong></span> you.`,
-    "7": `Putin <span style="color: #FB6723;"><strong>despises</strong></span> you.`,
-    "8": `Putin is <span style="color: #CD1025;"><strong>hellbent</strong></span> on <span style="color: #CD1025;"><strong>destroying</strong></span> you.`,
-    "9": `World War Three has <span style="color: #880808;"><strong>begun</strong></span>.`,
+    "1": `You and Trump are <span style="color: #57AB6A;"><strong>working together</strong></span>.`,
+    "2": `You and Trump have <span style="color: #57AB59;"><strong>become allies</strong></span>.`,
+    "3": `Trump is <span style="color: #3bd918;"><strong>irritated</strong></span> with you.`,
+    "4": `You and Trump have<span style="color: #57AB59;"><strong>become allies</strong></span>.`,
+    "5": `You and Trump <span style="color: #2be800;"><strong>are friends</strong></span> you.`,
+};
+const PrimaryMap = {
+    "-3": `Your primary showing has been <span style="color: #CD1025;"><strong>an unmitigated disaster</strong></span>.`,
+    "-2": `Your primary showing has been <span style="color:  #FB6723;"><strong>a failure</strong></span>.`,
+    "-1": `Your primary showing is <span style="color:  #FB6723;"><strong>off to a bad start.</strong></span>.`,
+    "0": `Your primary showing has been <span style="color: #DEB83E;"><strong>somewhat respectable</strong></span>.`,
+    "1": `Your primary showing has been <span style="color: #57AB6A;"><strong>somewhat successful</strong></span>.`,
+    "2": `Your primary showing has been <span style="color: #6DCF1F;"><strong>very successful</strong></span>.`,
+    "3": `Your primary showing has been <span style="color: #6DCF1F;"><strong>a resounding success</strong></span>.`,
 };
 const JudgeMap = {
     "-2": `Your Supreme Court nominee has been <span style="color:  #CD1025;"><strong>blocked</strong></span>.`,
@@ -229,6 +235,9 @@ function openHeadquarter() {
 
         TrumpText = `${TrumpMap[String(Trump)]}`;
         overviewtxt += "• "+ `${TrumpText}` + "<br>";
+
+        PrimaryText = `${PrimaryMap[String(Primary)]}`;
+        overviewtxt += "• "+ `${PrimaryText}` + "<br>";
 
 if(!Judge == 0){
         JudgeText = `${JudgeMap[String(Judge)]}`;
@@ -505,10 +514,12 @@ function getQuestionNumberFromPk(pk) {
 cyoAdventure = function (a) {
     ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length-1];
 
-  if (ans == 51216 || ans == 51219 || ans == 51263 || ans == 51297) {
-  campaignTrail_temp.candidate_image_url = 'https://files.catbox.moe/sprxev.gif'
-  campaignTrail_temp.running_mate_image_url = 'https://files.catbox.moe/r3lt82.gif';
-}
+  if(ans ==  20676 || ans == 5018 || ans == 5017 || ans == 5016){
+        Primary  += 1;
+    }
+  if(ans ==  20683){
+        Primary  += 2;
+    }
 
   if (ans == 51271 || ans == 51084) {
         campaignTrail_temp.candidate_json[0]["fields"].first_name = "Donald";
@@ -517,7 +528,7 @@ cyoAdventure = function (a) {
         		vpTable["Donald Trump"] = "Chris Christie";
 }
 
-if (campaignTrail_temp.player_answers[2] == 20683) {
+if (Primary == 3) {
   campaignTrail_temp.questions_json[4] = {
     "model": "campaign_trail.question",
     "pk": 51060,
@@ -528,7 +539,6 @@ if (campaignTrail_temp.player_answers[2] == 20683) {
     }
   }
 } else {
-    // CYOA
   campaignTrail_temp.questions_json[4] = {
     "model": "campaign_trail.question",
     "pk": 1008,
@@ -1076,7 +1086,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5121,
         "fields": {
             "question": 1036,
-            "description": "From the start, it's incredible that Hillary Clinton was even allowed to run. We're just fortunate that this news came out before the election. Can you imagine?!"
+            "description": "Thank goodness this came out before the election. That's all I have to say. Thank goodness."
         }
     },
     {
@@ -1084,7 +1094,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5122,
         "fields": {
             "question": 1036,
-            "description": "I don't want to speculate on what kind of incriminating new evidence might be in these emails. I just want to focus on our Make America Great Again agenda during the closing stretch of this election."
+            "description": "I don't want to speculate or throw out baseless allegations in the midst of all this chaos. Hopefully justice will be done here."
         }
     },
     {
@@ -9759,7 +9769,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51083,
             "candidate": 200,
-            "answer_feedback": "You're able to quickly secure endorsements from both Rubio and Rubio, though Trump still remains a thorn in your side, for now."
+            "answer_feedback": "You're able to quickly secure endorsements from both Rubio and Kasich, though Trump still remains a thorn in your side, for now."
         }
     },
     {
