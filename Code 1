@@ -802,7 +802,7 @@ credits = function() {
 
         // --- Sections ---
         createSection('Developers','Coding & Writing for Tough as Texas.', AB, 'center');
-        createSection('Special Thanks','Our gratitude goes to...', creditListC, 'center');
+        createSection('Special Thanks','Thanks to...', creditListC, 'center');
 
         // --- Close button ---
         const closeButton = document.createElement('button');
