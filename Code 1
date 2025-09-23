@@ -808,7 +808,7 @@ credits = function() {
 
         // --- Close button ---
         const closeButton = document.createElement('button');
-        closeButton.innerText = 'Close';
+        closeButton.innerText = 'Close (Please close this before playing, otherwise the HQ will break)';
         closeButton.onclick = closeCredits;
         closeButton.style.marginTop = '10px';
         closeButton.style.padding = '6px 12px';
