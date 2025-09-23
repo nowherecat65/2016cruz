@@ -779,9 +779,11 @@ credits = function() {
             popOutMenu.appendChild(list);
         }
 
+        // --- Combine credit lists A and B ---
+        const AB = [...creditListA, ...creditListB];
+
         // --- Sections ---
-        createSection('Coders','Coding for Tough as Texas.', creditListA, 'right');
-        createSection('Writers','Writing for Tough as Texas.', creditListB, 'left');
+        createSection('Developers','Coding & Writing for Tough as Texas.', AB, 'center');
         createSection('Special Thanks','Our gratitude goes to...', creditListC, 'center');
 
         // --- Close button ---
@@ -864,16 +866,15 @@ function makeDraggable(element){
 
 
 const creditListA = [ 
-    { photo: 'https://i.imgur.com/OMugb8F.png', text: '<b>TheMcCain</b><br><b>Main Coder<br>', button: 'Defer', id: 'MCCAIN_A'},
+    { photo: 'https://i.imgur.com/DeON6Uc.png', text: '<b>TheMcCain</b><br><b>Lead Dev / Coder / Main Writer<br>', button: 'Defer', id: 'MCCAIN_A'},
 ]
 const creditListB = [ 
-    { photo: 'https://i.imgur.com/OMugb8F.png', text: '<b>TheMcCain</b><br><b>Main Writer</b><br>', button: 'Defer', id: 'MCCAIN_B'},
     { photo: 'https://i.imgur.com/kIcHBZz.png', text: '<b>theanswerisme</b><br><b>Writer</b><br>', button: 'Defer', id: 'ROUTEVENUS_A'},
 ]
 const creditListC = [ 
-    { photo: 'https://i.imgur.com/8zmtuzb.png', text: '<b>W. Team</b><br><b>Credits Screen<br></b>', button: 'Defer', id: 'W_team'},
-    { photo: 'https://i.imgur.com/0Ygtvev.png', text: '<b>Everyone who playtested</b><br><b>Absolute legends<br></b>', button: 'Defer', id: 'W_team'},
-    { photo: 'https://i.imgur.com/f2nlBxl.gif', text: '<b>YOU</b><br><b>FOR PLAYING! <span style="color: #ffffff;"</b></span><br>', button: 'Defer', id: 'YOU_MAN'},
+    { photo: 'https://i.imgur.com/8zmtuzb.png', text: '<b>W. Team</b><br><b>Credits Screen & Variable Headquarters<br></b>', button: 'Defer', id: 'W_team'},
+    { photo: 'https://i.imgur.com/9bkzEuf.png', text: '<b>Everyone who playtested</b><br><b>Absolute legends<br></b>', button: 'Defer', id: 'W_team'},
+    { photo: 'https://i.imgur.com/tAdyfzF.png', text: '<b>YOU</b><br><b>For playing!<span style="color: #ffffff;"</b></span><br>', button: 'Defer', id: 'YOU_MAN'},
 ]
 campaignTrail_temp.opponents_default_json = [
     {
