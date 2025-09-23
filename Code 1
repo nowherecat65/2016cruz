@@ -47,23 +47,41 @@ document.head.innerHTML += `
     }
   }
 
+  @keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
   .overlay_window {
-    animation: fadeInScale 0.3s cubic-bezier(0.3, 1.2, 0.2, 1) forwards;
+    animation: fadeInScale 0.3s cubic-bezier(0.3, 1.2, 0.2, 1) forwards, gradientShift 30s ease infinite;
     opacity: 0;
-    background: #ededed;
-    border-radius: 0.2rem;
+    background: linear-gradient(135deg, #1a1a1a, #2b2b2b, #3c3c3c);
+    background-size: 300% 300%;
+    border-radius: 0.5rem;
     box-shadow:
-      0 0 0.5em rgba(226, 224, 255, 0.5),
-      0 0 0.75em rgba(224, 224, 255, 0.3),
-      0 0 1em rgba(224, 226, 255, 0.1);
+      0 0 1.2em rgba(40, 40, 40, 0.5),
+      0 0 2em rgba(40, 40, 40, 0.3);
     display: flex;
     flex-flow: column;
-
+    color: #f0f0f0;
+    padding: 1.2em;
   }
-.overlay_window h3 {
-  background-color: #ababab;
+
+  .overlay_window h3 {
+    margin: 0;
+    padding: 0.5em 1em;
+    font-size: 1.3em;
+    background: linear-gradient(135deg, #1a1a1a, #2b2b2b, #3c3c3c);
+    border-radius: 0.5rem 0.5rem 0 0;
+    color: #f0f0f0;
+  }
+
+  .overlay_window p {
+    margin: 0.5em 0 0 0;
+  }
 </style>
-}`;
+`;
 
 
 // Right here are the custom styles. Buttons, dropdowns, sliders, etc.
