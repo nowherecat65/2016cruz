@@ -995,9 +995,10 @@ style.innerHTML = `
     color: #0000FF;
   }
 
-  .inner_window_question h3 {
-    background: linear-gradient(135deg, #e6e6e6, #d4d4d4) !important;
-  }
+.inner_window_question h3 {
+    background: linear-gradient(to bottom, #e0e0e0, #a0a0a0) !important;
+}
+
 
 .overlay_window h3 {
   background: linear-gradient(135deg, #2e2e2e, #1a1a1a) !important;
