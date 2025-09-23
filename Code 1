@@ -996,9 +996,8 @@ style.innerHTML = `
   }
 
 .inner_window_question h3 {
-    background: linear-gradient(to bottom, #e0e0e0, #a0a0a0) !important;
+    background: linear-gradient(to bottom, #E6E6FA, #FFFFFF) !important;
 }
-
 
 .overlay_window h3 {
   background: linear-gradient(135deg, #2e2e2e, #1a1a1a) !important;
