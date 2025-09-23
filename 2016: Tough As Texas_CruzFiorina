@@ -842,6 +842,15 @@ campaignTrail_temp.questions_json = [
     },
     {
         "model": "campaign_trail.question",
+        "pk": 51242,
+        "fields": {
+            "priority": 0,
+            "description": "With the unfortunate passing of Justice Antonin Scalia, Barack Obama has chosen to nominate Merrick Garland as his replacement. Senate Republicans, led by Mitch McConnell, have refused to approve him, demanding that the justice be nominated after the election, meanwhile Democrats and Hillary have called it dangerous and unconstitutional. What are your thoughts?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
         "pk": 1016,
         "fields": {
             "priority": 10,
@@ -863,7 +872,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1021,
         "fields": {
             "priority": 10,
-            "description": "At a semi-private fundraiser in New York, Hillary Clinton said to some wealthy donors, “You know, to just be grossly generalistic, you could call about half of Cruz’s supporters what I call the brigade of bigots.” The crowd laughs. “They're racist, sexist, homophobic, xenophobic, Islamophobic, you name it.” She keeps going. “Some of those people.. they're irredeemable. But thankfully, they are not America.” This makes your blood boil, but this is also a massive chance. The news men are already relentlessly slamming her, and now is the time to strike, what do you do here?",
+            "description": "After trailing Clinton by several points, you are finally getting some good news. At a semi-private fundraiser in New York, Hillary Clinton said to some wealthy donors, “You know, to just be grossly generalistic, you could call about half of Cruz’s supporters what I call the brigade of bigots.” The crowd laughs. “They're racist, sexist, homophobic, xenophobic, Islamophobic, you name it.” She keeps going. “Some of those people.. they're irredeemable. But thankfully, they are not America.” This makes your blood boil, but this is also a massive chance. The news men on Fox are already relentlessly slamming her, and now is the time to strike, what do you do here?",
             "likelihood": 1
         }
     },
@@ -905,19 +914,10 @@ campaignTrail_temp.questions_json = [
     },
     {
         "model": "campaign_trail.question",
-        "pk": 1035,
-        "fields": {
-            "priority": -3,
-            "description": "Just days after WikiLeaks revealed how corrupt Hillary Clinton was, another bombshell has hit the papers. According to WikiLeaks, you not only worked with McConnell and the RNC to deny Trump the nomination, but also committed multiple acts of fraud to win. All these allegations are false, but they look incredibly real. Hillary's already calling you a hypocrite, you have dozens of missed calls from everyone on your phone, and Trump is basically frothing at his mouth. This is bad, but first you need to prevent Trump from losing his temper and sinking your chances. What do you do?",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
         "pk": 1034,
         "fields": {
             "priority": -3,
-            "description": "A leaked transcript from Wikileaks shows Hillary Clinton saying in a closed-door speech at Goldman Sachs that she is \"center-left, center-right\" and that she supports \"open trade and open borders\". How do you respond?",
+            "description": "With Election Day fast approaching, what is your position on free trade agreements like NAFTA or the Trans-Pacific Partnership? Whilst both parties have supported it for free decades, and it's saved consumers trillions over the years, many American manufacturing jobs have been outsourced overseas due to cheaper labor. This has caused many jobs, especially in the Midwest, to be lost. Both you and Hillary have supported free trade for your whole careers, but she's also leveling accusations of flip-flopping as she tries to moderate on this issue.",
             "likelihood": 1
         }
     },
@@ -926,7 +926,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1036,
         "fields": {
             "priority": -2,
-            "description": "James Comey, FBI Director, has made a late announcement that additional emails have surfaced in Hillary Clinton's case, thanks to an investigation into Anthony Weiner. What are your thoughts?",
+            "description": "Barely 11 days before Election Day, James Comey, FBI Director, has made an extremely late announcement that additional emails have surfaced in Hillary Clinton's case, thanks to an investigation into Anthony Weiner's laptop. Hillary Clinton continues to profess her innocence, and mass confusion and anger has become commonplace amongst the voters. This might be what pushes you over the top, how do you handle this?",
             "likelihood": 1
         }
     },
@@ -941,64 +941,10 @@ campaignTrail_temp.questions_json = [
     },
     {
         "model": "campaign_trail.question",
-        "pk": 51055,
-        "fields": {
-            "priority": 0,
-            "description": "test",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 51056,
-        "fields": {
-            "priority": 0,
-            "description": "put description here",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 51057,
-        "fields": {
-            "priority": 0,
-            "description": "put description here",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 51058,
-        "fields": {
-            "priority": 0,
-            "description": "put description here",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 51059,
-        "fields": {
-            "priority": 0,
-            "description": "put description here",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
         "pk": 51060,
         "fields": {
             "priority": 0,
             "description": "Well... today was interesting. You've defied the odds. Despite Trump's best efforts, you decisively defeated him on Super Tuesday, winning most states. While Trump will still try in vain to win, you're now on track to win the nomination.",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 51242,
-        "fields": {
-            "priority": 0,
-            "description": "put description here",
             "likelihood": 1
         }
     }
@@ -1074,7 +1020,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5033,
         "fields": {
             "question": 1012,
-            "description": "Crooked Hillary loves to talk about how experienced she is on foreign policy. Well, our amazing Secretary of State let four Americans die, then went on television and lied, all to cover up her own security failures. This woman’s career has been a disaster, no matter how you look at it."
+            "description": "Hillary Clinton loves to talk about how experienced she is on foreign policy. Well, our amazing Secretary of State let four Americans die, then went on television and lied, all to cover up her own security failures. This woman’s career has been a disaster, no matter how you look at it."
         }
     },
     {
@@ -1090,7 +1036,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5090,
         "fields": {
             "question": 1027,
-            "description": "Abortion — or, as it truly is, infanticide — is one of the worst and most sinful ideas ever to take root in our country. Hillary Clinton has been at the center of this movement for her entire life, destroying our values piece by piece. We must stop her this November."
+            "description": "Abortion -- or, as it truly is, infanticide -- is one of the worst and most sinful ideas ever to take root in our country. Hillary Clinton has been at the center of this movement for her entire life, destroying our values piece by piece. We must stop her this November."
         }
     },
     {
@@ -1123,38 +1069,6 @@ campaignTrail_temp.answers_json = [
         "fields": {
             "question": 1030,
             "description": "The real shutdown was the damage Obamacare was, and still is, doing to jobs and healthcare. I fought it then, and I’ll repeal it as your President."
-        }
-    },
-    {
-        "model": "campaign_trail.answer",
-        "pk": 5114,
-        "fields": {
-            "question": 1034,
-            "description": "As usual, Hillary has been caught telling lies. For all we know, this is just the beginning. Do we really want a President, and then a month after they're elected we find out they're being blackmailed by Russia or China?"
-        }
-    },
-    {
-        "model": "campaign_trail.answer",
-        "pk": 5115,
-        "fields": {
-            "question": 1034,
-            "description": "No wonder she was working so hard to cheat Bernie Sanders out of the nomination. She's the Goldman Sachs candidate, folks, plain and simple."
-        }
-    },
-    {
-        "model": "campaign_trail.answer",
-        "pk": 5116,
-        "fields": {
-            "question": 1034,
-            "description": "If it's really true that Russia collaborated to release this information about Hillary Clinton's private speeches to Goldman Sachs, then I totally disavow and denounce these illegal leaks."
-        }
-    },
-    {
-        "model": "campaign_trail.answer",
-        "pk": 5117,
-        "fields": {
-            "question": 1034,
-            "description": "They keep saying \"Russia Russia Russia\". I've heard other people say this was an inside job from a DNC whistleblower. You know, the guy that assassinated or something like that. Strange!"
         }
     },
     {
@@ -1402,7 +1316,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51043,
         "fields": {
             "question": 1022,
-            "description": "This investigation was a disaster from the very start. Crooked Hillary destroyed nearly all the evidence during the investigation, yet she wasn’t charged. Clinton is lying through her teeth."
+            "description": "This investigation was a disaster from the very start. Hillary destroyed nearly all the evidence during the investigation, yet she wasn’t charged. Clinton is lying through her teeth."
         }
     },
     {
@@ -1426,7 +1340,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51063,
         "fields": {
             "question": 1022,
-            "description": "This just shows how corrupt Hillary is and how deep the swamp runs. We don’t know whether she destroyed the evidence, but you better believe a Cruz administration will be looking into this further!"
+            "description": "This just shows how corrupt Hillary is and how corrupt the establishment is. We don’t know whether she destroyed the evidence or not, but you better believe a Cruz administration will be looking into this further!"
         }
     },
     {
@@ -1467,22 +1381,6 @@ campaignTrail_temp.answers_json = [
         "fields": {
             "question": 1008,
             "description": "We can't let Trump win. I'll talk personally to Rubio, and ask him to drop out and endorse me, and I'll even promise him I'll name him my running mate if I win the nomination. I know for sure he'll want something of that sort."
-        }
-    },
-    {
-        "model": "campaign_trail.answer",
-        "pk": 51115,
-        "fields": {
-            "question": 51056,
-            "description": "put description here"
-        }
-    },
-    {
-        "model": "campaign_trail.answer",
-        "pk": 51116,
-        "fields": {
-            "question": 51055,
-            "description": "put description here"
         }
     },
     {
@@ -1722,7 +1620,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51293,
         "fields": {
             "question": 1026,
-            "description": "It's simple, really. Stick to the bread-and-butter issues. Obamacare, Benghazi, DACA, wherever we can hammer her on. She is the most incompetent Secretary of State that we've ever had."
+            "description": "Let's try a different approach. I think voters are tired of all the negativity this election has had. Our ads should offer our own solutions for now. I think people want someone to vote for, not someone to vote against."
         }
     },
     {
@@ -1731,14 +1629,6 @@ campaignTrail_temp.answers_json = [
         "fields": {
             "question": 1026,
             "description": "She's a total flip-flopper. She was just talking at an AIPAC event about how much she hates Palestine, then she calls me Islamophobic. She talks about how she's a unifier, then calls half of America bigoted."
-        }
-    },
-    {
-        "model": "campaign_trail.answer",
-        "pk": 51300,
-        "fields": {
-            "question": 51242,
-            "description": "New answer option"
         }
     },
     {
@@ -1754,7 +1644,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51319,
         "fields": {
             "question": 1033,
-            "description": "Anyone who has heard Crooked Hillary talk for more than 3 seconds shouldn't be surprised. Remember when she also said that she was “adamantly against illegal immigration”? What happened to that? She can't take a real stance on a single issue."
+            "description": "Anyone who has heard Hillary talk for more than 3 seconds shouldn't be surprised. Remember when she also said that she was “adamantly against illegal immigration”? What happened to that? She can't take a real stance on a single issue."
         }
     },
     {
@@ -1775,34 +1665,50 @@ campaignTrail_temp.answers_json = [
     },
     {
         "model": "campaign_trail.answer",
-        "pk": 51331,
+        "pk": 51383,
         "fields": {
-            "question": 1035,
-            "description": "Christ, what does he want now? If he wants a position, I'll give it to him. He wants his friends in cabinet positions, I'll give him that too. We can't let that crook Hillary get her little hands on the White House."
+            "question": 51242,
+            "description": "This is just another example of career politicians petty partisanship over actually getting the country moving. I do believe that people should be given a choice when deciding justices, but it's a bad idea to just stonewall Obama because of politics."
         }
     },
     {
         "model": "campaign_trail.answer",
-        "pk": 51332,
+        "pk": 51384,
         "fields": {
-            "question": 1035,
-            "description": "Screw him. All he's been doing this entire campaign is holding me hostage and making me bow down to him. He can cry and whine for as long as he wants, but he's not going to do anything because he's a loser. "
+            "question": 51242,
+            "description": "Is this really the most important topic we have to discuss? I'm focused on the awful, terrible campaign of Hillary Clinton, and how she'll ruin America. I don't care about this."
         }
     },
     {
         "model": "campaign_trail.answer",
-        "pk": 51333,
+        "pk": 51385,
         "fields": {
-            "question": 1035,
-            "description": "I want to talk personally with him, I want to set the record straight. I didn't rig that nomination, and he needs to know Russia is leaking it to sink my chances and try to sow chaos. He shouldn't fall for it."
+            "question": 51242,
+            "description": "I agree with McConnell. The Democrats desperately want to appoint a justice now regardless of what voters say. This is the people's seat, not the Democrat's seat."
         }
     },
     {
         "model": "campaign_trail.answer",
-        "pk": 51334,
+        "pk": 51403,
         "fields": {
-            "question": 1035,
-            "description": "Frankly, Trump is the least of our concerns right now. Russia is trying to undermine this election at every turn, and continues to spread blatant lies about me and my campaign. We need to combat this false notion before we even begin to reach out to Trump."
+            "question": 1034,
+            "description": "Notice that when she was a Senator, Hillary was talking everyone's ears off about how great free trade was? Now she says that she's “deeply concerned” about the TPP? What's with that? I'm consistent, right?"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 51405,
+        "fields": {
+            "question": 1034,
+            "description": "Free trade has been the source of much of our economic prosperity this century, and has saved consumers trillions. I'm aware this is a contentious issue, but on the balance, it has helped America, and I support NAFTA and the TPP."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 51406,
+        "fields": {
+            "question": 1034,
+            "description": "I've changed my position on the after much reflection. While I initially supported fast-tracking the TPP, some of the provisions that have made it in are obviously going to be harmful to our workers. This is a deal I can no longer support in good conscience. "
         }
     }
 ]
@@ -4208,8 +4114,8 @@ campaignTrail_temp.state_issue_score_json = [
         "fields": {
             "state": 1032,
             "issue": 101,
-            "state_issue_score": -0.4,
-            "weight": 0.5
+            "state_issue_score": 0,
+            "weight": 0.3
         }
     },
     {
@@ -5427,7 +5333,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 200,
             "state": 1005,
-            "state_multiplier": 0.94998
+            "state_multiplier": 0.955
         }
     },
     {
@@ -5508,7 +5414,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 200,
             "state": 1014,
-            "state_multiplier": 0.891
+            "state_multiplier": 0.934
         }
     },
     {
@@ -5544,7 +5450,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 200,
             "state": 1018,
-            "state_multiplier": 0.94
+            "state_multiplier": 0.95
         }
     },
     {
@@ -5571,7 +5477,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 200,
             "state": 1021,
-            "state_multiplier": 1.005
+            "state_multiplier": 0.96
         }
     },
     {
@@ -5580,7 +5486,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 200,
             "state": 1022,
-            "state_multiplier": 1.00189
+            "state_multiplier": 1.013
         }
     },
     {
@@ -5625,7 +5531,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 200,
             "state": 1027,
-            "state_multiplier": 0.899
+            "state_multiplier": 0.878
         }
     },
     {
@@ -5634,7 +5540,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 200,
             "state": 1028,
-            "state_multiplier": 1.04
+            "state_multiplier": 1.05
         }
     },
     {
@@ -5670,7 +5576,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 200,
             "state": 1032,
-            "state_multiplier": 0.943
+            "state_multiplier": 0.983
         }
     },
     {
@@ -5688,7 +5594,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 200,
             "state": 1034,
-            "state_multiplier": 0.88691
+            "state_multiplier": 0.883
         }
     },
     {
@@ -5715,7 +5621,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 200,
             "state": 1037,
-            "state_multiplier": 0.97
+            "state_multiplier": 0.94
         }
     },
     {
@@ -5823,7 +5729,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 200,
             "state": 1049,
-            "state_multiplier": 0.955
+            "state_multiplier": 0.965
         }
     },
     {
@@ -7287,16 +7193,6 @@ campaignTrail_temp.answer_score_global_json = [
     },
     {
         "model": "campaign_trail.answer_score_global",
-        "pk": 3123,
-        "fields": {
-            "answer": 5114,
-            "candidate": 200,
-            "affected_candidate": 201,
-            "global_multiplier": -0.02
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
         "pk": 3124,
         "fields": {
             "answer": 5017,
@@ -7307,52 +7203,12 @@ campaignTrail_temp.answer_score_global_json = [
     },
     {
         "model": "campaign_trail.answer_score_global",
-        "pk": 3125,
-        "fields": {
-            "answer": 5116,
-            "candidate": 200,
-            "affected_candidate": 201,
-            "global_multiplier": -0.015
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
-        "pk": 3126,
-        "fields": {
-            "answer": 5117,
-            "candidate": 200,
-            "affected_candidate": 201,
-            "global_multiplier": -0.0125
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
         "pk": 3177,
         "fields": {
             "answer": 5016,
             "candidate": 200,
             "affected_candidate": 200,
             "global_multiplier": 0.001
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
-        "pk": 3197,
-        "fields": {
-            "answer": 5114,
-            "candidate": 200,
-            "affected_candidate": 203,
-            "global_multiplier": 0.015
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
-        "pk": 3198,
-        "fields": {
-            "answer": 5115,
-            "candidate": 200,
-            "affected_candidate": 203,
-            "global_multiplier": 0.02
         }
     },
     {
@@ -7582,7 +7438,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 51072,
             "candidate": 200,
             "affected_candidate": 200,
-            "global_multiplier": -0.16
+            "global_multiplier": -0.65
         }
     },
     {
@@ -7592,7 +7448,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 5091,
             "candidate": 200,
             "affected_candidate": 200,
-            "global_multiplier": -0.02
+            "global_multiplier": -0.035
         }
     },
     {
@@ -7802,7 +7658,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 5129,
             "candidate": 200,
             "affected_candidate": 200,
-            "global_multiplier": -0.07
+            "global_multiplier": -0.045
         }
     },
     {
@@ -7947,52 +7803,82 @@ campaignTrail_temp.answer_score_global_json = [
     },
     {
         "model": "campaign_trail.answer_score_global",
-        "pk": 51323,
-        "fields": {
-            "answer": 51308,
-            "candidate": 200,
-            "affected_candidate": 200,
-            "global_multiplier": 0.08
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
-        "pk": 51324,
-        "fields": {
-            "answer": 51319,
-            "candidate": 200,
-            "affected_candidate": 200,
-            "global_multiplier": 0.1
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
-        "pk": 51325,
-        "fields": {
-            "answer": 51320,
-            "candidate": 200,
-            "affected_candidate": 200,
-            "global_multiplier": 0.085
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
-        "pk": 51326,
-        "fields": {
-            "answer": 51321,
-            "candidate": 200,
-            "affected_candidate": 200,
-            "global_multiplier": 0.07
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
         "pk": 51341,
         "fields": {
             "answer": 20715,
             "candidate": 200,
             "affected_candidate": 200,
             "global_multiplier": -0.001
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 51389,
+        "fields": {
+            "answer": 51384,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "global_multiplier": -0.001
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 51391,
+        "fields": {
+            "answer": 51385,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "global_multiplier": 0.001
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 51392,
+        "fields": {
+            "answer": 51383,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "global_multiplier": -0.035
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 51393,
+        "fields": {
+            "answer": 51308,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "global_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 51394,
+        "fields": {
+            "answer": 51319,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "global_multiplier": 0.012
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 51395,
+        "fields": {
+            "answer": 51320,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "global_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 51396,
+        "fields": {
+            "answer": 51321,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "global_multiplier": 0.013
         }
     }
 ]
@@ -8026,16 +7912,6 @@ campaignTrail_temp.answer_score_issue_json = [
             "issue": 100,
             "issue_score": 0.95,
             "issue_importance": 3
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 2621,
-        "fields": {
-            "answer": 5116,
-            "issue": 102,
-            "issue_score": -0.5,
-            "issue_importance": 1
         }
     },
     {
@@ -8433,7 +8309,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 51367,
         "fields": {
             "answer": 51212,
-            "issue": "100",
+            "issue": 100,
             "issue_score": -0.45,
             "issue_importance": 2
         }
@@ -8443,9 +8319,19 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 51382,
         "fields": {
             "answer": 51263,
-            "issue": "100",
+            "issue": 100,
             "issue_score": -0.25,
             "issue_importance": 4
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 51390,
+        "fields": {
+            "answer": 51385,
+            "issue": 100,
+            "issue_score": 0,
+            "issue_importance": 0
         }
     }
 ]
@@ -9053,7 +8939,7 @@ campaignTrail_temp.answer_score_state_json = [
             "state": 1008,
             "candidate": 200,
             "affected_candidate": 200,
-            "state_multiplier": 0.05
+            "state_multiplier": 0.055
         }
     },
     {
@@ -9064,7 +8950,7 @@ campaignTrail_temp.answer_score_state_json = [
             "state": 1009,
             "candidate": 200,
             "affected_candidate": 200,
-            "state_multiplier": 0.05
+            "state_multiplier": 0.055
         }
     },
     {
@@ -9075,7 +8961,7 @@ campaignTrail_temp.answer_score_state_json = [
             "state": 1014,
             "candidate": 200,
             "affected_candidate": 200,
-            "state_multiplier": 0.05
+            "state_multiplier": 0.055
         }
     },
     {
@@ -9086,7 +8972,7 @@ campaignTrail_temp.answer_score_state_json = [
             "state": 1032,
             "candidate": 200,
             "affected_candidate": 200,
-            "state_multiplier": 0.05
+            "state_multiplier": 0.055
         }
     },
     {
@@ -9097,7 +8983,7 @@ campaignTrail_temp.answer_score_state_json = [
             "state": 1034,
             "candidate": 200,
             "affected_candidate": 200,
-            "state_multiplier": 0.05
+            "state_multiplier": 0.055
         }
     },
     {
@@ -9108,40 +8994,7 @@ campaignTrail_temp.answer_score_state_json = [
             "state": 1049,
             "candidate": 200,
             "affected_candidate": 200,
-            "state_multiplier": 0.05
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
-        "pk": 51361,
-        "fields": {
-            "answer": 51207,
-            "state": 1014,
-            "candidate": 200,
-            "affected_candidate": 200,
-            "state_multiplier": 0.11
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
-        "pk": 51362,
-        "fields": {
-            "answer": 51207,
-            "state": 1034,
-            "candidate": 200,
-            "affected_candidate": 200,
-            "state_multiplier": 0.11
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
-        "pk": 51363,
-        "fields": {
-            "answer": 51207,
-            "state": 1049,
-            "candidate": 200,
-            "affected_candidate": 200,
-            "state_multiplier": 0.11
+            "state_multiplier": 0.055
         }
     },
     {
@@ -9308,6 +9161,72 @@ campaignTrail_temp.answer_score_state_json = [
             "affected_candidate": 200,
             "state_multiplier": 0.15
         }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 51397,
+        "fields": {
+            "answer": 51207,
+            "state": 1014,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "state_multiplier": 0.065
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 51398,
+        "fields": {
+            "answer": 51207,
+            "state": 1034,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "state_multiplier": 0.065
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 51399,
+        "fields": {
+            "answer": 51207,
+            "state": 1049,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "state_multiplier": 0.065
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 51400,
+        "fields": {
+            "answer": 51207,
+            "state": 1008,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "state_multiplier": 0.065
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 51401,
+        "fields": {
+            "answer": 51207,
+            "state": 1009,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "state_multiplier": 0.065
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 51402,
+        "fields": {
+            "answer": 51207,
+            "state": 1032,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "state_multiplier": 0.065
+        }
     }
 ]
 
@@ -9417,43 +9336,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51021,
             "candidate": 200,
-            "answer_feedback": "You sound a little more measured on this issue than you did while crusading against Obamacare, but you’ve managed to largely preserve your base’s trust, while signaling a bit of maturity. That doesn't mean the Democratss aren't going to take the chance to attack you on it."
-        }
-    },
-    {
-        "model": "campaign_trail.answer_feedback",
-        "pk": 2598,
-        "fields": {
-            "answer": 5114,
-            "candidate": 200,
-            "answer_feedback": "This is a good opening to attack Hillary Clinton after some of the recent mayhem."
-        }
-    },
-    {
-        "model": "campaign_trail.answer_feedback",
-        "pk": 2599,
-        "fields": {
-            "answer": 5115,
-            "candidate": 200,
-            "answer_feedback": "Keep pressing your outsider credentials and tying Hillary to Goldman Sachs, Saudi Arabia, and so on."
-        }
-    },
-    {
-        "model": "campaign_trail.answer_feedback",
-        "pk": 2600,
-        "fields": {
-            "answer": 5116,
-            "candidate": 200,
-            "answer_feedback": "Advisors definitely feel that, while your motives are admirable, you are leaving an opportunity on the table."
-        }
-    },
-    {
-        "model": "campaign_trail.answer_feedback",
-        "pk": 2601,
-        "fields": {
-            "answer": 5117,
-            "candidate": 200,
-            "answer_feedback": "Your complaint about Russia Russia seems a little unprompted based on what has happened thus far. Is there something else?"
+            "answer_feedback": "You sound a little more measured on this issue than you did while crusading against Obamacare, but you’ve managed to largely preserve your base’s trust, while signaling a bit of maturity. That doesn't mean the Democrats aren't going to take the chance to attack you on it."
         }
     },
     {
@@ -9804,7 +9687,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51072,
             "candidate": 200,
-            "answer_feedback": "Rest in peace Ted. It was nice knowing you."
+            "answer_feedback": "You've been a devout supporter of an abortion ban your entire career, so why pivot now? The Christian right is furious at your seeming abandonment of all your principles, whilst moderates don't actually believe your sudden change is sincere. You're looking like just as much of a flip-flopper as Clinton."
         }
     },
     {
@@ -10002,7 +9885,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51216,
             "candidate": 200,
-            "answer_feedback": "Nothing wrong with playing it safe. In any case, Fox News will continue to dunk on her, regardless of your lack of encouragement. Meanwhile, Hillary is terrified with “the right's obsession with her body.“ As if she's not a 2 at best."
+            "answer_feedback": "Nothing wrong with playing it safe. In any case, Fox News will continue to dunk on her, regardless of your lack of encouragement. Meanwhile, Hillary is terrified with “the right's obsession with her body.“ You fly over to New York for the first Presidential debate."
         }
     },
     {
@@ -10011,7 +9894,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51219,
             "candidate": 200,
-            "answer_feedback": "God. Whatever decency this race had is gone. The mainstream media and liberals universally condemns your words, but the base still love them. "
+            "answer_feedback": "God. Whatever decency this race had is gone. The mainstream media and liberals universally condemns your words, but the base still love them. Meanwhile, you fly over to New York, for the first Presidential debate."
         }
     },
     {
@@ -10047,7 +9930,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51264,
             "candidate": 200,
-            "answer_feedback": "You blink, trying to get her out of your head. You try to ignore her and keep arguing with Holt about the right to life and against gay marriage, it’s only when you rewatch the debate on your phone that you realize how weak you looked."
+            "answer_feedback": "You blink, trying to get her out of your head. You try to ignore her and keep arguing for the right to life and against gay marriage. But it’s only when you rewatch the debate on your phone that you realize how weak you looked."
         }
     },
     {
@@ -10083,7 +9966,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51263,
             "candidate": 200,
-            "answer_feedback": "With you refusing to press the issue, it soon fades back down, but this will definitely help your campaign regardless."
+            "answer_feedback": "With you refusing to press the issue, it soon fades back down, but this will definitely help your campaign regardless. In any case, you fly over to New York for the first presidential debate."
         }
     },
     {
@@ -10119,7 +10002,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51308,
             "candidate": 200,
-            "answer_feedback": "You missed an opportunity to take the initiative here, butt the intelligence community is applauding you for your refusal to press this issue, and this also gives you some flexibility in how you want to attack. Even without your encouragement, this is great news for your campaign."
+            "answer_feedback": "You missed an opportunity to take the initiative here, but the intelligence community is applauding you for your refusal to press this issue, and this also gives you some flexibility in how you want to attack. Even without your encouragement, this is great news for your campaign."
         }
     },
     {
@@ -10151,11 +10034,56 @@ campaignTrail_temp.answer_feedback_json = [
     },
     {
         "model": "campaign_trail.answer_feedback",
-        "pk": 51335,
+        "pk": 51386,
         "fields": {
-            "answer": 51331,
+            "answer": 51383,
             "candidate": 200,
-            "answer_feedback": "Enter feedback text here"
+            "answer_feedback": "You've literally been spearheading this effort alongside McConnell, and it has broad support in your party. You sound more like John Kasich then Ted Cruz, and not in a way that pleases people."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 51387,
+        "fields": {
+            "answer": 51385,
+            "candidate": 200,
+            "answer_feedback": "The public seems to be divided on this issue, and Democrats strongly oppose Senate Republicans stonewalling efforts, but among voters in the party, support of this is near-universal."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 51388,
+        "fields": {
+            "answer": 51384,
+            "candidate": 200,
+            "answer_feedback": "Fair enough, this isn't a big issue, but a comment couldn't hurt."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 51408,
+        "fields": {
+            "answer": 51405,
+            "candidate": 200,
+            "answer_feedback": "Unfortunately, no matter how you phrase it, free trade is simply not a winning issue for you this election."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 51409,
+        "fields": {
+            "answer": 51406,
+            "candidate": 200,
+            "answer_feedback": "This would've been unthinkable 4 years ago, but the world has changed a lot in 4 years. Even Hillary has been coming off as protectionist as of late, and this is going to keep you competitive in the Midwest."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 51410,
+        "fields": {
+            "answer": 51403,
+            "candidate": 200,
+            "answer_feedback": "It's true. Hillary's been strongly supportive of free trade measures since she was a First Lady, and only very recently has she pivoted. It's good to remind voters in the Rust Belt of that."
         }
     }
 ]
