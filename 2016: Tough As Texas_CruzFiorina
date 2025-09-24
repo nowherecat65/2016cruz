@@ -5837,7 +5837,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 201,
             "state": 1008,
-            "state_multiplier": 0.979
+            "state_multiplier": 0.98875
         }
     },
     {
@@ -5891,7 +5891,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 201,
             "state": 1014,
-            "state_multiplier": 0.94
+            "state_multiplier": 0.94998998
         }
     },
     {
@@ -5954,7 +5954,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 201,
             "state": 1021,
-            "state_multiplier": 1.015
+            "state_multiplier": 1.021
         }
     },
     {
@@ -5963,7 +5963,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 201,
             "state": 1022,
-            "state_multiplier": 1.0318
+            "state_multiplier": 1.0621998568542
         }
     },
     {
@@ -6017,7 +6017,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 201,
             "state": 1028,
-            "state_multiplier": 1.012
+            "state_multiplier": 1.022
         }
     },
     {
@@ -6071,7 +6071,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 201,
             "state": 1034,
-            "state_multiplier": 0.9152589989974
+            "state_multiplier": 0.9252589989974
         }
     },
     {
@@ -6098,7 +6098,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 201,
             "state": 1037,
-            "state_multiplier": 1.01291
+            "state_multiplier": 1.02391
         }
     },
     {
@@ -6206,7 +6206,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 201,
             "state": 1049,
-            "state_multiplier": 1.02
+            "state_multiplier": 1.03851
         }
     },
     {
