@@ -25,6 +25,7 @@ e.PartyText = "Affiliation:";
 e.SelAnsContText = "Ted, are you in there? You didn't choose anything. We have an election to win."
 
 
+
 document.querySelectorAll("link[rel*='icon']").forEach(el => el.remove());
 
 const favican = document.createElement("link");
@@ -417,7 +418,11 @@ campaignTrail_temp.achievements = {
         "description" : "Achieve the historical results.",
         "cannotBeCheated" : true
   },
-
+"Cancun" : {
+        "image" : "https://i.imgur.com/vdBFKe1.png",
+        "description" : "Finally back home.",
+        "cannotBeCheated" : true
+  },
 "Karmic Retribution" : {
         "image" : "https://i.imgur.com/Ec72hu1.png",
         "description" : "Teach Hillary some justice.", // Accuse Hillary of killing Vince Foster and pledge to lock her up. This is an ending I have in mind.
@@ -1635,7 +1640,6 @@ tooltipList = [
 
       
 ];
-
 
 // "Next" buttons and "Back" buttons here
 
