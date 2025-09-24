@@ -23,7 +23,9 @@ e.VpText = '<font color="white">Please select your Vice Presidential nominee:</f
 e.HomeStateText = "Position:";
 e.PartyText = "Affiliation:";
 e.SelAnsContText = "Ted, are you in there? You didn't choose anything. We have an election to win."
-
+e.ElectionPopup = "Here we go. Good luck sir, you have fought a brave battle."
+e.LosePopup = "The people of this country have decided. They have chosen radicalism over decency..."
+e.WinPopup = "The people of this country have decided. They have chosen decency over radicalism!"
 
 
 document.querySelectorAll("link[rel*='icon']").forEach(el => el.remove());
@@ -1517,10 +1519,7 @@ setupMusicPlayer();
 
 $("#game_window")[0].style.background = "linear-gradient(#303841, #1b1f23)";
 
-
-e.LosePopup = "No.. something is wrong."
-
-.displayTooltips = true;
+e.displayTooltips = true;
 
 function addDynamicCSS() {
   var css = `
