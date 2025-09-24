@@ -524,6 +524,11 @@ cyoAdventure = function (a) {
         Primary  -= 1;
     }
 
+if (ans == 51203) {
+    window.open("https://en.wikipedia.org/wiki/Casualties_of_the_Gaza_war", "_blank");
+}
+
+
   if (ans == 51271 || ans == 51084) {
         campaignTrail_temp.candidate_json[0]["fields"].first_name = "Donald";
         campaignTrail_temp.candidate_json[0]["fields"].last_name = "Trump";
@@ -7731,7 +7736,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 51203,
             "candidate": 200,
             "affected_candidate": 200,
-            "global_multiplier": 0.03
+            "global_multiplier": -0.03
         }
     },
     {
@@ -9854,15 +9859,6 @@ campaignTrail_temp.answer_feedback_json = [
             "answer": 51180,
             "candidate": 200,
             "answer_feedback": "You're taking it cautiously, which is fine. It doesn't look good if you're attacking your opponents without any of your own policy proposals. Nothing wrong with this approach."
-        }
-    },
-    {
-        "model": "campaign_trail.answer_feedback",
-        "pk": 51204,
-        "fields": {
-            "answer": 51203,
-            "candidate": 200,
-            "answer_feedback": "You sold your soul to the donor class. You're raking in more money then ever before, but was it worth it?"
         }
     },
     {
