@@ -10216,6 +10216,36 @@ campaignTrail_temp.jet_data = [{
 }
 ]
 
+const triggerWord = "cancun";
+const alertMessage = "Not a chance...\n\nYou found the secret word. Cancun. Really didn't expect anyone to find this, so congratulations.\n\nHonestly, I didn't realize how spineless Ted Cruz is/was when I first started working on this mod, and I'm saying that as a Republican.\n\nThis so-called 'patriot' abandoned his constituents in Texas and fled to Mexico, then proceeds to criticize others for doing the same thing. He pretty much spends his career bowing down to whatever Trump wants and being an AIPAC suckup.\n\nBut you can't deny that he's fun to make a mod on. Congratulations, you just got an achievement.";
+let keyBuffer = "";
+
+function checkTrigger(value) {
+    if (value.toLowerCase().includes(triggerWord.toLowerCase())) {
+        alert(alertMessage);
+        ctsAchievement("Cancun");
+        return true;
+    }
+    return false;
+}
+
+document.addEventListener("keydown", function(event) {
+    const activeElement = document.activeElement;
+    
+    if ((activeElement.tagName === "INPUT" || activeElement.tagName === "TEXTAREA") && event.key === "Enter") {
+        const typedValue = activeElement.value.trim();
+        if (checkTrigger(typedValue)) {
+            activeElement.value = "";
+        }
+    } else if (event.key.length === 1) {
+        keyBuffer += event.key;
+    } else if (event.key === "Backspace") {
+        keyBuffer = keyBuffer.slice(0, -1);
+    } else if (event.key === "Enter") {
+        if (checkTrigger(keyBuffer)) {}
+        keyBuffer = "";
+    }
+});
 
 
 // Not gonna lie, I have no idea who made this. Think it was Onkel Danny, not sure. Shoutout to whoever made this.
