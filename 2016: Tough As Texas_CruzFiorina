@@ -514,11 +514,14 @@ function getQuestionNumberFromPk(pk) {
 cyoAdventure = function (a) {
     ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length-1];
 
-  if(ans ==  20676 || ans == 5018 || ans == 5017 || ans == 5016){
+  if (ans ==  20676 || ans == 5018 || ans == 5016) {
         Primary  += 1;
     }
-  if(ans ==  20683){
+  if (ans ==  20683) {
         Primary  += 2;
+    }
+  if (ans ==  20678) {
+        Primary  -= 1;
     }
 
   if (ans == 51271 || ans == 51084) {
