@@ -1,3 +1,7 @@
+e.SelAnsContText = "Ted, are you in there? You didn't choose anything. We have an election to win."
+e.LosePopup = "No..."
+e.ElectionPopup = "Here we go. Best of luck sir, you have fought a brave battle."
+
 var Establishment = 0;
 var Ideology = 3;
 var Trump = 0;
@@ -534,6 +538,7 @@ if (ans == 51203) {
         campaignTrail_temp.candidate_json[0]["fields"].last_name = "Trump";
         campaignTrail_temp.question_number = 24;
         		vpTable["Donald Trump"] = "Chris Christie";
+e.ElectionPopup = "Well, Trump's the nominee now. Sit back and watch the ballots come in. This should be interesting."
 }
 
 if (Primary == 3) {
@@ -563,6 +568,7 @@ if (Primary == 3) {
         campaignTrail_temp.candidate_json[0]["fields"].last_name = "Rubio";
         campaignTrail_temp.question_number = 24;
         		vpTable["Marco Rubio"] = "John Kasich";
+e.ElectionPopup = "Well, Rubio's the nominee. Hopefully he can put the Democrats in their place."
 }
 
     if (ans == 20739) {
@@ -9831,7 +9837,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51119,
             "candidate": 200,
-            "answer_feedback": "This is admirable. Rubio is thankful to have your support here. With your help, he is able to narrowly defeat Trump at the convention. He offers you the role of Attorney General, but you decline, preferring to stay in the U.S Senate."
+            "answer_feedback": "This is admirable. Rubio is thankful to have your support here. With your help, he is able to narrowly defeat Trump at the convention. He offers you the role of Attorney General if he wins, which you accept."
         }
     },
     {
