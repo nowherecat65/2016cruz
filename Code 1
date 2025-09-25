@@ -986,56 +986,50 @@ document.body.background = "https://images.wallpaperscraft.com/image/single/nigh
 
 document.head.innerHTML += "<style>#results_container {color:#fff;} .inner_window_w_desc {background-color:#212934!important;}</style>";
 
-
-
 let style = document.createElement('style');
 style.type = 'text/css';
 style.id = 'dynamic-style';
 
-
-
 style.innerHTML = `
   .campaign_trail_start_emphasis {
-    background: linear-gradient(135deg, #17191a, #2a2d2f);
+    background: linear-gradient(135deg, #1e242a, #2a353f);
   }
 
   a:-webkit-any-link {
-    color: #0000FF;
+    color: #4fc3f7;
   }
 
   .inner_window_question h3 {
-    background: linear-gradient(135deg, #e6e6e6, #d4d4d4) !important;
+    background: linear-gradient(135deg, #1e242a, #2a353f) !important;
+    color: #ffffff !important;
   }
 
-.overlay_window h3 {
-  background: linear-gradient(135deg, #2e2e2e, #1a1a1a) !important;
-  color: #ffffff !important;
-}
-
-  #state_info h3 {
-    background: linear-gradient(135deg, #e6e6e6, #d4d4d4) !important;
+  .overlay_window h3 {
+    background: linear-gradient(135deg, #146d75, #0f4f55) !important;
+    color: #ffffff !important;
   }
 
-  #state_result h3 {
-    background: linear-gradient(135deg, #e6e6e6, #d4d4d4) !important;
-  }
-
+  #state_info h3,
+  #state_result h3,
   #overall_result h3 {
-    background: linear-gradient(135deg, #e6e6e6, #d4d4d4) !important;
+    background: linear-gradient(135deg, #2a353f, #1e242a) !important;
+    color: #ffffff !important;
   }
 
-img#candidate_pic,
-img#running_mate_pic {
-  border: 4px solid #1F2020;
-  border-radius: 10px; 
-}
+  img#candidate_pic,
+  img#running_mate_pic {
+    border: 4px solid #2a353f;
+    border-radius: 10px; 
+  }
 
   #menu_container {
-    background: linear-gradient(135deg, #e6e6e6, #d4d4d4) !important;
+    background: linear-gradient(135deg, #1a2025, #2a353f) !important;
   }
 
   .overlay_window {
     height: auto;
+    background: linear-gradient(135deg, #1a2025, #2a353f, #1e242a);
+    color: #e0f7ff;
   }
 
   #state_result_container {
@@ -1049,7 +1043,8 @@ img#running_mate_pic {
   }
 
   .game_header h2 {
-    color: #FFF;
+    color: #ffffff;
+    text-shadow: 0 0 6px rgba(0,255,255,0.3);
   }
 
   #overall_result_container {
@@ -1057,8 +1052,8 @@ img#running_mate_pic {
   }
 `;
 
-
 document.head.appendChild(style);
+
 
 //#endcode
 
@@ -1519,7 +1514,7 @@ $("#game_window")[0].style.background = "linear-gradient(#303841, #1b1f23)";
 e.displayTooltips = true;
 
 function addDynamicCSS() {
-  var css = `
+  const css = `
       .mytooltip {
           position: relative;
           display: inline-block;
@@ -1527,20 +1522,37 @@ function addDynamicCSS() {
           font-size: 1em;
           line-height: inherit;
           cursor: pointer;
-          background: linear-gradient(135deg, #444444, #888888);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          background-clip: text;
-          color: transparent;
-          text-shadow: 0 1px 2px rgba(255, 255, 255, 0.2);
+          color: #d6d6d6 !important;
+          text-decoration: underline;
+          text-shadow: 0 0 3px rgba(0, 255, 255, 0.3), 1px 1px 1px rgba(0,0,0,0.5);
+          transition: text-shadow 0.3s ease;
+      }
+
+      .mytooltip:hover {
+          text-shadow: 0 0 6px rgba(0, 255, 255, 0.5), 1px 1px 1px rgba(0,0,0,0.5);
+      }
+
+      @keyframes tooltipPopIn {
+          0% { opacity: 0; transform: translateX(-50%) translateY(12px) scale(0.9); }
+          70% { opacity: 1; transform: translateX(-50%) translateY(-2px) scale(1.05); }
+          100% { opacity: 1; transform: translateX(-50%) translateY(0) scale(1); }
+      }
+
+      @keyframes tooltipPopOut {
+          0% { opacity: 1; transform: translateX(-50%) translateY(0) scale(1); }
+          100% { opacity: 0; transform: translateX(-50%) translateY(12px) scale(0.9); }
+      }
+
+      @keyframes glowPulse {
+          0%,100% { box-shadow: 0 0 10px rgba(0,255,255,0.4); }
+          50% { box-shadow: 0 0 16px rgba(0,255,255,0.6); }
       }
 
       .mytooltip .mytooltiptext {
           opacity: 0;
           visibility: hidden;
-          transition: opacity 0.3s ease, visibility 0s linear 0.3s;
-          background: linear-gradient(135deg, #333333, #666666);
-          border: 2px solid #fff;
+          background: #1a242a;
+          border: 2px solid #4fc3f7;
           text-align: center;
           padding: 8px 12px;
           border-radius: 8px;
@@ -1548,46 +1560,65 @@ function addDynamicCSS() {
           z-index: 1000;
           bottom: 125%;
           left: 50%;
-          transform: translateX(-50%) translateZ(0);
+          transform: translateX(-50%);
           white-space: normal;
           max-width: 260px;
           width: max-content;
           font-family: 'Segoe UI', Tahoma, sans-serif;
           font-weight: 600;
           letter-spacing: 0.4px;
-          color: #ffffff !important;
-          -webkit-text-fill-color: #ffffff !important;
-          background-clip: border-box !important;
-          -webkit-background-clip: border-box !important;
-          text-shadow: none;
-          will-change: opacity;
+          color: #ffffff;
+          text-shadow: 0 0 3px rgba(0,255,255,0.4), 1px 1px 1px rgba(0,0,0,0.5);
+          will-change: opacity, transform, box-shadow;
       }
 
-      .mytooltip:hover .mytooltiptext {
-          opacity: 1;
+      .mytooltip.show .mytooltiptext {
           visibility: visible;
-          transition: opacity 0.3s ease;
+          animation: tooltipPopIn 0.65s cubic-bezier(0.4,0,0.2,1) forwards, glowPulse 1.5s ease-in-out infinite alternate;
+      }
+
+      .mytooltip.hide .mytooltiptext {
+          visibility: visible;
+          animation: tooltipPopOut 0.45s cubic-bezier(0.4,0,0.2,1) forwards;
       }
 
       .mytooltip img {
-          display: inline;
+          display: block;
+          margin: 8px auto 0 auto;
           max-width: 100%;
           height: auto;
-          border: 2px solid #fff;
+          border: 2px solid #4fc3f7;
           border-radius: 6px;
           box-shadow: 0 2px 6px rgba(0,0,0,0.3);
           background: none !important;
-          -webkit-background-clip: initial !important;
-          -webkit-text-fill-color: initial !important;
-          color: initial !important;
       }
   `;
 
-  var styleElem = document.createElement('style');
+  const styleElem = document.createElement('style');
   styleElem.type = 'text/css';
   styleElem.appendChild(document.createTextNode(css));
   document.head.appendChild(styleElem);
+
+  // Attach hover listeners using event delegation
+  document.body.addEventListener('mouseenter', e => {
+      const el = e.target.closest('.mytooltip');
+      if (!el) return;
+      el.classList.remove('hide');
+      el.classList.add('show');
+  }, true);
+
+  document.body.addEventListener('mouseleave', e => {
+      const el = e.target.closest('.mytooltip');
+      if (!el) return;
+      el.classList.remove('show');
+      el.classList.add('hide');
+      const tooltip = el.querySelector('.mytooltiptext');
+      if (tooltip) {
+          setTimeout(() => el.classList.remove('hide'), 450); // remove after pop-out animation
+      }
+  }, true);
 }
+
 
 // Not sure who exactly made tooltips, think it was from 2021 Germany. Credits to the people who worked on that
 
