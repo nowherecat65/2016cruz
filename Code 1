@@ -1511,8 +1511,6 @@ setupMusicPlayer();
 
 $("#game_window")[0].style.background = "linear-gradient(#303841, #1b1f23)";
 
-e.displayTooltips = true;
-
 function addDynamicCSS() {
   const css = `
       .mytooltip {
@@ -1522,10 +1520,10 @@ function addDynamicCSS() {
           font-size: 1em;
           line-height: inherit;
           cursor: pointer;
-          color: #d6d6d6 !important;
           text-decoration: underline;
           text-shadow: 0 0 3px rgba(0, 255, 255, 0.3), 1px 1px 1px rgba(0,0,0,0.5);
-          transition: text-shadow 0.3s ease;
+          transition: text-shadow 0.3s ease, color 0.3s ease;
+          color: color-contrast(var(--bg, #fff) vs #000, #fff); /* black on light, white on dark */
       }
 
       .mytooltip:hover {
@@ -1599,7 +1597,6 @@ function addDynamicCSS() {
   styleElem.appendChild(document.createTextNode(css));
   document.head.appendChild(styleElem);
 
-  // Attach hover listeners using event delegation
   document.body.addEventListener('mouseenter', e => {
       const el = e.target.closest('.mytooltip');
       if (!el) return;
@@ -1614,7 +1611,7 @@ function addDynamicCSS() {
       el.classList.add('hide');
       const tooltip = el.querySelector('.mytooltiptext');
       if (tooltip) {
-          setTimeout(() => el.classList.remove('hide'), 450); // remove after pop-out animation
+          setTimeout(() => el.classList.remove('hide'), 450);
       }
   }, true);
 }
