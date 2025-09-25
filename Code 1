@@ -103,10 +103,10 @@ button, input[type="button"], input[type="submit"] {
   font-weight: 500;
   padding: 6px 14px;
   border-radius: 4px;
-  border: 1px solid rgba(200,200,200,0.2);
-  background: #2b2b2b;
-  color: #e0e0e0;
-  box-shadow: 0 2px 3px rgba(0,0,0,0.3);
+  border: 1px solid #3b4752;
+  background: #22282D;
+  color: #dfe7eb;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.4);
   cursor: pointer;
   transition: all 0.2s ease;
   -webkit-appearance: none;
@@ -114,13 +114,13 @@ button, input[type="button"], input[type="submit"] {
 }
 
 button:hover, input[type="button"]:hover, input[type="submit"]:hover {
-  background: #3a3a3a;
-  box-shadow: 0 3px 5px rgba(0,0,0,0.4);
+  background: #2e3a46;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.5);
 }
 
 button:active, input[type="button"]:active, input[type="submit"]:active {
-  background: #262626;
-  box-shadow: inset 0 1px 2px rgba(0,0,0,0.5);
+  background: #1a2228;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.6);
 }
 
 button:disabled, input[type="button"]:disabled, input[type="submit"]:disabled {
@@ -137,35 +137,35 @@ select {
   font-weight: 500;
   padding: 5px 12px;
   border-radius: 4px;
-  border: 1px solid rgba(200,200,200,0.2);
-  background: #2b2b2b;
-  color: #e0e0e0;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+  border: 1px solid #3b4752;
+  background: #232b32;
+  color: #e1e8ed;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.4);
   cursor: pointer;
   appearance: none;
   transition: all 0.2s ease;
 }
 
 select option {
-  color: #e0e0e0;
-  background: #3a3a3a;
+  color: #e1e8ed;
+  background: #2f3a42;
 }
 
-select:hover { background: #3a3a3a; }
-select:active { background: #262626; }
+select:hover { background: #35414b; }
+select:active { background: #1b232a; }
 select:disabled { opacity: 0.5; cursor: not-allowed; }
 
 /* ================================
    Scrollbars
    ================================ */
-::-webkit-scrollbar { width: 9px; height: 9px; }
-::-webkit-scrollbar-track { background: #2b2b2b; border-radius: 4px; }
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: #22282D; border-radius: 5px; }
 ::-webkit-scrollbar-thumb {
-  background: #555;
-  border-radius: 4px;
-  border: 2px solid #2b2b2b;
+  background: #4a5663;
+  border-radius: 5px;
+  border: 2px solid #22282D;
 }
-::-webkit-scrollbar-thumb:hover { background: #666; }
+::-webkit-scrollbar-thumb:hover { background: #5c6b7c; }
 
 /* ================================
    Radio buttons
@@ -176,13 +176,13 @@ input[type="radio"] {
   appearance: none;
   width: 16px;
   height: 16px;
-  border: 2px solid #666;
+  border: 2px solid #5c6b7c;
   border-radius: 50%;
   outline: none;
   cursor: pointer;
   position: relative;
   transition: all 0.2s ease;
-  background: rgba(255,255,255,0.05);
+  background: rgba(255,255,255,0.02);
 }
 
 input[type="radio"]::before {
@@ -193,7 +193,7 @@ input[type="radio"]::before {
   width: 0;
   height: 0;
   border-radius: 50%;
-  background: #aaa;
+  background: #8fa3b2;
   transform: translate(-50%, -50%) scale(0);
   transition: all 0.2s ease;
 }
@@ -204,7 +204,7 @@ input[type="radio"]:checked::before {
   transform: translate(-50%, -50%) scale(1);
 }
 
-input[type="radio"]:hover { filter: brightness(1.1); }
+input[type="radio"]:hover { filter: brightness(1.15); }
 
 /* ================================
    The sliders
@@ -214,7 +214,7 @@ input[type="range"] {
   width: 150px;
   height: 6px;
   border-radius: 3px;
-  background: #444;
+  background: #2d3841;
   outline: none;
   cursor: pointer;
   transition: all 0.2s ease;
@@ -225,20 +225,20 @@ input[type="range"]::-webkit-slider-thumb {
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background: #666;
-  border: 2px solid #555;
+  background: #5c6b7c;
+  border: 2px solid #4a5663;
   cursor: pointer;
   transition: all 0.2s ease;
 }
 
-input[type="range"]:hover::-webkit-slider-thumb { background: #555; }
+input[type="range"]:hover::-webkit-slider-thumb { background: #4a5663; }
 
 input[type="range"]::-moz-range-thumb {
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background: #666;
-  border: 2px solid #555;
+  background: #5c6b7c;
+  border: 2px solid #4a5663;
   cursor: pointer;
   transition: all 0.2s ease;
 }
@@ -253,33 +253,33 @@ table {
   border-collapse: collapse;
   font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
   font-size: 0.85em;
-  color: #e0e0e0;
-  background: #2b2b2b;
-  border: 1px solid rgba(200,200,200,0.2);
+  color: #dfe7eb;
+  background: #22282D;
+  border: 1px solid #3b4752;
   border-radius: 4px;
   overflow: hidden;
-  box-shadow: 0 2px 3px rgba(0,0,0,0.3);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.4);
 }
 
 th, td {
-  padding: 4px 8px; /* smaller padding = shorter rows */
+  padding: 4px 8px; 
   text-align: left;
-  color: #e0e0e0 !important;
-  background: #2b2b2b;
-  border-bottom: 1px solid rgba(200,200,200,0.1);
+  color: #dfe7eb !important;
+  background: #232b32;
+  border-bottom: 1px solid #3b4752;
 }
 
 th {
-  background: #3a3a3a;
+  background: #2f3a42;
   font-weight: 600;
 }
 
 tr:hover {
-  background: #333; /* fixes hover on all rows */
+  background: #35414b;
 }
 
 tr:nth-child(even) td {
-  background: #2f2f2f;
+  background: #1f272e;
 }
 
 tr:last-child td {
@@ -295,6 +295,7 @@ tr:last-child td {
     document.head.appendChild(style);
   }
 })();
+
 
 // Opening screen.
 
@@ -710,47 +711,44 @@ credits = function() {
         popOutMenu.id = 'popOutMenu';
         popOutMenu.style.position = 'absolute';
         popOutMenu.style.width = '440px';
-        popOutMenu.style.maxHeight = '600px'; // constrain height
+        popOutMenu.style.maxHeight = '600px';
         popOutMenu.style.height = 'auto';
         popOutMenu.style.padding = '18px';
-        popOutMenu.style.backgroundColor = 'rgba(30,30,30,0.95)';
-        popOutMenu.style.boxShadow = '0 0 15px rgba(0,0,0,0.6)';
-        popOutMenu.style.border = '1px solid #555';
+        popOutMenu.style.backgroundColor = 'rgba(25,28,33,0.95)';
+        popOutMenu.style.boxShadow = '0 0 20px rgba(0,255,255,0.3)';
+        popOutMenu.style.border = '1px solid #2f4a5a';
         popOutMenu.style.zIndex = '1000';
-        popOutMenu.style.backgroundImage = 'url("https://i.imgur.com/3Hb5hJj.png")';
+        popOutMenu.style.backgroundImage = 'url("https://i.imgur.com/Bt2iEqy.png")';
         popOutMenu.style.backgroundSize = 'cover';
         popOutMenu.style.backgroundPosition = 'center';
         popOutMenu.style.borderRadius = '6px';
-        popOutMenu.style.color = '#d3d3d3';
-        popOutMenu.style.overflowY = 'auto'; // enable scrollbar
+        popOutMenu.style.color = '#cfe7f1';
+        popOutMenu.style.overflowY = 'auto';
         popOutMenu.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
         popOutMenu.style.opacity = '0';
         popOutMenu.style.transform = 'scale(0.9)';
 
-        // Fade-in animation
         setTimeout(() => {
             popOutMenu.style.opacity = '1';
             popOutMenu.style.transform = 'scale(1)';
         }, 10);
 
-        // --- Title ---
         const menuTitle = document.createElement('h1');
         menuTitle.innerText = 'Credits';
         menuTitle.style.textAlign = 'center';
         menuTitle.style.fontFamily = '"Segoe UI", Tahoma, Geneva, sans-serif';
-        menuTitle.style.color = '#d3d3d3';
-        menuTitle.style.textShadow = '2px 2px 4px rgba(0,0,0,0.7)';
+        menuTitle.style.color = '#a0f0ff';
+        menuTitle.style.textShadow = '2px 2px 6px rgba(0,0,0,0.9)';
         menuTitle.style.margin = '0 0 10px 0';
-        menuTitle.style.fontSize = '26px';
+        menuTitle.style.fontSize = '28px';
         popOutMenu.appendChild(menuTitle);
 
-        // Helper function to create sections
         function createSection(titleText, subText, listData, align='left') {
             const title = document.createElement('h2');
             title.innerText = titleText;
             title.style.fontFamily = '"Segoe UI", Tahoma, Geneva, sans-serif';
-            title.style.color = '#e0e0e0';
-            title.style.textShadow = '1px 1px 3px rgba(0,0,0,0.8)';
+            title.style.color = '#80e0ff';
+            title.style.textShadow = '1px 1px 4px rgba(0,0,0,0.8)';
             title.style.fontSize = '22px';
             title.style.textAlign = align;
             title.style.margin = '12px 0 4px 0';
@@ -759,7 +757,7 @@ credits = function() {
             const sub = document.createElement('h3');
             sub.innerText = subText;
             sub.style.fontFamily = '"Segoe UI", Tahoma, Geneva, sans-serif';
-            sub.style.color = '#bdbdbd';
+            sub.style.color = '#a0dbe8';
             sub.style.fontSize = '14px';
             sub.style.textAlign = align;
             sub.style.margin = '0 0 8px 0';
@@ -771,17 +769,18 @@ credits = function() {
 
             listData.forEach(item => {
                 const menuItem = document.createElement('div');
-                menuItem.style.background = 'linear-gradient(rgba(60,60,60,0.9), rgba(40,40,40,0.7))';
+                menuItem.style.background = 'linear-gradient(145deg, rgba(20,30,40,0.9), rgba(40,50,60,0.7))';
                 menuItem.style.display = 'flex';
                 menuItem.style.alignItems = 'flex-start';
                 menuItem.style.marginBottom = '10px';
                 menuItem.style.padding = '6px';
                 menuItem.style.borderRadius = '5px';
-                menuItem.style.border = '1px solid #444';
+                menuItem.style.border = '1px solid #2f4a5a';
+                menuItem.style.boxShadow = '0 0 5px rgba(0,255,255,0.2)';
 
                 const photo = document.createElement('img');
                 photo.src = item.photo;
-                photo.style.border = "1px solid #888";
+                photo.style.border = "1px solid #66d9ef";
                 photo.style.padding = "2px";
                 photo.style.width = '90px';
                 photo.style.height = '90px';
@@ -792,7 +791,7 @@ credits = function() {
                 text.innerHTML = item.text;
                 text.style.fontSize = "13px";
                 text.style.margin = '0';
-                text.style.color = '#d3d3d3';
+                text.style.color = '#cfe7f1';
 
                 const textAndButton = document.createElement('div');
                 textAndButton.appendChild(text);
@@ -806,26 +805,22 @@ credits = function() {
             popOutMenu.appendChild(list);
         }
 
-        // --- Combine credit lists A and B ---
         const AB = [...creditListA, ...creditListB];
-
-        // --- Sections ---
-        createSection('Developers','Coding & Writing for Tough as Texas.', AB, 'center');
+        createSection('Developers','Coding & Writing for This Game.', AB, 'center');
         createSection('Special Thanks','Thanks to...', creditListC, 'center');
 
-        // --- Close button ---
         const closeButton = document.createElement('button');
         closeButton.innerText = 'Close';
         closeButton.onclick = closeCredits;
         closeButton.style.marginTop = '10px';
         closeButton.style.padding = '6px 12px';
-        closeButton.style.background = '#444';
-        closeButton.style.color = '#d3d3d3';
-        closeButton.style.border = '1px solid #666';
+        closeButton.style.background = '#1f2a33';
+        closeButton.style.color = '#cfe7f1';
+        closeButton.style.border = '1px solid #66d9ef';
         closeButton.style.borderRadius = '4px';
         closeButton.style.cursor = 'pointer';
-        closeButton.onmouseover = () => closeButton.style.background = '#555';
-        closeButton.onmouseout = () => closeButton.style.background = '#444';
+        closeButton.onmouseover = () => closeButton.style.background = '#2a3b48';
+        closeButton.onmouseout = () => closeButton.style.background = '#1f2a33';
         popOutMenu.appendChild(closeButton);
 
         document.body.appendChild(popOutMenu);
@@ -960,16 +955,18 @@ const gameStart = document.getElementById('game_start');
 
 corrr = `
   <h2 style="
-    font-family: Tahoma;
+    font-family: Tahoma, Geneva, sans-serif;
     font-size: 36px;
     color: white;
     padding: 10px 20px;
-    background: linear-gradient(90deg, #2d2d2d, #1a1a1a);
+    background: linear-gradient(90deg, #1e242a, #2a353f);
     border-radius: 6px;
+    box-shadow: inset 0 0 10px rgba(0,255,255,0.1), 0 0 8px rgba(0,255,255,0.05);
   ">
    The Cruz Trail
   </h2>
 `;
+
 
 
 
@@ -981,13 +978,13 @@ document.getElementsByClassName("game_header")[0].style.backgroundColor = nct_st
 
 $("#game_window")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_window;
 
-$(".container")[0].style.backgroundColor = "#1a1918";
+$(".container")[0].style.backgroundColor = "#22282D";
 
 document.getElementById("header").src = "https://i.imgur.com/5cN59fs.gif";
 
 document.body.background = "https://images.wallpaperscraft.com/image/single/night_city_city_lights_metropolis_126569_2560x1440.jpg";
 
-document.head.innerHTML += "<style>#results_container {color:#fff;} .inner_window_w_desc {background-color:#17191a!important;}</style>";
+document.head.innerHTML += "<style>#results_container {color:#fff;} .inner_window_w_desc {background-color:#212934!important;}</style>";
 
 
 
