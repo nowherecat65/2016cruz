@@ -1033,38 +1033,11 @@ style.innerHTML = `
     color: #ffffff !important;
   }
 
-img#candidate_pic,
-img#running_mate_pic {
-  border: 2px solid #aeeaff;
-  border-radius: 12px;
-  box-shadow: 0 0 6px rgba(174, 234, 255, 0.8),
-              0 0 15px rgba(174, 234, 255, 0.6),
-              0 0 30px rgba(174, 234, 255, 0.4);
-  transition: all 0.3s ease-in-out;
-  animation: hologlow 3s infinite alternate ease-in-out;
-}
-
-img#candidate_pic:hover,
-img#running_mate_pic:hover {
-  box-shadow: 0 0 10px rgba(174, 234, 255, 1),
-              0 0 25px rgba(174, 234, 255, 0.9),
-              0 0 50px rgba(174, 234, 255, 0.7);
-  transform: scale(1.02);
-}
-
-@keyframes hologlow {
-  0% {
-    box-shadow: 0 0 6px rgba(174, 234, 255, 0.7),
-                0 0 15px rgba(174, 234, 255, 0.5),
-                0 0 30px rgba(174, 234, 255, 0.3);
+  img#candidate_pic,
+  img#running_mate_pic {
+    border: 4px solid #2a353f;
+    border-radius: 10px;
   }
-  100% {
-    box-shadow: 0 0 12px rgba(174, 234, 255, 1),
-                0 0 25px rgba(174, 234, 255, 0.8),
-                0 0 50px rgba(174, 234, 255, 0.6);
-  }
-}
-
 
   #menu_container {
     background: linear-gradient(135deg, #1a2025, #2a353f) !important;
@@ -1081,9 +1054,9 @@ img#running_mate_pic:hover {
   }
 
   #map_container {
-    background: linear-gradient(135deg, #F4F1F7, #dcd7e6) !important;
-    background-size: 150% 150%;
-    border-radius: 0.75px;
+    background: linear-gradient(135deg, #f8f6fb, #eae6f4, #dcd7e6) !important;
+    background-size: 200% 200%;
+    border-radius: 0.75rem;
   }
 
   .game_header h2 {
@@ -1095,6 +1068,9 @@ img#running_mate_pic:hover {
     background: linear-gradient(135deg, #e6e6e6, #d4d4d4) !important;
   }
 `;
+
+document.head.appendChild(style);
+
 
 document.head.appendChild(style);
 
