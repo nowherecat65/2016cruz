@@ -58,35 +58,52 @@ document.head.innerHTML += `
     100% { background-position: 0% 50%; }
   }
 
+  @keyframes hologlow {
+    0% {
+      box-shadow: 0 0 8px rgba(174, 234, 255, 0.4),
+                  0 0 20px rgba(174, 234, 255, 0.2);
+    }
+    100% {
+      box-shadow: 0 0 16px rgba(174, 234, 255, 0.7),
+                  0 0 40px rgba(174, 234, 255, 0.4);
+    }
+  }
+
   .overlay_window {
-    animation: fadeInScale 0.3s cubic-bezier(0.3, 1.2, 0.2, 1) forwards, gradientShift 30s ease infinite;
+    animation: fadeInScale 0.3s cubic-bezier(0.3, 1.2, 0.2, 1) forwards,
+               gradientShift 30s ease infinite,
+               hologlow 3s ease-in-out infinite alternate;
     opacity: 0;
-    background: linear-gradient(135deg, #1a1a1a, #2b2b2b, #3c3c3c);
+    background: linear-gradient(135deg, #1a1a1a, #222222, #2e2e2e);
     background-size: 300% 300%;
-    border-radius: 0.5rem;
+    border-radius: 0.7rem;
     box-shadow:
-      0 0 1.2em rgba(40, 40, 40, 0.5),
-      0 0 2em rgba(40, 40, 40, 0.3);
+      0 0 1.2em rgba(174, 234, 255, 0.4),
+      0 0 2.5em rgba(174, 234, 255, 0.2);
     display: flex;
     flex-flow: column;
-    color: #f0f0f0;
-    padding: 1.2em;
+    color: #e6faff;
+    padding: 1.5em;
   }
 
   .overlay_window h3 {
     margin: 0;
-    padding: 0.5em 1em;
-    font-size: 1.3em;
-    background: linear-gradient(135deg, #1a1a1a, #2b2b2b, #3c3c3c);
-    border-radius: 0.5rem 0.5rem 0 0;
+    padding: 0.6em 1em;
+    font-size: 1.4em;
+    background: #1a1a1a;
+    border-radius: 0.7rem 0.7rem 0 0;
     color: #f0f0f0;
+    text-shadow: 0 0 6px rgba(174, 234, 255, 0.5);
   }
 
   .overlay_window p {
-    margin: 0.5em 0 0 0;
+    margin: 0.7em 0 0 0;
+    line-height: 1.5em;
+    color: #f5faff;
   }
 </style>
 `;
+
 
 
 // Right here are the custom styles. Buttons, dropdowns, sliders, etc.
