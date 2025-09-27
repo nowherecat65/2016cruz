@@ -823,7 +823,7 @@ credits = function() {
         }
 
         const AB = [...creditListA, ...creditListB];
-        createSection('Developers','Coding & Writing for This Game.', AB, 'center');
+        createSection('Developers','Coding & Writing for Tough as Texas.', AB, 'center');
         createSection('Special Thanks','Thanks to...', creditListC, 'center');
 
         const closeButton = document.createElement('button');
@@ -911,8 +911,7 @@ const creditListB = [
     { photo: 'https://i.imgur.com/kIcHBZz.png', text: '<b>theanswerisme</b><br><b>Writer</b><br>', button: 'Defer', id: 'ROUTEVENUS_A'},
 ]
 const creditListC = [ 
-    { photo: 'https://i.imgur.com/8zmtuzb.png', text: '<b>W. Team</b><br><b>Credits Screen & Variable Headquarters<br></b>', button: 'Defer', id: 'W_team'},
-    { photo: 'https://i.imgur.com/9bkzEuf.png', text: '<b>Everyone who playtested</b><br><b>Absolute legends<br></b>', button: 'Defer', id: 'W_team'},
+    { photo: 'https://i.imgur.com/9bkzEuf.png', text: '<b>Everyone who playtested...</b><br><b>...for making this mod better.<br></b>', button: 'Defer', id: 'W_team'},
     { photo: 'https://i.imgur.com/tAdyfzF.png', text: '<b>YOU</b><br><b>For playing!<span style="color: #ffffff;"</b></span><br>', button: 'Defer', id: 'YOU_MAN'},
 ]
 campaignTrail_temp.opponents_default_json = [
