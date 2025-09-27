@@ -1542,22 +1542,11 @@ function addDynamicCSS() {
           text-decoration: underline;
           text-shadow: 0 0 3px rgba(0, 255, 255, 0.3), 1px 1px 1px rgba(0,0,0,0.5);
           transition: text-shadow 0.3s ease, color 0.3s ease;
-          color: color-contrast(var(--bg, #fff) vs #000, #fff); /* black on light, white on dark */
+          color: color-contrast(var(--bg, #fff) vs #000, #fff);
       }
 
       .mytooltip:hover {
           text-shadow: 0 0 6px rgba(0, 255, 255, 0.5), 1px 1px 1px rgba(0,0,0,0.5);
-      }
-
-      @keyframes tooltipPopIn {
-          0% { opacity: 0; transform: translateX(-50%) translateY(12px) scale(0.9); }
-          70% { opacity: 1; transform: translateX(-50%) translateY(-2px) scale(1.05); }
-          100% { opacity: 1; transform: translateX(-50%) translateY(0) scale(1); }
-      }
-
-      @keyframes tooltipPopOut {
-          0% { opacity: 1; transform: translateX(-50%) translateY(0) scale(1); }
-          100% { opacity: 0; transform: translateX(-50%) translateY(12px) scale(0.9); }
       }
 
       @keyframes glowPulse {
@@ -1586,17 +1575,21 @@ function addDynamicCSS() {
           letter-spacing: 0.4px;
           color: #ffffff;
           text-shadow: 0 0 3px rgba(0,255,255,0.4), 1px 1px 1px rgba(0,0,0,0.5);
-          will-change: opacity, transform, box-shadow;
+          will-change: opacity, box-shadow;
+          transition: opacity 0.45s ease, visibility 0s linear 0.45s;
       }
 
       .mytooltip.show .mytooltiptext {
           visibility: visible;
-          animation: tooltipPopIn 0.65s cubic-bezier(0.4,0,0.2,1) forwards, glowPulse 1.5s ease-in-out infinite alternate;
+          opacity: 1;
+          transition-delay: 0s;
+          animation: glowPulse 1.5s ease-in-out infinite alternate;
       }
 
       .mytooltip.hide .mytooltiptext {
-          visibility: visible;
-          animation: tooltipPopOut 0.45s cubic-bezier(0.4,0,0.2,1) forwards;
+          opacity: 0;
+          visibility: hidden;
+          transition-delay: 0s, 0.45s;
       }
 
       .mytooltip img {
@@ -1628,12 +1621,9 @@ function addDynamicCSS() {
       if (!el) return;
       el.classList.remove('show');
       el.classList.add('hide');
-      const tooltip = el.querySelector('.mytooltiptext');
-      if (tooltip) {
-          setTimeout(() => el.classList.remove('hide'), 450);
-      }
   }, true);
 }
+
 
 
 // Not sure who exactly made tooltips, think it was from 2021 Germany. Credits to the people who worked on that
