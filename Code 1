@@ -1051,10 +1051,11 @@ style.innerHTML = `
     color: #ffffff !important;
   }
 
-  .overlay_window h3 {
-    background: linear-gradient(135deg, #146d75, #0f4f55) !important;
-    color: #ffffff !important;
-  }
+.overlay_window h3 {
+  background: linear-gradient(135deg, #2c3e50, #1c2833) !important;
+  color: #ffffff !important;
+}
+
 
   #state_info h3,
   #state_result h3,
