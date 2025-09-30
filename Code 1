@@ -762,15 +762,12 @@ credits = function() {
         popOutMenu.style.maxHeight = '600px';
         popOutMenu.style.height = 'auto';
         popOutMenu.style.padding = '18px';
-        popOutMenu.style.backgroundColor = 'rgba(25,28,33,0.95)';
-        popOutMenu.style.boxShadow = '0 0 20px rgba(0,255,255,0.3)';
-        popOutMenu.style.border = '1px solid #2f4a5a';
+        popOutMenu.style.backgroundColor = '#262b2f';
+        popOutMenu.style.boxShadow = '0 0 18px rgba(0,0,0,0.75)';
+        popOutMenu.style.border = '1px solid #1c1f22';
         popOutMenu.style.zIndex = '1000';
-        popOutMenu.style.backgroundImage = 'url("https://i.imgur.com/Bt2iEqy.png")';
-        popOutMenu.style.backgroundSize = 'cover';
-        popOutMenu.style.backgroundPosition = 'center';
         popOutMenu.style.borderRadius = '6px';
-        popOutMenu.style.color = '#cfe7f1';
+        popOutMenu.style.color = '#dddddd';
         popOutMenu.style.overflowY = 'auto';
         popOutMenu.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
         popOutMenu.style.opacity = '0';
@@ -785,7 +782,7 @@ credits = function() {
         menuTitle.innerText = 'Credits';
         menuTitle.style.textAlign = 'center';
         menuTitle.style.fontFamily = '"Segoe UI", Tahoma, Geneva, sans-serif';
-        menuTitle.style.color = '#a0f0ff';
+        menuTitle.style.color = '#f0f0f0';
         menuTitle.style.textShadow = '2px 2px 6px rgba(0,0,0,0.9)';
         menuTitle.style.margin = '0 0 10px 0';
         menuTitle.style.fontSize = '28px';
@@ -795,7 +792,7 @@ credits = function() {
             const title = document.createElement('h2');
             title.innerText = titleText;
             title.style.fontFamily = '"Segoe UI", Tahoma, Geneva, sans-serif';
-            title.style.color = '#80e0ff';
+            title.style.color = '#c8c8c8';
             title.style.textShadow = '1px 1px 4px rgba(0,0,0,0.8)';
             title.style.fontSize = '22px';
             title.style.textAlign = align;
@@ -805,7 +802,7 @@ credits = function() {
             const sub = document.createElement('h3');
             sub.innerText = subText;
             sub.style.fontFamily = '"Segoe UI", Tahoma, Geneva, sans-serif';
-            sub.style.color = '#a0dbe8';
+            sub.style.color = '#aaaaaa';
             sub.style.fontSize = '14px';
             sub.style.textAlign = align;
             sub.style.margin = '0 0 8px 0';
@@ -817,18 +814,18 @@ credits = function() {
 
             listData.forEach(item => {
                 const menuItem = document.createElement('div');
-                menuItem.style.background = 'linear-gradient(145deg, rgba(20,30,40,0.9), rgba(40,50,60,0.7))';
+                menuItem.style.background = 'linear-gradient(145deg, rgba(30,34,38,0.95), rgba(22,25,28,0.8))';
                 menuItem.style.display = 'flex';
                 menuItem.style.alignItems = 'flex-start';
                 menuItem.style.marginBottom = '10px';
                 menuItem.style.padding = '6px';
                 menuItem.style.borderRadius = '5px';
-                menuItem.style.border = '1px solid #2f4a5a';
-                menuItem.style.boxShadow = '0 0 5px rgba(0,255,255,0.2)';
+                menuItem.style.border = '1px solid #1c1f22';
+                menuItem.style.boxShadow = '0 0 5px rgba(0,0,0,0.45)';
 
                 const photo = document.createElement('img');
                 photo.src = item.photo;
-                photo.style.border = "1px solid #66d9ef";
+                photo.style.border = "1px solid #3a3f44";
                 photo.style.padding = "2px";
                 photo.style.width = '90px';
                 photo.style.height = '90px';
@@ -839,7 +836,7 @@ credits = function() {
                 text.innerHTML = item.text;
                 text.style.fontSize = "13px";
                 text.style.margin = '0';
-                text.style.color = '#cfe7f1';
+                text.style.color = '#dddddd';
 
                 const textAndButton = document.createElement('div');
                 textAndButton.appendChild(text);
@@ -862,13 +859,13 @@ credits = function() {
         closeButton.onclick = closeCredits;
         closeButton.style.marginTop = '10px';
         closeButton.style.padding = '6px 12px';
-        closeButton.style.background = '#1f2a33';
-        closeButton.style.color = '#cfe7f1';
-        closeButton.style.border = '1px solid #66d9ef';
+        closeButton.style.background = '#1e2226';
+        closeButton.style.color = '#dddddd';
+        closeButton.style.border = '1px solid #1c1f22';
         closeButton.style.borderRadius = '4px';
         closeButton.style.cursor = 'pointer';
-        closeButton.onmouseover = () => closeButton.style.background = '#2a3b48';
-        closeButton.onmouseout = () => closeButton.style.background = '#1f2a33';
+        closeButton.onmouseover = () => closeButton.style.background = '#282d32';
+        closeButton.onmouseout = () => closeButton.style.background = '#1e2226';
         popOutMenu.appendChild(closeButton);
 
         document.body.appendChild(popOutMenu);
@@ -933,6 +930,7 @@ function makeDraggable(element){
         document.addEventListener('mouseup',onMouseUp);
     });
 }
+
 
 
 const creditListA = [ 
