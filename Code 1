@@ -1037,6 +1037,8 @@ let style = document.createElement('style');
 style.type = 'text/css';
 style.id = 'dynamic-style';
 
+
+
 style.innerHTML = `
   .campaign_trail_start_emphasis {
     background: linear-gradient(135deg, #1e242a, #2a353f);
@@ -1050,6 +1052,31 @@ style.innerHTML = `
     background: linear-gradient(135deg, #1e242a, #2a353f) !important;
     color: #ffffff !important;
   }
+
+		#final_results_description h3 {
+			color: white;
+		}
+		#overall_details_container h3 {
+			color: white;
+		}
+		#overall_election_details h4 {
+			color: white;
+		}
+		#main_content_area_reading p {
+			color: white;
+		}
+		#main_content_area_reading h3.results_tab_header {
+			color: white;
+		}
+		.inner_window_w_desc h3 {
+			color: white;
+		}
+	p#credits {
+		color: white;
+	}
+	#final_results_description p {
+		color: white;
+	}
 
 .overlay_window h3 {
   background: linear-gradient(135deg, #2c3e50, #1c2833) !important;
