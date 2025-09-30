@@ -1031,7 +1031,7 @@ document.getElementById("header").src = "https://i.imgur.com/5cN59fs.gif";
 
 document.body.background = "https://images.wallpaperscraft.com/image/single/night_city_city_lights_metropolis_126569_2560x1440.jpg";
 
-document.head.innerHTML += "<style>#results_container {color:#fff;} .inner_window_w_desc {background-color:#212934!important;}</style>";
+document.head.innerHTML += "<style>#results_container {color:#fff;} .inner_window_w_desc {background-color:#1B1F23!important;}</style>";
 
 let style = document.createElement('style');
 style.type = 'text/css';
