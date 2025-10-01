@@ -992,7 +992,7 @@ const gameStart = document.getElementById('game_start');
     const gameWindow = document.getElementById('game_window');
 
     if (gameStart) {
-        gameStart.innerHTML = '<strong>I’m ready.</strong>';
+        gameStart.innerHTML = '<strong>Here we go...</strong>';
         const clearHeight = () => { if (gameWindow) gameWindow.style.removeProperty('height'); };
         if (window.jQuery) $('#game_start').on('click', clearHeight);
         else gameStart.addEventListener('click', clearHeight);
