@@ -540,14 +540,38 @@ if (ans == 51203) {
     window.open("https://en.wikipedia.org/wiki/Casualties_of_the_Gaza_war", "_blank");
 }
 
+if (ans == 51499) {
+  campaignTrail_temp.questions_json[22] = {
+    "model": "campaign_trail.question",
+    "pk": 51436,
+    "fields": {
+      "priority": 1,
+      "description": "With your decision to duck out of the debate at the last second, your numbers in the polls have dropped significantly, and you need to find a way to shake up the race. Luckily, Jeff has an idea to win back support and unite the party, and that's by pivoting to appeal to dissatisfied Trump voters. What are you thinking?",
+      "likelihood": 1
+    }
+  }
+} else {
+  campaignTrail_temp.questions_json[22] = {
+    "model": "campaign_trail.question",
+    "pk": 1025,
+    "fields": {
+      "priority": 1,
+      "description": "You walk onto the stage. So does Hillary. She's wearing a white suit with some buttons. The moderator is going on about some rules that you know you're not going to follow. You start to zone out. Clinton is finishing up her grandstanding, and just before she finishes, suddenly says, ''It’s almost as if he lives in his own world… have you noticed the way he rants and raves while campaigning? Or how he lies every day? He—<br>“Mrs. Clinton, your time is up. Senator Cruz, your response?”",
+      "likelihood": 1
+    }
+  }
+ }
 
   if (ans == 51271 || ans == 51084) {
         campaignTrail_temp.candidate_json[0]["fields"].first_name = "Donald";
         campaignTrail_temp.candidate_json[0]["fields"].last_name = "Trump";
-        campaignTrail_temp.question_number = 24;
+        campaignTrail_temp.question_number = 26;
         		vpTable["Donald Trump"] = "Chris Christie";
 e.ElectionPopup = "Well, Trump's the nominee now. Sit back and watch the ballots come in. This should be interesting."
+e.LosePopup = "He won the nomination, and he screwed it up... The RNC isn't gonna like this one bit..."
+e.WinPopup = "No way..? Trump actually won?"
 }
+
 
 if (Primary == 3) {
   campaignTrail_temp.questions_json[4] = {
@@ -574,9 +598,11 @@ if (Primary == 3) {
   if (ans == 51119) {
         campaignTrail_temp.candidate_json[0]["fields"].first_name = "Marco";
         campaignTrail_temp.candidate_json[0]["fields"].last_name = "Rubio";
-        campaignTrail_temp.question_number = 24;
+        campaignTrail_temp.question_number = 26;
         		vpTable["Marco Rubio"] = "John Kasich";
 e.ElectionPopup = "Well, Rubio's the nominee. Hopefully he can put the Democrats in their place."
+e.LosePopup = "Rubio has won the election. Nice!"
+e.WinPopup = "Rubio lost... somehow. The next few years will be interesting."
 }
 
     if (ans == 20739) {
@@ -1793,7 +1819,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51437,
         "fields": {
             "question": 51430,
-            "description": "New answer option"
+            "description": "sure (placeholder)"
         }
     },
     {
@@ -1833,7 +1859,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51473,
         "fields": {
             "question": 51472,
-            "description": "This is one of the worst decisions that Obama has made, and what more could you expect? I will tear this bill to shreds on my first day in office."
+            "description": "This is one of the worst decisions that Obama has made, and what more could you expect from the Democrats and 'leaders' like him? I will tear this bill to shreds on my first day in office."
         }
     },
     {
@@ -1890,6 +1916,22 @@ campaignTrail_temp.answers_json = [
         "fields": {
             "question": 51436,
             "description": "Trump voters are probably going to vote for that guy Gary Johnson instead or something. It's probably better to move onto other issues."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 51498,
+        "fields": {
+            "question": 51472,
+            "description": "This deal was a big mistake. It's allowed Iran to access billions of dollars in assets, which they in turn use to strike our soldiers abroad. The Obama administration is officially the biggest financier of radical Islamic terrorism"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 51499,
+        "fields": {
+            "question": 51430,
+            "description": "I dont wanna go (placeholder lol)"
         }
     }
 ]
@@ -10088,7 +10130,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5121,
             "candidate": 200,
-            "answer_feedback": "Comey's last announcement could change the entire outcome of the race."
+            "answer_feedback": "Comey's last-minute announcement could change the entire outcome of the race."
         }
     },
     {
@@ -10976,7 +11018,6 @@ campaignTrail_temp.jet_data = [{
     }
 }
 ]
-
 
 
 const triggerWord = "cancun";
