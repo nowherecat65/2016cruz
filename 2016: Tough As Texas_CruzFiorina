@@ -5660,7 +5660,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 200,
             "state": 1014,
-            "state_multiplier": 0.92924
+            "state_multiplier": 0.92724
         }
     },
     {
@@ -5840,7 +5840,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 200,
             "state": 1034,
-            "state_multiplier": 0.87199899851
+            "state_multiplier": 0.86989899899851
         }
     },
     {
@@ -10686,7 +10686,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51176,
             "candidate": 200,
-            "answer_feedback": "Nice try, but McConnell hates you, and he refuses to help you. The donors tell you that they won't be helping you at all, and you have to cancel some of your ad buys in swing states to conserve what little funds you have left. Screw them."
+            "answer_feedback": "Nice try, but McConnell hates you and refuses to help. Donors tell you they won’t help at all, and you have to cancel some of your ad buys in swing states to conserve what little funds you have left. Screw them."
         }
     },
     {
@@ -10785,7 +10785,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51230,
             "candidate": 200,
-            "answer_feedback": "“Listen, I-I knew Foster.” she interrupts. “Foster was.. was my friend. He was-so smart....may God bless him...I miss him..” And she goes on and on. You tune out. To everyone watching, it looks like she's on the verge of tears. Nobody actually thinks that she killed someone. She looks at you, somber and sad. Everyone watching feels bad for her. As soon as the commercial break rolls, and no one can see her, her expression suddenly becomes sharp. A death stare. At you. It could petrify someone. Jesus Christ. Is that a confession?"
+            "answer_feedback": "“Look, I-I knew Vince Foster,” she says, steady but soft. “Foster was… was my friend. He was so smart… may God bless him… I miss him.” And she goes on and on. You tune out. To everyone watching, it looks like she’s on the verge of tears. Nobody actually thinks that she killed someone. She looks at you, somber and sad. Everyone watching feels bad for her. As soon as the commercial break rolls, and no one can see her, her expression suddenly becomes sharp, a death stare at you. It could petrify someone. Jesus Christ. Is that a confession?"
         }
     },
     {
@@ -10839,7 +10839,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51262,
             "candidate": 200,
-            "answer_feedback": "Christ. This race was already in the gutter before, but now? Hillary will continue to deny your “baseless” accusations, the news elites are talking about how much of a liar you are, moderates are horrified, all while your supporters furiously defend your claims online at a million words a minute, and call for Hillary's arrest. Whatever happened to decency in politics?"
+            "answer_feedback": "Christ. This race was already in the gutter before - but now? Hillary will continue to deny your ''baseless'' accusations; the news elites are talking about how much of a liar you are; moderates are horrified; all while your supporters furiously defend your claims online at a million words a minute and call for Hillary’s arrest. Whatever happened to decency in politics?"
         }
     },
     {
@@ -10848,7 +10848,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51292,
             "candidate": 200,
-            "answer_feedback": "Women are deeply offended, (you were never going to win over them anyway) and Hillary is horrified and demands an apology from you. (we both know she's not getting one). Regardless of the amount of backlash you're receiving, the attacks are still effective in dragging down Hillary's name."
+            "answer_feedback": "Women are deeply offended (you were never going to win them over anyway) and Hillary is horrified and demands an apology from you (we both know she’s not getting one). Regardless of the backlash you’re receiving, the attacks are still effective in dragging down Hillary’s name."
         }
     },
     {
@@ -10965,7 +10965,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51463,
             "candidate": 200,
-            "answer_feedback": "Women are deeply offended, (you were never going to win over them anyway) and Hillary is horrified and demands an apology from you. (we both know she's not getting one). Regardless of the amount of backlash you're receiving, the attacks are still effective in dragging down Hillary's name."
+            "answer_feedback": "Women are deeply offended (you were never going to win them over anyway) and Hillary is horrified and demands an apology from you (we both know she’s not getting one). Regardless of the backlash you’re receiving, the attacks are still effective in dragging down Hillary’s name."
         }
     },
     {
@@ -10992,7 +10992,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51476,
             "candidate": 200,
-            "answer_feedback": "Christ. This race was already in the gutter before, but now? Hillary will continue to deny your “baseless” accusations, the news elites are talking about how much of a liar you are, moderates are horrified, all while your supporters furiously defend your claims online at a million words a minute, and call for Hillary's arrest. Whatever happened to decency in politics?"
+            "answer_feedback": "Christ. This race was already in the gutter before - but now? Hillary will continue to deny your ''baseless'' accusations; the news elites are talking about how much of a liar you are; moderates are horrified; all while your supporters furiously defend your claims online at a million words a minute and call for Hillary’s arrest. Whatever happened to decency in politics?"
         }
     },
     {
@@ -11001,7 +11001,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51479,
             "candidate": 200,
-            "answer_feedback": "Women are deeply offended, (you were never going to win over them anyway) and Hillary is horrified and demands an apology from you. (we both know she's not getting one). Regardless of the amount of backlash you're receiving, the attacks are still effective in dragging down Hillary's name."
+            "answer_feedback": "Women are deeply offended (you were never going to win them over anyway) and Hillary is horrified and demands an apology from you (we both know she’s not getting one). Regardless of the backlash you’re receiving, the attacks are still effective in dragging down Hillary’s name."
         }
     },
     {
