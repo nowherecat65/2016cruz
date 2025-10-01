@@ -319,12 +319,13 @@ document.getElementById("inner_window_1").children[0].innerHTML="<h3>Welcome to 
 
 document.getElementById("inner_window_1").children[1].innerHTML = 
     '<ul style="text-align:center; list-style-position:inside;">' +
-        '<li>This is an alternate history mod where Ted Cruz managed to win the 2016 Republican primaries.</li>' +
+        '<li>This is a mod where you play as Ted Cruz in the 2016 presidential election.</li>' +
         '<li>In our real timeline, Ted Cruz\'s campaign failed to win the nomination despite early success in Iowa.</li>' +
         '<li>In this mod, you play as Ted Cruz and attempt to win the election.</li>' +
         '<li>You start off in the primaries, but then go on to the general election to face Hillary Clinton.</li>' +
         '<li>Additionally, this mod includes many achievements, CYOA, and more.</li>' +
         '<li>This mod is shown from Cruz\'s perspective and is meant to be very biased. Just keep that in mind when playing.</li>' +
+        '<li>Good luck, and have fun.</li>' +
     '</ul>';
 
 
@@ -1648,7 +1649,6 @@ tooltipList = [
   {searchString: "Roe v. Wade", explanationText: "<img src=https://i.imgur.com/eens7WG.jpeg> The greatest tragedy in the history of our nation."},
   {searchString: "Obamacare", explanationText: "<img src=https://i.imgur.com/iN4TPyo.png> Clear proof that Obama is a communist."},
   {searchString: "the establishment", explanationText: "<img src=https://i.imgur.com/BHYdwFO.png>"},
-  {searchString: "MSNBC", explanationText: "<img src=https://i.imgur.com/3ROtL4O.png> One of the biggest spreaders of liberal propaganda."},
   {searchString: "Ben Carson", explanationText: "<img src=https://i.imgur.com/mk57VPA.png> Ben Carson – A neurosurgeon, well known in the Evangelical community."},
   {searchString: "Fiorina", explanationText: "<img src=https://i.imgur.com/JCWFk3t.png> Former CEO of Hewlett-Packard from 1999 to 2005."},
   {searchString: "Walker", explanationText: "<img src=https://i.imgur.com/xmf05Zy.jpeg> That guy who survived the recall."},
@@ -1663,7 +1663,12 @@ tooltipList = [
   {searchString: "Holt", explanationText: "<img src=https://i.imgur.com/U4vKTzh.png> The guy who is moderating your debate. Doesn't help that he's a puppet for the puppet masters."},
   {searchString: "Lester Holt", explanationText: "<img src=https://i.imgur.com/U4vKTzh.png> The guy who is moderating your debate. Doesn't help that he's a puppet for the puppet masters."},
   {searchString: "Mitt Romney", explanationText: "<img src=https://i.postimg.cc/MHgDf0j2/Romney.jpg> Doesn't talk much nowadays. He's a good guy, but he was unable to stop the Democratic deep state. You will though."},
-  {searchString: "Pawlenty", explanationText: "<img src=https://i.imgur.com/ul0Oe3z.png> Timothy J. Pawlenty, Former Governor of Minnesota."},
+  {searchString: "Pawlenty", explanationText: "<img src=https://i.imgur.com/AizWq7q.png> Timothy J. Pawlenty, Former Governor of Minnesota. Moderate, perhaps a bit too moderate, but far better then those socialist Democrats."},
+  {searchString: "Tim Pawlenty", explanationText: "<img src=https://i.imgur.com/AizWq7q.png> Timothy J. Pawlenty, Former Governor of Minnesota. Moderate, perhaps a bit too moderate, but far better then those socialist Democrats."},
+  {searchString: "Governor Pawlenty", explanationText: "<img src=https://i.imgur.com/AizWq7q.png> Timothy J. Pawlenty, Former Governor of Minnesota. Moderate, perhaps a bit too moderate, but far better then those socialist Democrats."},
+  {searchString: "Portman", explanationText: "<img src=https://i.imgur.com/Q9C0H1g.png> Senator from Ohio, swept into the Senate in the Tea Party wave, much like you."},
+  {searchString: "Senator Portman", explanationText: "<img src=https://i.imgur.com/Q9C0H1g.png> Senator from Ohio, swept into the Senate in the Tea Party wave, much like you."},
+  {searchString: "Rob Portman", explanationText: "<img src=https://i.imgur.com/Q9C0H1g.png> Senator from Ohio, swept into the Senate in the Tea Party wave, much like you."},
   {searchString: "Jeff Roe", explanationText: "<img src=https://i.postimg.cc/90khJt8G/Jeffnted.png> Jeff Roe, Chief Campaign Manager, and a good friend of yours."},
   {searchString: "Jeff", explanationText: "<img src=https://i.postimg.cc/90khJt8G/Jeffnted.png> Jeff Roe, Chief Campaign Manager, and a good friend of yours."},
   {searchString: "Carly Fiorina", explanationText: "<img src=https://i.imgur.com/JCWFk3t.png> Former CEO of Hewlett-Packard from 1999 to 2005."},
@@ -1675,7 +1680,6 @@ tooltipList = [
   {searchString: "phone", explanationText: "<img src=https://i.imgur.com/brGdIvB.png>Hillary doesn't even know how to hold one! Ha. “Hey, Heidi, how do I go on YouTube again?”"},
   {searchString: "phones", explanationText: "<img src=https://i.imgur.com/brGdIvB.png>Hillary doesn't even know how to hold one! Ha. “Hey, Heidi, how do I go on YouTube again?”"},
   {searchString: "foundation", explanationText: "<img src=https://i.imgur.com/WyO0bkU.jpeg>She became a slave for Goldman Sachs and Saudi Arabia in exchange for money."},
-  {searchString: "2000 Redux", explanationText: "<img src=https://i.imgur.com/T2sCCVP.jpeg> The nostalgia is kicking in..."},
   {searchString: "Placeholder", explanationText: "<img src=https://i.imgur.com/XtSnrAP.jpeg> This is the work of our s"},
   {searchString: "Placeholder", explanationText: "<img src=https://i.imgur.com/XtSnrAP.jpeg> This is the work of our s"},
   {searchString: "Placeholder", explanationText: "<img src=https://i.imgur.com/hsRTF1Q.png> Doug Dimmadome."}
