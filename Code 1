@@ -192,7 +192,7 @@ input[type="radio"] {
   appearance: none;
   width: 16px;
   height: 16px;
-  border: 2px solid #5c6b7c;
+  border: 2px solid #2c3136;
   border-radius: 50%;
   outline: none;
   cursor: pointer;
@@ -209,7 +209,7 @@ input[type="radio"]::before {
   width: 0;
   height: 0;
   border-radius: 50%;
-  background: #8fa3b2;
+  background: #2c3136;
   transform: translate(-50%, -50%) scale(0);
   transition: all 0.2s ease;
 }
