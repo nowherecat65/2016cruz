@@ -5,6 +5,7 @@ var Establishment = 0;
 var Ideology = 3;
 var Trump = 0;
 var Primary = 0
+var Debate = 0
 var Resigned = 0;
 var BernieOppoResearch = 0;
 var BernieInvestigation = 0;
@@ -83,6 +84,13 @@ const PrimaryMap = {
     "1": `Your primary showing has been <span style="color: #57AB6A;"><strong>somewhat successful</strong></span>.`,
     "2": `Your primary showing has been <span style="color: #6DCF1F;"><strong>very successful</strong></span>.`,
     "3": `Your primary showing has been <span style="color: #6DCF1F;"><strong>a resounding success</strong></span>.`,
+};
+const DebateMap = {
+    "-4": `Is Hillary...<span style="color: #CD1025;"><strong>a murderer...?</strong></span>`,
+    "-3": `You <span style="color: #CD1025;"><strong>refused to debate Clinton,</strong></span> leading to a <span style="color: #CD1025;"><strong>nosedive in the polls.</strong></span>`,
+    "-2": `The debate has been <span style="color:  #cd1025;"><strong>dragged into the gutter, with no clear winner.</strong></span>`,
+    "-1": `Your were <span style="color:  #FB6723;"><strong>defeated</strong></span> at the debate.`,
+    "1": `The debates were a <span style="color: #57ab6a;"><strong>Cruz victory</strong></span>.`,
 };
 const JudgeMap = {
     "-2": `Your Supreme Court nominee has been <span style="color:  #CD1025;"><strong>blocked</strong></span>.`,
@@ -184,7 +192,7 @@ function openHeadquarter() {
             popOutMenu.style.opacity = '1';
         }, 10);
 
-        // Title bar (drag handle)
+        // Title bar
         const titleBar = document.createElement('div');
         titleBar.style.background = 'linear-gradient(180deg, #2B3239, #1F2429)';
         titleBar.style.padding = '12px 16px';
@@ -253,10 +261,6 @@ function closeHeadquarter(animated = false) {
     }
 }
 
-function refreshHeadquarter() {
-    updateHeadquarterContent();
-}
-
 function updateHeadquarterContent() {
     const content = document.getElementById('headquarter_content');
     if (!content) return;
@@ -276,6 +280,11 @@ function updateHeadquarterContent() {
 
     PrimaryText = `${PrimaryMap[String(Primary)]}`;
     overviewtxt += "• "+ `${PrimaryText}` + "<br>";
+
+    if (Debate !== 0) {
+        DebateText = `${DebateMap[String(Debate)]}`;
+        overviewtxt += "• "+ `${DebateText}` + "<br>";
+    }
 
     if (Judge !== 0) {
         JudgeText = `${JudgeMap[String(Judge)]}`;
@@ -307,26 +316,6 @@ function updateHeadquarterContent() {
     ovsubtxt.style.lineHeight = '1.5';
     ovsubtxt.style.boxShadow = 'inset 0 1px 3px rgba(0,0,0,0.4)';
     content.appendChild(ovsubtxt);
-
-    const footer = document.createElement('div');
-    footer.style.display = 'flex';
-    footer.style.justifyContent = 'flex-end';
-    footer.style.gap = '10px';
-
-    const refreshButton = document.createElement('button');
-    refreshButton.innerText = 'Refresh';
-    refreshButton.style.padding = '6px 14px';
-    refreshButton.style.border = '1px solid #3b4a5a';
-    refreshButton.style.borderRadius = '8px';
-    refreshButton.style.background = 'linear-gradient(180deg, #2C3A47, #1F2429)';
-    refreshButton.style.color = '#cfd6e3';
-    refreshButton.style.cursor = 'pointer';
-    refreshButton.onmouseover = () => refreshButton.style.background = 'linear-gradient(180deg, #34495e, #1F2429)';
-    refreshButton.onmouseout = () => refreshButton.style.background = 'linear-gradient(180deg, #2C3A47, #1F2429)';
-    refreshButton.onclick = refreshHeadquarter;
-    footer.appendChild(refreshButton);
-
-    content.appendChild(footer);
 }
 
 // draggable with full document clamping
@@ -396,6 +385,13 @@ if (!element) {
     document.body.appendChild(controlElement);
 }
 
+// --- Auto-Refresh Loop ---
+setInterval(() => {
+    const menu = document.getElementById('popOutMenu');
+    if (menu && menu.style.display !== 'none') {
+        updateHeadquarterContent();
+    }
+}, 100);
 
 
 function ctsAchievement(achievement, difficultyChecker = true){
@@ -526,15 +522,34 @@ function getQuestionNumberFromPk(pk) {
 cyoAdventure = function (a) {
     ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length-1];
 
-  if (ans ==  20676 || ans == 5018 || ans == 5016) {
+// VARIABLES
+
+
+  if (ans == 20676 || ans == 5018 || ans == 5016) {
         Primary  += 1;
     }
-  if (ans ==  20683) {
+  if (ans == 20683) {
         Primary  += 2;
     }
-  if (ans ==  20678) {
+  if (ans == 20678) {
         Primary  -= 1;
     }
+ if (ans == 51230) {
+        Debate  -= 4;
+    }
+  if (ans == 51499) {
+        Debate  -= 3;
+    }
+ if (ans == 51228) {
+        Debate  -= 2;
+    }
+ if (ans == 51264) {
+        Debate  -= 1;
+    }
+ if (ans == 51229) {
+        Debate  += 1;
+    }
+
 
 if (ans == 51203) {
     window.open("https://en.wikipedia.org/wiki/Casualties_of_the_Gaza_war", "_blank");
@@ -891,15 +906,6 @@ campaignTrail_temp.questions_json = [
     },
     {
         "model": "campaign_trail.question",
-        "pk": 51472,
-        "fields": {
-            "priority": 0,
-            "description": "What's your stance on the Iran nuclear deal, recently “achieved” by Barack Obama? Officially known as the Joint Comprehensive Plan of Action (JCPOA), the agreement says that Iran will reduce it's uranium stockpile, and that it will not build any heavy-water reactors needed to make plutonium. In exchange, the U.S lifted all sanctions on Iran, and unfroze all of its assets.\n",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
         "pk": 1027,
         "fields": {
             "priority": 7,
@@ -963,10 +969,19 @@ campaignTrail_temp.questions_json = [
     },
     {
         "model": "campaign_trail.question",
+        "pk": 51472,
+        "fields": {
+            "priority": 0,
+            "description": "What's your stance on the Iran nuclear deal, recently “achieved” by Barack Obama? Officially known as the Joint Comprehensive Plan of Action (JCPOA), the agreement says that Iran will reduce it's uranium stockpile, and that it will not build any heavy-water reactors needed to make plutonium. In exchange, the U.S lifted all sanctions on Iran, and unfroze all of its assets.\n",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
         "pk": 51430,
         "fields": {
             "priority": 0,
-            "description": "With Election Day quickly approaching, Clinton's team has agreed to a single debate at the University of Southern California, which is set to be held tomorrow. The moderator is Lester Holt of NBC News. Do you attend the debate or do you back out?",
+            "description": "With Election Day quickly approaching, Clinton's team has agreed to a single debate at the University of Southern California, which is set to be held tomorrow. The moderator is Lester Holt of NBC News. Will you attend?",
             "likelihood": 1
         }
     },
@@ -1029,7 +1044,7 @@ campaignTrail_temp.questions_json = [
         "pk": 51436,
         "fields": {
             "priority": 0,
-            "description": "With your decision to duck out of the debate at the last second, your numbers in the polls have dropped significantly, and you need to find a way to shake up the race. Luckily, Jeff has an idea to win back support and unite the party, and that's by pivoting to appeal to dissatisfied Trump voters. What are you thinking?",
+            "description": "With your decision to duck out of the debate at the last second, your numbers in the polls have dropped significantly, and you need to find a way to shake up the race. Luckily, your advisors have an idea to win back support and unite the party, and that's by pivoting to appeal to dissatisfied Trump voters. What are you thinking?",
             "likelihood": 1
         }
     },
@@ -1819,7 +1834,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51437,
         "fields": {
             "question": 51430,
-            "description": "sure (placeholder)"
+            "description": "Absolutely. We're gonna crush her. We're gonna post about it on Twitter. Believe me, we're gonna have a good time."
         }
     },
     {
@@ -1867,7 +1882,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51474,
         "fields": {
             "question": 51436,
-            "description": "It's simple. We attack Hillary, we attack the Democratic deep state, we attack Obama, and the Trump voters will come to us. This isn't hard."
+            "description": "Why do we have to make this so complicated? We attack Hillary, we attack the Democratic deep state, we attack Obama, and voters who backed Trump in the primary will come home to us. This isn't hard."
         }
     },
     {
@@ -1907,7 +1922,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51488,
         "fields": {
             "question": 51436,
-            "description": "That's a great idea, Jeff. If we adopt some of his rhetoric on issues like immigration, we could definitely bring them back into the fold. Let's do this."
+            "description": "That's a great idea, why haven't we done this earlier? If we adopt some of his rhetoric on issues like illegal immigration, tariffs, and foreign policy, we could definitely bring them back into the fold. Let's do this."
         }
     },
     {
@@ -1915,7 +1930,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51489,
         "fields": {
             "question": 51436,
-            "description": "Trump voters are probably going to vote for that guy Gary Johnson instead or something. It's probably better to move onto other issues."
+            "description": "There's no way we should do this. For every Trump supporter we lose in rural Ohio, we'll gain three more in a Cincinnati suburb. And besides, they're probably going to vote for Gary Johnson anyway."
         }
     },
     {
@@ -1923,7 +1938,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51498,
         "fields": {
             "question": 51472,
-            "description": "This deal was a big mistake. It's allowed Iran to access billions of dollars in assets, which they in turn use to strike our soldiers abroad. The Obama administration is officially the biggest financier of radical Islamic terrorism"
+            "description": "This deal was a disaster. It's allowed Iran to access billions of dollars in assets, which they in turn use to strike our soldiers abroad. The Obama administration is now officially the biggest financier of radical Islamic terrorism."
         }
     },
     {
@@ -1931,7 +1946,15 @@ campaignTrail_temp.answers_json = [
         "pk": 51499,
         "fields": {
             "question": 51430,
-            "description": "I dont wanna go (placeholder lol)"
+            "description": "Honestly, I don't really see how going on the biased news networks and getting silently browbeat by 'fact checkers' for 90 minutes is going to help my campaign. I'm tuning out on this one."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 51511,
+        "fields": {
+            "question": 51472,
+            "description": "Some parts of the deal obviously need to be reworked, and other parts of it are outrageous, but in concept I'm not opposed to the Iranian nuclear deal. We need long-lasting peace in the Middle East, and in theory a deal with Iran could help with that."
         }
     }
 ]
@@ -8283,6 +8306,16 @@ campaignTrail_temp.answer_score_global_json = [
             "affected_candidate": 200,
             "global_multiplier": -0.008
         }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 51510,
+        "fields": {
+            "answer": 51499,
+            "candidate": 200,
+            "affected_candidate": 201,
+            "global_multiplier": 0.065
+        }
     }
 ]
 
@@ -9476,50 +9509,6 @@ campaignTrail_temp.answer_score_state_json = [
     },
     {
         "model": "campaign_trail.answer_score_state",
-        "pk": 51378,
-        "fields": {
-            "answer": 51263,
-            "state": 1008,
-            "candidate": 200,
-            "affected_candidate": 200,
-            "state_multiplier": 0.15
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
-        "pk": 51379,
-        "fields": {
-            "answer": 51263,
-            "state": 1034,
-            "candidate": 200,
-            "affected_candidate": 200,
-            "state_multiplier": 0.15
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
-        "pk": 51380,
-        "fields": {
-            "answer": 51263,
-            "state": 1037,
-            "candidate": 200,
-            "affected_candidate": 200,
-            "state_multiplier": 0.15
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
-        "pk": 51381,
-        "fields": {
-            "answer": 51263,
-            "state": 1049,
-            "candidate": 200,
-            "affected_candidate": 200,
-            "state_multiplier": 0.15
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
         "pk": 51397,
         "fields": {
             "answer": 51207,
@@ -10012,6 +10001,105 @@ campaignTrail_temp.answer_score_state_json = [
             "affected_candidate": 200,
             "state_multiplier": 0.007
         }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 51500,
+        "fields": {
+            "answer": 51403,
+            "state": 1014,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "state_multiplier": 0.009
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 51501,
+        "fields": {
+            "answer": 51406,
+            "state": 1014,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "state_multiplier": 0.02
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 51502,
+        "fields": {
+            "answer": 51263,
+            "state": 1014,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "state_multiplier": 0.02
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 51503,
+        "fields": {
+            "answer": 51263,
+            "state": 1021,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "state_multiplier": 0.02
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 51504,
+        "fields": {
+            "answer": 51263,
+            "state": 1037,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "state_multiplier": 0.02
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 51505,
+        "fields": {
+            "answer": 51263,
+            "state": 1049,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "state_multiplier": 0.02
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 51506,
+        "fields": {
+            "answer": 51263,
+            "state": 1008,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "state_multiplier": 0.02
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 51507,
+        "fields": {
+            "answer": 51263,
+            "state": 1034,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "state_multiplier": 0.02
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 51515,
+        "fields": {
+            "answer": 51119,
+            "state": 1008,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "state_multiplier": 0.07
+        }
     }
 ]
 
@@ -10463,7 +10551,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51068,
             "candidate": 200,
-            "answer_feedback": "Parts of the party are very happy with this rhetoric, but it's a touch too extreme for most voters... for now."
+            "answer_feedback": "This is a bit out of character for you. Parts of the party are very happy with this rhetoric, but it's a touch too extreme for most voters... for now."
         }
     },
     {
@@ -10679,7 +10767,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51228,
             "candidate": 200,
-            "answer_feedback": "Clinton is speechless, but you notice a slight smile creep across her face. The base eats the red meat up, and Fox applauds you for having the guts to stand up to the establishment. At the end of the debate, she walks up to shake your hand. You don't reciprocate. The New York Times insults your ''lack of decency.'' the following day."
+            "answer_feedback": "Clinton is speechless, but you notice a slight smile creep across her face. The base eats the red meat up, and Fox applauds you for having the guts to stand up to the establishment. At the end of the debate, she walks up to shake your hand. You don't reciprocate. You watch as the race slowly degenerates to no avail, as it gets more ferocious and your supporters come to near blows by each passing day."
         }
     },
     {
@@ -10697,7 +10785,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51230,
             "candidate": 200,
-            "answer_feedback": "“Listen, I-I knew Foster.” she interrupts. “Foster was.. was my friend.” To everyone watching, it looks like she's on the verge of tears. Nobody actually thinks that she killed someone. She looks at you, somber and sad. Everyone watching feels bad for her. As soon as the commercial break rolls, and no one can see her, her expression suddenly becomes sharp. A death stare. At you. Jesus Christ."
+            "answer_feedback": "“Listen, I-I knew Foster.” she interrupts. “Foster was.. was my friend. He was-so smart....may God bless him...I miss him..” And she goes on and on. You tune out. To everyone watching, it looks like she's on the verge of tears. Nobody actually thinks that she killed someone. She looks at you, somber and sad. Everyone watching feels bad for her. As soon as the commercial break rolls, and no one can see her, her expression suddenly becomes sharp. A death stare. At you. It could petrify someone. Jesus Christ. Is that a confession?"
         }
     },
     {
@@ -10959,6 +11047,51 @@ campaignTrail_temp.answer_feedback_json = [
             "answer": 51488,
             "candidate": 200,
             "answer_feedback": "It's clear that your campaign is pivoting. Mainstream media mocks you for flip-flopping. Clinton's campaign calls you a liar. But Trump supporters do take notice. Hopefully they will turn out for you this fall."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 51508,
+        "fields": {
+            "answer": 51437,
+            "candidate": 200,
+            "answer_feedback": "On the plane flight from Houston to Los Angeles, you finally have some peace and quiet for once. You can defeat her. Let's do this."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 51509,
+        "fields": {
+            "answer": 51499,
+            "candidate": 200,
+            "answer_feedback": "Clinton relentlessly slams you for abandoning going to the debate at the last second, and she spends the entire night debating an empty stand, humiliating you. Screw her."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 51512,
+        "fields": {
+            "answer": 51511,
+            "candidate": 200,
+            "answer_feedback": "A complete flip-flop from your earlier stance, and completely appalling to the base. Good job."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 51513,
+        "fields": {
+            "answer": 51473,
+            "candidate": 200,
+            "answer_feedback": "For as much as an infernal liar Barack Obama is, you need to make sure this election isn't focused on him, as much as possible. His approval rating is high and continues to rise as well."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 51514,
+        "fields": {
+            "answer": 51498,
+            "candidate": 200,
+            "answer_feedback": "This is a good critique of the Iranian nuclear deal, and this also has the added benefit of burnishing your campaign on foreign policy."
         }
     }
 ]
