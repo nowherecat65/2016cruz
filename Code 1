@@ -1680,6 +1680,7 @@ tooltipList = [
   {searchString: "phone", explanationText: "<img src=https://i.imgur.com/brGdIvB.png>Hillary doesn't even know how to hold one! Ha. “Hey, Heidi, how do I go on YouTube again?”"},
   {searchString: "phones", explanationText: "<img src=https://i.imgur.com/brGdIvB.png>Hillary doesn't even know how to hold one! Ha. “Hey, Heidi, how do I go on YouTube again?”"},
   {searchString: "foundation", explanationText: "<img src=https://i.imgur.com/WyO0bkU.jpeg>She became a slave for Goldman Sachs and Saudi Arabia in exchange for money."},
+  {searchString: "Speaker Ryan", explanationText: "<img src=https://i.imgur.com/QDPssVv.jpeg>Romney's running mate in 2012, and Speaker of the House."},
   {searchString: "Placeholder", explanationText: "<img src=https://i.imgur.com/XtSnrAP.jpeg> This is the work of our s"},
   {searchString: "Placeholder", explanationText: "<img src=https://i.imgur.com/XtSnrAP.jpeg> This is the work of our s"},
   {searchString: "Placeholder", explanationText: "<img src=https://i.imgur.com/hsRTF1Q.png> Doug Dimmadome."}
