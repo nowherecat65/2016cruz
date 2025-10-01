@@ -1225,7 +1225,7 @@ campaignTrail_temp.answers_json = [
         "pk": 20664,
         "fields": {
             "question": 1000,
-            "description": "Trump is a liberal. He might say otherwise, but the facts don't lie. Hillary Clinton was at his wedding, he's donated thousands to her election campaign in New York and her foundation. He'll cozy up to Hillary on his first day in office."
+            "description": "Trump is a liberal. He might say otherwise, but the facts don't lie. Hillary Clinton was at his wedding, he's donated thousands to her election campaign in New York and her foundation. He'll cozy up to her on his first day in office."
         }
     },
     {
