@@ -745,7 +745,7 @@ campaignTrail_temp.running_mate_json = [
     }
 ]
 
-campaignTrail_temp.credits = "<button onclick='credits()'>Cancun Cruz, as nothing but lies and propaganda.</button>"
+campaignTrail_temp.credits = "<button onclick='credits()'>TheMcCain & theanswerisme</button>"
 
 let savedX = null;
 let savedY = null;
@@ -760,7 +760,7 @@ credits = function() {
         popOutMenu.style.maxHeight = '600px';
         popOutMenu.style.height = 'auto';
         popOutMenu.style.padding = '18px';
-        popOutMenu.style.backgroundColor = '#262b2f';
+        popOutMenu.style.backgroundColor = '#20272D';
         popOutMenu.style.boxShadow = '0 0 18px rgba(0,0,0,0.75)';
         popOutMenu.style.border = '1px solid #1c1f22';
         popOutMenu.style.zIndex = '1000';
@@ -850,7 +850,7 @@ credits = function() {
 
         const AB = [...creditListA, ...creditListB];
         createSection('Developers','Coding & Writing for Tough as Texas.', AB, 'center');
-        createSection('Special Thanks','Thanks to...', creditListC, 'center');
+        createSection('Special Thanks','(Full Special Thanks in Further Reading)', creditListC, 'center');
 
         const closeButton = document.createElement('button');
         closeButton.innerText = 'Close';
@@ -929,8 +929,6 @@ function makeDraggable(element){
     });
 }
 
-
-
 const creditListA = [ 
     { photo: 'https://i.imgur.com/DeON6Uc.png', text: '<b>TheMcCain</b><br><b>Lead Dev / Coder / Main Writer<br>', button: 'Defer', id: 'MCCAIN_A'},
 ]
@@ -938,7 +936,7 @@ const creditListB = [
     { photo: 'https://i.imgur.com/kIcHBZz.png', text: '<b>theanswerisme</b><br><b>Writer</b><br>', button: 'Defer', id: 'ROUTEVENUS_A'},
 ]
 const creditListC = [ 
-    { photo: 'https://i.imgur.com/9bkzEuf.png', text: '<b>Everyone who playtested...</b><br><b>...for making this mod better.<br></b>', button: 'Defer', id: 'W_team'},
+    { photo: 'https://i.imgur.com/9bkzEuf.png', text: '<b>Everyone who playtested</b><br><b><br></b>', button: 'Defer', id: 'W_team'},
     { photo: 'https://i.imgur.com/tAdyfzF.png', text: '<b>YOU</b><br><b>For playing!<span style="color: #ffffff;"</b></span><br>', button: 'Defer', id: 'YOU_MAN'},
 ]
 campaignTrail_temp.opponents_default_json = [
