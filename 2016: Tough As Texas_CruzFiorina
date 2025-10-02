@@ -158,7 +158,7 @@ function addHeadquarterButton() {
     const newButton = document.createElement('button');
     newButton.id = 'headquarter_button';
     newButton.style.marginLeft = '1.5em';
-    newButton.innerHTML = 'Campaign File';
+    newButton.innerHTML = 'Campaign Overview';
     newButton.addEventListener('click', openHeadquarter);
     refButton.insertAdjacentElement('afterend', newButton);
 }
@@ -204,7 +204,7 @@ function openHeadquarter() {
         titleBar.style.boxShadow = 'inset 0 -1px 1px rgba(255,255,255,0.05)';
 
         const menuTitle = document.createElement('h1');
-        menuTitle.innerText = 'Campaign File';
+        menuTitle.innerText = 'Overview';
         menuTitle.style.margin = '0';
         menuTitle.style.fontSize = '20px';
         menuTitle.style.fontWeight = '600';
