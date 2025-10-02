@@ -11261,7 +11261,7 @@ endingPicker = (out, totv, aa, quickstats) => {
     e.header = "";
     e.executable = [];
     
-    if (quickstats[0] >= 191 && quickstats[0]<239) { // This one is if you make an enemy out of trump
+    if (quickstats[0] >= 191 && quickstats[0]<239) { // This one is if you make an enemy out of
         e.pages.push(`<h3>I'm sorry, Ted.</h3><p>You were so close, but to no avail. Clinton will become the 45th and first female President of the United States, as predicted by nearly every media “expert.” Your primary opponents are already planning to make their own bid for the nomination in 2020, and the RNC is outraged.<br><br>Even though just a few states decided the entire election, MSNBC still talks about how this was a so-called landslide. In a day that will surely go down in American history, Hillary Clinton holds the most extravagant victory celebration possible, meticulously planned, no doubt paid for by her corrupt donors. Her victory speech in Manhattan has an enormous glass ceiling. With a single strike, she shatters the entire glass, and her supporters are whipped into a frenzy.</p>`);
         e.pages.push(`<h3>I'm sorry, Ted.</h3><p>The Democrats have won majorities in both chambers of Congress, and Hillary will be able to easily pass her radical agenda. It's already obvious what that agenda will be. Teenage and partial birth abortions on demand, radical activist justices, and Clinton Foundation donors receiving special favors. You can barely look at the television. Hillary continues to do victory laps about how much the glass ceiling has been shattered, how she'll protect reproductive “rights”, and more, well into the night, and that a new era has begun. It's a new era alright. But not the kind of era we want in a country we still call God's country.<br><br>Meanwhile, you see Donald Trump post this on Twitter. “Crooked Hillary and Lyin' Ted stole this election with massive amounts of Voter Fraud! In 2020 We're Going to Take it All Back!” Christ.<p>`);
         e.pages.push(`<h3>I'm sorry, Ted.</h3><p>Even though this was likely your last, and only chance of becoming President, you do have cause for some hope. Hillary Clinton is just as unpopular as you are, and conservative retribution in 2018 is likely going to come fast and avengefully. Likewise, re-election in 2018 to the Senate should hopefully be easy for you. You might still be hated by the vast majority of your colleagues, but you remain popular in Texas. Hopefully you can keep fighting for liberty and freedom in Capitol Hill, and be apart of a Republican win in 2020.<br><br>While the result is a shame, you still put up a respectable performance, all things considered. I assume you're likely positvely exhausted by now, so perhaps this is a good time to catch your breath. For now, you can just take a break after such an intense campaign, and start making your plans for your re-election. Godspeed, Ted.</p>`);
@@ -11281,9 +11281,26 @@ endingPicker = (out, totv, aa, quickstats) => {
       );
       defeat.addSong(defeatSong);
     changePlaylist(defeat);
+     }
     }
+
+else if (quickstats[0] < 3) { // Won ZERO states
+  e.pages.push(`<h3>PLACEHOLDER BRO</h3><div style='overflow-y:scroll;height:200px;'><p><i>Please select the election you will run in:</i>  <br><select name="election_id" id="election_id"><option value="0">2020</option></select><br><img src="https://i.imgur.com/dTXNfTa.png" alt="Example Image" style="max-width:45%;height:auto;display:block;" loading="lazy"><br>The 2020 presidential election enters it's final stretch in complete and utter chaos. President Hillary Clinton's national lockdown mandates are under full attack, as the COVID-19 pandemic spreads rapidly across the country and the world, and the legacy of George Floyd still haunts the nation.<br><br><li>President Clinton must argue that her COVID-19 policies have been necessary given the state of the pandemic and it's rapid spread, all while defending her controverisal Supreme Court picks and her decision to raise the federal minimum wage.</li><br><li>Marco Rubio is a Senator from Florida and has quickly burst onto the national scene. He must attack the 12 year-long Democratic hold on the White House while making the case for a change in leadership.</li><br><br><button>Continue</button><br><br><i>This scenario was made by Dan Bryan.</i><p>`);
+  e.executable.push([0, () => { e.image = 'https://i.imgur.com/UI924Au.png'; }]);
+   if (songChange != 1) {
+    songChange = 1
+    const communist = new Playlist();
+      const communistSong = new Song(
+        "The Red Army",
+        "Andreas Waldetoft",
+        "https://i.imgur.com/oGB5EK4.png",
+        "https://audio.jukehost.co.uk/Piq5vpy7kydSaITyqLIEwL78w4K68M5I"
+      );
+      communist.addSong(communistSong);
+    changePlaylist(communist);
     }
-    
+}
+
     return construct(0);
 }
 
