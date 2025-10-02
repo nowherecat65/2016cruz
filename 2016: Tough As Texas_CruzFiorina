@@ -11152,39 +11152,6 @@ campaignTrail_temp.jet_data = [{
 }
 ]
 
-
-const triggerWord = "cancun";
-const alertMessage = "Not a chance...\n\nYou found the secret word. Cancun. Really didn't expect anyone to find this, so congratulations.\n\nHonestly, I didn't realize how spineless Ted Cruz is/was when I first started working on this mod, and I'm saying that as a Republican.\n\nThis so-called 'patriot' abandoned his constituents in Texas and fled to Mexico, then proceeds to criticize others for doing the same thing. He pretty much spends his career bowing down to whatever Trump wants and being an AIPAC suckup.\n\nBut you can't deny that he's fun to make a mod on. Congratulations, you just got an achievement.";
-let keyBuffer = "";
-
-function checkTrigger(value) {
-    if (value.toLowerCase().includes(triggerWord.toLowerCase())) {
-        alert(alertMessage);
-        ctsAchievement("Cancun");
-        return true;
-    }
-    return false;
-}
-
-document.addEventListener("keydown", function(event) {
-    const activeElement = document.activeElement;
-    
-    if ((activeElement.tagName === "INPUT" || activeElement.tagName === "TEXTAREA") && event.key === "Enter") {
-        const typedValue = activeElement.value.trim();
-        if (checkTrigger(typedValue)) {
-            activeElement.value = "";
-        }
-    } else if (event.key.length === 1) {
-        keyBuffer += event.key;
-    } else if (event.key === "Backspace") {
-        keyBuffer = keyBuffer.slice(0, -1);
-    } else if (event.key === "Enter") {
-        if (checkTrigger(keyBuffer)) {}
-        keyBuffer = "";
-    }
-});
-
-
 // Not gonna lie, I have no idea who made this. Think it was Onkel Danny, not sure. Shoutout to whoever made this.
 
 construct = (a = 1) => {
@@ -11285,8 +11252,8 @@ endingPicker = (out, totv, aa, quickstats) => {
     }
 
 else if (quickstats[0] < 3) { // Won ZERO states
-  e.pages.push(`<h3>PLACEHOLDER BRO</h3><div style='overflow-y:scroll;height:200px;'><p><i>Please select the election you will run in:</i>  <br><select name="election_id" id="election_id"><option value="0">2020</option></select><br><img src="https://i.imgur.com/dTXNfTa.png" alt="Example Image" style="max-width:45%;height:auto;display:block;" loading="lazy"><br>The 2020 presidential election enters it's final stretch in complete and utter chaos. President Hillary Clinton's national lockdown mandates are under full attack, as the COVID-19 pandemic spreads rapidly across the country and the world, and the legacy of George Floyd still haunts the nation.<br><br><li>President Clinton must argue that her COVID-19 policies have been necessary given the state of the pandemic and it's rapid spread, all while defending her controverisal Supreme Court picks and her decision to raise the federal minimum wage.</li><br><li>Marco Rubio is a Senator from Florida and has quickly burst onto the national scene. He must attack the 12 year-long Democratic hold on the White House while making the case for a change in leadership.</li><br><br><button>Continue</button><br><br><i>This scenario was made by Dan Bryan.</i><p>`);
-  e.executable.push([0, () => { e.image = 'https://i.imgur.com/UI924Au.png'; }]);
+  e.pages.push(`<h3>“Excellent.”</h3><div style='overflow-y:scroll;height:200px;'><p>That is what Hillary Clinton said on November 8th, 2016. She had just tricked the country. Tricked them into thinking that she was a sweet nice grandma, and that Ted Cruz was a radical. They were actually dumb enough to fall for it. Of course they did. Absolute morons.<br><br>Her campaign staff told her to get ready to say her victory speech - after all, everyone had just decided to elect her 538 electoral votes to zero. She didn't even care. Because she had no intentions of looking nice with the public. She already started planning out what she would do next.<br><br>On the very first day of her term, she dismantled the Constitution. How did she do it? Listen... don't ask me how she managed to do it... but she planted a bomb inside the Capitol building and set it to go off.<br><br>BAM!<br><br>474 out of 475 Senators and Representatives were killed instantly. Only one, Ted Cruz, survived, but he was laying down on the floor, struggling to survive. Clinton made sure that the bomb denotated as far as possible from Cruz.<br><br>As the cameras were watching her, and then she rushed in.<br><br>Hillary Clinton got into the building. Was he going to get saved? Of course not. Ted Cruz was just laying down, struggling to understand what was happening. “What.. are you doing here..?” Cruz said. Clinton merely chuckled. The chuckling turned into cackling, the cackling into laughing, and the laughing into straight up taunting. She then stopped laughing, and her face became serious.<br><br>“You. You're the one behind why America is so bad.”<br><br>“Huh?”<br><br>Hillary slapped her face. “Why do I even try anymore...” she said. Before Ted could respond, she pulled out her M1911 and started laughing again. “Give me one reason why I shouldn't shoot you right now.”<br><br>“Uh... well... I...”<br><br>POW!<br><br>Her bullet landed straight through his skull, causing a cerebral hemmorage and massive bleeding. Instead of finishing him off, Hillary just left the building, continuing to laugh on her way out.<br><br>She started crying as soon as she reached the cameras. "No-nobody surv-ived..." she said. People felt so sorry for her. She then went down on the floor and cried. Those weren't tears of sadness. Those were tears of joy. Ted Cruz could hear her lying, but he wasn't able to call for help. He bled out a few minutes later.<br><br>After being behind the bombing of Capitol Hill, she feigned innocence and pretended that ISIS had just bombed the Capitol building, and the public was none the wiser. She declared a “national state of emergency” and granted herself “additional powers.” With those powers, she dismantled the Constiution.<br><br>Was that even legal? Nope. But who's gonna stop her? What is Congress gonna do, impeach her?<br><br>She then suspended habeus corpus and ordered any and all people who have ever voted for a Republican, a Libertarian, or Green party candidate to be known as “enemies of the state” and executed. Things were going great. Her plan to turn the country into a communist-nationalist-facist state was succeeding wonderfully. She and Putin went from enemies to best friends. In fact, a few months earlier, Putin had invaded Ukraine and all of NATO and reformed the Soviet Union. The world is now perfect, all thanks to our wonderful leader, Hillary Clinton.`);
+  e.executable.push([0, () => { e.image = 'https://i.imgur.com/UI94Au.png'; }]);
    if (songChange != 1) {
     songChange = 1
     const communist = new Playlist();
