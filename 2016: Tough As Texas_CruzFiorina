@@ -8607,6 +8607,66 @@ campaignTrail_temp.answer_score_issue_json = [
     },
     {
         "model": "campaign_trail.answer_score_issue",
+        "pk": 2610,
+        "fields": {
+            "answer": 51121,
+            "issue": 100,
+            "issue_score": -0.7,
+            "issue_importance": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 2610,
+        "fields": {
+            "answer": 51121,
+            "issue": 101,
+            "issue_score": 0.25,
+            "issue_importance": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 2610,
+        "fields": {
+            "answer": 51122,
+            "issue": 100,
+            "issue_score": 0.1,
+            "issue_importance": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 2610,
+        "fields": {
+            "answer": 51122,
+            "issue": 101,
+            "issue_score": -0.1,
+            "issue_importance": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 2610,
+        "fields": {
+            "answer": 51123,
+            "issue": 100,
+            "issue_score": -0.25,
+            "issue_importance": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 2610,
+        "fields": {
+            "answer": 51123,
+            "issue": 101,
+            "issue_score": 0.05,
+            "issue_importance": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
         "pk": 2611,
         "fields": {
             "answer": 5129,
