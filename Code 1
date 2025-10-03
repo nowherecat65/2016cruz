@@ -1031,8 +1031,6 @@ let style = document.createElement('style');
 style.type = 'text/css';
 style.id = 'dynamic-style';
 
-
-
 style.innerHTML = `
   .campaign_trail_start_emphasis {
     background: linear-gradient(135deg, #1e242a, #2a353f);
@@ -1046,9 +1044,11 @@ style.innerHTML = `
     background: linear-gradient(135deg, #1e242a, #2a353f) !important;
     color: #ffffff !important;
   }
-			#overall_details_container a { // Removes the Game Link button, because it does not work
+            /** Game Link button - Never really worked so removed **/
+			#overall_details_container a {
                 display: none;
             }
+
 		#final_results_description h3 {
 			color: white;
 		}
