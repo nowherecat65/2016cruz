@@ -764,6 +764,18 @@ cyoAdventure = function (a) {
   if (ans == 20683) {
         Primary  += 2;
     }
+  if (ans == 51121) {
+        e.election_json[0].fields.has_visits = 1;
+    }
+  if (ans == 51122) {
+        e.election_json[0].fields.has_visits = 1;
+    }
+  if (ans == 51123) {
+        e.election_json[0].fields.has_visits = 1;
+    }
+  if (ans == 51124) {
+        e.election_json[0].fields.has_visits = 1;
+    }
   if (ans == 20678) {
         Primary  -= 1;
     }
@@ -11445,6 +11457,8 @@ endingConstructor = (a = 1) => {
 }
 
 e.multiple_endings = true;
+
+e.election_json[0].fields.has_visits = 0;
 
 e.header = "<h1>Something broke!</h1>";
 e.pages = ["<p>This should not be showing. If it did, then my mod broke. Contact @theMcCain on Discord. Congrats if you won, if you lost, better luck next time</p>"];
