@@ -11596,7 +11596,7 @@ endingPicker = (out, totv, aa, quickstats) => {
         e.executable.push([0, () => { e.image = 'https://i.imgur.com/kg7ymVb.jpeg'; }]);
         e.executable.push([1, () => { e.image = 'https://i.imgur.com/kg7ymVb.jpeg'; }]);
         e.executable.push([2, () => { e.image = 'https://i.imgur.com/DG4BtJo.jpeg'; }]);
-        e.executable.push([3, () => { e.image = 'https://i.imgur.com/wbR7ObQ.png'; }]);
+        e.executable.push([3, () => { e.image = 'https://i.imgur.com/Q18gvve.png'; }]);
     if (songChange != 1) {
     songChange = 1
     const defeat = new Playlist();
