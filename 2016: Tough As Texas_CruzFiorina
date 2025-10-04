@@ -239,14 +239,7 @@ var Ideology = 3;
 var Trump = 0;
 var Primary = 0
 var Debate = 0
-var Resigned = 0;
-var BernieOppoResearch = 0;
-var BernieInvestigation = 0;
-var RussiaInvestigation = 0;
-var TrumpInvestigation = 0;
-var JordanInvestigation = 0;
-var Judge = 0;
-var ThirdPartyBoost = 0;
+var Judge = 0
 var SpecialEnding = 0;
 var songChange = 0;
 
@@ -305,9 +298,8 @@ const TrumpMap = {
     "0": `You and Trump are <span style="color: #DEB83E;"><strong>primary rivals</strong></span> currently.`,
     "1": `You and Trump are <span style="color: #57AB6A;"><strong>working together</strong></span>.`,
     "2": `You and Trump have <span style="color: #57AB59;"><strong>become allies</strong></span>.`,
-    "3": `Trump is <span style="color: #3bd918;"><strong>irritated</strong></span> with you.`,
-    "4": `You and Trump have<span style="color: #57AB59;"><strong>become allies</strong></span>.`,
-    "5": `You and Trump <span style="color: #2be800;"><strong>are friends</strong></span> you.`,
+    "3": `You and Trump are<span style="color: #57AB59;"><strong> allies</strong></span>.`,
+    "4": `You and Trump <span style="color: #2be800;"><strong>are great allies</strong></span>.`,
 };
 const PrimaryMap = {
     "-3": `Your primary showing has been <span style="color: #CD1025;"><strong>an unmitigated disaster</strong></span>.`,
@@ -323,61 +315,13 @@ const DebateMap = {
     "-3": `You <span style="color: #CD1025;"><strong>refused to debate Clinton,</strong></span> leading to a <span style="color: #CD1025;"><strong>nosedive in the polls.</strong></span>`,
     "-2": `The debate has been <span style="color:  #cd1025;"><strong>dragged into the gutter, with no clear winner.</strong></span>`,
     "-1": `Your were <span style="color:  #FB6723;"><strong>defeated</strong></span> at the debate.`,
-    "1": `The debates were a <span style="color: #57ab6a;"><strong>Cruz victory</strong></span>.`,
+    "1": `The debates were a <span style="color: #6DCF1F;"><strong>Cruz victory</strong></span>.`,
 };
 const JudgeMap = {
-    "-2": `Your Supreme Court nominee has been <span style="color:  #CD1025;"><strong>blocked</strong></span>.`,
-    "-1": `You’ve <span style="color:  #CD1025;"><strong>declined</strong></span> to replace Scalia before the election.`,
-    "1": `<span style="color: #6DCF1F;"><strong>Garland</strong></span> has been confirmed to the Supreme Court.`,
-    "2": `<span style="color: #57AB59;"><strong>Sykes</strong></span> has been confirmed to the Supreme Court.`,
-    "3": `<span style="color: #57AB59;"><strong>Gorsuch</strong></span> has been confirmed to the Supreme Court.`,
+    "-1": `Justice Merrick Garland<span style="color: #CD1025;"><strong>has been confirmed</strong></span>.`,
+    "1": `Justice Merrick Garland <span style="color: #6DCF1F;"><strong>has been blocked</strong></span>.`,
 };
-const BernieInvestigationMap = {
-    "-7": `The investigation into Bernie Sanders has <span style="color: #880808;"><strong>imploded</strong></span>.`,
-    "-6": `The investigation into Bernie Sanders has <span style="color: #880808;"><strong>imploded</strong></span>.`,
-    "-5": `The investigation into Bernie Sanders has <span style="color: #880808;"><strong>imploded</strong></span>.`,
-    "-4": `The investigation into Bernie Sanders has <span style="color: #880808;"><strong>imploded</strong></span>.`,
-    "-3": `The investigation into Bernie Sanders has <span style="color: #880808;"><strong>imploded</strong></span>.`,
-    "-2": `The investigation into Bernie Sanders has <span style="color: #880808;"><strong>imploded</strong></span>.`,
-    "-1": `Bernie Sanders has his <span style="color: #CD1025;"><strong>suspicions</strong></span>.`,
-    "1": `Bernie Sanders is <span style="color: #DEB83E;"><strong>under investigation</strong></span>.`,
-    "2": `The public is <span style="color: #DEB83E;"><strong>aware</strong></span> that Bernie Sanders is <span style="color: #DEB83E;"><strong>under investigation</strong></span>.`,
-    "3": `Tulsi Gabbard has been <span style="color: #FB6723;"><strong>wiretapped</strong></span>.`,
-    "4": `Tulsi Gabbard has been <span style="color: #FB6723;"><strong>wiretapped</strong></span> and the recordings have been <span style="color: #FB6723;"><strong>leaked</strong></span>.`,
-    "5": `Bernie Sanders has been <span style="color: #6DCF1F;"><strong>exposed</strong></span> as a Russian asset.`,
-    "6": `Bernie Sanders has been <span style="color: #6DCF1F;"><strong>arrested</strong></span>.`,
-    "7": `Bernie Sanders has been <span style="color: #6DCF1F;"><strong>arrested</strong></span>.`,
-    "8": `Bernie Sanders has been <span style="color: #6DCF1F;"><strong>arrested</strong></span>.`,
-    "9": `Bernie Sanders has been <span style="color: #6DCF1F;"><strong>arrested</strong></span>.`,
-    "10": `Bernie Sanders has been <span style="color: #6DCF1F;"><strong>arrested</strong></span>.`,
-    "11": `Bernie Sanders has been <span style="color: #6DCF1F;"><strong>arrested</strong></span>.`,
-};
-const JordanInvestigationMap = {
-    "-1": `The attempt to blackmail Jim Jordan has <span style="color: #CD1025;"><strong>backfired</strong></span>.`,
-    "1": `Opposition research is being <span style="color: #DEB83E;"><strong>collected</strong></span> on Jim Jordan.`,
-    "2": `Jim Jordan has been <span style="color: #6DCF1F;"><strong>exposed</strong></span>.`,
-    "3": `Jim Jordan's career has been <span style="color: #6DCF1F;"><strong>destroyed</strong></span>.`,
-    "4": `Jim Jordan has been <span style="color: #6DCF1F;"><strong>blackmailed</strong></span>.`,
-    "5": `Jim Jordan has been <span style="color: #6DCF1F;"><strong>blackmailed</strong></span>, even issuing an <span style="color: #57AB59;"><strong>endorsement</strong></span>.`,
-};
-const TrumpInvestigationMap = {
-    "-1": `The investigation into Donald Trump has <span style="color: #880808;"><strong>imploded</strong></span>.`,
-    "1": `Donald Trump is <span style="color: #DEB83E;"><strong>under investigation</strong></span>.`,
-    "2": `The public is <span style="color: #DEB83E;"><strong>aware</strong></span> that Donald Trump is <span style="color: #DEB83E;"><strong>under investigation</strong></span>.`,
-    "3": `Michael Flynn has been <span style="color: #6DCF1F;"><strong>arrested</strong></span>.`,
-    "4": `Donald Trump has been <span style="color: #6DCF1F;"><strong>arrested</strong></span>.`,
-};
-const ResignedMap = {
-    "-3": `You have <span style="color: #FB6723;"><strong>fought off</strong></span> impeachment.`,
-    "-2": `You have been <span style="color: #FB6723;"><strong>acquitted</strong></span> by the Senate.`,
-    "-1": `You have been <span style="color: #CD1025;"><strong>impeached</strong></span>.`,
-    "1": `Mitt Romney has <span style="color: #880808;"><strong>suspended his campaign</strong></span>.`,
-    "2": `Mitt Romney has <span style="color: #880808;"><strong>resigned</strong></span>.`,
-    "3": `Mitt Romney has <span style="color: #880808;"><strong>resigned</strong></span> following impeachment.`,
-    "4": `Both Mitt Romney and Tim Pawlenty have <span style="color: #880808;"><strong>resigned</strong></span>.`,
-    "5": `Mitt Romney has been <span style="color: #880808;"><strong>convicted and removed</strong></span> from office.`,
-    "6": `Without a presidential candidate, running mate or party chair, the GOP has <span style="color: #880808;"><strong>imploded</strong></span>.`,
-};
+
 
 let savedX = null;
 let savedY = null;
@@ -523,22 +467,7 @@ function updateHeadquarterContent() {
         JudgeText = `${JudgeMap[String(Judge)]}`;
         overviewtxt += "• "+ `${JudgeText}` + "<br>";
     }
-    if (BernieInvestigation !== 0) {
-        BernieInvestigationText = `${BernieInvestigationMap[String(BernieInvestigation)]}`;
-        overviewtxt += "• "+ `${BernieInvestigationText}` + "<br>";
-    }
-    if (JordanInvestigation !== 0) {
-        JordanInvestigationText = `${JordanInvestigationMap[String(JordanInvestigation)]}`;
-        overviewtxt += "• "+ `${JordanInvestigationText}` + "<br>";
-    }
-    if (TrumpInvestigation !== 0) {
-        TrumpInvestigationText = `${TrumpInvestigationMap[String(TrumpInvestigation)]}`;
-        overviewtxt += "• "+ `${TrumpInvestigationText}` + "<br>";
-    }
-    if (Resigned !== 0) {
-        ResignedText = `${ResignedMap[String(Resigned)]}`;
-        overviewtxt += "• "+ `${ResignedText}` + "<br>";
-    }
+
 
     const ovsubtxt = document.createElement('div');
     ovsubtxt.innerHTML = overviewtxt;
