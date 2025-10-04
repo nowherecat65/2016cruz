@@ -790,7 +790,7 @@ if (Primary == 3) {
         campaignTrail_temp.question_number = 26;
         		vpTable["Marco Rubio"] = "John Kasich";
 e.ElectionPopup = "Well, Rubio's the nominee. Hopefully he can put the Democrats in their place."
-e.LosePopup = "Rubio has won the election. Nice!"
+e.LosePopup = "It's a great day for America! Corrupt Clinton has been defeated."
 e.WinPopup = "Rubio lost... somehow. The next few years will be interesting."
 }
 
@@ -11439,7 +11439,7 @@ campaignTrail_temp.jet_data = [{
 e.SelAnsContText = "Ted, are you in there? You didn't choose anything. We have an election to win."
 e.ElectionPopup = "Here we go. Best of luck sir, you have fought a brave battle."
 
-// Not gonna lie, I have no idea who made this. Think it was Onkel Danny, not sure. Shoutout to whoever made this.
+// ENDINGS -- this is slightly more reliable then the ending code method
 
 construct = (a = 1) => {
     
