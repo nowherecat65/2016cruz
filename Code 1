@@ -1061,6 +1061,9 @@ style.innerHTML = `
 		#main_content_area_reading p {
 			color: white;
 		}
+			#theme_picker, .footer h4 { // Also doesn't work, so removed
+				display: none;
+		}
 		#main_content_area_reading h3.results_tab_header {
 			color: white;
 		}
@@ -1070,7 +1073,7 @@ style.innerHTML = `
             #map_footer {
                 display: flex;
                 justify-content: center;
-                margin-top: 1rem !important; /* necessary for the further reading section */
+                margin-top: 1rem !important; /* Necessary for the further reading section */
             }
 	p#credits {
 		color: white;
