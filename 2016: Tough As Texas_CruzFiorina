@@ -234,16 +234,18 @@ const styles = [
     }
 })();
 
+
 var Establishment = 0;
 var Ideology = 3;
-var Trump = 0;
-var Primary = 0
-var Debate = 0
-var Judge = 0
+var Trump = 0;;
+var Primary = 0;
+var Debate = 0;
+var Judge = 0;
 var SpecialEnding = 0;
 var songChange = 0;
+var HillaryInvestigation = 0;
 
-// Variable Headquarters c/o W. Team (TTNW code). Taken from Class War.
+// Variable Headquarters c/o W. Team (TTNW code). Taken from Class War, and adapted here.
 const EstablishmentMap = {
     "-7": `The establishment is <span style="color: #880808;"><strong>finished</strong></span>. (<span style="color: #880808;"><strong>-7</strong></span>)`,
     "-6": `The establishment is <span style="color: #CD1025;"><strong>pissed</strong></span>. (<span style="color: #CD1025;"><strong>-6</strong></span>)`,
@@ -295,8 +297,8 @@ const TrumpMap = {
     "-3": `You and Trump have become <span style="color: #CD1025;"><strong>lifelong enemies</strong></span>.`,
     "-2": `You and Trump are <span style="color:  #FB6723;"><strong>enemies</strong></span>.`,
     "-1": `You and Trump are <span style="color:  #FB6723;"><strong>quickly becoming rivals</strong></span>.`,
-    "0": `You and Trump are <span style="color: #DEB83E;"><strong>primary rivals</strong></span> currently.`,
-    "1": `You and Trump are <span style="color: #57AB6A;"><strong>working together</strong></span>.`,
+    "0": `You and Trump are <span style="color: #FB6723;"><strong>primary opponents</strong></span>.`,
+    "1": `You and Trump are <span style="color: #DEB83E;"><strong>working together</strong></span> to defeat Clinton.`,
     "2": `You and Trump have <span style="color: #57AB59;"><strong>become allies</strong></span>.`,
     "3": `You and Trump are<span style="color: #57AB59;"><strong> allies</strong></span>.`,
     "4": `You and Trump <span style="color: #2be800;"><strong>are great allies</strong></span>.`,
@@ -311,7 +313,7 @@ const PrimaryMap = {
     "3": `Your primary showing has been <span style="color: #6DCF1F;"><strong>a resounding success</strong></span>.`,
 };
 const DebateMap = {
-    "-4": `Is Hillary...<span style="color: #CD1025;"><strong>a murderer...?</strong></span>`,
+    "-4": `Is Hillary...<span style="color: #CD1025;"><strong>...a murderer...?</strong></span>`,
     "-3": `You <span style="color: #CD1025;"><strong>refused to debate Clinton,</strong></span> leading to a <span style="color: #CD1025;"><strong>nosedive in the polls.</strong></span>`,
     "-2": `The debate has been <span style="color:  #cd1025;"><strong>dragged into the gutter, with no clear winner.</strong></span>`,
     "-1": `Your were <span style="color:  #FB6723;"><strong>defeated</strong></span> at the debate.`,
@@ -319,9 +321,15 @@ const DebateMap = {
 };
 const JudgeMap = {
     "-1": `Justice Merrick Garland<span style="color: #CD1025;"><strong>has been confirmed</strong></span>.`,
-    "1": `Justice Merrick Garland <span style="color: #6DCF1F;"><strong>has been blocked</strong></span>.`,
+    "1": `Merrick Garland <span style="color: #6DCF1F;"><strong>has been blocked</strong></span>.`,
 };
-
+const HillaryInvestigationMap = {
+    "-3": `Hillary Clinton <span style="color: #CD1025;"><strong>has been exposed as a murderer</strong></span>, with <span style="color: #CD1025;"><strong>her life destroyed</strong></span>.`,
+    "-2": `Hillary Clinton <span style="color: #CD1025;"><strong>has been exposed as a murderer</strong></span>, with <span style="color: #CD1025;"><strong>her life destroyed</strong></span>.`,
+    "-1": `Hillary Clinton <span style="color: #CD1025;"><strong>has been exposed as a murderer</strong></span>, with <span style="color: #CD1025;"><strong>her life destroyed</strong></span>.`,
+    "0": `Opposition research <span style="color: #6DCF1F;"><strong>is being collected</strong></span> on Hillary's campaign.`,
+    "1": `Opposition research <span style="color: #6DCF1F;"><strong>is being collected</strong></span> on Hillary's campaign.`,
+};
 
 let savedX = null;
 let savedY = null;
@@ -467,6 +475,15 @@ function updateHeadquarterContent() {
         JudgeText = `${JudgeMap[String(Judge)]}`;
         overviewtxt += "• "+ `${JudgeText}` + "<br>";
     }
+    if (Trump !== 0) {
+        JudgeText = `${TrumpMap[String(Trump)]}`;
+        overviewtxt += "• "+ `${TrumpText}` + "<br>";
+    }
+    if (HillaryInvestigation !== 0) {
+        HillaryInvestigationText = `${HillaryInvestigationMap[String(HillaryInvestigation)]}`;
+        overviewtxt += "• "+ `${HillaryInvestigationText}` + "<br>";
+    }
+
 
 
     const ovsubtxt = document.createElement('div');
@@ -686,7 +703,6 @@ cyoAdventure = function (a) {
 
 // VARIABLES
 
-
   if (ans == 20676 || ans == 5018 || ans == 5016) {
         Primary  += 1;
     }
@@ -723,11 +739,17 @@ cyoAdventure = function (a) {
  if (ans == 51229) {
         Debate  += 1;
     }
-
-
+if (ans == 51460) {
+        HillaryInvestigation  += 1;
+    }
+if (ans == 51531) {
+        HillaryInvestigation  -= 2;
+    }
 if (ans == 51203) {
     window.open("https://en.wikipedia.org/wiki/Casualties_of_the_Gaza_war", "_blank");
 }
+
+// If you decide to duck out of the debate
 
 if (ans == 51499) {
   campaignTrail_temp.questions_json[22] = {
@@ -751,6 +773,102 @@ if (ans == 51499) {
   }
  }
 
+// This is ALSO if you decide to duck out of the debate
+
+
+
+if (ans == 51499) {
+  campaignTrail_temp.questions_json[23] = {
+    "model": "campaign_trail.question",
+    "pk": 51475,
+    "fields": {
+      "priority": 1,
+      "description": "As the days go by, the race has continued to be dragged into the gutter, and some are calling this the most negative election in American history. Jeff tells you that you need to ramp up the attacks in order to defeat Clinton. How should you attack her??",
+      "likelihood": 1
+    }
+  }
+} else {
+  campaignTrail_temp.questions_json[23] = {
+    "model": "campaign_trail.question",
+    "pk": 1026,
+    "fields": {
+      "priority": 1,
+      "description": "As the Presidential debate ends and October begins, the race has continued to be dragged into the gutter, and some are calling this the most negative election in American history. Jeff tells you that you need to ramp up the attacks in order to defeat Clinton. How should you attack her?",
+      "likelihood": 1
+    }
+  }
+ }
+
+// If you call Hillary out for being a MURDERER during the debate
+
+if (ans == 51230) {
+  campaignTrail_temp.questions_json[23] = {
+    "model": "campaign_trail.question",
+    "pk": 51459,
+    "fields": {
+      "priority": 1,
+      "description": "With the Presidential debate ending and October beginning, the race has continued to be dragged into the gutter, and some are calling this the most negative election in American history. Jeff tells you that you need to ramp up the attacks in order to defeat Clinton. How should you attack her?",
+      "likelihood": 1
+    }
+  }
+} else {
+  campaignTrail_temp.questions_json[23] = {
+    "model": "campaign_trail.question",
+    "pk": 1026,
+    "fields": {
+      "priority": 1,
+      "description": "As the Presidential debate ends and October begins, the race has continued to be dragged into the gutter, and some are calling this the most negative election in American history. Jeff tells you that you need to ramp up the attacks in order to defeat Clinton. How should you attack her?",
+      "likelihood": 1
+    }
+  }
+ }
+
+if (HillaryInvestigation == 1) {
+  campaignTrail_temp.questions_json[25] = {
+    "model": "campaign_trail.question",
+    "pk": 51526,
+    "fields": {
+      "priority": 1,
+      "description": "Just 1 week before Election Day, a campaign aide runs into the hotel lounge you're in. He looks shocked.<br><br>“Ted, I have some incredible news...”",
+      "likelihood": 1
+    }
+  }
+} else {
+  campaignTrail_temp.questions_json[25] = {
+    "model": "campaign_trail.question",
+    "pk": 1036,
+    "fields": {
+      "priority": 1,
+      "description": "Barely 11 days before Election Day, James Comey, FBI Director, has made an extremely late announcement that additional emails have surfaced in Hillary Clinton's case, thanks to an investigation into Anthony Weiner's laptop. Hillary Clinton continues to profess her innocence, and mass confusion and anger has become commonplace amongst the voters. This might be what pushes you over the top, how do you handle this?",
+      "likelihood": 1
+    }
+  }
+ }
+
+if (HillaryInvestigation < 0) {
+  campaignTrail_temp.questions_json[26] = {
+    "model": "campaign_trail.question",
+    "pk": 51533,
+    "fields": {
+      "priority": 1,
+      "description": "“What the hell is happening? Who leaked it? Why wasn't I informed?” These all all the thoughts spurling in your brain. But the evidence is clear. The video shows Hillary ordering the murder of Vince Foster. The entire public believes it is genuine. Absolute pandemonium has ensued. Clinton's whereabouts are currently unknown. In a last-ditch effort to prevent a total wipeout, the Democrats have nominated Bernie Sanders of Vermont to replace her on the ticket, with Tim Kaine as his running mate.",
+      "likelihood": 1
+    }
+  }
+} else {
+  campaignTrail_temp.questions_json[26] = {
+    "model": "campaign_trail.question",
+    "pk": 1037,
+    "fields": {
+      "priority": 1,
+      "description": "It's the last week of the campaign. It's finally coming to an end. It only felt like a day (a very, very, <em>very</em> hard day), but it's over. One final push, Jeff says. Where will you hold your final rallies?",
+      "likelihood": 1
+    }
+  }
+ }
+
+// Trump primary victory
+
   if (ans == 51271 || ans == 51084) {
         campaignTrail_temp.candidate_json[0]["fields"].first_name = "Donald";
         campaignTrail_temp.candidate_json[0]["fields"].last_name = "Trump";
@@ -761,6 +879,7 @@ e.LosePopup = "He won the nomination, and he screwed it up... The RNC isn't gonn
 e.WinPopup = "No way..? Trump actually won?"
 }
 
+// Successful victory in the primaries
 
 if (Primary == 3) {
   campaignTrail_temp.questions_json[4] = {
@@ -959,7 +1078,6 @@ document.head.appendChild(customStyling);
         return false;
     }
 }
-
 campaignTrail_temp.questions_json = [
     {
         "model": "campaign_trail.question",
@@ -1209,7 +1327,7 @@ campaignTrail_temp.questions_json = [
         "pk": 51060,
         "fields": {
             "priority": 0,
-            "description": "Well... today was interesting. You've defied the odds. Despite Trump's best efforts, you decisively defeated him on Super Tuesday, winning most states. While Trump will still try in vain to win, you're now on track to win the nomination.",
+            "description": "Well... today was interesting. You've defied the odds. Despite Trump's best efforts, you decisively defeated him on Super Tuesday, winning most states. While Trump will still try in vain to win, you're now on track to win the nomination. With this, you've gained the initiative and have added a precious few months to your schedule. What would you like to do here?",
             "likelihood": 1
         }
     },
@@ -1227,7 +1345,7 @@ campaignTrail_temp.questions_json = [
         "pk": 51459,
         "fields": {
             "priority": -5,
-            "description": "As the Presidential debate ends and October begins, the race has continued to be dragged into the gutter, and some are calling this the most negative election in American history. Jeff tells you that you need to ramp up the attacks in order to defeat Clinton. How should you attack her?",
+            "description": "With the Presidential debate ending and October beginning, the race has continued to be dragged into the gutter, and some are calling this the most negative election in American history. Jeff tells you that you need to ramp up the attacks in order to defeat Clinton. How should you attack her?",
             "likelihood": 1
         }
     },
@@ -1237,6 +1355,24 @@ campaignTrail_temp.questions_json = [
         "fields": {
             "priority": -5,
             "description": "Even though you didn't participate in a debate with Clinton, the race has continued to be dragged into the gutter, and some are calling this the most negative election in American history. Jeff tells you that you need to ramp up the attacks in order to defeat Clinton. How should you attack her?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 51526,
+        "fields": {
+            "priority": 0,
+            "description": "Just 1 week before Election Day, a campaign aide runs into the hotel lounge you're in. He looks shocked.<br><br>“Ted, I have some incredible news...”",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 51533,
+        "fields": {
+            "priority": 0,
+            "description": "“What the hell is happening? Who leaked it? Why wasn't I informed?” These all all the thoughts spurling in your brain. But the evidence is clear. The video shows Hillary ordering the murder of Vince Foster. The entire public believes it is genuine. Absolute pandemonium has ensued. Clinton's whereabouts are currently unknown. In a last-ditch effort to prevent a total wipeout, the Democrats have nominated Bernie Sanders of Vermont to replace her on the ticket, with Tim Kaine as his running mate.",
             "likelihood": 1
         }
     }
@@ -2016,7 +2152,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51460,
         "fields": {
             "question": 51459,
-            "description": "I said it at the debate, and I'll say it again today. Hillary Clinton <em>KILLED</em> someone. How people believe her crocodile tears is beyond me, but the evidence is undeniable. We're going to win this, and we're going to give him some justice. No surrender."
+            "description": "I have a different idea. I told you, right Jeff? She basically confessed to me she killed someone at the debate, with that stare. Christ, I know that she's hiding something. Collect some research on her. We'll expose her for the criminal she is right in front of everyone. But keep this aboveboard. Make sure it can't be traced back to us."
         }
     },
     {
@@ -2129,6 +2265,22 @@ campaignTrail_temp.answers_json = [
         "fields": {
             "question": 51472,
             "description": "Some parts of the deal obviously need to be reworked, and other parts of it are outrageous, but in concept I'm not opposed to the Iranian nuclear deal. We need long-lasting peace in the Middle East, and in theory a deal with Iran could help with that."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 51531,
+        "fields": {
+            "question": 51526,
+            "description": "What's wrong?"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 51536,
+        "fields": {
+            "question": 51533,
+            "description": "Jesus Christ."
         }
     }
 ]
@@ -6473,7 +6625,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 201,
             "state": 1034,
-            "state_multiplier": 0.9641212112589989974
+            "state_multiplier": 0.964121211258999
         }
     },
     {
@@ -7563,56 +7715,6 @@ campaignTrail_temp.answer_score_global_json = [
     },
     {
         "model": "campaign_trail.answer_score_global",
-        "pk": 3019,
-        "fields": {
-            "answer": 51122,
-            "candidate": 200,
-            "affected_candidate": 201,
-            "global_multiplier": 0.005
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
-        "pk": 3019,
-        "fields": {
-            "answer": 51122,
-            "candidate": 200,
-            "affected_candidate": 202,
-            "global_multiplier": 0.02
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
-        "pk": 3019,
-        "fields": {
-            "answer": 5032,
-            "candidate": 200,
-            "affected_candidate": 200,
-            "global_multiplier": 0.003
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
-        "pk": 3019,
-        "fields": {
-            "answer": 51084,
-            "candidate": 200,
-            "affected_candidate": 202,
-            "global_multiplier": 0.654
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
-        "pk": 3019,
-        "fields": {
-            "answer": 51271,
-            "candidate": 200,
-            "affected_candidate": 202,
-            "global_multiplier": 0.644
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
         "pk": 3053,
         "fields": {
             "answer": 5090,
@@ -8423,16 +8525,6 @@ campaignTrail_temp.answer_score_global_json = [
     },
     {
         "model": "campaign_trail.answer_score_global",
-        "pk": 51462,
-        "fields": {
-            "answer": 51460,
-            "candidate": 200,
-            "affected_candidate": 200,
-            "global_multiplier": -0.004
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
         "pk": 51465,
         "fields": {
             "answer": 51463,
@@ -8540,6 +8632,126 @@ campaignTrail_temp.answer_score_global_json = [
             "affected_candidate": 201,
             "global_multiplier": 0.065
         }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 51515,
+        "fields": {
+            "answer": 51122,
+            "candidate": 200,
+            "affected_candidate": 201,
+            "global_multiplier": 0.005
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 51516,
+        "fields": {
+            "answer": 51122,
+            "candidate": 200,
+            "affected_candidate": 202,
+            "global_multiplier": 0.02
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 51517,
+        "fields": {
+            "answer": 5032,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "global_multiplier": 0.003
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 51518,
+        "fields": {
+            "answer": 51084,
+            "candidate": 200,
+            "affected_candidate": 202,
+            "global_multiplier": 0.654
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 51519,
+        "fields": {
+            "answer": 51271,
+            "candidate": 200,
+            "affected_candidate": 202,
+            "global_multiplier": 0.644
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 51527,
+        "fields": {
+            "answer": 51473,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "global_multiplier": -0.003
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 51528,
+        "fields": {
+            "answer": 51511,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "global_multiplier": -0.07
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 51529,
+        "fields": {
+            "answer": 51498,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "global_multiplier": 0.003
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 51534,
+        "fields": {
+            "answer": 51531,
+            "candidate": 200,
+            "affected_candidate": 201,
+            "global_multiplier": -0.5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 51538,
+        "fields": {
+            "answer": 51531,
+            "candidate": 200,
+            "affected_candidate": 202,
+            "global_multiplier": 0.04
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 51539,
+        "fields": {
+            "answer": 51531,
+            "candidate": 200,
+            "affected_candidate": 203,
+            "global_multiplier": 0.04
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 51540,
+        "fields": {
+            "answer": 51531,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "global_multiplier": 0.04
+        }
     }
 ]
 
@@ -8562,66 +8774,6 @@ campaignTrail_temp.answer_score_issue_json = [
             "issue": 103,
             "issue_score": -0.4,
             "issue_importance": 1
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 2610,
-        "fields": {
-            "answer": 51121,
-            "issue": 100,
-            "issue_score": -0.7,
-            "issue_importance": 0.5
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 2610,
-        "fields": {
-            "answer": 51121,
-            "issue": 101,
-            "issue_score": 0.25,
-            "issue_importance": 0.5
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 2610,
-        "fields": {
-            "answer": 51122,
-            "issue": 100,
-            "issue_score": 0.1,
-            "issue_importance": 0.5
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 2610,
-        "fields": {
-            "answer": 51122,
-            "issue": 101,
-            "issue_score": -0.1,
-            "issue_importance": 0.5
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 2610,
-        "fields": {
-            "answer": 51123,
-            "issue": 100,
-            "issue_score": -0.25,
-            "issue_importance": 0.5
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 2610,
-        "fields": {
-            "answer": 51123,
-            "issue": 101,
-            "issue_score": 0.05,
-            "issue_importance": 0.5
         }
     },
     {
@@ -9082,6 +9234,66 @@ campaignTrail_temp.answer_score_issue_json = [
             "issue": 101,
             "issue_score": -0.2,
             "issue_importance": 2.5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 51520,
+        "fields": {
+            "answer": 51121,
+            "issue": 100,
+            "issue_score": -0.7,
+            "issue_importance": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 51521,
+        "fields": {
+            "answer": 51121,
+            "issue": 101,
+            "issue_score": 0.25,
+            "issue_importance": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 51522,
+        "fields": {
+            "answer": 51122,
+            "issue": 100,
+            "issue_score": 0.1,
+            "issue_importance": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 51523,
+        "fields": {
+            "answer": 51122,
+            "issue": 101,
+            "issue_score": -0.1,
+            "issue_importance": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 51524,
+        "fields": {
+            "answer": 51123,
+            "issue": 100,
+            "issue_score": -0.25,
+            "issue_importance": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 51525,
+        "fields": {
+            "answer": 51123,
+            "issue": 101,
+            "issue_score": 0.05,
+            "issue_importance": 0.5
         }
     }
 ]
@@ -10412,7 +10624,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5030,
             "candidate": 200,
-            "answer_feedback": "You see cheers coming along from the entire stage, and even Trump lets out a little smile. The one thing that the party remains united on is in their hatred of the Democrats."
+            "answer_feedback": "You see cheers coming along from the entire stage. The one thing that's keeping this party together is their hatred of Killary- I mean Hillary Clinton."
         }
     },
     {
@@ -10547,7 +10759,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5126,
             "candidate": 200,
-            "answer_feedback": "People are shocked to see you take your chances on states that haven't gone red in decades, but your rallies do make the nightly news, and you seem to be just as pugnacious in the fields of Pennsylvania then in "
+            "answer_feedback": "People are shocked to see you take your chances on states that haven't gone red in decades, but your rallies do make the nightly news, and you seem to be just as pugnacious in the fields of Pennsylvania then in rural Texas. Here we go."
         }
     },
     {
@@ -11069,7 +11281,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51230,
             "candidate": 200,
-            "answer_feedback": "“Look, I-I knew Vince Foster,” she says, steady but soft. “Foster was… was my friend. He was so smart… may God bless him… I miss him.” And she goes on and on. You tune out. To everyone watching, it looks like she’s on the verge of tears. Nobody actually thinks that she killed someone. She looks at you, somber and sad. Everyone watching feels bad for her. As soon as the commercial break rolls, and no one can see her, her expression suddenly becomes sharp, a death stare at you. It could petrify someone. Jesus Christ. Is that a confession?"
+            "answer_feedback": "You watch as she puts on the crocodile tears. “Look, I-I knew Vince Foster,” she says, steady but soft. “Foster was… was my friend. He was so smart… I miss him.” And she goes on and on. You tune out. To everyone watching, it looks like she’s on the verge of tears. Nobody actually thinks that she killed someone. She looks at you, somber and sad. Everyone watching feels bad for her. As soon as the commercial break rolls, and no one can see her, her expression suddenly becomes sharp, a death stare at you. It could petrify someone. Jesus Christ. Is that a confession?"
         }
     },
     {
@@ -11240,7 +11452,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51460,
             "candidate": 200,
-            "answer_feedback": "Voters still don't seriously believe you. They don't seem to realize they're begging for their hooded messiah Hillary to rob them blind. You can only hope that they see through her act as Election Day draws near."
+            "answer_feedback": "“With pleasure, Ted.”"
         }
     },
     {
@@ -11321,7 +11533,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51489,
             "candidate": 200,
-            "answer_feedback": "A divided opposition is exactly what Hillary wants. It's not a good idea to let the issue fester."
+            "answer_feedback": "A divided opposition is exactly what Hillary wants. It's probably not a good idea to let the issue fester."
         }
     },
     {
@@ -11376,6 +11588,24 @@ campaignTrail_temp.answer_feedback_json = [
             "answer": 51498,
             "candidate": 200,
             "answer_feedback": "This is a good critique of the Iranian nuclear deal, and this also has the added benefit of burnishing your campaign on foreign policy."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 51532,
+        "fields": {
+            "answer": 51531,
+            "candidate": 200,
+            "answer_feedback": "“Hillary Clinton has just been exposed as a murderer.”"
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 51537,
+        "fields": {
+            "answer": 51536,
+            "candidate": 200,
+            "answer_feedback": "Hey, cheer up. This election is as good as over."
         }
     }
 ]
@@ -11435,6 +11665,9 @@ campaignTrail_temp.jet_data = [{
     }
 }
 ]
+
+
+
 
 e.SelAnsContText = "Ted, are you in there? You didn't choose anything. We have an election to win."
 e.ElectionPopup = "Here we go. Best of luck sir, you have fought a brave battle."
@@ -11502,13 +11735,6 @@ e.election_json[0].fields.has_visits = 0;
 e.header = "<h1>Something broke!</h1>";
 e.pages = ["<p>This should not be showing. If it did, then my mod broke. Contact @theMcCain on Discord. Congrats if you won, if you lost, better luck next time</p>"];
 e.page = 0;
-
-function ctsAchievement(achievement, difficultyChecker = true){
-    if ((difficultyChecker && campaignTrail_temp.difficulty_level_multiplier<=1)||!difficultyChecker)
-        if(campaignTrail_temp.CTS){
-            unlockAchievement(achievement);
-        }
-}
 
 endingPicker = (out, totv, aa, quickstats) => {
     orderID = [aa[0].candidate, aa[1].candidate, aa[2].candidate, aa[3].candidate];
