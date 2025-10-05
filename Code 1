@@ -1034,7 +1034,7 @@ style.type = 'text/css';
 style.id = 'dynamic-style';
 
 style.innerHTML = `
-  /* Emphasis styles */
+  // Misc.
   .campaign_trail_start_emphasis {
     background: linear-gradient(135deg, #1e242a, #2a353f);
   }
@@ -1043,13 +1043,13 @@ style.innerHTML = `
     color: #007A7A;
   }
 
-  /* Inner window headers */
+  /* Questions */
   .inner_window_question h3 {
     background: linear-gradient(135deg, #1e242a, #2a353f) !important;
     color: #ffffff !important;
   }
 
-  /* Game link (hidden) */
+  /* Game Link doesn't work, so just removing it */
   #overall_details_container a {
     display: none;
   }
@@ -1094,7 +1094,7 @@ style.innerHTML = `
     padding: 0 1em;
   }
 
-  /* Benefit window styles */
+  /* Benefit checker, achievement, and cheat menu */
   #benefitwindow {
     overflow: auto;
     background-color: #20272D;
@@ -1121,7 +1121,6 @@ style.innerHTML = `
     color: #e0e0e0;
   }
 
-  /* Achievements window */
   #achwindow {
     top: 5%;
     left: 25%;
@@ -1138,7 +1137,6 @@ style.innerHTML = `
     color: #e0e0e0;
   }
 
-  /* Cheat menu */
   #cheatMenu {
     margin-top: 1em;
     background-color: #22282D;
@@ -1158,7 +1156,7 @@ style.innerHTML = `
     margin-top: 1em;
   }
 
-  /* Scrollbar customization */
+  /* Scrollbars */
   #benefitwindow::-webkit-scrollbar,
   #achcontent::-webkit-scrollbar {
     width: 10px;
