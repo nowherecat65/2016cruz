@@ -709,16 +709,7 @@ cyoAdventure = function (a) {
   if (ans == 20683) {
         Primary  += 2;
     }
-  if (ans == 51121) {
-        e.election_json[0].fields.has_visits = 1;
-    }
-  if (ans == 51122) {
-        e.election_json[0].fields.has_visits = 1;
-    }
-  if (ans == 51123) {
-        e.election_json[0].fields.has_visits = 1;
-    }
-  if (ans == 51124) {
+  if (ans == 51121 || ans == 51122 || ans == 51123 || ans == 51124) {
         e.election_json[0].fields.has_visits = 1;
     }
   if (ans == 20678) {
