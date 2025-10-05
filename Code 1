@@ -24,6 +24,11 @@ e.ElectionPopup = "Here we go. Good luck sir, you have fought a brave battle."
 e.LosePopup = "The people of this country have decided. They have chosen radicalism over decency..."
 e.WinPopup = "The people of this country have decided. They have chosen decency over radicalism!"
 
+// Advisor feedback sound
+
+
+
+// Favicon
 
 document.querySelectorAll("link[rel*='icon']").forEach(el => el.remove());
 
@@ -100,6 +105,7 @@ document.head.innerHTML += `
   }
 </style>
 `;
+
 
 
 
@@ -1034,7 +1040,6 @@ style.type = 'text/css';
 style.id = 'dynamic-style';
 
 style.innerHTML = `
-  // Misc.
   .campaign_trail_start_emphasis {
     background: linear-gradient(135deg, #1e242a, #2a353f);
   }
