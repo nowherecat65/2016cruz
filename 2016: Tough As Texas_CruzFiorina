@@ -1,3 +1,5 @@
+console.log('Code 2 initialized successfully.');
+
 // This is for the recommended reading box. Specifically, it sets up
 // the styling for the tab system we have here. Originally from Sundance, styling is from 2016ALOT.
 
