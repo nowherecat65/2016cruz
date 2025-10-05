@@ -236,6 +236,7 @@ const styles = [
     }
 })();
 
+// Normal Variables
 
 var Establishment = 0;
 var Ideology = 3;
@@ -246,6 +247,9 @@ var Judge = 0;
 var SpecialEnding = 0;
 var songChange = 0;
 var HillaryInvestigation = 0;
+// ---------------------------- Extra Variables
+e.noCounter = 0
+
 
 // Variable Headquarters c/o W. Team (TTNW code). Taken from Class War, and adapted here.
 const EstablishmentMap = {
@@ -702,6 +706,7 @@ function getQuestionNumberFromPk(pk) {
 
 cyoAdventure = function (a) {
     ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length-1];
+        e.noCounter += 1;
 
 // VARIABLES
 
@@ -711,7 +716,7 @@ cyoAdventure = function (a) {
   if (ans == 20683) {
         Primary  += 2;
     }
-  if (ans == 51121 || ans == 51122 || ans == 51123 || ans == 51124) {
+  if (e.noCounter == 6) {
         e.election_json[0].fields.has_visits = 1;
     }
   if (ans == 20678) {
@@ -796,7 +801,7 @@ if (HillaryInvestigation == 1) {
     "pk": 51526,
     "fields": {
       "priority": 1,
-      "description": "Just 1 week before Election Day...",
+      "description": "Just 1 week before Election Day, Jeff frantically rushes into your hotel lounge. He tells you that his team has found videos that show Hillary ordering the execution of Vince Foster, through the White House telephone, He says that the CIA followed her orders and shot him, then faked a suicide.",
       "likelihood": 1
     }
   };
@@ -831,6 +836,7 @@ if (HillaryInvestigation < 0) {
    campaignTrail_temp.candidate_json[1]["fields"].first_name = "Bernie";
    campaignTrail_temp.candidate_json[1]["fields"].last_name = "Sanders";
   campaignTrail_temp.candidate_json.find(candidate => candidate.pk == 201).fields.color_hex = '#1f7ca3';
+  campaignTrail_temp.candidate_json.find(candidate => candidate.pk == 200).fields.color_hex = '#A35C5C';
         		vpTable["Bernie Sanders"] = "Tulsi Gabbard";
 e.ElectionPopup = "Well, Hillary's been outed as a criminal. That doesn't change the fact you still have an election to win. Godspeed."
 e.LosePopup = "No way... huh? Did you really just feel the bern?"
