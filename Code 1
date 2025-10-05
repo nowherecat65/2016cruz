@@ -508,8 +508,8 @@ campaignTrail_temp.election_json = [
         "pk": 20,
         "fields": {
             "year": 2016,
-            "summary": "<div style='overflow-y:scroll;height:200px;'><p>Let's take a step back. 8 years ago, after a crushing defeat in the 2008 election, the so-called ''experts'' declared conservatism finished, claiming the Republican Party had been buried for good. Barack Obama, a community organizer elevated by celebrity worship and empty slogans, entered the White House promising hope and change. But what change did he bring? He spent the first two years of his term trying to ram a socialist healthcare agenda through Congress and bowing down to foreign leaders. His administration became a hodgepodge of incompetence, socialism, and authoritarianism, the start of the Democratic deep state.<br><br>By 2010, the people had had enough. Not Wall Street financiers, not Hollywood elitists, but real, common, honest Americans. In 2010, the GOP managed to flip 63 seats, the biggest midterm change in six decades. The message was clear that America wasn’t finished with conservatism. The Republican Party was alive and well, and the Obama agenda was crumbling. The future was looking bright.<br><br><button onclick='next0()'>Next</button></p></div>",
-            "image_url": "https://i.postimg.cc/13yJkDGJ/TedIntro.png",
+            "summary": "After the last few years of Democratic incompentence, the nation looks like it's headed for a new direction. Several Republicans have lined up to correct the errors Obama has made these past 8 years. Jeb Bush, establishment favorite and megadonor-backed. Marco Rubio, moderate appeal and another RNC favorite. And Donald Trump, wealthy billionaire from New York City that's easily the most bombastic out of those in the running.<br><br>So on paper, you'd think a newcomer from Texas in this field, hated by the establishment, would get crushed. Elected in the Tea Party wave in 2012, Ted Cruz, the Junior Senator from Texas, is eager to prove himself on the national stage. Being a devout ideologue on everything, from guns to abortion, has earned him the ire of just about all of Congress, and made him equally popular amongst the base. It's ground zero for a new conservative explosion.",
+            "image_url": "https://i.imgur.com/eQaGw7M.jpeg",
             "winning_electoral_vote_number": 270,
             "advisor_url": "https://i.imgur.com/YDaGQ1V.png",
             "site_description": "“What's wrong with some people?”<br><br>This is a question you find yourself asking over and over again. Some of the politicians you meet in Capitol Hill are the most corrupt, nasty, disgusting people you'll ever meet. Few people have wanted to destroy the deep state, even less have tried, but nobody has ever succeeded.<br><br>The wanton abortion loving, sinful marriage loving, America-hating, wealthy, elitist, deep state.<br><br>6 years ago, the Tea Party was swept into power with promises to end the deep state. Most of them became apart of the deep state. But not you. it's time a President fought for We the People. We will not stop until we take our country back. No surrender. Senator, are you ready?",
@@ -1034,6 +1034,7 @@ style.type = 'text/css';
 style.id = 'dynamic-style';
 
 style.innerHTML = `
+  /* Emphasis styles */
   .campaign_trail_start_emphasis {
     background: linear-gradient(135deg, #1e242a, #2a353f);
   }
@@ -1042,57 +1043,59 @@ style.innerHTML = `
     color: #007A7A;
   }
 
+  /* Inner window headers */
   .inner_window_question h3 {
     background: linear-gradient(135deg, #1e242a, #2a353f) !important;
     color: #ffffff !important;
   }
-            /** Game Link button - Never really worked so removed **/
-			#overall_details_container a {
-                display: none;
-            }
 
-		#final_results_description h3 {
-			color: white;
-		}
-		#overall_details_container h3 {
-			color: white;
-		}
-		#overall_election_details h4 {
-			color: white;
-		}
-		#main_content_area_reading p {
-			color: white;
-		}
-			#theme_picker, .footer h4 {
-				display: none;
-			}
-		#main_content_area_reading h3.results_tab_header {
-			color: white;
-		}
-		.inner_window_w_desc h3 {
-			color: white;
-		}
-            #map_footer {
-                display: flex;
-                justify-content: center;
-                margin-top: 1rem !important; /* Necessary for the further reading section */
-            }
-	p#credits {
-		color: white;
-	}
-			blockquote {
-				border-left: 4px solid #008080;
-				font-style: italic;
-				margin: 1em;
-				padding: 0 1em;
-			}
-	#final_results_description p {
-		color: white;
-	}
-     div#site_credits p, div#site_credits a {
-          color: #fff !important;
-       }
-#benefitwindow {
+  /* Game link (hidden) */
+  #overall_details_container a {
+    display: none;
+  }
+
+  /* Header and text colors */
+  #final_results_description h3,
+  #overall_details_container h3,
+  #overall_election_details h4,
+  #main_content_area_reading h3.results_tab_header,
+  .inner_window_w_desc h3 {
+    color: white;
+  }
+
+  #main_content_area_reading p,
+  #final_results_description p,
+  div#site_credits p,
+  div#site_credits a,
+  p#credits {
+    color: white !important;
+  }
+
+  #theme_picker,
+  .footer h4 {
+    display: none;
+  }
+
+  #map_footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem !important;
+  }
+
+#election_image img {
+  border: 2px solid #333333; 
+  border-radius: 0;          
+}
+
+  blockquote {
+    border-left: 4px solid #008080;
+    font-style: italic;
+    margin: 1em;
+    padding: 0 1em;
+  }
+
+  /* Benefit window styles */
+  #benefitwindow {
     overflow: auto;
     background-color: #20272D;
     color: #e0e0e0;
@@ -1100,90 +1103,98 @@ style.innerHTML = `
     border-radius: 5px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.5);
     font-family: Arial, sans-serif;
-}
-#benefitwindowheader, #achwindowheader {
-    background-color: #1B2228; /* slightly less blue than the body */
+  }
+
+  #benefitwindowheader,
+  #achwindowheader {
+    background-color: #1B2228;
     color: #f5f5f5;
     font-size: 17px;
     font-weight: bold;
     padding: 10px 15px;
     border-bottom: 1px solid #444;
-}
-#benefitcontent {
+  }
+
+  #benefitcontent {
     margin: 5px 10px;
     overflow-x: clip;
     color: #e0e0e0;
-}			
-#achwindow {
+  }
+
+  /* Achievements window */
+  #achwindow {
     top: 5%;
     left: 25%;
     background-color: #20272D;
     border: 1px solid #444;
     border-radius: 5px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.5);
-}
-#achcontent {
+  }
+
+  #achcontent {
     overflow: auto;
     overflow-y: scroll;
     max-height: 400px;
     color: #e0e0e0;
-}
-#achwindowheader { /* sometimes the Achievements header won't load, so this is a lazy fix */
-    display: block;
-    background-color: #1B2228; /* slightly less blue than the body */
-    color: #f5f5f5;
-    font-size: 17px;
-    padding: 10px 15px;
-    border-bottom: 1px solid #444;
-}
-#cheatMenu {
+  }
+
+  /* Cheat menu */
+  #cheatMenu {
     margin-top: 1em;
     background-color: #22282D;
     color: #000000;
     border: 1px solid #666;
     padding: 8px 12px;
     border-radius: 4px;
-    cursor: pointer;
+    cursor: default;
     transition: background-color 0.2s ease;
-}
-#cheatMenu:hover {
-    background-color: #2a3036; /* subtle hover effect */
-}
-#showBenefitCheckButton {
+  }
+
+  #cheatMenu:hover {
+    background-color: #2a3036;
+  }
+
+  #showBenefitCheckButton {
     margin-top: 1em;
-}
-#benefitwindow::-webkit-scrollbar,
-#achcontent::-webkit-scrollbar {
+  }
+
+  /* Scrollbar customization */
+  #benefitwindow::-webkit-scrollbar,
+  #achcontent::-webkit-scrollbar {
     width: 10px;
-}
-#benefitwindow::-webkit-scrollbar-track,
-#achcontent::-webkit-scrollbar-track {
+  }
+
+  #benefitwindow::-webkit-scrollbar-track,
+  #achcontent::-webkit-scrollbar-track {
     background: #20272D;
-}
-#benefitwindow::-webkit-scrollbar-thumb,
-#achcontent::-webkit-scrollbar-thumb {
+  }
+
+  #benefitwindow::-webkit-scrollbar-thumb,
+  #achcontent::-webkit-scrollbar-thumb {
     background-color: #555;
     border-radius: 5px;
     border: 2px solid #20272D;
-}
-#benefitwindow::-webkit-scrollbar-thumb:hover,
-#achcontent::-webkit-scrollbar-thumb:hover {
+  }
+
+  #benefitwindow::-webkit-scrollbar-thumb:hover,
+  #achcontent::-webkit-scrollbar-thumb:hover {
     background-color: #777;
-}
+  }
 
-/* Start new game screen */
-#new_game_buttons {
-display: flex;
-gap: .5rem;
-justify-content: center;
-padding-bottom: 1rem;
-			}
-			
+  /* New game screen */
+  #new_game_buttons {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    padding-bottom: 1rem;
+  }
 
-.overlay_window h3 {
-  background: linear-gradient(135deg, #2c3e50, #1c2833) !important;
-  color: #ffffff !important;
-}
+  /* Overlay windows */
+  .overlay_window h3 {
+    background: linear-gradient(135deg, #2c3e50, #1c2833) !important;
+    color: #ffffff !important;
+  }
+
   #state_info h3,
   #state_result h3,
   #overall_result h3 {
@@ -1207,18 +1218,19 @@ padding-bottom: 1rem;
     color: #e0f7ff;
   }
 
-  #state_result_container {
+  #state_result_container,
+  #overall_result_container {
     background: linear-gradient(135deg, #e6e6e6, #d4d4d4) !important;
   }
 
-.visit_text {
-background: #1F262C;
-color: white;
-border-radius: .3em;
-width: fit-content;
-margin-inline: auto;
-padding: .5rem;
-}
+  .visit_text {
+    background: #1F262C;
+    color: white;
+    border-radius: 0.3em;
+    width: fit-content;
+    margin-inline: auto;
+    padding: 0.5rem;
+  }
 
   #map_container {
     background: linear-gradient(135deg, #f8f6fb, #eae6f4, #dcd7e6) !important;
@@ -1230,14 +1242,7 @@ padding: .5rem;
     color: #ffffff;
     text-shadow: 0 0 6px rgba(0,255,255,0.3);
   }
-
-  #overall_result_container {
-    background: linear-gradient(135deg, #e6e6e6, #d4d4d4) !important;
-  }
 `;
-
-document.head.appendChild(style);
-
 
 document.head.appendChild(style);
 
@@ -1798,13 +1803,3 @@ tooltipList = [
       
 ];
 
-// "Next" buttons and "Back" buttons here
-
-next0 = function() {
-    text = "<div style='overflow-y:scroll;height:200px;'><p>Yet, Election Day came, and Obama, despite his disastrous presidency, secured a second term. Worse, the Democrats flipped eight House seats and held the Senate, even as Texas sent a new conservative to its ranks. The consultants, the lobbyists, and the donor class congratulated themselves on another cycle of comfortable defeat. Too many Republicans in Washington seemed resigned to managing America’s decline, happy to be the polite opposition while the Democrats pushed the country further and further toward ruin.<br><br>The American people were ready for a true alternative. A man who didn’t just talk like a conservative but lived it. A man willing to stand up to the establishment in both parties. A man who understood that the Constitution limits the government, not the people. A man who understood the right to life came from God, not the Supreme Court.<br><br> And if we stand together, we can bring America back.<br><br><button onclick='back0()'>Back</button></p></div></p></div>"
-    document.getElementById("election_summary").innerHTML = text
-}
-back0 = function() {
-    text = "<div style='overflow-y:scroll;height:200px;'><p>The last decade has been nothing short of abnormal for America. After the 2008 election, the so-called ''experts'' and media elites smugly declared conservatism finished, claiming the Republican Party had been buried for good. Barack Obama, a community organizer elevated by celebrity worship and empty slogans, entered the White House promising hope and change. But what change did he bring? He spent the first two years of his term trying to ram a socialist healthcare agenda through Congress and bowing down to foreign leaders. His administration became a hodgepodge of incompetence, socialism, and authoritarianism, the start of the Democratic deep state.<br><br>By 2010, the people had had enough. Not Wall Street financiers, not Hollywood elitists, but real, common, honest Americans. In 2010, the GOP managed to flip 63 seats, the biggest midterm change in six decades. The message was clear that America wasn’t finished with conservatism. The Republican Party was alive and well, and the Obama agenda was crumbling. The future was looking bright.<br><br><button onclick='next0()'>Next</button></p></div>"
-    document.getElementById("election_summary").innerHTML = text
-}
