@@ -855,7 +855,7 @@ credits = function() {
         }
 
         const AB = [...creditListA, ...creditListB];
-        createSection('Developers','Coding & Writing for Tough as Texas.', AB, 'center');
+        createSection('Developers','Coding & Writing.', AB, 'center');
         createSection('Special Thanks','(Full Special Thanks in Further Reading)', creditListC, 'center');
 
         const closeButton = document.createElement('button');
@@ -1348,41 +1348,48 @@ function setupMusicPlayer() {
   playlist = new Playlist();
 
   const song1 = new Song(
+    "What I've Done",
+    "Linkin Park",
+    "https://i.imgur.com/65s4viR.png",
+    "https://file.garden/Z-8vn6l_RynAMnyS/What%20I've%20Done%20(Official%20Music%20Video)%20%5B4K%20Upgrade%5D%20-%20Linkin%20Park.mp3"
+  );
+
+  const song2 = new Song(
     "You've Got To Stand For Something",
     "Aaron Tippin",
     "https://i.imgur.com/O7c1hor.png",
     "https://audio.jukehost.co.uk/ZQnMufZGNbmyEQUhR6dLQx8ozFYmmNDD"
   );
   
-  const song2 = new Song(
+  const song3 = new Song(
     "God Bless the U.S.A",
     "Lee Greenwood",
     "https://i.imgur.com/elUafEV.png",
     "https://audio.jukehost.co.uk/A7K1Ha1w2kmRXPz8qC3DcNrQWxQTPTRs"
   );
 
-  const song3 = new Song(
+  const song4 = new Song(
     "Where the Stars and Stripes and Eagle Fly",
     "Aaron Tippin",
     "https://i.imgur.com/Wxb6s9p.jpeg",
     "https://audio.jukehost.co.uk/50AuFK2OTd6hRyAMT0VZP1O0yqEXpg9j"
   );
 
-  const song4 = new Song(
+  const song5 = new Song(
     "As Good As I Once Was",
     "Toby Keith",
     "https://i.imgur.com/F7gd9Mv.jpeg",
     "https://audio.jukehost.co.uk/tCO8u2zmunpUWoSfiLStFLdrFi9VTvf9"
   );
 
-  const song5 = new Song(
+  const song6 = new Song(
     "Donald Trump vs. Hillary Clinton",
     "Epic Rap Battles of History",
     "https://i.imgur.com/BG0RmI2.jpeg",
     "https://files.catbox.moe/ofvp5k.mp3"
   );
 
-  const song6 = new Song(
+  const song7 = new Song(
     "Ballad of the Mighty I",
     "Noel Gallagher's High Flying Birds",
     "https://i.postimg.cc/gcssRhNH/noelly.png",
@@ -1395,6 +1402,8 @@ function setupMusicPlayer() {
   playlist.addSong(song4);
   playlist.addSong(song5);
   playlist.addSong(song6);
+  playlist.addSong(song7);
+
 
   const playerContainer = document.createElement("div");
   playerContainer.id = "player";
