@@ -796,10 +796,14 @@ if (HillaryInvestigation == 1) {
     "pk": 51526,
     "fields": {
       "priority": 1,
-      "description": "Just 1 week before Election Day, Jeff frantically rushes into your hotel lounge. He tells you that his team has found videos that show Hillary ordering the execution of Vince Foster, through the White House telephone, He says that the CIA followed her orders and shot him, then faked a suicide...",
+      "description": "Just 1 week before Election Day...",
       "likelihood": 1
     }
-  }
+  };
+
+  // Increment question_count after creating the object
+e.global_parameter_json[0].fields.question_count = 30
+
 } else {
   campaignTrail_temp.questions_json[25] = {
     "model": "campaign_trail.question",
@@ -809,8 +813,8 @@ if (HillaryInvestigation == 1) {
       "description": "Barely 11 days before Election Day, James Comey, FBI Director, has made an extremely late announcement that additional emails have surfaced in Hillary Clinton's case, thanks to an investigation into Anthony Weiner's laptop. Hillary Clinton continues to profess her innocence, and mass confusion and anger has become commonplace amongst the voters. This might be what pushes you over the top, how do you handle this?",
       "likelihood": 1
     }
-  }
- }
+  };
+}
 
 if (HillaryInvestigation < 0) {
   campaignTrail_temp.questions_json[26] = {
@@ -821,12 +825,14 @@ if (HillaryInvestigation < 0) {
       "description": "The evidence is clear. The video shows Hillary ordering the murder of Vince Foster. The entire public believes it is genuine, whilst the FBI claims the video was forged. Absolute pandemonium has ensued. You have seen a ridiculous surge in the polls, and Hillary's whereabouts are currently unknown. In a last-ditch effort to prevent a total wipeout, the Democrats have scrambled and nominated Bernie Sanders of Vermont to replace her on the ticket, with Tulsi Gabbard as his running mate. Not only is this likely illegal, but most early voters have already voted for Clinton/Kaine. The opposition is in chaos, and before Election Day begins, now is the best time to secure your victory. Where are you headed?",
       "likelihood": 1
     }
-  }
+  };
+
+   e.global_parameter_json[0].fields.question_count = 30
    campaignTrail_temp.candidate_json[1]["fields"].first_name = "Bernie";
    campaignTrail_temp.candidate_json[1]["fields"].last_name = "Sanders";
   campaignTrail_temp.candidate_json.find(candidate => candidate.pk == 201).fields.color_hex = '#1f7ca3';
         		vpTable["Bernie Sanders"] = "Tulsi Gabbard";
-e.ElectionPopup = "Well, Hillary's out, and Sander's is in. Your Reagan moment begins now."
+e.ElectionPopup = "Well, Hillary's been outed as a criminal. That doesn't change the fact you still have an election to win. Godspeed."
 e.LosePopup = "No way... huh? Did you really just feel the bern?"
 e.WinPopup = "As expected. Let's get Foster some justice."
 
