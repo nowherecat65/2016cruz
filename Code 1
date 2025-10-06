@@ -24,10 +24,6 @@ e.ElectionPopup = "Here we go. Good luck sir, you have fought a brave battle."
 e.LosePopup = "The people of this country have decided. They have chosen radicalism over decency..."
 e.WinPopup = "The people of this country have decided. They have chosen decency over radicalism!"
 
-// Advisor feedback sound
-
-
-
 // Favicon
 
 document.querySelectorAll("link[rel*='icon']").forEach(el => el.remove());
@@ -1031,7 +1027,7 @@ document.getElementById("header").src = "https://i.imgur.com/5cN59fs.gif";
 
 document.body.background = "https://images.wallpaperscraft.com/image/single/night_city_city_lights_metropolis_126569_2560x1440.jpg";
 
-document.head.innerHTML += "<style>#results_container {color:#ffffff;} .inner_window_w_desc {background-color:#1B1F23!important;}</style>";
+document.head.innerHTML += "<style>#results_container {color:#ffffff;} </style>";
 
 // This is pretty much all the custom styles for the mod. Many of them were taken from A Lifetime Of This and adapted to work here.
 
@@ -1047,6 +1043,10 @@ style.innerHTML = `
   a:-webkit-any-link {
     color: #007A7A;
   }
+
+.inner_window_w_desc {
+    background: linear-gradient(135deg, #1B1F23 0%, #22262B 50%, #2C3035 100%) !important;
+}
 
   /* Questions */
   .inner_window_question h3 {
@@ -1248,7 +1248,6 @@ style.innerHTML = `
 `;
 
 document.head.appendChild(style);
-
 
 //#endcode
 
