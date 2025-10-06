@@ -70,7 +70,7 @@ document.head.innerHTML += `
   .overlay_window {
     animation: fadeInScale 0.3s cubic-bezier(0.3, 1.2, 0.2, 1) forwards,
                gradientShift 30s ease infinite,
-               hologlow 3s ease-in-out infinite alternate;
+               hologlow 1s ease-in-out infinite alternate;
     opacity: 0;
     background: linear-gradient(135deg, #1a1a1a, #222222, #2e2e2e);
     background-size: 300% 300%;
@@ -1666,6 +1666,8 @@ setupMusicPlayer();
 
 $("#game_window")[0].style.background = "linear-gradient(#303841, #1b1f23)";
 
+// Tooltips. They first came from 2021DE if I'm not mistaken, although I took these tooltips from 2022 Ohio Senate. It's been significantly modified from what they were previously, though.
+
 function addDynamicCSS() {
   const css = `
       .mytooltip {
@@ -1759,10 +1761,6 @@ function addDynamicCSS() {
       el.classList.add('hide');
   }, true);
 }
-
-
-
-// Not sure who exactly made tooltips, think it was from 2021 Germany. Credits to the people who worked on that
 
 addDynamicCSS();
 
