@@ -806,9 +806,6 @@ if (HillaryInvestigation == 1) {
     }
   };
 
-  // Increment question_count after creating the object
-e.global_parameter_json[0].fields.question_count = 30
-
 } else {
   campaignTrail_temp.questions_json[25] = {
     "model": "campaign_trail.question",
@@ -827,19 +824,19 @@ if (HillaryInvestigation < 0) {
     "pk": 51533,
     "fields": {
       "priority": 1,
-      "description": "The evidence is clear. The video shows Hillary ordering the murder of Vince Foster. The entire public believes it is genuine, whilst the FBI claims the video was forged. Absolute pandemonium has ensued. You have seen a ridiculous surge in the polls, and Hillary's whereabouts are currently unknown. In a last-ditch effort to prevent a total wipeout, the Democrats have scrambled and nominated Bernie Sanders of Vermont to replace her on the ticket, with Tulsi Gabbard as his running mate. Not only is this likely illegal, but most early voters have already voted for Clinton/Kaine. The opposition is in chaos, and before Election Day begins, now is the best time to secure your victory. Where are you headed?",
+      "description": "The information rapidly spreads, even as Democrat operatives do their best to stop the video spreading. The nation is shocked that a Presidential candidate and such an admired figure like Clinton could commit murder. The FBI continues to claim the videos are forged, but no amount of lies from them can change what people saw. They saw a woman ordering a man to be executed. Hillary and Bill Clinton both have not been seen since the leaks. The Democrat Party, in a last-ditch effort to prevent total annihilation, have nominated Senator Bernie Sanders, with Tulsi Gabbard as his running mate. Most early voters have already cast their vote for Clinton/Kaine, and regardless of what you do. your opposition is imploding. How do you exploit this.",
       "likelihood": 1
     }
   };
 
    e.global_parameter_json[0].fields.question_count = 30
-   campaignTrail_temp.candidate_json[1]["fields"].first_name = "Bernie";
-   campaignTrail_temp.candidate_json[1]["fields"].last_name = "Sanders";
+   campaignTrail_temp.candidate_json[1]["fields"].first_name = "Killary";
+   campaignTrail_temp.candidate_json[1]["fields"].last_name = "Klinton";
   campaignTrail_temp.candidate_json.find(candidate => candidate.pk == 201).fields.color_hex = '#1f7ca3';
   campaignTrail_temp.candidate_json.find(candidate => candidate.pk == 200).fields.color_hex = '#A35C5C';
-        		vpTable["Bernie Sanders"] = "Tulsi Gabbard";
-e.ElectionPopup = "Well, Hillary's been outed as a criminal. That doesn't change the fact you still have an election to win. Godspeed."
-e.LosePopup = "No way... huh? Did you really just feel the bern?"
+        		vpTable["Killary Klinton"] = "Tim Kaine";
+e.ElectionPopup = "Your facing a murderer for re-election. Christ."
+e.LosePopup = "Did you just lose... to a murderer?"
 e.WinPopup = "As expected. Let's get Foster some justice."
 
 } else {
@@ -896,7 +893,7 @@ if (Primary == 3) {
         campaignTrail_temp.question_number = 26;
         		vpTable["Marco Rubio"] = "John Kasich";
 e.ElectionPopup = "Well, Rubio's the nominee. Hopefully he can put the Democrats in their place."
-e.LosePopup = "It's a great day for America! Corrupt Clinton has been defeated."
+e.LosePopup = "It's a great day for America! The corrupt Democrats have been defeated."
 e.WinPopup = "Rubio lost... somehow. The next few years will be interesting."
 }
 
@@ -1065,6 +1062,7 @@ document.head.appendChild(customStyling);
         return false;
     }
 }
+
 campaignTrail_temp.questions_json = [
     {
         "model": "campaign_trail.question",
@@ -1311,6 +1309,15 @@ campaignTrail_temp.questions_json = [
     },
     {
         "model": "campaign_trail.question",
+        "pk": 51575,
+        "fields": {
+            "priority": 0,
+            "description": "The evidence is clear. The video shows Hillary ordering the murder of Vince Foster. The entire public believes it is genuine, whilst the FBI claims the video was forged. Absolute pandemonium has ensued. You have seen a ridiculous surge in the polls, and Hillary's whereabouts are currently unknown. In a last-ditch effort to prevent a total wipeout, the Democrats have scrambled and nominated Bernie Sanders of Vermont to replace her on the ticket, with Tulsi Gabbard as his running mate. Not only is this likely illegal, but most early voters have already voted for Clinton/Kaine. The opposition is in chaos, and before Election Day begins, now is the best time to secure your victory. Where are you headed?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
         "pk": 51060,
         "fields": {
             "priority": 0,
@@ -1341,7 +1348,7 @@ campaignTrail_temp.questions_json = [
         "pk": 51526,
         "fields": {
             "priority": 0,
-            "description": "Just 1 week before Election Day, Jeff frantically rushes into your hotel lounge. He tells you that his team has found videos that show Hillary ordering the execution of Vince Foster, through the White House telephone, He says that the CIA followed her orders and shot him, then faked a suicide.",
+            "description": "Just 2 weeks before Election Day, Jeff frantically rushes into your hotel lounge. He tells you that his team has found secret tapes, from an anonymous source, that show Hillary ordering the execution of Vince Foster, through the White House telephone. He says that the CIA followed her orders and shot him, then faked a suicide.",
             "likelihood": 1
         }
     },
@@ -1350,25 +1357,16 @@ campaignTrail_temp.questions_json = [
         "pk": 51533,
         "fields": {
             "priority": 0,
-            "description": "The evidence is clear. The video shows Hillary ordering the murder of Vince Foster. The entire public believes it is genuine, whilst the FBI claims the video was forged. Absolute pandemonium has ensued. You have seen a ridiculous surge in the polls, and Hillary's whereabouts are currently unknown. In a last-ditch effort to prevent a total wipeout, the Democrats have scrambled and nominated Bernie Sanders of Vermont to replace her on the ticket, with Tulsi Gabbard as his running mate. Not only is this likely illegal, but most early voters have already voted for Clinton/Kaine. The opposition is in chaos, and before Election Day begins, now is the best time to secure your victory. Where are you headed?",
+            "description": "The information rapidly spreads, even as some of Clinton's operatives do their best to stop the video spreading. The nation is shocked that a Presidential candidate and such an admired figure like Clinton could commit murder. The FBI continues to claim the videos are forged, but no amount of lies from them can change what people saw. They saw a woman ordering a man to be executed. Hillary and Bill Clinton both have not been seen since the leaks. The Democrat Party desperately tries to nominate a replacement, but the deadline has already passed. Any comment?",
             "likelihood": 1
         }
     },
     {
         "model": "campaign_trail.question",
-        "pk": 51558,
+        "pk": 51593,
         "fields": {
             "priority": 0,
-            "description": "Democrats, capitalizing ",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 51559,
-        "fields": {
-            "priority": 10,
-            "description": "The Clinton campaign continues to massively outfund you, pouring millions into big-buy television ads, Worse, just when the campaign is about to heat up, your coffers are running low. How will you alleviate this problem?",
+            "description": "Bernie Sanders, after suddenly being chosen by the party at the last second",
             "likelihood": 1
         }
     }
@@ -2140,7 +2138,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51437,
         "fields": {
             "question": 51430,
-            "description": "Absolutely. We're gonna crush her."
+            "description": "Absolutely. We're gonna crush her, believe me. I'm ready for this debate."
         }
     },
     {
@@ -2148,7 +2146,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51460,
         "fields": {
             "question": 51459,
-            "description": "I have a different idea. I told you, right Jeff? She basically confessed to me she killed someone at the debate, with that stare. Christ, I know that she's hiding something. Collect some research on her. We'll expose her for the criminal she is right in front of everyone. But keep this aboveboard. Make sure it can't be traced back to us."
+            "description": "I have a different idea. I told you, right Jeff? She basically confessed to me she killed someone at the debate, with that stare. Christ, I know that she's hiding something. Collect some research on her. We'll expose her for the criminal she is right in front of everyone. But keep this secretive. Make sure it can't be traced back to us."
         }
     },
     {
@@ -2236,39 +2234,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51531,
         "fields": {
             "question": 51526,
-            "description": "Jesus Christ."
-        }
-    },
-    {
-        "model": "campaign_trail.answer",
-        "pk": 51536,
-        "fields": {
-            "question": 51533,
-            "description": "Winning California would be an absolute embarrassment. We're going to go from Sacramento down to San Diego and Orange, which were Reagan's strongholds in the state."
-        }
-    },
-    {
-        "model": "campaign_trail.answer",
-        "pk": 51543,
-        "fields": {
-            "question": 51533,
-            "description": "Hell, let's go for the full 50 sweep. We're going to go over to Maryland, New York, Massachusetts, and finish in Vermont. I'm a candidate for all Americans, not just liberal ones."
-        }
-    },
-    {
-        "model": "campaign_trail.answer",
-        "pk": 51544,
-        "fields": {
-            "question": 51533,
-            "description": "Now that we finally have some time to breathe, I'm going to do something bold. We're going to spent half the week in Hawaii, and the rest of the week in Alaska. These states barely get any attention, and I think the message will be clear."
-        }
-    },
-    {
-        "model": "campaign_trail.answer",
-        "pk": 51552,
-        "fields": {
-            "question": 51533,
-            "description": "My opponent was just exposed for killing someone, and they're currently in hiding. Why are we talking politics? Just fly me back home to Houston. This campaign has sapped all my energy."
+            "description": "Wha- you're joking right?"
         }
     },
     {
@@ -2281,34 +2247,42 @@ campaignTrail_temp.answers_json = [
     },
     {
         "model": "campaign_trail.answer",
-        "pk": 51560,
+        "pk": 51576,
         "fields": {
-            "question": 51559,
-            "description": "Damned be. Fine, uh, I'll meet with McConnell. All those donors, whatever, to try and get their support. I hope they understand how catastrophic a Clinton presidency would be. "
+            "question": 51575,
+            "description": "Winning California would be an absolute embarrassment. We're going to go from Sacramento down to San Diego and Orange, which were Reagan's strongholds in the state."
         }
     },
     {
         "model": "campaign_trail.answer",
-        "pk": 51563,
+        "pk": 51579,
         "fields": {
-            "question": 51559,
-            "description": "Back in 2012, Dewhurst had a massive fundraising advantage too. And I still won. If we have to reduce some of our ad spending, so be it, because I'm not going to sell out to the donor class."
+            "question": 51575,
+            "description": "Hell, let's go for the full 50 sweep. We're going to go over to Maryland, New York, Massachusetts, and finish in Vermont. I'm a candidate for all Americans, not just liberal ones."
         }
     },
     {
         "model": "campaign_trail.answer",
-        "pk": 51566,
+        "pk": 51587,
         "fields": {
-            "question": 51559,
-            "description": "Hillary Clinton's fundraising machine continues to spread lies about me and my policies, and we can't hope to compete. I'm asking for the American people's help, so that we can win the fight against liberal elitism."
+            "question": 51575,
+            "description": "My opponent was just exposed for killing someone, and they're currently in hiding. Why are we talking politics? Just fly me back home to Houston. This campaign has sapped all my energy."
         }
     },
     {
         "model": "campaign_trail.answer",
-        "pk": 51569,
+        "pk": 51589,
         "fields": {
-            "question": 51559,
-            "description": "No, no, no, goddamnit. We can get some money from those lobbies. The NRA, AIPAC, those oil and gas lobbies, ExxonMobil, Shell, Whatever. We can't let Clinton win."
+            "question": 51533,
+            "description": "I understand we have the initiative, but the Democrats are imploding, and people get the message. There's no need to fan the flames further and risk things backfiring for us."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 51590,
+        "fields": {
+            "question": 51533,
+            "description": "So I was right. Killing Klinton really is a murderer.  We're going to be posting about this all week. We're gonna have a good time. And we're gonna lock her up."
         }
     }
 ]
@@ -8708,7 +8682,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 51531,
             "candidate": 200,
             "affected_candidate": 202,
-            "global_multiplier": 0.04
+            "global_multiplier": 1.7
         }
     },
     {
@@ -8718,7 +8692,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 51531,
             "candidate": 200,
             "affected_candidate": 203,
-            "global_multiplier": 0.04
+            "global_multiplier": 1.9
         }
     },
     {
@@ -8728,47 +8702,17 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 51531,
             "candidate": 200,
             "affected_candidate": 200,
-            "global_multiplier": 0.04
+            "global_multiplier": 0.45
         }
     },
     {
         "model": "campaign_trail.answer_score_global",
-        "pk": 51562,
+        "pk": 51596,
         "fields": {
-            "answer": 51560,
+            "answer": 51531,
             "candidate": 200,
-            "affected_candidate": 200,
-            "global_multiplier": 0.006
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
-        "pk": 51565,
-        "fields": {
-            "answer": 51563,
-            "candidate": 200,
-            "affected_candidate": 200,
-            "global_multiplier": -0.0065
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
-        "pk": 51568,
-        "fields": {
-            "answer": 51566,
-            "candidate": 200,
-            "affected_candidate": 200,
-            "global_multiplier": -0.001
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
-        "pk": 51570,
-        "fields": {
-            "answer": 51569,
-            "candidate": 200,
-            "affected_candidate": 200,
-            "global_multiplier": -0.03
+            "affected_candidate": 201,
+            "global_multiplier": -0.3
         }
     }
 ]
@@ -10617,20 +10561,20 @@ campaignTrail_temp.answer_score_state_json = [
     },
     {
         "model": "campaign_trail.answer_score_state",
-        "pk": 51542,
+        "pk": 51555,
         "fields": {
-            "answer": 51536,
-            "state": 1004,
+            "answer": 51531,
+            "state": 1044,
             "candidate": 200,
             "affected_candidate": 200,
-            "state_multiplier": 0.2
+            "state_multiplier": 0.3
         }
     },
     {
         "model": "campaign_trail.answer_score_state",
-        "pk": 51545,
+        "pk": 51581,
         "fields": {
-            "answer": 51543,
+            "answer": 51579,
             "state": 1019,
             "candidate": 200,
             "affected_candidate": 200,
@@ -10639,9 +10583,9 @@ campaignTrail_temp.answer_score_state_json = [
     },
     {
         "model": "campaign_trail.answer_score_state",
-        "pk": 51546,
+        "pk": 51582,
         "fields": {
-            "answer": 51543,
+            "answer": 51579,
             "state": 1020,
             "candidate": 200,
             "affected_candidate": 200,
@@ -10650,9 +10594,9 @@ campaignTrail_temp.answer_score_state_json = [
     },
     {
         "model": "campaign_trail.answer_score_state",
-        "pk": 51547,
+        "pk": 51583,
         "fields": {
-            "answer": 51543,
+            "answer": 51579,
             "state": 1031,
             "candidate": 200,
             "affected_candidate": 200,
@@ -10661,35 +10605,35 @@ campaignTrail_temp.answer_score_state_json = [
     },
     {
         "model": "campaign_trail.answer_score_state",
-        "pk": 51550,
+        "pk": 51594,
         "fields": {
-            "answer": 51544,
-            "state": 1001,
+            "answer": 51576,
+            "state": 1029,
             "candidate": 200,
             "affected_candidate": 200,
-            "state_multiplier": 0.1
+            "state_multiplier": 0.2
         }
     },
     {
         "model": "campaign_trail.answer_score_state",
-        "pk": 51551,
+        "pk": 51595,
         "fields": {
-            "answer": 51544,
-            "state": 1010,
+            "answer": 51576,
+            "state": 1004,
             "candidate": 200,
             "affected_candidate": 200,
-            "state_multiplier": 0.1
+            "state_multiplier": 0.2
         }
     },
     {
         "model": "campaign_trail.answer_score_state",
-        "pk": 51555,
+        "pk": 51597,
         "fields": {
             "answer": 51531,
-            "state": 1044,
+            "state": 1047,
             "candidate": 200,
-            "affected_candidate": 200,
-            "state_multiplier": 0.3
+            "affected_candidate": 203,
+            "state_multiplier": 10
         }
     }
 ]
@@ -10701,7 +10645,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5003,
             "candidate": 200,
-            "answer_feedback": "Arkansas is nearly neck-and-neck, and this state could prove valuable.  You fly back home to Texas, and on Super Tuesday..."
+            "answer_feedback": "Arkansas is nearly neck-and-neck, and this state could prove valuable. You fly back home to Texas, and on Super Tuesday..."
         }
     },
     {
@@ -11376,7 +11320,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51230,
             "candidate": 200,
-            "answer_feedback": "She interrupts you. You watch as she puts on the crocodile tears, saying how much she misses him, and after she's done, she has the guts to turn around and call you a “monster” Everyone watching feels bad for her. As soon as the commercial break rolls, and no one can see her, her expression suddenly becomes sharp, a death stare at you. It could petrify someone. Jesus Christ. Is that a confession?"
+            "answer_feedback": "She interrupts you. You watch as she puts on the crocodile tears, saying how much she misses him, and after she's done, she has the guts to turn around and call you a “monster.” Everyone watching feels bad for her. As soon as the commercial break rolls, and no one can see her, her expression suddenly becomes sharp, a death stare at you. It could petrify someone. Jesus Christ. Is that a confession?"
         }
     },
     {
@@ -11655,70 +11599,52 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51531,
             "candidate": 200,
-            "answer_feedback": ""
+            "answer_feedback": "You think he's joking, until you watch the video yourself. The video's old, but you can obviously tell it's Clinton. You see her in a yellow robe, arguing with someone over the telephone. <i>“I don't care how you do it, I want this done!”</i> she yells. <i>“I want him dead. Make it look like a suicide.”</i><br>Jesus Christ. You caught her. Your team leaks it to Fox News the next day."
         }
     },
     {
         "model": "campaign_trail.answer_feedback",
-        "pk": 51537,
+        "pk": 51577,
         "fields": {
-            "answer": 51536,
+            "answer": 51576,
             "candidate": 200,
-            "answer_feedback": "Wherever you go, huge crowds come to meet you. Your reminded of an actor and a Governor from California. Would he be proud of you? You certainly hope so. "
+            "answer_feedback": "Enthusiastic crowds go to meet you wherever you go. Your reminded of an actor and a Governor from California. Would he be proud of you?"
         }
     },
     {
         "model": "campaign_trail.answer_feedback",
-        "pk": 51549,
+        "pk": 51580,
         "fields": {
-            "answer": 51544,
-            "candidate": 200,
-            "answer_feedback": "It's true. No candidate has campaigned outside the Continental United States since Nixon in 1960, and these sorely underappreciated states get the message."
-        }
-    },
-    {
-        "model": "campaign_trail.answer_feedback",
-        "pk": 51553,
-        "fields": {
-            "answer": 51543,
+            "answer": 51579,
             "candidate": 200,
             "answer_feedback": "This is bold, but perhaps with how catastrophically the Democratic party has imploded, these states are in play. It'll be difficult to flip Vermont though, because that state loves it's hometown hero Bernie."
         }
     },
     {
         "model": "campaign_trail.answer_feedback",
-        "pk": 51556,
+        "pk": 51588,
         "fields": {
-            "answer": 51552,
+            "answer": 51587,
             "candidate": 200,
             "answer_feedback": "I can't say I blame you. Good luck tomorrow."
         }
     },
     {
         "model": "campaign_trail.answer_feedback",
-        "pk": 51561,
+        "pk": 51591,
         "fields": {
-            "answer": 51560,
+            "answer": 51589,
             "candidate": 200,
-            "answer_feedback": "Though the two of you have strained relations, the meeting goes over surprisingly well, and Mitch agrees to contact some of the donors he has connections with, and the money starts coming in quickly."
+            "answer_feedback": "It's tempting, but the Democrats are falling apart, and there's no need for your comment. Your supporters feel vindicated."
         }
     },
     {
         "model": "campaign_trail.answer_feedback",
-        "pk": 51564,
+        "pk": 51592,
         "fields": {
-            "answer": 51563,
+            "answer": 51590,
             "candidate": 200,
-            "answer_feedback": "Your intentions are admirable, but a Senate primary is not a Presidential election. It doesn't matter how good your campaign is, you <em>have</em> to have a fundraising machine."
-        }
-    },
-    {
-        "model": "campaign_trail.answer_feedback",
-        "pk": 51567,
-        "fields": {
-            "answer": 51566,
-            "candidate": 200,
-            "answer_feedback": "Thousands of conservatives donate to help your cause, and over time your fundraising situation begins to stabilize. You're not raking in the big bucks like Hillary, but it's something."
+            "answer_feedback": "Some question whether you should interfere in this, urging you to be more cautious, but when have you ever done anything the cautious way?"
         }
     }
 ]
