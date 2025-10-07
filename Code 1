@@ -1747,10 +1747,6 @@ $("#game_window")[0].style.background = "linear-gradient(#303841, #1b1f23)";
             weight: 1
         },
         {
-            url: "https://www.p2016.org/blogads/iowapays082215p2016xx2289842054627301457.gif",
-            weight: 1
-        },
-        {
             url: "https://www.p2016.org/blogads/rtrnashuatelegraph012916xxe9d9be71-9dcd-42ed-ab8c-3f007d080bdb.jpg",
             weight: 1
         },
