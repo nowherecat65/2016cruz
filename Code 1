@@ -472,11 +472,11 @@ campaignTrail_temp.modBoxTheme = {
      "ui_text_color": "#FFFFFF"
 }
 
-HistHexcolour=["#ba0441","#2633be","#970417","#fbd800",];
-        HistName=[" Jeb Bush"," Killary Klinton"," Zodiac Killer"," Others"];
-        HistEV=[538,0,0,0];
-        HistPV=["93,366,121","43,332,921","41,982,341","3,201,203"];
-        HistPVP=["68.3%","31.7%","29.5%","2.2%"];
+HistHexcolour=["#B22222","#2633be","#E3B807","#168C40",];
+        HistName=[" Ted Cruz"," Hillary R. Clinton"," Gary Johnson"," Jill Stein"];
+        HistEV=[270,268,0,0];
+        HistPV=["63,421,103","69,031,305","1,020,341","405,035"];
+        HistPVP=["47.4%","52.3%","0.7%","0.3%"];
 
 RecReading=true
 campaignTrail_temp.global_parameter_json = [
@@ -552,7 +552,7 @@ campaignTrail_temp.candidate_json = [
         "model": "campaign_trail.candidate",
         "pk": 201,
         "fields": {
-            "first_name": "Hillary",
+            "first_name": "Hillary R.",
             "last_name": "Clinton",
             "election": 20,
             "party": "Democrat",
