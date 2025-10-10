@@ -587,26 +587,26 @@ function ctsAchievement(achievement, difficultyChecker = true){
 }
 
 let republican = "Ted Cruz";
-let vpname = "Carly Fiorina";
-let democrat = "Hillary Clinton";
+let republicanvp = "Carly Fiorina";
+let democrat = "Hillary R. Clinton";
 let democratvp = "Tim Kaine";
 let libertarian = "Gary Johnson";
-let libertarianpartyvp = "William Weld";
+let libertarianvp = "William Weld";
 let green = "Jill Stein";
 let greenvp = "Ajamu Baraka";
 
 let vpTable = {
-    [republican]: vpname,
+    [republican]: republicanvp,
     [democrat]: democratvp,
-    [libertarian]: libertarianpartyvp,
+    [libertarian]: libertarianvp,
     [green]: greenvp
 };
 
 vpTableHistorical = {
-    "Jeb Bush" : "Shrub",
-    "Killary Klinton" : "John McLame",
-    "Zodiac Killer" : "Cancun, Mexico",
-    "Others" : "Various",
+    "Ted Cruz" : "Carly Fiorina",
+    "Hillary R. Clinton" : "Tim Kaine",
+    "Gary Johnson" : "William Weld",
+    "Jill Stein" : "Ajamu Baraka",
   } 
 
 function onGameWindowChangeCandidates() {
