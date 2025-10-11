@@ -1474,7 +1474,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5092,
         "fields": {
             "question": 1027,
-            "description": "I oppose the abhorrent practice of abortion as much as ever, but this position is hurting us badly amongst independents. We have to turn the tables and strike back at Clinton, highlighting her equivocations on Benghazi and her emails. She has utterly failed at all her tasks."
+            "description": "I oppose the abhorrent practice of abortion as much as ever, but this position is hurting us badly with voters we need to win. We have to turn the tables and strike back at Clinton, highlighting her equivocations on Benghazi and her emails. She has utterly failed at all her tasks, and now she wants to be President."
         }
     },
     {
@@ -1522,7 +1522,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5124,
         "fields": {
             "question": 1037,
-            "description": "Hillary thinks the Blue Wall, all these factory workers, are already going to vote for her. But they're tired of the failure of the Democrats for the past 8 years. We're going to campaign with Senator Portman and Governor Kasich in Ohio, Speaker Ryan in Wisconsin, and Governor Pawlenty in Minnesota."
+            "description": "It's obvious, no? The Blue Wall. They're tired of the failure of the Democrats for the past 8 years. We're going to campaign with Senator Portman and Governor Kasich in Ohio, Speaker Ryan and Governor Walker in Wisconsin, and Governor Pawlenty in Minnesota. The whole wall is coming down."
         }
     },
     {
@@ -1618,7 +1618,7 @@ campaignTrail_temp.answers_json = [
         "pk": 20683,
         "fields": {
             "question": 1006,
-            "description": "I've said it many times, and I'll say it again today. Donald Trump is a liberal elitist. He claims to fight against the establishment, yet he's donated more money then you and I make in a year to Hillary Clinton's foundation. If that doesn't show his true colors, I don't know what is."
+            "description": "I've said it many times, and I'll say it again today. Donald Trump is a liberal. He claims to fight against the establishment, yet he's donated more money then you and I make in a year to Hillary Clinton's foundation. If that doesn't show his true colors, I don't know what is."
         }
     },
     {
@@ -1738,7 +1738,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51043,
         "fields": {
             "question": 1022,
-            "description": "This investigation was a disaster from the very start. Hillary destroyed nearly all the evidence during the investigation, yet she wasn’t charged. Clinton is lying through her teeth."
+            "description": "This investigation was a complete disaster. Hillary destroyed nearly all the evidence during the investigation, and yet she wasn’t charged. On day one we're going to launch a real investigation into her."
         }
     },
     {
@@ -1746,7 +1746,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51045,
         "fields": {
             "question": 1022,
-            "description": "I have the utmost respect for James Comey and our terrific agents at the FBI. They have the final say in the end. It seems Hillary may have gotten lucky on this one."
+            "description": "I have the utmost respect for James Comey and our great agents at the FBI. They have the final say in the end. It seems Hillary may have gotten lucky on this one."
         }
     },
     {
@@ -1762,15 +1762,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51063,
         "fields": {
             "question": 1022,
-            "description": "This just shows how corrupt Hillary is and how corrupt the establishment is. We don’t know whether she destroyed the evidence or not, but you better believe a Cruz administration will be looking into this further!"
-        }
-    },
-    {
-        "model": "campaign_trail.answer",
-        "pk": 51068,
-        "fields": {
-            "question": 1022,
-            "description": "On day one we're locking up Hillary Clinton. Plain and simple. She is the most corrupt official in our nation's history, and we're going to arrest her for her crimes. This guy Comey is a liar. "
+            "description": "Hillary Clinton is a crook, and I think this really goes to show how corrupt she is. If this is what she's done as Secretary of State, imagine what she'll do as President. We cannot let her become President on November 8th."
         }
     },
     {
@@ -1826,7 +1818,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51121,
         "fields": {
             "question": 3198,
-            "description": "Absolutely. It'd be pathetic if we let left-wingers and liberal media divide us in the face of Hillary Clinton. I would be honored to let Trump speak at the convention, and I'll even offer him a cabinet position. We're going to show Clinton that the Republicans are united."
+            "description": "Absolutely. It'd be pathetic if we let left-wingers divide us in the face of Hillary Clinton. I would be honored to let Trump speak at the convention, and I'll even offer him a cabinet position. We're going to show Clinton that the Republicans are united."
         }
     },
     {
@@ -2106,7 +2098,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51385,
         "fields": {
             "question": 51242,
-            "description": "I agree with McConnell. The Democrats desperately want to appoint a justice now regardless of what voters say. This is the people's seat, not the Democrat's seat."
+            "description": "I agree with McConnell. The Democrats desperately want to appoint a justice now regardless of what voters say. The Supreme Court belongs to the people, not the Democrats."
         }
     },
     {
@@ -2282,7 +2274,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51590,
         "fields": {
             "question": 51533,
-            "description": "So I was right. Killing Klinton really is a murderer.  We're going to be posting about this all week. We're gonna have a good time. And we're gonna lock her up."
+            "description": "So I was right. Killing Klinton really is a murderer. We're going to be posting about this all week. We're gonna have a good time. And we're gonna lock her up."
         }
     }
 ]
@@ -2983,19 +2975,19 @@ campaignTrail_temp.issues_json = [
         "fields": {
             "name": "Globalization",
             "description": "",
-            "stance_1": "Free Trade",
+            "stance_1": "Globalist",
             "stance_desc_1": 0,
             "stance_2": "Free Trade",
             "stance_desc_2": 0,
-            "stance_3": "Moderate",
+            "stance_3": "Fair Trade",
             "stance_desc_3": 0,
-            "stance_4": "Moderate",
+            "stance_4": "Fair Trade",
             "stance_desc_4": 0,
-            "stance_5": "Moderate",
+            "stance_5": "Fair Trade",
             "stance_desc_5": 0,
             "stance_6": "Protectionist",
             "stance_desc_6": 0,
-            "stance_7": "Protectionist",
+            "stance_7": "Mercantilist",
             "stance_desc_7": 0,
             "election": 20
         }
@@ -3027,9 +3019,9 @@ campaignTrail_temp.issues_json = [
         "model": "campaign_trail.issue",
         "pk": 103,
         "fields": {
-            "name": "Obama Administration",
+            "name": "Barack Obama",
             "description": "",
-            "stance_1": "Despised",
+            "stance_1": "Socialist",
             "stance_desc_1": 0,
             "stance_2": "Hated",
             "stance_desc_2": 0,
@@ -3041,7 +3033,7 @@ campaignTrail_temp.issues_json = [
             "stance_desc_5": 0,
             "stance_6": "Loved",
             "stance_desc_6": 0,
-            "stance_7": "Admired",
+            "stance_7": "War Criminal",
             "stance_desc_7": 0,
             "election": 20
         }
@@ -4888,7 +4880,7 @@ campaignTrail_temp.state_issue_score_json = [
         "fields": {
             "state": 1036,
             "issue": 101,
-            "state_issue_score": -0.15,
+            "state_issue_score": -0.35,
             "weight": 0.5
         }
     },
@@ -7737,36 +7729,6 @@ campaignTrail_temp.answer_score_global_json = [
     },
     {
         "model": "campaign_trail.answer_score_global",
-        "pk": 3062,
-        "fields": {
-            "answer": 51212,
-            "candidate": 200,
-            "affected_candidate": 201,
-            "global_multiplier": 0.005
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
-        "pk": 3062,
-        "fields": {
-            "answer": 51207,
-            "candidate": 200,
-            "affected_candidate": 201,
-            "global_multiplier": 0.005
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
-        "pk": 3062,
-        "fields": {
-            "answer": 51205,
-            "candidate": 200,
-            "affected_candidate": 201,
-            "global_multiplier": 0.005
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
         "pk": 3075,
         "fields": {
             "answer": 5121,
@@ -8257,16 +8219,6 @@ campaignTrail_temp.answer_score_global_json = [
     },
     {
         "model": "campaign_trail.answer_score_global",
-        "pk": 51250,
-        "fields": {
-            "answer": 51068,
-            "candidate": 200,
-            "affected_candidate": 200,
-            "global_multiplier": -0.04
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
         "pk": 51251,
         "fields": {
             "answer": 51050,
@@ -8737,12 +8689,52 @@ campaignTrail_temp.answer_score_global_json = [
     },
     {
         "model": "campaign_trail.answer_score_global",
+        "pk": 51594,
+        "fields": {
+            "answer": 51212,
+            "candidate": 200,
+            "affected_candidate": 201,
+            "global_multiplier": 0.005
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 51595,
+        "fields": {
+            "answer": 51207,
+            "candidate": 200,
+            "affected_candidate": 201,
+            "global_multiplier": 0.005
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
         "pk": 51596,
+        "fields": {
+            "answer": 51205,
+            "candidate": 200,
+            "affected_candidate": 201,
+            "global_multiplier": 0.005
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 51597,
         "fields": {
             "answer": 51531,
             "candidate": 200,
             "affected_candidate": 201,
             "global_multiplier": -0.3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 51601,
+        "fields": {
+            "answer": 51557,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "global_multiplier": 0.001
         }
     }
 ]
@@ -8906,26 +8898,6 @@ campaignTrail_temp.answer_score_issue_json = [
             "issue": 103,
             "issue_score": -0.45,
             "issue_importance": 3
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 51070,
-        "fields": {
-            "answer": 51068,
-            "issue": 100,
-            "issue_score": -0.45,
-            "issue_importance": 3
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 51071,
-        "fields": {
-            "answer": 51068,
-            "issue": 104,
-            "issue_score": -0.45,
-            "issue_importance": 2
         }
     },
     {
@@ -10747,7 +10719,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5091,
             "candidate": 200,
-            "answer_feedback": "You sounded like a typical Republican until you mentioned you would sign a national abortion ban. This has appeal to the most devout evangelicals, and they are cheering on that you are defending their values. For everyone else, though, this is poison. You're bravery is admirable, but this won't bode well for your campaign."
+            "answer_feedback": "This has appeal to the most devout evangelicals, and they are cheering on that you are defending their values. For everyone else, though, this is poison. You're bravery is admirable, but this won't bode well for your campaign."
         }
     },
     {
@@ -11062,7 +11034,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5102,
             "candidate": 200,
-            "answer_feedback": "The media notices a clear pivot from the question, but your supporters know exactly what you're talking about."
+            "answer_feedback": "The media notices a clear pivot from the question, but your supporters know exactly what you're talking about, and they appreciate your conservative vision for the future."
         }
     },
     {
@@ -11098,7 +11070,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51045,
             "candidate": 200,
-            "answer_feedback": "You seem unusually restrained this time around - if that’s even easy to believe."
+            "answer_feedback": "You seem unusually restrained this time around - if that’s easy to believe."
         }
     },
     {
@@ -11112,20 +11084,11 @@ campaignTrail_temp.answer_feedback_json = [
     },
     {
         "model": "campaign_trail.answer_feedback",
-        "pk": 51069,
-        "fields": {
-            "answer": 51068,
-            "candidate": 200,
-            "answer_feedback": "This is a bit out of character for you. Parts of the party are very happy with this rhetoric, but it's a touch too extreme for most voters... for now."
-        }
-    },
-    {
-        "model": "campaign_trail.answer_feedback",
         "pk": 51073,
         "fields": {
             "answer": 51072,
             "candidate": 200,
-            "answer_feedback": "You've been a devout supporter of an abortion ban your entire career, so why pivot now? The Christian right is furious at your seeming abandonment of all your principles, whilst moderates don't actually believe your sudden change is sincere. You're looking like just as much of a flip-flopper as Clinton."
+            "answer_feedback": "You've been a devout supporter of an abortion ban your entire career, so why pivot now? The Christian right is furious at your seeming abandonment of your policies, whilst moderates don't actually believe your sudden change is sincere."
         }
     },
     {
@@ -11676,6 +11639,24 @@ campaignTrail_temp.answer_feedback_json = [
             "candidate": 200,
             "answer_feedback": "Some question whether you should interfere in this, urging you to be more cautious, but when have you ever done anything the cautious way?"
         }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 51599,
+        "fields": {
+            "answer": 51203,
+            "candidate": 200,
+            "answer_feedback": "The money starts flowing in, although it seems small compared to the millions Clinton is raking in, from those Planned Parenthood wannabes."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 51600,
+        "fields": {
+            "answer": 51557,
+            "candidate": 200,
+            "answer_feedback": "Good response. This also helps reassure some voters who are concerned with your hawkishness."
+        }
     }
 ]
 
@@ -11734,7 +11715,6 @@ campaignTrail_temp.jet_data = [{
     }
 }
 ]
-
 
 
 e.SelAnsContText = "Ted, are you in there? You didn't choose anything. We have an election to win."
