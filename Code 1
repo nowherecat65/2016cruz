@@ -1197,9 +1197,6 @@ style.innerHTML = `
     background: linear-gradient(135deg, #2c3e50, #1c2833) !important;
     color: #ffffff !important;
   }
-
-// Misc.
-
   #state_info h3,
   #state_result h3,
   #overall_result h3 {
