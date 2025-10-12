@@ -536,8 +536,8 @@ campaignTrail_temp.candidate_json = [
             "state": "Senator from Texas",
             "priority": 1,
             "description": "Becoming a Senator from Texas just around 3 years ago, Ted Cruz has quickly become one of the most controversial members of the Senate. Sent to Capitol Hill in 2012, he's the fighter the Tea Party has been looking for. A staunch conservative and originalist, he's become hated by even many in his own party.<br><br>It all came to a boiling point in October 2013, when Republicans, led by Cruz, refused to pass the next appropriation bill unless Obamacare was defunded. The Democrats refused to back down, and the result was nearly a month of chaos and government defunction.<br><br>Still disliked by most of Congress and enormously popular amongst conservatives, the young Senator has announced his campaign for President. To win, he must win the primary, unite the party, and still focus on the most important task of defeating Clinton.",
-            "color_hex": "#B22222",
-            "secondary_color_hex": "#E57373",
+            "color_hex": "#8E3B3B",
+            "secondary_color_hex": "#D17A7A",
             "is_active": 1,
             "image_url": "https://i.imgur.com/yqL9NWD.jpeg",
             "electoral_victory_message": "<h3>Congratulations! You have won the 2016 election.</h3><p>In spite of a hard-fought challenge from Hillary Clinton, you have shocked the world with your election victory.</p><p>On the political front, you have the bully pulpit in your favor, but support in Congress in uncertain. Will you govern as a more traditional conservative, or will you make a break from orthodoxy?</p>",
@@ -559,8 +559,8 @@ campaignTrail_temp.candidate_json = [
             "state": "New York",
             "priority": 2,
             "description": "no description",
-            "color_hex": "#1E3A8A",
-            "secondary_color_hex": "#64B5F6",
+            "color_hex": "#3A5DAE",
+            "secondary_color_hex": "#6F9EEB",
             "is_active": 0,
             "image_url": "https://i.imgur.com/emwi03U.png",
             "electoral_victory_message": "<h3>Congratulations! You have won the 2016 election.</h3><p>In spite of a hard-fought challenge from Donald Trump, you have become the first woman elected to serve as President.</p><p>On the political front, it is unclear how much of your agenda you will be able to push forward with the current Congress. Hopefully your victory has helped Democrats further down the ballot. Start packing and prepare to move back into the White House!</p>",
@@ -1243,11 +1243,15 @@ a:hover {
     padding: 0.5rem;
   }
 
-  #map_container {
-    background: linear-gradient(135deg, #f8f6fb, #eae6f4, #dcd7e6) !important;
-    background-size: 200% 200%;
-    border-radius: 0.75rem;
-  }
+#map_container {
+  background: linear-gradient(
+    315deg,
+    #2f5470 0%,   
+    #3e3b52 50%,  
+    #453535 100%  
+  ) !important;
+  background-size: 200% 200%;
+}
 
   .game_header h2 {
     color: #ffffff;
