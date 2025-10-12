@@ -1040,9 +1040,14 @@ style.innerHTML = `
     background: linear-gradient(135deg, #1e242a, #2a353f);
   }
 
-  a:-webkit-any-link {
-    color: #007A7A;
-  }
+a {
+  color: #007A7A;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #005E5E;
+}
 
 .inner_window_w_desc {
     background: linear-gradient(135deg, #1B1F23 0%, #22262B 50%, #2C3035 100%) !important;
