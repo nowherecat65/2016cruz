@@ -799,7 +799,7 @@ if (HillaryInvestigation == 1) {
     "pk": 51526,
     "fields": {
       "priority": 1,
-      "description": "Just 1 week before Election Day, Jeff frantically rushes into your hotel lounge. He tells you that his team has found videos that show Hillary ordering the execution of Vince Foster, through the White House telephone, He says that the CIA followed her orders and shot him, then faked a suicide.",
+      "description": "Just 2 weeks before Election Day, Jeff frantically rushes into your hotel lounge. He tells you that his team has found secret tapes, from an anonymous source, that show Hillary ordering the execution of Vince Foster, through the White House telephone. He says that the CIA followed her orders and shot him, then faked a suicide.",
       "likelihood": 1
     }
   };
@@ -822,18 +822,18 @@ if (HillaryInvestigation < 0) {
     "pk": 51533,
     "fields": {
       "priority": 1,
-      "description": "The information rapidly spreads, even as Democrat operatives do their best to stop the video spreading. The nation is shocked that a Presidential candidate and such an admired figure like Clinton could commit murder. The FBI continues to claim the videos are forged, but no amount of lies from them can change what people saw. They saw a woman ordering a man to be executed. Hillary and Bill Clinton both have not been seen since the leaks. The Democrat Party, in a last-ditch effort to prevent total annihilation, have nominated Senator Bernie Sanders, with Tulsi Gabbard as his running mate. Most early voters have already cast their vote for Clinton/Kaine, and regardless of what you do. your opposition is imploding. How do you exploit this.",
+      "description": "The information rapidly spreads, even as some of Clinton's operatives do their best to stop the video spreading. The nation is shocked that a Presidential candidate and such an admired figure like Clinton could commit murder. The FBI continues to claim the videos are forged, but no amount of lies from them can change what people saw. They saw a woman ordering a man to be executed. Hillary and Bill Clinton both have not been seen since the leaks. The Democrat Party desperately tries to nominate a replacement, but the deadline has already passed. Any comment?",
       "likelihood": 1
     }
   };
 
-   e.global_parameter_json[0].fields.question_count = 30
+   e.global_parameter_json[0].fields.question_count = 28
    campaignTrail_temp.candidate_json[1]["fields"].first_name = "Killary";
    campaignTrail_temp.candidate_json[1]["fields"].last_name = "Klinton";
   campaignTrail_temp.candidate_json.find(candidate => candidate.pk == 201).fields.color_hex = '#1f7ca3';
   campaignTrail_temp.candidate_json.find(candidate => candidate.pk == 200).fields.color_hex = '#A35C5C';
         		vpTable["Killary Klinton"] = "Killing Kaine";
-e.ElectionPopup = "Your facing a murderer for re-election. Christ."
+e.ElectionPopup = "Hillary's been outed as a criminal, but you still have an election to win. Good luck."
 e.LosePopup = "Did you just lose... to a murderer?"
 e.WinPopup = "As expected. Let's get Foster some justice."
 
@@ -1060,7 +1060,6 @@ document.head.appendChild(customStyling);
         return false;
     }
 }
-
 campaignTrail_temp.questions_json = [
     {
         "model": "campaign_trail.question",
@@ -1310,7 +1309,16 @@ campaignTrail_temp.questions_json = [
         "pk": 51575,
         "fields": {
             "priority": 0,
-            "description": "The evidence is clear. The video shows Hillary ordering the murder of Vince Foster. The entire public believes it is genuine, whilst the FBI claims the video was forged. Absolute pandemonium has ensued. You have seen a ridiculous surge in the polls, and Hillary's whereabouts are currently unknown. In a last-ditch effort to prevent a total wipeout, the Democrats have scrambled and nominated Bernie Sanders of Vermont to replace her on the ticket, with Tulsi Gabbard as his running mate. Not only is this likely illegal, but most early voters have already voted for Clinton/Kaine. The opposition is in chaos, and before Election Day begins, now is the best time to secure your victory. Where are you headed?",
+            "description": "The evidence is clear. The video shows Hillary ordering the murder of Vince Foster. The entire public believes it is genuine, whilst the FBI claims the video was forged. Absolute pandemonium has ensued. You have seen a ridiculous surge in the polls, and Hillary's whereabouts are currently unknown. The opposition is in chaos, and before Election Day begins, now is the best time to secure your victory. Where are you headed?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 51533,
+        "fields": {
+            "priority": 0,
+            "description": "The information rapidly spreads, even as some of Clinton's operatives do their best to stop the video spreading. The nation is shocked that a Presidential candidate and such an admired figure like Clinton could commit murder. The FBI continues to claim the videos are forged, but no amount of lies from them can change what people saw. They saw a woman ordering a man to be executed. Hillary and Bill Clinton both have not been seen since the leaks. The Democrat Party desperately tries to nominate a replacement, but the deadline has already passed. Any comment?",
             "likelihood": 1
         }
     },
@@ -1347,24 +1355,6 @@ campaignTrail_temp.questions_json = [
         "fields": {
             "priority": 0,
             "description": "Just 2 weeks before Election Day, Jeff frantically rushes into your hotel lounge. He tells you that his team has found secret tapes, from an anonymous source, that show Hillary ordering the execution of Vince Foster, through the White House telephone. He says that the CIA followed her orders and shot him, then faked a suicide.",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 51533,
-        "fields": {
-            "priority": 0,
-            "description": "The information rapidly spreads, even as some of Clinton's operatives do their best to stop the video spreading. The nation is shocked that a Presidential candidate and such an admired figure like Clinton could commit murder. The FBI continues to claim the videos are forged, but no amount of lies from them can change what people saw. They saw a woman ordering a man to be executed. Hillary and Bill Clinton both have not been seen since the leaks. The Democrat Party desperately tries to nominate a replacement, but the deadline has already passed. Any comment?",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 51593,
-        "fields": {
-            "priority": 0,
-            "description": "Bernie Sanders, after suddenly being chosen by the party at the last second",
             "likelihood": 1
         }
     }
@@ -1736,7 +1726,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51043,
         "fields": {
             "question": 1022,
-            "description": "This investigation was a complete disaster. Hillary destroyed nearly all the evidence during the investigation, and yet she wasn’t charged. On day one we're going to launch a real investigation into her."
+            "description": "There were so many things wrong with this investigation. Hillary destroyed nearly all the evidence during the investigation, and yet she wasn’t charged. On day one we're going to launch a real investigation into her."
         }
     },
     {
@@ -2096,7 +2086,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51385,
         "fields": {
             "question": 51242,
-            "description": "I agree with McConnell. The Democrats desperately want to appoint a justice now regardless of what voters say. The Supreme Court belongs to the people, not the Democrats."
+            "description": "I agree with McConnell. The Democrats want to appoint a justice now regardless of what voters say. The Supreme Court belongs to the people, not the Democrats."
         }
     },
     {
@@ -2225,14 +2215,6 @@ campaignTrail_temp.answers_json = [
         "fields": {
             "question": 51526,
             "description": "Wha- you're joking right?"
-        }
-    },
-    {
-        "model": "campaign_trail.answer",
-        "pk": 51557,
-        "fields": {
-            "question": 51472,
-            "description": "This is the wrong way to achieve peace in the Middle East. This is a sign of weakness from the Obama administration that will do nothing but embolden Iran and the terrorist groups that they fund. You cannot have peace without strength."
         }
     },
     {
@@ -7702,7 +7684,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 51122,
             "candidate": 200,
             "affected_candidate": 200,
-            "global_multiplier": -0.01
+            "global_multiplier": -0.02
         }
     },
     {
@@ -8723,16 +8705,6 @@ campaignTrail_temp.answer_score_global_json = [
             "candidate": 200,
             "affected_candidate": 201,
             "global_multiplier": -0.3
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
-        "pk": 51601,
-        "fields": {
-            "answer": 51557,
-            "candidate": 200,
-            "affected_candidate": 200,
-            "global_multiplier": 0.001
         }
     }
 ]
@@ -11122,7 +11094,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51122,
             "candidate": 200,
-            "answer_feedback": "Actually, it is your problem, and all your doing is hurting your chances even more by retaining your pride. "
+            "answer_feedback": "R.I.P Ted. It was nice knowing you."
         }
     },
     {
@@ -11608,7 +11580,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51579,
             "candidate": 200,
-            "answer_feedback": "This is bold, but perhaps with how catastrophically the Democratic party has imploded, these states are in play. It'll be difficult to flip Vermont though, because that state loves it's hometown hero Bernie."
+            "answer_feedback": "This is bold, but perhaps with how catastrophically the Democratic party has imploded, these states are in play. Good luck tomorrow. "
         }
     },
     {
@@ -11645,15 +11617,6 @@ campaignTrail_temp.answer_feedback_json = [
             "answer": 51203,
             "candidate": 200,
             "answer_feedback": "The money starts flowing in, although it seems small compared to the millions Clinton is raking in, from those Planned Parenthood wannabes."
-        }
-    },
-    {
-        "model": "campaign_trail.answer_feedback",
-        "pk": 51600,
-        "fields": {
-            "answer": 51557,
-            "candidate": 200,
-            "answer_feedback": "Good response. This also helps reassure some voters who are concerned with your hawkishness."
         }
     }
 ]
@@ -11713,6 +11676,7 @@ campaignTrail_temp.jet_data = [{
     }
 }
 ]
+
 
 
 e.SelAnsContText = "Ted, are you in there? You didn't choose anything. We have an election to win."
