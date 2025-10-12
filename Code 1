@@ -747,7 +747,28 @@ campaignTrail_temp.running_mate_json = [
     }
 ]
 
-campaignTrail_temp.credits = "TheMcCain & theanswerisme"
+function updateCreditForm() {
+      const heading = document.querySelector("#credits");
+      if (heading) {
+        heading.innerHTML = "This mod was made by <button onclick='credits()'>TheMcCain and theanswerisme</button>.";
+      }
+}
+
+let changesInProgress = false;
+let masterObserver = new MutationObserver(masterFunction);
+function masterFunction() {
+        if (changesInProgress) return;
+        changesInProgress = true;
+        masterObserver.disconnect();
+
+        updateCreditForm();
+
+        changesInProgress = false;
+        masterObserver.observe(document.body, { childList: true, subtree: true });
+}
+masterObserver.observe(document.body, { childList: true, subtree: true });
+
+campaignTrail_temp.credits = "TheMcCain (Coder and Lead Writer) & theanswerisme (Writing Help)"
 
 let savedX = null;
 let savedY = null;
