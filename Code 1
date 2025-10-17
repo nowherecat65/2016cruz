@@ -315,7 +315,7 @@ tr:last-child td {
 
 // Opening screen.
 
-document.getElementById("inner_window_1").children[1].innerHTML = `<div style="text-align: center; margin-top: 0;"><img src="https://i.imgur.com/R0iIQoi.png" alt="Image" style="width: 55%;"></div><p>“What's wrong with some people?”<br><br>This is a question you find yourself asking over and over again. Some of the politicians you meet in Capitol Hill are the most corrupt, nasty, disgusting people you'll ever meet. Few people have wanted to destroy the deep state, even less have tried, but nobody has ever succeeded.<br><br>The wanton abortion loving, sinful marriage loving, America-hating, wealthy, elitist, deep state.<br><br>6 years ago, the Tea Party was swept into power with promises to end the deep state. Most of them became apart of the deep state. But not you. it's time a President fought for We the People. We will not stop until we take our country back. No surrender.<br><b><u>Note: Mod is <i>very</i> biased, this is intentional. Just a heads up.</b></u>`;
+document.getElementById("inner_window_1").children[1].innerHTML = `<div style="text-align: center; margin-top: 0;"><img src="https://i.imgur.com/vv0KkHH.png" alt="Image" style="width: 55%;"></div><p>“What's wrong with some people?”<br><br>This is a question you find yourself asking over and over again. Some of the politicians you meet in Capitol Hill are the most corrupt, nasty, disgusting people you'll ever meet. Few people have wanted to destroy the deep state, even less have tried, but nobody has ever succeeded.<br><br>The wanton abortion loving, sinful marriage loving, America-hating, wealthy, elitist, deep state.<br><br>6 years ago, the Tea Party was swept into power with promises to end the deep state. Most of them became apart of the deep state. But not you. it's time a President fought for We the People. We will not stop until we take our country back. No surrender.<br><b><u>Note: Mod is <i>very</i> biased, this is intentional. Just a heads up.</b></u>`;
 document.getElementById("inner_window_1").children[0].innerHTML="<h2><i style=\"color:#2e2e2e;\">Tough as Texas</i></h2></i>"
 
 let child = document.getElementById("inner_window_1").children[0];
@@ -635,7 +635,7 @@ campaignTrail_temp.candidate_json = [
             "electoral_victory_message": "Win",
             "electoral_loss_message": "Loss",
             "no_electoral_majority_message": "No majority",
-            "description_as_running_mate": "<div style='overflow-y:scroll;height:14em;font-size:1em;'><p style='margin-top:0em;'>Carly Fiorina would certainly be an unorthodox choice. As one of your former primary opponents and the ex-CEO of corporate giant Hewlett-Packard, she has little political experience, her only foray into politics was a failed 2010 Senate run in California.<br><br>Still, despite being unconventional, Fiorina could offer unique advantages. She might help reclaim portions of the female vote from Hillary Clinton and could serve as a bridge between moderates and conservatives heading into the general election. She also performed well in the primary debates.<br><br>On the other hand, Fiorina’s record at HP is mired in controversy. Thousands of employees were laid off during her tenure, and in 2005 she was forced out by shareholders amid the company’s poor performance. Her corporate past would inevitably become a liability for the ticket.</p></div>",
+            "description_as_running_mate": "Carly Fiorina would certainly be an unorthodox choice. As one of your former primary opponents and the ex-CEO of corporate giant Hewlett-Packard, she has little political experience, her only foray into politics was a failed 2010 Senate run in California.<br><br>Still, despite being unconventional, Fiorina could offer unique advantages. She might help reclaim portions of the female vote from Hillary Clinton and could serve as a bridge between moderates and conservatives heading into the general election. She also performed well in the primary debates.<br><br>On the other hand, Fiorina’s record at HP is mired in controversy. Thousands of employees were laid off during her tenure, and in 2005 she was forced out by shareholders amid the company’s poor performance. Her corporate past would inevitably become a liability for the ticket.",
             "candidate_score": 1,
             "running_mate": true
         }
@@ -1383,7 +1383,7 @@ function setupMusicPlayer() {
     "What I've Done",
     "Linkin Park",
     "https://i.imgur.com/65s4viR.png",
-    "https://file.garden/Z-8vn6l_RynAMnyS/What%20I've%20Done%20(Official%20Music%20Video)%20%5B4K%20Upgrade%5D%20-%20Linkin%20Park.mp3"
+    "https://audio.jukehost.co.uk/PcjEhjT7pxAa8SP6x4x6OBKgTuTCn8vM"
   );
 
   const song2 = new Song(
@@ -1775,6 +1775,9 @@ $("#game_window")[0].style.background = "linear-gradient(#303841, #1b1f23)";
             url: "https://www.p2016.org/blogads/NARAL_HRC_IEAd_NHLaborNews_800x100-20151223.jpg",
             weight: 1
         },
+            url: "https://www.p2016.org/blogads/trump0815newsmax893F9CBF65B5451695FE6D4CE6E30E45%20%281%29.jpg",
+            weight: 1
+        },
         {
             url: "https://www.p2016.org/blogads/nextgen012616crgazetta.jpg",
             weight: 1
@@ -1799,10 +1802,23 @@ $("#game_window")[0].style.background = "linear-gradient(#303841, #1b1f23)";
             url: "https://www.p2016.org/blogads/carson061915p2016.jpg",
             weight: 1
         },
+            url: "https://www.p2016.org/blogads/ben%20carson%20050815%20blogad%20728x90%20for%20america%20drudge.jpg",
+            weight: 1
+        },
+            url: "https://www.p2016.org/blogads/ben%20carson%20050815%20blogad%20728x90%20for%20america%20drudge.jpg",
+            weight: 1
+        },
+           url: "https://www.p2016.org/blogads/comicbookmoviecom013016xx724e818f-a251-4a11-828e-d82eb600712f.jpg",
+            weight: 1
+        },
+           url: "https://www.p2016.org/blogads/comicbookmoviecom013016xx724e818f-a251-4a11-828e-d82eb600712f.jpg",
+            weight: 1
+        },
         {
             url: "https://i.imgur.com/OJigFr9.png",
             weight: 1
         }
+
     ];
 
     // caching system
