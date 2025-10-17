@@ -608,52 +608,80 @@ vpTableHistorical = {
   } 
 
 function onGameWindowChangeCandidates() {
-        const resultsTableHolder = document.getElementById("overall_details_container");
+    // -------------------------------
+    // 1. Handle #overall_details_container
+    // -------------------------------
+    const resultsTableHolder = document.getElementById("overall_details_container");
 
-        if(!resultsTableHolder || resultsTableHolder.classList.contains("done")) {
-            return;
-        }
-
+    if (resultsTableHolder && !resultsTableHolder.classList.contains("done")) {
         resultsTableHolder.classList.add("done");
 
-        const resultsTable = resultsTableHolder.childNodes[3].childNodes[3].children[0];
-        
-        for(let i = 0; i < resultsTable.children.length; i++) {
-            const row = resultsTable.children[i];
-            let name = row.firstChild.innerText;
-            row.insertCell(1);
-            if(name) {
-                name = name.replaceAll("-", "").trim();
-                console.log("name is:" + name)
-            }
+        // MAIN RESULTS TABLE
+        const resultsTable = resultsTableHolder?.childNodes?.[3]?.childNodes?.[3]?.children?.[0];
+        if (resultsTable) {
+            for (let i = 0; i < resultsTable.children.length; i++) {
+                const row = resultsTable.children[i];
+                let name = row.firstChild?.innerText || "";
+                row.insertCell(1);
+                if (name) name = name.replaceAll("-", "").trim();
 
-            if(i == 0) {
-                row.children[1].innerHTML = `<span style="font-weight:bold">Running Mate<span>`;
-            }
-            else {
-                row.children[1].innerHTML = vpTable[name];
+                if (i === 0) {
+                    row.children[1].innerHTML = `<span style="font-weight:bold">Running Mate</span>`;
+                } else {
+                    row.children[1].innerHTML = vpTable[name] || "";
+                }
             }
         }
 
-        
-        const resultsTableHistorical = resultsTableHolder.childNodes[5].childNodes[3].children[0];
-        
-        for(let i = 0; i < resultsTableHistorical.children.length; i++) {
-            const row = resultsTableHistorical.children[i];
-            let name = row.childNodes[1].innerText;
-            row.insertCell(1);
-            if(name) {
-                name = name.replaceAll("-", "").trim();
-            }
+        // HISTORICAL RESULTS TABLE
+        const resultsTableHistorical = resultsTableHolder?.childNodes?.[5]?.childNodes?.[3]?.children?.[0];
+        if (resultsTableHistorical) {
+            for (let i = 0; i < resultsTableHistorical.children.length; i++) {
+                const row = resultsTableHistorical.children[i];
+                let name = row.childNodes?.[1]?.innerText || "";
+                row.insertCell(1);
+                if (name) name = name.replaceAll("-", "").trim();
 
-            if(i == 0) {
-                row.children[1].innerHTML = `<span style="font-weight:bold">Running Mate<span>`;
-            }
-            else {
-                row.children[1].innerHTML = vpTableHistorical[name];
+                if (i === 0) {
+                    row.children[1].innerHTML = `<span style="font-weight:bold">Running Mate</span>`;
+                } else {
+                    row.children[1].innerHTML = vpTableHistorical[name] || "";
+                }
             }
         }
+    }
+
+    // -------------------------------
+    // 2. Handle #overall_vote_statistics
+    // -------------------------------
+    const statsHolder = document.getElementById("overall_vote_statistics");
+    const statsTable = statsHolder?.querySelector("table.final_results_table");
+
+    // Only proceed if table exists and not already modified
+    if (statsTable && !statsTable.classList.contains("rm-done")) {
+        statsTable.classList.add("rm-done");
+
+        const rows = statsTable.rows;
+        for (let i = 0; i < rows.length; i++) {
+            const row = rows[i];
+            const firstCell = row.cells[0];
+            if (!firstCell) continue;
+
+            let name = firstCell.innerText || "";
+            name = name.replaceAll("-", "").trim();
+
+            // Insert new column after the first one
+            row.insertCell(1);
+
+            if (i === 0) {
+                row.cells[1].innerHTML = `<span style="font-weight:bold">Running Mate</span>`;
+            } else {
+                row.cells[1].innerHTML = vpTable[name] || "";
+            }
+        }
+    }
 }
+
 
 const gameWindowNode = document.getElementById("game_window");
 const candidateWatcherConfig = { attributes: true, childList: true, subtree: true };
