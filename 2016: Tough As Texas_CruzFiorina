@@ -769,9 +769,6 @@ if (ans == 51460) {
 if (ans == 51531) {
         HillaryInvestigation  -= 2;
     }
-if (ans == 51203) {
-    window.open("https://en.wikipedia.org/wiki/Casualties_of_the_Gaza_war", "_blank");
-}
 
 // If you decide to duck out of the debate
 
