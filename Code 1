@@ -358,7 +358,8 @@ appendStyle();
 campaignTrail_temp.achievements = {
     "Tariff Man" : {
         "image" : "https://i.imgur.com/xzR9Xgq.png",
-        "description" : "As Ted Cruz, lose the nomination to Donald Trump." // 
+        "description" : "As Ted Cruz, lose the nomination to Donald Trump.", // self-explanatory
+        "cannotBeCheated" : true
  },
     "Worthy Sacrifice" : {
         "image" : "https://i.imgur.com/GU9Z3Cg.png",
