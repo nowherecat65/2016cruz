@@ -938,10 +938,10 @@ function makeDraggable(element){
 
 
 const creditListA = [ 
-    { photo: 'https://i.imgur.com/DeON6Uc.png', text: '<b>TheMcCain</b><br><b>Lead Dev / Coder / Main Writer<br>', button: 'Defer', id: 'MCCAIN_A'},
+    { photo: 'https://i.imgur.com/9bkzEuf.png', text: '<b>TheMcCain</b><br><b>Coder and Lead Writer<br>', button: 'Defer', id: 'id1'},
 ]
 const creditListB = [ 
-    { photo: 'https://i.imgur.com/kIcHBZz.png', text: '<b>theanswerisme</b><br><b>Writer</b><br>', button: 'Defer', id: 'ROUTEVENUS_A'},
+    { photo: 'https://i.imgur.com/kIcHBZz.png', text: '<b>theanswerisme</b><br><b>Writer</b><br>', button: 'Defer', id: 'id2'},
 ]
 const creditListC = [ 
 ]
