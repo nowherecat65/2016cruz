@@ -751,7 +751,7 @@ campaignTrail_temp.running_mate_json = [
 function updateCreditForm() {
       const heading = document.querySelector("#credits");
       if (heading) {
-        heading.innerHTML = "This mod was made by <button onclick='credits()'>TheMcCain and theanswerisme</button>.";
+        heading.innerHTML = "This mod was made by TheMcCain & theanswerisme.";
       }
 }
 
@@ -820,7 +820,7 @@ credits = function() {
         popOutMenu.appendChild(closeButton);
 
         const menuTitle = document.createElement('h1');
-        menuTitle.innerText = 'Credits';
+        menuTitle.innerText = '(Full Credits in Further Reading)';
         menuTitle.style.textAlign = 'center';
         menuTitle.style.fontFamily = '"Segoe UI", Tahoma, Geneva, sans-serif';
         menuTitle.style.color = '#f0f0f0';
