@@ -2223,7 +2223,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51489,
         "fields": {
             "question": 51436,
-            "description": "There's no way we should do this. For every Trump supporter we lose in rural Ohio, we'll gain three more in a Cincinnati suburb. And besides, they're probably going to vote for Gary Johnson anyway."
+            "description": "There's no way we should do this. For every Trump supporter we lose in rural Ohio, we'll gain three more in a Cincinnati suburb. And besides, they're probably going to stay home anyway. I don't think they'll be very motivated to vote third-party."
         }
     },
     {
@@ -9423,6 +9423,17 @@ campaignTrail_temp.answer_score_state_json = [
         "fields": {
             "answer": 51084,
             "state": 1022,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "state_multiplier": 0.05
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 51145,
+        "fields": {
+            "answer": 51084,
+            "state": 1034,
             "candidate": 200,
             "affected_candidate": 200,
             "state_multiplier": 0.05
