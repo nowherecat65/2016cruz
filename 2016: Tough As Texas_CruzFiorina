@@ -3042,7 +3042,7 @@ campaignTrail_temp.issues_json = [
         "fields": {
             "name": "Barack Obama",
             "description": "",
-            "stance_1": "Socialist",
+            "stance_1": "Socialist Commie",
             "stance_desc_1": 0,
             "stance_2": "Hated",
             "stance_desc_2": 0,
@@ -3191,7 +3191,7 @@ campaignTrail_temp.state_issue_score_json = [
         "fields": {
             "state": 1002,
             "issue": 100,
-            "state_issue_score": -0.35,
+            "state_issue_score": -0.2,
             "weight": 1
         }
     },
@@ -5893,7 +5893,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 200,
             "state": 1002,
-            "state_multiplier": 0.94
+            "state_multiplier": 0.962
         }
     },
     {
