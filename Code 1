@@ -475,7 +475,7 @@ campaignTrail_temp.modBoxTheme = {
 
 HistHexcolour=["#B22222","#2633be","#E3B807","#168C40",];
         HistName=[" Ted Cruz"," Hillary R. Clinton"," Gary Johnson"," Jill Stein"];
-        HistEV=[270,268,0,0];
+        HistEV=[269,269,0,0];
         HistPV=["63,421,103","69,031,305","1,020,341","405,035"];
         HistPVP=["47.4%","52.3%","0.7%","0.3%"];
 
