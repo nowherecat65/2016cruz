@@ -272,22 +272,22 @@ const EstablishmentMap = {
 };
 const IdeologyMap = {
     "-7": `You’re seen as a <span style="color: #CD1025;"><strong>RINO</strong></span>. (<span style="color: #CD1025;"><strong>-7</strong></span>)`,
-    "-6": `You’re seen as <span style="color: #FB6723;"><strong>too moderate</strong></span>. (<span style="color: #FB6723;"><strong>-6</strong></span>)`,
-    "-5": `You’re seen as <span style="color: #FB6723;"><strong>too moderate</strong></span>. (<span style="color: #FB6723;"><strong>-5</strong></span>)`,
-    "-4": `You’re seen as a <span style="color: #DEB83E;"><strong>moderate</strong></span>. (<span style="color: #DEB83E;"><strong>-4</strong></span>)`,
-    "-3": `You’re seen as a <span style="color: #DEB83E;"><strong>moderate</strong></span>. (<span style="color: #DEB83E;"><strong>-3</strong></span>)`,
-    "-2": `You’re seen as <span style="color: #6DCF1F;"> <strong>shying away</strong></span> from conservative values. (<span style="color: #6DCF1F;"><strong>-2</strong></span>)`,
-    "-1": `You’re seen as <span style="color: #6DCF1F;"> <strong>shying away</strong></span> from conservative values. (<span style="color: #6DCF1F;"><strong>-1</strong></span>)`,
+    "-6": `You’re seen as <span style="color: #CD1025;"><strong>too moderate</strong></span>. (<span style="color: #FB6723;"><strong>-6</strong></span>)`,
+    "-5": `You’re seen as a <span style="color: #CD1025;"><strong>RINO</strong></span>. (<span style="color: #DEB83E;"><strong>-5</strong></span>)`,
+    "-4": `You’re seen as a <span style="color: #CD1025;"><strong>RINO</strong></span>. (<span style="color: #DEB83E;"><strong>-4</strong></span>)`,
+    "-3": `You’re seen as  <span style="color: #CD1025;"><strong>too moderate</strong></span>. (<span style="color: #DEB83E;"><strong>-3</strong></span>)`,
+    "-2": `You’re seen as <span style="color: #FB6723;"> <strong>shying away</strong></span> from conservative values. (<span style="color: #6DCF1F;"><strong>-2</strong></span>)`,
+    "-1": `You’re seen as <span style="color: #FB6723;"> <strong>shying away</strong></span> from conservative values. (<span style="color: #6DCF1F;"><strong>-1</strong></span>)`,
     "0": `You’re seen as <span style="color: #57AB59;"> <strong>generally conservative</strong></span>. (<span style="color: #57AB59;"><strong>0</strong></span>)`,
     "1": `You’re seen as <span style="color: #57AB59;"> <strong>generally conservative</strong></span>. (<span style="color: #57AB59;"><strong>1</strong></span>)`,
     "2": `You’re seen as <span style="color: #6DCF1F;"> <strong>increasingly conservative</strong></span>. (<span style="color: #6DCF1F;"><strong>2</strong></span>)`,
     "3": `You’re seen as <span style="color: #6DCF1F;"> <strong>very conservative</strong></span>. (<span style="color: #6DCF1F;"><strong>3</strong></span>)`,
     "4": `You’re seen as <span style="color: #6DCF1F;"> <strong>increasingly conservative</strong></span>. (<span style="color: #6DCF1F;"><strong>4</strong></span>)`,
     "5": `You’re seen as <span style="color: #6DCF1F;"> <strong>increasingly conservative</strong></span>. (<span style="color: #6DCF1F;"><strong>5</strong></span>)`,
-    "6": `You’re seen as <span style="color: #DEB83E;"> <strong>conservative</strong></span>. (<span style="color: #DEB83E;"><strong>6</strong></span>)`,
-    "7": `You’re seen as <span style="color: #DEB83E;"> <strong>conservative</strong></span>. (<span style="color: #DEB83E;"><strong>7</strong></span>)`,
-    "8": `You’re seen as <span style="color: #DEB83E;"> <strong>conservative</strong></span>. (<span style="color: #DEB83E;"><strong>8</strong></span>)`,
-    "9": `You’re seen as <span style="color: #DEB83E;"> <strong>conservative</strong></span>. (<span style="color: #DEB83E;"><strong>9</strong></span>)`,
+    "6": `You’re seen as <span style="color: #6DCF1F;"> <strong>very conservative</strong></span>. (<span style="color: #DEB83E;"><strong>6</strong></span>)`,
+    "7": `You’re seen as <span style="color: #6DCF1F;"> <strong>very conservative</strong></span>. (<span style="color: #DEB83E;"><strong>7</strong></span>)`,
+    "8": `You’re seen as <span style="color: #6DCF1F;"> <strong>very conservative</strong></span>. (<span style="color: #DEB83E;"><strong>8</strong></span>)`,
+    "9": `You’re seen as <span style="color: #FB6723;"> <strong>too conservative</strong></span>. (<span style="color: #FB6723;"><strong>9</strong></span>)`,
     "10": `You’re seen as <span style="color: #FB6723;"> <strong>too conservative</strong></span>. (<span style="color: #FB6723;"><strong>10</strong></span>)`,
     "11": `You’re seen as <span style="color: #FB6723;"> <strong>too conservative</strong></span>. (<span style="color: #FB6723;"><strong>11</strong></span>)`,
     "12": `You’re seen as <span style="color: #FB6723;"> <strong>too conservative</strong></span>. (<span style="color: #FB6723;"><strong>12</strong></span>)`,
@@ -459,9 +459,6 @@ function updateHeadquarterContent() {
     content.innerHTML = "";
 
     let overviewtxt  = "";
-
-    EstablishmentText = `${EstablishmentMap[String(Establishment)]}`;
-    overviewtxt += "• "+ `${EstablishmentText}` + "<br>";
 
     IdeologyText = `${IdeologyMap[String(Ideology)]}`;
     overviewtxt += "• "+ `${IdeologyText}` + "<br>";
@@ -777,6 +774,16 @@ if (ans == 51122) {
 if (ans == 51121) {
         Trump += 1;
     }
+if (ans == 5091 || ans == 51228) {
+        Ideology += 3;
+    }
+if (ans == 20666 || ans == 5031 || ans == 20757 || ans == 5031 || ans == 20757) {
+        Ideology += 1;
+    }
+if (ans == 51165 || ans == 51037 || ans == 51072 || ans == 1038) {
+        Ideology -= 1;
+    }
+
 
 
 // If you decide to duck out of the debate
@@ -11569,7 +11576,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51511,
             "candidate": 200,
-            "answer_feedback": "A complete flip-flop from your earlier stance, and completely appalling to the base. Are you trying to lose the election?"
+            "answer_feedback": "A complete flip-flop from your earlier stance, and completely appalling to the base. Are you trying to LOSE the election by chance?"
         }
     },
     {
