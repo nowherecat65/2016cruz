@@ -1703,104 +1703,35 @@ $("#game_window")[0].style.background = "linear-gradient(#303841, #1b1f23)";
 
     // banner list
 const banners = [
-    {
-        url: "https://www.p2016.org/blogads/ted%20cruz%20042915%20blogad%20728x90%20punches%20flinch%20fredmiranda.gif",
-        weight: 1
-    },
-    {
-        url: "https://www.p2016.org/blogads/cruz042715p2016c.gif",
-        weight: 1
-    },
-    {
-        url: "https://www.p2016.org/blogads/rubio4president102915xx13334955871083654536.png",
-        weight: 1
-    },
-    {
-        url: "https://www.p2016.org/blogads/trump033016breitbart.jpg",
-        weight: 1
-    },
-    {
-        url: "https://www.p2016.org/blogads/clinton030516msn1.jpg",
-        weight: 1
-    },
-    {
-        url: "https://www.p2016.org/blogads/clinton012716p2016xxx3504972930897941163.jpg",
-        weight: 1
-    },
-    {
-        url: "https://www.p2016.org/blogads/jeb%20bush%20061715%20blogad%20728x90%20team%20jeb%20drudge.jpg",
-        weight: 1
-    },
-    {
-        url: "https://www.p2016.org/blogads/fsanders060516fresnobee3870331466086464205.jpeg",
-        weight: 1
-    },
-    {
-        url: "https://www.p2016.org/blogads/cruz052915p2016.gif",
-        weight: 1
-    },
-    {
-        url: "https://www.p2016.org/blogads/paul0808154president12223529040391839011.gif",
-        weight: 1
-    },
-    {
-        url: "https://www.p2016.org/blogads/chris%20christie%20063015%20blogad%20728x90%20running%20for%20president%204President.gif",
-        weight: 1
-    },
-    {
-        url: "https://www.p2016.org/blogads/omalley091015xx17972296962646412491.jpg",
-        weight: 1
-    },
-    {
-        url: "https://www.p2016.org/blogads/scott%20walker%20080715%20blogad%20728x90%20chip%20in%204president.jpg",
-        weight: 1
-    },
-    {
-        url: "https://www.p2016.org/blogads/NARAL_HRC_IEAd_NHLaborNews_800x100-20151223.jpg",
-        weight: 1
-    },
-    {
-        url: "https://www.p2016.org/blogads/trump0815newsmax893F9CBF65B5451695FE6D4CE6E30E45%20%281%29.jpg",
-        weight: 1
-    },
-    {
-        url: "https://www.p2016.org/blogads/nextgen012616crgazetta.jpg",
-        weight: 1
-    },
-    {
-        url: "https://www.p2016.org/blogads/rtrnashuatelegraph012916xxe9d9be71-9dcd-42ed-ab8c-3f007d080bdb.jpg",
-        weight: 1
-    },
-    {
-        url: "https://www.p2016.org/blogads/walker091615p2016xx3640419123098670429.jpg",
-        weight: 1
-    },
-    {
-        url: "https://www.p2016.org/blogads/bearingdrift020716xx8394401851222088692.gif",
-        weight: 1
-    },
-    {
-        url: "https://www.p2016.org/blogads/ted%20cruz%20042815%20blog%20ad%20728x90%20firstduty.gif",
-        weight: 1
-    },
-    {
-        url: "https://www.p2016.org/blogads/carson061915p2016.jpg",
-        weight: 1
-    },
-    {
-        url: "https://www.p2016.org/blogads/ben%20carson%20050815%20blogad%20728x90%20for%20america%20drudge.jpg",
-        weight: 1
-    },
-    {
-        url: "https://www.p2016.org/blogads/comicbookmoviecom013016xx724e818f-a251-4a11-828e-d82eb600712f.jpg",
-        weight: 1
-    },
-    {
-        url: "https://i.imgur.com/OJigFr9.png",
-        weight: 1
-    }
+    { url: "https://www.p2016.org/blogads/ted%20cruz%20042915%20blogad%20728x90%20punches%20flinch%20fredmiranda.gif", weight: 1 },
+    { url: "https://www.p2016.org/blogads/cruz042715p2016c.gif", weight: 1 },
+    { url: "https://www.p2016.org/blogads/rubio4president102915xx13334955871083654536.png", weight: 1 },
+    { url: "https://www.p2016.org/blogads/trump033016breitbart.jpg", weight: 1 },
+    { url: "https://www.p2016.org/blogads/clinton030516msn1.jpg", weight: 1 },
+    { url: "https://www.p2016.org/blogads/clinton010316dailymail728x90__9_.jpg", weight: 1 },
+    { url: "https://www.p2016.org/blogads/jeb%20bush%20061715%20blogad%20728x90%20team%20jeb%20drudge.jpg", weight: 1 },
+    { url: "https://www.p2016.org/blogads/fsanders060516fresnobee3870331466086464205.jpeg", weight: 1 },
+    { url: "https://www.p2016.org/blogads/cruz052915p2016.gif", weight: 1 },
+    { url: "https://www.p2016.org/blogads/rand%20paul%20070915%20blogad%20728x90%20stand%20with%204President.gif", weight: 1 },
+    { url: "https://www.p2016.org/blogads/chris%20christie%20063015%20blogad%20728x90%20running%20for%20president%204President.gif", weight: 1 },
+    { url: "https://i.imgur.com/0p1Y0mw.png", weight: 1 },
+    { url: "https://www.p2016.org/blogads/scott%20walker%20080715%20blogad%20728x90%20chip%20in%204president.jpg", weight: 1 },
+    { url: "https://www.p2016.org/blogads/NARAL_HRC_IEAd_NHLaborNews_800x100-20151223.jpg", weight: 1 },
+    { url: "https://www.p2016.org/blogads/160213_MarcoRubio_Display_728x90.gif", weight: 1 },
+    { url: "https://i.imgur.com/dmnu9p6.png", weight: 1 },
+    { url: "https://www.p2016.org/blogads/clinton040916p2016xxlistbuilding-sheswithus-color-hrcwhite-imwithher-amn-html5-728x90.jpg", weight: 1 },
+    { url: "https://www.p2016.org/blogads/trump0815newsmax893F9CBF65B5451695FE6D4CE6E30E45%20%281%29.jpg", weight: 1 },
+    { url: "https://www.p2016.org/blogads/nextgen012616crgazetta.jpg", weight: 1 },
+    { url: "https://www.p2016.org/blogads/lb-post1013debate-hwins-728x90-st-1.jpg", weight: 1 },
+    { url: "https://www.p2016.org/blogads/rtrnashuatelegraph012916xxe9d9be71-9dcd-42ed-ab8c-3f007d080bdb.jpg", weight: 1 },
+    { url: "https://www.p2016.org/blogads/walker091615p2016xx3640419123098670429.jpg", weight: 1 },
+    { url: "https://www.p2016.org/blogads/bearingdrift020716xx8394401851222088692.gif", weight: 1 },
+    { url: "https://www.p2016.org/blogads/ted%20cruz%20042815%20blog%20ad%20728x90%20firstduty.gif", weight: 1 },
+    { url: "https://www.p2016.org/blogads/carson061915p2016.jpg", weight: 1 },
+    { url: "https://www.p2016.org/blogads/ben%20carson%20050815%20blogad%20728x90%20for%20america%20drudge.jpg", weight: 1 },
+    { url: "https://www.p2016.org/blogads/comicbookmoviecom013016xx724e818f-a251-4a11-828e-d82eb600712f.jpg", weight: 1 },
+    { url: "https://i.imgur.com/OJigFr9.png", weight: 1 }
 ];
-
 
     // caching system
     class BannerCache {
