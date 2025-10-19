@@ -11805,8 +11805,6 @@ endingConstructor = (a = 1) => {
 
 e.multiple_endings = true;
 
-e.election_json[0].fields.has_visits = 0;
-
 e.header = "<h1>This is an error handler</h1>";
 e.pages = ["<p>Error</p>"];
 e.page = 0;
