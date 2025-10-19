@@ -175,8 +175,8 @@ select:disabled { opacity: 0.5; cursor: not-allowed; }
    Scrollbars
    ================================ */
 ::-webkit-scrollbar {
-  width: 16px;
-  height: 16px;
+  width: 10px;
+  height: 12px;
 }
 
 ::-webkit-scrollbar-track {
@@ -186,27 +186,11 @@ select:disabled { opacity: 0.5; cursor: not-allowed; }
 ::-webkit-scrollbar-thumb {
   background-color: #4a5663;
   border: 2px solid #22282D;
-  border-radius: 8px;
-
-  background-image: 
-    linear-gradient(#3d3d3d, #3d3d3d), /* top line */
-    linear-gradient(#3d3d3d, #3d3d3d), /* middle line */
-    linear-gradient(#22282d, #22282d); /* bottom line */
-  background-repeat: no-repeat;
-  background-size: 8px 2px;
-  background-position: center calc(50% - 4px), center 50%, center calc(50% + 4px);
+  border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: #5c6b7c;
-
-  background-image: 
-    linear-gradient(#ffffff, #ffffff),
-    linear-gradient(#ffffff, #ffffff),
-    linear-gradient(#ffffff, #ffffff);
-  background-repeat: no-repeat;
-  background-size: 8px 2px;
-  background-position: center calc(50% - 4px), center 50%, center calc(50% + 4px);
 }
 
 /* ================================
