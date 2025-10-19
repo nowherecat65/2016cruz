@@ -264,7 +264,7 @@ input[type="range"]::-moz-range-thumb {
    ================================ */
 table {
   width: 90%;
-  max-width: 700px; 
+  max-width: 700px;
   margin: 15px auto;
   border-collapse: collapse;
   font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
@@ -278,29 +278,46 @@ table {
 }
 
 th, td {
-  padding: 4px 8px; 
+  padding: 4px 8px;
   text-align: left;
   color: #dfe7eb !important;
   background: #232b32;
   border-bottom: 1px solid #3b4752;
+  transition: background 0.25s ease, color 0.25s ease;
+  font-weight: normal;
 }
 
-th {
+thead th,
+thead td,
+tr:first-child th,
+tr:first-child td {
   background: #2f3a42;
   font-weight: 600;
+  color: #dfe7eb;
 }
 
-tr:hover {
-  background: #35414b;
-}
-
-tr:nth-child(even) td {
+tbody tr:nth-child(even) td {
   background: #1f272e;
 }
 
 tr:last-child td {
   border-bottom: none;
 }
+
+tbody tr:hover td {
+  background: #35414b !important;
+  color: #ffffff !important;
+}
+
+thead tr:hover th,
+thead tr:hover td,
+tr:first-child:hover th,
+tr:first-child:hover td {
+  background: #4a5a66 !important;
+  color: #ffffff !important;
+}
+
+
 `;
 
   const id = 'industrial-buttons';
@@ -324,9 +341,6 @@ child.innerHTML = "<h2><i style='color:#2e2e2e;'>He’s Tough as Texas</i></h2>"
 // CSS
 child.style.textAlign = "center"; // horizontal centering
 child.style.marginTop = "0";      // stick to top
-
-
-
 
 // Forces the background to be centered
 function appendStyle() {
@@ -473,7 +487,7 @@ campaignTrail_temp.modBoxTheme = {
      "ui_text_color": "#FFFFFF"
 }
 
-HistHexcolour=["#B22222","#2633be","#E3B807","#168C40",];
+HistHexcolour=["#8E3B3B","#3A5DAE","#E3B807","#168C40",];
         HistName=[" Ted Cruz"," Hillary R. Clinton"," Gary Johnson"," Jill Stein"];
         HistEV=[269,269,0,0];
         HistPV=["63,421,103","69,031,305","1,020,341","405,035"];
@@ -577,7 +591,7 @@ campaignTrail_temp.candidate_json = [
         "pk": 202,
         "fields": {
             "first_name": "Gary",
-            "last_name": "Johnson",
+            "last_name": "Johnson/Others",
             "election": 20,
             "party": "Libertarian",
             "state": "New Mexico",
