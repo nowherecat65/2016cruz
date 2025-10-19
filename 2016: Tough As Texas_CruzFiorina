@@ -11776,9 +11776,6 @@ if (e.image === true) {
                 margin-left: auto;
                 margin-right: auto;
                 color: white;
-                max-height: 275px; /* or any height you prefer */
-                overflow-y: auto; /* vertical scrollbar if content is too tall */
-                overflow-x: hidden; /* hide horizontal scrollbar */
             `;
         }
     }, 10);
@@ -11792,9 +11789,7 @@ if (e.image === true) {
                 margin-left: auto;
                 margin-right: auto;
                 color: white; /* Keep all text white */
-                max-height: 275px; /* same as above */
-                overflow-y: auto; 
-                overflow-x: hidden;
+
             `;
         }       
     }, 1);
@@ -11831,7 +11826,7 @@ endingPicker = (out, totv, aa, quickstats) => {
         if ((campaignTrail_temp.player_answers[4] === 51271 || campaignTrail_temp.player_answers[4] === 51084) && quickstats[0] >= 270) { // Trump wins the election!
       campaignTrail_temp.election_json[0]["fields"].advisor_url = "https://i.imgur.com/5cfyftc.png";
         e.pages.push(`<h3>My folks, we are going to Make America Great Again!</h3><p>Out of all the ways this election could have gone, you did not expect it to go this way. Yet here we are. Donald Trump is already calling his victory “the greatest victory in the history of America” and how terrible Crooked Hillary is. Clinton is left to give her last-minute defeat speech to an emptying hall. Good riddance. The best positive you can take from this is her career is over.<br><br>Like it or not, the country has been changed forever. Trump managed to flip states that hadn't gone red since the eighties, and pundits are stunned by such an upset. With his victory, the Republican Party has become the party of tariffs and the working man, not the party of big business it was a year ago.</p>`);
-        e.pages.push(`<h3>My folks, we are going to Make America Great Again!</h3><p>Fortunately, Trump has promised to appoint several conservative justices, and the conservative majority will be preserved or even expanded under his presidency. An overturning of Roe v. Wade isn't off the table, and could likely happen sometime around the early 2020s.<br><br>You definitely still have a chance to win the presidency in the future, but you'll also need to start gearing up for re-election. Surely you won't almost lose in a Republican stronghold like Texas, right?<br><br>For now though, you can just sit back and relax. This might not have been the best possible outcome, nor the outcome you hoped for, it could've always been much worse.</p>`);
+        e.pages.push(`<h3>My folks, we are going to Make America Great Again!</h3><p>Fortunately, Trump has promised to appoint several conservative justices, and the conservative majority will be preserved or even expanded under his presidency. An overturning of Roe v. Wade isn't off the table, and could likely happen sometime around the early 2020s.<br><br>You definitely still have a chance to win the presidency in the future, but you'll also need to start gearing up for re-election. Surely you won't almost lose in a Republican stronghold like Texas, right?<br><br>For now though, you can just sit back and relax. This might not have been the best possible outcome, nor the outcome you hoped for, but it could've always been much worse.</p>`);
         e.executable.push([0, () => { e.image = 'https://i.imgur.com/gvmGNyb.png'; }]);
         e.executable.push([1, () => { e.image = 'https://i.imgur.com/gvmGNyb.png'; }]);
     if (songChange != 1) {
