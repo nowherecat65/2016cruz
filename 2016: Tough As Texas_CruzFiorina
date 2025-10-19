@@ -876,7 +876,7 @@ if (HillaryInvestigation < 0) {
         		vpTable["Killary Klinton"] = "Killing Kaine";
 e.ElectionPopup = "Hillary's been outed as a criminal, but you still have an election to win. Good luck."
 e.LosePopup = "Did you just lose... to a murderer?"
-e.WinPopup = "As expected. Let's get Foster some justice."
+e.WinPopup = "..."
 
 } else {
   campaignTrail_temp.questions_json[26] = {
@@ -895,8 +895,10 @@ e.WinPopup = "As expected. Let's get Foster some justice."
   if (ans == 51271 || ans == 51084) {
         campaignTrail_temp.candidate_json[0]["fields"].first_name = "Donald";
         campaignTrail_temp.candidate_json[0]["fields"].last_name = "Trump";
+        campaignTrail_temp.candidate_image_url = 'https://i.imgur.com/5ofosDR.png'
         campaignTrail_temp.question_number = 26;
         		vpTable["Donald Trump"] = "Chris Christie";
+ 
 e.ElectionPopup = "Well, Trump's the nominee now. Sit back and watch the ballots come in. This should be interesting."
 e.LosePopup = "He won the nomination, and he screwed it up... The RNC isn't gonna like this one bit..."
 e.WinPopup = "No way..? Trump actually won?"
@@ -11825,6 +11827,29 @@ endingPicker = (out, totv, aa, quickstats) => {
       );
       moderatedefeat.addSong(moderatedefeatSong);
     changePlaylist(moderatedefeat);
+     }
+    }
+
+       else if ((campaignTrail_temp.player_answers[4] === 51271 || campaignTrail_temp.player_answers[4] === 51084) && quickstats[0] >= 270) {
+        e.pages.push(`<h3>My folks, we are going to Make America Great Again!</h3><p>Out of all the ways this election could have gone, you did not expect it to go this way. Yet here we are. Donald Trump is already calling his victory “the greatest victory in the history of America” and how terrible Crooked Hillary is. Clinton is left to give her last-minute defeat speech to an emptying hall. Good riddance. The best positive you can take from this is her career is over.<br><br>What would his administration even look like? He's already promising to appoint his own family to cabinet positions, and while mainstream media derides the idea, it's looking like there will be little in the way to stop him. It's unlikely you'll get a cabinet position, given the heated exchanges you had with Trump in the primary, but who knows?</p>`);
+        e.pages.push(`<h3>My folks, we are going to Make America Great Again!</h3><p>Fortunately, Trump has promised to appoint several conservative justices, and the conservative majority could be preserved or even expanded under his presidency. An overturning of Roe v. Wade isn't out of the ordinary, and could likely happen sometime around the early 2020s.<br><br>You definitely still have a chance to win the presidency in the future, but you'll also need to start gearing up for re-election. Surely you won't almost lose in a Republican stronghold like Texas, right?<br><br>For now though, you can just sit back and relax. This might not have been the best possible outcome, nor the outcome you hoped for, it could've always been much worse.</p>`);
+        e.pages.push(`<h3>I'm sorry, Ted.</h3><p>Even though this was likely your last, and only chance of becoming President, you do have cause for some hope. Hillary Clinton is just as unpopular as you are, and conservative retribution in 2018 is likely going to come fast and avengefully. Likewise, re-election in 2018 to the Senate should hopefully be easy for you. You might still be hated by the vast majority of your colleagues, but you remain popular in Texas. Hopefully you can keep fighting for liberty and freedom in Capitol Hill, and be apart of a Republican win in 2020.<br><br>While the result is a shame, you still put up a respectable performance, all things considered. I assume you're likely positvely exhausted by now, so perhaps this is a good time to catch your breath. For now, you can just take a break after such an intense campaign, and start making your plans for your re-election. Godspeed, Ted.</p>`);
+        e.pages.push(`<h3>The Campaign Trail</h3><div style='overflow-y:scroll;height:200px;'><p><i>Please select the election you will run in:</i>  <br><select name="election_id" id="election_id"><option value="0">2020</option></select><br><img src="https://i.imgur.com/bt9lVF6.png" alt="Election Image" style="max-width:45%;height:auto;display:block;" loading="lazy"><br>As the 2020 presidential election kicks into gear, the nation enters the decade in a cautiously optimistic position. President Hillary Clinton's tough mandates and lockdowns have earned high praise amongst progressives and dramatically slowed the spread of the COVID-19 pandemic. However, her other staunch progressive policies at home remain incredibly unpopular, and Republicans are eager to win back the Executive Mansion after 12 years of Democratic rule.<br><br><ul style="padding-left:0; list-style-position:inside;"><li>President Clinton must argue that her COVID-19 policies have been necessary given the devastation the pandemic has caused elsewhere, all while defending her controversial Supreme Court picks and her decision to raise the federal minimum wage.</li><li>Marco Rubio is a Senator from Florida, and has quickly burst onto the national scene. He must attack the 12 year-long Democratic hold on the White House while making the case for a change in leadership.</li></ul><br><br><button>Continue</button><br><br><i>This scenario was made by Dan Bryan.</i><p>`);
+        e.executable.push([0, () => { e.image = 'https://i.imgur.com/gvmGNyb.png'; }]);
+        e.executable.push([1, () => { e.image = 'https://i.imgur.com/gvmGNyb.png'; }]);
+        e.executable.push([2, () => { e.image = 'https://i.imgur.com/kg7ymVb.jpeg'; }]);
+        e.executable.push([3, () => { e.image = 'https://i.imgur.com/Q18gvve.png'; }]);
+    if (songChange != 1) {
+    songChange = 1
+    const trumpvictory = new Playlist();
+      const trumpvictorySong = new Song(
+        "Y.M.C.A",
+        "Village People",
+        "https://i.imgur.com/CqO4wC7.png",
+        "https://audio.jukehost.co.uk/nAOVxzDaKO8txgG3yt8DClwbCykveIVN"
+      );
+      trumpvictory.addSong(trumpvictorySong);
+    changePlaylist(trumpvictory);
      }
     }
 
