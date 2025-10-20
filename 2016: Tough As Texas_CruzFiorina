@@ -1897,7 +1897,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51155,
         "fields": {
             "question": 51060,
-            "description": "Is this even a question? We need to start this election now. We already have a wide polling gap against the Democrats, and the last thing that we need to do is waste time trying to maneuver through party machinery while Clinton spreads lies about me on the campaign trail."
+            "description": "Is this even a question? We need to start this election now. We already have a wide polling gap against the Democrats, and the last thing that we need to do is waste time trying to maneuver through party machinery while Clinton spreads lies about me on <u>the campaign trail.</u>"
         }
     },
     {
@@ -1969,7 +1969,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51205,
         "fields": {
             "question": 1021,
-            "description": "Hillary Clinton's slogan is \"Stronger Together\", and then she proceeds to call us bigots. And then she proceeds to whine about how divisive I am. What a hypocrite. We need to be pointing this out all the time on the campaign trail."
+            "description": "Hillary Clinton's slogan is \"Stronger Together\", and then she proceeds to call us bigots. And then she proceeds to whine about how divisive I am. What a hypocrite. We need to be pointing this out all the time on <u>the campaign trail.</u>"
         }
     },
     {
