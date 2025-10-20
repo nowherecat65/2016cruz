@@ -234,6 +234,8 @@ const styles = [
     }
 })();
 
+
+
 // Normal Variables
 
 var Establishment = 0;
@@ -579,6 +581,7 @@ function ctsAchievement(achievement, difficultyChecker = true){
 	}
 }
 
+
 let republican = "Ted Cruz";
 let republicanvp = "Carly Fiorina";
 let democrat = "Hillary R. Clinton";
@@ -601,6 +604,11 @@ vpTableHistorical = {
     "Gary Johnson" : "William Weld",
     "Jill Stein" : "Ajamu Baraka",
   } 
+
+// Sets candidate names
+
+campaignTrail_temp.candidate_json[0]["fields"].first_name = "The";
+campaignTrail_temp.candidate_json[0]["fields"].last_name = "Republicans";
 
 function onGameWindowChangeCandidates() {
     // -------------------------------
@@ -944,6 +952,8 @@ e.WinPopup = "Rubio lost... somehow. The next few years will be interesting."
         campaignTrail_temp.running_mate_last_name = 'Fiorina';
         campaignTrail_temp.running_mate_first_name = 'Carly';
 campaignTrail_temp.election_json[0]["fields"].advisor_url = 'https://i.imgur.com/r3fj0cT.png';
+campaignTrail_temp.candidate_json[0]["fields"].first_name = "Ted";
+campaignTrail_temp.candidate_json[0]["fields"].last_name = "Cruz";
 const customStyling = document.createElement("style");
 
 customStyling.innerHTML = `
@@ -983,6 +993,8 @@ document.head.appendChild(customStyling);
         campaignTrail_temp.running_mate_image_url = 'https://files.catbox.moe/ul4rox.png';
         campaignTrail_temp.running_mate_last_name = 'Fiorina';
         campaignTrail_temp.running_mate_first_name = 'Carly';
+campaignTrail_temp.candidate_json[0]["fields"].first_name = "Ted";
+campaignTrail_temp.candidate_json[0]["fields"].last_name = "Cruz";
 campaignTrail_temp.election_json[0]["fields"].advisor_url = 'https://i.imgur.com/r3fj0cT.png';
 const customStyling = document.createElement("style");
 
@@ -1023,6 +1035,8 @@ document.head.appendChild(customStyling);
         campaignTrail_temp.running_mate_image_url = 'https://files.catbox.moe/ul4rox.png';
         campaignTrail_temp.running_mate_last_name = 'Fiorina';
         campaignTrail_temp.running_mate_first_name = 'Carly';
+campaignTrail_temp.candidate_json[0]["fields"].first_name = "Ted";
+campaignTrail_temp.candidate_json[0]["fields"].last_name = "Cruz";
 campaignTrail_temp.election_json[0]["fields"].advisor_url = 'https://i.imgur.com/r3fj0cT.png';
 const customStyling = document.createElement("style");
 
@@ -1063,6 +1077,8 @@ document.head.appendChild(customStyling);
         campaignTrail_temp.running_mate_image_url = 'https://files.catbox.moe/ul4rox.png';
         campaignTrail_temp.running_mate_last_name = 'Fiorina';
         campaignTrail_temp.running_mate_first_name = 'Carly';
+campaignTrail_temp.candidate_json[0]["fields"].first_name = "Ted";
+campaignTrail_temp.candidate_json[0]["fields"].last_name = "Cruz";
 campaignTrail_temp.election_json[0]["fields"].advisor_url = 'https://i.imgur.com/r3fj0cT.png';
 const customStyling = document.createElement("style");
 
@@ -11159,7 +11175,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51122,
             "candidate": 200,
-            "answer_feedback": "R.I.P Ted. It was nice knowing you."
+            "answer_feedback": "With all due respect Ted, what the hell were you thinking? Trump is furious, the base is mad, and the only thing that's changed is the party is even more divided then it was before. Your only salvation is that you've retained your pride."
         }
     },
     {
