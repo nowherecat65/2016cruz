@@ -775,7 +775,7 @@ campaignTrail_temp.running_mate_json = [
 function updateCreditForm() {
       const heading = document.querySelector("#credits");
       if (heading) {
-        heading.innerHTML = "This mod was made by TheMcCain & theanswerisme.";
+        heading.innerHTML = "<button onclick='credits()'>Tough as Texas: Credits</button>";
       }
 }
 
@@ -793,182 +793,17 @@ function masterFunction() {
 }
 masterObserver.observe(document.body, { childList: true, subtree: true });
 
+credits = function() {
+    c = ["This mod was made by theMcCain and theanswerisme, with theMcCain being the lead coder and lead writer and theanswerisme helping with writing.\n", "Thanks to littleamericanman_85501 for making the banner!\n", "Thanks to American Carnage for the music player, The W. Team for variable headquarters (although it's been modified heavily), our playtesters for helping make the mod the best it could be, and many other mods that this mod borrows code from. You can find a full credits in the Further Reading.\n", "And thanks for playing! I hope you enjoy/enjoyed."]
+    text = "CREDITS:\n\n"
+    for (i in c) {
+        text += c[i] + "\n"
+    }
+    alert(text)
+  }
+
 campaignTrail_temp.credits = "TheMcCain (Coder and Lead Writer) & theanswerisme (Writing Help)"
 
-let savedX = null;
-let savedY = null;
-
-credits = function() {
-    let popOutMenu = document.getElementById('popOutMenu');
-    if (!popOutMenu) {
-        popOutMenu = document.createElement('div');
-        popOutMenu.id = 'popOutMenu';
-        popOutMenu.style.position = 'absolute';
-        popOutMenu.style.width = '600px';
-        popOutMenu.style.height = '280px';
-        popOutMenu.style.padding = '15px';
-        popOutMenu.style.backgroundColor = '#20272D';
-        popOutMenu.style.boxShadow = '0 0 12px rgba(0,0,0,0.7)';
-        popOutMenu.style.border = '1px solid #1c1f22';
-        popOutMenu.style.zIndex = '1000';
-        popOutMenu.style.borderRadius = '6px';
-        popOutMenu.style.color = '#dddddd';
-        popOutMenu.style.overflowY = 'hidden';
-        popOutMenu.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
-        popOutMenu.style.opacity = '0';
-        popOutMenu.style.transform = 'scale(0.9)';
-
-        setTimeout(() => {
-            popOutMenu.style.opacity = '1';
-            popOutMenu.style.transform = 'scale(1)';
-        }, 10);
-
-        // Top-right close button
-        const closeButton = document.createElement('button');
-        closeButton.innerText = '×'; // small "X"
-        closeButton.onclick = closeCredits;
-        closeButton.style.position = 'absolute';
-        closeButton.style.top = '8px';
-        closeButton.style.right = '8px';
-        closeButton.style.width = '28px';
-        closeButton.style.height = '28px';
-        closeButton.style.padding = '0';
-        closeButton.style.border = 'none';
-        closeButton.style.borderRadius = '4px';
-        closeButton.style.background = '#1e2226';
-        closeButton.style.color = '#dddddd';
-        closeButton.style.cursor = 'pointer';
-        closeButton.style.fontSize = '18px';
-        closeButton.onmouseover = () => closeButton.style.background = '#282d32';
-        closeButton.onmouseout = () => closeButton.style.background = '#1e2226';
-        popOutMenu.appendChild(closeButton);
-
-        const menuTitle = document.createElement('h1');
-        menuTitle.innerText = '(Full Credits in Further Reading)';
-        menuTitle.style.textAlign = 'center';
-        menuTitle.style.fontFamily = '"Segoe UI", Tahoma, Geneva, sans-serif';
-        menuTitle.style.color = '#f0f0f0';
-        menuTitle.style.textShadow = '2px 2px 6px rgba(0,0,0,0.9)';
-        menuTitle.style.margin = '0 0 12px 0';
-        menuTitle.style.fontSize = '24px';
-        popOutMenu.appendChild(menuTitle);
-
-        const combinedCredits = [...creditListA, ...creditListB, ...creditListC];
-
-        const list = document.createElement('div');
-        list.style.display = 'flex';
-        list.style.flexDirection = 'column';
-        list.style.gap = '10px';
-
-        combinedCredits.forEach(item => {
-            const menuItem = document.createElement('div');
-            menuItem.style.background = 'linear-gradient(145deg, rgba(30,34,38,0.95), rgba(22,25,28,0.8))';
-            menuItem.style.display = 'flex';
-            menuItem.style.alignItems = 'flex-start';
-            menuItem.style.padding = '8px';
-            menuItem.style.borderRadius = '6px';
-            menuItem.style.border = '1px solid #1c1f22';
-            menuItem.style.boxShadow = '0 0 4px rgba(0,0,0,0.4)';
-
-            const photo = document.createElement('img');
-            photo.src = item.photo;
-            photo.style.border = "1px solid #3a3f44";
-            photo.style.padding = "1px";
-            photo.style.width = '90px';
-            photo.style.height = '90px';
-            photo.style.marginRight = '12px';
-            photo.style.borderRadius = '4px';
-
-            const text = document.createElement('p');
-            text.innerHTML = item.text;
-            text.style.fontSize = "14px";
-            text.style.margin = '0';
-            text.style.color = '#dddddd';
-
-            const textContainer = document.createElement('div');
-            textContainer.appendChild(text);
-            textContainer.style.flex = '1';
-
-            menuItem.appendChild(photo);
-            menuItem.appendChild(textContainer);
-
-            list.appendChild(menuItem);
-        });
-
-        popOutMenu.appendChild(list);
-
-        document.body.appendChild(popOutMenu);
-        makeDraggable(popOutMenu);
-    }
-
-    if(savedX!==null && savedY!==null){
-        popOutMenu.style.left = savedX+'px';
-        popOutMenu.style.top = savedY+'px';
-    } else {
-        const buttonRect = event.target.getBoundingClientRect();
-        popOutMenu.style.left = buttonRect.right + 20 + 'px';
-        popOutMenu.style.top = buttonRect.top - 20 + 'px';
-        savedX = parseInt(popOutMenu.style.left,10);
-        savedY = parseInt(popOutMenu.style.top,10);
-    }
-
-    popOutMenu.style.display = 'block';
-}
-
-function closeCredits(){
-    const popOutMenu = document.getElementById('popOutMenu');
-    if(popOutMenu){
-        popOutMenu.style.opacity = '0';
-        popOutMenu.style.transform = 'scale(0.9)';
-        setTimeout(() => {
-            savedX = parseInt(popOutMenu.style.left,10);
-            savedY = parseInt(popOutMenu.style.top,10);
-            popOutMenu.remove();
-        }, 300);
-    }
-}
-
-function makeDraggable(element){
-    let isDragging=false;
-    let offsetX=0;
-    let offsetY=0;
-
-    element.addEventListener('mousedown',function(event){
-        isDragging=true;
-        event.preventDefault();
-        offsetX = event.clientX - parseInt(element.style.left || 0,10);
-        offsetY = event.clientY - parseInt(element.style.top || 0,10);
-
-        function onMouseMove(e){
-            if(!isDragging) return;
-            const newX = e.clientX - offsetX;
-            const newY = e.clientY - offsetY;
-            element.style.left = newX+'px';
-            element.style.top = newY+'px';
-            savedX=newX;
-            savedY=newY;
-        }
-
-        function onMouseUp(){
-            isDragging=false;
-            document.removeEventListener('mousemove',onMouseMove);
-            document.removeEventListener('mouseup',onMouseUp);
-        }
-
-        document.addEventListener('mousemove',onMouseMove);
-        document.addEventListener('mouseup',onMouseUp);
-    });
-}
-
-
-const creditListA = [ 
-    { photo: 'https://i.imgur.com/9bkzEuf.png', text: '<b>TheMcCain</b><br><b>Coder and Lead Writer<br>', button: 'Defer', id: 'id1'},
-]
-const creditListB = [ 
-    { photo: 'https://i.imgur.com/kIcHBZz.png', text: '<b>theanswerisme</b><br><b>Writer</b><br>', button: 'Defer', id: 'id2'},
-]
-const creditListC = [ 
-]
 campaignTrail_temp.opponents_default_json = [
     {
         "election": 20,
