@@ -772,29 +772,8 @@ campaignTrail_temp.running_mate_json = [
     }
 ]
 
-function updateCreditForm() {
-      const heading = document.querySelector("#credits");
-      if (heading) {
-        heading.innerHTML = "<button onclick='credits()'>Tough as Texas: Credits</button>";
-      }
-}
-
-let changesInProgress = false;
-let masterObserver = new MutationObserver(masterFunction);
-function masterFunction() {
-        if (changesInProgress) return;
-        changesInProgress = true;
-        masterObserver.disconnect();
-
-        updateCreditForm();
-
-        changesInProgress = false;
-        masterObserver.observe(document.body, { childList: true, subtree: true });
-}
-masterObserver.observe(document.body, { childList: true, subtree: true });
-
 credits = function() {
-    c = ["This mod was made by theMcCain and theanswerisme, with theMcCain being the lead coder and lead writer and theanswerisme helping with writing.\n", "Thanks to littleamericanman_85501 for making the banner!\n", "Thanks to American Carnage for the music player, The W. Team for variable headquarters (although it's been modified heavily), our playtesters for helping make the mod the best it could be, and many other mods that this mod borrows code from. You can find a full credits in the Further Reading.\n", "And thanks for playing! I hope you enjoy/enjoyed."]
+    c = ["This mod was made by theMcCain and theanswerisme, with theMcCain being the lead coder and lead writer and theanswerisme helping with writing.\n", "Thanks to littleamericanman_85501 for making the banner!\n", "Thanks to American Carnage for the music player, The W. Team for variable headquarters (although it's been modified heavily), our playtesters for helping make the mod the best it could be, and many other mods that this mod borrows code from. You can find a full credits in the Further Reading.\n", "And thanks for playing! Hope you have fun."]
     text = "CREDITS:\n\n"
     for (i in c) {
         text += c[i] + "\n"
@@ -802,7 +781,7 @@ credits = function() {
     alert(text)
   }
 
-campaignTrail_temp.credits = "TheMcCain (Coder and Lead Writer) & theanswerisme (Writing Help)"
+campaignTrail_temp.credits = "<button onclick='credits()'><u>TheMcCain &</button></u>";
 
 campaignTrail_temp.opponents_default_json = [
     {
