@@ -11949,15 +11949,15 @@ if ((campaignTrail_temp.player_answers[4] === 51271 || campaignTrail_temp.player
         e.executable.push([1, () => { e.image = 'https://i.imgur.com/5NquPN6.png'; }]);
     if (songChange != 1) {
     songChange = 1
-    const moderatedefeat = new Playlist();
-      const moderatedefeatSong = new Song(
-        "21 Guns",
-        "Green Day",
-        "https://i.imgur.com/6nOq7Vl.png",
-        "https://audio.jukehost.co.uk/OaGgKzUVxgMFrSRBHJc4vLoXJbH0DulK"
+    const rubiovictory = new Playlist();
+      const rubiovictorySong = new Song(
+        "Where The Stars and Stripes and The Eagle Fly",
+        "Aaron Tippin",
+        "https://i.imgur.com/Wxb6s9p.jpeg",
+        "https://audio.jukehost.co.uk/50AuFK2OTd6hRyAMT0VZP1O0yqEXpg9j"
       );
-      moderatedefeat.addSong(moderatedefeatSong);
-    changePlaylist(moderatedefeat);
+      rubiovictory.addSong(rubiovictorySong);
+    changePlaylist(rubiovictory);
      }
     }
 
@@ -11989,13 +11989,13 @@ if ((campaignTrail_temp.player_answers[4] === 51271 || campaignTrail_temp.player
     songChange = 1
     const rubiodefeat = new Playlist();
       const rubiodefeatSong = new Song(
-        "Where The Stars and Stripes and The Eagle Fly",
-        "Aaron Tippin",
-        "https://i.imgur.com/Wxb6s9p.jpeg",
-        "https://audio.jukehost.co.uk/50AuFK2OTd6hRyAMT0VZP1O0yqEXpg9j"
+        "Stuck In The Middle With You",
+        "Stealers Wheel",
+        "https://i.imgur.com/EedzXtu.png",
+        "https://audio.jukehost.co.uk/KWrHBYwAV9iVb6ZjYfvNeNW8ShcRmqIJ"
       );
-      rubiovictory.addSong(rubiovictorySong);
-    changePlaylist(rubiovictory);
+      rubiodefeat.addSong(rubiodefeatSong);
+    changePlaylist(rubiodefeat);
      }
     }
 
