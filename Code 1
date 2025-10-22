@@ -256,9 +256,6 @@ input[type="range"]::-webkit-slider-thumb {
   cursor: pointer;
   transition: all 0.2s ease;
 }
-
-input[type="range"]:hover::-webkit-slider-thumb { background: #4a5663; }
-
 input[type="range"]::-moz-range-thumb {
   width: 16px;
   height: 16px;
@@ -1064,6 +1061,10 @@ a:hover {
     margin: 1rem auto;
      overflow-y: auto;
             }
+#difficulty_mult {
+    position: relative;  /* take it out of normal flow slightly */
+    top: 20px;           /* push it down visually */
+}
 
   .overlay_window {
     height: auto;
@@ -1222,10 +1223,10 @@ function setupMusicPlayer() {
   );
 
   const song4 = new Song(
-    "Where the Stars and Stripes and Eagle Fly",
-    "Aaron Tippin",
-    "https://i.imgur.com/Wxb6s9p.jpeg",
-    "https://audio.jukehost.co.uk/50AuFK2OTd6hRyAMT0VZP1O0yqEXpg9j"
+    "American Ride",
+    "Toby Keith",
+    "https://i.imgur.com/8J1LKFA.png",
+    "https://audio.jukehost.co.uk/2cvWGDd0rvlDnZWEnw8OKrlk4EQHzOiy"
   );
 
   const song5 = new Song(
