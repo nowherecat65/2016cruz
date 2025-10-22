@@ -796,7 +796,6 @@ if (ans == 51165 || ans == 51037 || ans == 51072 || ans == 1038) {
     }
 
 
-
 // If you decide to duck out of the debate
 
 if (ans == 51499) {
@@ -948,6 +947,11 @@ e.ElectionPopup = "Well, Rubio's the nominee. Hopefully he can put the Democrats
 e.WinPopup = "It's a great day for America! The corrupt Democrats have been defeated."
 e.LosePopup = "What have the people done?"
 }
+
+if (ans == 5126 || ans == 5125 || ans == 5123 || ans == 5124) {
+ campaignTrail_temp.candidate_json[0]["fields"].first_name = "Ted";
+ campaignTrail_temp.candidate_json[0]["fields"].last_name = "Cruz";
+    }
 
     if (ans == 20739) {
         campaignTrail_temp.candidate_image_url = 'https://i.imgur.com/yqL9NWD.jpeg'
@@ -11897,8 +11901,8 @@ if ((campaignTrail_temp.player_answers[4] === 51271 || campaignTrail_temp.player
 
        else if ((campaignTrail_temp.player_answers[4] === 51271 || campaignTrail_temp.player_answers[4] === 51084) && quickstats[0] > 268 && quickstats[0] < 270) { // Trump deadlocks the election!
       campaignTrail_temp.election_json[0]["fields"].advisor_url = "https://i.imgur.com/5cfyftc.png";
-        e.pages.push(`<h3>A War In The House</h3><p>The election has deadlocked. For the first time since 1824, Congress will decide the winner. It's a war in the house, but Republicans control a majority of state delegations, meaning they will almost certainly elevate Donald Trump to the presidency. The Senate will be closer, although Mike Pence will still be elevated to the role of Vice President. Clinton's campaign will try in vein to win in a last-ditch attempt, but it's obvious her career is over. Good riddance.<br><br>What would his administration even look like? He's already promising to appoint his own family to cabinet positions, and while mainstream media derides the idea, it's looking like there will be little in the way to stop him. It's unlikely you'll get a cabinet position, given the heated exchanges you had with Trump in the primary, but who knows?</p>`);
-        e.pages.push(`<h3>A War In The House</h3><p>Fortunately, Trump has promised to appoint several conservative justices, and the conservative majority could be preserved or even expanded under his presidency. An overturning of Roe v. Wade isn't out of the ordinary, and could likely happen sometime around the early 2020s.<br><br>You definitely still have a chance to win the presidency in the future, but you'll also need to start gearing up for re-election. Surely you won't almost lose in a Republican stronghold like Texas, right?<br><br>For now though, you can just sit back and relax. This might not have been the best possible outcome, nor the outcome you hoped for, it could've always been much worse.</p>`);
+        e.pages.push(`<h3>A Contingent War</h3><p>The election has deadlocked. For the first time since 1824, Congress will decide the winner. It's a war in the house, but Republicans control a majority of state delegations, meaning they will almost certainly elevate Donald Trump to the presidency. The Senate will be closer, although Mike Pence will still be elevated to the role of Vice President. Clinton's campaign will try in vein to win in a last-ditch attempt, but it's obvious her career is over. Good riddance.<br><br>What would his administration even look like? He's already promising to appoint his own family to cabinet positions, and while mainstream media derides the idea, it's looking like there will be little in the way to stop him. It's unlikely you'll get a cabinet position, given the heated exchanges you had with Trump in the primary, but who knows?</p>`);
+        e.pages.push(`<h3>A Contingent War</h3><p>Fortunately, Trump has promised to appoint several conservative justices, and the conservative majority could be preserved or even expanded under his presidency. An overturning of Roe v. Wade isn't out of the ordinary, and could likely happen sometime around the early 2020s.<br><br>You definitely still have a chance to win the presidency in the future, but you'll also need to start gearing up for re-election. Surely you won't almost lose in a Republican stronghold like Texas, right?<br><br>For now though, you can just sit back and relax. This might not have been the best possible outcome, nor the outcome you hoped for, it could've always been much worse.</p>`);
         e.executable.push([0, () => { e.image = 'https://i.imgur.com/gvmGNyb.png'; }]);
         e.executable.push([1, () => { e.image = 'https://i.imgur.com/gvmGNyb.png'; }]);
     if (songChange != 1) {
@@ -11939,6 +11943,11 @@ if ((campaignTrail_temp.player_answers[4] === 51271 || campaignTrail_temp.player
 
 
 // -------------------
+// IT'S RUBIO!111!
+       else if ((campaignTrail_temp.player_answers[4] === 51119) && quickstats[0] >= 535) { // RUBIOSLIDE
+        e.pages.push(`<h3>“RUBIO WINS 50 STATES!!!111!111!!!”</h3><p>Let's dispel once and for all with this fiction that Barack Obama doesn't know what he's doing. He knows EXACTLY what he's doing. Barack Obama is undertaking a systematic effort to change this country, to make America more like the rest of the world. That's why he passed Obamacare and the stimulus and Dodd-Frank and the deal with Iran. It is a systematic effort to change America. When I'm president of the United States, we are going to re-embrace all the things that made America the greatest nation in the world and we are going to leave our children with what they deserve: the single greatest nation in the history of the world.</p>`);
+        e.executable.push([0, () => { e.image = 'https://i.imgur.com/5NquPN6.png'; }]);
+    }
 
 // Rubio victory
 
@@ -12000,7 +12009,27 @@ if ((campaignTrail_temp.player_answers[4] === 51271 || campaignTrail_temp.player
     }
 
 // -------------------------------------------- NORMAL ENDINGS --------------------------------------------------------------------
-else if (quickstats[0] > 249 && quickstats[0] < 269) { // If you lost by less then 10 electoral votes because you lost Wisconsin, this will be a recount ending. not written yet
+else if (quickstats[0] == 269) { // Cruz deadlock
+        e.pages.push(`<h3>A War In The House</h3><p>Well, this is surprising. With you narrowly winning Wisconsin's 10 electoral votes, you've have barely prevented Clinton from winning a majority of electoral votes. For the first time since 1824, the election will be decided by Congress. As per the Constitution, each state gets 1 vote when voting in a contingent election. Fortunately, Republicans control a majority of state delegations, meaning you have won the election. The Senate will be quite closer, but Fiorina will still become Vice President.<br><br>Your victory has caused shockwaves across the country. Nobody expected such an ardent conservative to be able to shatter the coalition the Democrats had built up. On Twitter, Hillary supporters are already calling you an illegitimate President, still vainly hoping to win in Congress. Clinton's team has demanded a manual recount in Wisconsin, but it's very unlikely that will change the result in the state.</p>`);
+        e.pages.push(`<h3>A War In The House</h3><p>Clinton's team issues a vague message saying they will keep fighting in Congress, but it's going to be impossible for her to win. Establishment Republicans are already congratulating you, and Jeff tells you that you've won. Unless Clinton manages to somehow gain the favor of Congress soon, she has lost the election. Her career is over. What else can you say but “good riddance?” It's so satisfying to see her get rejected and thrown down the hill by the Congress she was once apart of.<br><br>When you are inaugurated, you'll have a lot on your plate to deal with. The decline of America, unfortunately, cannot be reversed in 4 short years. But it can be stopped. Your opponents might call you illegitimate, but they don't matter. You think it's appropriate to give your victory speech to the crowd now. You walk out to the cheering crowd, and congratulations, you will be President come January 20th. Godspeed.</p>`);
+        e.executable.push([0, () => { e.image = 'https://i.imgur.com/srTiRPO.png'; }]);
+        e.executable.push([1, () => { e.image = 'https://i.imgur.com/srTiRPO.png'; }]);
+    if (songChange != 1) {
+    songChange = 1
+    const deadlock = new Playlist();
+      const deadlockSong = new Song(
+        "Wonderwall",
+        "Oasis",
+        "https://i.imgur.com/xVPB874.png",
+        "https://audio.jukehost.co.uk/ZX2v8r3LhXIL7cZaACHLdrCb2yf0VpGA"
+      );
+      deadlock.addSong(deadlockSong);
+    changePlaylist(deadlock);
+     }
+    }
+
+
+else if (quickstats[0] > 249 && quickstats[0] < 269) { // If you lost by less then 10 electoral votes because you lost Wisconsin, this will be a recount ending. NOT WRITTEN YET!
         e.pages.push(`<h3>Damned be.</h3><p>Jesus Christ.<br><br>You were so close, so close, on the verge of victory, on the cusp of it, but greedy turncoats in the party who sought your defeat sabotaged you at the last minute. The Democrats have won the Presidency once again, by an extremely close margin. Republicans have managed to hold the Senate, so hopefully you and Senate Republicans can stonewall as much of Hillary's agenda as possible.<br><br>You can't move. You feel paralyzed. An advisor tells you that Clinton has called you, expecting you to concede the election. You don't answer. You can't. This feels even worse then if you lost in a landslide. You were so close, but then Republicans left you to drown, hoping for an open primary in 2020.</p>`);
         e.pages.push(`<h3>Damned be.</h3><p>Clinton will be hard-pressed to pass her radical agenda, which will likely be radical activist justices, teenage and partial-birth abortions on demand, and much worse. You will still have a shot to defend good order in this country. Even so, you can barely look at the television. Hillary continues to do victory laps about how much the glass ceiling has been shattered, how she'll protect reproductive “rights”, and more, well into the night, and that a new era has begun. It's a new era alright. But not the kind of era we want in a country we still call God's country.<br><br>Meanwhile, you see Donald Trump post this on Twitter. “Crooked Hillary and Lyin' Ted stole this election with massive amounts of Voter Fraud! In 2020 We're Going to Take it All Back!” Christ.</p>`);
         e.pages.push(`<h3>Damned be.</h3><p>Even though this was likely your last, and only chance of becoming President, you do have cause for some hope. Hillary Clinton is just as unpopular as you are, and conservative retribution in 2018 is likely going to come fast and avengefully. Likewise, re-election in 2018 to the Senate should hopefully be easy for you. You might still be hated by the vast majority of your colleagues, but you remain popular in Texas. Hopefully you can keep fighting for freedom in Congress, and be apart of a Republican win in 2020.<br><br>While the result is a shame, you still put up an incredible performance, all things considered. I assume you're likely positvely exhausted by now, so perhaps this is a good time to catch your breath. For now, you can just take a break after such an intense campaign, and start making your plans for your re-election. Godspeed, Ted.</p>`);
