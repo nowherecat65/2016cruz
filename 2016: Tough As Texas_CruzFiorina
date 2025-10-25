@@ -749,7 +749,8 @@ cyoAdventure = function (a) {
         Primary  += 2;
     }
   if (e.noCounter == 6) {
-        e.election_json[0].fields.has_visits = 1;
+e.election_json[0].fields.has_visits = 1;
+campaignTrail_temp.election_json[0]["fields"].advisor_url = 'https://i.imgur.com/r3fj0cT.png';
     }
   if (ans == 20678) {
         Primary  -= 1;
@@ -10896,7 +10897,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 20665,
             "candidate": 200,
-            "answer_feedback": "Unfortunately, Rubio appears to be underperforming compared to what early polls had suggested, and it seems you’ll be forced to take up the mantle as the main opposition to Trump anyway. Oh well, better get started now."
+            "answer_feedback": "Unfortunately, Rubio appears to be underperforming compared to what early polls had suggested, and it seems you’ll be forced to take up the mantle as the main opposition to Trump anyway."
         }
     },
     {
@@ -10905,7 +10906,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 20667,
             "candidate": 200,
-            "answer_feedback": "Establishment Republicans has always hated you, but they hate Donald Trump more than they hate you. You were able to make some good ground with them, and if this primary comes down to the wire, this might just be the advantage you need."
+            "answer_feedback": "Establishment Republicans have always hated you, but they hate Donald Trump more than they hate you. You were able to make some good ground with them, and if this primary comes down to the wire, this might just be the advantage you need."
         }
     },
     {
