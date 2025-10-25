@@ -1482,7 +1482,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5031,
         "fields": {
             "question": 1011,
-            "description": "My friends, fellow Republicans, and folks at home, this country has been in steady decline for the past seven years. But it doesn’t have to be that way. Under a Cruz administration, we’ll slash taxes, restrict abortion, protect the Second Amendment, balance the budget, fight for religious freedom, and stand up to special interests."
+            "description": "My friends, fellow Republicans, and folks at home, this country has been in steady decline for the past seven years. But it doesn’t have to be that way. Under my administration, we’ll slash taxes, restrict abortion, protect the Second Amendment, balance the budget, fight for religious freedom, and stand up to special interests."
         }
     },
     {
@@ -1530,7 +1530,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5092,
         "fields": {
             "question": 1027,
-            "description": "I oppose the abhorrent practice of abortion as much as ever, but this position is hurting us badly with voters we need to win. We have to turn the tables and strike back at Clinton, highlighting her equivocations on Benghazi and her emails. She has utterly failed at all her tasks, and now she wants to be President."
+            "description": "I oppose the digusting practice of abortion as much as ever, but this position is hurting us badly. We have to turn the tables and strike back at Clinton. Use her equivocations on Benghazi and her emails. She has utterly failed at all her tasks, and now she wants to be President!"
         }
     },
     {
@@ -1554,7 +1554,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5121,
         "fields": {
             "question": 1036,
-            "description": "Thank goodness this came out before the election. That's all I have to say. Thank goodness."
+            "description": "Wow - uh. Thank goodness this came out before the election. That's all I have to say. That's my only comment. Thank goodness."
         }
     },
     {
@@ -1570,7 +1570,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5123,
         "fields": {
             "question": 1037,
-            "description": "It's obvious. We lose Florida, we lose period, and the polling there is worrying. Let's hit the trail with Senator Rubio and defeat these socialists once and for all."
+            "description": "I think we should hit the Sunshine State. We lose Florida, we lose period, and the polling there is worrying. Let's hit the trail with Senator Rubio and defeat these socialists once and for all."
         }
     },
     {
@@ -1666,7 +1666,7 @@ campaignTrail_temp.answers_json = [
         "pk": 20678,
         "fields": {
             "question": 1006,
-            "description": "Now, don't get me wrong, there are many wonderful people in the state of New York, but Trump stands for New York values. He's pro abortion, pro gay-marriage, and anti-second Amendment. Not many conservatives come out of Manhattan, I'm just saying."
+            "description": "Now, don't get me wrong, there are many wonderful people in the state of New York, but Trump stands for New York values. He's pro abortion, pro gay marriage, and anti second Amendment. Not many conservatives come out of Manhattan, I'm just saying."
         }
     },
     {
@@ -1794,7 +1794,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51043,
         "fields": {
             "question": 1022,
-            "description": "There were so many things wrong with this investigation. Hillary destroyed nearly all the evidence during the investigation, and yet she wasn’t charged. On day one we're going to launch a real investigation into her."
+            "description": "There were so many things wrong with this investigation. Hillary destroyed nearly all the evidence during the investigation, and yet she wasn’t charged. On day one we're going to launch a real inquiry into how corrupt she is."
         }
     },
     {
@@ -1810,7 +1810,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51050,
         "fields": {
             "question": 1020,
-            "description": "If you want to see someone unfit to serve in office, I can think of no one better than Hillary Clinton, who has leaked federal secrets, destroyed documents, and is under investigation by the FBI. She cannot be allowed to become commander in chief."
+            "description": "If you want to see someone unfit to serve in office, I can think of no one better than Hillary Clinton, who has leaked federal secrets, destroyed documents, and is under investigation by the FBI. She cannot be allowed to become President."
         }
     },
     {
@@ -1818,7 +1818,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51063,
         "fields": {
             "question": 1022,
-            "description": "Hillary Clinton is a crook, and I think this really goes to show how corrupt she is. If this is what she's done as Secretary of State, imagine what she'll do as President. We cannot let her become President on November 8th."
+            "description": "Hillary Clinton is a crook, and I think this really goes to show how corrupt she is. If this is what she's done as Secretary of State, imagine what she'll do as President. We cannot let her become Commander-in-Chief on November 8th."
         }
     },
     {
@@ -1994,7 +1994,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51212,
         "fields": {
             "question": 1021,
-            "description": "If the left wants to call being a conservative ''bigotry,'' then they’re the ones with the problem, not us. Vote for Hillary Clinton if you want your president to be a liberal elitist who hates you, who will allow partial-birth abortions, and who will sell you out to Goldman Sachs, Saudi Arabia, and who knows what else."
+            "description": "If the left wants to call being a conservative ''bigotry,'' then they’re the ones with the problem, not us. Vote for Hillary Clinton if you want your president to be a liberal elitist who hates you, who will allow partial-birth abortions, and who will sell you out to Goldman Sachs, Saudi Arabia, and do many other terrible things."
         }
     },
     {
@@ -10752,7 +10752,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5033,
             "candidate": 200,
-            "answer_feedback": "It's a good idea to drag this race into the gutter. You have a massive upper-hand on that front."
+            "answer_feedback": "Given that the Democrats likely have the advantage on policy, it's definitely a good idea to drag the race into the gutter, even as some advisors worry about your favorability ratings."
         }
     },
     {
@@ -10788,7 +10788,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5092,
             "candidate": 200,
-            "answer_feedback": "Hillary seems to fall for the bait once again, where she defends her actions in Benghazi and her email server scandal in her rallies for the next few days, and her advertisements seem to go back to the defensive. Seems like she still doesn't realize that if you're explaining, you're losing, and the heat is off you. "
+            "answer_feedback": "Hillary seems to fall for the bait once again, where she defends her actions in Benghazi and her email server scandal in her rallies for the next few days, and her advertisements seem to go back to the defensive. Seems like she still doesn't realize that if you're explaining, you're losing."
         }
     },
     {
@@ -10806,7 +10806,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51021,
             "candidate": 200,
-            "answer_feedback": "You sound a little more measured on this issue than you did while crusading against Obamacare, but you’ve managed to largely preserve your base’s trust, while signaling a bit of maturity. That doesn't mean the Democrats aren't going to take the chance to attack you on it."
+            "answer_feedback": "You sound a little more measured on this issue than you did while crusading against Obamacare, but you’ve managed to largely preserve your base’s trust, while signaling a bit of maturity. That doesn't mean the Democrats aren't going to take the chance to attack you on it, though."
         }
     },
     {
@@ -10833,7 +10833,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5123,
             "candidate": 200,
-            "answer_feedback": "Your red-baiting proves incredibly effective in the ever Senior and Cuban-heavy state, and of course, you yourself are a Cuban. Hopefully you can win the Sunshine State and consign Hillary to the dustbin of the 90s."
+            "answer_feedback": "Your red-baiting proves incredibly effective in the ever Cuban and Senior-heavy state, and of course, you yourself are part of the former demographic. Hopefully you can win Florida and consign Hillary to the dustbin of the 90s."
         }
     },
     {
@@ -10968,7 +10968,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 20664,
             "candidate": 200,
-            "answer_feedback": "Donald Trump has a history of affiliations with Democrats, including a brief period of membership, and he’s certainly vulnerable to those attacks. Unfortunately, your record isn’t spotless either, and Trump is likely to go on the offensive the moment he sees an opening."
+            "answer_feedback": "Donald Trump has a history of affiliations with Democrats, including a brief period of membership, and he’s certainly vulnerable to those attacks. Unfortunately, you've made an enemy out of him, and Trump is likely to go on the offensive the moment he sees an opening."
         }
     },
     {
@@ -11049,7 +11049,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 20752,
             "candidate": 200,
-            "answer_feedback": "This proposal has garnered some support amongst Republicans. Meanwhile, Clinton and the Dems decry it as Islamophobic."
+            "answer_feedback": "This proposal has garnered some support amongst Republicans. Meanwhile, Clinton and the Democratic Party decry it as Islamophobic."
         }
     },
     {
@@ -11094,7 +11094,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5102,
             "candidate": 200,
-            "answer_feedback": "The media notices a clear pivot from the question, but your supporters know exactly what you're talking about, and they appreciate your conservative vision for the future."
+            "answer_feedback": "You didn't actually address if you'd threaten to shut down the government, but hopefully vagueness will be a problem for future you. The media notices a clear pivot, but your supporters appreciate your conservative vision for the future."
         }
     },
     {
@@ -11211,7 +11211,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51119,
             "candidate": 200,
-            "answer_feedback": "Rubio is thankful to have your support here. With your help, he is able to narrowly defeat Trump at the convention. He offers you the role of Attorney General, which you accept."
+            "answer_feedback": "Rubio is thankful to have your support here. With your help, he is able to narrowly defeat Trump at the convention. He offers you the role of Secretary of State if he wins, which you accept."
         }
     },
     {
@@ -11256,7 +11256,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51165,
             "candidate": 200,
-            "answer_feedback": "Already, mainstream media experts are talking about you're pivot. Maybe you know something they don't?"
+            "answer_feedback": "Already, mainstream media experts are talking about yet another pivot from the primaries. Maybe you know something they don't?"
         }
     },
     {
@@ -11319,7 +11319,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51207,
             "candidate": 200,
-            "answer_feedback": "Nothing wrong with playing it safe, but it wouldn't hurt to take the initiative. Either way, you continue rising in the polls as talking heads on Fox continue slamming her."
+            "answer_feedback": "Nothing wrong with playing it safe, but it wouldn't hurt to take the initiative. Either way, you continue rising in the polls as the talking heads on Fox continue to dunk on her, calling her a 'hypocrite' and saying 'the only person who's bigoted is her, against millions of Americans.'"
         }
     },
     {
@@ -11472,7 +11472,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51320,
             "candidate": 200,
-            "answer_feedback": "You're leaning into the “open borders” aspect of it, which is good. Very few people will die on the hill of completely opening the border and letting migrants coming into the country. Rhetorically. Meanwhile, Hillary tries to defend herself by saying her sentence was being taken out of context."
+            "answer_feedback": "You're leaning into the “open borders” aspect of it, which is good. Very few people will die on the hill of completely opening the border and letting migrants coming into the country. Rhetorically, that is. Meanwhile, Hillary tries to defend herself by saying her sentence was being taken out of context."
         }
     },
     {
@@ -11499,7 +11499,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51385,
             "candidate": 200,
-            "answer_feedback": "The public seems to be divided on this issue, and Democrats strongly oppose Senate Republicans stonewalling efforts, but among voters in the party, support of this is near-universal."
+            "answer_feedback": "The public seems to be divided on this issue, and Democrats strongly oppose Senate Republicans stonewalling efforts, but among Republicans at least, support of this is near-universal."
         }
     },
     {
@@ -11625,7 +11625,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51511,
             "candidate": 200,
-            "answer_feedback": "A complete flip-flop from your earlier stance, and completely appalling to the base. Are you trying to LOSE the election by chance?"
+            "answer_feedback": "...<br>Who are you and what have you done with Ted Cruz?"
         }
     },
     {
@@ -11946,8 +11946,8 @@ if ((campaignTrail_temp.player_answers[4] === 51271 || campaignTrail_temp.player
 // Rubio victory
 
        else if ((campaignTrail_temp.player_answers[4] === 51119) && quickstats[0] >= 270) { // Rubio wins the election!
-        e.pages.push(`<h3>“We have a big announcement to make...”</h3><p>“We can now project that Marco Rubio has won 270 electoral votes, and with it, the presidency.”<br><br>America has been preserved! Senator Rubio has won the election, and prevented one of the worst women in history from becoming Commander-in-Chief. Clinton gives her muted concession speech, and Rubio's victory speech in Miami talks about the need for unity in our country.<br><br>Under Rubio's presidency, the conservative majority will be solidified or expanded. Hillary Clinton's career is all but over, and when Rubio is inaugurated, he promises he will choose you as his Attorney General. Trump can keep whining, but he doesn't matter now.</p>`);
-        e.pages.push(`<h3>“We have a big announcement to make...”</h3><p>Rubio has already begun planning out his cabinet, and he has said that you will be his Attorney General, which you gladly accept. Rubio has promised to appoint Neil Gorsuch to fill Antonin Scalia's open seat, and Democrats are furious that Clinton lost.<br><br>Hopefully Rubio can win in 2020. If he does, either you or Kasich will be in a great position to succeed him in 2024. Republicans have won both the Senate and the House, and Rubio will hopefully be able to pass much of his moderate-conservative agenda.<br><br>Rubio shifted a surprising amount to the center during the election, but hopefully he will come back to the right when he is inaugurated. Apart from that, it seems like this election has ended. Get ready to become Attorney General!</p>`);
+        e.pages.push(`<h3>“We have a big announcement to make...”</h3><p>“We can now project that Marco Rubio has won 270 electoral votes, and with it, the presidency.”<br><br>America has been preserved! Senator Rubio has won the election, and prevented one of the worst women in history from becoming Commander-in-Chief. Clinton gives her muted concession speech, and Rubio's victory speech in Miami talks about the need for unity in our country.<br><br>Under Rubio's presidency, the conservative majority will be solidified or expanded. Hillary Clinton's career is all but over, and when Rubio is inaugurated, he promises he will choose you as his Secretary of State. Trump can keep whining, but he doesn't matter now.</p>`);
+        e.pages.push(`<h3>“We have a big announcement to make...”</h3><p>Rubio has already begun planning out his cabinet, and he has said that you will be his Secretary of State, which you gladly accept. Rubio has promised to appoint Neil Gorsuch to fill Antonin Scalia's open seat, and Democrats are furious that Clinton lost.<br><br>Hopefully Rubio can win in 2020. If he does, either you or Kasich will be in a great position to succeed him in 2024. Republicans have won both the Senate and the House, and Rubio will hopefully be able to pass much of his moderate-conservative agenda.<br><br>Rubio shifted a surprising amount to the center during the election, but hopefully he will come back to the right when he is inaugurated. Apart from that, it seems like this election has ended. Get ready to become Secretary of State!</p>`);
         e.executable.push([0, () => { e.image = 'https://i.imgur.com/5NquPN6.png'; }]);
         e.executable.push([1, () => { e.image = 'https://i.imgur.com/5NquPN6.png'; }]);
     if (songChange != 1) {
@@ -11966,7 +11966,7 @@ if ((campaignTrail_temp.player_answers[4] === 51271 || campaignTrail_temp.player
 
        else if ((campaignTrail_temp.player_answers[4] === 51119) && quickstats[0] == 269) { // Rubio deadlocks the election
         e.pages.push(`<h3>“We have a big announcement to make...”</h3><p>“We can now project that no candidate has won a majority.”<br><br>Those words from the TV were rather surprising, but Republicans control Congress, meaning both Rubio and Kasich have won the election. Clinton gives her muted concession speech, and Rubio's victory speech in Miami talks about the need for unity in our country.<br><br>Under Rubio's presidency, the conservative majority will be solidified or expanded. Hillary Clinton's career is all but over, and when Rubio is inaugurated, 8 years of disaster under Barack Obama will finally be ended. Trump can keep whining, but he doesn't matter now.</p>`);
-        e.pages.push(`<h3>“We have a big announcement to make...”</h3><p>Rubio has already begun planning out his cabinet, and he has said that you will be his Attorney General, which you gladly accept. Rubio has promised to appoint Neil Gorsuch to fill Antonin Scalia's open seat, and Democrats are furious that Clinton lost.<br><br>Hopefully Rubio can win in 2020. If he does, either you or Kasich will be in a great position to succeed him in 2024. Republicans have won both the Senate and the House, and Rubio will hopefully be able to pass much of his moderate-conservative agenda.<br><br>Rubio shifted a surprising amount to the center during the election, but hopefully he will come back to the right when he is inaugurated. Apart from that, it seems like this election has ended. Get ready to become Attorney General!</p>`);
+        e.pages.push(`<h3>“We have a big announcement to make...”</h3><p>Rubio has already begun planning out his cabinet, and he has said that you will be his Secretary of State, which you gladly accept. Rubio has promised to appoint Neil Gorsuch to fill Antonin Scalia's open seat, and Democrats are furious that Clinton lost.<br><br>Hopefully Rubio can win in 2020. If he does, either you or Kasich will be in a great position to succeed him in 2024. Republicans have won both the Senate and the House, and Rubio will hopefully be able to pass much of his moderate-conservative agenda.<br><br>Rubio shifted a surprising amount to the center during the election, but hopefully he will come back to the right when he is inaugurated. Apart from that, it seems like this election has ended. Get ready to become Secretary of State!</p>`);
         e.executable.push([0, () => { e.image = 'https://i.imgur.com/5NquPN6.png'; }]);
         e.executable.push([1, () => { e.image = 'https://i.imgur.com/5NquPN6.png'; }]);
     if (songChange != 1) {
