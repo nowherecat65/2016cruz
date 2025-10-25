@@ -11191,7 +11191,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51121,
             "candidate": 200,
-            "answer_feedback": "You offer Trump the role Secretary of Commerce. He claims he'll “run America like a business,” and will advocate for renegotiating NAFTA. This is great news for your campaign. Uniting the party is the first step to winning the race."
+            "answer_feedback": "You offer Trump the role Secretary of Commerce. He claims he'll “run America like a business,” and will advocate for renegotiating NAFTA. Uniting the party is the first step to winning the race."
         }
     },
     {
@@ -11470,7 +11470,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51320,
             "candidate": 200,
-            "answer_feedback": "You're leaning into the “open borders” aspect of it, which is good. Most Americans don't want illegal immigrants coming into the country. Not ones in the swing states, that is. Meanwhile, Hillary tries to defend herself by saying her sentence was being taken out of context."
+            "answer_feedback": "You're leaning into the “open borders” aspect of it, which is good. Very few people will die on the hill of completely opening the border and letting migrants coming into the country. Rhetorically. Meanwhile, Hillary tries to defend herself by saying her sentence was being taken out of context."
         }
     },
     {
