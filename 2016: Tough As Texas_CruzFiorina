@@ -11763,11 +11763,6 @@ campaignTrail_temp.jet_data = [{
 }
 ]
 
-
-
-e.SelAnsContText = "Ted, are you in there? You didn't choose anything. We have an election to win."
-e.ElectionPopup = "Here we go. Best of luck sir, you have fought a brave battle."
-
 // ENDINGS -- this is slightly more reliable than the ending code method
 
 construct = (a = 1) => {
