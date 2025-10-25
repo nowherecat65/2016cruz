@@ -314,7 +314,7 @@ const TrumpMap = {
 const PrimaryMap = {
     "-3": `Your primary showing has been <span style="color: #CD1025;"><strong>an unmitigated disaster</strong></span>.`,
     "-2": `Your primary showing has been <span style="color:  #FB6723;"><strong>a failure</strong></span>.`,
-    "-1": `Your primary showing is <span style="color:  #FB6723;"><strong>off to a bad start.</strong></span>.`,
+    "-1": `Your primary showing is <span style="color:  #FB6723;"><strong>off to a bad start</strong></span>.`,
     "0": `Your primary showing has been <span style="color: #DEB83E;"><strong>somewhat respectable</strong></span>.`,
     "1": `Your primary showing has been <span style="color: #57AB6A;"><strong>somewhat successful</strong></span>.`,
     "2": `Your primary showing has been <span style="color: #6DCF1F;"><strong>very successful</strong></span>.`,
@@ -11110,7 +11110,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51043,
             "candidate": 200,
-            "answer_feedback": "It's a good idea to hammer away at Hillary, but this is mainly something that will appease Trump's base, not yours."
+            "answer_feedback": "It's a good idea to hammer away at Hillary Clinton, especially when you have such a large polling deficit currently."
         }
     },
     {
