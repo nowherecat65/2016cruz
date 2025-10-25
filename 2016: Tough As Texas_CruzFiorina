@@ -11860,10 +11860,10 @@ if ((campaignTrail_temp.player_answers[4] === 51271 || campaignTrail_temp.player
     songChange = 1
     const trumpvictory = new Playlist();
       const trumpvictorySong = new Song(
-        "Y.M.C.A",
-        "Village People",
-        "https://i.imgur.com/CqO4wC7.png",
-        "https://audio.jukehost.co.uk/nAOVxzDaKO8txgG3yt8DClwbCykveIVN"
+        "Donald Trump vs. Hillary Clinton",
+        "ERB",
+        "https://i.imgur.com/BG0RmI2.jpeg",
+        "https://files.catbox.moe/ofvp5k.mp3"
       );
       trumpvictory.addSong(trumpvictorySong);
     changePlaylist(trumpvictory);
