@@ -20,7 +20,7 @@ e.VpText = 'Please select your Vice Presidential nominee:';
 e.HomeStateText = "Position:";
 e.PartyText = "Affiliation:";
 e.SelAnsContText = "Ted, are you in there? You didn't choose anything. Wake up!"
-e.ElectionPopup = "Here we go. Good luck sir, you have fought a brave battle."
+e.ElectionPopup = "Election night is here. Good luck, you've fought a brave battle."
 e.LosePopup = "The people of this country have decided. They have chosen radicalism over decency..."
 e.WinPopup = "The people of this country have decided. They have chosen decency over radicalism!"
 
@@ -709,7 +709,7 @@ campaignTrail_temp.candidate_json = [
         }
     },
     {
-        "model": "campaign_trail.candidate",
+        "model": "campaign_trail.candidate", 
         "pk": 50005,
         "fields": {
             "first_name": "John",
@@ -762,7 +762,7 @@ campaignTrail_temp.running_mate_json = [
         "model": "campaign_trail.running_mate",
         "pk": 129103,
         "fields": {
-            "candidate": 201,
+            "candidate": 0,
             "running_mate": 50005
 
         }
