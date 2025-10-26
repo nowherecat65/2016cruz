@@ -233,40 +233,6 @@ input[type="radio"]:checked::before {
 input[type="radio"]:hover { filter: brightness(1.15); }
 
 /* ================================
-   The sliders
-   ================================ */
-input[type="range"] {
-  -webkit-appearance: none;
-  width: 150px;
-  height: 6px;
-  border-radius: 3px;
-  background: #2d3841;
-  outline: none;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background: #5c6b7c;
-  border: 2px solid #4a5663;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-input[type="range"]::-moz-range-thumb {
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background: #5c6b7c;
-  border: 2px solid #4a5663;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-/* ================================
    Tables
    ================================ */
 table {
@@ -1237,13 +1203,6 @@ function setupMusicPlayer() {
   );
 
   const song6 = new Song(
-    "Donald Trump vs. Hillary Clinton",
-    "Epic Rap Battles of History",
-    "https://i.imgur.com/BG0RmI2.jpeg",
-    "https://files.catbox.moe/ofvp5k.mp3"
-  );
-
-  const song7 = new Song(
     "Ballad of the Mighty I",
     "Noel Gallagher's High Flying Birds",
     "https://i.postimg.cc/gcssRhNH/noelly.png",
@@ -1256,7 +1215,6 @@ function setupMusicPlayer() {
   playlist.addSong(song4);
   playlist.addSong(song5);
   playlist.addSong(song6);
-  playlist.addSong(song7);
 
 
   const playerContainer = document.createElement("div");
