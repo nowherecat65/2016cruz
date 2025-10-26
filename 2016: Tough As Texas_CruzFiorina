@@ -11851,8 +11851,8 @@ endingPicker = (out, totv, aa, quickstats) => {
 // --------------------------------------------------------------- SPECIAL ENDINGS (gotta put these on top so they trigger first) -------------------------------------------------------------------------------------------
 
 // Trump wins 50 states
-if ((campaignTrail_temp.player_answers[4] === 51271 || campaignTrail_temp.player_answers[4] === 51084) && quickstats[0] >= 535) { // HILLARY, YOUR FIRED!
-        e.pages.push(`<h3>Hillary, you're fired.</h3><p>apprentice guy wins all 50 states wow</p>`);
+if ((campaignTrail_temp.player_answers[4] === 51271 || campaignTrail_temp.player_answers[4] === 51084) && quickstats[0] >= 535) { // trump
+        e.pages.push(`<h3>Hillary, you're fired.</h3><p>Absolutely astounding. Orange man has won all 50 states against that basket of deplorables, killary klinton. what a nasty woman. the world is now a better place.<marquee scrollamount='65'><h1>WHAT A NASTY WOMAN. DISGUSTING BASKET OF DEPLORABLE.!11!!11111!!!</marquee></p>`);
         e.executable.push([0, () => { e.image = 'https://i.imgur.com/Bs5xDUA.png'; }]);
     if (songChange != 1) {
     songChange = 1
@@ -11917,7 +11917,7 @@ if ((campaignTrail_temp.player_answers[4] === 51271 || campaignTrail_temp.player
 
 // Trump loses
 
-       else if ((campaignTrail_temp.player_answers[4] === 51271 || campaignTrail_temp.player_answers[4] === 51084) && quickstats[0] < 269) { // Trump LOSES the election...
+       else if ((campaignTrail_temp.player_answers[4] === 51271 || campaignTrail_temp.player_answers[4] === 51084) && quickstats[0] < 269 && quickstats[0] > 3) { // Trump LOSES the election...
         e.pages.push(`<h3>A Rise and Fall</h3><p>You had hoped that what they had been saying was true, that Trump had 'blue collar appeal,' as all his campaign managers said, but as you warned them, it didn't work out. The RNC is absolutely livid that Trump screwed up such a winnable election. Trump calls the election rigged, Clinton declares victory, and the upshot is mass confusion and anger amongst the voters. Paul Ryan says the election result was 'unsurprising, especially after the Hollywood access tape.' Marco Rubio called the result 'disapointing but expected.'<br><br>Some Trump supporters even called for a march on Washington to demand a recount, though fortunately nobody actually attempted an attack. In any case, the debate stretches well into the night. The conservative majority in the Supreme Court will likely be diminished or gone by the end of Hillary's first term. McConnell has already backed down, and the process to confirm Merrick Garland is underway. Ruth Bader Ginsburg has said she plans to retire as soon as Clinton is inaugurated.</p>`);
         e.pages.push(`<h3>A Rise and Fall</h3><p>Hillary Clinton, the most corrupt, pro-choice, disastrous woman to ever bear the face of Earth, has been elected President. She picked the Javits Center in Manhattan to hold her victory speech, mainly because it had a massive glass ceiling on it. She shatters it and the crowd erupts into celebration. She keeps gloating during her victory speech. 'I'm a mom, so I know how to take care of things,' she smiles. The crowd roars. 'I'll take you in, even if you didn't vote for me. I'll take care of everyone like I took care of Chelse-' You turn off the TV. You don't want to hear her insufferable voice anymore.<br><br>You? You're already planning to run for the nomination again in 2020. The damage to this country will be irreversible if a woman is allowed to serve 2 terms. Donald Trump is still on the line of fire, and establishment Republicans continue to dunk on him. For now though, you can't be bothered to deal with the circus happening on Twitter anymore. You turn off the lights in your hotel room and head to bed.</p>`);
         e.executable.push([0, () => { e.image = 'https://i.imgur.com/kg7ymVb.jpeg'; }]);
@@ -11935,7 +11935,12 @@ if ((campaignTrail_temp.player_answers[4] === 51271 || campaignTrail_temp.player
     changePlaylist(trumpdefeat);
      }
     }
+// Trump loses everything
 
+if ((campaignTrail_temp.player_answers[4] === 51271 || campaignTrail_temp.player_answers[4] === 51084) && quickstats[0] < 3) { // trump loses everything
+        e.pages.push(`<h3>Basket of Deplorables</h3><p>“I know there are only 60 days left to make our case – and don't get complacent; don't see the latest outrageous, offensive, inappropriate comment and think, "Well, he's done this time". We are living in a volatile political environment. You know, to just be grossly generalistic, you could put half of Trump's supporters into what I call the basket of deplorables deplorables deplorables deplorables deplorables deplorables deplorables deplorables deplorables deplorables deplorables deplorables deplorables deplorables deplorables deplorables deplorables deplorables deplorables deplorables deplorables deplorables deplorables deplorables deplorables deplorables deplorables deplorables deplorables deplorables deplorables deplorables deplorables deplorables deplorables deplorables deplorables deplorables deplorables deplorables deplorables deplorables deplorables deplorables deplorables deplorables deplorables deplorables deplorables deplorables deplorables deplorables deplorables deplorables deplorables deplorables deplorables deplorables deplorables deplorables deplorables deplorables deplorables deplorables deplorables deplorables deplorables deplorables deplorables deplorables. - Hillary Clinton, CBS News</p>`);
+        e.executable.push([0, () => { e.image = 'https://i.imgur.com/kg7ymVb.jpeg'; }]);
+    }
 
 // -------------------
 // IT'S RUBIO!111!
