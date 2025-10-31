@@ -1,6 +1,6 @@
 console.log('Code 2 initialized successfully.');
 
-// Further reading tabs, styling from lifetime of this
+// Further reading tabs
 (function() {
     'use strict';
 
