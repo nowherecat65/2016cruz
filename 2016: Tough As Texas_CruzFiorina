@@ -1135,7 +1135,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1000,
         "fields": {
             "priority": 1,
-            "description": "Here we go, Ted. This isn't Texas. This isn't just a statewide race. It’s the presidency. You're going to have to bring your message to all 321 million Americans, as you've officially announced you candidacy for President of the United States. What’s your strategy going in? Real estate mogul and entrepreneur Donald Trump appears to be the frontrunner.",
+            "description": "Here we go, Ted. This isn't Texas. This isn't just a statewide race. It’s the presidency. You're going to have to bring your message to all 321 million Americans, as you've officially announced you candidacy for President of the United States. What’s your strategy going in? Bona fide celebrity and entrepreneur Donald Trump appears to be the frontrunner.",
             "likelihood": 1
         }
     },
@@ -6092,7 +6092,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 200,
             "state": 1021,
-            "state_multiplier": 0.9315
+            "state_multiplier": 0.9515
         }
     },
     {
@@ -6551,7 +6551,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 201,
             "state": 1021,
-            "state_multiplier": 1.04251
+            "state_multiplier": 1.09551
         }
     },
     {
@@ -6560,7 +6560,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 201,
             "state": 1022,
-            "state_multiplier": 1.098732998568542
+            "state_multiplier": 1.13
         }
     },
     {
@@ -6695,7 +6695,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 201,
             "state": 1037,
-            "state_multiplier": 1.05249871
+            "state_multiplier": 1.09249871
         }
     },
     {
@@ -6803,7 +6803,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 201,
             "state": 1049,
-            "state_multiplier": 1.0772121851
+            "state_multiplier": 1.0972121851
         }
     },
     {
@@ -9458,32 +9458,10 @@ campaignTrail_temp.answer_score_state_json = [
     },
     {
         "model": "campaign_trail.answer_score_state",
-        "pk": 51145,
-        "fields": {
-            "answer": 51084,
-            "state": 1034,
-            "candidate": 200,
-            "affected_candidate": 200,
-            "state_multiplier": 0.05
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
         "pk": 51148,
         "fields": {
             "answer": 51119,
             "state": 1018,
-            "candidate": 200,
-            "affected_candidate": 200,
-            "state_multiplier": 0.05
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
-        "pk": 51148,
-        "fields": {
-            "answer": 51119,
-            "state": 1034,
             "candidate": 200,
             "affected_candidate": 200,
             "state_multiplier": 0.05
@@ -10698,6 +10676,28 @@ campaignTrail_temp.answer_score_state_json = [
             "affected_candidate": 203,
             "state_multiplier": 10
         }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 51600,
+        "fields": {
+            "answer": 51084,
+            "state": 1034,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "state_multiplier": 0.05
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 51601,
+        "fields": {
+            "answer": 51119,
+            "state": 1034,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "state_multiplier": 0.05
+        }
     }
 ]
 
@@ -11717,6 +11717,8 @@ campaignTrail_temp.running_mate_image_url = "https://i.imgur.com/eoMOgq2.png";
 campaignTrail_temp.candidate_last_name = "Cruz";
 campaignTrail_temp.running_mate_last_name = "Campaign";
 
+
+
 campaignTrail_temp.jet_data = [{
     "banner_enabled": true,
     "banner_data": {
@@ -11765,6 +11767,8 @@ campaignTrail_temp.jet_data = [{
     }
 }
 ]
+
+
 
 // ENDINGS -- this is slightly more reliable than the ending code method
 
