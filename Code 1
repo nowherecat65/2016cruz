@@ -1033,8 +1033,8 @@ a:hover {
      overflow-y: auto;
             }
 #difficulty_mult {
-    position: relative;  /* take it out of normal flow slightly */
-    top: 20px;           /* push it down visually */
+    position: relative; 
+    top: 20px;         
 }
 
   .overlay_window {
