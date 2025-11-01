@@ -1,3 +1,13 @@
+function ctsAchievement(achievement, difficultyChecker = true){
+	if ((difficultyChecker && campaignTrail_temp.difficulty_level_multiplier<=1)||!difficultyChecker)
+		if(campaignTrail_temp.CTS){
+		unlockAchievement(achievement);
+	}
+}
+
+e.answer_count = 5;
+
+
 console.log('Code 2 initialized successfully.');
 
 // Further reading tabs
@@ -572,15 +582,6 @@ setInterval(() => {
         updateHeadquarterContent();
     }
 }, 100);
-
-
-function ctsAchievement(achievement, difficultyChecker = true){
-	if ((difficultyChecker && campaignTrail_temp.difficulty_level_multiplier<=1)||!difficultyChecker)
-		if(campaignTrail_temp.CTS){
-		unlockAchievement(achievement);
-	}
-}
-
 
 let republican = "Ted Cruz";
 let republicanvp = "Carly Fiorina";
@@ -11347,7 +11348,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51219,
             "candidate": 200,
-            "answer_feedback": "God. Whatever decency this race had is gone. The mainstream media and liberals universally condemns your words, but the base still love them. "
+            "answer_feedback": "Way to kick the woman while she's down. Some advisors caution about getting yourself so involved in the mudslinging, but this is just another one of many places for you to attack her. MSNBC has resorted to calling you 'ableist' to try and win votes."
         }
     },
     {
@@ -11356,7 +11357,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51228,
             "candidate": 200,
-            "answer_feedback": "Clinton is speechless, but you notice a slight smile creep across her face. The base eats the red meat up, and Fox applauds you for having the guts to stand up to the establishment. At the end of the debate, she walks up to shake your hand. You don't reciprocate. The brutality of the race shocks you, and also excites you."
+            "answer_feedback": "You say all of that on live TV. Clinton is speechless, but you notice a slight smile creep across her face. The base eats the red meat up, and Fox applauds you for having the guts to stand up to the establishment. At the end of the debate, she doesn't walk to shake your hand. You don't care. The brutality of the race excites you."
         }
     },
     {
@@ -11383,7 +11384,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51264,
             "candidate": 200,
-            "answer_feedback": "You blink, trying to get her out of your head. You try to ignore her and keep arguing for the right to life and against gay marriage.it’s only when you rewatch the debate on your phone that the blood starts to boil through your body. You shouldn't have let her boss you around like that without a response, you think."
+            "answer_feedback": "You completely ignore her, arguing with Holt as he keeps trying to 'fact check' you. In fact, the debate ends up seeming more like a debate between you and the moderators. Clinton keeps baiting you, and you continue to not response. When you watch the debate on your phone, you feel like you wanted to slit her throat."
         }
     },
     {
