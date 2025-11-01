@@ -2100,7 +2100,6 @@ tooltipList = [
   {searchString: "the establishment", explanationText: "<img src=https://i.imgur.com/BHYdwFO.png>"},
   {searchString: "Ben Carson", explanationText: "<img src=https://i.imgur.com/mk57VPA.png> Ben Carson – A neurosurgeon, well known in the Evangelical community."},
   {searchString: "Walker", explanationText: "<img src=https://i.imgur.com/xmf05Zy.jpeg> That guy who survived the recall."},
-  {searchString: "The Republican National Convention in Cleveland", explanationText: "<img src=https://i.imgur.com/TEYBSJR.png> Everything before was light work. Now the real challenge begins."},
   {searchString: "LGBT nightclub in Orlando killed 49", explanationText: "<img src=https://i.imgur.com/Fx5c1jK.jpeg> Pulse Nightclub in Orlando, Florida, while it still existed."},
   {searchString: "Kasich", explanationText: "<img src=https://i.imgur.com/YcCbaxa.jpeg> John Kasich – Governor of Ohio and avowed moderate candidate."},
   {searchString: "Governor Kasich", explanationText: "<img src=https://i.imgur.com/YcCbaxa.jpeg> John Kasich – Governor of Ohio and avowed moderate candidate."},
