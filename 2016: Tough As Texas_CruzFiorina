@@ -10772,7 +10772,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5090,
             "candidate": 200,
-            "answer_feedback": "This is the expected response, albeit a deeply controversial one. Unfortunately, you've confirmed what the Clinton campaign has been spreading, and it's seized upon by her Super PACs."
+            "answer_feedback": "Your response is expected, as is the backlash. Unfortunately, you've confirmed what the Clinton campaign has been spreading, and it's seized upon by her Super PACs."
         }
     },
     {
@@ -11729,10 +11729,10 @@ campaignTrail_temp.jet_data = [{
         "runImage": "https://i.imgur.com/eoMOgq2.png"
     },
     "nicknames": {
-        "200": "Cruz",
-        "201": "Clinton",
-        "202": "Johnson",
-        "203": "Stein"
+        "200": "cruz",
+        "201": "killary",
+        "202": "johnson",
+        "203": "stein"
     },
     "endings_enabled": false,
     "ending_data": {},
