@@ -1,9 +1,10 @@
 // TO DO LIST
 // - BEFORE RELEASING MOD FIX THE FURTHER READING PICS
 // - BEFORE RELEASING MOD FINISH 0 EV ENDING
+// - BEFORE RELEASING MOD CHANGE Primary advisor feedback image
 
 
-//* Mod Title: 2016 - Tough As Texas
+ //* Mod Title: 2016 - Tough As Texas
  //* Mod Author: TheMcCain
  //* Mod Version: 1.0
  //* 
@@ -11,12 +12,43 @@
  //* Writing License: Creative Commons Attribution 4.0 International (CC BY 4.0)
  //* 
  //* For the coding in this mod, I hereby release the code under the terms and conditions of the Apache License 2.0. The full text of the license can be found at:
-// * https://choosealicense.com/licenses/apache-2.0/
+ // * https://choosealicense.com/licenses/apache-2.0/
  //* 
-// * For the writing in this mod, including documentation, text files, and other non-software written works, I hereby release the content under the terms and conditions of the Creative Commons Attribution 4.0 International (CC BY 4.0) license. The full text of the license can be found at:
-// * https://creativecommons.org/licenses/by/4.0/legalcode
-// * 
-// Tags: Althist
+ // * For the writing in this mod, including documentation, text files, and other non-software written works, I hereby release the content under the terms and conditions of the Creative Commons Attribution 4.0 International (CC BY 4.0) license. The full text of the license can be found at:
+ // * https://creativecommons.org/licenses/by/4.0/legalcode
+ // * 
+ // Tags: Althist
+
+function updateDifficultyForm() {
+      const heading = document.querySelector("#difficulty_level form h3");
+      if (heading) {
+        heading.textContent = "Please select your campaign difficulty:";
+      }
+}
+
+function updateSiteCredits() {
+  const heading = document.querySelector("div#site_credits p");
+  if (heading) {
+    heading.innerHTML = "All DBA award images created by cherrymeringue!<br>Thanks for playing Tough as Texas!";
+  }
+}
+
+let changesInProgress = false;
+let masterObserver = new MutationObserver(masterFunction);
+function masterFunction() {
+        if (changesInProgress) return;
+        changesInProgress = true;
+        masterObserver.disconnect();
+
+        // Call all the functions here
+        updateDifficultyForm();
+        updateSiteCredits();
+
+        // Re-observe the document
+        changesInProgress = false;
+        masterObserver.observe(document.body, { childList: true, subtree: true });
+}
+masterObserver.observe(document.body, { childList: true, subtree: true });
 
 // Global text variables
 e.SelectText = 'Please confirm you will play:';
