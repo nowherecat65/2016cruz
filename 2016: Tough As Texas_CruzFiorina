@@ -1135,7 +1135,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1000,
         "fields": {
             "priority": 1,
-            "description": "Here we go. Your eyes are on the prize. The prize is the presidency. as you've officially announced you candidacy for President of the United States. You're going to have to bring your message to all 321 million Americans,  What’s your strategy going in? Bona-fide celebrity and entrepreneur Donald Trump appears to be the frontrunner as Iowa begins.",
+            "description": "Here we go. Your eyes are on the prize. The prize is the presidency. as you've officially announced you candidacy for President of the United States. You're going to have to bring your message to all 321 million Americans. What’s your strategy going in? Bona-fide celebrity and entrepreneur Donald Trump appears to be the frontrunner as Iowa begins.",
             "likelihood": 1
         }
     },
