@@ -1135,7 +1135,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1000,
         "fields": {
             "priority": 1,
-            "description": "Here we go, Ted. This isn't Texas. This isn't just a statewide race. It’s the presidency. You're going to have to bring your message to all 321 million Americans, as you've officially announced you candidacy for President of the United States. What’s your strategy going in? Bona fide celebrity and entrepreneur Donald Trump appears to be the frontrunner.",
+            "description": "Here we go. Your eyes are on the prize. The prize is the presidency. as you've officially announced you candidacy for President of the United States. You're going to have to bring your message to all 321 million Americans,  What’s your strategy going in? Bona-fide celebrity and entrepreneur Donald Trump appears to be the frontrunner as Iowa begins.",
             "likelihood": 1
         }
     },
@@ -1153,7 +1153,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1006,
         "fields": {
             "priority": 2,
-            "description": "You're on the debate stage now. After your win in Iowa, you've gained much momentum, and you have a serious shot at winning now. Unfortunately, the next primary is in New Hampshire, where Trump seems to hold an even greater lead. You probably can't defeat him here, but you probably can shrink his margin enough where it isn't really a win for him. It's now your turn to speak. What do you do?",
+            "description": "Walking on to a cheering crowd of patriotic Americans, the Republican primary debate has begun. After your win in Iowa, you've gained much momentum, and you have a serious shot at winning now. Unfortunately, the next primary is in New Hampshire, where Trump seems to hold an even greater lead. You probably can't defeat him here, but you probably can shrink his margin enough where it isn't really a win for him. It's now your turn to speak. What will you say to the audience?",
             "likelihood": 1
         }
     },
@@ -1162,7 +1162,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1001,
         "fields": {
             "priority": 3,
-            "description": "Super Tuesday is just days away. Your campaign is feverishly working to mobilize every single Evangelical it can find, and cutting a dozen new ads. Which state do you want to pour your remaining resources into most before the big day arrives? ",
+            "description": "Super Tuesday is just days away. Your campaign is feverishly working to mobilize every single voter it can find, and cutting a dozen new ads. Which state do you want to pour your remaining resources into most before the big day arrives? ",
             "likelihood": 1
         }
     },
@@ -1180,7 +1180,7 @@ campaignTrail_temp.questions_json = [
         "pk": 3198,
         "fields": {
             "priority": 4,
-            "description": "After defeating Trump, he is furious. He’s demanding major concessions on policy, cabinet picks, and a primetime speaking slot at the convention. Do you give him what he wants or do you refuse?",
+            "description": "After defeating Trump, he's furious. He’s demanding major concessions on policy, cabinet picks, and a primetime speaking slot at the convention. Do you give him what he wants or do you refuse?",
             "likelihood": 1
         }
     },
@@ -1252,7 +1252,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1027,
         "fields": {
             "priority": 7,
-            "description": "The Clinton campaign has aired new advertisements attacking your stance on abortion and reproductive rights, calling them backward and ''from the 1950s.'' What is your response?",
+            "description": "As of the last couple of days, Clinton's campaign has seemed to go full ballistic on your record. Just recently, she's aired new advertisements attacking your stance on abortion and reproductive rights, calling them backward and ''from the 1950s.'' How should you respond?",
             "likelihood": 1
         }
     },
@@ -1396,7 +1396,7 @@ campaignTrail_temp.questions_json = [
         "pk": 51060,
         "fields": {
             "priority": 0,
-            "description": "Well... today was interesting. You've defied the odds. Despite Trump's best efforts, you decisively defeated him on Super Tuesday, winning most states. While Trump will still try in vain to win, you're now on track to win the nomination. With this, you've gained the initiative and have added a precious few months to your schedule. What would you like to do here?",
+            "description": "You expected much from today, but you didn't expect this. You've defied the odds. Despite Trump's best efforts, you decisively defeated him on Super Tuesday, winning most states. While Trump will still try in vain to win, you're now on track to win the nomination. With this, you've gained the initiative and have added a precious few months to your schedule. What would you like to do here?",
             "likelihood": 1
         }
     },
@@ -1443,7 +1443,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5004,
         "fields": {
             "question": 1001,
-            "description": "Tennessee is leaning hard toward Trump, but I’m confident we can close the gap by Super Tuesday. This state is critical to our path forward. We’ll hit Nashville and Knoxville before the voting begins."
+            "description": "Tennessee is leaning heavily toward Trump, but I’m confident we can close the gap by Super Tuesday. This state is critical to our path forward. We’ll hit Nashville and Knoxville before the voting begins."
         }
     },
     {
@@ -1459,7 +1459,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5017,
         "fields": {
             "question": 1007,
-            "description": "It's time we take out the artillery here. Trump has donated thousands to Clinton's re-election campaign, her foundation, and donated to many other Democrats in New York, not even what, 6 years ago? 7 tops?"
+            "description": "I say we take out the artillery this time around. He has skeletons in his closet, I know it. We already know he's donated atleast $100,000 to the Clinton Foundation, but he's donated to more of them. Make stuff up if you have to, I don't care."
         }
     },
     {
@@ -1491,7 +1491,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5032,
         "fields": {
             "question": 1011,
-            "description": "Hillary Clinton is on the verge of becoming Commander-in-Chief, and who knows what will happen once she does. 1 month after she's inaugurated, we'll find out she's being blackmailed by Russia or Saudi Arabia. Do we really want someone like her to lead us?"
+            "description": "Hillary Clinton is on the verge of becoming Commander-in-Chief, and who knows what will happen once she does. 1 month after she's inaugurated, we'll find out she's being blackmailed by Russia or Saudi Arabia. We can not and will not let her become President on January 20th!"
         }
     },
     {
@@ -1627,7 +1627,7 @@ campaignTrail_temp.answers_json = [
         "pk": 20664,
         "fields": {
             "question": 1000,
-            "description": "Trump is a liberal. He might say otherwise, but the facts don't lie. Hillary Clinton was at his wedding, and he's donated thousands to her election campaign in New York and her foundation. He'll cozy up to her on his first day in office."
+            "description": "Trump -- he's a liberal in disguise. He'll tell you otherwise, but the fact don't lie. He's donated hundreds of thousands to Hillary Clinton's foundation, even more to other Democrats and Clinton was even kissing guests at his wedding!"
         }
     },
     {
@@ -1635,7 +1635,7 @@ campaignTrail_temp.answers_json = [
         "pk": 20665,
         "fields": {
             "question": 1000,
-            "description": "Believe me, I want to go on the attack, but we need to be smart. Me, Rubio, and Trump seem to have a lead over the rest of the candidates, so if I avoid going on the offensive, we'll be the compromise candidate when the, inevitably deadlocked, convention arrives."
+            "description": "If we're serious about winning the nomination then we'll need to play the long game. We'll let Trump, Rubio, and Kasich attack eachother, and we'll emerge as a compromise candidate when the inevitably deadlocked convention arrives."
         }
     },
     {
@@ -1643,7 +1643,7 @@ campaignTrail_temp.answers_json = [
         "pk": 20666,
         "fields": {
             "question": 1000,
-            "description": "I'm the only one in this race who has fought again wanton abortion, tax increases, and Obamacare, over and over during the course of my whole career, and I'll take these principles with me if I'm elected President. We're going to make sure primary voters know about my record."
+            "description": "I'm the only one in this race who has fought again wanton abortion, tax hikes, and Obamacare, over and over during the course of my whole career, and I'll take these principles with me if I'm elected President. We're going to make sure primary voters know about my record."
         }
     },
     {
@@ -1651,7 +1651,7 @@ campaignTrail_temp.answers_json = [
         "pk": 20667,
         "fields": {
             "question": 1000,
-            "description": "We can get muddied down in electioneering as much as we want, but if we don't work with some of the other candidates, we're done for. I'm going to meet with Rubio, Kasich, whoever, and the RNC, to see if we can make some common ground."
+            "description": "We can get muddied down in electioneering as much as we want, but that doesn't change the fact that we're never going to win divided. I'm going to meet with Rubio, Kasich, whoever, and the RNC, to see if we can make some common ground."
         }
     },
     {
@@ -2323,7 +2323,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51590,
         "fields": {
             "question": 51533,
-            "description": "So I was right. Killing Klinton really is a murderer. We're going to be posting about this all week. We're gonna have a good time. And we're gonna lock her up."
+            "description": "So I was right. Klinton really is a murderer. We're going to be posting about this all week. We're gonna have a good time. And we're gonna lock her up."
         }
     }
 ]
@@ -5939,7 +5939,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 200,
             "state": 1004,
-            "state_multiplier": 0.94
+            "state_multiplier": 0.99
         }
     },
     {
@@ -6011,7 +6011,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 200,
             "state": 1012,
-            "state_multiplier": 0.9367891123
+            "state_multiplier": 0.9667891123
         }
     },
     {
@@ -6029,7 +6029,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 200,
             "state": 1014,
-            "state_multiplier": 0.91724
+            "state_multiplier": 0.93724
         }
     },
     {
@@ -6182,7 +6182,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 200,
             "state": 1031,
-            "state_multiplier": 0.94
+            "state_multiplier": 0.98
         }
     },
     {
@@ -6326,7 +6326,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 200,
             "state": 1047,
-            "state_multiplier": 0.94
+            "state_multiplier": 1.4
         }
     },
     {
@@ -6785,7 +6785,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 201,
             "state": 1047,
-            "state_multiplier": 13.99988
+            "state_multiplier": 12.99988
         }
     },
     {
@@ -7703,7 +7703,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 203,
             "state": 1047,
-            "state_multiplier": 0.053232
+            "state_multiplier": 0.4
         }
     },
     {
@@ -7813,7 +7813,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 5017,
             "candidate": 200,
             "affected_candidate": 200,
-            "global_multiplier": -0.005
+            "global_multiplier": -0.02
         }
     },
     {
@@ -8053,7 +8053,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 51072,
             "candidate": 200,
             "affected_candidate": 200,
-            "global_multiplier": -0.065
+            "global_multiplier": -0.055
         }
     },
     {
@@ -8183,7 +8183,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 20739,
             "candidate": 200,
             "affected_candidate": 200,
-            "global_multiplier": 0.002
+            "global_multiplier": -0.002
         }
     },
     {
@@ -8653,7 +8653,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 5032,
             "candidate": 200,
             "affected_candidate": 200,
-            "global_multiplier": 0.003
+            "global_multiplier": 0.0032
         }
     },
     {
@@ -8995,7 +8995,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "fields": {
             "answer": 20739,
             "issue": 102,
-            "issue_score": 0.15,
+            "issue_score": -0.15,
             "issue_importance": 3
         }
     },
@@ -10726,7 +10726,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5030,
             "candidate": 200,
-            "answer_feedback": "You see cheers coming along from the entire stage. The one thing that's keeping this party together is their unanimous hatred of Hillary Clinton, and your ready to fight her."
+            "answer_feedback": "You see cheers coming along from the entire stage. The one thing that's keeping this party together is their unanimous hatred of Hillary Clinton, and your ready to fight her come November."
         }
     },
     {
@@ -10744,7 +10744,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5032,
             "candidate": 200,
-            "answer_feedback": "Hillary Clinton is an incredibly vulnerable candidate, and it's always good to point out her flaws. Cheers erupt from the audience, and this election seems winnable this time after major losses in 2008 and 2012."
+            "answer_feedback": "Hillary Clinton is an incredibly unpopular candidate, and it's always good to point out her flaws. Cheers erupt from the audience, and this election seems winnable this time after major losses in 2008 and 2012."
         }
     },
     {
@@ -10897,7 +10897,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 20665,
             "candidate": 200,
-            "answer_feedback": "Unfortunately, Rubio appears to be underperforming compared to what early polls had suggested, and it seems you’ll be forced to take up the mantle as the main opposition to Trump anyway."
+            "answer_feedback": "Letting the other candidates tire themselves out while fighting each other sounds like a good idea, but Donald Trump is only expanding his lead in Iowa, and Rubio is gaining on you as well. This probably isn't a viable strategy."
         }
     },
     {
@@ -10915,7 +10915,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 20666,
             "candidate": 200,
-            "answer_feedback": "This is a good way to contrast yourself with Trump, without mentioning him by name and risking angering him and his supporters. Primary voters do hate a flip-flopper."
+            "answer_feedback": "Your record is indeed red meat for Republican primary voters, and this is also a good way to contrast yourself with Donald Trump without attacking or even mentioning him directly."
         }
     },
     {
@@ -10933,7 +10933,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5017,
             "candidate": 200,
-            "answer_feedback": "You and Trump get into a massive battle in Iowa, which drains both of your resources. Nearly all your ads become attacks on Trump, and the race gets ever closer. In the end, you win, but just barely, and you spent a lot of your campaign funds doing so."
+            "answer_feedback": "$8,700 to Hillary Clinton's Senate campaign. $8,900 to Chuck Schumer. $4,300 to Anthony Weiner. He's donated thousands to Democrats all over New York.  Your ads become a constant barrage on him, even going so far as to calling him the “great funder of abortion.” Trump responds in turn by calling you a liar, and he even claims that your dad killed JFK. In the end, you narrowly win Iowa, but this debacle will harm the party's chances greatly."
         }
     },
     {
@@ -10960,7 +10960,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 20678,
             "candidate": 200,
-            "answer_feedback": "You feel like this is a good attack, and the audience seems to agree. Until Trump brings up 9/11 and talking about how resilient New Yorkers are, blah blah blah. He tugs at their heartstrings, and you look bad in comparison. Damn him."
+            "answer_feedback": "You feel like this is a good attack, and the audience seems to agree. Until Trump brings up 9/11, talking about how resilient New Yorkers are, whatever. He tugs at their heartstrings, and you look bad in comparison. Damn him."
         }
     },
     {
@@ -10969,7 +10969,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 20664,
             "candidate": 200,
-            "answer_feedback": "Donald Trump has a history of affiliations with Democrats, including a brief period of membership, and he’s certainly vulnerable to those attacks. Unfortunately, you've made an enemy out of him, and Trump is likely to go on the offensive the moment he sees an opening."
+            "answer_feedback": "The closeted-liberal attack will always work well against Donald Trump, considering he's donated to Hillary Clinton and was even a Democrat for years. However, many of Trump's policies are popular with the base, and you risk alienating them by coming out so strongly against him."
         }
     },
     {
@@ -10978,7 +10978,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 20683,
             "candidate": 200,
-            "answer_feedback": "The crowd goes wild. You expect Trump to maneuver his way through this, calling himself an outsider, whatever, but Trump seems completely still trying to figure out what to say. You annihilated him."
+            "answer_feedback": "The crowd goes wild. You expect Trump to maneuver his way through this, calling himself an outsider, whatever, but Trump seems completely unable to respond. You killed him."
         }
     },
     {
@@ -10987,7 +10987,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 20686,
             "candidate": 200,
-            "answer_feedback": "Your debate performance is very inoffensive, and generally considered solid, although some advisors think you could've made headlines with a more aggressive performance."
+            "answer_feedback": "You played all the standard talking points about as well as expected, and nobody finds your debate performance objectable, though some advisors think you could've made headlines with a more aggressive performance."
         }
     },
     {
@@ -11023,7 +11023,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 20739,
             "candidate": 200,
-            "answer_feedback": "Of course, cheers flare up from the hall, but it's important to talk about Obama as little as possible this fall. He's just too popular for you to focus on."
+            "answer_feedback": "Of course, cheers flare up from the hall, but it's important to talk about Obama as little as possible this fall. He's just too popular for you to focus on, and Clinton has a huge list of vulnerabilities for you to hit on."
         }
     },
     {
@@ -11086,7 +11086,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51030,
             "candidate": 200,
-            "answer_feedback": "Most voters seem to accept your reasoning, even as critics continue bashing her for the next couple of days."
+            "answer_feedback": "Most voters seem to accept your reasoning, even as critics continue to attack the ticket for the next couple of days."
         }
     },
     {
@@ -11302,7 +11302,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51180,
             "candidate": 200,
-            "answer_feedback": "You're taking it cautiously, which is fine. It doesn't look good if you're attacking your opponents without any of your own policy proposals. Nothing wrong with this approach."
+            "answer_feedback": "You're taking it cautiously, which is fine. It doesn't look good if you're attacking your opponents without any of your own policy proposals."
         }
     },
     {
@@ -11356,7 +11356,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51228,
             "candidate": 200,
-            "answer_feedback": "Clinton is speechless, but you notice a slight smile creep across her face. The base eats the red meat up, and Fox applauds you for having the guts to stand up to the establishment. At the end of the debate, she walks up to shake your hand. You don't reciprocate. You watch as the race slowly degenerates to no avail, as it gets more ferocious and your supporters come to near blows by each passing day."
+            "answer_feedback": "Clinton is speechless, but you notice a slight smile creep across her face. The base eats the red meat up, and Fox applauds you for having the guts to stand up to the establishment. At the end of the debate, she walks up to shake your hand. You don't reciprocate. The brutality of the race shocks you, and also excites you."
         }
     },
     {
@@ -11383,7 +11383,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51264,
             "candidate": 200,
-            "answer_feedback": "You blink, trying to get her out of your head. You try to ignore her and keep arguing for the right to life and against gay marriage. But it’s only when you rewatch the debate on your phone that the blood starts boiling through your body. You shouldn't have let her boss you around like that without a response, you think."
+            "answer_feedback": "You blink, trying to get her out of your head. You try to ignore her and keep arguing for the right to life and against gay marriage.it’s only when you rewatch the debate on your phone that the blood starts to boil through your body. You shouldn't have let her boss you around like that without a response, you think."
         }
     },
     {
@@ -11500,7 +11500,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51385,
             "candidate": 200,
-            "answer_feedback": "The public seems to be divided on this issue, and Democrats strongly oppose Senate Republicans stonewalling efforts, but among Republicans at least, support of this is near-universal."
+            "answer_feedback": "The public is very divided on this issue. Among Republicans though, support of this is near-universal, and it can only help your case to keep pushing here."
         }
     },
     {
@@ -11689,7 +11689,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51589,
             "candidate": 200,
-            "answer_feedback": "It's tempting, but the Democrats are falling apart, and there's no need for your comment. Your supporters feel vindicated."
+            "answer_feedback": "It's tempting, but the Democrats are falling apart, and there's no need for your comment. Your supporters feel vindicated, and this election is basically over now."
         }
     },
     {
@@ -11698,7 +11698,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51590,
             "candidate": 200,
-            "answer_feedback": "Some question whether you should interfere in this, urging you to be more cautious, but when have you ever done anything the cautious way?"
+            "answer_feedback": "Some question whether you should interfere in this, urging you to be more cautious, but when have you ever done anything the cautious way? It's also a bit unclear what you mean by 'Klinton.'"
         }
     },
     {
@@ -11767,6 +11767,8 @@ campaignTrail_temp.jet_data = [{
     }
 }
 ]
+
+
 
 
 
