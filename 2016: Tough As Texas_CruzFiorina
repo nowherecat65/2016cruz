@@ -326,7 +326,7 @@ const PrimaryMap = {
     "-2": `Your primary showing has been <span style="color:  #FB6723;"><strong>a failure</strong></span>.`,
     "-1": `Your primary showing is <span style="color:  #FB6723;"><strong>off to a bad start</strong></span>.`,
     "0": `Your primary showing has been <span style="color: #DEB83E;"><strong>somewhat respectable</strong></span>.`,
-    "1": `Your primary showing has been <span style="color: #57AB6A;"><strong>somewhat successful</strong></span>.`,
+    "1": `Your primary showing has been <span style="color: #6DCF1F;"><strong>somewhat successful</strong></span>.`,
     "2": `Your primary showing has been <span style="color: #6DCF1F;"><strong>very successful</strong></span>.`,
     "3": `Your primary showing has been <span style="color: #6DCF1F;"><strong>a resounding success</strong></span>.`,
 };
@@ -794,7 +794,7 @@ if (ans == 51121) {
 if (ans == 5091 || ans == 51228) {
         Ideology += 3;
     }
-if (ans == 20666 || ans == 5031 || ans == 20757 || ans == 5031 || ans == 20757) {
+if (ans == 20666 || ans == 5031 || ans == 20757 || ans == 5127 || ans == 20757) {
         Ideology += 1;
     }
 if (ans == 51165 || ans == 51037 || ans == 51072 || ans == 1038) {
