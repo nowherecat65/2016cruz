@@ -1116,6 +1116,8 @@ document.head.appendChild(customStyling);
         return false;
     }
 }
+
+
 campaignTrail_temp.questions_json = [
     {
         "model": "campaign_trail.question",
@@ -1140,7 +1142,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1006,
         "fields": {
             "priority": 2,
-            "description": "Walking on to a cheering crowd of patriotic Americans, the Republican primary debate has begun. After your win in Iowa, you've gained much momentum, and you have a serious shot at winning now. Unfortunately, the next primary is in New Hampshire, where Trump seems to hold an even greater lead. You probably can't defeat him here, but you probably can shrink his margin enough where it isn't really a win for him. It's now your turn to speak. What will you say to the audience?",
+            "description": "Walking on to a cheering crowd of patriotic Americans, the Republican primary debate has begun. After your win in Iowa, you've gained much momentum, and you have a serious shot at winning now. Unfortunately, the next primary, New Hampshire, where Trump seems to hold an even greater lead. You probably can't defeat him here, but you probably can shrink his margin enough where it isn't really a win for him. It's now your turn to speak. What will you say to the audience?",
             "likelihood": 1
         }
     },
@@ -1438,7 +1440,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5016,
         "fields": {
             "question": 1007,
-            "description": "We've been spending a long time building up our organization in Iowa, and now it's time to use it. We're going to be using our ground game to expand voter outreach. Evangelicals will turn out for us on caucus day."
+            "description": "We've been spending a long time building up our organization in Iowa, and now it's time to use it. We have a better ground game then anyone else. Evangelicals will turn out for us on caucus day."
         }
     },
     {
@@ -10920,7 +10922,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5017,
             "candidate": 200,
-            "answer_feedback": "$8,700 to Hillary Clinton's Senate campaign. $8,900 to Chuck Schumer. $4,300 to Anthony Weiner. He's donated thousands to Democrats all over New York.  Your ads become a constant barrage on him, even going so far as to calling him the “great funder of abortion.” Trump responds in turn by calling you a liar, and he even claims that your dad killed JFK. In the end, you narrowly win Iowa."
+            "answer_feedback": "$8,700 to Hillary Clinton's Senate campaign. $8,900 to Chuck Schumer. $4,300 to Anthony Weiner. He's donated thousands to Democrats all over New York. Your ads become a constant barrage on him, even going so far as to calling him the “great funder of abortion.” Trump responds in turn by calling you a liar, and he even claims that your dad killed JFK. In the end, you narrowly win Iowa."
         }
     },
     {
@@ -10947,7 +10949,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 20678,
             "candidate": 200,
-            "answer_feedback": "You feel like this is a good attack, and the audience seems to agree. Until Trump brings up 9/11, talking about how resilient New Yorkers are, whatever. He tugs at their heartstrings, and you look bad in comparison. Damn him."
+            "answer_feedback": "You feel like this is a good attack, and the audience seems to agree. Until Trump brings up 9/11, talking about how resilient New Yorkers are, whatever. He tugs at their heartstrings, and you look bad in comparison."
         }
     },
     {
@@ -10965,7 +10967,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 20683,
             "candidate": 200,
-            "answer_feedback": "The crowd goes wild. You expect Trump to maneuver his way through this, calling himself an outsider, whatever, but Trump seems completely unable to respond. You killed him."
+            "answer_feedback": "The crowd goes wild. You expect Trump to maneuver his way through this, calling himself an outsider, whatever, but Trump seems completely unable to respond, stuttering out words. You killed him."
         }
     },
     {
@@ -11001,7 +11003,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 20715,
             "candidate": 200,
-            "answer_feedback": "These criticisms are true. Trump's businesses has been going bankrupt since the 1990s. Unfortunately, viewers don't seem to care much about his failures in business, Trump just calls you a liar, and the debate quickly moves back to the issues."
+            "answer_feedback": "Trump's businesses have indeed been going bankrupt since the 1990s. Unfortunately, viewers don't seem to care much about his failures in business, Trump just calls you a liar, and the debate quickly moves back to the issues. But it is worth noting your observations are completely correct."
         }
     },
     {
