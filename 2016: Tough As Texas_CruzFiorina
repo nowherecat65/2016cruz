@@ -11951,6 +11951,28 @@ else if (quickstats[0] == 269) { // Deadlocked election (Cruz) (Editor's Note: F
     changePlaylist(trumpdefeat);
      }
     }
+
+else if (quickstats[0] >= 259 && quickstats[0] < 269) { // another ending for Cruz, see above
+        e.pages.push(`<h3>“In a true nail biter, we can now call the Presidency for Hillary Rodham Clinton.”</h3><p>It felt like an eternity waiting for the votes in Wisconsin to come in, but the AP has called it. By the thinnest of margins, Hillary Clinton has just barely won a plurality in the state. That gives her 10 electoral votes, and the last one that she needs to become the first female President of the United States.<br><br> Clinton has already declared victory, and is giving her victory speech to the crowd, talking about the glass ceiling, whatever. Fox is yet to call the race, and you know for sure you aren't conceding either, at least not yet. Your team has already asked for a recount in Wisconsin, which will likely be approved given the margins. Although a recount is likely, it seems unlikely it will change the result in Wisconsin. The odds look poor, Ted.</p>`);
+        e.pages.push(`<h3>“In a true nail biter, we can now call the Presidency for Hillary Rodham Clinton.”</h3><p>If she does become President, she'll likely be hard pressed to pass her agenda, and there will always be people who consider her an illegitimate President. Already memories of the 2000 election are underway. An aide walks into your room and gives you a phone. <br><br> It's Clinton. She starts with the faked warm welcome, and then urges you to just concede, 'for the sake of the country' and because she won the popular vote. You just hang up.  It's already well past midnight here, and the war on Twitter continues to rage on. If the recount does indeed turn out in your favor, then that will deadlock the Electoral College. Afterwards, a contingent election would happen in Congress.</p>`);
+        e.pages.push(`<h3>“In a true nail biter, we can now call the Presidency for Hillary Rodham Clinton.”</h3><p>Republicans control a majority of state delegations, meaning if you do indeed pull ahead in Wisconsin, you will have won the Presidency. Democrats have managed to take the Senate to a tie, meaning Tim Kaine will likely be elevated to the Presidency, unless enough defect. <br><br> All of this is speculation though, because it's still not confirmed if a recount will happen. It's not over yet, and you can begin planning out your cabinet if you wish, but you'll have to fight hard if you want to be President come January. Whatever happens, it's sure to be a wild ride. Best of luck these next few weeks, you're going to need it.</p>`);
+        e.executable.push([0, () => { e.image = 'https://i.imgur.com/kg7ymVb.jpeg'; }]);
+        e.executable.push([1, () => { e.image = 'https://i.imgur.com/kg7ymVb.jpeg'; }]);
+        e.executable.push([2, () => { e.image = 'https://i.imgur.com/kg7ymVb.jpeg'; }]);
+    if (songChange != 1) {
+    songChange = 1
+    const moderatedefeat = new Playlist();
+      const moderatedefeatSong = new Song(
+        "21 Guns",
+        "Green Day",
+        "https://i.imgur.com/6nOq7Vl.png",
+        "https://audio.jukehost.co.uk/OaGgKzUVxgMFrSRBHJc4vLoXJbH0DulK"
+      );
+      moderatedefeat.addSong(moderatedefeatSong);
+    changePlaylist(moderatedefeat);
+     }
+    }
+
 // Trump loses everything
 
 if ((campaignTrail_temp.player_answers[4] === 51271 || campaignTrail_temp.player_answers[4] === 51084) && quickstats[0] < 3) { // trump loses everything
@@ -12028,26 +12050,6 @@ if ((campaignTrail_temp.player_answers[4] === 51271 || campaignTrail_temp.player
 
 
 
-else if (quickstats[0] >= 259 && quickstats[0] < 269) { // Wisconsin recount
-        e.pages.push(`<h3>“In a true nail biter, we can now call the Presidency for Hillary Rodham Clinton.”</h3><p>It felt like an eternity waiting for the votes in Wisconsin to come in, but the AP has called it. By the thinnest of margins, Hillary Clinton has just barely won a plurality in the state. That gives her 10 electoral votes, and the last one that she needs to become the first female President of the United States.<br><br> Clinton has already declared victory, and is giving her victory speech to the crowd, talking about the glass ceiling, whatever. Fox is yet to call the race, and you know for sure you aren't conceding either, at least not yet. Your team has already asked for a recount in Wisconsin, which will likely be approved given the margins. Although a recount is likely, it seems unlikely it will change the result in Wisconsin. The odds look poor, Ted.</p>`);
-        e.pages.push(`<h3>“In a true nail biter, we can now call the Presidency for Hillary Rodham Clinton.”</h3><p>If she does become President, she'll likely be hard pressed to pass her agenda, and there will always be people who consider her an illegitimate President. Already memories of the 2000 election are underway. An aide walks into your room and gives you a phone. <br><br> It's Clinton. She starts with the faked warm welcome, and then urges you to just concede, 'for the sake of the country' and because she won the popular vote. You just hang up.  It's already well past midnight here, and the war on Twitter continues to rage on. If the recount does indeed turn out in your favor, then that will deadlock the Electoral College. Afterwards, a contingent election would happen in Congress.</p>`);
-        e.pages.push(`<h3>“In a true nail biter, we can now call the Presidency for Hillary Rodham Clinton.”</h3><p>Republicans control a majority of state delegations, meaning if you do indeed pull ahead in Wisconsin, you will have won the Presidency. Democrats have managed to take the Senate to a tie, meaning Tim Kaine will likely be elevated to the Presidency, unless enough defect. <br><br> All of this is speculation though, because it's still not confirmed if a recount will happen. It's not over yet, and you can begin planning out your cabinet if you wish, but you'll have to fight hard if you want to be President come January. Whatever happens, it's sure to be a wild ride. Best of luck these next few weeks, you're going to need it.</p>`);
-        e.executable.push([0, () => { e.image = 'https://i.imgur.com/kg7ymVb.jpeg'; }]);
-        e.executable.push([1, () => { e.image = 'https://i.imgur.com/kg7ymVb.jpeg'; }]);
-        e.executable.push([2, () => { e.image = 'https://i.imgur.com/kg7ymVb.jpeg'; }]);
-    if (songChange != 1) {
-    songChange = 1
-    const moderatedefeat = new Playlist();
-      const moderatedefeatSong = new Song(
-        "21 Guns",
-        "Green Day",
-        "https://i.imgur.com/6nOq7Vl.png",
-        "https://audio.jukehost.co.uk/OaGgKzUVxgMFrSRBHJc4vLoXJbH0DulK"
-      );
-      moderatedefeat.addSong(moderatedefeatSong);
-    changePlaylist(moderatedefeat);
-     }
-    }
 
 else if (quickstats[0] >= 229 && quickstats[0] < 259 ) { // Very close defeat
         e.pages.push(`<h3>I'm sorry, Ted.</h3><p>You were so close, but to no avail. Clinton will become the 45th and first female President of the United States, as predicted by nearly every media “expert.” Your primary opponents are already planning to make their own bid for the nomination in 2020, and the RNC is outraged.<br><br>Even though just a few states decided the entire election, MSNBC still gloats about how this was a so-called landslide. In a day that will surely go down in American history, Hillary Clinton holds the most extravagant victory celebration possible, meticulously planned, no doubt paid for by her corrupt donors. Her victory speech in Manhattan has an enormous glass ceiling. With a single strike, she shatters the entire glass, and her supporters are whipped into a frenzy.</p>`);
