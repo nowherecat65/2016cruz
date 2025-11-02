@@ -731,11 +731,15 @@ customStyling.innerHTML = `
 document.head.appendChild(customStyling);
 
 
-campaignTrail_temp.cyoa = true;
+e.cyoa = true;
 
 function getQuestionNumberFromPk(pk) {
     return campaignTrail_temp.questions_json.map(q=>q.pk).indexOf(pk)-1;
 }
+
+	function tunnel(new_q){
+		return e.questions_json[e.questions_json.map(f=>f.pk).indexOf(new_q)];
+	} 
 
 cyoAdventure = function (a) {
     ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length-1];
@@ -801,28 +805,10 @@ if (ans == 51165 || ans == 51037 || ans == 51072 || ans == 1038) {
 // If you decide to duck out of the debate
 
 if (ans == 51499) {
-  campaignTrail_temp.questions_json[22] = {
-    "model": "campaign_trail.question",
-    "pk": 51436,
-    "fields": {
-      "priority": 1,
-      "description": "With your decision to duck out of the debate at the last second, your numbers in the polls have dropped significantly, and you need to find a way to shake up the race. Luckily, Jeff has an idea to win back support and unite the party, and that's by pivoting to appeal to dissatisfied Trump voters. What are you thinking?",
-      "likelihood": 1
-    }
-  }
-} else {
-  campaignTrail_temp.questions_json[22] = {
-    "model": "campaign_trail.question",
-    "pk": 1025,
-    "fields": {
-      "priority": 1,
-      "description": "You walk onto the stage. So does Hillary. She's wearing a white suit with some buttons. The moderator is going on about some rules that you know you're not going to follow. You start to zone out. Clinton is finishing up her grandstanding, and just before she finishes, suddenly says, ''It’s almost as if he lives in his own world… have you noticed the way he rants and raves while campaigning? Or how he lies every day? He—<br>“Mrs. Clinton, your time is up. Senator Cruz, your response?”",
-      "likelihood": 1
-    }
-  }
- }
+campaignTrail_temp.questions_json[22] = tunnel(51436);   // If you decide to not debate Clinton. JUST figured out you can use the "tunnel" function instead of model: campaign_trail.question, all that stuff. It's way easier and far more compact, and i'll use that from now on but I already did most of the cyoa the old way. Astros modding guide is getting really obselete lmao
+}
 
-// If you call Hillary out for being a MURDERER during the debate
+// If you call Killar i mean hillary out for being a MURDERER during the debate
 
 if (ans == 51230) {
   campaignTrail_temp.questions_json[23] = {
