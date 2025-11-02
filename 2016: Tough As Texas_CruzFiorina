@@ -849,7 +849,7 @@ if (HillaryInvestigation == 1) {
     "pk": 1036,
     "fields": {
       "priority": 1,
-      "description": "Barely 11 days before Election Day, James Comey, FBI Director, has made an extremely late announcement that additional emails have surfaced in Hillary Clinton's case, thanks to an investigation into Anthony Weiner's laptop. Hillary Clinton continues to profess her innocence, and mass confusion and anger has become commonplace amongst the voters. This might be what pushes you over the top, how do you handle this?",
+      "description": "Barely 11 days before Election Day, James Comey, FBI Director, has made an extremely late announcement that additional emails have surfaced in Hillary Clinton's case, thanks to an investigation into Anthony Weiner's laptop. Hillary Clinton continues to profess her innocence, and the upshot is mass confusion among voters. This might be what pushes you over the top, how do you handle this?",
       "likelihood": 1
     }
   };
