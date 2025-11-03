@@ -754,9 +754,12 @@ cyoAdventure = function (a) {
         Primary  += 2;
     }
   if (e.noCounter == 6) {
-e.election_json[0].fields.has_visits = 1;
 campaignTrail_temp.election_json[0]["fields"].advisor_url = 'https://i.imgur.com/r3fj0cT.png';
     }
+  if (e.noCounter == 7) {
+ e.election_json[0].fields.has_visits = 1;
+    }
+
   if (ans == 20678) {
         Primary  -= 1;
     }
