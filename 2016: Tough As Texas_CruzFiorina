@@ -11686,9 +11686,6 @@ campaignTrail_temp.jet_data = [{
 
 
 
-
-
-
 // ENDINGS -- this is slightly more reliable than the ending code method
 
 construct = (a = 1) => {
@@ -11978,7 +11975,26 @@ if ((campaignTrail_temp.player_answers[4] === 51271 || campaignTrail_temp.player
 
 // -------------------------------------------- NORMAL ENDINGS --------------------------------------------------------------------
 
-
+else if (quickstats[0] > 269 && quickstats[0] < 280) { // Very close victory
+        e.pages.push(`<h3>After a long night, we can now call the election, and the presidency, for Ted Cruz.</h3><p>You've done it.<br><br>From the moment you announced your candidacy, nobody thought you stood a chance at winning the primary, let alone defeating Clinton. But you've proved the doubters wrong. You've won. As Clinton's campaign fell apart in the aftermath of her corruption being exposed, you were able to defeat her.<br><br>The political establishment has been completely shocked. The mood at your victory party in Houston is euphoric. Clinton's is brutal. She picked the Javits Center in Manhattan, symbolically under an enormous glass ceiling that she hoped to break through. Instead, it was the dreams and aspirations of her supporters that have been shattered, with you coasting to victory against the abortion deep state.</p>`);
+        e.pages.push(`<h3>After a long night, we can now call the election, and the presidency, for Ted Cruz.</h3><p>Where you go from here is up to you. There's no doubt Congress will be unfriendly to your agenda, that liberals will be attempt to obstruct your policy at evert turn, and Democrats will be calling you an illegitimate President, given your loss in the popular vote. None of that matters. <br><br> The decline of America cannot be reversed, or even stopped, in 4 short years. </p>`);
+        e.executable.push([0, () => { e.image = 'https://i.imgur.com/yqL9NWD.jpeg'; }]);
+        e.executable.push([1, () => { e.image = 'https://i.imgur.com/yqL9NWD.jpeg'; }]);
+        e.executable.push([2, () => { e.image = 'https://i.imgur.com/yqL9NWD.jpeg'; }]);
+        e.executable.push([3, () => { e.image = 'https://i.imgur.com/yqL9NWD.jpeg'; }]);
+    if (songChange != 1) {
+    songChange = 1
+    const moderatedefeat = new Playlist();
+      const moderatedefeatSong = new Song(
+        "God's Not Dead",
+        "The Newsboys",
+        "https://i.imgur.com/h2D7d98.png",
+        "https://audio.jukehost.co.uk/WNZMEdKQuhrPeC7JCzm0YkuPJ7uQHGxu"
+      );
+      moderatedefeat.addSong(moderatedefeatSong);
+    changePlaylist(moderatedefeat);
+     }
+    }
 
 
 else if (quickstats[0] >= 229 && quickstats[0] < 259 ) { // Very close defeat
