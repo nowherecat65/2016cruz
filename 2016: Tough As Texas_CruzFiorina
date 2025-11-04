@@ -1523,7 +1523,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5092,
         "fields": {
             "question": 1027,
-            "description": "I oppose the digusting practice of abortion as much as ever, but this position is hurting us badly. We have to turn the tables and strike back at Clinton. Let's use her equivocations on Benghazi and her emails and counterattack. She has utterly failed at all her tasks, and now she wants to be President!"
+            "description": "I oppose the digusting practice of abortion as much as ever, but this position is hurting us badly. We have to turn the tables and strike back at Clinton. Let's use her equivocations on Benghazi and her emails and counterattack. She has utterly failed at all her tasks, and now she wants to be President?"
         }
     },
     {
@@ -1827,7 +1827,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51082,
         "fields": {
             "question": 1016,
-            "description": "Trump gave us a lot of trouble with this issue, so if we adopt some of his rhetoric on this, then we can help bring some of his supporters back into the fold. We need to dramatically increase our border security, and I wouldn't be opposed to building a border wall."
+            "description": "Trump gave us a lot of trouble with this issue, so if we adopt some of his rhetoric on this, then we can help bring some of his supporters back into the fold. We need to increase our border security, and I wouldn't be opposed to building a border wall."
         }
     },
     {
@@ -2059,7 +2059,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51267,
         "fields": {
             "question": 1012,
-            "description": "Hell, why don't we take this further. She has a history of being weak on ISIS. They probably have something on her. We'll learn a month after she's elected that she's being blackmailed by ISIS. Attack her on that. I don't care if you have to lie about stuff.."
+            "description": "Hell, why don't we take this further. She has a history of being weak on ISIS. They probably have something on her. We'll learn a month after she's elected that she's being blackmailed by ISIS. Attack her on that. I don't care if you have to lie about stuff..."
         }
     },
     {
@@ -2155,7 +2155,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51403,
         "fields": {
             "question": 1034,
-            "description": "Notice that when she was a Senator, Hillary was talking everyone's ears off about how great free trade was? Now she says that she's “deeply concerned” about the TPP? What's with that? I'm consistent, right?"
+            "description": "You'll notice that when she was a Senator, Hillary was “adamantly in favor of free trade”? Now she says that she's “deeply concerned” about the TPP? What's with that? I'm consistent, right?"
         }
     },
     {
@@ -8135,7 +8135,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 51165,
             "candidate": 200,
             "affected_candidate": 200,
-            "global_multiplier": -0.0045
+            "global_multiplier": -0.0065
         }
     },
     {
@@ -8735,7 +8735,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 51212,
             "candidate": 200,
             "affected_candidate": 201,
-            "global_multiplier": 0.005
+            "global_multiplier": 0.006
         }
     },
     {
@@ -8766,6 +8766,16 @@ campaignTrail_temp.answer_score_global_json = [
             "candidate": 200,
             "affected_candidate": 201,
             "global_multiplier": -0.3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 51602,
+        "fields": {
+            "answer": 51166,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "global_multiplier": -0.006
         }
     }
 ]
@@ -9340,17 +9350,6 @@ campaignTrail_temp.answer_score_state_json = [
     },
     {
         "model": "campaign_trail.answer_score_state",
-        "pk": 51035,
-        "fields": {
-            "answer": 5033,
-            "state": 1049,
-            "candidate": 200,
-            "affected_candidate": 200,
-            "state_multiplier": 0.01
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
         "pk": 51047,
         "fields": {
             "answer": 51043,
@@ -9490,17 +9489,6 @@ campaignTrail_temp.answer_score_state_json = [
             "candidate": 200,
             "affected_candidate": 200,
             "state_multiplier": 0.05
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
-        "pk": 51170,
-        "fields": {
-            "answer": 51165,
-            "state": 1008,
-            "candidate": 200,
-            "affected_candidate": 200,
-            "state_multiplier": 0.005
         }
     },
     {
@@ -9879,39 +9867,6 @@ campaignTrail_temp.answer_score_state_json = [
     },
     {
         "model": "campaign_trail.answer_score_state",
-        "pk": 51364,
-        "fields": {
-            "answer": 51212,
-            "state": 1002,
-            "candidate": 200,
-            "affected_candidate": 200,
-            "state_multiplier": 0.1
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
-        "pk": 51365,
-        "fields": {
-            "answer": 51212,
-            "state": 1009,
-            "candidate": 200,
-            "affected_candidate": 200,
-            "state_multiplier": 0.1
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
-        "pk": 51366,
-        "fields": {
-            "answer": 51212,
-            "state": 1042,
-            "candidate": 200,
-            "affected_candidate": 200,
-            "state_multiplier": 0.1
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
         "pk": 51368,
         "fields": {
             "answer": 51216,
@@ -10150,17 +10105,6 @@ campaignTrail_temp.answer_score_state_json = [
             "candidate": 200,
             "affected_candidate": 200,
             "state_multiplier": 0.02
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
-        "pk": 51426,
-        "fields": {
-            "answer": 51403,
-            "state": 1034,
-            "candidate": 200,
-            "affected_candidate": 200,
-            "state_multiplier": 0.009
         }
     },
     {
@@ -10528,28 +10472,6 @@ campaignTrail_temp.answer_score_state_json = [
     },
     {
         "model": "campaign_trail.answer_score_state",
-        "pk": 51503,
-        "fields": {
-            "answer": 51263,
-            "state": 1021,
-            "candidate": 200,
-            "affected_candidate": 200,
-            "state_multiplier": 0.02
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
-        "pk": 51504,
-        "fields": {
-            "answer": 51263,
-            "state": 1037,
-            "candidate": 200,
-            "affected_candidate": 200,
-            "state_multiplier": 0.02
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
         "pk": 51505,
         "fields": {
             "answer": 51263,
@@ -10718,7 +10640,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5030,
             "candidate": 200,
-            "answer_feedback": "You see cheers coming along from the entire stage. The one thing that's keeping this party together is their unanimous hatred of Hillary Clinton, and your ready to fight her come November."
+            "answer_feedback": "You see cheers coming along from the entire stage. The one thing that's keeping this party together is their unanimous hatred of Hillary Clinton, and your ready to take the fight her come November."
         }
     },
     {
@@ -11015,7 +10937,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 20739,
             "candidate": 200,
-            "answer_feedback": "Of course, cheers flare up from the hall, but it's important to talk about Obama as little as possible this fall. He's just too popular for you to focus on, and Clinton has a huge list of vulnerabilities for you to hit on."
+            "answer_feedback": "Obama is a punching bag almost as great as Clinton, only to increase your support from Tea Party-inclined voters, and cheers flare up from the hall. Let's get this campaign going."
         }
     },
     {
@@ -11024,7 +10946,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 20744,
             "candidate": 200,
-            "answer_feedback": "This is a smart way to oppose Obergefell, and this should help your message resonate with voters a bit more when you put it this way."
+            "answer_feedback": "Good pivot. Framing it as a state's right issue is a lot less controversial, and this gives Clinton little to work with in terms of attacks."
         }
     },
     {
@@ -11258,7 +11180,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51164,
             "candidate": 200,
-            "answer_feedback": "This will energize the base, but try not to make this a referendum on Obama. He remains personally popular with most moderates."
+            "answer_feedback": "DACA is indeed very controversial in the party, and this will fire up the base. Just remember that public approval for the DACA program is on the rise."
         }
     },
     {
@@ -11375,7 +11297,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51264,
             "candidate": 200,
-            "answer_feedback": "You completely ignore her, arguing with Holt as he keeps trying to 'fact check' you. In fact, the debate ends up seeming more like a debate between you and the moderators. Clinton keeps baiting you, and you continue to not response. When you watch the debate on your phone, you feel like you wanted to slit her throat."
+            "answer_feedback": "You completely ignore her, arguing with Holt as he keeps trying to 'fact check' you. In fact, the debate ends up seeming more like a debate between you and the moderators. Clinton keeps baiting you, and you continue to not responsd. When you rewatch the debate on your phone, you feel like you wanted to slit her throat."
         }
     },
     {
@@ -11384,7 +11306,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51267,
             "candidate": 200,
-            "answer_feedback": "Voters detect an even more aggressive tone from your advertisements. The media guys keep “fact-checking” your advertisements, but they're still effective."
+            "answer_feedback": "Voters detect an even more aggressive, sometimes even outright false tone from your advertisements. The media guys keep “fact-checking” your advertisements, but they're still effective."
         }
     },
     {
@@ -11759,6 +11681,8 @@ campaignTrail_temp.jet_data = [{
     }
 }
 ]
+
+
 
 
 
