@@ -11591,7 +11591,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51488,
             "candidate": 200,
-            "answer_feedback": "It's clear that your campaign is pivoting. Mainstream media mocks you for flip-flopping. Clinton's campaign calls you a liar. But Trump supporters do take notice. Hopefully they will turn out for you this fall."
+            "answer_feedback": "It's clear that your campaign is pivoting. Mainstream media mocks you for flip-flopping. Democrats call you a liar. But Trump supporters do take notice. Hopefully they will turn out for you this fall."
         }
     },
     {
@@ -11794,7 +11794,7 @@ if (e.image === true) {
 display: block;
 margin-left: auto;
 margin-right: auto;
-color: white; /* Keep all text white */
+color: white; 
 max-height: 300px; 
 overflow-y: auto; 
 padding-right: 5px;
