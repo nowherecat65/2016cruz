@@ -54,7 +54,6 @@ e.CandidText = 'Please select your Presidential nominee:';
 e.VpText = 'Please select your Vice Presidential nominee:';
 e.HomeStateText = "Position:";
 e.PartyText = "Affiliation:";
-e.SelAnsContText = "Ted, are you in there? You didn't choose anything. Wake up!"
 e.ElectionPopup = "Election night is here. Good luck, you've fought a brave battle."
 e.LosePopup = "The people of this country have decided. They have chosen radicalism over decency..."
 e.WinPopup = "The people of this country have decided. They have chosen decency over radicalism!"
@@ -1046,7 +1045,7 @@ a:hover {
   img#candidate_pic,
   img#running_mate_pic {
     border: 4px solid #2a353f;
-    border-radius: 10px;
+    border-radius: 0px;
   }
 
   #menu_container {
