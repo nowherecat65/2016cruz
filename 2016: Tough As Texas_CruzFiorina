@@ -5,7 +5,7 @@ function ctsAchievement(achievement, difficultyChecker = true){
 	}
 }
 
-e.answer_count = 5;
+e.answer_count = 6;
 
 
 console.log('Code 2 initialized successfully.');
@@ -755,6 +755,7 @@ cyoAdventure = function (a) {
     }
   if (e.noCounter == 6) {
 campaignTrail_temp.election_json[0]["fields"].advisor_url = 'https://i.imgur.com/r3fj0cT.png';
+e.SelAnsContText = "Ted, are you in there? You didn't choose anything. Wake up!"
     }
   if (e.noCounter == 7) {
  e.election_json[0].fields.has_visits = 1;
