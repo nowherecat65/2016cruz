@@ -1130,6 +1130,10 @@ a:hover {
     background: linear-gradient(135deg, #e6e6e6, #d4d4d4) !important;
   }
 
+#autoplayMenu label {
+color: white;
+}
+
   .visit_text {
     background: #1F262C;
     color: white;
