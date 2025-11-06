@@ -17,12 +17,72 @@
  // * 
  // Tags: Althist
 
-function updateDifficultyForm() {
-      const heading = document.querySelector("#difficulty_level form h3");
-      if (heading) {
-        heading.textContent = "Please select your campaign difficulty:";
-      }
+function addColor() { // Change color checkbox, thank you astro
+    var difficultyDiv = document.getElementById("difficulty_level");
+    if (difficultyDiv && !document.getElementById("colour")) { // Prevent multiple additions
+
+        // Colour selection form
+        var colourForm = document.createElement("form");
+        colourForm.name = "colour_selection";
+
+        var colourHeader = document.createElement("h3");
+        colourHeader.textContent = "Enable alternate colors?";
+        colourForm.appendChild(colourHeader);
+
+        var colourCheckbox = document.createElement("input");
+        colourCheckbox.type = "checkbox";
+        colourCheckbox.id = "colour";
+        colourCheckbox.checked = false;
+        colourForm.appendChild(colourCheckbox);
+
+        difficultyDiv.appendChild(colourForm);
+
+        // Colour checkbox logic
+        colourCheckbox.addEventListener("change", function() {
+            var c = campaignTrail_temp.candidate_json;
+            if (!c || c.length < 2) return;
+
+            if (this.checked) {
+                c[0].fields.color_hex = '#103282';
+                c[0].fields.secondary_color_hex = '#cf001f';
+                c[1].fields.color_hex = '#960218';
+                c[1].fields.secondary_color_hex = '#0222c4';
+            }
+        });
+
+        // Adjust difficulty header safely
+        var difficultyForm = document.querySelector('form[name="difficulty_level_selection"]');
+        if (difficultyForm) {
+            var difficultyHeader = difficultyForm.querySelector('h3');
+            if (difficultyHeader) {
+                difficultyHeader.textContent = "Select campaign difficulty:";
+            }
+        }
+
+        // Style forms safely
+        var forms = difficultyDiv.querySelectorAll("form");
+        forms.forEach(f => {
+            f.style.display = "inline-block";
+            f.style.paddingLeft = "10px";
+            f.style.paddingRight = "10px";
+        });
+    }
 }
+
+// Observer wrapper
+if(!campaignTrail_temp.observer){
+    campaignTrail_temp.observer = true;
+
+    let masterObserver = new MutationObserver(function() {
+        masterObserver.disconnect();
+        addColor();
+        masterObserver.observe(document.body, { childList: true, subtree: true });
+    });
+
+    masterObserver.observe(document.body, { childList: true, subtree: true });
+}
+
+
 
 function updateSiteCredits() {
   const heading = document.querySelector("div#site_credits p");
@@ -39,7 +99,6 @@ function masterFunction() {
         masterObserver.disconnect();
 
         // Call all the functions here
-        updateDifficultyForm();
         updateSiteCredits();
 
         // Re-observe the document
@@ -383,7 +442,7 @@ campaignTrail_temp.achievements = {
     },
     "Unburdened By What's Been" : {
         "image" : "https://i.imgur.com/tPr5UZK.png",
-        "description" : "As Ted Cruz, defeat Hillary Clinton in a landslide.",
+        "description" : "As Ted Cruz, defeat Hillary  in a landslide.",
         "cannotBeCheated" : true
      },
     "Darker Vision" : {
@@ -489,7 +548,7 @@ campaignTrail_temp.modBoxTheme = {
 }
 
 HistHexcolour=["#8E3B3B","#3A5DAE","#E3B807","#168C40",];
-        HistName=[" Ted Cruz"," Hillary R. Clinton"," Gary Johnson"," Jill Stein"];
+        HistName=[" Ted Cruz"," Hillary R. "," Gary Johnson"," Jill Stein"];
         HistEV=[287,243,0,0];
         HistPV=["66,093,395","65,818,277","1,582,940","1,187,205"];
         HistPVP=["48.6%","48.4%","1.2%","0.9%"];
@@ -531,7 +590,7 @@ campaignTrail_temp.election_json = [
             "winning_electoral_vote_number": 270,
             "advisor_url": "https://i.imgur.com/kS0hzYE.png", 
             "site_description": "“What's wrong with some people?”<br><br>This is a question you find yourself asking over and over again. Some of the politicians you meet in Capitol Hill are the most corrupt, nasty, disgusting people you'll ever meet. Few people have wanted to destroy the deep state, even less have tried, but nobody has ever succeeded.<br><br>The wanton abortion loving, sinful marriage loving, America-hating, wealthy, elitist, deep state.<br><br>6 years ago, the Tea Party was swept into power with promises to end the deep state. Most of them became apart of the deep state. But not you. it's time a President fought for the people. We will not stop until we take our country back. No surrender. Senator, are you ready?",
-            "recommended_reading": `<div id="tab-select"> <p class="ftab-active" id="start">Development</p> <p class="ftab">Info</p> <p class="ftab">Next Mod</p> <p class="ftab">Credits</p></div><div style="text-align: left;margin: auto 5em;"> <span id="rpage0" style="display: inline-block;"> <h2>Tough as Texas</h2> <h3>by TheMcCain</h3><p>Thanks for playing Tough as Texas! This was my 2nd mod, and it was really fun to make, even though it took a really long time.<br><br>In real life, Ted Cruz lost the primary mainly because of Donald Trump. Ted Cruz was an ardent conservative, but even then Donald Trump's rhetoric just appealed to primary voters more. In all honesty, Donald Trump would probably run third-party if Ted Cruz won the nomination, just out of spite, but I wanted to give the player a realistic chance and I also didn't want this to be a 2016 New Day clone.<br><br>There is actually already a 2016 Ted Cruz mod, but it's very old, made by Enviromental_Cap104. Although it's age is very apparent, it does offer a look back into a simpler time of TCT modding, and it helped me figure out how I wanted to structure this.<br><br>Also, believe it or not, this was supposed to be a 2016 Jeb Bush mod. The writing was getting boring though, and if I didn't change course, this was gonna start looking like a 2016N, so I decided to go for a more bombastic character, where I landed on picking Ted Cruz.<br><br>I will be pushing updates to this mod over time. Perhaps I'll even make a Clinton side one day. <br><br> I'd like to give a special thanks to theanswerisme for his great work on this mod, to littleamericanman_85501 for making the banner, and to all of our amazing playtesters on Reddit and Discord. This mod wouldn't have reached it's full potential without them!</p></span> <span id="rpage1" style="display: inline-block;"><h2>Info</h2><p><a href="https://imgur.com/a/5QLXGRh" target="_blank" rel="noopener noreferrer">Canon Results</a><h4>The Primaries</h4><a href="https://en.wikipedia.org/wiki/Ted_Cruz_2016_presidential_campaign" target="_blank" rel="noopener noreferrer">Ted Cruz 2016 Presidential Campaign</a><br><a href="https://www.cbsnews.com/news/donald-trump-gop-convention-2016-how-he-got-here/" target="_blank" rel="noopener noreferrer">Trump Primary Victory</a><br><a href="https://youtu.be/Un3OhYs-tCE?si=jSnYoZSFnWaUH4PX" target="_blank" rel="noopener noreferrer">Full CBS News South Carolina Republican Debate</a><h4>2016 Presidential Election</h4><a href="https://www.brookings.edu/articles/why-hillary-clinton-lost" target="_blank" rel="noopener noreferrer">Hillary Clinton: Good President, Bad Candidate</a><br><a href="https://www.politico.com/story/2016/11/election-results-2016-clinton-trump-231070" target="_blank" rel="noopener noreferrer">Donald Trump: Greatest Upset in History?</a><br><h4>Further Helpful Links</h4><a href="http://youtube.com/watch?v=PCHJVE9trSM" target="_blank" rel="noopener noreferrer">Hillary Clinton's “Deplorable” blunder</a><br><a href="https://www.youtube.com/watch?v=vgHNFXJgRw0" target="_blank" rel="noopener noreferrer">Ted Cruz/Carly Fiorina Interview - April 29th, 2016</a><br><a href="https://en.wikipedia.org/wiki/2016_Republican_Party_presidential_primaries" target="_blank" rel="noopener noreferrer">2016 - General Republican Primary Info</a><h4>Books by the Candidates</h4>\rTed Cruz - <a href=\"https://www.amazon.com/Time-Truth-Reigniting-Promise-America/dp/0062365614/ref=sr_1_3?crid=1VZF488OH1HLQ&dib=eyJ2IjoiMSJ9.PXdNJgVLtC2EWYOQ1cgk-T9iVdYll0txji4UQaT2zaRUQ4PTl5dThJXV2uVSmoXHYZQD7wpi9OHHmszMrlVzvCRGoaoEMinglMhaY40w1zD05Zwr9toN0ET6HfgNNcn7k1DOJ6LhTWejKAvyl_uXZzMuVKDBtu7ih5Bcs2vL54-VEFPkj_hMPQO_BnyRZg6yaJwWygiPBV5xfKFmdrwuvSRv0W8MXTJZlKDOEesRzGw.bjUlwdmUjTNv1NStBu9Z0evWkkBa02E2SGJl9M1aRu8&dib_tag=se&keywords=A+Time+for+Truth&qid=1760817437&sprefix=a+time+for+truth%2Caps%2C75&sr=8-3\" target=\"_blank\">A Time For Truth</a></br>        \rTed Cruz - <a href=\"https://www.amazon.com/Justice-Corrupted-Weaponized-Legal-System/dp/1684513618/ref=pd_bxgy_d_sccl_1/132-5840850-8325653?pd_rd_w=kDpCL&content-id=amzn1.sym.dcf559c6-d374-405e-a13e-133e852d81e1&pf_rd_p=dcf559c6-d374-405e-a13e-133e852d81e1&pf_rd_r=A4Q15XGG9EBPVE2JQ46A&pd_rd_wg=khiwZ&pd_rd_r=650d724a-e277-446e-b629-52e8fc4ead83&pd_rd_i=1684513618&psc=1" target=\"_blank\">Justice Corrupted</a></br>\rHillary Clinton - <a href=\"http://www.amazon.com/exec/obidos/ASIN/1476751471/amhius20-20\" target=\"_blank\">Hard Choices</a></br>\rHillary Clinton - <a href=\"http://www.amazon.com/exec/obidos/ASIN/0743222253/amhius20-20\" target=\"_blank\">Living History</a></p></span> <span id="rpage2" style="display: inline-block;"><h2>Next Mod</h2><p>Right now I'm working on a Killary incumbency sim mod. It's going to be alot darker and even more biased then Tough as Texas, called Eyes Wide Open. The mod your playing right now was cynical but atleast somewhat grounded in reality, this one won't be. <br><br> As for a release date... I'm not sure. I'd love to get it out before 2025 ends, but in all honesty the mod will probably be done sometime in 2026. These massive-incumbency sim mods take a <i>really</i> long time to make. Stay tuned though! <br><br> This mockup was made by houseyhouse, huge thanks to him!<br><br><img src="https://i.imgur.com/BEqNz.png" style="display: block; margin: 0 auto; max-height:430px;"><br><br><img src="https://i.imgur.com/PeCTJL.png" style="display: block; margin: 0 auto; max-height:430px;"></p></span> <span id="rpage3" style="display: inline-block;"><h2>Credits</h2><p>I'd also like to say for the record that this mod is a work of fiction and is satire intended for entertainment/commentary, and no ill will goes to any of the individuals in this mod. Some things are exaggerated or altered for story purposes. That's all.</p><b><li>TheMcCain - lead coder and writer. <li>theanswerisme - Helped write this mod<li>littleamericanman_85501 - Made a great banner and helped make some other art assets.<li>W. Team - Variable Headquarters<li>Thatchmaster - Music player<li>Sundance - Further reading tabs (styling from A Lifetime Of This)<li>2021 Germany - Tooltips (although it's been modified a lot from what it was previously)</li><li>2016: A Lifetime Of This, for banner system and some other styling.</li><hr><p>Also, a special thanks to people in the Discord server for helping out with coding. And lastly a huge thanks to everyone who playtested. This mod would be a ton worse without you. Those who I forgot to list here, your contributions are not forgotten either.</b><br><br>As I wrap this further reading up, I'd just like to say again thank you so much for playing. It was so much fun making this mod, and I hope you enjoyed playing it as much as I did creating it.<br><br>For now, this is me signing off. </span>`,
+            "recommended_reading": `<div id="tab-select"> <p class="ftab-active" id="start">Development</p> <p class="ftab">Info</p> <p class="ftab">Next Mod</p> <p class="ftab">Credits</p></div><div style="text-align: left;margin: auto 5em;"> <span id="rpage0" style="display: inline-block;"> <h2>Tough as Texas</h2> <h3>by TheMcCain</h3><p>Thanks for playing Tough as Texas! This was my 2nd mod, and it was really fun to make, even though it took a really long time.<br><br>In real life, Ted Cruz lost the primary mainly because of Donald Trump. Ted Cruz was an ardent conservative, but even then Donald Trump's rhetoric just appealed to primary voters more. In all honesty, Donald Trump would probably run third-party if Ted Cruz won the nomination, just out of spite, but I wanted to give the player a realistic chance and I also didn't want this to be a 2016 New Day clone.<br><br>There is actually already a 2016 Ted Cruz mod, but it's very old, made by Enviromental_Cap104. Although it's age is very apparent, it does offer a look back into a simpler time of TCT modding, and it helped me figure out how I wanted to structure this.<br><br>Also, believe it or not, this was supposed to be a 2016 Jeb Bush mod. The writing was getting boring though, and if I didn't change course, this was gonna start looking like a 2016N, so I decided to go for a more bombastic character, where I landed on picking Ted Cruz.<br><br>I will be pushing updates to this mod over time. Perhaps I'll even make a  side one day. <br><br> I'd like to give a special thanks to theanswerisme for his great work on this mod, to littleamericanman_85501 for making the banner, and to all of our amazing playtesters on Reddit and Discord. This mod wouldn't have reached it's full potential without them!</p></span> <span id="rpage1" style="display: inline-block;"><h2>Info</h2><p><a href="https://imgur.com/a/5QLXGRh" target="_blank" rel="noopener noreferrer">Canon Results</a><h4>The Primaries</h4><a href="https://en.wikipedia.org/wiki/Ted_Cruz_2016_presidential_campaign" target="_blank" rel="noopener noreferrer">Ted Cruz 2016 Presidential Campaign</a><br><a href="https://www.cbsnews.com/news/donald-trump-gop-convention-2016-how-he-got-here/" target="_blank" rel="noopener noreferrer">Trump Primary Victory</a><br><a href="https://youtu.be/Un3OhYs-tCE?si=jSnYoZSFnWaUH4PX" target="_blank" rel="noopener noreferrer">Full CBS News South Carolina Republican Debate</a><h4>2016 Presidential Election</h4><a href="https://www.brookings.edu/articles/why-hillary-clinton-lost" target="_blank" rel="noopener noreferrer">Hillary Clinton: Good President, Bad Candidate</a><br><a href="https://www.politico.com/story/2016/11/election-results-2016-clinton-trump-231070" target="_blank" rel="noopener noreferrer">Donald Trump: Greatest Upset in History?</a><br><h4>Further Helpful Links</h4><a href="http://youtube.com/watch?v=PCHJVE9trSM" target="_blank" rel="noopener noreferrer">Hillary Clinton's “Deplorable” blunder</a><br><a href="https://www.youtube.com/watch?v=vgHNFXJgRw0" target="_blank" rel="noopener noreferrer">Ted Cruz/Carly Fiorina Interview - April 29th, 2016</a><br><a href="https://en.wikipedia.org/wiki/2016_Republican_Party_presidential_primaries" target="_blank" rel="noopener noreferrer">2016 - General Republican Primary Info</a><h4>Books by the Candidates</h4>\rTed Cruz - <a href=\"https://www.amazon.com/Time-Truth-Reigniting-Promise-America/dp/0062365614/ref=sr_1_3?crid=1VZF488OH1HLQ&dib=eyJ2IjoiMSJ9.PXdNJgVLtC2EWYOQ1cgk-T9iVdYll0txji4UQaT2zaRUQ4PTl5dThJXV2uVSmoXHYZQD7wpi9OHHmszMrlVzvCRGoaoEMinglMhaY40w1zD05Zwr9toN0ET6HfgNNcn7k1DOJ6LhTWejKAvyl_uXZzMuVKDBtu7ih5Bcs2vL54-VEFPkj_hMPQO_BnyRZg6yaJwWygiPBV5xfKFmdrwuvSRv0W8MXTJZlKDOEesRzGw.bjUlwdmUjTNv1NStBu9Z0evWkkBa02E2SGJl9M1aRu8&dib_tag=se&keywords=A+Time+for+Truth&qid=1760817437&sprefix=a+time+for+truth%2Caps%2C75&sr=8-3\" target=\"_blank\">A Time For Truth</a></br>        \rTed Cruz - <a href=\"https://www.amazon.com/Justice-Corrupted-Weaponized-Legal-System/dp/1684513618/ref=pd_bxgy_d_sccl_1/132-5840850-8325653?pd_rd_w=kDpCL&content-id=amzn1.sym.dcf559c6-d374-405e-a13e-133e852d81e1&pf_rd_p=dcf559c6-d374-405e-a13e-133e852d81e1&pf_rd_r=A4Q15XGG9EBPVE2JQ46A&pd_rd_wg=khiwZ&pd_rd_r=650d724a-e277-446e-b629-52e8fc4ead83&pd_rd_i=1684513618&psc=1" target=\"_blank\">Justice Corrupted</a></br>\rHillary Clinton - <a href=\"http://www.amazon.com/exec/obidos/ASIN/1476751471/amhius20-20\" target=\"_blank\">Hard Choices</a></br>\rHillary Clinton - <a href=\"http://www.amazon.com/exec/obidos/ASIN/0743222253/amhius20-20\" target=\"_blank\">Living History</a></p></span> <span id="rpage2" style="display: inline-block;"><h2>Next Mod</h2><p>Right now I'm working on a Killary incumbency sim mod. It's going to be alot darker and even more biased then Tough as Texas, called Eyes Wide Open. The mod your playing right now was cynical but atleast somewhat grounded in reality, this one won't be. <br><br> As for a release date... I'm not sure. I'd love to get it out before 2025 ends, but in all honesty the mod will probably be done sometime in 2026. These massive-incumbency sim mods take a <i>really</i> long time to make. Stay tuned though! <br><br> This mockup was made by houseyhouse, huge thanks to him!<br><br><img src="https://i.imgur.com/BEqNz.png" style="display: block; margin: 0 auto; max-height:430px;"><br><br><img src="https://i.imgur.com/PeCTJL.png" style="display: block; margin: 0 auto; max-height:430px;"></p></span> <span id="rpage3" style="display: inline-block;"><h2>Credits</h2><p>I'd also like to say for the record that this mod is a work of fiction and is satire intended for entertainment/commentary, and no ill will goes to any of the individuals in this mod. Some things are exaggerated or altered for story purposes. That's all.</p><b><li>TheMcCain - lead coder and writer. <li>theanswerisme - Helped write this mod<li>littleamericanman_85501 - Made a great banner and helped make some other art assets.<li>W. Team - Variable Headquarters<li>Thatchmaster - Music player<li>Sundance - Further reading tabs (styling from A Lifetime Of This)<li>2021 Germany - Tooltips (although it's been modified a lot from what it was previously)</li><li>2016: A Lifetime Of This, for banner system and some other styling.</li><hr><p>Also, a special thanks to people in the Discord server for helping out with coding. And lastly a huge thanks to everyone who playtested. This mod would be a ton worse without you. Those who I forgot to list here, your contributions are not forgotten either.</b><br><br>As I wrap this further reading up, I'd just like to say again thank you so much for playing. It was so much fun making this mod, and I hope you enjoyed playing it as much as I did creating it.<br><br>For now, this is me signing off. </span>`,
             "has_visits": 0,
             "no_electoral_majority_image": "https://www.jetsimon.com/public/static/images/2012-no-majority.jpg",
             "creator": "themccain",
@@ -671,9 +730,9 @@ campaignTrail_temp.candidate_json = [
             "secondary_color_hex": "#C16E65",
             "is_active": 0,
             "image_url": "https://i.imgur.com/EBcp4Gx.jpeg",
-            "electoral_victory_message": "This guy wins!",
-            "electoral_loss_message": "This guy loses!",
-            "no_electoral_majority_message": "We all win?",
+            "electoral_victory_message": "Win",
+            "electoral_loss_message": "'",
+            "no_electoral_majority_message": "'",
             "description_as_running_mate": "<p>Marco Rubio was one of your main opponents in the primary, ultimately finishing third. Currently serving as a U.S. Senator from Florida, Rubio could be a major asset in that state. He should also help solidify your support among Cuban-Americans, with both of you sharing Cuban heritage. Florida’s 29 electoral votes will prove decisive in this election, and Rubio’s popularity there could be crucial to securing victory on Election Day. He also has bona fides among independent voters and would bring a more moderate voice to the ticket.</p>Conversely, the two of you don’t exactly share warm relations, having waged hard-hitting campaigns against each other during the primary. Many of your supporters may be disappointed if you choose him as your running mate. He has also been criticized for coming across as over-polished, and ingenuine, just like you. Still, if you’re looking for a safer pick, he’s an option. ",
             "candidate_score": 1,
             "running_mate": true
@@ -694,9 +753,9 @@ campaignTrail_temp.candidate_json = [
             "secondary_color_hex": "#C16E65",
             "is_active": 0,
             "image_url": "https://i.imgur.com/sndpu7F.jpeg",
-            "electoral_victory_message": "This guy wins!",
-            "electoral_loss_message": "This guy loses!",
-            "no_electoral_majority_message": "We all win?",
+            "electoral_victory_message": "Win",
+            "electoral_loss_message": "'",
+            "no_electoral_majority_message": "'",
             "description_as_running_mate": "<p>Scott Walker is the current Governor of Wisconsin. Elected in 2010, he pushed a number of conservative policies during his time in office, most notably the Wisconsin Budget Repair Bill, which stripped most public sector workers of collective bargaining rights. The bill sparked massive backlash and quickly led to a recall effort. Walker survived the recall by a wide margin and became highly popular in conservative circles.<br><br>Walker ran for the nomination this cycle but dropped out early after a series of poor performances. He would certainly help you in the Upper Midwest, particularly in his home state of Wisconsin, which is looking close this year. However, if you're trying to expand your coalition, Walker would likely make that task more difficult.",
             "candidate_score": 1,
             "running_mate": true
