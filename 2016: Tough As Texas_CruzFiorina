@@ -11975,7 +11975,89 @@ if ((campaignTrail_temp.player_answers[4] === 51271 || campaignTrail_temp.player
 
 // -------------------------------------------- NORMAL ENDINGS --------------------------------------------------------------------
 
-else if (quickstats[0] > 269 && quickstats[0] < 280) { // Very close victory
+else if (quickstats[0] > 534) { // Complete victory
+        e.pages.push(`<h3>November 8th, 2019</h3><p>It's been three years since Ted Cruz won every single state against Hillary Clinton, and the results have already been stunning. Ted Cruz has already seen a 95% approval rating rise to a 97% approval rating, with Ted Cruz punching Hillary Clinton last year and earning the praise of Americans all across the country. <br><br> Now it's time to finish up the term in a spectacular way. <br><br> Ted Cruz grabbed his machine gun, (machine guns had been legalized back in 2018), and headed to Chappaqua, Westchester, New York, ready to finish the job. Breathing slowly, he drew his Zodiac symbol on her driveway, and went in for the kill.</p>`);
+        e.executable.push([0, () => { e.image = 'https://i.imgur.com/2vlvOWU.png'; }]);
+    if (songChange != 1) {
+    songChange = 1
+    const moderatedefeat = new Playlist();
+      const moderatedefeatSong = new Song(
+        "Paper Planes",
+        "M.I.A",
+        "https://file.garden/aNxawo8jlVkymd8s/joe%2008/mucsci/UpR7YUN%20-%20Imgur.jpg",
+        "https://audio.jukehost.co.uk/WzRsDueQI1TypfvOgtCNJEhw9Fk0c5Kq"
+      );
+      moderatedefeat.addSong(moderatedefeatSong);
+    changePlaylist(moderatedefeat);
+     }
+    }
+
+else if (quickstats[0] > 339 && quickstats[0] < 535) { // Massive victory
+        e.pages.push(`<h3>Baier... I think what we're seeing is a political revolution...</h3><p>Is this real life?<br><br>From the moment you announced your candidacy, nobody thought you stood a chance at winning the primary, let alone defeating Clinton. But you've proved the doubters wrong. You've won. And by a huge margin, too. As Clinton's campaign fell apart in the aftermath of her corruption being exposed, you were able to defeat her.<br><br>The political establishment has been completely shocked. The mood at your victory party in Houston is euphoric. Clinton's is brutal. She picked the Javits Center in Manhattan, symbolically under an enormous glass ceiling that she hoped to break through. Instead, the only thing that have been shattered are her dreams and aspirations, with you coasting to victory against the abortion deep state.</p>`);
+        e.pages.push(`<h3>Baier... I think what we're seeing is a political revolution...</h3><p>You've made history with this win. In any case, angry liberals are fuming that Clinton squandered such a massive lead. You've won in a landslide unseen since 2008, and the repudiation the Democrats have suffered is stunning. Your victory will go down as perhaps one of the greatest upsets in American history, and the pollsters are struggling to find out how they got everything so wrong. <br><br> Is America finally free from it's shackles? From the incompentence of Obama? From the corruption of Clinton? From the radicalism of the Democrats? From the elitism of MSNBC? <br><br> It certainly feels so. Even Obama gives a boring press conference, congratulating you and calling for a peaceful transition of power. Clinton is still silent. </p>`);
+        e.pages.push(`<h3>Baier... I think what we're seeing is a political revolution...</h3><p>Where you go from here is up to you. There's no doubt Congress will be unfriendly to your agenda, that liberals will be attempt to obstruct your policy at evert turn, and Democrats will be calling you an illegitimate President, given your loss in the popular vote. None of that matters. <br><br> Your first order of business will be to sign executive orders that get rid of Obama's illegal EOs. You'll also get a Supreme Court nominee, and whoever you chose, you'll make sure it isn't some liberal in disguise like Antonin Kennedy. Clinton calls you, and she seems to give you the most bland congratulations possible, wishing the best for you. Despite everything that she's done, you accept it. After a victory like this, it feels like anything is possible. <br><br> So revel in your victory, President-elect.  </p>`);
+        e.executable.push([0, () => { e.image = 'https://i.imgur.com/yqL9NWD.jpeg'; }]);
+        e.executable.push([1, () => { e.image = 'https://i.imgur.com/yqL9NWD.jpeg'; }]);
+        e.executable.push([2, () => { e.image = 'https://i.imgur.com/yqL9NWD.jpeg'; }]);
+    if (songChange != 1) {
+    songChange = 1
+    const moderatedefeat = new Playlist();
+      const moderatedefeatSong = new Song(
+        "God's Not Dead",
+        "The Newsboys",
+        "https://i.imgur.com/h2D7d98.png",
+        "https://audio.jukehost.co.uk/WNZMEdKQuhrPeC7JCzm0YkuPJ7uQHGxu"
+      );
+      moderatedefeat.addSong(moderatedefeatSong);
+    changePlaylist(moderatedefeat);
+     }
+    }
+
+
+else if (quickstats[0] > 309 && quickstats[0] < 340) { // Large victory
+        e.pages.push(`<h3>It's a bit earlier then we expected, but we can now call the election, and the presidency, for Ted Cruz.</h3><p>You've done it.<br><br>From the moment you announced your candidacy, nobody thought you stood a chance at winning the primary, let alone defeating Clinton. But you've proved the doubters wrong. You've won. As Clinton's campaign fell apart in the aftermath of her corruption being exposed, you were able to defeat her.<br><br>The political establishment has been completely shocked. The mood at your victory party in Houston is euphoric. Clinton's is brutal. She picked the Javits Center in Manhattan, symbolically under an enormous glass ceiling that she hoped to break through. Instead, the only thing that have been shattered are her dreams and aspirations, with you coasting to victory against the abortion deep state.</p>`);
+        e.pages.push(`<h3>It's a bit earlier then we expected, but we can now call the election, and the presidency, for Ted Cruz.</h3><p>You've made history with this win. In any case, angry liberals are fuming that Clinton squandered such a massive lead. To the surprise of many, you've won a sweeping mandate, flipping states that haven't gone red in decades. Your victory will go down as perhaps one of the greatest upsets in American history, and the pollsters are struggling to find out how they got everything so wrong. <br><br> Is America finally free from it's shackles? From the incompentence of Obama? From the corruption of Clinton? From the radicalism of the Democrats? From the elitism of MSNBC? <br><br> It certainly feels so. Even Obama gives a boring press conference, congratulating you and calling for a peaceful transition of power. Clinton is still silent. </p>`);
+        e.pages.push(`<h3>It's a bit earlier then we expected, but we can now call the election, and the presidency, for Ted Cruz.</h3><p>Where you go from here is up to you. There's no doubt Congress will be unfriendly to your agenda, that liberals will be attempt to obstruct your policy at evert turn, and Democrats will be calling you an illegitimate President, given your loss in the popular vote. None of that matters. <br><br> Your first order of business will be to sign executive orders that get rid of Obama's illegal EOs. You'll also get a Supreme Court nominee, and whoever you chose, you'll make sure it isn't some liberal in disguise like Antonin Kennedy. Clinton calls you, and she seems to give you the most bland congratulations possible, wishing the best for you. Despite everything that she's done, you accept it. After a victory like this, it feels like anything is possible. <br><br> So revel in your victory, President-elect.  </p>`);
+        e.executable.push([0, () => { e.image = 'https://i.imgur.com/yqL9NWD.jpeg'; }]);
+        e.executable.push([1, () => { e.image = 'https://i.imgur.com/yqL9NWD.jpeg'; }]);
+        e.executable.push([2, () => { e.image = 'https://i.imgur.com/yqL9NWD.jpeg'; }]);
+    if (songChange != 1) {
+    songChange = 1
+    const moderatedefeat = new Playlist();
+      const moderatedefeatSong = new Song(
+        "God's Not Dead",
+        "The Newsboys",
+        "https://i.imgur.com/h2D7d98.png",
+        "https://audio.jukehost.co.uk/WNZMEdKQuhrPeC7JCzm0YkuPJ7uQHGxu"
+      );
+      moderatedefeat.addSong(moderatedefeatSong);
+    changePlaylist(moderatedefeat);
+     }
+    }
+
+else if (quickstats[0] > 289 && quickstats[0] < 310) { // Large victory
+        e.pages.push(`<h3>It's Wednesday here in Houston, and we can now call the election, and the presidency, for Ted Cruz.</h3><p>You've done it.<br><br>From the moment you announced your candidacy, nobody thought you stood a chance at winning the primary, let alone defeating Clinton. But you've proved the doubters wrong. You've won. As Clinton's campaign fell apart in the aftermath of her corruption being exposed, you were able to defeat her.<br><br>The political establishment has been completely shocked. The mood at your victory party in Houston is euphoric. Clinton's is brutal. She picked the Javits Center in Manhattan, symbolically under an enormous glass ceiling that she hoped to break through. Instead, the only thing that have been shattered are her dreams and aspirations, with you coasting to victory against the abortion deep state.</p>`);
+        e.pages.push(`<h3>It's Wednesday here in Houston, and we can now call the election, and the presidency, for Ted Cruz.</h3><p>You've made history with this win. In any case, angry liberals are fuming that Clinton squandered such a massive lead. Your margin of victory was rather impressive, with you flipping states like Nevada, Wisconsin, and other states. Your victory will go down as perhaps one of the greatest upsets in American history, and the pollsters are struggling to find out how they got everything so wrong. <br><br> Is America finally free from it's shackles? From the incompentence of Obama? From the corruption of Clinton? From the radicalism of the Democrats? From the elitism of MSNBC? <br><br> It certainly feels so. Even Obama gives a boring press conference, congratulating you and calling for a peaceful transition of power. Clinton is still silent. </p>`);
+        e.pages.push(`<h3>It's Wednesday here in Houston, and we can now call the election, and the presidency, for Ted Cruz.</h3><p>Where you go from here is up to you. There's no doubt Congress will be unfriendly to your agenda, that liberals will be attempt to obstruct your policy at evert turn, and Democrats will be calling you an illegitimate President, given your loss in the popular vote. None of that matters. <br><br> Your first order of business will be to sign executive orders that get rid of Obama's illegal EOs. You'll also get a Supreme Court nominee, and whoever you chose, you'll make sure it isn't some liberal in disguise like Antonin Kennedy. Clinton calls you, and she seems to give you the most bland congratulations possible, wishing the best for you. Despite everything that she's done, you accept it. After a victory like this, it feels like anything is possible. <br><br> So revel in your victory, President-elect.  </p>`);
+        e.executable.push([0, () => { e.image = 'https://i.imgur.com/yqL9NWD.jpeg'; }]);
+        e.executable.push([1, () => { e.image = 'https://i.imgur.com/yqL9NWD.jpeg'; }]);
+        e.executable.push([2, () => { e.image = 'https://i.imgur.com/yqL9NWD.jpeg'; }]);
+    if (songChange != 1) {
+    songChange = 1
+    const moderatedefeat = new Playlist();
+      const moderatedefeatSong = new Song(
+        "God's Not Dead",
+        "The Newsboys",
+        "https://i.imgur.com/h2D7d98.png",
+        "https://audio.jukehost.co.uk/WNZMEdKQuhrPeC7JCzm0YkuPJ7uQHGxu"
+      );
+      moderatedefeat.addSong(moderatedefeatSong);
+    changePlaylist(moderatedefeat);
+     }
+    }
+
+
+else if (quickstats[0] > 269 && quickstats[0] < 290) { // Very close victory
         e.pages.push(`<h3>After a long night, we can now call the election, and the presidency, for Ted Cruz.</h3><p>You've done it.<br><br>From the moment you announced your candidacy, nobody thought you stood a chance at winning the primary, let alone defeating Clinton. But you've proved the doubters wrong. You've won. As Clinton's campaign fell apart in the aftermath of her corruption being exposed, you were able to defeat her.<br><br>The political establishment has been completely shocked. The mood at your victory party in Houston is euphoric. Clinton's is brutal. She picked the Javits Center in Manhattan, symbolically under an enormous glass ceiling that she hoped to break through. Instead, the only thing that have been shattered are her dreams and aspirations, with you coasting to victory against the abortion deep state.</p>`);
         e.pages.push(`<h3>After a long night, we can now call the election, and the presidency, for Ted Cruz.</h3><p>You've made history with this win. In any case, angry liberals are fuming that Clinton squandered such a massive lead, and more so that this election was so close. Your victory will go down as perhaps one of the greatest upsets in American history, and the pollsters are struggling to find out how they got everything so wrong. <br><br> Is America finally free from it's shackles? From the incompentence of Obama? From the corruption of Clinton? From the radicalism of the Democrats? From the elitism of MSNBC? <br><br> It certainly feels so. Even Obama gives a boring press conference, congratulating you and calling for a peaceful transition of power. Clinton is still silent. </p>`);
         e.pages.push(`<h3>After a long night, we can now call the election, and the presidency, for Ted Cruz.</h3><p>Where you go from here is up to you. There's no doubt Congress will be unfriendly to your agenda, that liberals will be attempt to obstruct your policy at evert turn, and Democrats will be calling you an illegitimate President, given your loss in the popular vote. None of that matters. <br><br> Your first order of business will be to sign executive orders that get rid of Obama's illegal EOs. You'll also get a Supreme Court nominee, and whoever you chose, you'll make sure it isn't some liberal in disguise like Antonin Kennedy. Clinton calls you, and she seems to give you the most bland congratulations possible, wishing the best for you. Despite everything that she's done, you accept it. After a victory like this, it feels like anything is possible. <br><br> So revel in your victory, President-elect.  </p>`);
