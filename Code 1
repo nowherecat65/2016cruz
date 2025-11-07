@@ -433,7 +433,7 @@ appendStyle();
 campaignTrail_temp.achievements = {
     "Tariff Man" : {
         "image" : "https://i.imgur.com/xzR9Xgq.png",
-        "description" : "As Ted Cruz, lose the nomination to Donald Trump.", // self-explanatory
+        "description" : "Lose the nomination to Donald Trump.", // self-explanatory
         "cannotBeCheated" : true
  },
     "Worthy Sacrifice" : {
@@ -480,7 +480,7 @@ campaignTrail_temp.achievements = {
   },
 "A Real Conservative" : {
         "image" : "https://i.imgur.com/hQY9nV.png",
-        "description" : "Win while pushing for a national abortion ban and the restriction of same-sex marriage.",
+        "description" : "Push for a national abortion ban and the restriction of same-sex marriage.",
         "cannotBeCheated" : true
   },
 "History Arrives All The Same" : {
