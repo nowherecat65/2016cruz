@@ -1587,7 +1587,6 @@ const banners = [
     { url: "https://www.p2016.org/blogads/walker091615p2016xx3640419123098670429.jpg", weight: 1 },
     { url: "https://www.p2016.org/blogads/bearingdrift020716xx8394401851222088692.gif", weight: 1 },
     { url: "https://www.p2016.org/blogads/carson061915p2016.jpg", weight: 1 },
-    { url: "https://www.p2016.org/blogads/ben%20carson%20050815%20blogad%20728x90%20for%20america%20drudge.jpg", weight: 1 },
     { url: "https://www.p2016.org/blogads/comicbookmoviecom013016xx724e818f-a251-4a11-828e-d82eb600712f.jpg", weight: 1 },
     { url: "https://i.imgur.com/OJigFr9.png", weight: 1 }
 ];
