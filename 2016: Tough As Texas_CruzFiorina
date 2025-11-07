@@ -316,7 +316,7 @@ const TrumpMap = {
     "-2": `You and Trump are <span style="color:  #CD1025;"><strong>enemies</strong></span>.`,
     "-1": `You and Trump are <span style="color:  #FB6723;"><strong>quickly becoming rivals</strong></span>.`,
     "0": `You and Trump are <span style="color: #DEB83E;"><strong>on neutral terms</strong></span>.`,
-    "1": `You and Trump are <span style="color: #DEB83E;"><strong>working together</strong></span> to defeat Clinton.`,
+    "1": `You and Trump are <span style="color: #57AB59;"><strong>working together</strong></span> to defeat Clinton.`,
     "2": `You and Trump have <span style="color: #57AB59;"><strong>become allies</strong></span>.`,
     "3": `You and Trump are<span style="color: #57AB59;"><strong> allies</strong></span>.`,
     "4": `You and Trump <span style="color: #2be800;"><strong>are great allies</strong></span>.`,
@@ -795,6 +795,7 @@ if (ans == 51122) {
 if (ans == 51121) {
         Trump += 1;
     }
+
 if (ans == 5091 || ans == 51228) {
         Ideology += 3;
     }
@@ -804,6 +805,8 @@ if (ans == 20666 || ans == 5031 || ans == 20757 || ans == 5127 || ans == 20757) 
 if (ans == 51165 || ans == 51037 || ans == 51072 || ans == 1038) {
         Ideology -= 1;
     }
+
+// Achievements over here
 
 
 // If you decide to duck out of the debate
@@ -875,11 +878,13 @@ if (HillaryInvestigation < 0) {
    campaignTrail_temp.candidate_json[1]["fields"].last_name = "Klinton";
   campaignTrail_temp.candidate_json.find(candidate => candidate.pk == 201).fields.color_hex = '#1f7ca3';
   campaignTrail_temp.candidate_json.find(candidate => candidate.pk == 200).fields.color_hex = '#A35C5C';
-        		vpTable["Killary Klinton"] = "Killing Kaine";
+vpTable["Killary Klinton"] = "Killing Kaine";
  e.election_json[0].fields.has_visits = 0;
+ctsAchievement("Karmic Retribution");
 e.ElectionPopup = "Hillary's been outed as a criminal, but you still have an election to win. Good luck."
 e.LosePopup = "Did you just lose... to a murderer?"
 e.WinPopup = "..."
+e.SelAnsContText = "Ted, you alright?"
 
 } else {
   campaignTrail_temp.questions_json[26] = {
@@ -893,6 +898,11 @@ e.WinPopup = "..."
   }
  }
 
+if (campaignTrail_temp.player_answers.includes(5127) && campaignTrail_temp.player_answers.includes(5091)) {
+ctsAchievement("A Real Conservative");
+}
+
+
 // Trump primary victory
 
   if (ans == 51271 || ans == 51084) {
@@ -902,7 +912,7 @@ e.WinPopup = "..."
         campaignTrail_temp.candidate_json[0]["fields"].image_url = "https://i.imgur.com/gvmGNyb.png";
         campaignTrail_temp.question_number = 26;
         		vpTable["Donald Trump"] = "Chris Christie";
- 
+ctsAchievement("Tariff Man");
 e.ElectionPopup = "Well, Trump's the nominee now. Sit back and watch the ballots come in. This should be interesting."
 e.LosePopup = "He won the nomination, and he screwed it up... The RNC isn't gonna like this one bit..."
 e.WinPopup = "Despite it all, it seems Donald Trump.. won?"
@@ -911,6 +921,8 @@ e.WinPopup = "Despite it all, it seems Donald Trump.. won?"
 // Successful victory in the primaries
 
 if (Primary == 3) {
+ctsAchievement("Decisive Victory");
+
   campaignTrail_temp.questions_json[4] = {
     "model": "campaign_trail.question",
     "pk": 51060,
@@ -937,10 +949,12 @@ if (Primary == 3) {
         campaignTrail_temp.candidate_json[0]["fields"].last_name = "Rubio";
         campaignTrail_temp.candidate_json[0]["fields"].image_url = "https://i.imgur.com/5NquPN6.png";
         campaignTrail_temp.question_number = 26;
+
         		vpTable["Marco Rubio"] = "John Kasich";
 e.ElectionPopup = "Well, Rubio's the nominee. Hopefully he can put the Democrats in their place."
 e.WinPopup = "It's a great day for America! The corrupt Democrats have been defeated."
-e.LosePopup = "What have the people done?"
+e.LosePopup = "It seems like Rubio has lost..."
+ctsAchievement("Worthy Sacrifice");
 }
 
 if (ans == 5126 || ans == 5125 || ans == 5123 || ans == 5124) {
@@ -1477,7 +1491,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5031,
         "fields": {
             "question": 1011,
-            "description": "My friends, fellow Republicans, and folks at home, this country has been in steady decline for the past seven years. But it doesn’t have to be that way. Under my administration, we’ll slash taxes, restrict abortion, protect the Second Amendment, balance the budget, fight for religious freedom, and stand up to special interests."
+            "description": "My friends, fellow Republicans, and folks at home, this country has been in steady decline for the past seven years. It's time we had a government that truly works for the people. Under my administration, we’ll slash taxes, restrict abortion, protect the Second Amendment, balance the budget, fight for religious freedom, and stand up to special interests."
         }
     },
     {
@@ -1765,7 +1779,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51026,
         "fields": {
             "question": 1020,
-            "description": "In the end, these are silly, unfounded claims from the liberal media. We can ignore them because I know Fiorina will do a great job as the nation’s second-in-command, and those who say otherwise are mistaken."
+            "description": "In the end, these are unfounded claims from some partisan Democrats. We can ignore them because I know Fiorina will do a great job as the nation’s second-in-command, and those who say otherwise are mistaken."
         }
     },
     {
@@ -11002,7 +11016,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51030,
             "candidate": 200,
-            "answer_feedback": "Most voters seem to accept your reasoning, even as critics continue to attack the ticket for the next couple of days."
+            "answer_feedback": "Most voters seem to accept your reasoning, though critics will continue to find any way to attack your ticket."
         }
     },
     {
@@ -11901,7 +11915,7 @@ else if (quickstats[0] == 269) { // Deadlocked election (Cruz) (Editor's Note: F
 else if (quickstats[0] >= 259 && quickstats[0] < 269) { // another ending for Cruz, see above
         e.pages.push(`<h3>“In a true nail biter, we can now call the Presidency for Hillary Rodham Clinton.”</h3><p>It felt like an eternity waiting for the votes in Wisconsin to come in, but the AP has called it. By the thinnest of margins, Hillary Clinton has just barely won a plurality in the state. That gives her 10 electoral votes, and the last one that she needs to become the first female President of the United States.<br><br> Clinton has already declared victory, and is giving her victory speech to the crowd, talking about the glass ceiling, whatever. Fox is yet to call the race, and you know for sure you aren't conceding either, at least not yet. Your team has already asked for a recount in Wisconsin, which will likely be approved given the margins. Although a recount is likely, it seems unlikely it will change the result in Wisconsin. The odds look poor, Ted.</p>`);
         e.pages.push(`<h3>“In a true nail biter, we can now call the Presidency for Hillary Rodham Clinton.”</h3><p>If she does become President, she'll likely be hard pressed to pass her agenda, and there will always be people who consider her an illegitimate President. Already memories of the 2000 election are underway. An aide walks into your room and gives you a phone. <br><br> It's Clinton. She starts with the faked warm welcome, and then urges you to just concede, 'for the sake of the country' and because she won the popular vote. You just hang up.  It's already well past midnight here, and the war on Twitter continues to rage on. If the recount does indeed turn out in your favor, then that will deadlock the Electoral College. Afterwards, a contingent election would happen in Congress.</p>`);
-        e.pages.push(`<h3>“In a true nail biter, we can now call the Presidency for Hillary Rodham Clinton.”</h3><p>Republicans control a majority of state delegations, meaning if you do indeed pull ahead in Wisconsin, you will have won the Presidency. Democrats have managed to take the Senate to a tie, meaning Tim Kaine will likely be elevated to the Presidency, unless enough defect. <br><br> All of this is speculation though, because it's still not confirmed if a recount will happen. It's not over yet, and you can begin planning out your cabinet if you wish, but you'll have to fight hard if you want to be President come January. Whatever happens, it's sure to be a wild ride. Best of luck these next few weeks, you're going to need it.</p>`);
+        e.pages.push(`<h3>“In a true nail biter, we can now call the Presidency for Hillary Rodham Clinton.”</h3><p>Republicans control a majority of state delegations, meaning if you do indeed pull ahead in Wisconsin, you will have won the Presidency. Democrats have managed to take the Senate to a tie, meaning Tim Kaine will likely be elevated to the Vice Presidency, unless enough defect. <br><br> All of this is speculation though, because it's still not confirmed if a recount will happen. It's not over yet, and you can begin planning out your cabinet if you wish, but you'll have to fight hard if you want to be President come January. Whatever happens, it's sure to be a wild ride. Best of luck these next few weeks, you're going to need it.</p>`);
         e.executable.push([0, () => { e.image = 'https://i.imgur.com/kg7ymVb.jpeg'; }]);
         e.executable.push([1, () => { e.image = 'https://i.imgur.com/kg7ymVb.jpeg'; }]);
         e.executable.push([2, () => { e.image = 'https://i.imgur.com/kg7ymVb.jpeg'; }]);
@@ -12030,6 +12044,9 @@ else if (quickstats[0] > 339 && quickstats[0] < 535) { // Massive victory
       moderatedefeat.addSong(moderatedefeatSong);
     changePlaylist(moderatedefeat);
      }
+
+ctsAchievement("Unburdened By What's Been");
+
     }
 
 
@@ -12051,6 +12068,7 @@ else if (quickstats[0] > 309 && quickstats[0] < 340) { // Large victory
       );
       moderatedefeat.addSong(moderatedefeatSong);
     changePlaylist(moderatedefeat);
+
      }
     }
 
@@ -12214,6 +12232,11 @@ else if (quickstats[0] > 2 && quickstats[0] <= 134) { // Ridiculous loss
     changePlaylist(communist);
     }
 }
+
+if (Trump == 1 && quickstats[0] > 269) {
+ctsAchievement("Darker Vision");
+}
+
 
     return construct(0);
 }
