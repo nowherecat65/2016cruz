@@ -438,17 +438,17 @@ campaignTrail_temp.achievements = {
  },
     "Worthy Sacrifice" : {
         "image" : "https://i.imgur.com/GU9Z3Cg.png",
-        "description" : "As Ted Cruz, back Marco Rubio at the convention to prevent Trump from winning.",
+        "description" : "Back Marco Rubio at the convention to prevent Trump from winning.",
         "cannotBeCheated" : true
     },
     "Unburdened By What's Been" : {
         "image" : "https://i.imgur.com/tPr5UZK.png",
-        "description" : "As Ted Cruz, defeat Hillary  in a landslide.",
+        "description" : "Win in a landslide.",
         "cannotBeCheated" : true
      },
     "Darker Vision" : {
         "image" : "https://i.imgur.com/1MWng8O.png",
-        "description" : "As Ted Cruz, ally with Trump and win the election.",
+        "description" : "Ally with Trump and win the election.",
         "cannotBeCheated" : true
  },
        "Decisive Victory" : {
@@ -456,84 +456,43 @@ campaignTrail_temp.achievements = {
         "description" : "As Ted Cruz, win the nomination without having to contest the convention.",
         "cannotBeCheated" : true
  },
-       "Senate Majority Loser" : {
-        "image" : "https://i.imgur.com/PvF5m1E.png",
-        "description" : "As Ted Cruz, piss off the establishment and win.",
-        "cannotBeCheated" : true
- },
         "A Better World" : {
         "image" : "https://i.imgur.com/M3GaSZP.png",
-        "description" : "As Ted Cruz, take the high road and be as compassionate as possible, and win.",
+        "description" : "Take the high road and be as compassionate as possible, and win.",
         "cannotBeCheated" : true
   },
-"All Thanks to Wisconsin" : {
-        "image" : "https://i.imgur.com/YtthSWJ.png",
-        "description" : "As Ted Cruz, win by 1 single electoral vote.",
-        "cannotBeCheated" : true
-  },
-
    "And I Took It Personally" : {
         "image" : "https://i.imgur.com/kfcQeGJ.png",
-        "description" : "As Ted Cruz, lash out at Hillary at the debate and still win",
+        "description" : "Lash out at Hillary at the debate and still win.",
         "cannotBeCheated" : true
   },
 
 "She's the Zodiac" : {
         "image" : "https://i.imgur.com/SNDhRMU.png",
-        "description" : "As Ted Cruz, win while suggesting that Hillary killed someone.",
+        "description" : "Win while suggesting that Hillary killed someone.",
         "cannotBeCheated" : true
   },
-"He's Not Barack" : {
-        "image" : "https://i.imgur.com/hQE9nV.png",
-        "description" : "As Ted Cruz, win while attacking Obama at every opportunity.",
-        "cannotBeCheated" : true
-  },
-"We Have The Technology" : {
-        "image" : "https://i.imgur.com/dAAkY6v.png",
-        "description" : "As Ted Cruz, use some fancy new outreach technology to your advantage.", // Use evangelical outreach in Iowa
-        "cannotBeCheated" : true
-  },
-"Votes, Not Voters" : {
-        "image" : "https://i.imgur.com/hQE9nV.png",
-        "description" : "Win the election through a tie and a house vote.",
-        "cannotBeCheated" : true
-  },
+
 "Not My President" : {
-        "image" : "https://i.imgur.com/CRm7RpG.png",
-        "description" : "As Ted Cruz, win while losing the popular vote.",
+        "image" : "https://i.imgur.com/hQE9nV.png",
+        "description" : "Deadlock the election, and win through a House vote.",
         "cannotBeCheated" : true
   },
 "A Real Conservative" : {
         "image" : "https://i.imgur.com/hQY9nV.png",
-        "description" : "As Ted Cruz, win while pushing for a national abortion ban and the restriction of same-sex marriage.",
+        "description" : "Win while pushing for a national abortion ban and the restriction of same-sex marriage.",
         "cannotBeCheated" : true
   },
 "History Arrives All The Same" : {
         "image" : "https://i.imgur.com/vdBFKe1.png",
-        "description" : "Achieve the historical results.",
-        "cannotBeCheated" : true
-  },
-"Cancun" : {
-        "image" : "https://i.imgur.com/vdBFKe1.png",
-        "description" : "Finally back home.",
+        "description" : "Win 305 electoral votes.",
         "cannotBeCheated" : true
   },
 "Karmic Retribution" : {
         "image" : "https://i.imgur.com/Ec72hu1.png",
-        "description" : "Teach Hillary some justice.", // Accuse Hillary of killing Vince Foster and pledge to lock her up. This is an ending I have in mind.
+        "description" : "Teach Hillary some justice.", // Expose clinton
         "cannotBeCheated" : true
   },
-"Subspace Bubble" : {
-        "image" : "https://i.imgur.com/Ec7u1.png",
-        "description" : "Enter the stars.",
-        "cannotBeCheated" : true
-  },
-    "Eternal Defeat" : {
-        "image" : "https://i.imgur.com/f9ZwWEi.png",
-        "description" : "Come so close, yet so far.", // Unsure of what this should be lol
-        "cannotBeCheated" : true
-
-    }
 }
 
 
