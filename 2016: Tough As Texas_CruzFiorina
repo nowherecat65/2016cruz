@@ -250,7 +250,7 @@ const styles = [
 
 var Establishment = 0;
 var Ideology = 3;
-var Trump = 0;;
+var Trump = 0;
 var Primary = 0;
 var Debate = 0;
 var Judge = 0;
@@ -258,6 +258,7 @@ var HillaryInvestigation = 0;
 // ---------------------------- Extra Variables
 e.noCounter = 0
 var songChange = 0;
+var SpecialEnding = 0;
 
 
 
@@ -11699,8 +11700,6 @@ campaignTrail_temp.jet_data = [{
 ]
 
 
-
-
 // ENDINGS -- this is slightly more reliable than the ending code method
 
 construct = (a = 1) => {
@@ -11783,30 +11782,14 @@ endingPicker = (out, totv, aa, quickstats) => {
     e.header = "";
     e.executable = [];
 
-// --------------------------------------------------------------- SPECIAL ENDINGS (gotta put these on top so they trigger first) -------------------------------------------------------------------------------------------
-// Killary, 50 state sweep
-if ((campaignTrail_temp.player_answers[25] === 51531) && quickstats[0] >= 535) { // Full Sweep aganst Klinton
-        e.pages.push(`<h3>Vindication.</h3><p>50 states. 50 shades of red. New York, Hawaii, Massachusetts, all red. Your erstwhile rival Clinton is nowhere to be found, not in Chappaqua, not anywhere within view. Even after state after state voted for you, you didn't feel glory. You felt empty. Hollow. <br><br> Nobody is surprised by your victory. Nobody even talks about it. Everybody's only talking about Hillary Clinton's crimes. How she got away for so long. The fact the establishment was so corrupt, the things you had been trying to warn them about for years. <br><br> Where do you go from here? Democrats are in complete disarray, but it's not like the rest of Washington is any more stable. Who else was behind these crimes? Her spineless husband, obviously, but who else? Obama? Schumer? Pelosi? You're going to need to start investigations into all of them. Best of luck these next few years. </p>`);
-        e.pages.push(`<h3>July 20th, 1993 - </h3><p> Clinton felt happy, relieved. That snake was finally going to be killed today. She had been planning this for months — and tonight her efforts would finally bear fruit. He cannot be allowed to survive, no matter the price. It didn't matter that she had worked with him for decades, or that he had helped her become a lawyer in the first place. All that matters is that she must protect herself. She has no other choice.  <br><br> She had done stuff typical of a First Lady that day — giving speeches, attending schools, whatever. Sitting on the White House couch, flicking through meaningless telvision channels, she began to get worried. Had the plan failed? Had that rat managed to get away? <br><br> Just then, someone knocked on the door. It was the agents tasked with killing him. <br><br> “Target neutralized, Madam'.” <br><br> Grinning, she replied “Excellent.” <br><br> “And did you get that tape I asked for?” Clinton really hoped they recorded it. She would get to watch that buffoon die in real time, entertainment far beyond her wildest dreams. <br><br> “Of course” an agent replied. </p>`);
-        e.executable.push([0, () => { e.image = 'https://i.imgur.com/.png'; }]);
-        e.executable.push([1, () => { e.image = 'https://i.imgur.com/.png'; }]);
-    if (songChange != 1) {
-    songChange = 1
-    const trumpvictory = new Playlist();
-      const trumpvictorySong = new Song(
-        "Little Dark Age",
-        "MGMT",
-        "https://i.imgur.com/d2ctDiz.png",
-        "https://audio.jukehost.co.uk/LQF5RB2PrVcCeObaqQafC2FTwkysnWdT"
-      );
-      trumpvictory.addSong(trumpvictorySong);
-    changePlaylist(trumpvictory);
-     }
-    }
+if (campaignTrail_temp.player_answers.includes(51531) && quickstats[0] >= 535) {
+    SpecialEnding = 1
+}
 
+// --------------------------------------------------------------- SPECIAL ENDINGS (gotta put these on top so they trigger first) -------------------------------------------------------------------------------------------
 
 // Trump wins 50 states
-if ((campaignTrail_temp.player_answers[4] === 51271 || campaignTrail_temp.player_answers[4] === 51084) && quickstats[0] >= 535) { // trump
+ if ((campaignTrail_temp.player_answers[4] === 51271 || campaignTrail_temp.player_answers[4] === 51084) && quickstats[0] >= 535) { // trump
         e.pages.push(`<h3>Hillary, you're fired.</h3><p>Absolutely astounding. Orange man has won all 50 states against that basket of deplorables, killary klinton. what a nasty woman. the world is now a better place.<marquee scrollamount='65'><h1>MAKE AMERICA GREAT AGAIN!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</marquee></p>`);
         e.executable.push([0, () => { e.image = 'https://i.imgur.com/Bs5xDUA.png'; }]);
     if (songChange != 1) {
@@ -11824,9 +11807,29 @@ if ((campaignTrail_temp.player_answers[4] === 51271 || campaignTrail_temp.player
     }
 // ------------------
 
+// Killary, 50 state sweep
+else if (campaignTrail_temp.player_answers.includes(51531) && quickstats[0] >= 535) { // Full Sweep aganst Klinton
+        e.pages.push(`<h3>Vindication.</h3><p>50 states. 50 shades of red. New York, Hawaii, Massachusetts, all red. Your erstwhile rival Clinton is nowhere to be found, not in Chappaqua, not anywhere within view. Even after state after state voted for you, you didn't feel glory. You felt empty. Hollow. <br><br> Nobody is surprised by your victory. Nobody even talks about it. Everybody's only talking about Hillary Clinton's crimes. How she got away for so long. The fact the establishment was so corrupt, the things you had been trying to warn them about for years. <br><br> Where do you go from here? Democrats are in complete disarray, but it's not like the rest of Washington is any more stable. Who else was behind these crimes? Her spineless husband, obviously, but who else? Obama? Schumer? Pelosi? You're going to need to start investigations into all of them. Best of luck these next few years. </p>`);
+        e.pages.push(`<h3>July 20th, 1993 - Washington D.C, 1600 Pennsylvania Ave </h3><p> Hillary felt happy, relieved. That snake was finally going to be killed today. She had been planning this for months — and tonight her efforts would finally bear fruit. He cannot be allowed to survive, no matter the price. It didn't matter that she had worked with him for decades, or that he had helped her become a lawyer in the first place. All that matters is that she must protect herself. She has no other choice.  <br><br> She had done stuff typical of a First Lady that day — giving speeches, attending schools, making millions illegally for her own pleasure. Sitting on the White House couch, flicking through meaningless telvision channels, she began to get worried. Had the plan failed? Had that rat managed to get away? <br><br> Just then, someone knocked on the door. It was the agents tasked with killing him. <br><br> “Target neutralized, Madam.” <br><br> Grinning, she replied “Excellent.” <br><br> “And did you get that tape I asked for?” Hillary really hoped they recorded it. She would get to watch that loser die in real time, entertainment far beyond her wildest dreams. <br><br> “Of course” an agent replied. <br><br> “Perfect!” she said, trying her best to contain her excitement. <br><br> She quickly went to the oven and put in a batch of cookies. If she was quick, she could even get a nice meal to go alongside her night-time entertainment. <br><br> She called her husband Bill downstairs as she put the tape inside the television. Bill laughed, and she cackled. They couldn't stop replaying the 2 hour long video of his suffering.  They dragged him all the way to Virginia and shot the bastard dead. <br><br> Just then her advisors walked in. They had already written a script for her to say when she “learns” of Foster's death, and already wrote an eulogy for Bill to say at his funeral. Hillary said she couldn't be bothered to attend, just make up some excuse about her being sick that day. <br><br> The entire cabinet was far too spineless to ever report her crimes. Spinelessness was a trait Clinton always looked for in cabinet appointments, and she always made sure her crimes never got in contact with people who still had some of their guts left. <br><br> Just then, midnight struck, it was her bedtime. She called Bill upstairs, and they slept soundly, knowing they would never have to bear the consequences of their actions.  </p>`);
+        e.executable.push([0, () => { e.image = 'https://upload.wikimedia.org/wikipedia/commons/0/06/Mike_Pence_February_2015_cropped_color_corrected_2_by_3.jpg'; }]);
+        e.executable.push([1, () => { e.image = 'https://upload.wikimedia.org/wikipedia/commons/0/06/Mike_Pence_February_2015_cropped_color_corrected_2_by_3.jpg'; }]);
+    if (songChange != 1) {
+    songChange = 1
+    const trumpvictory = new Playlist();
+      const trumpvictorySong = new Song(
+        "Little Dark Age",
+        "MGMT",
+        "https://i.imgur.com/d2ctDiz.png",
+        "https://audio.jukehost.co.uk/LQF5RB2PrVcCeObaqQafC2FTwkysnWdT"
+      );
+      trumpvictory.addSong(trumpvictorySong);
+    changePlaylist(trumpvictory);
+     }
+    }
+
 // Trump wins
 
-        if ((campaignTrail_temp.player_answers[4] === 51271 || campaignTrail_temp.player_answers[4] === 51084) && quickstats[0] >= 270 && quickstats[0] < 535) { // Trump wins the election!
+       else if ((campaignTrail_temp.player_answers[4] === 51271 || campaignTrail_temp.player_answers[4] === 51084) && quickstats[0] >= 270 && quickstats[0] < 535) { // Trump wins the election!
       campaignTrail_temp.election_json[0]["fields"].advisor_url = "https://i.imgur.com/5cfyftc.png";
         e.pages.push(`<h3>My folks, we are going to Make America Great Again!</h3><p>Out of all the ways this election could have gone, you did not expect it to go this way. Yet here we are. Donald Trump is already calling his victory “the greatest victory in the history of America” and how terrible Crooked Hillary is. Clinton is left to give her last-minute defeat speech to an emptying hall. Good riddance. The best positive you can take from this is her career is over.<br><br>Like it or not, the country has been changed forever. Trump managed to flip states that hadn't gone red since the eighties, and pundits are stunned by such an upset. With his victory, the Republican Party has become the party of tariffs and the working man, not the party of big business it was a year ago.</p>`);
         e.pages.push(`<h3>My folks, we are going to Make America Great Again!</h3><p>Fortunately, Trump has promised to appoint several conservative justices, and the conservative majority will be preserved or even expanded under his presidency. An overturning of Roe v. Wade isn't off the table, and could likely happen sometime around the early 2020s.<br><br>You definitely still have a chance to win the presidency in the future, but you'll also need to start gearing up for re-election. Surely you won't almost lose in a Republican stronghold like Texas, right?<br><br>For now though, you can just sit back and relax. This might not have been the best possible outcome, nor the outcome you hoped for, but it could've always been much worse.</p>`);
@@ -11992,8 +11995,8 @@ if ((campaignTrail_temp.player_answers[4] === 51271 || campaignTrail_temp.player
        else if ((campaignTrail_temp.player_answers[4] === 51119) && quickstats[0] < 269) { // Rubio loses the election
         e.pages.push(`<h3>“We have a big announcement to make...”</h3><p>“We can now project that Hillary Rodham Clinton has reached 270 electoral votes, and will become the 45th President of the United States.”<br><br>Damned be. The people of this country were given a choice, and they chose not to opt for decency. Hillary Clinton has won the election, must to the RNC's dismay, and Trump is already slamming Rubio relentlessly. He gives a muted concession speech, Clinton declares her victory, and the next 4 years will be frustrating.<br><br>Trump said Crooked Hillary was 'terrible' but that he was 'totally unsurprised' Rubio lost. He's kicking the battered guy while he's down, it seems.</p>`);
         e.pages.push(`<h3>“We have a big announcement to make...”</h3><p>Clinton has already said she will back Merrick Garland to be the next Supreme Court justice, and the conservative majority is at jeopardy. Hopefully it can last long enough for a Republican to win back the White House and undo the amount of damage 'judges' like Sotomayor have done to our country. Rubio is still under full attack by both sides of the party. You do feel bad for him, only because you could've ended up the same way.<br><br>Where does this leave you? It's hard to tell. You do have a great shot at winning the nomination in 2020, especially given people are likely to be worn out by 12 years of Democratic rule, but it'll be tough. Godspeed, and good luck with re-election in 2018.</p>`);
-        e.executable.push([0, () => { e.image = 'https://i.imgur.com/kg7ymVb.jpeg'; }]);
-        e.executable.push([1, () => { e.image = 'https://i.imgur.com/kg7ymVb.jpeg'; }]);
+        e.executable.push([0, () => { e.image = 'https://file.garden/aNtAfG887DiA_7lO/Obamanation/Code1/12oVFIS.jpeg'; }]);
+        e.executable.push([1, () => { e.image = 'https://file.garden/aNtAfG887DiA_7lO/Obamanation/Code1/12oVFIS.jpeg'; }]);
     if (songChange != 1) {
     songChange = 1
     const rubiodefeat = new Playlist();
@@ -12010,7 +12013,7 @@ if ((campaignTrail_temp.player_answers[4] === 51271 || campaignTrail_temp.player
 
 // -------------------------------------------- NORMAL ENDINGS --------------------------------------------------------------------
 
-else if (quickstats[0] > 534) { // Complete victory
+else if (quickstats[0] > 534 && (SpecialEnding != 1)) { // Complete victory
         e.pages.push(`<h3>November 8th, 2019</h3><p>It's been three years since Ted Cruz won every single state against Hillary Clinton, and the results have already been stunning. Ted Cruz has already seen a 95% approval rating rise to a 97% approval rating, with Ted Cruz punching Hillary Clinton last year and earning the praise of Americans all across the country. <br><br> Now it's time to finish up the term in a spectacular way. <br><br> Ted Cruz grabbed his machine gun, (machine guns had been legalized back in 2018), and headed to Chappaqua, Westchester, New York, ready to finish the job. Breathing slowly, he drew his Zodiac symbol on her driveway, and went in for the kill.</p>`);
         e.executable.push([0, () => { e.image = 'https://i.imgur.com/2vlvOWU.png'; }]);
     if (songChange != 1) {
@@ -12247,7 +12250,7 @@ ctsAchievement("Not My President");
 if (quickstats[0] == 305) {
 ctsAchievement("History Arrives All The Same");
 }
-if ((campaignTrail_temp.player_answers[25] === 51531) && quickstats[0] >= 270) {
+if (campaignTrail_temp.player_answers.includes(51531) && quickstats[0] > 269) {
 ctsAchievement("Karmic Retribution");
 }
 
