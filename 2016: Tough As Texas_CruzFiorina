@@ -11771,7 +11771,7 @@ endingConstructor = (a = 1) => {
 e.multiple_endings = true;
 
 e.header = "<h1>This is an error handler</h1>";
-e.pages = ["<p>Error</p>"];
+e.pages = ["<p>error</p>"];
 e.page = 0;
 
 endingPicker = (out, totv, aa, quickstats) => {
@@ -11781,11 +11781,11 @@ endingPicker = (out, totv, aa, quickstats) => {
     e.header = "";
     e.executable = [];
 
-if (campaignTrail_temp.player_answers.includes(51531) && quickstats[0] >= 535) {
-    SpecialEnding = 1
+if (campaignTrail_temp.player_answers.includes(51531)) {
+    SpecialEnding = 1 // basically this is used to make sure normal achievements or normal endings don't trigger on killer klinton ending
 }
 
-// --------------------------------------------------------------- SPECIAL ENDINGS (gotta put these on top so they trigger first) -------------------------------------------------------------------------------------------
+// --------------------------------------------------------------- Special Endings  -------------------------------------------------------------------------------------------
 
 // Trump wins 50 states
  if ((campaignTrail_temp.player_answers[4] === 51271 || campaignTrail_temp.player_answers[4] === 51084) && quickstats[0] >= 535) { // trump
@@ -11809,9 +11809,11 @@ if (campaignTrail_temp.player_answers.includes(51531) && quickstats[0] >= 535) {
 // Killary, 50 state sweep
 else if (campaignTrail_temp.player_answers.includes(51531) && quickstats[0] >= 535) { // Full Sweep against Klinton
         e.pages.push(`<h3>Vindication.</h3><p>50 states. 50 shades of red. New York, Hawaii, Massachusetts, all red. Your erstwhile rival Clinton is nowhere to be found, not in Chappaqua, not anywhere within view. Even after state after state voted for you, you didn't feel glory. You felt empty. Hollow. <br><br> Nobody is surprised by your victory. Nobody even talks about it. Everybody's only talking about Hillary Clinton's crimes. How she got away for so long. The fact the establishment was so corrupt, the things you had been trying to warn them about for years. <br><br> Where do you go from here? Democrats are in complete disarray, but it's not like the rest of Washington is any more stable. Who else was behind these crimes? Her spineless husband, obviously, but who else? Obama? Schumer? Pelosi? You're going to need to start investigations into all of them. Best of luck these next few years. </p>`);
-        e.pages.push(`<h3>July 20th, 1993 - Washington D.C, 1600 Pennsylvania Ave </h3><p> Hillary felt happy, relieved. That snake was finally going to be killed today. She had been planning this for months — and tonight her efforts would finally bear fruit. He cannot be allowed to survive, no matter the price. It didn't matter that she had worked with him for decades, or that he had helped her become a lawyer in the first place. All that matters is that she must protect herself. She has no other choice.  <br><br> She had done stuff typical of a First Lady that day — giving speeches, attending schools, making millions illegally for her own pleasure. Sitting on the White House couch, flicking through meaningless telvision channels, she began to get worried. Had the plan failed? Had that rat managed to get away? <br><br> Just then, someone knocked on the door. It was the agents tasked with killing him. <br><br> “Target neutralized, Madam.” <br><br> Grinning, she replied “Excellent.” <br><br> “And did you get that tape I asked for?” Hillary really hoped they recorded it. She would get to watch that loser die in real time, entertainment far beyond her wildest dreams. <br><br> “Of course” an agent replied. <br><br> “Perfect!” she said, trying her best to contain her excitement. <br><br> She quickly went to the oven and put in a batch of cookies. If she was quick, she could even get a nice meal to go alongside her night-time entertainment. <br><br> She called her husband Bill downstairs as she put the tape inside the television. Bill laughed, and she cackled. They couldn't stop replaying the 2 hour long video of his suffering.  They dragged him all the way to Virginia and shot the bastard dead. <br><br> Just then her advisors walked in. They had already written a script for her to say when she “learns” of Foster's death, and already wrote an eulogy for Bill to say at his funeral. Hillary said she couldn't be bothered to attend, just make up some excuse about her being sick that day. <br><br> The entire cabinet was far too spineless to ever report her crimes. Spinelessness was a trait Clinton always looked for in cabinet appointments, and she always made sure her crimes never got in contact with people who still had some of their guts left. <br><br> Just then, midnight struck, it was her bedtime. She called Bill upstairs, and they slept soundly, knowing they would never have to bear the consequences of their actions.  </p>`);
-        e.executable.push([0, () => { e.image = 'placeholder image until i can find a good photo of clinton in the 90s lmao https://upload.wikimedia.org/wikipedia/cence_February_2015_cropped_colrrected_2_by_3.jpg'; }]);
-        e.executable.push([1, () => { e.image = 'https://upload.wikimedia.org/wikipedia/commons/5_cropped_color_corrected_2_bwcwdwdy_3.jpg'; }]);
+        e.pages.push(`<h3>July 20th, 1993 - Washington D.C, 1600 Pennsylvania Ave </h3><p> Hillary felt happy, relieved. That snake was finally going to be killed today. She had been planning this for months — and tonight her efforts would finally bear fruit. He cannot be allowed to survive, no matter the price. She had even recorded herself ordering his death, so she could look back and laugh at it later. <br><br> It didn't matter that she had worked with him for years, or that he had helped her become a lawyer in the first place. All that matters is that she must protect herself. She has no other choice.  <br><br> She had done stuff typical of a First Lady that day — giving speeches, attending schools, making millions illegally for her own pleasure. Sitting on the White House couch, flicking through meaningless television channels, she began to get worried. Had the plan failed? Had that rat managed to get away? <br><br> Just then, someone knocked on the door. It was the agents tasked with killing him. <br><br> “Target neutralized, Madam.” <br><br> Grinning, she replied “Excellent.” <br><br> “And did you get that tape I asked for?” Hillary really hoped they recorded it. She would get to watch that loser die in real time, entertainment far beyond her wildest dreams. <br><br> “Of course” an agent replied. <br><br> “Perfect!” she said, trying her best to contain her excitement. <br><br> She quickly went to the oven and put in a batch of cookies. If she was quick, she could even get a nice meal to go alongside her night-time entertainment. <br><br> She called her husband Bill downstairs as she put the tape inside the television. Bill laughed, and she cackled. They couldn't stop replaying the 2 hour long video of his suffering.  They dragged him all the way to Virginia and shot the bastard dead. <br><br> Just then her advisors walked in. They had already written a script for her to say when she “learns” of Foster's death, and already wrote an eulogy for Bill to say at his funeral. Hillary said she couldn't be bothered to attend, just make up some excuse about her being sick that day. The press was already at the White House that night, and she feigned horror, crying about how tragic it was. The media used it as ''proof'' of her humbleness.<br><br> The entire cabinet was far too spineless to ever report her crimes. Spinelessness was a trait Clinton always looked for in cabinet appointments, and she always made sure her crimes never got in contact with people who still had some of their guts left. <br><br> Just then, midnight struck, it was their bedtime. She called Bill upstairs, and they slept soundly in the White House bedroom, knowing they would never have to bear the consequences of their actions.  </p>`);
+        e.pages.push(`<h3>August 17th, 2018 - Federal Bureau of Investigation catches Hillary Clinton in New York</h3><p> The former First Lady and 2016 presidential candidate has been on the run for years ever since an anonymous person leaked a video clip of her ordering her the murder of <u>Vince Foster</u>. That changed today, where    </p>`);
+        e.executable.push([0, () => { e.image = 'https://i.ibb.co/ss8DC7W/cand.png'; }]); // read below
+        e.executable.push([1, () => { e.image = 'https://i.ibb.co/ss8DC7W/cand.png'; }]); // basically a placeholder until i find a good image of her in the 90s
+        e.executable.push([2, () => { e.image = 'https://i.ibb.co/ss8DC7W/cand.png'; }]); // read above
     if (songChange != 1) {
     songChange = 1
     const trumpvictory = new Playlist();
@@ -11825,6 +11827,7 @@ else if (campaignTrail_temp.player_answers.includes(51531) && quickstats[0] >= 5
     changePlaylist(trumpvictory);
      }
     }
+
 
 // Trump wins
 
@@ -12237,16 +12240,16 @@ else if (quickstats[0] > 2 && quickstats[0] <= 134) { // Ridiculous loss
     }
 }
 
-if (Trump == 1 && quickstats[0] > 269) {
+if (Trump == 1 && quickstats[0] > 269 && (SpecialEnding != 1)) {
 ctsAchievement("Darker Vision");
 }
-if (campaignTrail_temp.player_answers.includes(51228) && quickstats[0] > 269) {
+if (campaignTrail_temp.player_answers.includes(51228) && quickstats[0] > 269 && (SpecialEnding != 1)) {
 ctsAchievement("And I Took It Personally");
 }
-if (quickstats[0] == 269) {
+if (quickstats[0] == 269 && (SpecialEnding != 1)) {
 ctsAchievement("Not My President");
 }
-if (quickstats[0] == 305) {
+if (quickstats[0] == 305 && (SpecialEnding != 1)) {
 ctsAchievement("History Arrives All The Same");
 }
 if (campaignTrail_temp.player_answers.includes(51531) && quickstats[0] > 269) {
