@@ -463,7 +463,7 @@ campaignTrail_temp.achievements = {
   },
 
 "Not My President" : {
-        "image" : "https://i.imgur.com/hQE9nV.png",
+        "image" : "https://i.imgur.com/CRm7RpG.png",
         "description" : "Deadlock the election, and win through a House vote.", // DONE
         "cannotBeCheated" : true
   },
