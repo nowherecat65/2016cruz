@@ -1136,6 +1136,7 @@ document.head.appendChild(customStyling);
 }
 
 
+
 campaignTrail_temp.questions_json = [
     {
         "model": "campaign_trail.question",
@@ -1232,7 +1233,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1020,
         "fields": {
             "priority": 10,
-            "description": "Your running mate, Carly Fiorina, has been a strong asset to your campaign, and polls show the gender gap with Secretary Clinton narrowing. However, some voters are concerned about her tenure at HP, where many employees were laid off, and opponents are using this to argue she is unfit for office. How will you address these concerns?",
+            "description": "Your choice of running mate, Carly Fiorina, has gone over surprisingly well, especially with female vote, though the establishment is concerned. Additionally, some voters are concerned her tenure at HP, where thousands of employees were laid off, and where Fiorina was forced out by shareholders. How will you stop the damage?",
             "likelihood": 1
         }
     },
@@ -1277,7 +1278,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1029,
         "fields": {
             "priority": 10,
-            "description": "Let's be honest. The polls show a dead heat in Arizona and shows Clinton leading in North Carolina. Many people just think your a sacrifical lamb to get the party through another election. Perhaps due to this, the Clinton campaign is continuing to massively outfund you, pouring millions into big-buy television ads, social media ads, the like. Worse, just when the campaign is about to heat up, your coffers are running low. How will you alleviate this problem?",
+            "description": "Let's be honest. The polls show a dead heat in Arizona and Georgia and show Clinton leading you in North Carolina. Many people just think your a sacrifical lamb to get the party through another election. Perhaps due to this, the Clinton campaign is continuing to massively outfund you, pouring millions into big-buy television ads, social media ads, the like. Worse, just when the campaign is about to heat up, your coffers are running low. If you want to win, you'll need to alleviate this problem, but how?",
             "likelihood": 1
         }
     },
@@ -1962,7 +1963,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51184,
         "fields": {
             "question": 1029,
-            "description": "Back in 2012, Dewhurst had a massive fundraising advantage too. And I still won. If we have to reduce some of our ad spending, so be it, because I'm not going to sell out to the donor class."
+            "description": "I remember when I first ran for the Senate, Dewhurst also had a massive fundraising advantage, and look where that got him. I don't care if we have to cancel some ads, we're still going to win."
         }
     },
     {
@@ -1970,7 +1971,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51188,
         "fields": {
             "question": 1029,
-            "description": "Hillary Clinton's fundraising machine continues to spread lies about me and my policies, and we can't hope to compete. I'm asking for the American people's help, so that we can win the fight against liberal elitism."
+            "description": "What if we leaned into this? You all saw how she gave private speeches to Goldman Sachs, for hundreds of thousands, and she didn't release them? What does she have to hide?"
         }
     },
     {
@@ -1978,7 +1979,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51203,
         "fields": {
             "question": 1029,
-            "description": "No, no, no, goddamnit. We can get some money from those lobbies. The NRA, AIPAC, those oil and gas lobbies, ExxonMobil, Shell, Whatever. We can't let Clinton win."
+            "description": "I have good relations with the lobbies. AIPAC, Shell, the NRA, they love me. Surely we can get some money from them? There's no way they could possibly prefer Clinton."
         }
     },
     {
@@ -8220,7 +8221,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 51188,
             "candidate": 200,
             "affected_candidate": 200,
-            "global_multiplier": -0.001
+            "global_multiplier": 0.0015
         }
     },
     {
@@ -8275,16 +8276,6 @@ campaignTrail_temp.answer_score_global_json = [
     },
     {
         "model": "campaign_trail.answer_score_global",
-        "pk": 51251,
-        "fields": {
-            "answer": 51050,
-            "candidate": 200,
-            "affected_candidate": 200,
-            "global_multiplier": -0.001
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
         "pk": 51252,
         "fields": {
             "answer": 51030,
@@ -8320,7 +8311,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 51203,
             "candidate": 200,
             "affected_candidate": 200,
-            "global_multiplier": -0.03
+            "global_multiplier": -0.02
         }
     },
     {
@@ -10671,7 +10662,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5033,
             "candidate": 200,
-            "answer_feedback": "Given that the Democrats likely have the advantage on policy, it's definitely a good idea to drag the race into the gutter, even as some advisors worry about your favorability ratings."
+            "answer_feedback": "Clinton's credibility was gravely damaged after this attack, and it's a good idea to remind voters, eeven as some advisors worry about your favorability ratings."
         }
     },
     {
@@ -10680,7 +10671,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5034,
             "candidate": 200,
-            "answer_feedback": "Benghazi remains a glaring weak spot for Clinton, and many are surprised with your refusal to attack here."
+            "answer_feedback": "Benghazi remains a glaring weak spot for Clinton, and many are surprised with your refusal to attack here. But perhaps a campaign focused on domestic issues could work for you."
         }
     },
     {
@@ -10797,7 +10788,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5128,
             "candidate": 200,
-            "answer_feedback": "It seems like your attacking her from the <i>left</i>. It's unusual, but it could work out. In any case, Clinton will do anything to deflect from her tenure."
+            "answer_feedback": "It seems like your attacking her from the <i>left</i>. It's unusual, but it could work out this fall. It's also a solid deflection from the issue."
         }
     },
     {
@@ -10986,7 +10977,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51025,
             "candidate": 200,
-            "answer_feedback": "Some of HP's roughest years were when Fiorina was CEO, and critics are quick to point this out, but fortunately nobody seems to care."
+            "answer_feedback": "The media guys are quick to point out this is an outright lie. Fortunately, nobody really cares, and the campaign quickly moves back to more important issues."
         }
     },
     {
@@ -10995,7 +10986,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51026,
             "candidate": 200,
-            "answer_feedback": "People on the left try to make a big deal out of it, but nobody really seems to care about it, so this whole situation doesn't really move the needle."
+            "answer_feedback": "There's nothing wrong with not responding to these claims, and they go away after a while. Not that anyone was clamoring for your opinion, anyway."
         }
     },
     {
@@ -11004,7 +10995,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51030,
             "candidate": 200,
-            "answer_feedback": "Most voters seem to accept your reasoning, though critics will continue to find any way to attack your ticket."
+            "answer_feedback": "This seems like some fine reasoning, and voters seem to accept. The problem is that it's not true, but nobody really cares, and everyone just moves on to other issues after a little bit."
         }
     },
     {
@@ -11040,7 +11031,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51050,
             "candidate": 200,
-            "answer_feedback": "It's a pivot, but changing the subject to Hillary Clinton is a good way to diffuse the situation."
+            "answer_feedback": "Yet another attack on Hillary Clinton. It's not going to do much to alleviate voter's concerns, but perhaps pointing out the alternative can mitigate some damage."
         }
     },
     {
@@ -11193,7 +11184,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51176,
             "candidate": 200,
-            "answer_feedback": "Nice try, but McConnell hates you and refuses to help. Donors tell you they won’t be giving you anything at all, and you have to cancel some of your ad buys in swing states to conserve what little funds you have left. Screw them."
+            "answer_feedback": "It sounds good on paper, these Republican donors are loaded with cash, but they hate you, and they even see Hillary as the lesser of two evils compared to you. Eventually, you have to cancel some of your ads in the swing states to conserve what money you have left. "
         }
     },
     {
@@ -11202,7 +11193,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51184,
             "candidate": 200,
-            "answer_feedback": "Your intentions are admirable, but a Senate primary is not a Presidential election. It doesn't matter how good your campaign is, you <em>have</em> to have a fundraising machine."
+            "answer_feedback": "Your integrity is admirable, but your going to have to abandon your principles soon if you want to win. The ''Hillary Victory Fund'' raised over $5 million last week. Wonder where that money came from..."
         }
     },
     {
@@ -11211,7 +11202,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51188,
             "candidate": 200,
-            "answer_feedback": "Thousands of conservatives donate to help your cause, and over time your fundraising situation begins to stabilize. You're not raking in the big bucks like Hillary, but it's something."
+            "answer_feedback": "The ambiguity of her speeches allows people to believe what they want. Liberals think she's some centrist neocon, while conservatives think she's a far-left puppet. Things are made even better when she defends herself on Twitter, earning her more mockery. This was a brilliant line of attack."
         }
     },
     {
@@ -11436,7 +11427,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51405,
             "candidate": 200,
-            "answer_feedback": "Unfortunately, no matter how you phrase it, free trade is simply not a winning issue for you this election."
+            "answer_feedback": "Sticking to your guns it seems. This won't do you any favors in the Midwest, but this could help you down south where free trade is more popular."
         }
     },
     {
@@ -11445,7 +11436,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51406,
             "candidate": 200,
-            "answer_feedback": "This would've been unthinkable 4 years ago, but the world has changed a lot in 4 years. Even Hillary has been coming off as protectionist as of late, and this is going to keep you competitive in the Midwest."
+            "answer_feedback": "This would've been unthinkable 4 years ago, but the world has changed a lot in 4 years. Even Hillary has been coming off as protectionist as of late, and this is going to keep you competitive in the Midwest. Opponents continue to mock yet another flip-flop from your campaign, however."
         }
     },
     {
@@ -11454,7 +11445,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51403,
             "candidate": 200,
-            "answer_feedback": "It's true. Hillary's been strongly supportive of free trade measures since she was a First Lady, and only very recently has she pivoted. It's good to remind voters in the Rust Belt of that."
+            "answer_feedback": "It's true. Hillary's been strongly supportive of free trade measures since she was a First Lady, and only very recently has she pivoted. It's good to remind voters in the Rust Belt of her ''evolving'' position."
         }
     },
     {
@@ -11625,7 +11616,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51203,
             "candidate": 200,
-            "answer_feedback": "The money starts flowing in, although it seems small compared to the millions Clinton is raking in, from those Planned Parenthood wannabes."
+            "answer_feedback": "The NRA, ExxonMobil, and Shell are more then eager to fund your campaign, while AIPAC remains neutral, having good relations with the Clintons. It's not much compared to her wall street buddies, but whatever it is, let's hope it's enough to push you over the top."
         }
     }
 ]
@@ -11685,6 +11676,7 @@ campaignTrail_temp.jet_data = [{
     }
 }
 ]
+
 
 
 // ENDINGS -- this is slightly more reliable than the ending code method
