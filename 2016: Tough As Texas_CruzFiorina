@@ -8336,16 +8336,6 @@ campaignTrail_temp.answer_score_global_json = [
     },
     {
         "model": "campaign_trail.answer_score_global",
-        "pk": 51275,
-        "fields": {
-            "answer": 51271,
-            "candidate": 200,
-            "affected_candidate": 202,
-            "global_multiplier": 0.06
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
         "pk": 51304,
         "fields": {
             "answer": 51262,
@@ -8661,7 +8651,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 51084,
             "candidate": 200,
             "affected_candidate": 202,
-            "global_multiplier": 0.654
+            "global_multiplier": 0.854
         }
     },
     {
@@ -8671,7 +8661,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 51271,
             "candidate": 200,
             "affected_candidate": 202,
-            "global_multiplier": 0.644
+            "global_multiplier": 0.844
         }
     },
     {
@@ -8782,6 +8772,16 @@ campaignTrail_temp.answer_score_global_json = [
             "candidate": 200,
             "affected_candidate": 200,
             "global_multiplier": -0.006
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 51606,
+        "fields": {
+            "answer": 51084,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "global_multiplier": 0.075
         }
     }
 ]
@@ -9123,7 +9123,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "fields": {
             "answer": 51084,
             "issue": 101,
-            "issue_score": 0.35,
+            "issue_score": 0.45,
             "issue_importance": 3
         }
     },
@@ -10607,6 +10607,39 @@ campaignTrail_temp.answer_score_state_json = [
             "affected_candidate": 200,
             "state_multiplier": 0.05
         }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 51607,
+        "fields": {
+            "answer": 51271,
+            "state": 1043,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "state_multiplier": 0.6
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 51608,
+        "fields": {
+            "answer": 51084,
+            "state": 1043,
+            "candidate": 200,
+            "affected_candidate": 202,
+            "state_multiplier": 0.54
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 51609,
+        "fields": {
+            "answer": 51271,
+            "state": 1043,
+            "candidate": 200,
+            "affected_candidate": 202,
+            "state_multiplier": 0.54
+        }
     }
 ]
 
@@ -10680,7 +10713,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5090,
             "candidate": 200,
-            "answer_feedback": "Your response is expected, as is the backlash. Unfortunately, you've confirmed what the Clinton campaign has been spreading, and it's seized upon by her Super PACs."
+            "answer_feedback": "Your response is expected, as is the backlash. Conservatives will shrill at even more attacks you lunge at Clinton, but you've given her campaign even more ammunition to use against you."
         }
     },
     {
@@ -10689,7 +10722,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5091,
             "candidate": 200,
-            "answer_feedback": "This has appeal to the most devout evangelicals, and they are cheering on that you are defending their values. For everyone else, though, this is poison. You're bravery is admirable, but this won't bode well for your campaign."
+            "answer_feedback": "This has appeal to the most devout evangelicals, and they are cheering on that you are defending their values. For everyone else, though, this is poison. Buckle up."
         }
     },
     {
@@ -11265,7 +11298,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51228,
             "candidate": 200,
-            "answer_feedback": "You say all of that on live TV. Clinton is speechless, but you notice a slight smile creep across her face. The base eats the red meat up, and Fox applauds you for having the guts to stand up to the establishment. At the end of the debate, she doesn't walk to shake your hand. You don't care. The race is getting more brutal by the day."
+            "answer_feedback": "You say all of that on live TV. Clinton is speechless, but you notice a slight smile creep across her face. The base eats the red meat up, and Fox applauds you for having the guts to stand up to the establishment. At the end of the debate, she doesn't walk to shake your hand. You don't care."
         }
     },
     {
@@ -11679,6 +11712,8 @@ campaignTrail_temp.jet_data = [{
 
 
 
+
+
 // ENDINGS -- this is slightly more reliable than the ending code method
 
 construct = (a = 1) => {
@@ -11985,7 +12020,7 @@ else if (quickstats[0] == 269 && (SpecialEnding != 1)) { // Deadlocked election 
 
        else if ((campaignTrail_temp.player_answers[4] === 51271 || campaignTrail_temp.player_answers[4] === 51084) && quickstats[0] < 269 && quickstats[0] > 3 && (SpecialEnding != 1)) { // Trump LOSES the election...
         e.pages.push(`<h3>A Rise and Fall</h3><p>You had hoped that what they had been saying was true, that Trump had 'blue collar appeal,' as all his campaign managers said, but as you warned them, it didn't work out. The RNC is absolutely livid that Trump screwed up such a winnable election. Trump calls the election rigged, Clinton declares victory, and the upshot is mass confusion and anger amongst the voters. Paul Ryan says the election result was 'unsurprising, especially after the Hollywood access tape.' Marco Rubio called the result 'disapointing but expected.'<br><br>Some Trump supporters even called for a march on Washington to demand a recount, though fortunately nobody actually attempted an attack. In any case, the debate stretches well into the night. The conservative majority in the Supreme Court will likely be diminished or gone by the end of Hillary's first term. McConnell has already backed down, and the process to confirm Merrick Garland is underway. Ruth Bader Ginsburg has said she plans to retire as soon as Clinton is inaugurated.</p>`);
-        e.pages.push(`<h3>A Rise and Fall</h3><p>Hillary Clinton, the most corrupt, pro-choice, disastrous woman to ever bear the face of Earth, has been elected President. She picked the Javits Center in Manhattan to hold her victory speech, mainly because it had a massive glass ceiling on it. She shatters it and the crowd erupts into celebration. She keeps gloating during her victory speech. Talk of ''reproductive freedom'' and the ''glass ceiling'' are the only words coming out of here mouth. Eventually, you just turn off the TV. You don't want to hear her insufferable voice anymore.<br><br> You're already planning to run for the nomination again in 2020. The damage to this country will be irreversible if a woman is allowed to serve 2 terms. Donald Trump is still on the line of fire, and establishment Republicans continue to dunk on him. For now though, you can't be bothered to deal with the circus happening on Twitter anymore. You turn off the lights in your hotel room and head to bed.</p>`);
+        e.pages.push(`<h3>A Rise and Fall</h3><p>Hillary Clinton, the most corrupt, pro-choice, disastrous woman to ever bear the face of Earth, has been elected President. She picked the Javits Center in Manhattan to hold her victory speech, mainly because it had a massive glass ceiling on it. She shatters it and the crowd erupts into celebration. She keeps gloating during her victory speech. Talk of ''reproductive freedom'' and the ''glass ceiling'' are the only words coming out of her mouth. Eventually, you just turn off the TV. You don't want to hear her insufferable voice anymore.<br><br> You're already planning to run for the nomination again in 2020. The damage to this country will be irreversible if a woman is allowed to serve 2 terms. Donald Trump is still on the line of fire, and establishment Republicans continue to dunk on him. For now though, you can't be bothered to deal with the circus happening on Twitter anymore. You turn off the lights in your hotel room and head to bed.</p>`);
         e.executable.push([0, () => { e.image = 'https://i.imgur.com/kg7ymVb.jpeg'; }]);
         e.executable.push([1, () => { e.image = 'https://i.imgur.com/kg7ymVb.jpeg'; }]);
     if (songChange != 1) {
