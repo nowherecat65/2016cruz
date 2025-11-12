@@ -771,7 +771,7 @@ campaignTrail_temp.running_mate_json = [
 ]
 
 credits = function() {
-    c = ["This mod was made by theMcCain and theanswerisme, with theMcCain being the lead coder and lead writer and theanswerisme helping with writing.\n", "Thanks to littleamericanman_85501 for making the banner!\n", "Thanks to American Carnage for the music player, The W. Team for variable headquarters (although it's been modified heavily), 2016ALOT for the banner system, our playtesters for helping make the mod the best it could be, and many other mods that this mod borrows code or ideas from. You can find a full credits in the Further Reading.\n", "And thanks for playing! Hope you have fun."]
+    c = ["This mod was made by theMcCain and theanswerisme, with theMcCain being the lead coder and lead writer and theanswerisme helping with writing.\n", "Thanks to littleamericanman_85501 for making the banner!\n", "Thanks to American Carnage for the music player, The W. Team for variable headquarters (although it's been modified heavily), 2016: A Lifetime Of This for the banner system and alot of other styling, and many other mods that this mod borrows code or ideas from. You can find a full credits in the Further Reading.\n", "Thanks to everyone who playtested.\n",  "And thanks for playing! Hope you have fun."]
     text = "CREDITS:\n\n"
     for (i in c) {
         text += c[i] + "\n"
