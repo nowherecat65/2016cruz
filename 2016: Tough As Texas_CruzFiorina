@@ -1150,7 +1150,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1007,
         "fields": {
             "priority": 2,
-            "description": "Going into the Iowa caucus, a lot is at stake. Polls show you trailing Trump by a narrow margin, and a win here could establish you as the frontrunner, whilst a loss could damage your campaign’s momentum. How will you win Iowa?",
+            "description": "Going into the Iowa caucus, the stakes are high. Polls show you trailing Trump by a narrow margin, and a win here could establish you as the frontrunner, whilst a loss could damage your campaign’s momentum. How will you win Iowa?",
             "likelihood": 1
         }
     },
