@@ -5,8 +5,6 @@ function ctsAchievement(achievement, difficultyChecker = true){
 	}
 }
 
-console.log('Code 2 initialized successfully.');
-
 // Further reading tabs
 (function() {
     'use strict';
@@ -10686,7 +10684,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5032,
             "candidate": 200,
-            "answer_feedback": "Hillary Clinton is an incredibly unpopular candidate, and it's always good to point out her flaws. Cheers erupt from the audience, and this election seems winnable this time after major losses in 2008 and 2012. Even so, the polls show you with a large deficit, and the road ahead looks tough."
+            "answer_feedback": "Hillary Clinton is an incredibly unpopular candidate, and it's always good to point out her flaws. Cheers erupt from the audience, and this election seems winnable this time after major losses in 2008 and 2012."
         }
     },
     {
@@ -11001,7 +10999,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 20757,
             "candidate": 200,
-            "answer_feedback": "Political analysts are surprised by how aggressively you answered the question, and the base loves it."
+            "answer_feedback": "Political analysts are surprised by how aggressively you answered the question, but the base loves it. Will they turn out for you in November? That's the big question."
         }
     },
     {
@@ -11019,7 +11017,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51026,
             "candidate": 200,
-            "answer_feedback": "There's nothing wrong with not responding to these claims, and they go away after a while. Not that anyone was clamoring for your opinion, anyway."
+            "answer_feedback": "There's nothing wrong with not responding to these claims, and they go away after a while. Not that anyone was clamoring for your opinion anyway."
         }
     },
     {
@@ -11055,7 +11053,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51043,
             "candidate": 200,
-            "answer_feedback": "It's a good idea to hammer away at Hillary Clinton, especially when you have such a large polling deficit currently."
+            "answer_feedback": "Hillary's emails have further damaged her once high approval rating as Secretary of State. It's definitely a good idea to attack her here."
         }
     },
     {
