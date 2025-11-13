@@ -438,7 +438,7 @@ campaignTrail_temp.achievements = {
     },
     "Unburdened By What's Been" : {
         "image" : "https://i.imgur.com/tPr5UZK.png",
-        "description" : "Win in a landslide.", 
+        "description" : "Win in a modern-day landslide.", 
         "cannotBeCheated" : true
      },
     "Darker Vision" : {
