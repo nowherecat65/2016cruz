@@ -12360,20 +12360,24 @@ else if (quickstats[0] > 2 && quickstats[0] <= 134 && (SpecialEnding != 1)) { //
 }
 
 if (Trump == 1 && quickstats[0] > 269 && (SpecialEnding != 1)) {
-ctsAchievement("Darker Vision");
+ctsAchievement("Darker Vision"); // Ally with trump
 }
 if (campaignTrail_temp.player_answers.includes(51228) && quickstats[0] > 269 && (SpecialEnding != 1)) {
-ctsAchievement("And I Took It Personally");
+ctsAchievement("And I Took It Personally"); // Crash out
 }
-if (quickstats[0] == 269 && (SpecialEnding != 1)) {
+if (quickstats[0] == 269 && (SpecialEnding != 1)) { // Deadlock
 ctsAchievement("Not My President");
 }
-if (quickstats[0] == 305 && (SpecialEnding != 1)) {
+if (quickstats[0] == 305 && (SpecialEnding != 1)) { // Trump-esque victory
 ctsAchievement("History Arrives All The Same");
 }
-if (campaignTrail_temp.player_answers.includes(51531) && quickstats[0] > 269) {
+if (campaignTrail_temp.player_answers.includes(51531) && quickstats[0] > 269) { // Expose her
 ctsAchievement("Karmic Retribution");
 }
+let TexasResult = campaignTrail_temp.final_state_results.find((x) => x.state == 1042); // Lose Texas
+if(TexasResult.result[0].candidate == 201) {
+ctsAchievement("Texas Toast");
+    }
 
     return construct(0);
 }
