@@ -1,7 +1,3 @@
-// TO DO LIST
-//  - Endings -- fix cruz victory images 
-
-
  //* Mod Title: 2016 - Tough As Texas
  //* Mod Author: TheMcCain
  //* Mod Version: 1.0
@@ -437,48 +433,53 @@ campaignTrail_temp.achievements = {
  },
     "Worthy Sacrifice" : {
         "image" : "https://i.imgur.com/GU9Z3Cg.png",
-        "description" : "Back Marco Rubio at the convention to prevent Trump from winning.", // DONE
+        "description" : "Back Marco Rubio at the convention to prevent Trump from winning.", 
         "cannotBeCheated" : true
     },
     "Unburdened By What's Been" : {
         "image" : "https://i.imgur.com/tPr5UZK.png",
-        "description" : "Win in a landslide.", // DONE
+        "description" : "Win in a landslide.", 
         "cannotBeCheated" : true
      },
     "Darker Vision" : {
         "image" : "https://i.imgur.com/1MWng8O.png",
-        "description" : "Ally with Trump and win the election.", // DONE
+        "description" : "Ally with Trump and win the election.", 
         "cannotBeCheated" : true
  },
        "Decisive Victory" : {
         "image" : "https://i.imgur.com/ouKrLom.png",
-        "description" : "Win the nomination without having to contest the convention.", // DONE
+        "description" : "Win the nomination without having to contest the convention.", 
         "cannotBeCheated" : true
  },
    "And I Took It Personally" : {
         "image" : "https://i.imgur.com/kfcQeGJ.png",
-        "description" : "Lash out at Hillary at the debate, and still win.", // DONE
+        "description" : "Lash out at Hillary at the debate, and still win.", 
         "cannotBeCheated" : true
   },
 
 "Not My President" : {
         "image" : "https://i.imgur.com/CRm7RpG.png",
-        "description" : "Deadlock the election, and win through a House vote.", // DONE
+        "description" : "Deadlock the election, and win through a House vote.", 
         "cannotBeCheated" : true
   },
 "A Real Conservative" : {
         "image" : "https://i.imgur.com/M3GaSZP.png",
-        "description" : "Push for a national abortion ban and the restriction of same-sex marriage.", // DONE
+        "description" : "Push for a national abortion ban and the restriction of same-sex marriage.", 
         "cannotBeCheated" : true
   },
 "History Arrives All The Same" : {
         "image" : "https://i.imgur.com/vdBFKe1.png",
-        "description" : "Win 305 electoral votes.", // DONE
+        "description" : "Win 305 electoral votes.", 
+        "cannotBeCheated" : true
+  },
+"Texas Toast" : {
+        "image" : "https://i.imgur.com/DSRxfjx.png",
+        "description" : "Lose Texas.", 
         "cannotBeCheated" : true
   },
 "Karmic Retribution" : {
         "image" : "https://i.imgur.com/SNDhRMU.png",
-        "description" : "Teach her some justice.", // DONE
+        "description" : "Teach her what justice looks like.", 
         "cannotBeCheated" : true
   },
 }
