@@ -963,7 +963,7 @@ if (ans == 5126 || ans == 5125 || ans == 5123 || ans == 5124) {
 
     if (ans == 20739) {
         campaignTrail_temp.candidate_image_url = 'https://i.imgur.com/yqL9NWD.jpeg'
-        campaignTrail_temp.running_mate_image_url = 'https://i.imgur.com/sndpu7F.jpeg';
+        campaignTrail_temp.running_mate_image_url = 'https://i.imgur.com/4AmhUDX.png';
         campaignTrail_temp.running_mate_last_name = 'Walker';
         campaignTrail_temp.running_mate_first_name = 'Scott';
 campaignTrail_temp.election_json[0]["fields"].advisor_url = 'https://i.imgur.com/r3fj0cT.png';
@@ -973,7 +973,7 @@ const customStyling = document.createElement("style");
 
 customStyling.innerHTML = `
 #campaign_sign {
-    background-image: url("https://files.catbox.moe/epfob9.png");
+    background-image: url("https://i.imgur.com/K0vHTfg.png");
     background-size: cover;
     border-color: #c9c9c9;    
     border-width: .01em;
@@ -1005,7 +1005,7 @@ document.head.appendChild(customStyling);
     }
     else if (ans == 5032) {
         campaignTrail_temp.candidate_image_url = 'https://i.imgur.com/yqL9NWD.jpeg'
-        campaignTrail_temp.running_mate_image_url = 'https://i.imgur.com/sndpu7F.jpeg';
+        campaignTrail_temp.running_mate_image_url = 'https://i.imgur.com/4AmhUDX.png';
         campaignTrail_temp.running_mate_last_name = 'Walker';
         campaignTrail_temp.running_mate_first_name = 'Scott';
 campaignTrail_temp.candidate_json[0]["fields"].first_name = "Ted";
@@ -1015,7 +1015,7 @@ const customStyling = document.createElement("style");
 
 customStyling.innerHTML = `
 #campaign_sign {
-    background-image: url("https://files.catbox.moe/epfob9.png");
+    background-image: url("https://i.imgur.com/K0vHTfg.png");
     background-size: cover;
     border-color: #c9c9c9;    
     border-width: .01em;
@@ -1047,7 +1047,7 @@ document.head.appendChild(customStyling);
     }
     else if (ans == 5031) {
         campaignTrail_temp.candidate_image_url = 'https://i.imgur.com/yqL9NWD.jpeg'
-        campaignTrail_temp.running_mate_image_url = 'https://i.imgur.com/sndpu7F.jpeg';
+        campaignTrail_temp.running_mate_image_url = 'https://i.imgur.com/4AmhUDX.png';
         campaignTrail_temp.running_mate_last_name = 'Walker';
         campaignTrail_temp.running_mate_first_name = 'Scott';
 campaignTrail_temp.candidate_json[0]["fields"].first_name = "Ted";
@@ -1057,7 +1057,7 @@ const customStyling = document.createElement("style");
 
 customStyling.innerHTML = `
 #campaign_sign {
-    background-image: url("https://files.catbox.moe/epfob9.png");
+    background-image: url("https://i.imgur.com/K0vHTfg.png");
     background-size: cover;
     border-color: #c9c9c9;    
     border-width: .01em;
@@ -1089,7 +1089,7 @@ document.head.appendChild(customStyling);
     }
     else if (ans == 5030) {
         campaignTrail_temp.candidate_image_url = 'https://i.imgur.com/yqL9NWD.jpeg'
-        campaignTrail_temp.running_mate_image_url = 'https://i.imgur.com/sndpu7F.jpeg';
+        campaignTrail_temp.running_mate_image_url = 'https://i.imgur.com/4AmhUDX.png';
         campaignTrail_temp.running_mate_last_name = 'Walker';
         campaignTrail_temp.running_mate_first_name = 'Scott';
 campaignTrail_temp.candidate_json[0]["fields"].first_name = "Ted";
@@ -1099,7 +1099,7 @@ const customStyling = document.createElement("style");
 
 customStyling.innerHTML = `
 #campaign_sign {
-    background-image: url("https://files.catbox.moe/epfob9.png");
+    background-image: url("https://i.imgur.com/K0vHTfg.png");
     background-size: cover;
     border-color: #c9c9c9;    
     border-width: .01em;
