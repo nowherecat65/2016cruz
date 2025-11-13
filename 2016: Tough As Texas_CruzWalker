@@ -10666,7 +10666,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5033,
             "candidate": 200,
-            "answer_feedback": "Clinton's credibility was gravely damaged after this attack, and it's a good idea to remind voters, eeven as some advisors worry about your favorability ratings."
+            "answer_feedback": "Clinton's credibility was gravely damaged after this attack, and it's a good idea to remind voters, even as some advisors worry about your favorability ratings."
         }
     },
     {
@@ -11017,7 +11017,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51063,
             "candidate": 200,
-            "answer_feedback": "Hillary Clinton's emails will be something you can continue to needle her on for the rest of the campaign, much to her own chagrin."
+            "answer_feedback": "Hillary Clinton's emails will be something you can continue to needle her on for the rest of the campaign, much to her own chagrin. She'll bring up the same excuse, that she was ''cleared'', but nobody actually cares about her response."
         }
     },
     {
