@@ -423,12 +423,12 @@ function appendStyle() {
 
 appendStyle();
 
-// Achievements
+// Achievements, def gonna add more in the future
 
 campaignTrail_temp.achievements = {
     "Tariff Man" : {
         "image" : "https://i.imgur.com/xzR9Xgq.png",
-        "description" : "Lose the nomination to Donald Trump.", //  DONE
+        "description" : "Lose the nomination to Donald Trump.", 
         "cannotBeCheated" : true
  },
     "Worthy Sacrifice" : {
@@ -469,12 +469,12 @@ campaignTrail_temp.achievements = {
   },
 "History Arrives All The Same" : {
         "image" : "https://i.imgur.com/vdBFKe1.png",
-        "description" : "Win 305 electoral votes.", 
+        "description" : "Win 305 electoral votes against Clinton.", 
         "cannotBeCheated" : true
   },
 "Texas Toast" : {
         "image" : "https://i.imgur.com/DSRxfjx.png",
-        "description" : "Lose Texas.", 
+        "description" : "At your lowest, lose Texas.", 
         "cannotBeCheated" : true
   },
 "Karmic Retribution" : {
