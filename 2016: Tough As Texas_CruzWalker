@@ -12334,6 +12334,10 @@ ctsAchievement("History Arrives All The Same");
 if (campaignTrail_temp.player_answers.includes(51531) && quickstats[0] > 269) {
 ctsAchievement("Karmic Retribution");
 }
+let TexasResult = campaignTrail_temp.final_state_results.find((x) => x.state == 1042); // Lose Texas
+if(TexasResult.result[0].candidate == 201) {
+ctsAchievement("Texas Toast");
+    }
 
     return construct(0);
 }
