@@ -5,8 +5,6 @@ function ctsAchievement(achievement, difficultyChecker = true){
 	}
 }
 
-console.log('Code 2 initialized successfully.');
-
 // Further reading tabs
 (function() {
     'use strict';
@@ -10936,7 +10934,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 20739,
             "candidate": 200,
-            "answer_feedback": "Obama is a punching bag almost as great as Clinton, only to increase your support from Tea Party-inclined voters, and cheers flare up from the hall. Let's get this campaign going. Even so, the polls show you with a large deficit, and the road ahead looks tough."
+            "answer_feedback": "Obama is a punching bag almost as great as Clinton, only to increase your support from Tea Party-inclined voters, and cheers flare up from the hall. Even so, the polls show you with a large deficit, and the road ahead looks tough."
         }
     },
     {
@@ -10954,7 +10952,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 20743,
             "candidate": 200,
-            "answer_feedback": "The attack works well. Until people realize it’s the exact same thing Obama is doing and not far from what Hillary wants. It ends up giving your opponents more ammo against you."
+            "answer_feedback": "The attack works well. Until people realize it’s the exact same thing Obama has been doing and not far from what Hillary wants. This is going to be giving your opponents more ammo against you."
         }
     },
     {
@@ -10972,7 +10970,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 20757,
             "candidate": 200,
-            "answer_feedback": "Political analysts are surprised by how aggressively you answered the question, and the base loves it."
+            "answer_feedback": "Political analysts are surprised by how aggressively you answered the question, but the base loves it. Will they turn out for you in November? That's the big question."
         }
     },
     {
@@ -10990,7 +10988,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51037,
             "candidate": 200,
-            "answer_feedback": "Honesty is an admirable trait these days. Unfortunately, this is a complete flip-flop from your earlier position, and voters are now questioning your judgement."
+            "answer_feedback": "Honesty is an admirable trait these days. Unfortunately, this is a complete flip-flop from your once-firm position, and voters are questioning your judgement."
         }
     },
     {
@@ -10999,7 +10997,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51043,
             "candidate": 200,
-            "answer_feedback": "It's a good idea to hammer away at Hillary Clinton, especially when you have such a large polling deficit currently."
+            "answer_feedback": "Hillary's emails have further damaged her once high approval rating as Secretary of State. It's definitely a good idea to attack her here."
         }
     },
     {
@@ -11673,9 +11671,6 @@ campaignTrail_temp.jet_data = [{
 ]
 
 
-
-// ENDINGS -- this is slightly more reliable than the ending code method
-
 construct = (a = 1) => {
     
     e.page = e.page + a < e.pages.length ? e.page + a : 0
@@ -11708,7 +11703,7 @@ color: white;
 max-height: 300px; 
 overflow-y: auto; 
 padding-right: 5px;
-    margin-bottom: -20px;
+margin-bottom: -20px;
 
 
             `;
@@ -11743,6 +11738,8 @@ endingConstructor = (a = 1) => {
     $("#final_results_description")[0].innerHTML = construct(a);
 }
 
+// ENDINGS -- this is slightly more reliable than the ending code method
+
 e.multiple_endings = true;
 
 e.header = "<h1>This is an error handler</h1>";
@@ -11763,7 +11760,7 @@ if (campaignTrail_temp.player_answers.includes(51531)) {
 // --------------------------------------------------------------- Special Endings  -------------------------------------------------------------------------------------------
 
 // Killary, 50 state sweep 
-if (campaignTrail_temp.player_answers.includes(51531) && quickstats[0] >= 535) { // Full Sweep against Klinton
+if (campaignTrail_temp.player_answers.includes(51531) && quickstats[0] >= 535) { // Full sweep
         e.pages.push(`<h3>Vindication.</h3><p>50 states. 50 shades of red. New York, Hawaii, Massachusetts, all red. Your erstwhile rival Clinton is nowhere to be found, not in Chappaqua, not anywhere within view. Even after state after state voted for you, you didn't feel glory. You felt empty. Hollow. <br><br> Nobody is surprised by your victory. Nobody even talks about it. Everybody's only talking about Hillary Clinton's crimes. How she got away for so long. The fact the establishment was so corrupt, the things you had been trying to warn them about for years. <br><br> Where do you go from here? Democrats are in complete disarray, but it's not like the rest of Washington is any more stable. Who else was behind these crimes? Her spineless husband, obviously, but who else? Obama? Schumer? Pelosi? You're going to need to start investigations into all of them. Best of luck these next few years. </p>`);
         e.pages.push(`<h3>July 20th, 1993 - Washington D.C, 1600 Pennsylvania Ave </h3><p> Hillary felt happy, relieved. That snake was finally going to be killed today. She had been planning this for months — and tonight her efforts would finally bear fruit. He cannot be allowed to survive, no matter the price. She had even recorded herself ordering his death, so she could look back and laugh at it later. <br><br> It didn't matter that she had worked with him for years, or that he had helped her become a lawyer in the first place. All that matters is that she must protect herself. She has no other choice.  <br><br> She had done stuff typical of a First Lady today — giving speeches, attending schools, making millions illegally for her own pleasure. Sitting on the White House couch, flicking through meaningless television channels, she began to get worried. Had the plan failed? Had that rat managed to get away? <br><br> Just then, someone knocked on the door. It was the agents tasked with killing him. <br><br> “Target neutralized, Madame'.” <br><br> Grinning, she replied “Excellent.” <br><br> “And did you get that tape I asked for?” Hillary really hoped they recorded it. She would get to watch that loser die in real time, entertainment far beyond her wildest dreams. <br><br> “Of course” an agent replied. <br><br> “Perfect!” she said, trying her best to contain her excitement. <br><br> She quickly ran to the oven and put in a batch of chocolate-chip cookies. If she was quick, she and Bill could even get a midnight snack to go alongside her night-time entertainment. <br><br> She called her husband downstairs as she put the tape inside the television. Bill laughed, and she cackled. They couldn't stop replaying the 2 hour long video of his suffering.  They dragged him all the way to Virginia and shot the bastard dead. <br><br> Just then her advisors walked in. They had already written a script for her to say when she “learns” of Foster's death, and already wrote an eulogy for Bill to say at his funeral. Hillary said she couldn't be bothered to attend, just make up some excuse about her being sick that day. The press was already at the White House that night, and she feigned horror, crying about how tragic it was. The media used it as ''proof'' of her humbleness.<br><br> The entire cabinet was far too spineless to ever report her crimes. Spinelessness was a trait Clinton always looked for in cabinet appointments, and she always made sure her crimes never got in contact with people who still had some of their guts left. <br><br> The brutality of her acts stimulated her. It made her satisfied, fulfilled, relieved. This was the best smile she's had in years. Apart from wearing fancy dresses, it was her favorite coping mechanism. <br><br> Just then, midnight struck, it was their bedtime. She called Bill upstairs, and they slept soundly in the White House bedroom, knowing they would never have to bear the consequences of their actions.  </p>`);
         e.pages.push(`<h3>August 17th, 2018 - Federal Bureau of Investigation catches Hillary Clinton in New York | <i>Syracuse Register</i> </h3><p> <i>This article has been updated to include further details. </i> <br><br> The former First Lady and 2016 presidential candidate has been on the run for years ever since an anonymous person leaked a video clip of her ordering her the murder of <u>Vince Foster</u>. That changed today, where the FBI coordinated with local authorities and the state of Virginia to capture Clinton, who had been hiding in a mansion in upstate New York. <br><br> Raiding her home, she quickly surrendered. Authorities found she was armed with weapons and had written a note about fleeing to Canada. <br><br>  The whereabouts of her husband Bill Clinton are unknown, though she was still wearing her wedding ring when she was caught, and she appeared to be living in luxury, with many amenities. <br><br> Given the murder of Foster was successful, she could be tried for first degree murder under Virginia law. Prosecutors say they will try to push for the death penalty. Former President Barack Obama condemned Clinton harshly in a post on Twitter, saying “I once called Hillary Clinton a friend. But after what she did, I can't even bare to look at her anymore. I unequivocally denounce her, and I hope she will be prosecuted to the fullest extent under law.“  <br><br> The death penalty is still legal under Virginia law, though opposition has been mounting, as of late. She will be extradited to the police of Fairfax County, Virginia. <br><br> <i> This article was written by Shamar Scott. </i> </p>`);
