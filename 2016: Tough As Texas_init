@@ -453,7 +453,7 @@ campaignTrail_temp.achievements = {
         "description" : "Win the nomination without having to contest the convention.", 
         "cannotBeCheated" : true
  },
-   "Valid Crashout" : { // make sure to rename "And I Took it personally"
+   "Valid Crashout" : { 
         "image" : "https://i.imgur.com/lVkzf1r.png",
         "description" : "Lash out at Hillary at the debate, and still win.", 
         "cannotBeCheated" : true
@@ -475,11 +475,11 @@ campaignTrail_temp.achievements = {
         "cannotBeCheated" : true
   },
 "Expanding The Map" : {
-        "image" : "https://i.imgur.com/mW4CN1x.png",
+        "image" : "https://i.imgur.com/Cnw14a8.png",
         "description" : "Win the state of New Jersey.", 
         "cannotBeCheated" : true
   },
-"The Corrupt Bargain" : {
+"Soul Sold" : {
         "image" : "https://i.imgur.com/e9lBDRH.png",
         "description" : "Sacrifice everything for success.", // choose rubio as your running mate and get him to drop down at the convention NOT DONE
         "cannotBeCheated" : true
