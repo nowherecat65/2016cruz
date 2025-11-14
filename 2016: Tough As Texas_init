@@ -1,4 +1,6 @@
- //* Mod Title: 2016 - Tough As Texas
+// make sure to do achievements before releasing
+
+//* Mod Title: 2016 - Tough As Texas
  //* Mod Author: TheMcCain
  //* Mod Version: 1.0
  //* 
@@ -426,14 +428,14 @@ appendStyle();
 // Achievements, def gonna add more in the future
 
 campaignTrail_temp.achievements = {
-    "Tariff Man" : {
-        "image" : "https://i.imgur.com/xzR9Xgq.png",
-        "description" : "Lose the nomination to Donald Trump.", 
+    "New York Values" : {
+        "image" : "https://i.imgur.com/ftvkH05.png",
+        "description" : "Lose the nomination to Donald Trump.", // make sure to rename "Tariff Man"
         "cannotBeCheated" : true
  },
-    "Worthy Sacrifice" : {
+    "Dispel With This Fiction" : {
         "image" : "https://i.imgur.com/GU9Z3Cg.png",
-        "description" : "Back Marco Rubio at the convention to prevent Trump from winning.", 
+        "description" : "Back Marco Rubio at the convention to prevent Trump from winning.", // make sure to rename worthy sacrifice
         "cannotBeCheated" : true
     },
     "Unburdened By What's Been" : {
@@ -451,8 +453,8 @@ campaignTrail_temp.achievements = {
         "description" : "Win the nomination without having to contest the convention.", 
         "cannotBeCheated" : true
  },
-   "And I Took It Personally" : {
-        "image" : "https://i.imgur.com/kfcQeGJ.png",
+   "Valid Crashout" : { // make sure to rename "And I Took it personally"
+        "image" : "https://i.imgur.com/lVkzf1r.png",
         "description" : "Lash out at Hillary at the debate, and still win.", 
         "cannotBeCheated" : true
   },
@@ -469,16 +471,20 @@ campaignTrail_temp.achievements = {
   },
 "History Arrives All The Same" : {
         "image" : "https://i.imgur.com/vdBFKe1.png",
-        "description" : "Win 305 electoral votes against Clinton.", 
+        "description" : "Win exactly 305 electoral votes.", 
         "cannotBeCheated" : true
+  },
+"The Corrupt Bargain" : {
+        "image" : "https://i.imgur.com/6aZNGnG.png",
+        "description" : "Sacrifice everything for success.", // choose rubio as your running mate and get him to drop down at the convention NOT DONE
   },
 "Texas Toast" : {
         "image" : "https://i.imgur.com/DSRxfjx.png",
-        "description" : "At your lowest, lose Texas.", 
+        "description" : "Despite your roots, lose your home state.", 
         "cannotBeCheated" : true
   },
 "Karmic Retribution" : {
-        "image" : "https://i.imgur.com/SNDhRMU.png",
+        "image" : "https://i.imgur.com/iUvWk3I.png",
         "description" : "Teach her what justice looks like.", 
         "cannotBeCheated" : true
   },
