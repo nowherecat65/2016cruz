@@ -433,9 +433,9 @@ campaignTrail_temp.achievements = {
         "description" : "Lose the nomination to Donald Trump.", // make sure to rename "Tariff Man"
         "cannotBeCheated" : true
  },
-    "Dispel With This Fiction" : {
-        "image" : "https://i.imgur.com/GU9Z3Cg.png",
-        "description" : "Back Marco Rubio at the convention to prevent Trump from winning.", // make sure to rename worthy sacrifice
+    "New American Century" : {
+        "image" : "https://i.imgur.com/VPIUlOL.png",
+        "description" : "Lose the nomination to Marco Rubio.", // make sure to rename worthy sacrifice
         "cannotBeCheated" : true
     },
     "Unburdened By What's Been" : {
@@ -471,7 +471,7 @@ campaignTrail_temp.achievements = {
   },
 "History Arrives All The Same" : {
         "image" : "https://i.imgur.com/vdBFKe1.png",
-        "description" : "Win exactly 305 electoral votes.", 
+        "description" : "Have the historical results happen exactly.", 
         "cannotBeCheated" : true
   },
 "The Corrupt Bargain" : {
