@@ -909,7 +909,7 @@ ctsAchievement("A Real Conservative");
         campaignTrail_temp.candidate_json[0]["fields"].image_url = "https://i.imgur.com/gvmGNyb.png";
         campaignTrail_temp.question_number = 26;
         		vpTable["Donald Trump"] = "Chris Christie";
-ctsAchievement("Tariff Man");
+ctsAchievement("New York Values");
 e.ElectionPopup = "Well, Trump's the nominee now. Sit back and watch the ballots come in. This should be interesting."
 e.LosePopup = "He won the nomination, and he screwed it up... The RNC isn't gonna like this one bit..."
 e.WinPopup = "Despite it all, it seems Donald Trump.. won?"
@@ -951,7 +951,7 @@ ctsAchievement("Decisive Victory");
 e.ElectionPopup = "Well, Rubio's the nominee. Hopefully he can put the Democrats in their place."
 e.WinPopup = "It's a great day for America! The corrupt Democrats have been defeated."
 e.LosePopup = "It seems like Rubio has lost..."
-ctsAchievement("Worthy Sacrifice");
+ctsAchievement("New American Century");
 }
 
 if (ans == 5126 || ans == 5125 || ans == 5123 || ans == 5124) {
@@ -12361,15 +12361,15 @@ if (Trump == 1 && quickstats[0] > 269 && (SpecialEnding != 1)) {
 ctsAchievement("Darker Vision"); // Ally with trump
 }
 if (campaignTrail_temp.player_answers.includes(51228) && quickstats[0] > 269 && (SpecialEnding != 1)) {
-ctsAchievement("And I Took It Personally"); // Crash out
+ctsAchievement("Valid Crashout"); // Crash out
 }
 if (quickstats[0] == 269 && (SpecialEnding != 1)) { // Deadlock
 ctsAchievement("Not My President");
 }
-if (quickstats[0] == 305 && (SpecialEnding != 1)) { // Trump-esque victory
+if (quickstats[0] == 305 && (SpecialEnding != 1)) { // Historical victory
 ctsAchievement("History Arrives All The Same");
 }
-if (campaignTrail_temp.player_answers.includes(51531) && quickstats[0] > 269) { // Expose her
+if (campaignTrail_temp.player_answers.includes(51531) && quickstats[0] > 269) { // Expose her and win
 ctsAchievement("Karmic Retribution");
 }
 let TexasResult = campaignTrail_temp.final_state_results.find((x) => x.state == 1042); // Lose Texas
