@@ -12169,7 +12169,7 @@ else if (quickstats[0] > 339 && quickstats[0] < 535 && (SpecialEnding != 1)) { /
     changePlaylist(moderatedefeat);
      }
 
-ctsAchievement("Unburdened By What's Been");
+ctsAchievement("Tough as Texas");
 
     }
 
@@ -12363,9 +12363,6 @@ ctsAchievement("Darker Vision"); // Ally with trump
 if (campaignTrail_temp.player_answers.includes(51228) && quickstats[0] > 269 && (SpecialEnding != 1)) {
 ctsAchievement("Valid Crashout"); // Crash out
 }
-if (quickstats[0] == 269 && (SpecialEnding != 1)) { // Deadlock
-ctsAchievement("Not My President");
-}
 if (quickstats[0] == 305 && (SpecialEnding != 1)) { // Historical victory
 ctsAchievement("History Arrives All The Same");
 }
@@ -12375,6 +12372,11 @@ ctsAchievement("Karmic Retribution");
 let TexasResult = campaignTrail_temp.final_state_results.find((x) => x.state == 1042); // Lose Texas
 if(TexasResult.result[0].candidate == 201) {
 ctsAchievement("Texas Toast");
+    }
+
+let JerseyResult = campaignTrail_temp.final_state_results.find((x) => x.state == 1029 && (SpecialEnding != 1)); // Win New Jersey
+if(JerseyResult.result[0].candidate == 200) {
+ctsAchievement("Expanding The Map");
     }
 
     return construct(0);
