@@ -438,8 +438,8 @@ campaignTrail_temp.achievements = {
         "description" : "Lose the nomination to Marco Rubio.", // make sure to rename worthy sacrifice
         "cannotBeCheated" : true
     },
-    "Unburdened By What's Been" : {
-        "image" : "https://i.imgur.com/tPr5UZK.png",
+    "Tough as Texas" : {
+        "image" : "https://i.imgur.com/3f2CMqk.png",
         "description" : "Win in a modern-day landslide.", 
         "cannotBeCheated" : true
      },
@@ -459,11 +459,6 @@ campaignTrail_temp.achievements = {
         "cannotBeCheated" : true
   },
 
-"Not My President" : {
-        "image" : "https://i.imgur.com/CRm7RpG.png",
-        "description" : "Deadlock the election, and win through a House vote.", 
-        "cannotBeCheated" : true
-  },
 "A Real Conservative" : {
         "image" : "https://i.imgur.com/M3GaSZP.png",
         "description" : "Push for a national abortion ban and the restriction of same-sex marriage.", 
@@ -474,13 +469,19 @@ campaignTrail_temp.achievements = {
         "description" : "Have the historical results happen exactly.", 
         "cannotBeCheated" : true
   },
-"The Corrupt Bargain" : {
-        "image" : "https://i.imgur.com/6aZNGnG.png",
-        "description" : "Sacrifice everything for success.", // choose rubio as your running mate and get him to drop down at the convention NOT DONE
-  },
 "Texas Toast" : {
         "image" : "https://i.imgur.com/DSRxfjx.png",
         "description" : "Despite your roots, lose your home state.", 
+        "cannotBeCheated" : true
+  },
+"Expanding The Map" : {
+        "image" : "https://i.imgur.com/mW4CN1x.png",
+        "description" : "Win the state of New Jersey.", 
+        "cannotBeCheated" : true
+  },
+"The Corrupt Bargain" : {
+        "image" : "https://i.imgur.com/e9lBDRH.png",
+        "description" : "Sacrifice everything for success.", // choose rubio as your running mate and get him to drop down at the convention NOT DONE
         "cannotBeCheated" : true
   },
 "Karmic Retribution" : {
