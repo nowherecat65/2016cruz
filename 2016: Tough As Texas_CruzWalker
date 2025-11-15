@@ -12360,10 +12360,10 @@ if(TexasResult.result[0].candidate == 201) {
 ctsAchievement("Texas Toast");
     }
 
-let JerseyResult = campaignTrail_temp.final_state_results.find((x) => x.state == 1029 && (SpecialEnding != 1)); // Win New Jersey
-if(JerseyResult.result[0].candidate == 200) {
-ctsAchievement("Expanding The Map");
-    }
+let JerseyResult = campaignTrail_temp.final_state_results.find(x => x.state == 1029);
+if (JerseyResult && JerseyResult.result[0].candidate == 200 && SpecialEnding != 1) {
+    ctsAchievement("Expanding The Map");
+}
 
     return construct(0);
 }
