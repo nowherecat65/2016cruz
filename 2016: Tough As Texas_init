@@ -1,6 +1,4 @@
-// make sure to do achievements before releasing
-
-//* Mod Title: 2016 - Tough As Texas
+ //* Mod Title: 2016 - Tough As Texas
  //* Mod Author: TheMcCain
  //* Mod Version: 1.0
  //* 
@@ -1593,7 +1591,6 @@ const banners = [
     { url: "https://www.p2016.org/blogads/rtrnashuatelegraph012916xxe9d9be71-9dcd-42ed-ab8c-3f007d080bdb.jpg", weight: 1 },
     { url: "https://www.p2016.org/blogads/walker091615p2016xx3640419123098670429.jpg", weight: 1 },
     { url: "https://www.p2016.org/blogads/bearingdrift020716xx8394401851222088692.gif", weight: 1 },
-    { url: "https://www.p2016.org/blogads/carson061915p2016.jpg", weight: 1 },
     { url: "https://www.p2016.org/blogads/comicbookmoviecom013016xx724e818f-a251-4a11-828e-d82eb600712f.jpg", weight: 1 },
     { url: "https://i.imgur.com/OJigFr9.png", weight: 1 }
 ];
