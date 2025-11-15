@@ -909,7 +909,7 @@ ctsAchievement("A Real Conservative");
         campaignTrail_temp.candidate_json[0]["fields"].image_url = "https://i.imgur.com/gvmGNyb.png";
         campaignTrail_temp.question_number = 26;
         		vpTable["Donald Trump"] = "Chris Christie";
-ctsAchievement("Tariff Man");
+ctsAchievement("New York Values");
 e.ElectionPopup = "Well, Trump's the nominee now. Sit back and watch the ballots come in. This should be interesting."
 e.LosePopup = "He won the nomination, and he screwed it up... The RNC isn't gonna like this one bit..."
 e.WinPopup = "Despite it all, it seems Donald Trump.. won?"
@@ -951,7 +951,7 @@ ctsAchievement("Decisive Victory");
 e.ElectionPopup = "Well, Rubio's the nominee. Hopefully he can put the Democrats in their place."
 e.WinPopup = "It's a great day for America! The corrupt Democrats have been defeated."
 e.LosePopup = "It seems like Rubio has lost..."
-ctsAchievement("Worthy Sacrifice");
+ctsAchievement("New American Century");
 }
 
 if (ans == 5126 || ans == 5125 || ans == 5123 || ans == 5124) {
@@ -971,7 +971,7 @@ const customStyling = document.createElement("style");
 
 customStyling.innerHTML = `
 #campaign_sign {
-    background-image: url("https://i.imgur.com/K0vHTfg.png");
+    background-image: url("https://i.imgur.com/MZDNHtL.png");
     background-size: cover;
     border-color: #c9c9c9;    
     border-width: .01em;
@@ -1013,7 +1013,7 @@ const customStyling = document.createElement("style");
 
 customStyling.innerHTML = `
 #campaign_sign {
-    background-image: url("https://i.imgur.com/K0vHTfg.png");
+    background-image: url("https://i.imgur.com/MZDNHtL.png");
     background-size: cover;
     border-color: #c9c9c9;    
     border-width: .01em;
@@ -1055,7 +1055,7 @@ const customStyling = document.createElement("style");
 
 customStyling.innerHTML = `
 #campaign_sign {
-    background-image: url("https://i.imgur.com/K0vHTfg.png");
+    background-image: url("https://i.imgur.com/MZDNHtL.png");
     background-size: cover;
     border-color: #c9c9c9;    
     border-width: .01em;
@@ -1097,7 +1097,7 @@ const customStyling = document.createElement("style");
 
 customStyling.innerHTML = `
 #campaign_sign {
-    background-image: url("https://i.imgur.com/K0vHTfg.png");
+    background-image: url("https://i.imgur.com/MZDNHtL.png");
     background-size: cover;
     border-color: #c9c9c9;    
     border-width: .01em;
@@ -1227,19 +1227,19 @@ campaignTrail_temp.questions_json = [
     },
     {
         "model": "campaign_trail.question",
-        "pk": 1012,
+        "pk": 1020,
         "fields": {
             "priority": 10,
-            "description": "On September 11, 2012, on the anniversary of the 9/11 attacks, an Islamist militant group attacked U.S. diplomatic facilities in Benghazi, killing four Americans. Conservatives have blamed Hillary Clinton for lapses in security and intelligence. How will you press this advantage?",
+            "description": "Your running mate, Scott Walker, is an interesting choice, and he'll likely galvanize conservative support and help in the Midwest. Unfortunately, he's starting to receive some fire, mainly due to the Wisconsin Budget Repair Bill that he championed, which eliminated most collective bargaining rights for public employees, ended automatic union dues collection from paychecks, and required annual recertification votes for unions. Care to explain?",
             "likelihood": 1
         }
     },
     {
         "model": "campaign_trail.question",
-        "pk": 1020,
+        "pk": 1012,
         "fields": {
             "priority": 10,
-            "description": "Your running mate, Scott Walker, is an interesting choice, and he'll likely galvanize conservative support and help in the Midwest. Unfortunately, he's starting to receive some fire, mainly due to the Wisconsin Budget Repair Bill that he championed, which eliminated most collective bargaining rights for public employees, ended automatic union dues collection from paychecks, and required annual recertification votes for unions. Care to explain?",
+            "description": "On September 11, 2012, on the anniversary of the 9/11 attacks, an Islamist militant group attacked U.S. diplomatic facilities in Benghazi, killing four Americans. Conservatives have blamed Hillary Clinton for lapses in security and intelligence. How will you press this advantage?",
             "likelihood": 1
         }
     },
@@ -2096,7 +2096,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51320,
         "fields": {
             "question": 1033,
-            "description": "This is the problem with liberals like Clinton. Hillary wants to be our leader, but as soon as she's elected, she's going to open up our borders and let criminals and drug dealers flood in. We can't let that happen."
+            "description": "This is the problem with liberals like Clinton. She wants to be our leader, but as soon as she's elected, she's going to open up our borders and let criminals and drug dealers flood in. We can't let that happen."
         }
     },
     {
@@ -2104,7 +2104,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51321,
         "fields": {
             "question": 1033,
-            "description": "See what I mean? This is a textbook example of cronyism in government. On her first day in office, she's going to start listening to Clinton Foundation donors and sell herself to the highest bidder. She's a puppet."
+            "description": "Her cronyism and corruption have been exactly what I've been trying to warn people about for months, and for all we know, this is just the beginning. What other speeches has he given to those elites behind closed doors?"
         }
     },
     {
@@ -2304,7 +2304,7 @@ campaignTrail_temp.answers_json = [
         "pk": 51610,
         "fields": {
             "question": 1020,
-            "description": "No. I've already got enough on my plate as is. He can defend himself if he wants, but if I'm asked about it I'm deflecting onto something else. We're gonna need some of these working-class voters if we want to win in November."
+            "description": "No. I've already got enough on my plate as is. He can defend himself if he wants, but if I'm asked about it I'm deflecting onto something else. We're gonna need some of those working-class voters if we want to win in November."
         }
     },
     {
@@ -6341,7 +6341,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 200,
             "state": 1049,
-            "state_multiplier": 0.975
+            "state_multiplier": 1.008
         }
     },
     {
@@ -8742,6 +8742,16 @@ campaignTrail_temp.answer_score_global_json = [
             "affected_candidate": 200,
             "global_multiplier": 0.075
         }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 51619,
+        "fields": {
+            "answer": 51611,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "global_multiplier": 0.001
+        }
     }
 ]
 
@@ -9268,11 +9278,11 @@ campaignTrail_temp.answer_score_issue_json = [
     },
     {
         "model": "campaign_trail.answer_score_issue",
-        "pk": 51616,
+        "pk": 51618,
         "fields": {
             "answer": 51611,
             "issue": 101,
-            "issue_score": -0.4,
+            "issue_score": -0.65,
             "issue_importance": 3
         }
     }
@@ -10655,7 +10665,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5032,
             "candidate": 200,
-            "answer_feedback": "Hillary Clinton is an incredibly unpopular candidate, and it's always good to point out her flaws. Cheers erupt from the audience, and this election seems winnable this time after major losses in 2008 and 2012. Even so, the polls show you with a large deficit, and the road ahead looks tough."
+            "answer_feedback": "Hillary Clinton is an incredibly unpopular candidate, and it's always good to point out her flaws. Cheers erupt from the audience, and this election seems winnable this time after major losses in 2008 and 2012."
         }
     },
     {
@@ -10934,7 +10944,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 20739,
             "candidate": 200,
-            "answer_feedback": "Obama is a punching bag almost as great as Clinton, only to increase your support from Tea Party-inclined voters, and cheers flare up from the hall. Even so, the polls show you with a large deficit, and the road ahead looks tough."
+            "answer_feedback": "Obama is a punching bag almost as great as Clinton, only to increase your support from Tea Party-inclined voters, and cheers flare up from the hall. Let's get this campaign going. Even so, the polls show you with a large deficit, and the road ahead looks tough."
         }
     },
     {
@@ -10952,7 +10962,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 20743,
             "candidate": 200,
-            "answer_feedback": "The attack works well. Until people realize it’s the exact same thing Obama has been doing and not far from what Hillary wants. This is going to be giving your opponents more ammo against you."
+            "answer_feedback": "The attack works well. Until people realize it’s the exact same thing Obama is doing and not far from what Hillary wants. It ends up giving your opponents more ammo against you."
         }
     },
     {
@@ -10988,7 +10998,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51037,
             "candidate": 200,
-            "answer_feedback": "Honesty is an admirable trait these days. Unfortunately, this is a complete flip-flop from your once-firm position, and voters are questioning your judgement."
+            "answer_feedback": "Honesty is an admirable trait these days. Unfortunately, this is a complete flip-flop from your earlier position, and voters are now questioning your judgement."
         }
     },
     {
@@ -11006,7 +11016,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51045,
             "candidate": 200,
-            "answer_feedback": "You seem unusually restrained this time around - if that’s easy to believe. Hopefully your integrity plays well come November?"
+            "answer_feedback": "You seem unusually restrained this time around, if that’s easy to believe. Hopefully your integrity will play well come November?"
         }
     },
     {
@@ -11168,7 +11178,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51188,
             "candidate": 200,
-            "answer_feedback": "The ambiguity of her speeches allows people to believe what they want. Liberals think she's some centrist neocon, while conservatives think she's a far-left puppet. Things are made even better when she defends herself on Twitter, earning her more mockery. This was a brilliant line of attack."
+            "answer_feedback": "The fact she never released the content of her speeches allows people to believe whatever they want. Progressives think she's some centrist neocon, while conservatives think she's a far-left puppet. Things are made even better when she defends herself on Twitter, earning her more mockery. This was a brilliant line of attack."
         }
     },
     {
@@ -11222,7 +11232,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51219,
             "candidate": 200,
-            "answer_feedback": "Way to kick the woman while she's down. Some advisors caution about getting yourself so involved in the mudslinging, but this is just another one of many places for you to attack her. MSNBC has resorted to calling you 'ableist' to try and win votes."
+            "answer_feedback": "Way to kick the woman while she's down. Some advisors caution about getting yourself so involved in the mudslinging, but this is just another one of many places for you to attack her. MSNBC has resorted to calling you ''ableist'' to try and win votes."
         }
     },
     {
@@ -11231,7 +11241,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51228,
             "candidate": 200,
-            "answer_feedback": "You say all of that on live TV. Clinton is speechless, but you notice a slight smile creep across her face. The base eats the red meat up, and Fox applauds you for having the guts to stand up to the establishment. At the end of the debate, she doesn't walk to shake your hand. You don't care. The brutality of the race excites you."
+            "answer_feedback": "You say all of that on live TV. Clinton is speechless, but you notice a slight smile creep across her face. The base eats the red meat up, and Fox applauds you for having the guts to stand up to the establishment. At the end of the debate, she doesn't walk to shake your hand. You don't care."
         }
     },
     {
@@ -11294,7 +11304,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51263,
             "candidate": 200,
-            "answer_feedback": "With you refusing to press the issue, it soon fades back down, but this will definitely help your campaign regardless."
+            "answer_feedback": "It's a bit out of character for you to stay silent on a developing issue, but it certainly does make you look presidential. This will help your case regardless of what you do."
         }
     },
     {
@@ -11312,7 +11322,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51292,
             "candidate": 200,
-            "answer_feedback": "Women are deeply offended (you were never going to win them over anyway) and Hillary is horrified and demands an apology from you (we both know she’s not getting one). Regardless of the backlash you’re receiving, the attacks are still effective in dragging down Hillary’s name."
+            "answer_feedback": "Women are deeply offended (you were never going to win them over anyway) and Hillary is horrified and demands an apology from you (we both know she’s not getting one). Regardless of the backlash you’re receiving, the attacks are still effective in dragging down her reputation even more into the mud."
         }
     },
     {
@@ -11339,7 +11349,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51319,
             "candidate": 200,
-            "answer_feedback": "Hillary has been in politics for decades, so it's expected she'll go wherever the wind blows. It's always good to point that out. In other news, Hillary tries to defend herself by saying, when she said open trade, she was talking about energy policy. "
+            "answer_feedback": "Clinton has been going whichever way the wind blows for years, and attacking her for flip-flopping is a no-brainer. In other news, Hillary tries to defend herself by saying, when she said open trade, she was talking about energy policy. "
         }
     },
     {
@@ -11348,7 +11358,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51320,
             "candidate": 200,
-            "answer_feedback": "You're leaning into the “open borders” aspect of it, which is good. Very few people will die on the hill of completely opening the border and letting migrants coming into the country. Rhetorically, that is. Meanwhile, Hillary tries to defend herself by saying her sentence was being taken out of context."
+            "answer_feedback": "With the Goldman Sachs speeches being private, who knows what else she said to them? The idea that Hillary is simply a slave for New York financiers is becoming a common one. Meanwhile, she tries to defend herself by saying her sentence was being taken out of context."
         }
     },
     {
@@ -11357,7 +11367,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51321,
             "candidate": 200,
-            "answer_feedback": "This is a bit cynical, but this is still a good attack. Hillary's numbers continue to take a nosedive."
+            "answer_feedback": "This attack is a bit on the cynical side, but still a good attack. Clinton is increasingly looking like a globalist elitist, with rumors swirling in small-town America that she wants to open the borders and let criminals flood in. "
         }
     },
     {
@@ -11510,7 +11520,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51473,
             "candidate": 200,
-            "answer_feedback": "Another piece of red meat for the base. You'll still receive applause from conservatives, who will love any talk of you and JCPOA, but this also does not help ease concerns for your foreign policy vision. Clinton, being a former Secretary of State, has more gravitas on this issue, according to most polls."
+            "answer_feedback": "Another slice of red meat for the base. You'll still receive applause from conservatives, who will love any talk of you and JCPOA, but this also does not help ease concerns for your foreign policy vision. Clinton, being a former Secretary of State, has more gravitas on this issue, according to most polls."
         }
     },
     {
@@ -11587,7 +11597,7 @@ campaignTrail_temp.answer_feedback_json = [
     },
     {
         "model": "campaign_trail.answer_feedback",
-        "pk": 51614,
+        "pk": 51615,
         "fields": {
             "answer": 51610,
             "candidate": 200,
@@ -11596,7 +11606,7 @@ campaignTrail_temp.answer_feedback_json = [
     },
     {
         "model": "campaign_trail.answer_feedback",
-        "pk": 51615,
+        "pk": 51616,
         "fields": {
             "answer": 51611,
             "candidate": 200,
@@ -11609,7 +11619,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 51612,
             "candidate": 200,
-            "answer_feedback": "This helps cool down some of the tension between your ticket and some Midwestern voters. Clinton and Kaine decide to ignore the issue, and everyone moves on after a few days. Good pivot."
+            "answer_feedback": "This helps cool down some of the tension between your ticket and those union men in the Midwest. Clinton and Kaine decide to ignore the issue, and everyone moves on after a few days. Good pivot."
         }
     }
 ]
@@ -11671,6 +11681,12 @@ campaignTrail_temp.jet_data = [{
 ]
 
 
+
+
+
+
+// ENDINGS -- this is slightly more reliable than the ending code method
+
 construct = (a = 1) => {
     
     e.page = e.page + a < e.pages.length ? e.page + a : 0
@@ -11703,7 +11719,7 @@ color: white;
 max-height: 300px; 
 overflow-y: auto; 
 padding-right: 5px;
-margin-bottom: -20px;
+    margin-bottom: -20px;
 
 
             `;
@@ -11738,8 +11754,6 @@ endingConstructor = (a = 1) => {
     $("#final_results_description")[0].innerHTML = construct(a);
 }
 
-// ENDINGS -- this is slightly more reliable than the ending code method
-
 e.multiple_endings = true;
 
 e.header = "<h1>This is an error handler</h1>";
@@ -11760,7 +11774,7 @@ if (campaignTrail_temp.player_answers.includes(51531)) {
 // --------------------------------------------------------------- Special Endings  -------------------------------------------------------------------------------------------
 
 // Killary, 50 state sweep 
-if (campaignTrail_temp.player_answers.includes(51531) && quickstats[0] >= 535) { // Full sweep
+if (campaignTrail_temp.player_answers.includes(51531) && quickstats[0] >= 535) { // Full Sweep against Klinton
         e.pages.push(`<h3>Vindication.</h3><p>50 states. 50 shades of red. New York, Hawaii, Massachusetts, all red. Your erstwhile rival Clinton is nowhere to be found, not in Chappaqua, not anywhere within view. Even after state after state voted for you, you didn't feel glory. You felt empty. Hollow. <br><br> Nobody is surprised by your victory. Nobody even talks about it. Everybody's only talking about Hillary Clinton's crimes. How she got away for so long. The fact the establishment was so corrupt, the things you had been trying to warn them about for years. <br><br> Where do you go from here? Democrats are in complete disarray, but it's not like the rest of Washington is any more stable. Who else was behind these crimes? Her spineless husband, obviously, but who else? Obama? Schumer? Pelosi? You're going to need to start investigations into all of them. Best of luck these next few years. </p>`);
         e.pages.push(`<h3>July 20th, 1993 - Washington D.C, 1600 Pennsylvania Ave </h3><p> Hillary felt happy, relieved. That snake was finally going to be killed today. She had been planning this for months — and tonight her efforts would finally bear fruit. He cannot be allowed to survive, no matter the price. She had even recorded herself ordering his death, so she could look back and laugh at it later. <br><br> It didn't matter that she had worked with him for years, or that he had helped her become a lawyer in the first place. All that matters is that she must protect herself. She has no other choice.  <br><br> She had done stuff typical of a First Lady today — giving speeches, attending schools, making millions illegally for her own pleasure. Sitting on the White House couch, flicking through meaningless television channels, she began to get worried. Had the plan failed? Had that rat managed to get away? <br><br> Just then, someone knocked on the door. It was the agents tasked with killing him. <br><br> “Target neutralized, Madame'.” <br><br> Grinning, she replied “Excellent.” <br><br> “And did you get that tape I asked for?” Hillary really hoped they recorded it. She would get to watch that loser die in real time, entertainment far beyond her wildest dreams. <br><br> “Of course” an agent replied. <br><br> “Perfect!” she said, trying her best to contain her excitement. <br><br> She quickly ran to the oven and put in a batch of chocolate-chip cookies. If she was quick, she and Bill could even get a midnight snack to go alongside her night-time entertainment. <br><br> She called her husband downstairs as she put the tape inside the television. Bill laughed, and she cackled. They couldn't stop replaying the 2 hour long video of his suffering.  They dragged him all the way to Virginia and shot the bastard dead. <br><br> Just then her advisors walked in. They had already written a script for her to say when she “learns” of Foster's death, and already wrote an eulogy for Bill to say at his funeral. Hillary said she couldn't be bothered to attend, just make up some excuse about her being sick that day. The press was already at the White House that night, and she feigned horror, crying about how tragic it was. The media used it as ''proof'' of her humbleness.<br><br> The entire cabinet was far too spineless to ever report her crimes. Spinelessness was a trait Clinton always looked for in cabinet appointments, and she always made sure her crimes never got in contact with people who still had some of their guts left. <br><br> The brutality of her acts stimulated her. It made her satisfied, fulfilled, relieved. This was the best smile she's had in years. Apart from wearing fancy dresses, it was her favorite coping mechanism. <br><br> Just then, midnight struck, it was their bedtime. She called Bill upstairs, and they slept soundly in the White House bedroom, knowing they would never have to bear the consequences of their actions.  </p>`);
         e.pages.push(`<h3>August 17th, 2018 - Federal Bureau of Investigation catches Hillary Clinton in New York | <i>Syracuse Register</i> </h3><p> <i>This article has been updated to include further details. </i> <br><br> The former First Lady and 2016 presidential candidate has been on the run for years ever since an anonymous person leaked a video clip of her ordering her the murder of <u>Vince Foster</u>. That changed today, where the FBI coordinated with local authorities and the state of Virginia to capture Clinton, who had been hiding in a mansion in upstate New York. <br><br> Raiding her home, she quickly surrendered. Authorities found she was armed with weapons and had written a note about fleeing to Canada. <br><br>  The whereabouts of her husband Bill Clinton are unknown, though she was still wearing her wedding ring when she was caught, and she appeared to be living in luxury, with many amenities. <br><br> Given the murder of Foster was successful, she could be tried for first degree murder under Virginia law. Prosecutors say they will try to push for the death penalty. Former President Barack Obama condemned Clinton harshly in a post on Twitter, saying “I once called Hillary Clinton a friend. But after what she did, I can't even bare to look at her anymore. I unequivocally denounce her, and I hope she will be prosecuted to the fullest extent under law.“  <br><br> The death penalty is still legal under Virginia law, though opposition has been mounting, as of late. She will be extradited to the police of Fairfax County, Virginia. <br><br> <i> This article was written by Shamar Scott. </i> </p>`);
@@ -12128,7 +12142,7 @@ else if (quickstats[0] > 339 && quickstats[0] < 535 && (SpecialEnding != 1)) { /
     changePlaylist(moderatedefeat);
      }
 
-ctsAchievement("Unburdened By What's Been");
+ctsAchievement("Tough as Texas");
 
     }
 
@@ -12317,23 +12331,25 @@ else if (quickstats[0] > 2 && quickstats[0] <= 134 && (SpecialEnding != 1)) { //
 }
 
 if (Trump == 1 && quickstats[0] > 269 && (SpecialEnding != 1)) {
-ctsAchievement("Darker Vision");
+ctsAchievement("Darker Vision"); // Ally with trump
 }
 if (campaignTrail_temp.player_answers.includes(51228) && quickstats[0] > 269 && (SpecialEnding != 1)) {
-ctsAchievement("And I Took It Personally");
+ctsAchievement("Valid Crashout"); // Crash out
 }
-if (quickstats[0] == 269 && (SpecialEnding != 1)) {
-ctsAchievement("Not My President");
-}
-if (quickstats[0] == 305 && (SpecialEnding != 1)) {
+if (quickstats[0] == 305 && (SpecialEnding != 1)) { // Historical victory
 ctsAchievement("History Arrives All The Same");
 }
-if (campaignTrail_temp.player_answers.includes(51531) && quickstats[0] > 269) {
+if (campaignTrail_temp.player_answers.includes(51531) && quickstats[0] > 269) { // Expose her and win
 ctsAchievement("Karmic Retribution");
 }
 let TexasResult = campaignTrail_temp.final_state_results.find((x) => x.state == 1042); // Lose Texas
 if(TexasResult.result[0].candidate == 201) {
 ctsAchievement("Texas Toast");
+    }
+
+let JerseyResult = campaignTrail_temp.final_state_results.find((x) => x.state == 1029 && (SpecialEnding != 1)); // Win New Jersey
+if(JerseyResult.result[0].candidate == 200) {
+ctsAchievement("Expanding The Map");
     }
 
     return construct(0);
