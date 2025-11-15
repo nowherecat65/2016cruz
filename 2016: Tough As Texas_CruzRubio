@@ -12313,10 +12313,10 @@ let TexasResult = e.final_state_results.find((x) => x.state == 1042); // Lose Te
 if(TexasResult.result[0].candidate == 201) {
 ctsAchievement("Texas Toast");
 }
-let JerseyResult = e.final_state_results.find((x) => x.state == 1029); // Win New Jersey
-if(JerseyResult.result[0].candidate == 200) {
-ctsAchievement("Expanding The Map");
-    }
+let JerseyResult = campaignTrail_temp.final_state_results.find(x => x.state == 1029);
+if (JerseyResult && JerseyResult.result[0].candidate == 200 && SpecialEnding != 1) {
+    ctsAchievement("Expanding The Map");
+}
 
     return construct(0);
 }
