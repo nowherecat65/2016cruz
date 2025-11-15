@@ -281,12 +281,12 @@ const EstablishmentMap = {
 };
 const IdeologyMap = {
     "-7": `You’re seen as a <span style="color: #CD1025;"><strong>RINO</strong></span>. (<span style="color: #CD1025;"><strong>-7</strong></span>)`,
-    "-6": `You’re seen as <span style="color: #CD1025;"><strong>too moderate</strong></span>. (<span style="color: #FB6723;"><strong>-6</strong></span>)`,
-    "-5": `You’re seen as a <span style="color: #CD1025;"><strong>RINO</strong></span>. (<span style="color: #DEB83E;"><strong>-5</strong></span>)`,
-    "-4": `You’re seen as a <span style="color: #CD1025;"><strong>RINO</strong></span>. (<span style="color: #DEB83E;"><strong>-4</strong></span>)`,
-    "-3": `You’re seen as  <span style="color: #CD1025;"><strong>too moderate</strong></span>. (<span style="color: #DEB83E;"><strong>-3</strong></span>)`,
-    "-2": `You’re seen as <span style="color: #FB6723;"> <strong>shying away</strong></span> from conservative values. (<span style="color: #6DCF1F;"><strong>-2</strong></span>)`,
-    "-1": `You’re seen as <span style="color: #FB6723;"> <strong>shying away</strong></span> from conservative values. (<span style="color: #6DCF1F;"><strong>-1</strong></span>)`,
+    "-6": `You’re seen as a <span style="color: #CD1025;"><strong></strong>RINO</span>. (<span style="color: #CD1025;"><strong>-6</strong></span>)`,
+    "-5": `You’re seen as a <span style="color: #CD1025;"><strong>RINO</strong></span>. (<span style="color: #CD1025;"><strong>-5</strong></span>)`,
+    "-4": `You’re seen as a <span style="color: #CD1025;"><strong>RINO</strong></span>. (<span style="color: #CD1025;"><strong>-4</strong></span>)`,
+    "-3": `You’re seen as  <span style="color: #CD1025;"><strong>too moderate</strong></span>. (<span style="color: #CD1025;"><strong>-3</strong></span>)`,
+    "-2": `You’re seen as <span style="color: #FB6723;"> <strong>shying away</strong></span> from conservative values. (<span style="color: #FB6723;"><strong>-2</strong></span>)`,
+    "-1": `You’re seen as <span style="color: #FB6723;"> <strong>shying away</strong></span> from conservative values. (<span style="color: #FB6723;"><strong>-1</strong></span>)`,
     "0": `You’re seen as <span style="color: #57AB59;"> <strong>generally conservative</strong></span>. (<span style="color: #57AB59;"><strong>0</strong></span>)`,
     "1": `You’re seen as <span style="color: #57AB59;"> <strong>generally conservative</strong></span>. (<span style="color: #57AB59;"><strong>1</strong></span>)`,
     "2": `You’re seen as <span style="color: #6DCF1F;"> <strong>increasingly conservative</strong></span>. (<span style="color: #6DCF1F;"><strong>2</strong></span>)`,
@@ -1240,7 +1240,7 @@ e.questions_json = [
         "pk": 1020,
         "fields": {
             "priority": 10,
-            "description": "Your running mate, Marco Rubio, is a choice sure to galvanize the Hispanic vote and could also likely help reel is suburbanites. However, some of your core supporters are disappointed with Rubio, claiming he is not adequately conservative, and that he's too moderate. Would you like to step in?",
+            "description": "Your running mate, Marco Rubio, is a choice sure to galvanize the Hispanic vote and could also likely help reel in suburbanites. However, some of your core supporters are disappointed with Rubio, claiming he is not adequately conservative, and that he's too moderate. Would you like to step in?",
             "likelihood": 1
         }
     },
@@ -2355,7 +2355,7 @@ e.answers_json = [
         "pk": 51637,
         "fields": {
             "question": 1020,
-            "description": "That's correct. Me and Rubio disagree on some issues, but that's politics. As President, I'll work with everyone to advance my agenda and make our country more prosperous then ever before."
+            "description": "Me and Rubio disagree on some issues, but that's what leadership is, it's about compromise. As President, I'll work with everyone to advance my agenda and make our country more prosperous then ever before."
         }
     }
 ]
