@@ -882,6 +882,19 @@ e.ElectionPopup = "Hillary's been outed as a criminal, but you still have an ele
 e.LosePopup = "Did you just lose... to a murderer?"
 e.WinPopup = "..."
 e.SelAnsContText = "Ted, you alright?"
+corrr = `
+  <h2 style="
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 36px;
+    color: white;
+    padding: 5px 10px;
+    background: linear-gradient(90deg, #1e242a, #2a353f);
+    border-radius: 0px;
+    box-shadow: inset 0 0 10px rgba(0,255,255,0.1), 0 0 8px rgba(0,255,255,0.05);
+  ">
+   The Zodiac Trail
+  </h2>
+`;
 
 } else {
   campaignTrail_temp.questions_json[26] = {
