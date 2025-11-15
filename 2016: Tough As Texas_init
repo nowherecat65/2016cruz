@@ -1213,10 +1213,10 @@ function setupMusicPlayer() {
   playlist = new Playlist();
 
   const song1 = new Song(
-    "What I've Done",
-    "Linkin Park",
-    "https://i.imgur.com/65s4viR.png",
-    "https://audio.jukehost.co.uk/PcjEhjT7pxAa8SP6x4x6OBKgTuTCn8vM"
+    "Born In The U.S.A",
+    "Bruce Springsteen",
+    "https://i.imgur.com/xTyz859.png",
+    "https://audio.jukehost.co.uk/y8UAbY6RebjqpgtxRtOJZxrVPVRB0eND"
   );
 
   const song2 = new Song(
@@ -1248,10 +1248,10 @@ function setupMusicPlayer() {
   );
 
   const song6 = new Song(
-    "Ballad of the Mighty I",
-    "Noel Gallagher's High Flying Birds",
-    "https://i.postimg.cc/gcssRhNH/noelly.png",
-    "https://audio.jukehost.co.uk/5NNc7lVHPMYitcfiodfipgwMEmefNJbT"
+    "Rockin' In The Free World",
+    "Neil Young",
+    "https://i.imgur.com/rsjTJWY.png",
+    "https://audio.jukehost.co.uk/EszA1MFZjpHCByR2r4t6zuQOUNqV6Ck5"
   );
 
   playlist.addSong(song1);
