@@ -580,7 +580,7 @@ setInterval(() => {
 }, 100);
 
 let republican = "Ted Cruz";
-let republicanvp = "Scott Walker";
+let republicanvp = "Carly Fiorina";
 let democrat = "Hillary R. Clinton";
 let democratvp = "Tim Kaine";
 let libertarian = "Gary Johnson";
@@ -961,9 +961,9 @@ if (ans == 5126 || ans == 5125 || ans == 5123 || ans == 5124) {
 
     if (ans == 20739) {
         campaignTrail_temp.candidate_image_url = 'https://i.imgur.com/yqL9NWD.jpeg'
-        campaignTrail_temp.running_mate_image_url = 'https://i.imgur.com/4AmhUDX.png';
-        campaignTrail_temp.running_mate_last_name = 'Walker';
-        campaignTrail_temp.running_mate_first_name = 'Scott';
+        campaignTrail_temp.running_mate_image_url = 'https://files.catbox.moe/ul4rox.png';
+        campaignTrail_temp.running_mate_last_name = 'Fiorina';
+        campaignTrail_temp.running_mate_first_name = 'Carly';
 campaignTrail_temp.election_json[0]["fields"].advisor_url = 'https://i.imgur.com/r3fj0cT.png';
 campaignTrail_temp.candidate_json[0]["fields"].first_name = "Ted";
 campaignTrail_temp.candidate_json[0]["fields"].last_name = "Cruz";
@@ -971,7 +971,7 @@ const customStyling = document.createElement("style");
 
 customStyling.innerHTML = `
 #campaign_sign {
-    background-image: url("https://i.imgur.com/MZDNHtL.png");
+    background-image: url("https://files.catbox.moe/epfob9.png");
     background-size: cover;
     border-color: #c9c9c9;    
     border-width: .01em;
@@ -1003,9 +1003,9 @@ document.head.appendChild(customStyling);
     }
     else if (ans == 5032) {
         campaignTrail_temp.candidate_image_url = 'https://i.imgur.com/yqL9NWD.jpeg'
-        campaignTrail_temp.running_mate_image_url = 'https://i.imgur.com/4AmhUDX.png';
-        campaignTrail_temp.running_mate_last_name = 'Walker';
-        campaignTrail_temp.running_mate_first_name = 'Scott';
+        campaignTrail_temp.running_mate_image_url = 'https://files.catbox.moe/ul4rox.png';
+        campaignTrail_temp.running_mate_last_name = 'Fiorina';
+        campaignTrail_temp.running_mate_first_name = 'Carly';
 campaignTrail_temp.candidate_json[0]["fields"].first_name = "Ted";
 campaignTrail_temp.candidate_json[0]["fields"].last_name = "Cruz";
 campaignTrail_temp.election_json[0]["fields"].advisor_url = 'https://i.imgur.com/r3fj0cT.png';
@@ -1013,7 +1013,7 @@ const customStyling = document.createElement("style");
 
 customStyling.innerHTML = `
 #campaign_sign {
-    background-image: url("https://i.imgur.com/MZDNHtL.png");
+    background-image: url("https://files.catbox.moe/epfob9.png");
     background-size: cover;
     border-color: #c9c9c9;    
     border-width: .01em;
@@ -1045,9 +1045,9 @@ document.head.appendChild(customStyling);
     }
     else if (ans == 5031) {
         campaignTrail_temp.candidate_image_url = 'https://i.imgur.com/yqL9NWD.jpeg'
-        campaignTrail_temp.running_mate_image_url = 'https://i.imgur.com/4AmhUDX.png';
-        campaignTrail_temp.running_mate_last_name = 'Walker';
-        campaignTrail_temp.running_mate_first_name = 'Scott';
+        campaignTrail_temp.running_mate_image_url = 'https://files.catbox.moe/ul4rox.png';
+        campaignTrail_temp.running_mate_last_name = 'Fiorina';
+        campaignTrail_temp.running_mate_first_name = 'Carly';
 campaignTrail_temp.candidate_json[0]["fields"].first_name = "Ted";
 campaignTrail_temp.candidate_json[0]["fields"].last_name = "Cruz";
 campaignTrail_temp.election_json[0]["fields"].advisor_url = 'https://i.imgur.com/r3fj0cT.png';
@@ -1055,7 +1055,7 @@ const customStyling = document.createElement("style");
 
 customStyling.innerHTML = `
 #campaign_sign {
-    background-image: url("https://i.imgur.com/MZDNHtL.png");
+    background-image: url("https://files.catbox.moe/epfob9.png");
     background-size: cover;
     border-color: #c9c9c9;    
     border-width: .01em;
@@ -1087,9 +1087,9 @@ document.head.appendChild(customStyling);
     }
     else if (ans == 5030) {
         campaignTrail_temp.candidate_image_url = 'https://i.imgur.com/yqL9NWD.jpeg'
-        campaignTrail_temp.running_mate_image_url = 'https://i.imgur.com/4AmhUDX.png';
-        campaignTrail_temp.running_mate_last_name = 'Walker';
-        campaignTrail_temp.running_mate_first_name = 'Scott';
+        campaignTrail_temp.running_mate_image_url = 'https://files.catbox.moe/ul4rox.png';
+        campaignTrail_temp.running_mate_last_name = 'Fiorina';
+        campaignTrail_temp.running_mate_first_name = 'Carly';
 campaignTrail_temp.candidate_json[0]["fields"].first_name = "Ted";
 campaignTrail_temp.candidate_json[0]["fields"].last_name = "Cruz";
 campaignTrail_temp.election_json[0]["fields"].advisor_url = 'https://i.imgur.com/r3fj0cT.png';
@@ -1097,7 +1097,7 @@ const customStyling = document.createElement("style");
 
 customStyling.innerHTML = `
 #campaign_sign {
-    background-image: url("https://i.imgur.com/MZDNHtL.png");
+    background-image: url("https://files.catbox.moe/epfob9.png");
     background-size: cover;
     border-color: #c9c9c9;    
     border-width: .01em;
@@ -1132,6 +1132,7 @@ document.head.appendChild(customStyling);
         return false;
     }
 }
+
 
 
 campaignTrail_temp.questions_json = [
@@ -1230,7 +1231,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1020,
         "fields": {
             "priority": 10,
-            "description": "Your running mate, Scott Walker, is an interesting choice, and he'll likely galvanize conservative support and help in the Midwest. Unfortunately, he's starting to receive some fire, mainly due to the Wisconsin Budget Repair Bill that he championed, which eliminated most collective bargaining rights for public employees, ended automatic union dues collection from paychecks, and required annual recertification votes for unions. Care to explain?",
+            "description": "Your choice of running mate, Carly Fiorina, has gone over surprisingly well, especially with female vote, though the establishment is concerned. Additionally, some voters are concerned her tenure at HP, where thousands of employees were laid off, and where Fiorina was forced out by shareholders. How will you stop the damage?",
             "likelihood": 1
         }
     },
@@ -1765,6 +1766,30 @@ campaignTrail_temp.answers_json = [
     },
     {
         "model": "campaign_trail.answer",
+        "pk": 51025,
+        "fields": {
+            "question": 1020,
+            "description": "These allegations are blatantly false. Fiorina’s tenure at Hewlett-Packard has been nothing but successful. I’m proud to have her on my ticket, and I’m proud to call her a close friend to both Heidi and me."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 51026,
+        "fields": {
+            "question": 1020,
+            "description": "In the end, these are unfounded claims from some partisan Democrats. We can ignore them because I know Fiorina will do a great job as the nation’s second-in-command, and those who say otherwise are mistaken."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 51030,
+        "fields": {
+            "question": 1020,
+            "description": "Mrs. Fiorina inherited a company rife with mismanagement and burdened by a tumultuous Compaq merger, yet today HP remains one of America’s largest companies. If the Washington cartel considers that ''unfit to serve,'' that’s their problem, not mine."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
         "pk": 51037,
         "fields": {
             "question": 1030,
@@ -1785,6 +1810,14 @@ campaignTrail_temp.answers_json = [
         "fields": {
             "question": 1022,
             "description": "I have the utmost respect for James Comey and our great agents at the FBI. They have the final say in the end. It seems Hillary may have gotten lucky on this one."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 51050,
+        "fields": {
+            "question": 1020,
+            "description": "If you want to see someone unfit to serve in office, I can think of no one better than Hillary Clinton, who has leaked federal secrets, destroyed documents, and is under investigation by the FBI. She cannot be allowed to become President."
         }
     },
     {
@@ -2297,30 +2330,6 @@ campaignTrail_temp.answers_json = [
         "fields": {
             "question": 51533,
             "description": "So I was right. Klinton really is a murderer. We're going to be posting about this all week. We're gonna have a good time. And we're gonna lock her up."
-        }
-    },
-    {
-        "model": "campaign_trail.answer",
-        "pk": 51610,
-        "fields": {
-            "question": 1020,
-            "description": "No. I've already got enough on my plate as is. He can defend himself if he wants, but if I'm asked about it I'm deflecting onto something else. We're gonna need some of those working-class voters if we want to win in November."
-        }
-    },
-    {
-        "model": "campaign_trail.answer",
-        "pk": 51611,
-        "fields": {
-            "question": 1020,
-            "description": "This is a ridiculous ''attack''. If you actually read it, the Budget Repair Bill is a reasonable law that prevents unions from distorting the economy and strangling the public sector. I would actually support restricting unions further if I'm elected."
-        }
-    },
-    {
-        "model": "campaign_trail.answer",
-        "pk": 51612,
-        "fields": {
-            "question": 1020,
-            "description": "Is this bill really that crazy? All this bill does is no longer force workers to pay their money to a union. I don't see the problem here. Just another empty attack the media will throw to discredit conservatives."
         }
     }
 ]
@@ -6341,7 +6350,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 200,
             "state": 1049,
-            "state_multiplier": 1.008
+            "state_multiplier": 0.915
         }
     },
     {
@@ -7975,6 +7984,26 @@ campaignTrail_temp.answer_score_global_json = [
     },
     {
         "model": "campaign_trail.answer_score_global",
+        "pk": 51028,
+        "fields": {
+            "answer": 51025,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "global_multiplier": -0.002
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 51031,
+        "fields": {
+            "answer": 51026,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "global_multiplier": -0.001
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
         "pk": 51040,
         "fields": {
             "answer": 5102,
@@ -8241,6 +8270,16 @@ campaignTrail_temp.answer_score_global_json = [
             "candidate": 200,
             "affected_candidate": 200,
             "global_multiplier": -0.045
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 51252,
+        "fields": {
+            "answer": 51030,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "global_multiplier": -0.001
         }
     },
     {
@@ -8741,16 +8780,6 @@ campaignTrail_temp.answer_score_global_json = [
             "candidate": 200,
             "affected_candidate": 200,
             "global_multiplier": 0.075
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
-        "pk": 51619,
-        "fields": {
-            "answer": 51611,
-            "candidate": 200,
-            "affected_candidate": 200,
-            "global_multiplier": 0.001
         }
     }
 ]
@@ -9274,16 +9303,6 @@ campaignTrail_temp.answer_score_issue_json = [
             "issue": 101,
             "issue_score": 0.05,
             "issue_importance": 0.5
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 51618,
-        "fields": {
-            "answer": 51611,
-            "issue": 101,
-            "issue_score": -0.65,
-            "issue_importance": 3
         }
     }
 ]
@@ -10985,6 +11004,33 @@ campaignTrail_temp.answer_feedback_json = [
     },
     {
         "model": "campaign_trail.answer_feedback",
+        "pk": 51027,
+        "fields": {
+            "answer": 51025,
+            "candidate": 200,
+            "answer_feedback": "The media guys are quick to point out this is an outright lie. Fortunately, nobody really cares, and the campaign quickly moves back to more important issues."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 51029,
+        "fields": {
+            "answer": 51026,
+            "candidate": 200,
+            "answer_feedback": "There's nothing wrong with not responding to these claims, and they go away after a while. Not that anyone was clamoring for your opinion anyway."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 51032,
+        "fields": {
+            "answer": 51030,
+            "candidate": 200,
+            "answer_feedback": "This seems like some fine reasoning, and voters seem to accept. The problem is that it's not true, but nobody really cares, and everyone just moves on to other issues after a little bit."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
         "pk": 51038,
         "fields": {
             "answer": 5102,
@@ -11008,6 +11054,15 @@ campaignTrail_temp.answer_feedback_json = [
             "answer": 51043,
             "candidate": 200,
             "answer_feedback": "Hillary's emails have further damaged her once high approval rating as Secretary of State. It's definitely a good idea to attack her here."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 51051,
+        "fields": {
+            "answer": 51050,
+            "candidate": 200,
+            "answer_feedback": "Yet another attack on Hillary Clinton. It's not going to do much to alleviate voter's concerns, but perhaps pointing out the alternative can mitigate some damage."
         }
     },
     {
@@ -11594,33 +11649,6 @@ campaignTrail_temp.answer_feedback_json = [
             "candidate": 200,
             "answer_feedback": "The NRA, ExxonMobil, and Shell are more then eager to fund your campaign, while AIPAC remains neutral, having good relations with the Clintons. It's not much compared to her wall street buddies, but whatever it is, let's hope it's enough to push you over the top."
         }
-    },
-    {
-        "model": "campaign_trail.answer_feedback",
-        "pk": 51615,
-        "fields": {
-            "answer": 51610,
-            "candidate": 200,
-            "answer_feedback": "When asked in interviews, Walker is evasive, pivoting to Obamacare and other issues. Clinton or Kaine don't press the issue, and your ticket is let off the hook. Not a bad pivot."
-        }
-    },
-    {
-        "model": "campaign_trail.answer_feedback",
-        "pk": 51616,
-        "fields": {
-            "answer": 51611,
-            "candidate": 200,
-            "answer_feedback": "Way to stick to your guns. Mainstream Republicans will love this, but be warned that your giving Clinton an opening with working-class voters that despise her social policies. Especially with her recent rally with Tim Ryan in Ohio."
-        }
-    },
-    {
-        "model": "campaign_trail.answer_feedback",
-        "pk": 51617,
-        "fields": {
-            "answer": 51612,
-            "candidate": 200,
-            "answer_feedback": "This helps cool down some of the tension between your ticket and those union men in the Midwest. Clinton and Kaine decide to ignore the issue, and everyone moves on after a few days. Good pivot."
-        }
     }
 ]
 
@@ -11679,7 +11707,6 @@ campaignTrail_temp.jet_data = [{
     }
 }
 ]
-
 
 
 
